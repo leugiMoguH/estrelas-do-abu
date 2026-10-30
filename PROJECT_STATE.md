@@ -3,7 +3,7 @@ Plano: v1
 Atualizado: 2026-10-30
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: PARADO. Aguardar teste da jogadora em telemóvel real; só depois decidir expansão
+Próximo passo: Redesign artístico (branch redesign/art-v1): terminar propostas A/B em /preview/ e apresentar; ver .claude/tmp/handoff.md
 Decisão necessária:
 
 ## Sucesso
@@ -53,6 +53,7 @@ Decisão necessária:
 - Núcleo v2 (geradores, histórico, simulação) implementado e verificado 2026-10-30; limites em docs/AUDIT_SUMMARY.md. Repo público só-código autorizado para auditoria; app NÃO publicada.
 - Demo jogável implementada 2026-10-30: arte SVG própria (Claude), conteúdo/fluxo/extras (Codex), verificada em 390×844, 820×1180, 1280×800. Sem revisão docente do conteúdo; sem validação pela criança. Teste unitário 'limita FIFO' falhou 1 vez, sem reprodução (timeout subido para 30 s).
 - Demo publicada 2026-10-30: https://leugimoguh.github.io/estrelas-do-abu/ (branch gh-pages; código na main). Expansão de conteúdo/funcionalidades suspensa até avaliação da criança.
+- Redesign (2026-10-30): produtor considera a arte da v0.1 abaixo do objetivo; pedidas 2 direções (A vetorial «Doce Gomoso», B ilustrada «Mundo Ilustrado» com imagens geradas pelo Codex image_gen) em /preview/; demo pública não muda. Expansão de conteúdo continua suspensa.
 
 ## Estacionadas
 ## Bloqueios

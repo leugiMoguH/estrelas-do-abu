@@ -12,6 +12,10 @@ import {
   SKIN_TONES,
 } from './index';
 import type { AbuPose, AvatarConfig } from './index';
+import { setArtTheme } from './index';
+
+const tema = new URLSearchParams(location.search).get('tema');
+if (tema === 'a' || tema === 'b') setArtTheme(tema);
 
 const root = document.getElementById('preview')!;
 const section = (title: string, html: string): string =>
