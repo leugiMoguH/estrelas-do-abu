@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-P2Xu9kJm.js";import"./art-Dp8XcbZA.js";import"./app-DYlVwQm4.js";import{t as e}from"./welcome-DEdihPns.js";import"./extras-DDCVumPG.js";e();

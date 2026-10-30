@@ -1,0 +1,1 @@
+import{E as e,a as t}from"./router-BMx12qF_.js";function n(n){e(n),n===`atual`?delete document.body.dataset.theme:document.body.dataset.theme=n,t()}export{n as applyTheme};
