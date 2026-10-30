@@ -4,3 +4,5 @@ test-results
 playwright-report
 .claude/tmp
 *.log
+tests/shots/**/*.png
+.vite

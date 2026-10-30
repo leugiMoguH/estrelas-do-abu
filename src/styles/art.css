@@ -1,0 +1,247 @@
+/* Animações e interações da arte. Tudo respeita prefers-reduced-motion e body.reduce-motion. */
+.av,
+.abu-svg,
+.map-svg,
+.room-svg,
+.welcome-svg {
+  display: block;
+  max-width: 100%;
+}
+
+.abu-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: abu-blink 5s infinite;
+}
+.abu-tail {
+  transform-box: fill-box;
+  transform-origin: 0% 100%;
+  animation: abu-wag 2.6s ease-in-out infinite;
+}
+.abu-tail-fast {
+  animation-duration: 0.55s;
+}
+.abu-body {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: abu-breathe 3.4s ease-in-out infinite;
+}
+.abu-head {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.abu-happy .abu-head,
+.abu-wag .abu-head {
+  animation: abu-bob 0.9s ease-in-out infinite;
+}
+.abu-z {
+  animation: abu-float 2.8s ease-in-out infinite;
+}
+.abu-z2 {
+  animation: abu-float 2.8s ease-in-out 1.2s infinite;
+}
+.av-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: abu-blink 6s infinite;
+}
+.av-cheer {
+  animation: av-hop 0.9s ease-in-out infinite;
+}
+
+@keyframes abu-blink {
+  0%,
+  93%,
+  100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.1);
+  }
+}
+@keyframes abu-wag {
+  0%,
+  100% {
+    transform: rotate(-9deg);
+  }
+  50% {
+    transform: rotate(11deg);
+  }
+}
+@keyframes abu-breathe {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.025);
+  }
+}
+@keyframes abu-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-3px) rotate(2deg);
+  }
+}
+@keyframes abu-float {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
+@keyframes av-hop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Mapa */
+.map-hit {
+  cursor: pointer;
+  outline: none;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  transition:
+    transform 0.18s ease,
+    filter 0.18s ease;
+}
+.map-hit:hover,
+.map-hit:focus-visible {
+  transform: translateY(-5px) scale(1.025);
+  filter: drop-shadow(0 8px 6px rgba(74, 47, 39, 0.25));
+}
+.map-hit:focus-visible .map-focus {
+  stroke: #ff7a59;
+  stroke-width: 5;
+}
+.map-hit.is-idle {
+  cursor: default;
+}
+.map-hit.is-idle .map-body {
+  filter: saturate(0.45) brightness(1.05);
+  opacity: 0.82;
+}
+.map-hint {
+  animation: map-pulse 1.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.cloud {
+  animation: cloud-drift 38s linear infinite;
+}
+.cloud-b {
+  animation-duration: 55s;
+  animation-delay: -20s;
+}
+.twinkle {
+  animation: map-pulse 2.2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.fountain-water {
+  animation: map-pulse 1.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+@keyframes map-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
+@keyframes cloud-drift {
+  from {
+    transform: translateX(-80px);
+  }
+  to {
+    transform: translateX(80px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .abu-eye,
+  .abu-tail,
+  .abu-body,
+  .abu-head,
+  .abu-z,
+  .abu-z2,
+  .av-eye,
+  .av-cheer,
+  .map-hint,
+  .cloud,
+  .twinkle,
+  .fountain-water {
+    animation: none !important;
+  }
+  .map-hit {
+    transition: none;
+  }
+}
+body.reduce-motion .abu-eye,
+body.reduce-motion .abu-tail,
+body.reduce-motion .abu-body,
+body.reduce-motion .abu-head,
+body.reduce-motion .abu-z,
+body.reduce-motion .abu-z2,
+body.reduce-motion .av-eye,
+body.reduce-motion .av-cheer,
+body.reduce-motion .map-hint,
+body.reduce-motion .cloud,
+body.reduce-motion .twinkle,
+body.reduce-motion .fountain-water {
+  animation: none !important;
+}
+body.reduce-motion .map-hit {
+  transition: none;
+}
+
+/* Ecrã de boas-vindas: cena ilustrada com a personagem e o Abu em destaque */
+.welcome-art {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  aspect-ratio: 4 / 4.2;
+  max-height: 58vh;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 8px 0 rgba(74, 47, 39, 0.12);
+}
+.welcome-art .welcome-svg {
+  width: 100%;
+  height: 100%;
+}
+.welcome-hero {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  width: min(88%, 420px);
+  transform: translateX(-50%);
+}
+.welcome-hero .av {
+  width: 100%;
+  height: auto;
+}
+.welcome-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}

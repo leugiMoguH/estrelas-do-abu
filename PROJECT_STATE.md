@@ -3,16 +3,16 @@ Plano: v1
 Atualizado: 2026-10-30
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: Auditoria externa (ChatGPT) ao núcleo via branch audit/core-1; depois conteúdo dos 6 temas com geradores e UI
+Próximo passo: Publicar demo de teste (GitHub Pages) e entregar à criança; PARAR e aguardar avaliação dela
 Decisão necessária:
 
 ## Sucesso
 - Demo jogável publicada, testada em 3 viewports, sem erros de consola, com revisão Codex registada; expansão parada à espera da criança
 
 ## E1 — Base
-### T1.1 · peso 1 · Em curso · Contrato, repo e scaffold
+### T1.1 · peso 1 · Concluída · Contrato, repo e scaffold
 - [x] Repo Git próprio e documentos de contrato/instruções criados | ev: git init + PRODUCT_CONTRACT.md
-- [ ] Vite+TS+Vitest+Playwright a correr com build verde | ev:
+- [x] Vite+TS+Vitest+Playwright a correr com build verde | ev: npm run build; npm test (51); npx playwright test (9 em 3 viewports) — 2026-10-30
 
 ## E2 — Núcleo educativo
 ### T2.1 · peso 3 · Por iniciar · Motor de exercícios, correção, nota, adaptação e revisão espaçada
@@ -51,6 +51,7 @@ Decisão necessária:
 - Nome 'Estrelas do Abu': sem conflito evidente na web; INPI/EUIPO por verificar antes de publicar.
 - Produção de exercícios (pesquisa 2026-10-30): geradores TS próprios ao estilo Numbas (variáveis, restrições, seed) + banco JSON revisto com licença própria; ideias do Numbas, não o motor. Moodle XML só como exportador futuro (YAGNI). IA só em produção, com oráculo independente (gerador/CAS) e revisão humana PT-PT; nunca em runtime. Terceiros só CC0/CC BY ou autorização (Khan/OpenStax são NC-SA: evitar no núcleo). Itens IAVE/DGE: sem banco oficial reutilizável confirmado; só como modelo de estilo. Por verificar: termos de reutilização IAVE/DGE (sites inacessíveis).
 - Núcleo v2 (geradores, histórico, simulação) implementado e verificado 2026-10-30; limites em docs/AUDIT_SUMMARY.md. Repo público só-código autorizado para auditoria; app NÃO publicada.
+- Demo jogável implementada 2026-10-30: arte SVG própria (Claude), conteúdo/fluxo/extras (Codex), verificada em 390×844, 820×1180, 1280×800. Sem revisão docente do conteúdo; sem validação pela criança. Teste unitário 'limita FIFO' falhou 1 vez, sem reprodução (timeout subido para 30 s).
 
 ## Estacionadas
 ## Bloqueios

@@ -41,15 +41,13 @@ export function buildSession(options: SessionOptions) {
     );
     if (!available.length) break;
     const recent = [
-      ...(options.history ?? [])
-        .slice(-20)
-        .map((h) => ({
-          signature: h.signature,
-          concept: h.conceptId,
-          approach: h.approachId,
-          format: h.format,
-          competency: h.competencyId,
-        })),
+      ...(options.history ?? []).slice(-20).map((h) => ({
+        signature: h.signature,
+        concept: h.conceptId,
+        approach: h.approachId,
+        format: h.format,
+        competency: h.competencyId,
+      })),
       ...selected.map((e) => ({
         signature: normalize(e.prompt),
         concept: e.conceptId,

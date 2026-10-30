@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pré-visualização da arte</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 16px;
+        background: #fff6e8;
+        font-family: system-ui, sans-serif;
+        color: #4a2f27;
+      }
+      h2 {
+        margin: 24px 0 8px;
+        font-size: 18px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: flex-end;
+      }
+      figure {
+        margin: 0;
+        text-align: center;
+        font-size: 11px;
+      }
+      .abu-box {
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="preview"></div>
+    <script type="module" src="/src/art/preview.ts"></script>
+  </body>
+</html>

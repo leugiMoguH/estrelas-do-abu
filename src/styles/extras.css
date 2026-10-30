@@ -1,0 +1,134 @@
+.extras-profile {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.5fr);
+  gap: 24px;
+  align-items: start;
+}
+.extras-preview {
+  position: sticky;
+  top: 12px;
+  text-align: center;
+  margin-top: 0;
+}
+.extras-preview > svg {
+  width: 100%;
+  max-height: 420px;
+}
+.extras-controls {
+  min-width: 0;
+}
+.extras-catalog {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.extras-item {
+  margin: 0;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+.extras-item h2 {
+  font-size: 1em;
+}
+.extras-item button {
+  margin-top: auto;
+  padding: 10px;
+}
+.item-art {
+  height: 130px;
+}
+.item-art > svg {
+  height: 100%;
+  width: 100%;
+}
+.item-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85em;
+  padding: 8px;
+}
+.swatch span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #302d40;
+  flex-shrink: 0;
+}
+.extras-toggle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.extras-toggle input {
+  width: 26px;
+  min-height: 26px;
+  accent-color: #4d476f;
+}
+.extras input[type='range'] {
+  padding: 0;
+  accent-color: #4d476f;
+}
+.extras input[type='file'] {
+  font-size: 0.85em;
+}
+.extras .actions {
+  margin: 12px 0;
+}
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 640px;
+  margin: 24px auto;
+}
+.memory-card {
+  aspect-ratio: 1;
+  font-size: 2em;
+  padding: 8px;
+  background: #e7def6;
+}
+.memory-card:disabled {
+  opacity: 1;
+}
+.purchase-pop {
+  animation: reward 0.55s ease-out;
+}
+@media (max-width: 650px) {
+  .extras-profile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .extras-preview {
+    top: 0;
+    z-index: 2;
+    padding: 8px 14px;
+    margin: 0;
+    background: #fffdf8;
+  }
+  .extras-preview > svg {
+    height: 220px;
+    width: 100%;
+  }
+  .extras-preview p {
+    font-size: 0.85em;
+    margin: 0;
+  }
+  .extras-catalog {
+    gap: 10px;
+  }
+  .memory-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
