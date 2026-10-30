@@ -1,0 +1,276 @@
+/* Estrutura comum dos temas A e B: cada tema só define as variáveis (e pequenos retoques nos seus ficheiros). */
+body[data-theme] {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body-font);
+}
+:root:has(body[data-theme]) {
+  background: var(--bg);
+}
+body[data-theme] h1,
+body[data-theme] h2,
+body[data-theme] h3,
+body[data-theme] .brand,
+body[data-theme] button {
+  font-family: var(--head-font);
+}
+body[data-theme] h1 {
+  color: var(--title);
+  letter-spacing: 0.01em;
+}
+body[data-theme] header {
+  background: var(--header-bg);
+  border-bottom: var(--header-border);
+}
+body[data-theme] .brand {
+  font-size: 1.15em;
+  color: var(--title);
+}
+body[data-theme] .balance {
+  padding: 4px 14px 4px 10px;
+  border-radius: 999px;
+  background: var(--paper);
+  border: 2px solid var(--line);
+  font-family: var(--head-font);
+  font-size: 1.1em;
+}
+body[data-theme] button {
+  min-height: 48px;
+  border: var(--btn-border);
+  border-radius: var(--radius);
+  background: var(--btn-bg);
+  color: var(--ink);
+  box-shadow: var(--btn-shadow);
+  font-weight: 700;
+  transition:
+    transform 0.12s,
+    box-shadow 0.12s,
+    background 0.12s;
+}
+body[data-theme] button:hover {
+  background: var(--btn-hover);
+  transform: translateY(-2px);
+}
+body[data-theme] button:active {
+  transform: translateY(2px);
+  box-shadow: var(--btn-shadow-pressed);
+}
+body[data-theme] button.primary {
+  background: var(--primary-bg);
+  border: var(--primary-border);
+  color: var(--primary-ink);
+  box-shadow: var(--primary-shadow);
+}
+body[data-theme] button.primary:hover {
+  background: var(--primary-hover);
+}
+body[data-theme] button.quiet {
+  background: var(--quiet-bg);
+  box-shadow: none;
+}
+body[data-theme] button[aria-pressed='true'] {
+  background: var(--selected-bg);
+  border-color: var(--selected-line);
+  box-shadow: 0 0 0 3px var(--selected-line);
+}
+body[data-theme] button:disabled {
+  box-shadow: none;
+}
+body[data-theme] :focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+body[data-theme] .panel,
+body[data-theme] details,
+body[data-theme] dialog {
+  background: var(--paper);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--card-shadow);
+}
+body[data-theme] .map-art {
+  border: var(--frame-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--frame-shadow);
+  background: var(--paper);
+  max-width: 600px;
+}
+body[data-theme] .map-tip {
+  background: var(--tip-bg);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-card);
+  font-family: var(--head-font);
+}
+body[data-theme] .abu-line p {
+  background: var(--paper);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-card);
+}
+body[data-theme] .subject-links {
+  display: none;
+}
+body[data-theme] .welcome h1 {
+  font-size: clamp(1.9em, 6vw, 2.8em);
+}
+body[data-theme] .welcome-art {
+  border: var(--frame-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--frame-shadow);
+  overflow: hidden;
+  position: relative;
+  background: var(--paper);
+}
+body[data-theme] .welcome-art > svg {
+  display: block;
+  max-height: none;
+}
+body[data-theme] .welcome .primary {
+  min-width: min(100%, 260px);
+  font-size: 1.35em;
+  padding: 14px 28px;
+}
+body[data-theme] .toolbar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+body[data-theme] .toolbar button {
+  padding: 8px 6px;
+  font-size: 0.95em;
+}
+body[data-theme] .welcome-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Personalizar: separadores, pré-visualização fixa, chips com miniatura */
+body[data-theme] .tabs-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 8px;
+  padding: 6px 4px 12px;
+  margin: 0 -4px;
+  scrollbar-width: none;
+}
+body[data-theme] .tabs-row::-webkit-scrollbar {
+  display: none;
+}
+body[data-theme] .tabs-row button {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 6px 16px;
+  border-radius: 999px;
+}
+body[data-theme] .chip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 10px;
+}
+body[data-theme] .chip-grid button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 6px;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+body[data-theme] .chip-grid .chip-art {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+body[data-theme] .chip-grid .chip-art svg {
+  width: 100%;
+  height: 100%;
+}
+body[data-theme] .chip-grid .chip-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+}
+
+/* Barra da pré-visualização (fora do jogo): fixa em baixo, discreta */
+.preview-bar {
+  position: fixed;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: calc(100vw - 16px);
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: rgba(30, 24, 30, 0.88);
+  color: #fff;
+  font: 600 13px/1.2 system-ui, sans-serif;
+  white-space: nowrap;
+}
+.preview-bar .preview-tag {
+  padding: 0 6px 0 8px;
+  opacity: 0.85;
+  font-weight: 500;
+}
+.preview-bar button,
+body[data-theme] .preview-bar button {
+  min-height: 34px;
+  padding: 4px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font: 600 13px/1.2 system-ui, sans-serif;
+  box-shadow: none;
+}
+.preview-bar button:hover,
+body[data-theme] .preview-bar button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: none;
+}
+.preview-bar a {
+  color: #ffd98a;
+  padding: 0 8px;
+  text-decoration: none;
+}
+@media (max-width: 520px) {
+  .preview-bar .preview-tag {
+    display: none;
+  }
+}
+body[data-theme] .screen {
+  padding-bottom: 90px;
+}
+body[data-theme] .chip-art.is-crop svg {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  transform: scale(var(--z));
+  transform-origin: var(--x) var(--y);
+}
+body[data-theme] .chip-art.is-crop {
+  align-items: start;
+}
+body[data-theme] .group-title {
+  font-size: 1.1em;
+  margin: 14px 0 8px;
+}
+body[data-theme] .extras-profile {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 760px) {
+  body[data-theme] .extras-profile {
+    grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.4fr);
+  }
+}
+body[data-theme] h1:focus {
+  outline: none;
+}

@@ -1,0 +1,39 @@
+/* Direção A «Doce Gomoso»: pastéis de rebuçado, botões gomosos, contornos suaves. */
+body[data-theme='a'] {
+  --bg: #fff1f6;
+  --paper: #ffffff;
+  --ink: #4a3560;
+  --title: #7a3fa8;
+  --line: #f3c8e0;
+  --header-bg: #ffe0ee;
+  --header-border: 3px solid #ffc4de;
+  --head-font: 'Fredoka', 'Baloo 2', 'Trebuchet MS', system-ui, sans-serif;
+  --body-font: 'Andika', 'Trebuchet MS', system-ui, sans-serif;
+  --radius: 999px;
+  --radius-card: 28px;
+  --btn-bg: linear-gradient(#fff, #f6e9ff);
+  --btn-hover: linear-gradient(#fff, #eed9ff);
+  --btn-border: 3px solid #cdaaf0;
+  --btn-shadow: 0 5px 0 #cdaaf0, inset 0 3px 0 rgba(255, 255, 255, 0.9);
+  --btn-shadow-pressed: 0 1px 0 #cdaaf0, inset 0 3px 0 rgba(255, 255, 255, 0.9);
+  --primary-bg: linear-gradient(#ff8fc0, #ff5fa2);
+  --primary-hover: linear-gradient(#ff9fca, #ff6faa);
+  --primary-border: 3px solid #c92f78;
+  --primary-ink: #fff;
+  --primary-shadow: 0 6px 0 #c92f78, inset 0 4px 0 rgba(255, 255, 255, 0.45);
+  --quiet-bg: rgba(255, 255, 255, 0.6);
+  --selected-bg: linear-gradient(#e3d1ff, #cfb2ff);
+  --selected-line: #7a3fa8;
+  --focus: #2457a8;
+  --card-shadow: 0 6px 0 #f3c8e0;
+  --frame-border: 5px solid #fff;
+  --frame-shadow: 0 0 0 3px #f3c8e0, 0 10px 0 #eab0d3;
+  --tip-bg: #fff3b8;
+}
+body[data-theme='a'] .brand,
+body[data-theme='a'] h1 {
+  text-shadow: 0 2px 0 #fff;
+}
+body[data-theme='a'] button.primary {
+  text-shadow: 0 2px 0 rgba(130, 10, 70, 0.4);
+}

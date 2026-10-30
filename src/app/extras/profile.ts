@@ -60,6 +60,7 @@ export function equip(avatar: AvatarConfig): void {
 export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Personalizar'): void {
   let tab = initial;
   let filter = '';
+  let section = 'Pele';
   let feedback = '';
   let celebration = false;
   const render = (): void => {
@@ -67,7 +68,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     const avatar = state.profile.avatar;
     const main = screen('A minha personagem');
     const tabs = document.createElement('div');
-    tabs.className = 'toolbar';
+    tabs.className = 'toolbar tabs-top';
     tabs.setAttribute('aria-label', 'Secções da personagem');
     for (const name of ['Personalizar', 'Loja', 'Coleção'] as const) {
       const choice = action(name, () => {
@@ -103,37 +104,85 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
           render();
         }),
       );
-      const group = (
-        title: string,
-        slot: keyof AvatarConfig,
-        items: readonly { id: string | null; name: string; hex?: string }[],
-      ): void => {
-        const field = document.createElement('fieldset');
-        field.innerHTML = `<legend>${escape(title)}</legend>`;
-        for (const item of items) {
-          const choice = action(item.name, () => apply(slot, item.id), item.hex ? 'swatch' : 'choice');
-          choice.setAttribute('aria-pressed', String(avatar[slot] === item.id));
+      const apply1 = (slot: keyof AvatarConfig, id: string | null): void => apply(slot, id);
+      type Row = { id: string | null; name: string; hex?: string };
+      const SECTIONS: { name: string; groups: { title: string; slot: keyof AvatarConfig; items: Row[]; crop?: string }[] }[] = [
+        { name: 'Pele', groups: [{ title: 'Tom de pele', slot: 'skin', items: [...SKIN_TONES] }] },
+        {
+          name: 'Cabelo',
+          groups: [
+            { title: 'Penteado', slot: 'hairStyle', items: CATALOG.filter((i) => i.slot === 'hairStyle' && allowed(i.id)), crop: '--z:2.1;--x:50%;--y:14%' },
+            { title: 'Cor do cabelo', slot: 'hairColor', items: [...HAIR_COLORS] },
+          ],
+        },
+        {
+          name: 'Olhos',
+          groups: [
+            { title: 'Olhos', slot: 'eyes', items: [...EYE_STYLES] },
+            { title: 'Expressão', slot: 'expression', items: [...EXPRESSIONS] },
+          ],
+        },
+        {
+          name: 'Roupa',
+          groups: [
+            { title: 'Parte de cima', slot: 'top', items: CATALOG.filter((i) => i.slot === 'top' && allowed(i.id)), crop: '--z:1.9;--x:50%;--y:46%' },
+            { title: 'Parte de baixo', slot: 'bottom', items: CATALOG.filter((i) => i.slot === 'bottom' && allowed(i.id)), crop: '--z:1.9;--x:50%;--y:74%' },
+          ],
+        },
+        { name: 'Calçado', groups: [{ title: 'Calçado', slot: 'shoes', items: CATALOG.filter((i) => i.slot === 'shoes' && allowed(i.id)), crop: '--z:2.4;--x:50%;--y:96%' }] },
+        {
+          name: 'Acessórios',
+          groups: [{ title: 'Acessório', slot: 'accessory', items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter((i) => i.slot === 'accessory' && allowed(i.id))], crop: '--z:2.1;--x:50%;--y:16%' }],
+        },
+        {
+          name: 'Abu',
+          groups: [{ title: 'Acessório do Abu', slot: 'abuAccessory', items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter((i) => i.slot === 'abuAccessory' && allowed(i.id))], crop: 'abu' }],
+        },
+      ];
+      const current = SECTIONS.find((x) => x.name === section) ?? SECTIONS[0]!;
+      const row = document.createElement('div');
+      row.className = 'tabs-row';
+      row.setAttribute('aria-label', 'Partes da personagem');
+      for (const x of SECTIONS) {
+        const t = action(x.name, () => {
+          section = x.name;
+          render();
+        });
+        t.setAttribute('aria-pressed', String(x === current));
+        row.append(t);
+      }
+      controls.append(row);
+      for (const g of current.groups) {
+        const box = document.createElement('section');
+        box.setAttribute('aria-label', g.title);
+        box.innerHTML = `<h2 class="group-title">${escape(g.title)}</h2>`;
+        const grid = document.createElement('div');
+        grid.className = 'chip-grid';
+        for (const item of g.items) {
+          const choice = action('', () => apply1(g.slot, item.id));
+          choice.setAttribute('aria-pressed', String(avatar[g.slot] === item.id));
+          const art = document.createElement('span');
+          art.setAttribute('aria-hidden', 'true');
           if (item.hex) {
-            const circle = document.createElement('span');
-            circle.style.backgroundColor = item.hex;
-            circle.setAttribute('aria-hidden', 'true');
-            choice.prepend(circle);
+            art.className = 'chip-dot';
+            art.style.backgroundColor = item.hex;
+          } else if (item.id === null) {
+            art.className = 'chip-art';
+            art.textContent = '∅';
+          } else {
+            art.className = 'chip-art';
+            if (g.crop === 'abu') art.innerHTML = abuSvg('sit', item.id);
+            else if (g.crop) {
+              art.setAttribute('style', g.crop);
+              art.classList.add('is-crop');
+              art.innerHTML = avatarSvg({ ...avatar, [g.slot]: item.id }, { size: 100 });
+            }
           }
-          field.append(choice);
+          choice.append(art, document.createTextNode(item.name));
+          grid.append(choice);
         }
-        controls.append(field);
-      };
-      group('Tom de pele', 'skin', SKIN_TONES);
-      group('Cor do cabelo', 'hairColor', HAIR_COLORS);
-      group('Olhos', 'eyes', EYE_STYLES);
-      group('Expressão', 'expression', EXPRESSIONS);
-      for (const slot of Object.keys(slots) as Slot[]) {
-        const items: { id: string | null; name: string }[] = CATALOG.filter(
-          (i) => i.slot === slot && allowed(i.id),
-        );
-        if (slot === 'accessory' || slot === 'abuAccessory')
-          items.unshift({ id: null, name: 'Sem acessório' });
-        group(slots[slot], slot, items);
+        box.append(grid);
+        controls.append(box);
       }
       const favorites = document.createElement('section');
       favorites.className = 'panel';

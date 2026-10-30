@@ -31,7 +31,12 @@ function pill(cx: number, y: number, text: string, fill: string, color: string, 
   );
 }
 
-function label(spot: Spot, active: boolean): string {
+/** `big`: legendas legíveis em ecrãs de telemóvel (mapa desenhado a ~60%): só a disciplina nos abertos, só «Em preparação» nos fechados. */
+function label(spot: Spot, active: boolean, big = false): string {
+  if (big)
+    return active
+      ? pill(130, 160, spot.subject.split(' ')[0]!, SOFT.coral, '#fff', 30)
+      : pill(130, 168, 'Em preparação', '#e4dccd', '#6a574b', 23);
   const name = pill(130, 152, spot.building, '#fffaf0', INK, 19);
   const tag = active
     ? pill(130, 186, spot.subject, SOFT.coral, '#fff', 16)
@@ -39,7 +44,8 @@ function label(spot: Spot, active: boolean): string {
   return name + tag;
 }
 
-function building(spot: Spot, active: boolean, scale = 1): string {
+function building(spot: Spot, active: boolean, big = false): string {
+  const scale = 1;
   const art = BUILDINGS[spot.id]!();
   const hint = active
     ? `<g class="map-hint"><circle cx="236" cy="14" r="17" fill="${SOFT.sun}" ${o()}/><path transform="translate(236 14) scale(2)" d="M0 -6 L1.8 -1.8 L6 -1.6 L2.7 1.3 L3.8 5.6 L0 3.2 L-3.8 5.6 L-2.7 1.3 L-6 -1.6 L-1.8 -1.8 Z" fill="#fff"/></g>`
@@ -52,7 +58,7 @@ function building(spot: Spot, active: boolean, scale = 1): string {
     `aria-label="${aria}" aria-disabled="${active ? 'false' : 'true'}" transform="translate(${spot.x} ${spot.y}) scale(${scale})">` +
     `<rect class="map-focus" x="-4" y="-6" width="268" height="214" rx="22" fill="transparent" stroke="transparent"/>` +
     `<ellipse cx="130" cy="150" rx="128" ry="12" fill="#000" opacity=".12"/>` +
-    `<g class="map-body">${art}</g>${hint}${label(spot, active)}</g>`
+    `<g class="map-body">${art}</g>${hint}${label(spot, active, big)}</g>`
   );
 }
 
@@ -85,11 +91,11 @@ function arcade(): string {
   );
 }
 
-function plazaPoint(id: string, x: number, y: number, title: string, art: string): string {
+function plazaPoint(id: string, x: number, y: number, title: string, art: string, big = false): string {
   return (
     `<g class="map-hit" data-target="${id}" role="button" tabindex="0" aria-label="${title}" transform="translate(${x} ${y})">` +
     `<rect class="map-focus" x="-56" y="-52" width="112" height="124" rx="20" fill="transparent" stroke="transparent"/>` +
-    `<ellipse cx="0" cy="34" rx="46" ry="8" fill="#000" opacity=".12"/>${art}${pill(0, 40, title, '#fffaf0', INK, 17)}</g>`
+    `<ellipse cx="0" cy="34" rx="46" ry="8" fill="#000" opacity=".12"/>${art}${pill(0, 40, title, '#fffaf0', INK, big ? 26 : 17)}</g>`
   );
 }
 
@@ -123,28 +129,31 @@ function sky(): string {
   );
 }
 
-function plaza(): string {
+function plaza(big = false): string {
   const ground =
     `<ellipse cx="300" cy="570" rx="290" ry="108" fill="#f1e5cf" ${o('stroke-width="2.6"')}/>` +
     `<ellipse cx="300" cy="570" rx="262" ry="90" fill="#f8f0e0"/>`;
   const points = [
-    plazaPoint('loja', 98, 572, 'Loja', stall()),
-    plazaPoint('conquistas', 502, 572, 'Conquistas', trophy()),
-    plazaPoint('minijogo', 300, 640, 'Minijogo', arcade()),
+    plazaPoint('loja', 98, 572, 'Loja', stall(), big),
+    plazaPoint('conquistas', 502, 572, 'Conquistas', trophy(), big),
+    plazaPoint('minijogo', 300, 640, 'Minijogo', arcade(), big),
   ];
   return `<g transform="translate(0 130)">${ground}${tree(30, 520, 0.8)}${tree(570, 520, 0.8)}${fountain()}${points.join('')}</g>`;
 }
 
 /** Mapa do centro escolar. `activeSubjects` indica os edifícios abertos; os restantes ficam «Em preparação». */
-export function mapSvg(options: { activeSubjects: readonly string[] }): string {
+export const mapSvg = (options: { activeSubjects: readonly string[] }): string => drawMap(options, false);
+export const mapSvgBig = (options: { activeSubjects: readonly string[] }): string => drawMap(options, true);
+
+function drawMap(options: { activeSubjects: readonly string[] }, big: boolean): string {
   const active = new Set(options.activeSubjects);
-  const buildings = SPOTS.map((s) => building(s, active.has(s.id)));
+  const buildings = SPOTS.map((s) => building(s, active.has(s.id), big));
   return (
     `<svg class="map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1110" role="group" aria-label="Centro escolar">` +
     sky() +
     tree(18, 486, 0.9) +
     tree(582, 486, 0.9) +
-    plaza() +
+    plaza(big) +
     buildings.join('') +
     `</svg>`
   );

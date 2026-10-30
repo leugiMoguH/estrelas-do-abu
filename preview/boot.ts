@@ -48,6 +48,7 @@ export async function boot(direction: Direction): Promise<void> {
   await import('../src/styles/art.css');
   await import('../src/styles/app.css');
   await import('../src/styles/extras.css');
+  await import('../src/styles/theme-base.css');
   await import('../src/styles/theme-a.css');
   await import('../src/styles/theme-b.css');
   const { applyTheme } = await import('../src/app/theme');

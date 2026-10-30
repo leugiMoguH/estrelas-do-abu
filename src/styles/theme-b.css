@@ -1,0 +1,44 @@
+/* Direção B «Mundo Ilustrado»: papel quente, tinta castanha, terracota. */
+body[data-theme='b'] {
+  --bg: #f4e9d3;
+  --paper: #fbf4e4;
+  --ink: #3d2f35;
+  --title: #4a2f2f;
+  --line: #3d2f35;
+  --header-bg: #efe1c3;
+  --header-border: 3px double #3d2f35;
+  --head-font: 'Baloo 2', 'Trebuchet MS', system-ui, sans-serif;
+  --body-font: 'Andika', 'Trebuchet MS', system-ui, sans-serif;
+  --radius: 14px;
+  --radius-card: 20px;
+  --btn-bg: #fbf4e4;
+  --btn-hover: #f3e5c4;
+  --btn-border: 2.5px solid #3d2f35;
+  --btn-shadow: 0 4px 0 #3d2f35;
+  --btn-shadow-pressed: 0 1px 0 #3d2f35;
+  --primary-bg: #c2573f;
+  --primary-hover: #ad4a34;
+  --primary-border: 2.5px solid #3d2f35;
+  --primary-ink: #fff8ea;
+  --primary-shadow: 0 5px 0 #3d2f35;
+  --quiet-bg: transparent;
+  --selected-bg: #f2cf84;
+  --selected-line: #3d2f35;
+  --focus: #1c5a8a;
+  --card-shadow: 0 5px 0 rgba(61, 47, 53, 0.22);
+  --frame-border: 4px solid #3d2f35;
+  --frame-shadow: 0 8px 0 rgba(61, 47, 53, 0.28);
+  --tip-bg: #f6e2a6;
+}
+body[data-theme='b'] .welcome-art::after {
+  /* velatura quente: o avatar vetorial assenta na cena */
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 70% 20%, rgba(255, 214, 140, 0.28), transparent 60%);
+  mix-blend-mode: soft-light;
+}
+body[data-theme='b'] .welcome-hero svg {
+  filter: saturate(0.88) drop-shadow(0 10px 8px rgba(70, 40, 20, 0.35));
+}

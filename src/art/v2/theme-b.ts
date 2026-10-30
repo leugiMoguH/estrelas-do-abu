@@ -117,11 +117,12 @@ function hotspot(spot: Spot, active: boolean, plaza: boolean): string {
     !plaza && active
       ? `<rect class="map-focus map-ring" x="${x}" y="${y}" width="${w}" height="${h}" rx="44" fill="rgba(255,236,170,.10)" stroke="#ffe08a" stroke-width="7" stroke-dasharray="2 16" stroke-linecap="round"/>`
       : `<rect class="map-focus" x="${x}" y="${y}" width="${w}" height="${h}" rx="30" fill="transparent" stroke="transparent"/>`;
+  // Em ecrã de telemóvel o mapa é desenhado a ~35%: textos grandes, só nos espaços ativos. Praça e inativos: ícone/etiqueta mínima.
   const tag = plaza
-    ? pill(spot.label[0], spot.label[1], spot.name, '#fff6e8', INK, 30)
+    ? ''
     : active
-      ? pill(spot.label[0], spot.label[1], spot.name, '#fff6e8', INK, 33) + pill(spot.label[0], spot.label[1] + 52, spot.subject, '#c77862', '#fff', 28)
-      : pill(spot.label[0], spot.label[1], spot.name, '#efe7d8', '#6f6154', 28) + pill(spot.label[0], spot.label[1] + 48, 'Em preparação', '#d8cdb8', '#6f6154', 24);
+      ? pill(spot.label[0], spot.label[1], spot.subject.split(' ')[0]!, '#fff6e8', INK, 52)
+      : pill(spot.label[0], spot.label[1] - 110, 'Em breve', '#efe7d8', '#6f6154', 40);
   const badge =
     !plaza && active
       ? `<g class="map-hint"><circle cx="${x + w - 24}" cy="${y + 24}" r="30" fill="#ffd25e" stroke="${INK}" stroke-width="4"/><path transform="translate(${x + w - 24} ${y + 24}) scale(3.4)" d="M0 -6 L1.8 -1.8 L6 -1.6 L2.7 1.3 L3.8 5.6 L0 3.2 L-3.8 5.6 L-2.7 1.3 L-6 -1.6 L-1.8 -1.8 Z" fill="#fff"/></g>`
