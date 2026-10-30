@@ -22,7 +22,7 @@ const app = document.getElementById('app')!;
 const combos = OUTFITS.flatMap(([o]) => FACES.flatMap(([f]) => SKINS.map(([s]) => ({ outfit: o, face: f, skin: s }))));
 app.innerHTML =
   `<main class="stage"><header><b>Piloto modular</b><span class="coins">8 combinações</span></header>` +
-  `<div class="scene p"><img class="bg" src="${plaza}" alt="" /><span class="shadow g"></span><span class="shadow a"></span>` +
+  `<div class="scene p"><img class="bg" src="${plaza}" alt="" /><span class="shadow g"></span><span class="shadow a"></span><span class="sole l"></span><span class="sole r"></span><span class="sole p"></span>` +
   `<img class="girl" alt="A tua personagem" /><img class="abu" alt="Abu, o pinscher" /><p class="bubble" role="status"></p></div>` +
   `<section class="panel">${seg('Expressão', 'face', FACES)}${seg('Roupa', 'outfit', OUTFITS)}${seg('Pele', 'skin', SKINS)}</section>` +
   `<h2>As 8 combinações</h2><div class="grid">${combos.map((c) => `<button class="cell" data-id="${id(c)}" aria-label="${id(c)}"><img src="${url(id(c))}" alt="" loading="lazy" /></button>`).join('')}</div>` +
