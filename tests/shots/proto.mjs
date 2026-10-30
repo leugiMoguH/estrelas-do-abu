@@ -1,0 +1,15 @@
+import { chromium } from '@playwright/test';
+const [url, out] = process.argv.slice(2);
+const b = await chromium.launch();
+const p = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+const errs = [];
+p.on('pageerror', (e) => errs.push(String(e)));
+await p.goto(url);
+await p.waitForTimeout(800);
+await p.screenshot({ path: `${out}-1.png` });
+await p.getByRole('button', { name: /Surpresa/ }).click();
+await p.getByRole('button', { name: /Gabardina/ }).click();
+await p.waitForTimeout(500);
+await p.screenshot({ path: `${out}-2.png` });
+console.log(errs.join('\n') || 'ok');
+await b.close();

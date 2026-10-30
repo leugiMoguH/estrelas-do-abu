@@ -1,0 +1,65 @@
+{
+  "reference": {
+    "size": [
+      1024,
+      1536
+    ],
+    "webp_KiB": 231.8,
+    "transparent_pixels": 0,
+    "visible_green_dominant_pixels": null
+  },
+  "girl_happy": {
+    "size": [
+      1024,
+      1536
+    ],
+    "webp_KiB": 95.8,
+    "transparent_pixels": 1136626,
+    "visible_green_dominant_pixels": 0
+  },
+  "girl_surprised": {
+    "size": [
+      1024,
+      1536
+    ],
+    "webp_KiB": 93.7,
+    "transparent_pixels": 1137481,
+    "visible_green_dominant_pixels": 0
+  },
+  "girl_outfit2": {
+    "size": [
+      1024,
+      1536
+    ],
+    "webp_KiB": 107.6,
+    "transparent_pixels": 1113422,
+    "visible_green_dominant_pixels": 0
+  },
+  "abu_happy": {
+    "size": [
+      1024,
+      1536
+    ],
+    "webp_KiB": 98.8,
+    "transparent_pixels": 1116175,
+    "visible_green_dominant_pixels": 0
+  },
+  "abu_curious": {
+    "size": [
+      1024,
+      1536
+    ],
+    "webp_KiB": 99.5,
+    "transparent_pixels": 1114954,
+    "visible_green_dominant_pixels": 0
+  },
+  "campus": {
+    "size": [
+      1024,
+      1536
+    ],
+    "webp_KiB": 328.5,
+    "transparent_pixels": 0,
+    "visible_green_dominant_pixels": null
+  }
+}

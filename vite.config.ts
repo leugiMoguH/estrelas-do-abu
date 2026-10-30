@@ -9,6 +9,8 @@ export default defineConfig({
         main: 'index.html',
         previewA: 'preview/a/index.html',
         previewB: 'preview/b/index.html',
+        previewC: 'preview/c/index.html',
+        previewD: 'preview/d/index.html',
       },
     },
   },

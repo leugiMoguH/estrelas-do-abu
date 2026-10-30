@@ -1,0 +1,157 @@
+:root {
+  --paper: #fff6ec;
+  --ink: #2e2440;
+  --coral: #ff8a6b;
+  --lilac: #b79cff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f3e3d3;
+  color: var(--ink);
+  font-family: 'Andika', 'Trebuchet MS', sans-serif;
+}
+.stage {
+  max-width: 430px;
+  margin: 0 auto;
+  background: var(--paper);
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.15rem;
+}
+.coins {
+  padding: 2px 12px;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  background: #ffe49a;
+  box-shadow: 0 3px 0 rgba(46, 36, 64, 0.18);
+}
+.cv-scene {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.panel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+}
+.seg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.seg span {
+  flex: 0 0 82px;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+}
+button {
+  min-height: 48px;
+  padding: 6px 14px;
+  flex: 1;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 700 1rem 'Baloo 2', sans-serif;
+  box-shadow: 0 4px 0 rgba(46, 36, 64, 0.18);
+}
+button[aria-pressed='true'] {
+  background: #d8c9ff;
+}
+button[aria-pressed='true']::before {
+  content: '✓ ';
+}
+.cta {
+  background: var(--coral);
+  font-size: 1.15rem;
+  min-height: 56px;
+  color: #2e2440;
+}
+:focus-visible {
+  outline: 3px solid #2457a8;
+  outline-offset: 3px;
+}
+/* variações sem redesenhar */
+.stage[data-face='happy'] .f-wow,
+.stage[data-face='wow'] .f-happy,
+.stage[data-face='happy'] .abu-curious,
+.stage[data-face='wow'] .abu-happy,
+.stage[data-face='happy'] .b-wow,
+.stage[data-face='wow'] .b-happy,
+.stage[data-face='wow'] .arm-wave,
+.stage[data-face='happy'] .arm-r,
+.stage[data-outfit='hoodie'] .o-coat,
+.stage[data-outfit='coat'] .o-hoodie {
+  display: none;
+}
+/* animação leve */
+.av-breath,
+.abu-tail,
+.arm-wave,
+.av-eyes {
+  transform-box: fill-box;
+}
+.av-breath {
+  transform-origin: 50% 100%;
+  animation: breathe 3.6s ease-in-out infinite;
+}
+.abu-tail {
+  transform-origin: 0% 100%;
+  animation: wag 0.9s ease-in-out infinite alternate;
+}
+.arm-wave {
+  transform-origin: 0% 0%;
+  animation: wave 0.7s ease-in-out infinite alternate;
+}
+.av-eyes {
+  transform-origin: 50% 50%;
+  animation: blink 4.2s infinite;
+}
+.stage.pop .avatar {
+  animation: hop 0.3s ease-out;
+}
+@keyframes breathe {
+  50% {
+    transform: translateY(-1.6px);
+  }
+}
+@keyframes wag {
+  to {
+    transform: rotate(16deg);
+  }
+}
+@keyframes wave {
+  to {
+    transform: rotate(-9deg);
+  }
+}
+@keyframes blink {
+  0%,
+  94%,
+  100% {
+    transform: scaleY(1);
+  }
+  97% {
+    transform: scaleY(0.1);
+  }
+}
+@keyframes hop {
+  40% {
+    transform: translateY(-8px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+  }
+}

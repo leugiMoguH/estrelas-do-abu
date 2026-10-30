@@ -1,0 +1,13 @@
+import { chromium } from '@playwright/test';
+const b = await chromium.launch();
+const p = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+await p.goto('http://localhost:5199/preview/d/index.html');
+await p.waitForTimeout(900);
+await p.getByRole('button', { name: /Surpresa/ }).click();
+await p.waitForTimeout(400);
+await p.screenshot({ path: 'tests/shots/proto/d2-1.png' });
+await p.getByRole('button', { name: /Gabardina/ }).click();
+await p.waitForTimeout(400);
+await p.screenshot({ path: 'tests/shots/proto/d2-2.png' });
+await p.screenshot({ path: 'tests/shots/proto/d2-map.png', fullPage: true });
+await b.close();
