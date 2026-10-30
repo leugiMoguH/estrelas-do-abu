@@ -1,0 +1,25 @@
+/* Fontes self-host (OFL 1.1; ver fonts/LICENSES.txt). Só subconjunto latino: cobre o português europeu. */
+@font-face {
+  font-family: 'Fredoka';
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/fredoka_latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/baloo-2_latin-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Andika';
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/andika_latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Andika';
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/andika_latin-700-normal.woff2') format('woff2');
+}

@@ -18,6 +18,11 @@ export interface AppState {
   ui: { storageError?: boolean };
 }
 
+/** Espaço de nomes do armazenamento: as pré-visualizações usam o seu para nunca tocar no progresso do jogo. */
+const NS = (globalThis as { EDA_NS?: string }).EDA_NS ?? 'eda';
+const APP_KEY = `${NS}:app:v1`;
+const SAVE_KEY = `${NS}:save:v2`;
+
 const initial = (): AppState => ({
   profile: { grade: 6, onboarded: false, avatar: defaultAvatar(), equipped: {} },
   options: { music: true, sfx: true, volume: 0.4, reduceMotion: false, textScale: 1 },
@@ -31,7 +36,7 @@ const initial = (): AppState => ({
 function load(): AppState {
   const state = initial();
   try {
-    const raw: unknown = JSON.parse(localStorage.getItem('eda:app:v1') ?? 'null');
+    const raw: unknown = JSON.parse(localStorage.getItem(APP_KEY) ?? 'null');
     if (raw && typeof raw === 'object') {
       const app = raw as Partial<AppState>;
       if (app.profile && typeof app.profile.onboarded === 'boolean' && app.profile.avatar) {
@@ -63,7 +68,7 @@ function load(): AppState {
     state.ui.storageError = true;
   }
   try {
-    const saved = localStorage.getItem('eda:save:v2');
+    const saved = localStorage.getItem(SAVE_KEY);
     if (saved) {
       const result = importSave(saved);
       if (result.ok) state.save = result.save;
@@ -87,8 +92,8 @@ export function update(change: Partial<AppState> | ((state: AppState) => AppStat
   state = typeof change === 'function' ? change(state) : { ...state, ...change };
   try {
     const { save, ui: _ui, ...app } = state;
-    localStorage.setItem('eda:app:v1', JSON.stringify(app));
-    localStorage.setItem('eda:save:v2', exportSave(save));
+    localStorage.setItem(APP_KEY, JSON.stringify(app));
+    localStorage.setItem(SAVE_KEY, exportSave(save));
   } catch {
     state = { ...state, ui: { ...state.ui, storageError: true } };
   }
