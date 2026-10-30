@@ -11,6 +11,7 @@ export default defineConfig({
         previewB: 'preview/b/index.html',
         previewC: 'preview/c/index.html',
         previewD: 'preview/d/index.html',
+        previewDP: 'preview/d/piloto/index.html',
       },
     },
   },

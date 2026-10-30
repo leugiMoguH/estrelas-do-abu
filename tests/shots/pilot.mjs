@@ -1,0 +1,12 @@
+import { chromium } from '@playwright/test';
+const b = await chromium.launch();
+const p = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+const errs = []; p.on('pageerror', (e) => errs.push(String(e))); p.on('console', (m) => m.type() === 'error' && errs.push(m.text()));
+await p.goto('http://localhost:5199/preview/d/piloto/index.html');
+await p.waitForTimeout(1000);
+await p.screenshot({ path: 'tests/shots/proto/p-1.png' });
+await p.getByRole('button', { name: 'Surpresa' }).click(); await p.getByRole('button', { name: 'Gabardina' }).click(); await p.getByRole('button', { name: 'Pele escura' }).click();
+await p.waitForTimeout(500);
+await p.screenshot({ path: 'tests/shots/proto/p-2.png' });
+await p.screenshot({ path: 'tests/shots/proto/p-full.png', fullPage: true });
+console.log(errs.join('\n') || 'ok'); await b.close();
