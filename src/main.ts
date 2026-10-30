@@ -1,1 +1,1 @@
-document.getElementById("app")!.textContent = "Estrelas do Abu";
+document.getElementById('app')!.textContent = 'Estrelas do Abu';

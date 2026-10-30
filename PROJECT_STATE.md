@@ -3,7 +3,7 @@ Plano: v1
 Atualizado: 2026-10-30
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: Revisão do plano pelo Codex (só leitura) e arranque do scaffold
+Próximo passo: Auditoria externa (ChatGPT) ao núcleo via branch audit/core-1; depois conteúdo dos 6 temas com geradores e UI
 Decisão necessária:
 
 ## Sucesso
@@ -44,6 +44,13 @@ Decisão necessária:
 - Arte própria em SVG em vez de pacotes de terceiros (coerência, tons de pele, sem licenças) — a confirmar após pesquisa de ativos.
 - Sem Phaser na demo: mapa SVG interativo + DOM chegam.
 - Nome de trabalho: Estrelas do Abu.
+- Revisão Codex do plano (2026-10-30) aceite: sessão inicial de 3 perguntas, Surpreende-me, 1.ª sessão paga um acessório, exercícios serializáveis (dados + validadores puros), nível 'A descobrir' até haver evidência, banco esgotado nunca bloqueia, ordenar por toque. Âmbito: 3 temas/disciplina, 4 formatos (mcq, numérico/texto, ordenar, completar). Codex implementa por módulos; Claude coordena e verifica.
+
+- Arte 100% SVG própria (pesquisa 2026-10-30: sem cidade/salas CC0 coerentes; nemo e Kenney UI não descarregados, não usados). Áudio: WebAudio sintetizado; música CC0 só se verificada.
+- Temas demo — Matemática: racionais (frações/decimais), prioridades das operações, proporcionalidade direta. Português: classes de palavras, tempos/modos verbais, frase ativa/passiva. Ref. AE provisória (planificações com base nas AE 2018); PDFs DGE 03/2026 (6_matematica.pdf, 6_portugues.pdf) por confirmar quando dge.mec.pt voltar (estava 503).
+- Nome 'Estrelas do Abu': sem conflito evidente na web; INPI/EUIPO por verificar antes de publicar.
+- Produção de exercícios (pesquisa 2026-10-30): geradores TS próprios ao estilo Numbas (variáveis, restrições, seed) + banco JSON revisto com licença própria; ideias do Numbas, não o motor. Moodle XML só como exportador futuro (YAGNI). IA só em produção, com oráculo independente (gerador/CAS) e revisão humana PT-PT; nunca em runtime. Terceiros só CC0/CC BY ou autorização (Khan/OpenStax são NC-SA: evitar no núcleo). Itens IAVE/DGE: sem banco oficial reutilizável confirmado; só como modelo de estilo. Por verificar: termos de reutilização IAVE/DGE (sites inacessíveis).
+- Núcleo v2 (geradores, histórico, simulação) implementado e verificado 2026-10-30; limites em docs/AUDIT_SUMMARY.md. Repo público só-código autorizado para auditoria; app NÃO publicada.
 
 ## Estacionadas
 ## Bloqueios
