@@ -146,7 +146,7 @@ body[data-theme] .welcome-links {
 }
 
 /* Personalizar: separadores, pré-visualização fixa, chips com miniatura */
-body[data-theme] .tabs-row {
+.tabs-row {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -155,21 +155,21 @@ body[data-theme] .tabs-row {
   margin: 0 -4px;
   scrollbar-width: none;
 }
-body[data-theme] .tabs-row::-webkit-scrollbar {
+.tabs-row::-webkit-scrollbar {
   display: none;
 }
-body[data-theme] .tabs-row button {
+.tabs-row button {
   flex: 0 0 auto;
   min-height: 44px;
   padding: 6px 16px;
   border-radius: 999px;
 }
-body[data-theme] .chip-grid {
+.chip-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
   gap: 10px;
 }
-body[data-theme] .chip-grid button {
+.chip-grid button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,22 +179,22 @@ body[data-theme] .chip-grid button {
   font-size: 0.9em;
   line-height: 1.2;
 }
-body[data-theme] .chip-grid .chip-art {
+.chip-grid .chip-art {
   width: 56px;
   height: 56px;
   display: grid;
   place-items: center;
   overflow: hidden;
 }
-body[data-theme] .chip-grid .chip-art svg {
+.chip-grid .chip-art svg {
   width: 100%;
   height: 100%;
 }
-body[data-theme] .chip-grid .chip-dot {
+.chip-grid .chip-dot {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid var(--ink);
+  border: 2px solid #3d2f35;
 }
 
 /* Barra da pré-visualização (fora do jogo): fixa em baixo, discreta */
@@ -208,7 +208,7 @@ body[data-theme] .chip-grid .chip-dot {
   align-items: center;
   gap: 6px;
   max-width: calc(100vw - 16px);
-  padding: 6px 8px;
+  padding: 4px 6px;
   border-radius: 999px;
   background: rgba(30, 24, 30, 0.88);
   color: #fff;
@@ -222,8 +222,8 @@ body[data-theme] .chip-grid .chip-dot {
 }
 .preview-bar button,
 body[data-theme] .preview-bar button {
-  min-height: 34px;
-  padding: 4px 12px;
+  min-height: 44px;
+  padding: 4px 14px;
   border: 0;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.16);
@@ -249,17 +249,17 @@ body[data-theme] .preview-bar button:hover {
 body[data-theme] .screen {
   padding-bottom: 90px;
 }
-body[data-theme] .chip-art.is-crop svg {
+.chip-art.is-crop svg {
   width: 100%;
   height: auto;
   max-width: none;
-  transform: scale(var(--z));
-  transform-origin: var(--x) var(--y);
+  transform: translateY(calc(28px - var(--y))) scale(var(--z));
+  transform-origin: 50% var(--y);
 }
-body[data-theme] .chip-art.is-crop {
+.chip-art.is-crop {
   align-items: start;
 }
-body[data-theme] .group-title {
+.group-title {
   font-size: 1.1em;
   margin: 14px 0 8px;
 }

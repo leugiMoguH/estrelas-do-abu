@@ -61,6 +61,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
   let tab = initial;
   let filter = '';
   let section = 'Pele';
+  let refocus = '';
   let feedback = '';
   let celebration = false;
   const render = (): void => {
@@ -111,7 +112,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
         {
           name: 'Cabelo',
           groups: [
-            { title: 'Penteado', slot: 'hairStyle', items: CATALOG.filter((i) => i.slot === 'hairStyle' && allowed(i.id)), crop: '--z:2.1;--x:50%;--y:14%' },
+            { title: 'Penteado', slot: 'hairStyle', items: CATALOG.filter((i) => i.slot === 'hairStyle' && allowed(i.id)), crop: '--z:1.8;--y:26px' },
             { title: 'Cor do cabelo', slot: 'hairColor', items: [...HAIR_COLORS] },
           ],
         },
@@ -125,14 +126,14 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
         {
           name: 'Roupa',
           groups: [
-            { title: 'Parte de cima', slot: 'top', items: CATALOG.filter((i) => i.slot === 'top' && allowed(i.id)), crop: '--z:1.9;--x:50%;--y:46%' },
-            { title: 'Parte de baixo', slot: 'bottom', items: CATALOG.filter((i) => i.slot === 'bottom' && allowed(i.id)), crop: '--z:1.9;--x:50%;--y:74%' },
+            { title: 'Parte de cima', slot: 'top', items: CATALOG.filter((i) => i.slot === 'top' && allowed(i.id)), crop: '--z:1.7;--y:52px' },
+            { title: 'Parte de baixo', slot: 'bottom', items: CATALOG.filter((i) => i.slot === 'bottom' && allowed(i.id)), crop: '--z:1.7;--y:72px' },
           ],
         },
-        { name: 'Calçado', groups: [{ title: 'Calçado', slot: 'shoes', items: CATALOG.filter((i) => i.slot === 'shoes' && allowed(i.id)), crop: '--z:2.4;--x:50%;--y:96%' }] },
+        { name: 'Calçado', groups: [{ title: 'Calçado', slot: 'shoes', items: CATALOG.filter((i) => i.slot === 'shoes' && allowed(i.id)), crop: '--z:2;--y:86px' }] },
         {
           name: 'Acessórios',
-          groups: [{ title: 'Acessório', slot: 'accessory', items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter((i) => i.slot === 'accessory' && allowed(i.id))], crop: '--z:2.1;--x:50%;--y:16%' }],
+          groups: [{ title: 'Acessório', slot: 'accessory', items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter((i) => i.slot === 'accessory' && allowed(i.id))], crop: '--z:1.8;--y:26px' }],
         },
         {
           name: 'Abu',
@@ -146,12 +147,18 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
       for (const x of SECTIONS) {
         const t = action(x.name, () => {
           section = x.name;
+          refocus = '.tabs-row';
           render();
         });
         t.setAttribute('aria-pressed', String(x === current));
         row.append(t);
       }
       controls.append(row);
+      if (refocus) {
+        const where = refocus;
+        refocus = '';
+        queueMicrotask(() => main.querySelector<HTMLElement>(`${where} [aria-pressed="true"]`)?.focus());
+      }
       for (const g of current.groups) {
         const box = document.createElement('section');
         box.setAttribute('aria-label', g.title);
@@ -159,7 +166,10 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
         const grid = document.createElement('div');
         grid.className = 'chip-grid';
         for (const item of g.items) {
-          const choice = action('', () => apply1(g.slot, item.id));
+          const choice = action('', () => {
+            refocus = '.chip-grid';
+            apply1(g.slot, item.id);
+          });
           choice.setAttribute('aria-pressed', String(avatar[g.slot] === item.id));
           const art = document.createElement('span');
           art.setAttribute('aria-hidden', 'true');

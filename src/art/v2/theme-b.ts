@@ -96,9 +96,9 @@ const SPOTS: readonly Spot[] = [
   { id: 'matematica', name: 'Laboratório dos Números', subject: 'Matemática', rect: [580, 740, 440, 480], label: [800, 1255] },
 ];
 const PLAZA: readonly Spot[] = [
-  { id: 'loja', name: 'Loja', subject: '', rect: [345, 610, 120, 110], label: [405, 740] },
-  { id: 'conquistas', name: 'Conquistas', subject: '', rect: [620, 565, 90, 130], label: [665, 712] },
-  { id: 'minijogo', name: 'Minijogo', subject: '', rect: [565, 678, 110, 120], label: [620, 818] },
+  { id: 'loja', name: 'Loja', subject: '', rect: [330, 600, 150, 130], label: [405, 740] },
+  { id: 'conquistas', name: 'Conquistas', subject: '', rect: [595, 550, 140, 150], label: [665, 712] },
+  { id: 'minijogo', name: 'Minijogo', subject: '', rect: [545, 702, 150, 130], label: [620, 818] },
 ];
 
 function pill(cx: number, cy: number, text: string, fill: string, color: string, size: number): string {

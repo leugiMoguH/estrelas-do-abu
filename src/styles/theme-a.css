@@ -16,11 +16,11 @@ body[data-theme='a'] {
   --btn-border: 3px solid #cdaaf0;
   --btn-shadow: 0 5px 0 #cdaaf0, inset 0 3px 0 rgba(255, 255, 255, 0.9);
   --btn-shadow-pressed: 0 1px 0 #cdaaf0, inset 0 3px 0 rgba(255, 255, 255, 0.9);
-  --primary-bg: linear-gradient(#ff8fc0, #ff5fa2);
-  --primary-hover: linear-gradient(#ff9fca, #ff6faa);
-  --primary-border: 3px solid #c92f78;
+  --primary-bg: linear-gradient(#e0428c, #c2256f);
+  --primary-hover: linear-gradient(#e955a0, #cf2f7c);
+  --primary-border: 3px solid #8f1650;
   --primary-ink: #fff;
-  --primary-shadow: 0 6px 0 #c92f78, inset 0 4px 0 rgba(255, 255, 255, 0.45);
+  --primary-shadow: 0 6px 0 #8f1650, inset 0 4px 0 rgba(255, 255, 255, 0.45);
   --quiet-bg: rgba(255, 255, 255, 0.6);
   --selected-bg: linear-gradient(#e3d1ff, #cfb2ff);
   --selected-line: #7a3fa8;
