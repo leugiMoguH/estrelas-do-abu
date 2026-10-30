@@ -28,7 +28,7 @@ app.innerHTML =
   `<span class="floor"></span><span class="shadow g"></span><span class="shadow a"></span><img class="girl" alt="A tua personagem" /><img class="abu" alt="Abu, o pinscher" /><p class="bubble" role="status"></p></div>` +
   `<section class="panel">${seg('Expressão', 'face', [['happy', 'Contente'], ['wow', 'Surpresa']])}${seg('Roupa', 'outfit', [['hoodie', 'Hoodie'], ['coat', 'Gabardina']])}` +
   `<button class="cta" type="button">Ir para o campus →</button></section>` +
-  `<h2>O campus</h2><div class="map"><img src="${campus}" alt="Mapa do campus" /><button class="tag" style="left:24%;top:68%">Português</button><button class="tag" style="left:80%;top:70%">Matemática</button></div></main>`;
+  `<h2>O campus</h2><div class="map"><img src="${campus}" alt="Mapa do campus" /><button class="tag" style="left:24%;top:68%">Português</button><button class="tag" style="left:80%;top:70%">Matemática</button></div><p class="note">Protótipo. Ilustrações geradas por IA; direitos de uso e exclusividade ainda por verificar. Não publicar como versão final.</p></main>`;
 
 const $ = <T extends HTMLElement>(s: string): T => app.querySelector<T>(s)!;
 function paint(pop: boolean): void {

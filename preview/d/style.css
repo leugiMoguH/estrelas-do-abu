@@ -203,3 +203,9 @@ h2 {
     animation: none !important;
   }
 }
+
+.note {
+  margin: 14px 16px 0;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
