@@ -3,7 +3,7 @@ Plano: v1
 Atualizado: 2026-10-30
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: Publicar demo de teste (GitHub Pages) e entregar à criança; PARAR e aguardar avaliação dela
+Próximo passo: PARADO. Aguardar teste da jogadora em telemóvel real; só depois decidir expansão
 Decisão necessária:
 
 ## Sucesso
@@ -52,6 +52,7 @@ Decisão necessária:
 - Produção de exercícios (pesquisa 2026-10-30): geradores TS próprios ao estilo Numbas (variáveis, restrições, seed) + banco JSON revisto com licença própria; ideias do Numbas, não o motor. Moodle XML só como exportador futuro (YAGNI). IA só em produção, com oráculo independente (gerador/CAS) e revisão humana PT-PT; nunca em runtime. Terceiros só CC0/CC BY ou autorização (Khan/OpenStax são NC-SA: evitar no núcleo). Itens IAVE/DGE: sem banco oficial reutilizável confirmado; só como modelo de estilo. Por verificar: termos de reutilização IAVE/DGE (sites inacessíveis).
 - Núcleo v2 (geradores, histórico, simulação) implementado e verificado 2026-10-30; limites em docs/AUDIT_SUMMARY.md. Repo público só-código autorizado para auditoria; app NÃO publicada.
 - Demo jogável implementada 2026-10-30: arte SVG própria (Claude), conteúdo/fluxo/extras (Codex), verificada em 390×844, 820×1180, 1280×800. Sem revisão docente do conteúdo; sem validação pela criança. Teste unitário 'limita FIFO' falhou 1 vez, sem reprodução (timeout subido para 30 s).
+- Demo publicada 2026-10-30: https://leugimoguh.github.io/estrelas-do-abu/ (branch gh-pages; código na main). Expansão de conteúdo/funcionalidades suspensa até avaliação da criança.
 
 ## Estacionadas
 ## Bloqueios
