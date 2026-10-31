@@ -1,3 +1,4 @@
+import { tutorButton, setTutorMode } from './tutor';
 import { abuSvg } from '../art';
 import { gamePack, TOPICS } from '../../content';
 import { materialize } from '../core/content';
@@ -31,6 +32,7 @@ export function startSession(
 ): void {
   const topic = TOPICS.find((t) => t.id === topicId);
   if (!topic) return;
+  setTutorMode(mode);
   const before = getState().save;
   const rng = seededRng(Date.now());
   const ids = competencyIds?.length ? competencyIds : topic.competencyIds;
@@ -145,18 +147,25 @@ export function startSession(
     submit.type = 'submit';
     actions.append(submit);
     let hint: HTMLButtonElement | undefined;
+    const requestHint = (): string => {
+      if (hintCount >= exercise.hints.length) return 'Já vimos todas as pistas. Vai com calma e relê os passos!';
+      const text = exercise.hints[hintCount++]!;
+      const p = document.createElement('p');
+      p.textContent = `💡 ${text}`;
+      hintBox.append(p);
+      if (hint) {
+        hint.disabled = hintCount >= exercise.hints.length;
+        hint.textContent = hint.disabled ? 'Já tens todas as pistas' : 'Mais uma pista';
+      }
+      return text;
+    };
     if (mode !== 'test' && exercise.hints.length) {
-      hint = button('Uma pista', () => {
-        if (hintCount < exercise.hints.length) {
-          const p = document.createElement('p');
-          p.textContent = `💡 ${exercise.hints[hintCount++]}`;
-          hintBox.append(p);
-        }
-        hint!.disabled = hintCount >= exercise.hints.length;
-        hint!.textContent = hint!.disabled ? 'Já tens todas as pistas' : 'Mais uma pista';
-      });
+      hint = button('Uma pista', requestHint);
       actions.append(hint);
     }
+    main.append(tutorButton({ subject: topic.subject, competencyId: exercise.competencyId, mode,
+      compact: true, practice: () => startSession(topic.id, 'study', count),
+      hint: mode === 'test' ? undefined : requestHint }));
     const abu = document.createElement('aside');
     abu.className = 'abu-line';
     abu.innerHTML = `${abuSvg('think', getState().profile.avatar.abuAccessory)}<p>${mode === 'test' ? 'Vai ao teu ritmo. Vemos as respostas no fim.' : 'Pensa com calma. Estou aqui para ajudar!'}</p>`;

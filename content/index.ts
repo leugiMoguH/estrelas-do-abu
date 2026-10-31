@@ -60,15 +60,15 @@ export const TOPICS: Topic[] = [
     competencyIds: ['pt-voz'],
   },
 ];
-type SubjectId = 'matematica' | 'portugues' | 'ingles' | 'historia' | 'ciencias' | 'evt' | 'musica';
-export const SUBJECTS: { id: SubjectId; name: string; building: string; active: boolean }[] = [
+export type SubjectId = 'matematica' | 'portugues' | 'ingles' | 'historia' | 'ciencias' | 'evt' | 'musica';
+export const SUBJECTS: { id: SubjectId; name: string; building: string; active: boolean; tutor?: { id: string; name: string; ready: false } }[] = [
   { id: 'matematica', name: 'Matemática', building: 'Laboratório dos Números', active: true },
   { id: 'portugues', name: 'Português', building: 'Biblioteca', active: true },
-  { id: 'ingles', name: 'Inglês', building: 'Casa das Línguas', active: false },
-  { id: 'historia', name: 'História', building: 'Museu das Descobertas', active: false },
-  { id: 'ciencias', name: 'Ciências', building: 'Jardim das Ciências', active: false },
-  { id: 'evt', name: 'EVT', building: 'Atelier Criativo', active: false },
-  { id: 'musica', name: 'Música', building: 'Estúdio Musical', active: false },
+  { id: 'ingles', tutor: { id: 'ingles', name: 'Tutor em preparação', ready: false }, name: 'Inglês', building: 'Casa das Línguas', active: false },
+  { id: 'historia', tutor: { id: 'historia', name: 'Tutor em preparação', ready: false }, name: 'História', building: 'Museu das Descobertas', active: false },
+  { id: 'ciencias', tutor: { id: 'ciencias', name: 'Tutor em preparação', ready: false }, name: 'Ciências', building: 'Jardim das Ciências', active: false },
+  { id: 'evt', tutor: { id: 'evt', name: 'Tutor em preparação', ready: false }, name: 'EVT', building: 'Atelier Criativo', active: false },
+  { id: 'musica', tutor: { id: 'musica', name: 'Tutor em preparação', ready: false }, name: 'Música', building: 'Estúdio Musical', active: false },
 ];
 export const gamePack: ContentPack & { readonly review: 'approved' } = {
   review: 'approved',
@@ -87,3 +87,5 @@ export const gamePack: ContentPack & { readonly review: 'approved' } = {
   })),
   templates: [...mathTemplates, ...portugueseTemplates],
 };
+
+export { TUTORS, validateLessons } from './tutor';

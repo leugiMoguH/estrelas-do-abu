@@ -46,9 +46,10 @@ def back_fill(arr):
     return out
 def save(arr, name):
     Image.fromarray(arr, 'RGBA').resize(SIZE, Image.LANCZOS).save(f'{OUT}/{name}.webp', quality=86, alpha_quality=92, method=6)
-for n, f in sorted(SOURCES.items()):
-    arr = key(f)
-    if n.startswith('hair-') and n != 'hair-coque': arr = back_fill(arr)
-    save(arr, n); print('ok', n)
-for n in ('body_skin', 'body_under'):
-    save(np.array(Image.open(f'{n}.png').convert('RGBA')), n); print('ok', n)
+if __name__ == '__main__':
+    for n, f in sorted(SOURCES.items()):
+        arr = key(f)
+        if n.startswith('hair-') and n != 'hair-coque': arr = back_fill(arr)
+        save(arr, n); print('ok', n)
+    for n in ('body_skin', 'body_under'):
+        save(np.array(Image.open(f'{n}.png').convert('RGBA')), n); print('ok', n)

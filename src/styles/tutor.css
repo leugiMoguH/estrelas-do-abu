@@ -1,0 +1,17 @@
+.tutor-button { display:flex; align-items:center; gap:.75rem; margin:1rem 0; }
+.tutor-button img { width:90px; height:100px; object-fit:contain; }
+.tutor-initial { border-radius:50%; background:#e6edff; color:#243451; padding:1rem; }
+.tutor-compact { font-size:.9rem; padding:.35rem .7rem; }
+.tutor-compact img { width:40px; height:45px; }
+.tutor-dialog { width:min(34rem, calc(100vw - 2rem)); max-height:85dvh; overflow:auto; padding:1.25rem; box-sizing:border-box; }
+.tutor-dialog::backdrop { background:#18263899; }
+.tutor-close { position:sticky; top:0; display:block; margin-left:auto; z-index:1; background:white; }
+.tutor-dialog button { display:block; margin:.6rem 0; }
+.tutor-dialog .tutor-close { margin-left:auto; }
+.tutor-portrait { float:right; width:80px; font-size:1.5rem; }
+.tutor-portrait img { width:100%; height:90px; object-fit:contain; }
+.tutor-dialog h2 { clear:both; }
+.tutor-dialog p { line-height:1.6; }
+.tutor-test-note { font-size:.9rem; }
+@media (prefers-reduced-motion: reduce) { .tutor-dialog, .tutor-button { animation:none; transition:none; } }
+.reduce-motion .tutor-dialog, .reduce-motion .tutor-button { animation:none; transition:none; }

@@ -1,3 +1,4 @@
+import { tutorButton, setTutorMode } from './tutor';
 import { roomSvg } from '../art';
 import { TOPICS, SUBJECTS, gamePack } from '../../content';
 import { dueCompetencies } from '../core/review';
@@ -12,6 +13,7 @@ export function openRoom(subject: string, topicId?: string): void {
   let mode: Mode = 'study';
   let count = getState().save.seen.length ? 5 : 3;
   const render = (): void => {
+    setTutorMode(mode);
     const main = frame(SUBJECTS.find((s) => s.id === subject)?.building ?? 'A tua sala', openMap);
     main.insertAdjacentHTML(
       'beforeend',
@@ -72,6 +74,7 @@ export function openRoom(subject: string, topicId?: string): void {
       );
     if (selected) {
       const topic = selected;
+      main.append(tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, practice: () => startSession(topic.id, 'study', count) }));
       const due = dueCompetencies(getState().save.mastery, Date.now(), topic.competencyIds);
       main.append(
         button(
