@@ -1,9 +1,9 @@
 Projeto: Estrelas do Abu
 Plano: v1
-Atualizado: 2026-10-30
+Atualizado: 2026-10-31
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: Redesign artístico (branch redesign/art-v1): terminar propostas A/B em /preview/ e apresentar; ver .claude/tmp/handoff.md
+Próximo passo: avaliação da criança da versão de testes da Fase 2 (https://leugimoguh.github.io/estrelas-do-abu/preview/e/); não expandir catálogo/currículo antes. Pendentes: termos/direitos das imagens IA, revisão docente das lições do tutor.
 Decisão necessária:
 
 ## Sucesso
@@ -54,6 +54,8 @@ Decisão necessária:
 - Demo jogável implementada 2026-10-30: arte SVG própria (Claude), conteúdo/fluxo/extras (Codex), verificada em 390×844, 820×1180, 1280×800. Sem revisão docente do conteúdo; sem validação pela criança. Teste unitário 'limita FIFO' falhou 1 vez, sem reprodução (timeout subido para 30 s).
 - Demo publicada 2026-10-30: https://leugimoguh.github.io/estrelas-do-abu/ (branch gh-pages; código na main). Expansão de conteúdo/funcionalidades suspensa até avaliação da criança.
 - Redesign (2026-10-30): produtor considera a arte da v0.1 abaixo do objetivo; pedidas 2 direções (A vetorial «Doce Gomoso», B ilustrada «Mundo Ilustrado» com imagens geradas pelo Codex image_gen) em /preview/; demo pública não muda. Expansão de conteúdo continua suspensa.
+
+- Fase 2 (2026-10-31): direção D aprovada pela criança. Personalização por camadas (corpo-molde + camadas raster geradas no lugar + rosto/acessórios SVG, cor por mapa de gradiente): 8 tons de pele, 8 penteados, 7 tops, 5 baixos, 4 calçados, casaco, 3 óculos, 4 chapéus, 4 acessórios, 2 mochilas; Abu com 8 poses, acessórios (pescoço/corpo/cabeça), piscar, saltos, travessuras opcionais; tutores Matemática (Professor Nuno) e Português (Marta, a lontra) com lições pré-escritas (needs-human-review), bloqueados no Teste; salas e mapa D. Revisão independente do Codex feita e defeitos confirmados corrigidos. Verificado: tsc, 70 unit, 27 e2e (3 viewports), build. Publicado só em preview/e/ (armazenamento eda-e). Demo raiz e previews A–D intactas; tag v0.1-demo-publicada e phase2-checkpoint-pre para recuperar. Ver docs/PHASE2_SPEC.md e docs/ASSETS_PROVENANCE.md.
 
 ## Estacionadas
 ## Bloqueios
