@@ -150,6 +150,8 @@ export function openOptions(): void {
 function confirmDialog(parent: HTMLElement, title: string, description: string, proceed: () => void): void {
   const dialog = document.createElement('dialog');
   const heading = document.createElement('h2');
+  heading.id = 'confirm-options-title';
+  dialog.setAttribute('aria-labelledby', heading.id);
   heading.textContent = title;
   const text = document.createElement('p');
   text.textContent = description;

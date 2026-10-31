@@ -6,7 +6,12 @@ export const MANIFEST: Record<string, Layer> = Object.fromEntries(CATALOG.map(i 
 export const BODY: Layer[] = [{ slot: 'skin', file: 'd4/body_skin.webp', z: 10 }, { slot: 'under', file: 'd4/body_under.webp', z: 20 }];
 // Vite só inclui ficheiros presentes; uma camada em falta não origina pedidos 404.
 const assets = import.meta.glob<string>('../assets/d4/*.webp', { eager: true, query: '?url', import: 'default' });
-export const assetUrl = (file: string): string | undefined => assets[`../assets/${file}`];
+const warned = new Set<string>();
+export const assetUrl = (file: string): string | undefined => {
+ const url = assets[`../assets/${file}`];
+ if (!url && !warned.has(file)) { warned.add(file); console.warn(`Asset D ausente: ${file}`); }
+ return url;
+};
 export function missingAssets(exists: (file: string) => boolean): string[] {
   return [...new Set([...BODY, ...Object.values(MANIFEST)].flatMap(i => [i.file, i.hairFront].filter((f): f is string => !!f)))].filter(f => !exists(f));
 }

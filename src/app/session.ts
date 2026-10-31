@@ -101,8 +101,9 @@ export function startSession(
   const render = (): void => {
     const main = frame(topic.title, () => {
       const dialog = document.createElement('dialog');
+      dialog.setAttribute('aria-labelledby', 'exit-session-title');
       dialog.innerHTML =
-        '<h2>Voltar à sala?</h2><p>As respostas dadas ficam guardadas. Só ganhas estrelas quando terminas a sessão.</p>';
+        '<h2 id="exit-session-title">Voltar à sala?</h2><p>As respostas dadas ficam guardadas. Só ganhas estrelas quando terminas a sessão.</p>';
       dialog.append(
         button('Continuar a jogar', () => dialog.close(), 'primary'),
         button('Voltar à sala', () => {

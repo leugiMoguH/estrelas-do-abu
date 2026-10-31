@@ -15,6 +15,7 @@ export function openRoom(subject: string, topicId?: string): void {
   let mode: Mode = 'study';
   let count = getState().save.seen.length ? 5 : 3;
   const render = (): void => {
+    const focusId = (document.activeElement as HTMLElement | null)?.dataset.focusId;
     setTutorMode(mode);
     const main = frame(SUBJECTS.find((s) => s.id === subject)?.building ?? 'A tua sala', openMap);
     main.insertAdjacentHTML(
@@ -33,6 +34,7 @@ export function openRoom(subject: string, topicId?: string): void {
         },
         'topic-card',
       );
+      card.dataset.focusId = `topic-${topic.id}`;
       card.innerHTML = `<span class="topic-icon">${escape(topic.icon)}</span><strong>${escape(topic.title)}</strong><span>${escape(topic.blurb)}</span>`;
       card.setAttribute('aria-pressed', String(selected?.id === topic.id));
       cards.append(card);
@@ -53,6 +55,7 @@ export function openRoom(subject: string, topicId?: string): void {
         },
         'mode-card',
       );
+      choice.dataset.focusId = `mode-${id}`;
       choice.innerHTML = `<strong>${label}</strong><span>${description}</span>`;
       choice.setAttribute('aria-pressed', String(mode === id));
       modes.append(choice);
@@ -65,6 +68,7 @@ export function openRoom(subject: string, topicId?: string): void {
         count = n;
         render();
       });
+      choice.dataset.focusId = `count-${n}`;
       choice.disabled = !getState().save.seen.length && n !== 3;
       choice.setAttribute('aria-pressed', String(count === n));
       counts.append(choice);
@@ -99,6 +103,7 @@ export function openRoom(subject: string, topicId?: string): void {
       if (errorIds.length)
         main.append(button('Estudar os erros', () => startSession(topic.id, 'study', count, errorIds)));
     }
+    if (focusId) main.querySelector<HTMLElement>(`[data-focus-id="${CSS.escape(focusId)}"]`)?.focus();
   };
   navigate(render);
 }

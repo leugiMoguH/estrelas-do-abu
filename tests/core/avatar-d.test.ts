@@ -1,18 +1,28 @@
 import { describe, it, expect, vi, afterEach } from 'vitest';
 const assets = import.meta.glob('/src/art/assets/d4/*.webp', { eager: true, query: '?url', import: 'default' });
-const realImages = import.meta.glob('/tests/shots/d-src/layers/key/*.png', { eager: true, query: '?url', import: 'default' });
 import { CATALOG, defaultAvatar, normalizeAvatar } from '../../src/art/catalog';
-import { MANIFEST, missingAssets } from '../../src/art/d/manifest';
+import { MANIFEST, missingAssets, assetUrl } from '../../src/art/d/manifest';
 import { ramp, sampleRamp } from '../../src/art/d/filters';
 import { SKIN_TONES } from '../../src/art/palette';
+import { contrastRatio, faceColors } from '../../src/art/d/face';
+const fsModule = 'node:fs';
+const { readFileSync } = await import(fsModule) as { readFileSync(path: string, encoding: string): string };
 import { avatarD } from '../../src/art/d/compose';
 afterEach(() => { vi.unstubAllGlobals(); vi.resetModules(); });
 describe('Avatar D', () => {
- it('cobre o catálogo e lista assets ausentes (estrito opt-in)', () => {
+ it('avisa uma só vez por asset ausente em runtime', () => {
+  const warning = vi.spyOn(console, 'warn').mockImplementation(() => {});
+  try {
+   expect(assetUrl('d4/absent-test.webp')).toBeUndefined();
+   expect(assetUrl('d4/absent-test.webp')).toBeUndefined();
+   expect(warning).toHaveBeenCalledExactlyOnceWith('Asset D ausente: d4/absent-test.webp');
+  } finally { warning.mockRestore(); }
+ });
+ it('cobre o catálogo e lista assets ausentes', () => {
   expect(CATALOG.every(i=>MANIFEST[i.id]?.slot===i.slot)).toBe(true);
   const missing = missingAssets(f=>!!assets[`/src/art/assets/${f}`]);
   console.info(`Cobertura D: ${missing.length} ficheiros em falta: ${missing.join(', ')}`);
-  if ((globalThis as unknown as { process: { env: Record<string, string> } }).process.env.STRICT_ASSETS==='1') expect(missing).toEqual([]);
+  expect(missing).toEqual([]);
  });
  it('replica a rampa HLS de referência e mantém contraste nos oito tons', () => {
   expect(ramp('#ebb98f')[2]).toEqual([235/255,185/255,143/255]);
@@ -60,11 +70,29 @@ describe('Avatar D', () => {
   const b = avatarD(defaultAvatar(),{},()=>undefined);
   expect(/id="([^"]+)-skin"/.exec(a)![1]).not.toBe(/id="([^"]+)-skin"/.exec(b)![1]);
  });
- it('compõe com imagens reais apenas na página de verificação, pela ordem contratada', () => {
-  for (const name of ['body_base','hair_long','coat_open']) expect(realImages[`/tests/shots/d-src/layers/key/${name}.png`]).toBeTruthy();
-  const resolve = (f:string)=>f.includes('body_skin')?'shots/d-src/layers/key/body_base.png':f.includes('hair-comprido')?'shots/d-src/layers/key/hair_long.png':f.includes('outer-gabardina')?'shots/d-src/layers/key/coat_open.png':undefined;
+ it('compõe com WebP de produção pela ordem contratada', () => {
+  const resolve = (f: string)=>assets[`/src/art/assets/${f}`] as string | undefined;
   const svg = avatarD({...defaultAvatar(),hairStyle:'hair-comprido',outer:'outer-gabardina',glasses:'acc-oculos'}, {}, resolve);
-  const positions = ['body_base.png','coat_open.png','hair_long.png','data-layer="face"','data-item="acc-oculos"'].map(v=>svg.indexOf(v));
+  const positions = ['body_skin.webp','outer-gabardina.webp','hair-comprido.webp','data-layer="face"','data-item="acc-oculos"'].map(v=>svg.indexOf(v));
   expect(positions.every((v,i)=>v>=0 && (!i||v>positions[i-1]!))).toBe(true);
+ });
+});
+
+describe('Contraste D calculado', () => {
+ it('aviso de gravação tem contraste de texto >= 4.5:1', () => {
+  const css = readFileSync('src/styles/app.css','utf8');
+  const notice = /\.notice\s*\{([^}]+)\}/.exec(css)![1]!;
+  const color = /(?:^|;)\s*color:\s*(#[0-9a-f]{6})/i.exec(notice)![1]!;
+  const bg = /background:\s*(#[0-9a-f]{6})/i.exec(notice)![1]!;
+  expect(contrastRatio(color,bg)).toBeGreaterThanOrEqual(4.5);
+ });
+ it('lábios >= 1.25:1 e contorno dos olhos >= 1.4:1 nos oito tons', () => {
+  // Limiares artísticos de separação de traços; não são texto WCAG.
+  // Medem o tom base da pele, sem pretender medir todos os píxeis da rampa.
+  for (const tone of SKIN_TONES) {
+   const colors=faceColors(tone.hex);
+   expect(contrastRatio(colors.lip,tone.hex),tone.name).toBeGreaterThanOrEqual(1.25);
+   expect(contrastRatio(colors.eye,tone.hex),tone.name).toBeGreaterThanOrEqual(1.4);
+  }
  });
 });

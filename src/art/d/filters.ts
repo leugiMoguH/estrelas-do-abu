@@ -19,8 +19,32 @@ export function sampleRamp(colors: number[][], x: number): number[] {
   const t = (v-STOPS[j]!)/(STOPS[j+1]!-STOPS[j]!);
   return [0,1,2].map(c => colors[j]![c]!*(1-t)+colors[j+1]![c]!*t);
 }
+const filterCache = new Map<string, string>();
 export function gradientFilter(id: string, hex: string, sourceWhite = 207/255): string {
+  const key = `${hex}:${sourceWhite}`;
+  const cached = filterCache.get(key);
+  if (cached) return cached.replace('FILTER_ID', id);
   const colors = ramp(hex);
   const tables = [0,1,2].map(c => Array.from({length:256},(_,i) => sampleRamp(colors,i/255)[c]!.toFixed(6)).join(' '));
-  return `<filter id="${id}" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="${Array.from({length:3},()=>`${.299/sourceWhite} ${.587/sourceWhite} ${.114/sourceWhite} 0 0`).join(' ')} 0 0 0 1 0"/><feComponentTransfer>${['R','G','B'].map((c,i)=>`<feFunc${c} type="table" tableValues="${tables[i]}"/>`).join('')}</feComponentTransfer></filter>`;
+  const markup = `<filter id="FILTER_ID" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="${Array.from({length:3},()=>`${.299/sourceWhite} ${.587/sourceWhite} ${.114/sourceWhite} 0 0`).join(' ')} 0 0 0 1 0"/><feComponentTransfer>${['R','G','B'].map((c,i)=>`<feFunc${c} type="table" tableValues="${tables[i]}"/>`).join('')}</feComponentTransfer></filter>`;
+  filterCache.set(key, markup);
+  return markup.replace('FILTER_ID', id);
+}
+
+/** Shared document filters retain the exact 256 samples used by full-size avatars. */
+export function thumbnailFilter(hex: string, sourceWhite?: number): string {
+ const id = `d-filter-${hex.slice(1)}-${sourceWhite ?? 'skin'}`.replaceAll('.', '-');
+ if (!document.getElementById(id)) {
+  let registry: HTMLElement | SVGSVGElement | null = document.getElementById('d-filter-registry');
+  if (!registry) {
+   registry = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+   registry.id = 'd-filter-registry';
+   registry.setAttribute('width', '0'); registry.setAttribute('height', '0');
+   registry.setAttribute('aria-hidden', 'true');
+   registry.style.position = 'absolute';
+   document.body.append(registry);
+  }
+  registry.insertAdjacentHTML('beforeend', gradientFilter(id, hex, sourceWhite));
+ }
+ return id;
 }

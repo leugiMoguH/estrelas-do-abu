@@ -1,7 +1,7 @@
 .tutor-button { display:flex; align-items:center; gap:.75rem; margin:1rem 0; }
 .tutor-button img { width:90px; height:100px; object-fit:contain; }
 .tutor-initial { border-radius:50%; background:#e6edff; color:#243451; padding:1rem; }
-.tutor-compact { font-size:.9rem; padding:.35rem .7rem; }
+.tutor-compact { font-size:calc(.9rem * var(--text-scale)); padding:.35rem .7rem; }
 .tutor-compact img { width:40px; height:45px; }
 .tutor-dialog { width:min(34rem, calc(100vw - 2rem)); max-height:85dvh; overflow:auto; padding:1.25rem; box-sizing:border-box; }
 .tutor-dialog::backdrop { background:#18263899; }
@@ -12,6 +12,6 @@
 .tutor-portrait img { width:100%; height:90px; object-fit:contain; }
 .tutor-dialog h2 { clear:both; }
 .tutor-dialog p { line-height:1.6; }
-.tutor-test-note { font-size:.9rem; }
+.tutor-test-note { font-size:calc(.9rem * var(--text-scale)); }
 @media (prefers-reduced-motion: reduce) { .tutor-dialog, .tutor-button { animation:none; transition:none; } }
 .reduce-motion .tutor-dialog, .reduce-motion .tutor-button { animation:none; transition:none; }

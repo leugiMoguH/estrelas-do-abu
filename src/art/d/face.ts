@@ -1,9 +1,21 @@
 import { EYE_COLORS, HAIR_COLORS, SKIN_TONES, shade, type AvatarConfig } from '../palette';
+/** WCAG relative luminance ratio; artistic features are checked against the base skin swatch. */
+export function contrastRatio(a: string, b: string): number {
+ const luminance = (hex: string): number => {
+  const rgb = [1,3,5].map(i => parseInt(hex.slice(i,i+2),16)/255).map(v => v <= .04045 ? v/12.92 : ((v+.055)/1.055)**2.4);
+  return rgb[0]!*.2126+rgb[1]!*.7152+rgb[2]!*.0722;
+ };
+ const x=luminance(a), y=luminance(b);
+ return (Math.max(x,y)+.05)/(Math.min(x,y)+.05);
+}
+export function faceColors(skin: string): { lip: string; blush: string; eye: string } {
+ return { lip: shade(skin,-.24), blush: shade(skin,.12), eye: '#35251f' };
+}
 export function faceD(c: AvatarConfig, id: string): string {
  const skin = SKIN_TONES.find(t=>t.id===c.skin)?.hex ?? '#ebb98f';
  const iris = EYE_COLORS.find(t=>t.id===c.eyeColor)?.hex ?? '#7a4020';
  const hair = HAIR_COLORS.find(t=>t.id===c.hairColor)?.hex ?? '#7a4a2b';
- const lip = shade(skin,-.24), blush = shade(skin,.12);
+ const {lip, blush} = faceColors(skin);
  const eye = (x: number, wink = false): string => `<g transform="translate(${x} 196)"><g class="eye">${c.eyes==='sorridentes' || wink ? '<path d="M-22 2 Q0 -22 22 2" fill="none" stroke="#35251f" stroke-width="5"/>' : `<ellipse rx="${c.eyes==='amendoa'?27:22}" ry="${c.eyes==='amendoa'?18:25}" fill="#fff8ed" stroke="#35251f" stroke-width="2.5"/><ellipse cy="2" rx="16" ry="20" fill="url(#${id}-iris)"/><ellipse cy="3" rx="8" ry="10" fill="#241911"/><circle cx="-6" cy="-6" r="${c.eyes==='brilhantes'?7:5}" fill="white"/>${c.eyes==='estrela'?'<path d="M0 -12 L3 -3 12 0 3 3 0 12 -3 3 -12 0 -3 -3Z" fill="#fff4ba"/>':'<circle cx="6" cy="9" r="3" fill="white"/>'}<path d="M-24 -10 Q0 -34 24 -10 M-20 -14 L-27 -22" fill="none" stroke="#35251f" stroke-width="4" stroke-linecap="round"/>`}</g></g>`;
  const mouth = c.expression==='curiosa' ? '<ellipse cx="508" cy="278" rx="12" ry="16"/>' : c.expression==='calma' ? '<path d="M486 274 Q508 284 530 274" fill="none"/>' : `<path d="M478 272 Q508 ${c.expression==='sorriso-grande'?320:300} 540 272 Q508 284 478 272Z"/>`;
  return `<defs><radialGradient id="${id}-iris"><stop stop-color="${shade(iris,.4)}"/><stop offset=".65" stop-color="${iris}"/><stop offset="1" stop-color="${shade(iris,-.6)}"/></radialGradient><radialGradient id="${id}-blush"><stop stop-color="${blush}" stop-opacity=".7"/><stop offset="1" stop-color="${lip}" stop-opacity="0"/></radialGradient><linearGradient id="${id}-lip" x2="0" y2="1"><stop stop-color="${lip}"/><stop offset="1" stop-color="${shade(lip,-.3)}"/></linearGradient></defs><g data-layer="face"><ellipse cx="430" cy="235" rx="30" ry="20" fill="url(#${id}-blush)"/><ellipse cx="586" cy="235" rx="30" ry="20" fill="url(#${id}-blush)"/>${eye(448)}${eye(568,c.expression==='divertida')}<path d="M418 160 Q448 ${c.expression==='curiosa'?136:146} 478 158 M538 158 Q568 146 598 160" fill="none" stroke="${hair}" stroke-width="6" stroke-linecap="round"/><path d="M503 243 Q494 255 511 255" fill="none" stroke="${lip}" stroke-width="2.5"/><g fill="url(#${id}-lip)" stroke="${shade(lip,-.3)}" stroke-width="2.5">${mouth}</g></g>`;

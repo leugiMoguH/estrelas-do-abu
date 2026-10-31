@@ -358,6 +358,7 @@ summary {
   font-weight: 700;
 }
 .notice {
+  color: #49332e;
   border-left: 4px solid #896322;
   padding: 12px;
   background: #fff0c9;

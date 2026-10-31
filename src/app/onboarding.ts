@@ -21,6 +21,7 @@ export function openOnboarding(): void {
   let detailsOpen = true;
   let section = 'Aparência';
   const render = (): void => {
+    const focusId = (document.activeElement as HTMLElement | null)?.dataset.focusId;
     const main = frame('Vamos conhecer-nos!', openWelcome);
     main.insertAdjacentHTML(
       'beforeend',
@@ -37,6 +38,7 @@ export function openOnboarding(): void {
         render();
       }),
     );
+    (choices.lastElementChild as HTMLElement).dataset.focusId = 'random-avatar';
     const details = document.createElement('details');
     details.innerHTML = '<summary>Escolher os detalhes da personagem</summary>';
     details.open = detailsOpen;
@@ -49,6 +51,7 @@ export function openOnboarding(): void {
     tabs.setAttribute('aria-label', 'Personalizar personagem');
     for (const name of ['Aparência', 'Roupa', 'Acessórios']) {
       const tab = button(name, () => { section = name; detailsOpen = true; render(); });
+      tab.dataset.focusId = `tab-${name}`;
       tab.setAttribute('aria-pressed', String(section === name));
       tabs.append(tab);
     }
@@ -59,25 +62,28 @@ export function openOnboarding(): void {
       items: readonly { id: string; name: string; hex?: string }[],
     ): void => {
       const category = ['skin','hairColor','eyeColor','eyes','hairStyle'].includes(slot) ? 'Aparência' : ['top','bottom','shoes','outer'].includes(slot) ? 'Roupa' : 'Acessórios';
-      if (category !== section || !items.length) return;
+      if (category !== section) return;
       const group = document.createElement('fieldset');
       group.innerHTML = `<legend>${escape(title)}</legend>`;
-      items.forEach((item) => {
+      const optional = ['accessory','outer','glasses','hat','backpack'].includes(slot);
+      const available = optional ? [{ id: '', name: 'Nenhum' }, ...items] : items;
+      available.forEach((item) => {
         const choice = button(
           item.name,
           () => {
-            avatar = { ...avatar, [slot]: item.id };
+            avatar = { ...avatar, [slot]: item.id || null };
             detailsOpen = true;
             render();
           },
           'choice',
         );
-        choice.setAttribute('aria-pressed', String(avatar[slot] === item.id));
+        choice.dataset.focusId = `${slot}-${item.id || 'none'}`;
+        choice.setAttribute('aria-pressed', String((avatar[slot] ?? '') === item.id));
         if (item.hex) choice.style.borderBottom = `8px solid ${item.hex}`;
         else
           choice.insertAdjacentHTML(
             'afterbegin',
-            `<span class="mini-avatar">${avatarSvg({ ...avatar, [slot]: item.id }, { size: 70 })}</span>`,
+            `<span class="mini-avatar">${avatarSvg({ ...avatar, [slot]: item.id || null }, { size: 70 })}</span>`,
           );
         group.append(choice);
       });
@@ -125,6 +131,7 @@ export function openOnboarding(): void {
         'primary',
       ),
     );
+    if (focusId) main.querySelector<HTMLElement>(`[data-focus-id="${CSS.escape(focusId)}"]`)?.focus();
   };
   navigate(render);
 }
