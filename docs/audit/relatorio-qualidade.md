@@ -11,8 +11,8 @@ Gerado por docs/audit/build-audit.cjs a partir dos dados reais. Data: 2026-10-31
 - Fontes por pesquisa nesta auditoria: INE (comércio externo 2024, Censos 2021), Governo/AMT (portos 2024), INE/ANA (aeroportos 2024), Turismo de Portugal (ET27), Museu do Aljube, U.Porto, UNESCO, Marinha, Min. Educação (liceus). Muitas foram lidas só nos resumos devolvidos pela pesquisa, sem abrir o documento primário.
 
 ## Cobertura curricular
-Ver matriz-curricular.md. Descritores transcritos: 65. Coberto 28 (43,1% de 65; 45,9% de 61 sem TIC/TIG; 49,1% de 57 sem TIC/TIG nem «A confirmar»). Parcialmente coberto 23, Não coberto 10 (6 sem TIC/TIG), A confirmar 4.
-Principais lacunas (Não coberto): XVIII-4 (Evidenciar a importância da introdução da batata e do milho …); XIX-1 (Identificar medidas de modernização da agricultura e os seus…); XIX-3 (Exemplificar aspetos da modernização dos meios de comunicaçã…); LUG-6 (Identificar ações para solucionar ou mitigar problemas socia…); LUG-8 (Reconhecer características ambientais, sociais, culturais e …); ATV-2 (Utilizar representações cartográficas na análise da distribu…).
+Ver matriz-curricular.md. Descritores transcritos: 45. Coberto 21 (46,7% de 45; 51,2% de 41 sem TIC/TIG; 51,2% de 41 sem TIC/TIG nem «A confirmar»). Parcialmente coberto 16, Não coberto 8 (4 sem TIC/TIG), A confirmar 0.
+Principais lacunas (Não coberto): XVIII-3 (Evidenciar a importância da introdução de novas culturas com…); LUG-6 (Identificar ações a empreender de formas a solucionar ou mit…); LUG-8 (Reconhecer algumas características ambientais, sociais, cult…); ATV-2 (Utilizar diferentes formas de representação cartográfica na …).
 
 ## Variedade dos exercícios
 - Formatos: {"mcq":101,"order":16,"numeric":24,"cloze":10}. Competências: {"personagem":9,"facto":28,"conceito":23,"causa":13,"vf":11,"fonte":11,"opiniao":11,"cronologia":20,"comparacao":12,"consequencia":8,"mapa":5}. Dificuldade 1/2/3: {"1":45,"2":83,"3":23}.

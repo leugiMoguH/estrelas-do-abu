@@ -4,6 +4,7 @@ import { seededRng } from '../../src/core/session';
 import type { TutorLesson } from '../tutor';
 import type { HgpBank, HgpItem } from './schema';
 import { hgpTopics } from './topics';
+import { validationOf } from './validacao';
 
 export const hgpBanks = import.meta.glob('./bank-*.ts', { eager: true }) as Record<string, { bank: HgpBank }>;
 const banks = Object.values(hgpBanks).map(module => module.bank);
@@ -19,7 +20,7 @@ export function hgpTemplate(item: HgpItem): ExerciseTemplate {
     approachId: item.skill,
     difficulties: [item.difficulty],
     instances: 1,
-    review: 'approved',
+    review: validationOf(item.id) === 'a-confirmar' ? 'needs-human-review' : 'approved',
     source: item.sources.join(', '),
     generate(seed): Exercise {
       const rng = seededRng(seed);

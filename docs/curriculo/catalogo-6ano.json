@@ -1,0 +1,73 @@
+{
+  "ano": 6,
+  "ciclo": 2,
+  "anoLetivo": "2026/2027",
+  "nota": "Catálogo de arranque. «descritores» só é preenchido depois de extraídos do texto oficial (docs/curriculo/FONTES.md). Nenhuma disciplina é apresentada como completa.",
+  "estadosFonte": ["lido-integralmente", "obtido-por-extrair", "nao-obtido"],
+  "disciplinas": [
+    {
+      "id": "historia", "nome": "História e Geografia de Portugal", "fonte": "ae-hgp6.pdf (DGE, julho 2018)", "estadoFonte": "lido-integralmente",
+      "formato": "quiz-digital", "avaliavelPorQuiz": "conhecimento, relações causais, cronologia, mapas, fontes",
+      "naoAvaliavelPorQuiz": "pesquisas documentais, uso de TIC/TIG, debates",
+      "dominios": ["Portugal do século XVIII ao século XIX", "Portugal do século XX", "Portugal Hoje"],
+      "temas": 11, "descritoresOficiais": 45, "cobertura": "docs/audit/matriz-curricular.md (Coberto 21; Parcial 16; Não coberto 8, dos quais 4 TIC/TIG)",
+      "itens": 151, "licoes": 11, "validacao": "docs/audit/auditoria-itens.json"
+    },
+    {
+      "id": "matematica", "nome": "Matemática", "fonte": "6_matematica.pdf (aemat_6a_2021-08-19, DGE)", "estadoFonte": "obtido-por-extrair",
+      "formato": "quiz-digital + geradores deterministicos", "avaliavelPorQuiz": "cálculo, resolução de problemas, geometria e medida, dados",
+      "naoAvaliavelPorQuiz": "construções com material, argumentação oral",
+      "dominios": ["a extrair (o texto contém, pelo menos, Geometria e Medida e Capacidades Matemáticas)"],
+      "temasNoJogo": 3, "descritoresOficiais": null, "cobertura": "por medir", "itens": "geradores existentes (núcleo v2)", "validacao": "geradores com solução calculada"
+    },
+    {
+      "id": "portugues", "nome": "Português", "fonte": "6_portugues.pdf (DGE, julho 2018)", "estadoFonte": "obtido-por-extrair",
+      "formato": "quiz-digital parcial", "avaliavelPorQuiz": "gramática, compreensão de textos curtos, léxico",
+      "naoAvaliavelPorQuiz": "oralidade, escrita autónoma, leitura expressiva",
+      "dominios": ["a extrair (o texto contém, pelo menos, Oralidade, Educação Literária, Gramática)"],
+      "temasNoJogo": 3, "descritoresOficiais": null, "cobertura": "por medir", "itens": "banco existente", "validacao": "por auditar"
+    },
+    {
+      "id": "ingles", "nome": "Inglês", "fonte": "6_ingles.pdf (DGE, julho 2018)", "estadoFonte": "obtido-por-extrair",
+      "formato": "quiz-digital parcial (áudio só com síntese local, a avaliar)", "avaliavelPorQuiz": "vocabulário, gramática, compreensão escrita",
+      "naoAvaliavelPorQuiz": "produção e interação orais",
+      "dominios": ["a extrair"], "temasNoJogo": 0, "descritoresOficiais": null, "cobertura": "0 (sem conteúdo)", "itens": 0
+    },
+    {
+      "id": "ciencias", "nome": "Ciências Naturais", "fonte": "6_ciencias_naturais.pdf (DGE, julho 2018)", "estadoFonte": "obtido-por-extrair",
+      "formato": "quiz-digital", "avaliavelPorQuiz": "conceitos, esquemas, interpretação de dados",
+      "naoAvaliavelPorQuiz": "trabalho experimental e de campo",
+      "dominios": ["a extrair (o texto contém, pelo menos, Processos vitais comuns aos seres vivos; Agressões do meio e integridade do organismo)"],
+      "temasNoJogo": 0, "descritoresOficiais": null, "cobertura": "0 (sem conteúdo)", "itens": 0
+    },
+    {
+      "id": "tic", "nome": "Tecnologias da Informação e Comunicação", "fonte": "6_tic.pdf (DGE, julho 2018)", "estadoFonte": "obtido-por-extrair",
+      "formato": "maioritariamente prático", "avaliavelPorQuiz": "conceitos e segurança digital", "naoAvaliavelPorQuiz": "uso de ferramentas",
+      "dominios": ["a extrair"], "temasNoJogo": 0, "descritoresOficiais": null, "cobertura": "0", "itens": 0
+    },
+    {
+      "id": "educacao-musical", "nome": "Educação Musical", "fonte": "ae_em.pdf (DGE, 2.º ciclo, sem data visível)", "estadoFonte": "obtido-por-extrair",
+      "formato": "prático", "avaliavelPorQuiz": "teoria musical básica, reconhecimento de notação, história da música", "naoAvaliavelPorQuiz": "execução, audição crítica, composição",
+      "dominios": ["a extrair"], "temasNoJogo": 0, "descritoresOficiais": null, "cobertura": "0", "itens": 0
+    },
+    {
+      "id": "educacao-tecnologica", "nome": "Educação Tecnológica", "fonte": "ae_et.pdf (DGE; cabeçalho 5.º ano — falta confirmar o 6.º)", "estadoFonte": "obtido-por-extrair",
+      "formato": "prático", "avaliavelPorQuiz": "conceitos (materiais, segurança, processos)", "naoAvaliavelPorQuiz": "construção e projeto",
+      "dominios": ["a extrair"], "temasNoJogo": 0, "descritoresOficiais": null, "cobertura": "0", "itens": 0
+    },
+    {
+      "id": "educacao-visual", "nome": "Educação Visual", "fonte": null, "estadoFonte": "nao-obtido",
+      "formato": "prático", "avaliavelPorQuiz": "conceitos (cor, forma, perspetiva)", "naoAvaliavelPorQuiz": "produção plástica",
+      "dominios": [], "temasNoJogo": 0, "descritoresOficiais": null, "cobertura": "0",
+      "limitacao": "Só existe cópia da proposta de 2026 (não vigente). Não extrair descritores até haver referencial vigente."
+    }
+  ],
+  "esquemaDescritor": {
+    "id": "disciplina-dominio-n", "ano": 6, "disciplina": "", "dominio": "", "tema": "", "subtema": "", "texto": "", "operacao": "recordar|compreender|aplicar|comparar|interpretar|resolver|justificar|identificar-erros|relacionar",
+    "prerequisitos": [], "relacoes": [], "dificuldade": "1-3", "fonte": {"documento": "", "pagina": ""}, "conteudos": {"licoes": [], "itens": []}, "estado": "coberto|parcial|nao-coberto"
+  },
+  "esquemaItem": {
+    "id": "estavel", "ano": 6, "disciplina": "", "descritor": "", "tipoRaciocinio": "", "enunciado": "", "solucao": "", "equivalentes": [], "justificacao": "", "pistas": [], "dificuldade": "1-3",
+    "fontes": [], "validacao": "verificado-documentalmente|verificado-por-calculo|revisto-nao-comprovado|a-confirmar|rejeitado"
+  }
+}

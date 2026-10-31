@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import matrizRaw from '../../docs/audit/matriz-curricular.json?raw';
 import { hgpItems, HGP_SOURCES } from '../../content/historia';
 import { hgpTopics } from '../../content/historia/topics';
+import { HGP_A_CONFIRMAR } from '../../content/historia/validacao';
 import { gamePack } from '../../content';
 import { materialize } from '../../src/core/content';
 import { buildSession, seededRng } from '../../src/core/session';
@@ -85,6 +86,15 @@ describe('auditoria pedagógica HGP', () => {
       for (const t of topicIds) expect(all.filter((x) => x === t).length).toBeLessThanOrEqual(2);
       expect(new Set(all.map((x) => x)).size, 'sem repetir tema antes de cobrir os outros').toBeGreaterThanOrEqual(8);
     }
+  });
+
+  it('itens a confirmar nunca entram nas sessões', () => {
+    for (const mode of ['study', 'test'] as const)
+      for (const seed of [1, 2, 3, 4, 5, 6, 7, 8]) {
+        const ids = session(mode, stateFor(mastery({})), topicIds, 12, seed).exercises.map((e) => e.id);
+        for (const id of HGP_A_CONFIRMAR) expect(ids).not.toContain(id);
+      }
+    expect(HGP_A_CONFIRMAR.length).toBeGreaterThan(0);
   });
 
   it('um teste não repete a mesma pergunta nem o mesmo enunciado', () => {

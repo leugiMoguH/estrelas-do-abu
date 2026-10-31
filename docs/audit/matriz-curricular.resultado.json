@@ -1,72 +1,72 @@
 {
  "all": {
-  "C": 28,
-  "P": 23,
-  "N": 10,
-  "AC": 4
+  "C": 21,
+  "P": 16,
+  "N": 8,
+  "AC": 0
  },
  "noTic": {
-  "C": 28,
-  "P": 23,
-  "N": 6,
-  "AC": 4
+  "C": 21,
+  "P": 16,
+  "N": 4,
+  "AC": 0
  },
- "nAll": 65,
- "nNoTic": 61,
- "nAssessable": 57,
+ "nAll": 45,
+ "nNoTic": 41,
+ "nAssessable": 41,
  "perTopic": [
   {
    "tema": "hgp-seculo-xviii",
-   "C": 1,
-   "P": 7,
+   "C": 0,
+   "P": 6,
    "N": 1,
-   "AC": 2,
-   "total": 11,
+   "AC": 0,
+   "total": 7,
    "itens": 14
   },
   {
    "tema": "hgp-liberalismo",
    "C": 4,
-   "P": 2,
+   "P": 0,
    "N": 0,
-   "AC": 1,
-   "total": 7,
+   "AC": 0,
+   "total": 4,
    "itens": 14
   },
   {
    "tema": "hgp-xix-segunda-metade",
-   "C": 3,
+   "C": 2,
    "P": 2,
-   "N": 2,
+   "N": 0,
    "AC": 0,
-   "total": 7,
+   "total": 4,
    "itens": 14
   },
   {
    "tema": "hgp-republica",
    "C": 3,
-   "P": 2,
+   "P": 0,
    "N": 0,
    "AC": 0,
-   "total": 5,
+   "total": 3,
    "itens": 14
   },
   {
    "tema": "hgp-ditadura",
-   "C": 4,
-   "P": 1,
+   "C": 2,
+   "P": 0,
    "N": 0,
    "AC": 0,
-   "total": 5,
+   "total": 2,
    "itens": 13
   },
   {
    "tema": "hgp-25-abril",
-   "C": 4,
-   "P": 2,
+   "C": 1,
+   "P": 1,
    "N": 0,
-   "AC": 1,
-   "total": 7,
+   "AC": 0,
+   "total": 2,
    "itens": 14
   },
   {
@@ -117,13 +117,23 @@
  ],
  "orfaos": [
   "hgp-seculo-xviii-06",
+  "hgp-liberalismo-01",
   "hgp-xix-segunda-metade-01",
   "hgp-xix-segunda-metade-07",
   "hgp-xix-segunda-metade-09",
+  "hgp-republica-01",
+  "hgp-republica-02",
   "hgp-republica-03",
   "hgp-republica-05",
+  "hgp-republica-11",
+  "hgp-ditadura-01",
+  "hgp-ditadura-02",
   "hgp-ditadura-06",
+  "hgp-ditadura-09",
+  "hgp-ditadura-12",
   "hgp-25-abril-06",
+  "hgp-25-abril-07",
+  "hgp-25-abril-11",
   "hgp-populacao-01",
   "hgp-populacao-11",
   "hgp-lugares-08",
@@ -134,9 +144,16 @@
   "hgp-lazer-02",
   "hgp-lazer-08",
   "hgp-lazer-12",
+  "hgp-mundo-01",
   "hgp-mundo-02",
+  "hgp-mundo-03",
+  "hgp-mundo-04",
   "hgp-mundo-09",
   "hgp-mundo-11",
-  "hgp-mundo-12"
+  "hgp-mundo-12",
+  "hgp-xix-segunda-metade-13",
+  "hgp-ditadura-13",
+  "hgp-25-abril-13",
+  "hgp-25-abril-14"
  ]
 }
