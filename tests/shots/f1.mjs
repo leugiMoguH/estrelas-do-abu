@@ -44,7 +44,7 @@ try {
   await click(/Surpreende/);
   await click(/Vamos ao centro/); await shot('mapa');
   await page.locator('[data-target="matematica"]').click(); await shot('sala');
-  await click(/^Falar com/); await shot('tutor'); await click(/^Fechar$/);
+  await click(/perguntar$/); await shot('tutor'); await click(/^Fechar$/);
   await click(/Começar a estudar/); await shot('exercicio');
   for(let i=0;i<3;i++) {
    const order=page.locator('.order-options button');

@@ -10,6 +10,8 @@ export default defineConfig({
   testDir: 'tests/e2e',
   timeout: 90_000,
   retries: 0,
+  // Os três viewports correm em série para limitar o consumo de memória.
+  workers: 1,
   reporter: [['list']],
   outputDir: 'test-results',
   use: { baseURL: 'http://localhost:4173/' },

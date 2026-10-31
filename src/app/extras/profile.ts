@@ -77,6 +77,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     preview.className = `panel extras-preview${celebration ? ' purchase-pop' : ''}`;
     preview.setAttribute('aria-label', 'A tua personagem e o Abu');
     preview.innerHTML = avatarSvg(avatar, { size: 360 });
+    preview.querySelector('svg')?.setAttribute('viewBox', '100 -70 824 1606');
     const dog = document.createElement('div');
     dog.className = 'abu-preview';
     dog.innerHTML = abuSvg(pose, avatar);
@@ -87,10 +88,12 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     for (const [id,name] of [['sit','Sentado'],['stand','De pé'],['happy','Feliz'],['sleep','A dormir'],['think','Curioso'],['lie','Deitado']]) poses.add(new Option(name,id));
     poses.value = pose;
     poses.onchange = () => { pose = poses.value as AbuPose; render(); };
-    poseLabel.append(poses); preview.append(poseLabel);
-    message(preview, feedback || 'As tuas escolhas ficam guardadas automaticamente.');
+    poseLabel.append(poses);
+    /* Os controlos ficam fora do cartão fixo para preservar a altura da personagem. */
     const controls = document.createElement('section');
     controls.className = 'extras-controls';
+    controls.append(poseLabel);
+    message(controls, feedback || 'As tuas escolhas ficam guardadas automaticamente.');
     layout.append(preview, controls);
     main.append(layout);
     const apply = (slot: keyof AvatarConfig, id: string | null): void => {

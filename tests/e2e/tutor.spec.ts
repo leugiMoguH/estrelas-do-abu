@@ -8,10 +8,14 @@ async function room(page: Page, subject = 'matematica'): Promise<void> {
 }
 test('tutor por teclado: navegar, Escape, foco e prática', async ({ page }) => {
   await room(page);
-  const trigger = page.getByRole('button', { name: 'Falar com Professor Nuno' });
+  const trigger = page.getByRole('button', { name: /Professor Nuno: perguntar|Falar com Professor Nuno/ });
+  await expect(page.locator('.room-art .room-tutor')).toHaveCount(1);
+  await expect(page.locator('.room-art .room-abu .abu-sit')).toHaveCount(1);
+  await expect(trigger.locator('img')).toHaveAttribute('src', /tutor-mat-neutral/);
   await trigger.focus(); await page.keyboard.press('Enter');
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();
+  await expect(trigger.locator('img')).toHaveAttribute('src', /tutor-mat-talk/);
   await page.keyboard.press('Tab'); await page.keyboard.press('Enter');
   await expect(dialog.getByRole('heading')).toHaveText('Explica-me esta matéria');
   await dialog.getByRole('button', { name: 'Voltar ao menu' }).click();
@@ -20,6 +24,7 @@ test('tutor por teclado: navegar, Escape, foco e prática', async ({ page }) => 
   await expect(dialog).toContainText('7/8');
   await page.keyboard.press('Escape');
   await expect(dialog).toHaveCount(0); await expect(trigger).toBeFocused();
+  await expect(trigger.locator('img')).toHaveAttribute('src', /tutor-mat-neutral/);
   await trigger.click(); await dialog.getByRole('button', { name: 'Quero praticar' }).click();
   await expect(page.locator('.question-progress')).toContainText('Estudar');
   await expect(dialog).toHaveCount(0);
@@ -32,7 +37,7 @@ test('dica partilha contador, esgota pistas e preserva a resposta', async ({ pag
   if (await choices.count()) await choices.first().click();
   else for (const input of await inputs.all()) await input.fill('nome comum');
   const before = await page.locator('.answer-editor').innerHTML();
-  const trigger = page.getByRole('button', { name: 'Falar com Marta, a lontra' });
+  const trigger = page.getByRole('button', { name: /Marta, a lontra: perguntar|Falar com Marta, a lontra/ });
   await trigger.click();
   const dialog = page.getByRole('dialog');
   await dialog.getByRole('button', { name: 'Dá-me uma dica' }).click();
@@ -56,15 +61,15 @@ test('Teste bloqueia tutor e teclado nas duas disciplinas', async ({ page }) => 
   for (const subject of ['matematica', 'portugues']) {
     await page.evaluate(() => localStorage.clear());
     await room(page, subject);
-    await page.getByRole('button', { name: /Falar com/ }).click();
+    await page.getByRole('button', { name: /Falar com|perguntar$/ }).click();
     await expect(page.getByRole('dialog')).toBeVisible();
     // Simula uma mudança de modo externa enquanto o diálogo está aberto.
     await page.locator('.mode-card').filter({ hasText: 'Teste' }).evaluate((el: HTMLElement) => el.click());
     await expect(page.getByRole('dialog')).toHaveCount(0);
-    await expect(page.getByRole('button', { name: /Falar com/ })).toHaveCount(0);
+    await expect(page.getByRole('button', { name: /Falar com|perguntar$/ })).toHaveCount(0);
     await page.getByRole('button', { name: 'Começar o teste' }).click();
     await expect(page.getByText('No teste não há ajuda; no fim vês a correção')).toBeVisible();
-    await expect(page.getByRole('button', { name: /Falar com|Uma pista/ })).toHaveCount(0);
+    await expect(page.getByRole('button', { name: /Falar com|perguntar$|Uma pista/ })).toHaveCount(0);
     await page.keyboard.press('t'); await page.keyboard.press('Enter');
     await expect(page.getByRole('dialog')).toHaveCount(0);
   }

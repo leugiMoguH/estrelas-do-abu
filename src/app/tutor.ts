@@ -14,7 +14,7 @@ export function setTutorMode(mode: Mode): void {
 export const tutorAllowed = (mode: Mode): boolean => mode !== 'test';
 interface TutorOptions {
   subject: SubjectId; competencyId: string; mode: Mode; practice: () => void;
-  hint?: () => string; compact?: boolean; onTutorOpen?: () => void;
+  hint?: () => string; compact?: boolean; scene?: boolean; onTutorOpen?: () => void;
 }
 export function tutorButton(options: TutorOptions): HTMLElement {
   const tutor = TUTORS[options.subject];
@@ -63,15 +63,23 @@ export function tutorButton(options: TutorOptions): HTMLElement {
       button('Quero praticar', () => { dialog.close(); options.practice(); }));
       title.focus();
     };
-    dialog.addEventListener('close', () => { dialog.remove(); if (active === dialog) active = undefined; if (trigger.isConnected) trigger.focus(); });
-    document.body.append(dialog); dialog.showModal(); menu(); options.onTutorOpen?.();
+    dialog.addEventListener('close', () => { setTriggerPicture(false); dialog.remove(); if (active === dialog) active = undefined; if (trigger.isConnected) trigger.focus(); });
+    document.body.append(dialog); dialog.showModal(); menu(); setTriggerPicture(true); options.onTutorOpen?.();
   }, options.compact ? 'tutor-button tutor-compact' : 'tutor-button');
   trigger.setAttribute('aria-haspopup', 'dialog');
-  trigger.setAttribute('aria-label', `Falar com ${tutor.name}`);
+  trigger.setAttribute('aria-label', options.scene ? `${tutor.name}: perguntar` : `Falar com ${tutor.name}`);
+  if (options.scene) trigger.classList.add('room-tutor');
   const url = assets[`../art/assets/d5/tutor-${tutor.art}-neutral.webp`];
   if (url) { const img = document.createElement('img'); img.src = url; img.alt = ''; trigger.append(img); }
   else { const circle = document.createElement('span'); circle.className = 'tutor-initial'; circle.textContent = `${tutor.name[0]} ${tutor.emoji}`; trigger.append(circle); }
-  trigger.append(document.createTextNode(tutor.ready ? tutor.name : 'O tutor chega com a disciplina'));
+  const label = document.createElement('span');
+  label.textContent = tutor.ready ? `${tutor.name}${options.scene ? ': perguntar' : ''}` : 'O tutor chega com a disciplina';
+  trigger.append(label);
+  const setTriggerPicture = (talk: boolean): void => {
+    const img = trigger.querySelector('img');
+    const src = assets[`../art/assets/d5/tutor-${tutor.art}-${talk ? 'talk' : 'neutral'}.webp`];
+    if (img && src) img.src = src;
+  };
   trigger.disabled = !tutor.ready;
   return trigger;
 }

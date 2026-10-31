@@ -24,8 +24,9 @@ export function openOnboarding(): void {
     const main = frame('Vamos conhecer-nos!', openWelcome);
     main.insertAdjacentHTML(
       'beforeend',
-      `<div class="onboarding-grid"><section class="panel"><div class="avatar-preview">${avatarSvg(avatar, { withAbu: true, size: 240 })}</div><p>Esta é a tua personagem. Podes mudá-la mais tarde.</p></section><section class="panel choices"><label>Como te chamas? (opcional)<input id="nickname" maxlength="24" autocomplete="off" value="${escape(nickname)}"></label><label>Ano<select aria-label="Ano escolar"><option selected>6.º ano</option></select></label></section></div>`,
+      `<div class="onboarding-grid"><section class="panel character-preview"><div class="avatar-preview">${avatarSvg(avatar, { size: 360 })}</div><p>Esta é a tua personagem. Podes mudá-la mais tarde.</p></section><section class="panel choices"><label>Como te chamas? (opcional)<input id="nickname" maxlength="24" autocomplete="off" value="${escape(nickname)}"></label><label>Ano<select aria-label="Ano escolar"><option selected>6.º ano</option></select></label></section></div>`,
     );
+    main.querySelector('.avatar-preview > svg')?.setAttribute('viewBox', '100 -70 824 1606');
     main.querySelector<HTMLInputElement>('#nickname')!.oninput = (event) => {
       nickname = (event.target as HTMLInputElement).value;
     };

@@ -54,3 +54,28 @@ body[data-theme='d'] legend {background:var(--paper); color:var(--ink); border-r
 body[data-theme='d'] .onboarding-grid {align-items:start}
 body[data-theme='d'] :focus-visible {outline-color:#ffd16c; box-shadow:0 0 0 3px #30253d}
 body[data-theme='d'] .panel :focus-visible, body[data-theme='d'] dialog :focus-visible {outline-color:#805523}
+/* Composição da sala: figuras ancoradas no chão, com o texto fora da imagem. */
+body[data-theme='d'] .room-art {position:relative; width:100%; height:auto; aspect-ratio:3/2}
+body[data-theme='d'] .room-art > .room-svg {position:absolute; inset:0; height:100%; width:100%}
+body[data-theme='d'] .room-abu {position:absolute; left:34%; bottom:7%; height:27%; aspect-ratio:1; pointer-events:none}
+body[data-theme='d'] .room-abu > svg {height:100%; width:100%; filter:drop-shadow(0 3px 2px #24162b66)}
+body[data-theme='d'] .room-tutor {position:absolute; right:14%; bottom:8%; height:38%; width:25%; min-height:44px; margin:0; padding:0; border:0; border-radius:12px; background:transparent; box-shadow:none; display:block}
+body[data-theme='d'] .room-tutor:hover {background:transparent; filter:brightness(1.08)}
+body[data-theme='d'] .room-tutor::before {content:''; position:absolute; bottom:0; left:15%; width:70%; height:5%; border-radius:50%; background:#28162b88; filter:blur(3px)}
+body[data-theme='d'] .room-tutor img {position:relative; width:100%; height:100%; object-fit:contain; display:block}
+/* O nome continua acessível sem cobrir a cena com um cartão. */
+.room-tutor > span {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap}
+body[data-theme='d'] .character-preview, body[data-theme='d'] .extras-preview {position:sticky; top:8px; margin-top:0; align-self:start}
+body[data-theme='d'] .avatar-preview > svg, body[data-theme='d'] .extras-preview > .av {width:100%; height:480px; max-height:480px}
+body[data-theme='d'] .extras-preview {padding:16px; position:sticky}
+body[data-theme='d'] .extras-preview .abu-preview {position:absolute; right:8px; bottom:24px; pointer-events:none}
+body[data-theme='d'] .extras-preview .abu-preview svg {height:100px; width:100px}
+@media(max-width:650px) {
+ body[data-theme='d'] .character-preview, body[data-theme='d'] .extras-preview {top:8px; z-index:2; padding:8px 14px; margin:0; height:450px; box-sizing:border-box}
+ body[data-theme='d'] .avatar-preview > svg, body[data-theme='d'] .extras-preview > .av {height:420px; max-height:420px}
+ body[data-theme='d'] .character-preview > p {display:none}
+ body[data-theme='d'] .room-art {max-height:45dvh}
+ body[data-theme='d'] .extras-preview p {font-size:.75em}
+ /* Deslocação independente mantém todas as opções abaixo da pré-visualização. */
+ body[data-theme='d'] .onboarding-grid > .choices, body[data-theme='d'] .extras-controls {max-height:max(210px, calc(100dvh - 480px)); overflow:auto; overscroll-behavior:contain; scroll-padding:12px}
+}
