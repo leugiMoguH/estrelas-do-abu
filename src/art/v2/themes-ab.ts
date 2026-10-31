@@ -6,22 +6,19 @@ import { registerArtTheme } from '../themes';
 import { makeAvatarSvg } from './avatar';
 import { STYLE_A } from './style';
 import { abuB, avatarB, mapB, roomB, starB, welcomeB } from './theme-b';
-
-const abuA = (config: { abuAccessory: string | null }): string =>
-  `<g transform="translate(176 196) scale(.98)">${abuInner('wag', config.abuAccessory)}</g>`;
-
+const abuA = (config: { abuAccessory: string | null; abuNeck?: string | null }): string =>
+  `<g transform="translate(176 196) scale(.98)">${abuInner('wag', config.abuNeck ?? config.abuAccessory)}</g>`;
 registerArtTheme('a', {
   avatarSvg: makeAvatarSvg(STYLE_A, abuA),
-  abuSvg: abuLegacy,
+  abuSvg: (pose, c) => abuLegacy(pose, typeof c === 'object' && c ? c.abuNeck ?? c.abuAccessory : c),
   mapSvg: mapLegacy,
   welcomeSvg: welcomeLegacy,
   roomSvg: roomLegacy,
   starSvg: starLegacy,
 });
-
 registerArtTheme('b', {
   avatarSvg: avatarB,
-  abuSvg: abuB,
+  abuSvg: (pose, c) => abuB(pose, typeof c === 'object' && c ? c.abuNeck ?? c.abuAccessory : c),
   mapSvg: mapB,
   welcomeSvg: welcomeB,
   roomSvg: roomB,

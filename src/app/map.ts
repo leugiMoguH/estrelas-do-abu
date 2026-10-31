@@ -1,3 +1,4 @@
+import { startAbuLife } from './abu-life';
 import { mapSvg, avatarSvg, abuSvg } from '../art';
 import { SUBJECTS, TOPICS } from '../../content';
 import { button, frame, navigate } from './router';
@@ -9,6 +10,7 @@ export function openMap(): void {
   navigate(() => {
     const state = getState();
     const main = frame('O teu centro de descobertas');
+    startAbuLife(main, true);
     const links = document.createElement('div');
     links.className = 'toolbar';
     for (const [label, action] of [
@@ -67,7 +69,7 @@ export function openMap(): void {
       );
     main.insertAdjacentHTML(
       'beforeend',
-      `<aside class="abu-line">${abuSvg('happy', state.profile.avatar.abuAccessory)}<p>Uma pergunta de cada vez. Eu vou contigo!</p><span class="map-avatar">${avatarSvg(state.profile.avatar, { size: 100 })}</span></aside>`,
+      `<aside class="abu-line">${abuSvg('stand', state.profile.avatar)}<p>Uma pergunta de cada vez. Eu vou contigo!</p><span class="map-avatar">${avatarSvg(state.profile.avatar, { size: 100 })}</span></aside>`,
     );
   });
 }

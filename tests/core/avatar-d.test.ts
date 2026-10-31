@@ -46,16 +46,16 @@ describe('Avatar D', () => {
   vi.stubGlobal('localStorage',{getItem:(k:string)=>data.get(k)??null,setItem:(k:string,v:string)=>data.set(k,v)});
   vi.stubGlobal('document',{body:{classList:{toggle:()=>{}},style:{setProperty:()=>{}}}});
   const {getState,update} = await import('../../src/app/store');
-  expect(getState().profile).toMatchObject({version:2,avatar:{skin:'oliva',hairStyle:'hair-rabo',glasses:'acc-sol',accessory:null}});
+  expect(getState().profile).toMatchObject({version:3,avatar:{skin:'oliva',hairStyle:'hair-rabo',glasses:'acc-sol',accessory:null}});
   expect(getState().favorites[0]).toMatchObject({hat:'acc-coroa',top:'top-azul'});
   expect(getState().favorites[1]!.glasses).toBe(null);
   update({});
-  expect(JSON.parse(data.get('eda:app:v1')!).profile.version).toBe(2);
+  expect(JSON.parse(data.get('eda:app:v1')!).profile.version).toBe(3);
  });
  it('omite imagens ausentes sem pedidos, usa Abu D e ids únicos', () => {
   const a = avatarD(defaultAvatar(),{withAbu:true},()=>undefined);
   expect(a).not.toContain('d4/');
-  expect(a).toContain('abu_happy.webp');
+  expect(a).toContain('abu-sit.webp');
   expect(a).not.toContain('abu-tail');
   const b = avatarD(defaultAvatar(),{},()=>undefined);
   expect(/id="([^"]+)-skin"/.exec(a)![1]).not.toBe(/id="([^"]+)-skin"/.exec(b)![1]);

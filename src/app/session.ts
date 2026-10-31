@@ -1,3 +1,4 @@
+import { abuReact } from '../art/d/abu';
 import { tutorButton, setTutorMode } from './tutor';
 import { abuSvg } from '../art';
 import { gamePack, TOPICS } from '../../content';
@@ -164,11 +165,11 @@ export function startSession(
       actions.append(hint);
     }
     main.append(tutorButton({ subject: topic.subject, competencyId: exercise.competencyId, mode,
-      compact: true, practice: () => startSession(topic.id, 'study', count),
+      compact: true, onTutorOpen: () => abuReact(main,'tutor'), practice: () => startSession(topic.id, 'study', count),
       hint: mode === 'test' ? undefined : requestHint }));
     const abu = document.createElement('aside');
     abu.className = 'abu-line';
-    abu.innerHTML = `${abuSvg('think', getState().profile.avatar.abuAccessory)}<p>${mode === 'test' ? 'Vai ao teu ritmo. Vemos as respostas no fim.' : 'Pensa com calma. Estou aqui para ajudar!'}</p>`;
+    abu.innerHTML = `${abuSvg('think', getState().profile.avatar)}<p>${mode === 'test' ? 'Vai ao teu ritmo. Vemos as respostas no fim.' : 'Pensa com calma. Estou aqui para ajudar!'}</p>`;
     form.append(editor.element, hintBox, feedback, actions);
     main.append(form, abu);
     form.onsubmit = (event) => {
@@ -216,7 +217,8 @@ export function startSession(
       const message = document.createElement('p');
       message.append(lead, result.correct ? exercise.explanation : result.feedback);
       feedback.append(message);
-      abu.innerHTML = `${abuSvg(result.correct ? 'happy' : 'sit', getState().profile.avatar.abuAccessory)}<p>${result.correct ? 'Boa descoberta!' : 'Os erros também ajudam a aprender.'}</p>`;
+      abu.innerHTML = `${abuSvg(result.correct ? 'happy' : 'sit', getState().profile.avatar)}<p>${result.correct ? 'Boa descoberta!' : 'Os erros também ajudam a aprender.'}</p>`;
+      abuReact(abu,result.correct?'correct':'wrong');
       actions.replaceChildren();
       if (!result.correct)
         actions.append(

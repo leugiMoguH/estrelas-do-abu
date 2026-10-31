@@ -1,0 +1,473 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "paletteContrast": [
+      {
+        "fg": "#30253d",
+        "bg": "#fff4df",
+        "ratio": 13.211213047447139
+      },
+      {
+        "fg": "#30253d",
+        "bg": "#ffd16c",
+        "ratio": 10.008133218146595
+      },
+      {
+        "fg": "#30253d",
+        "bg": "#ffe1a0",
+        "ratio": 11.339674668955023
+      },
+      {
+        "fg": "#ffe3a1",
+        "bg": "#363259",
+        "ratio": 9.533837602727008
+      },
+      {
+        "fg": "#fff4df",
+        "bg": "#363259",
+        "ratio": 10.95844982934869
+      },
+      {
+        "fg": "#fff4df",
+        "bg": "#292143",
+        "ratio": 13.825942256566005
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "boas-vindas",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "onboarding",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "onboarding-roupa",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "onboarding-acessorios",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "mapTargets": [
+      {
+        "width": 168.2421875,
+        "height": 133.671875
+      },
+      {
+        "width": 130.4453125,
+        "height": 133.671875
+      },
+      {
+        "width": 48.3984375,
+        "height": 50.703125
+      },
+      {
+        "width": 50.703125,
+        "height": 48.3984375
+      },
+      {
+        "width": 50.703125,
+        "height": 46.09375
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "mapa",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "sala",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "tutor",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "exercicio",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "resultado",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "loja",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "personagem",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "conquistas",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "progresso",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "screen": "opcoes",
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "themeComparisons": 4,
+    "progressPreserved": true
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "consoleErrors": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "paletteContrast": [
+      {
+        "fg": "#30253d",
+        "bg": "#fff4df",
+        "ratio": 13.211213047447139
+      },
+      {
+        "fg": "#30253d",
+        "bg": "#ffd16c",
+        "ratio": 10.008133218146595
+      },
+      {
+        "fg": "#30253d",
+        "bg": "#ffe1a0",
+        "ratio": 11.339674668955023
+      },
+      {
+        "fg": "#ffe3a1",
+        "bg": "#363259",
+        "ratio": 9.533837602727008
+      },
+      {
+        "fg": "#fff4df",
+        "bg": "#363259",
+        "ratio": 10.95844982934869
+      },
+      {
+        "fg": "#fff4df",
+        "bg": "#292143",
+        "ratio": 13.825942256566005
+      }
+    ]
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "boas-vindas",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "onboarding",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "onboarding-roupa",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "onboarding-acessorios",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "mapTargets": [
+      {
+        "width": 283.2552185058594,
+        "height": 225.0521240234375
+      },
+      {
+        "width": 219.61978149414062,
+        "height": 225.05206298828125
+      },
+      {
+        "width": 81.484375,
+        "height": 85.364501953125
+      },
+      {
+        "width": 85.364501953125,
+        "height": 81.484375
+      },
+      {
+        "width": 85.36459350585938,
+        "height": 77.6041259765625
+      }
+    ]
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "mapa",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "sala",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "tutor",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "exercicio",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "resultado",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "loja",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "personagem",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "conquistas",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "progresso",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "screen": "opcoes",
+    "overflow": 0
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "themeComparisons": 4,
+    "progressPreserved": true
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "consoleErrors": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "paletteContrast": [
+      {
+        "fg": "#30253d",
+        "bg": "#fff4df",
+        "ratio": 13.211213047447139
+      },
+      {
+        "fg": "#30253d",
+        "bg": "#ffd16c",
+        "ratio": 10.008133218146595
+      },
+      {
+        "fg": "#30253d",
+        "bg": "#ffe1a0",
+        "ratio": 11.339674668955023
+      },
+      {
+        "fg": "#ffe3a1",
+        "bg": "#363259",
+        "ratio": 9.533837602727008
+      },
+      {
+        "fg": "#fff4df",
+        "bg": "#363259",
+        "ratio": 10.95844982934869
+      },
+      {
+        "fg": "#fff4df",
+        "bg": "#292143",
+        "ratio": 13.825942256566005
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "boas-vindas",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "onboarding",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "onboarding-roupa",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "onboarding-acessorios",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "mapTargets": [
+      {
+        "width": 283.2552490234375,
+        "height": 225.0521240234375
+      },
+      {
+        "width": 219.6197509765625,
+        "height": 225.05206298828125
+      },
+      {
+        "width": 81.484375,
+        "height": 85.364501953125
+      },
+      {
+        "width": 85.364501953125,
+        "height": 81.484375
+      },
+      {
+        "width": 85.3646240234375,
+        "height": 77.6041259765625
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "mapa",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "sala",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "tutor",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "exercicio",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "resultado",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "loja",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "personagem",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "conquistas",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "progresso",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "screen": "opcoes",
+    "overflow": 0
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "themeComparisons": 4,
+    "progressPreserved": true
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "consoleErrors": 0
+  }
+]

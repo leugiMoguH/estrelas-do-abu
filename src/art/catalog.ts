@@ -1,7 +1,7 @@
 import type { AvatarConfig } from './palette';
 import { EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
 
-export type Slot = 'hairStyle' | 'top' | 'bottom' | 'shoes' | 'accessory' | 'abuAccessory' | 'outer' | 'glasses' | 'hat' | 'backpack';
+export type Slot = 'hairStyle' | 'top' | 'bottom' | 'shoes' | 'accessory' | 'abuAccessory' | 'abuNeck' | 'abuBody' | 'abuHead' | 'outer' | 'glasses' | 'hat' | 'backpack';
 export interface CatalogItem {
   id: string;
   slot: Slot;
@@ -65,11 +65,18 @@ export const CATALOG: readonly CatalogItem[] = [
   free('acc-laco', 'accessory', 'Laço'),
   free('backpack-rosa', 'backpack', 'Mochila rosa'),
   paid('backpack-azul', 'backpack', 'Mochila azul', 12),
-  free('abu-coleira', 'abuAccessory', 'Coleira do Abu'),
-  paid('abu-laco', 'abuAccessory', 'Laço do Abu', 5),
-  paid('abu-lenco', 'abuAccessory', 'Lenço do Abu', 8),
-  paid('abu-oculos', 'abuAccessory', 'Óculos do Abu', 10),
-  paid('abu-chapeu', 'abuAccessory', 'Chapéu do Abu', 15),
+  free('abu-coleira-estrela', 'abuNeck', 'Coleira de estrela',),
+  free('abu-gravata', 'abuNeck', 'Gravata do Abu'),
+  free('abu-camisola-azul', 'abuBody', 'Camisola azul do Abu'),
+  paid('abu-camisola-listras', 'abuBody', 'Camisola às riscas do Abu', 8),
+  paid('abu-capa', 'abuBody', 'Capa do Abu', 12),
+  free('abu-chapeu-festa', 'abuHead', 'Chapéu de festa do Abu'),
+  paid('abu-borboleta', 'abuHead', 'Laço-borboleta do Abu', 5),
+  free('abu-coleira', 'abuNeck', 'Coleira do Abu'),
+  paid('abu-laco', 'abuNeck', 'Laço do Abu', 5),
+  paid('abu-lenco', 'abuNeck', 'Lenço do Abu', 8),
+  paid('abu-oculos', 'abuHead', 'Óculos do Abu', 10),
+  paid('abu-chapeu', 'abuHead', 'Chapéu do Abu', 15),
 ];
 
 export const defaultAvatar = (): AvatarConfig => ({
@@ -83,7 +90,7 @@ export const defaultAvatar = (): AvatarConfig => ({
   bottom: 'bottom-calcas',
   shoes: 'shoes-brancas',
   accessory: null,
-  abuAccessory: 'abu-coleira',
+  abuAccessory: null, abuNeck: 'abu-coleira', abuBody: null, abuHead: null,
 });
 
 const pick = <T>(rng: () => number, list: readonly T[]): T => list[Math.floor(rng() * list.length)]!;
@@ -104,7 +111,7 @@ export function randomAvatar(rng: () => number, ownedIds: readonly string[]): Av
     bottom: pick(rng, allowed('bottom')),
     shoes: pick(rng, allowed('shoes')),
     accessory: rng() < 0.4 ? pick(rng, accessories) : null,
-    abuAccessory: pick(rng, allowed('abuAccessory')),
+    abuAccessory: null, abuNeck: pick(rng, allowed('abuNeck')), abuBody: null, abuHead: null,
   };
 }
 
@@ -113,6 +120,9 @@ export function normalizeAvatar(value: unknown, ownedIds: readonly string[]): Av
   const result = defaultAvatar();
   if (!value || typeof value !== 'object') return result;
   const source = { ...value } as Record<string, unknown>;
+  const abuLegacy = CATALOG.find(i => i.id === source.abuAccessory && i.slot.startsWith('abu'));
+  if (abuLegacy && source[abuLegacy.slot] === undefined) source[abuLegacy.slot] = abuLegacy.id;
+  source.abuAccessory = null;
   const legacy = CATALOG.find(i => i.id === source.accessory);
   if (legacy && (legacy.slot === 'hat' || legacy.slot === 'glasses')) {
     if (source[legacy.slot] == null) source[legacy.slot] = legacy.id;
@@ -121,10 +131,10 @@ export function normalizeAvatar(value: unknown, ownedIds: readonly string[]): Av
   for (const [slot, options] of [['skin', SKIN_TONES], ['hairColor', HAIR_COLORS], ['eyes', EYE_STYLES], ['expression', EXPRESSIONS], ['eyeColor', EYE_COLORS]] as const) {
     if (options.some(i => i.id === source[slot])) result[slot] = source[slot] as string;
   }
-  for (const slot of ['hairStyle', 'top', 'bottom', 'shoes', 'outer', 'glasses', 'hat', 'backpack', 'accessory', 'abuAccessory'] as const) {
+  for (const slot of ['hairStyle', 'top', 'bottom', 'shoes', 'outer', 'glasses', 'hat', 'backpack', 'accessory', 'abuNeck', 'abuBody', 'abuHead'] as const) {
     const item = CATALOG.find(i => i.id === source[slot] && i.slot === slot);
     if (item && (item.free || ownedIds.includes(item.id))) result[slot] = item.id;
-    else if (source[slot] === null && ['outer','glasses','hat','backpack','accessory','abuAccessory'].includes(slot)) (result as unknown as Record<string, unknown>)[slot] = null;
+    else if (source[slot] === null && ['outer','glasses','hat','backpack','accessory','abuNeck','abuBody','abuHead'].includes(slot)) (result as unknown as Record<string, unknown>)[slot] = null;
   }
   return result;
 }

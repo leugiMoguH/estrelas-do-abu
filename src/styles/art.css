@@ -119,7 +119,6 @@
 }
 .map-hit:hover,
 .map-hit:focus-visible {
-  transform: translateY(-5px) scale(1.025);
   filter: drop-shadow(0 8px 6px rgba(74, 47, 39, 0.25));
 }
 .map-hit:focus-visible .map-focus {
@@ -259,3 +258,29 @@ body.reduce-motion .map-hit {
 @media (max-width:650px) {
   .extras-preview:has(> .av-d) { position:static; }
 }
+
+.abu-d { max-width:100%; overflow:visible; }
+.abu-d-body { transform-origin:50% 80%; }
+.abu-wag .abu-d-body { animation:abu-sway 1.8s ease-in-out infinite alternate; }
+.abu-sleep .abu-d-body { animation:abu-d-breathe 3s ease-in-out infinite alternate; }
+.abu-happy .abu-d-body { animation:abu-jump .55s ease-out 2; }
+.abu-think .abu-d-body { animation:abu-tilt .6s ease-out; }
+.abu-preview .abu-svg { width:180px; height:180px; }
+.abu-life-host { pointer-events:none; position:relative; display:flex; justify-content:flex-end; }
+.abu-life-host svg { width:110px; height:110px; }
+.abu-butterfly { animation:abu-fly 3s linear; }
+@keyframes abu-sway { to { transform:rotate(2deg); } }
+@keyframes abu-d-breathe { to { transform:scale(1.015,1.025); } }
+@keyframes abu-jump { 50% { transform:translateY(-22px); } }
+@keyframes abu-tilt { 50% { transform:rotate(-3deg); } }
+@keyframes abu-fly { from { transform:translateX(-120px); } to { transform:translateX(0); } }
+.reduce-motion .abu-d *, .abu-still *, .reduce-motion .abu-butterfly { animation:none!important; }
+.reduce-motion .abu-blink, .abu-still .abu-blink { visibility:hidden!important; }
+@media(prefers-reduced-motion:reduce) { .abu-d *, .abu-butterfly { animation:none!important; } .abu-blink { visibility:hidden!important; } }
+
+.reduce-motion .abu-base, .abu-still .abu-base { visibility:visible!important; }
+@media(prefers-reduced-motion:reduce) { .abu-base { visibility:visible!important; } }
+
+/* Keep the SVG hit target fixed: CSS transform replaces its translate attribute. */
+.map-body { transform-box:fill-box; transform-origin:50% 100%; transition:transform .18s ease; }
+.map-hit:hover .map-body, .map-hit:focus-visible .map-body { transform:translateY(-5px) scale(1.025); }

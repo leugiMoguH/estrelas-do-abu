@@ -1,15 +1,11 @@
 import type { AvatarOptions } from '../avatar';
-import { defaultAvatar } from '../catalog';
-import { uid, SKIN_TONES, HAIR_COLORS, type AvatarConfig, type AbuPose } from '../palette';
+import { uid, SKIN_TONES, HAIR_COLORS, type AvatarConfig } from '../palette';
 import { assetUrl, BODY, MANIFEST, type Layer } from './manifest';
 import { gradientFilter } from './filters';
 import { faceD } from './face';
 import { accessoryD, headAccessory } from './accessories';
-import abuUrl from '../assets/d/abu_happy.webp';
-/** Ponto de extensão para personalização e poses futuras do Abu D. */
-export function abuD(_config: AvatarConfig = defaultAvatar(), _pose: AbuPose = 'idle'): string {
- return `<image href="${abuUrl}" x="0" y="0" width="400" height="400" preserveAspectRatio="xMidYMid meet"/>`;
-}
+import { abuD } from './abu';
+export { abuD } from './abu';
 export type ResolveAsset = (file: string) => string | undefined;
 export function avatarD(config: AvatarConfig, options: AvatarOptions = {}, resolve: ResolveAsset = assetUrl): string {
  const id = uid('d'), size = options.size ?? 220, pose = options.pose ?? 'idle';
@@ -25,5 +21,5 @@ export function avatarD(config: AvatarConfig, options: AvatarOptions = {}, resol
  const layers = [...BODY,...selected].sort((a,b)=>a.z-b.z);
  const front = MANIFEST[config.hairStyle]?.hairFront;
  const frontUrl = front && resolve(front);
- return `<svg xmlns="http://www.w3.org/2000/svg" class="av av-d av-d-${pose}${options.reduceMotion?' av-d-still':''}" viewBox="0 -70 ${options.withAbu?1380:1024} 1606" width="${size}" height="${Math.round(size*1606/(options.withAbu?1380:1024))}" role="img" aria-label="A tua personagem"><defs><clipPath id="${id}-under"><rect width="1024" height="700"/></clipPath>${gradientFilter(id+'-skin',skin)}${gradientFilter(id+'-hairStyle',hair, .299*.478+.587*.290+.114*.169)}</defs><g class="avatar-d-body">${accessoryD(config.backpack,id)}${layers.map(image).join('')}${faceD(config,id)}${frontUrl?`<image data-layer="hairFront" href="${frontUrl}" width="1024" height="1536" filter="url(#${id}-hairStyle)"/>`:''}${accessoryD(config.glasses,id)}${accessoryD(config.hat,id)}${!config.hat||!headAccessory(config)?accessoryD(config.accessory,id):''}</g>${options.withAbu?`<g transform="translate(940 1090)">${abuD(config,'wag')}</g>`:''}</svg>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" class="av av-d av-d-${pose}${options.reduceMotion?' av-d-still':''}" viewBox="0 -70 ${options.withAbu?1380:1024} 1606" width="${size}" height="${Math.round(size*1606/(options.withAbu?1380:1024))}" role="img" aria-label="A tua personagem"><defs><clipPath id="${id}-under"><rect width="1024" height="700"/></clipPath>${gradientFilter(id+'-skin',skin)}${gradientFilter(id+'-hairStyle',hair, .299*.478+.587*.290+.114*.169)}</defs><g class="avatar-d-body">${accessoryD(config.backpack,id)}${layers.map(image).join('')}${faceD(config,id)}${frontUrl?`<image data-layer="hairFront" href="${frontUrl}" width="1024" height="1536" filter="url(#${id}-hairStyle)"/>`:''}${accessoryD(config.glasses,id)}${accessoryD(config.hat,id)}${!config.hat||!headAccessory(config)?accessoryD(config.accessory,id):''}</g>${options.withAbu?`<g transform="translate(940 1090) scale(.625)">${abuD(config,'wag',{size:640,reduceMotion:options.reduceMotion})}</g>`:''}</svg>`;
 }

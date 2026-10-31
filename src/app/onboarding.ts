@@ -18,7 +18,8 @@ import { openMap } from './map';
 export function openOnboarding(): void {
   let avatar = { ...getState().profile.avatar };
   let nickname = getState().profile.nickname ?? '';
-  let detailsOpen = false;
+  let detailsOpen = true;
+  let section = 'Aparência';
   const render = (): void => {
     const main = frame('Vamos conhecer-nos!', openWelcome);
     main.insertAdjacentHTML(
@@ -42,11 +43,22 @@ export function openOnboarding(): void {
       detailsOpen = details.open;
     };
     choices.append(details);
+    const tabs = document.createElement('div');
+    tabs.className = 'tabs-row';
+    tabs.setAttribute('aria-label', 'Personalizar personagem');
+    for (const name of ['Aparência', 'Roupa', 'Acessórios']) {
+      const tab = button(name, () => { section = name; detailsOpen = true; render(); });
+      tab.setAttribute('aria-pressed', String(section === name));
+      tabs.append(tab);
+    }
+    details.append(tabs);
     const addChoices = (
       title: string,
       slot: keyof AvatarConfig,
       items: readonly { id: string; name: string; hex?: string }[],
     ): void => {
+      const category = ['skin','hairColor','eyeColor','eyes','hairStyle'].includes(slot) ? 'Aparência' : ['top','bottom','shoes','outer'].includes(slot) ? 'Roupa' : 'Acessórios';
+      if (category !== section || !items.length) return;
       const group = document.createElement('fieldset');
       group.innerHTML = `<legend>${escape(title)}</legend>`;
       items.forEach((item) => {
@@ -91,7 +103,7 @@ export function openOnboarding(): void {
     }
     main.insertAdjacentHTML(
       'beforeend',
-      `<aside class="abu-line">${abuSvg('wag')}<p>Olá! Sou o Abu. Vamos descobrir coisas novas juntos? No centro, escolhe Matemática ou Português.</p></aside>`,
+      `<aside class="abu-line">${abuSvg('wag', getState().profile.avatar)}<p>Olá! Sou o Abu. Vamos descobrir coisas novas juntos? No centro, escolhe Matemática ou Português.</p></aside>`,
     );
     main.append(
       button(

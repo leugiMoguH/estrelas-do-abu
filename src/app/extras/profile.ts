@@ -1,3 +1,4 @@
+import { startAbuLife } from '../abu-life';
 import {
   avatarSvg,
   abuSvg,
@@ -12,6 +13,7 @@ import {
   starSvg,
   type AvatarConfig,
   type Slot,
+  type AbuPose,
 } from '../../art';
 import { buy } from '../../core/rewards';
 import { navigate, escape } from '../router';
@@ -26,7 +28,7 @@ const slots: Record<Slot, string> = {
   bottom: 'Parte de baixo',
   shoes: 'Calçado',
   accessory: 'Acessório',
-  abuAccessory: 'Acessório do Abu',
+  abuAccessory: 'Alias', abuNeck: 'Abu: pescoço', abuBody: 'Abu: corpo', abuHead: 'Abu: cabeça',
 };
 const allowed = (id: string): boolean =>
   CATALOG.some((item) => item.id === id && (item.free || getState().save.ownedItems.includes(id)));
@@ -43,6 +45,7 @@ export function equip(avatar: AvatarConfig): void {
 }
 
 export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Personalizar'): void {
+  let pose: AbuPose = 'sit';
   let tab = initial;
   let filter = '';
   let section = 'Pele';
@@ -53,6 +56,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     const state = getState();
     const avatar = state.profile.avatar;
     const main = screen('A minha personagem');
+    startAbuLife(main, true);
     const tabs = document.createElement('div');
     tabs.className = 'toolbar tabs-top';
     tabs.setAttribute('aria-label', 'Secções da personagem');
@@ -72,7 +76,18 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     const preview = document.createElement('section');
     preview.className = `panel extras-preview${celebration ? ' purchase-pop' : ''}`;
     preview.setAttribute('aria-label', 'A tua personagem e o Abu');
-    preview.innerHTML = avatarSvg(avatar, { size: 360, withAbu: true });
+    preview.innerHTML = avatarSvg(avatar, { size: 360 });
+    const dog = document.createElement('div');
+    dog.className = 'abu-preview';
+    dog.innerHTML = abuSvg(pose, avatar);
+    preview.append(dog);
+    const poseLabel = document.createElement('label');
+    poseLabel.textContent = 'Pose do Abu';
+    const poses = document.createElement('select');
+    for (const [id,name] of [['sit','Sentado'],['stand','De pé'],['happy','Feliz'],['sleep','A dormir'],['think','Curioso'],['lie','Deitado']]) poses.add(new Option(name,id));
+    poses.value = pose;
+    poses.onchange = () => { pose = poses.value as AbuPose; render(); };
+    poseLabel.append(poses); preview.append(poseLabel);
     message(preview, feedback || 'As tuas escolhas ficam guardadas automaticamente.');
     const controls = document.createElement('section');
     controls.className = 'extras-controls';
@@ -121,12 +136,10 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
           name: 'Acessórios',
           groups: [{ title: 'Acessório', slot: 'accessory', items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter((i) => i.slot === 'accessory' && allowed(i.id))], crop: '--z:1.8;--y:26px' }],
         },
-        {
-          name: 'Abu',
-          groups: [{ title: 'Acessório do Abu', slot: 'abuAccessory', items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter((i) => i.slot === 'abuAccessory' && allowed(i.id))], crop: 'abu' }],
-        },
+
       ];
       for (const slot of ['outer', 'glasses', 'hat', 'backpack'] as const) SECTIONS.push({ name: slots[slot], groups: [{ title: slots[slot], slot, items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter(i => i.slot === slot && allowed(i.id))], crop: '--z:1;--y:0px' }] });
+      for (const slot of ['abuNeck','abuBody','abuHead'] as const) SECTIONS.push({name:slots[slot],groups:[{title:slots[slot],slot,items:[{id:null,name:'Nenhum'},...CATALOG.filter(i=>i.slot===slot&&allowed(i.id))],crop:'abu'}]});
       const current = SECTIONS.find((x) => x.name === section) ?? SECTIONS[0]!;
       const row = document.createElement('div');
       row.className = 'tabs-row';
@@ -168,7 +181,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
             art.textContent = '∅';
           } else {
             art.className = 'chip-art';
-            if (g.crop === 'abu') art.innerHTML = abuSvg('sit', item.id);
+            if (g.crop === 'abu') art.innerHTML = abuSvg('sit', {...avatar,[g.slot]:item.id});
             else {
               art.setAttribute('style', g.crop ?? '');
               art.classList.add('is-crop');
@@ -214,7 +227,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     const select = document.createElement('select');
     select.innerHTML =
       '<option value="">Todos os itens</option>' +
-      Object.entries(slots)
+      Object.entries(slots).filter(([id])=>id!=='abuAccessory')
         .map(([id, title]) => `<option value="${id}">${title}</option>`)
         .join('');
     select.value = filter;
@@ -225,6 +238,13 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     };
     label.append(select);
     controls.append(label);
+    const abuTabs = document.createElement('div');
+    abuTabs.className = 'tabs-row';
+    for (const slot of ['abuNeck','abuBody','abuHead'] as const) {
+      const tab = action(slots[slot], () => { filter = slot; render(); });
+      tab.setAttribute('aria-pressed', String(filter === slot)); abuTabs.append(tab);
+    }
+    controls.append(abuTabs);
     const grid = document.createElement('div');
     grid.className = 'extras-catalog';
     const items = CATALOG.filter(
@@ -235,8 +255,8 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
       const card = document.createElement('article');
       card.className = 'panel extras-item';
       card.innerHTML = `<div class="item-art">${
-        item.slot === 'abuAccessory'
-          ? abuSvg('happy', item.id)
+        item.slot.startsWith('abu')
+          ? abuSvg('sit', {...avatar,[item.slot]:item.id})
           : avatarSvg({ ...avatar, [item.slot]: item.id }, { size: 120 })
       }</div><h2>${escape(item.name)}</h2>`;
       if (!item.free)

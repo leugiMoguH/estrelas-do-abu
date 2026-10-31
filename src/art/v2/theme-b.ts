@@ -31,6 +31,7 @@ const ABU: Record<'sit' | 'happy' | 'think' | 'sleep', AbuImage> = {
   sleep: { src: abuSleep, w: 560, h: 448 },
 };
 const POSE_IMAGE: Record<AbuPose, keyof typeof ABU> = {
+  stand:'sit', lie:'sleep', sad:'sit',
   idle: 'sit',
   sit: 'sit',
   wag: 'happy',
@@ -153,7 +154,7 @@ export const avatarB = makeAvatarSvg(STYLE_B, (config: AvatarConfig) => {
   const w = (img.w / img.h) * h;
   return (
     `<g transform="translate(205 168)"><svg viewBox="0 0 ${img.w} ${img.h}" width="${w}" height="${h}">` +
-    `<image href="${img.src}" width="${img.w}" height="${img.h}"/>${img.marks ? accessoryOverlay(config.abuAccessory, img.marks) : ''}</svg></g>`
+    `<image href="${img.src}" width="${img.w}" height="${img.h}"/>${img.marks ? accessoryOverlay(config.abuNeck ?? config.abuAccessory, img.marks) : ''}</svg></g>`
   );
 });
 

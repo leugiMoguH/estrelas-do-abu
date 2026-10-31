@@ -1,3 +1,5 @@
+import { startAbuLife } from './abu-life';
+import { getState } from './store';
 import { abuSvg, starSvg } from '../art';
 import { gamePack, TOPICS } from '../../content';
 import { correctAnswerOf } from '../core/content';
@@ -18,9 +20,10 @@ export function openResult(result: SessionResult): void {
   navigate(() => {
     const topic = TOPICS.find((t) => t.id === result.topicId)!;
     const main = frame('Mais um passo na tua aventura!', openMap);
+    startAbuLife(main, true);
     main.insertAdjacentHTML(
       'beforeend',
-      `<section class="panel result-hero">${abuSvg('happy')}<div>${result.mode === 'test' ? `<p class="grade">${result.summary.grade.toLocaleString('pt-PT')} <small>/ 20</small></p>` : '<h2>Boa prática!</h2>'}<p class="earned">${starSvg(40)} +${result.earned} estrelas</p><p>${result.earned ? 'Ganhos guardados. Continua a descobrir!' : 'Hoje já ganhaste as estrelas desta prática. Podes continuar a aprender!'}</p></div></section>`,
+      `<section class="panel result-hero">${abuSvg('happy', getState().profile.avatar)}<div>${result.mode === 'test' ? `<p class="grade">${result.summary.grade.toLocaleString('pt-PT')} <small>/ 20</small></p>` : '<h2>Boa prática!</h2>'}<p class="earned">${starSvg(40)} +${result.earned} estrelas</p><p>${result.earned ? 'Ganhos guardados. Continua a descobrir!' : 'Hoje já ganhaste as estrelas desta prática. Podes continuar a aprender!'}</p></div></section>`,
     );
     const name = (id: string): string =>
       gamePack.competencies.find((c) => c.id === id)?.objective ?? topic.title;

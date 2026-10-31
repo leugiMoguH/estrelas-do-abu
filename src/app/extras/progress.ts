@@ -73,7 +73,7 @@ export function openAchievements(): void {
       ],
       [
         'Abu com estilo',
-        Boolean(state.profile.avatar.abuAccessory) && state.profile.avatar.abuAccessory !== 'abu-coleira',
+        [state.profile.avatar.abuNeck, state.profile.avatar.abuBody, state.profile.avatar.abuHead].some(id => Boolean(id) && id !== 'abu-coleira'),
         'Compra e equipa um acessório novo no Abu.',
       ],
       ['Um conjunto favorito', state.favorites.length > 0, 'Guarda um conjunto no perfil.'],

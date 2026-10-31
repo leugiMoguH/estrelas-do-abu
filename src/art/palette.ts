@@ -79,9 +79,12 @@ export interface AvatarConfig {
   shoes: string;
   accessory: string | null;
   abuAccessory: string | null;
+  abuNeck?: string | null;
+  abuBody?: string | null;
+  abuHead?: string | null;
 }
 
-export type AbuPose = 'idle' | 'sit' | 'happy' | 'sleep' | 'think' | 'wag';
+export type AbuPose = 'idle' | 'sit' | 'happy' | 'sleep' | 'think' | 'wag' | 'stand' | 'lie' | 'sad';
 
 /** Escurece (amount < 0) ou clareia (amount > 0) uma cor #rrggbb. */
 export function shade(hex: string, amount: number): string {

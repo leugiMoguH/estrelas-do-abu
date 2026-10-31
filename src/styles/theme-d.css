@@ -1,0 +1,56 @@
+﻿body[data-theme='d'] {
+ --bg:#211d3b; --paper:#fff4df; --ink:#30253d; --title:#ffe3a1; --line:#b68c52;
+ --body-font:'Andika','Trebuchet MS',sans-serif; --head-font:'Baloo 2','Trebuchet MS',sans-serif;
+ --header-bg:#19182f; --header-border:2px solid #947044;
+ --btn-border:2px solid #af8346; --btn-bg:#fff4df; --btn-hover:#ffe6b4;
+ --btn-shadow:0 4px 0 #84603e; --btn-shadow-pressed:0 1px 0 #84603e;
+ --primary-bg:#ffd16c; --primary-border:2px solid #c08a36; --primary-ink:#30253d;
+ --primary-shadow:0 5px 0 #98652f; --primary-hover:#ffe49b;
+ --selected-bg:#ffe1a0; --selected-line:#805523; --quiet-bg:#fff4df;
+ --focus:#b85420; --card-shadow:0 6px 0 #100d2366; --radius:20px; --radius-card:28px;
+ --frame-border:2px solid #d9ad64; --frame-shadow:0 8px 24px #100d2380; --tip-bg:#ffe8b9;
+ min-height:100vh; color:#fff4df;
+ background:radial-gradient(circle at 12px 18px,#ffe3a160 1px,transparent 2px) 0 0/93px 113px,radial-gradient(ellipse at top,#363259,#211d3b 70%);
+}
+body[data-theme='d'] .panel, body[data-theme='d'] details, body[data-theme='d'] dialog,
+body[data-theme='d'] .abu-line p, body[data-theme='d'] .map-tip, body[data-theme='d'] .balance {color:var(--ink)}
+body[data-theme='d'] .panel h1, body[data-theme='d'] .panel h2, body[data-theme='d'] dialog h2 {color:var(--ink)}
+body[data-theme='d'] fieldset {border-color:#b68c52; background:#fff4df; color:var(--ink)}
+body[data-theme='d'] input, body[data-theme='d'] select {border-color:#9a764d; color:var(--ink); background:#fffcf5}
+body[data-theme='d'] .screen {padding-bottom:44px}
+body[data-theme='d'] .welcome-art {max-width:510px; height:min(52vh,480px); aspect-ratio:auto}
+body[data-theme='d'] .welcome-art > .welcome-svg {height:100%; width:100%}
+body[data-theme='d'] .welcome-hero {width:auto; height:91%; bottom:1%; left:53%; filter:drop-shadow(0 5px 3px #21152d66)}
+body[data-theme='d'] .welcome-hero .av {height:100%; width:auto; max-width:none; position:relative}
+body[data-theme='d'] .welcome-hero::before {content:''; position:absolute; width:77%; height:4%; bottom:3%; left:7%; border-radius:50%; background:#291a3b88; filter:blur(4px)}
+body[data-theme='d'] .avatar-preview > svg {width:100%; height:360px; max-height:360px}
+body[data-theme='d'] .tabs-row {flex-wrap:wrap; overflow:visible; gap:10px}
+body[data-theme='d'] .tabs-row button {flex:1 1 auto; white-space:normal}
+body[data-theme='d'] .tutor-dialog {color:var(--ink); border:3px solid #d9ad64; overscroll-behavior:contain}
+body[data-theme='d'] dialog::backdrop {background:#100c27b8; backdrop-filter:blur(3px)}
+body[data-theme='d'] .tutor-close {background:#ffe1a0}
+body[data-theme='d'] .tutor-dialog button {width:100%; min-height:48px}
+body[data-theme='d'] .tutor-button {background:#fff4df; border-color:#d9ad64}
+body[data-theme='d'] .room-art {height:clamp(200px,30vw,340px); overflow:hidden; border:var(--frame-border); border-radius:28px; box-shadow:var(--frame-shadow)}
+body[data-theme='d'] .room-art svg {height:100%; max-height:none; width:100%; border-radius:0}
+body[data-theme='d'] .map-hit:focus-visible .map-focus {stroke:#fff; stroke-width:9; stroke-dasharray:10 5}
+body[data-theme='d'] .map-hit {filter:none}
+body[data-theme='d'] .map-hit:hover .map-focus {stroke:#fff1b0; stroke-width:8}
+body[data-theme='d'] .question-progress {padding:16px; background:var(--paper); color:var(--ink); border-radius:20px}
+body[data-theme='d'] progress {accent-color:#805523}
+body[data-theme='d'] .extras-toggle {min-height:44px}
+body[data-theme='d'] .extras-toggle input {width:44px; min-height:44px; accent-color:#805523}
+body[data-theme='d'] .extras input[type='range'] {min-height:44px; accent-color:#805523}
+body[data-theme='d'] .extras-preview {position:static}
+@media(max-width:650px) {
+ body[data-theme='d'] .welcome h1 {font-size:1.9em}
+ body[data-theme='d'] .avatar-preview > svg {height:300px; max-height:300px}
+ body[data-theme='d'] .onboarding-grid {gap:8px}
+ body[data-theme='d'] .toolbar button {font-size:.88em}
+ body[data-theme='d'] .extras-preview > .av {max-height:330px}
+}
+body[data-theme='d'] .sticky-cta {position:static; margin-top:18px}
+body[data-theme='d'] legend {background:var(--paper); color:var(--ink); border-radius:10px; padding:2px 10px}
+body[data-theme='d'] .onboarding-grid {align-items:start}
+body[data-theme='d'] :focus-visible {outline-color:#ffd16c; box-shadow:0 0 0 3px #30253d}
+body[data-theme='d'] .panel :focus-visible, body[data-theme='d'] dialog :focus-visible {outline-color:#805523}

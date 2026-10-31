@@ -1,6 +1,5 @@
+import { defaultAvatar } from '../catalog';
 import { registerArtTheme } from '../themes';
-import { mapSvg } from '../map';
-import { roomSvg } from '../rooms';
-import { starSvg, welcomeSvg } from '../scenes';
+import { mapD as mapSvg, roomD as roomSvg, starD as starSvg, welcomeD as welcomeSvg } from './scenes';
 import { avatarD, abuD } from './compose';
-registerArtTheme('d', { avatarSvg: avatarD, abuSvg: pose => `<svg class="abu-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Abu, o cão pinscher">${abuD(undefined,pose)}</svg>`, mapSvg, roomSvg, starSvg, welcomeSvg });
+registerArtTheme('d', { avatarSvg: avatarD, abuSvg: (pose, config) => abuD(typeof config === 'object' && config ? config : {...defaultAvatar(),abuNeck:config?.includes('oculos')||config?.includes('chapeu')?null:config??'abu-coleira',abuHead:config?.includes('oculos')||config?.includes('chapeu')?config:null},pose), mapSvg, roomSvg, starSvg, welcomeSvg });

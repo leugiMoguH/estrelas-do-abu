@@ -77,7 +77,7 @@ export function avatarSvg(config: AvatarConfig, options: AvatarOptions = {}): st
   const body = avatarBody(config, pose);
   const label = `Personagem com cabelo ${config.hairStyle.replace('hair-', '')} e tom de pele ${config.skin}`;
   if (options.withAbu) {
-    const abu = `<g transform="translate(168 150) scale(.95)">${abuInner('wag', config.abuAccessory)}</g>`;
+    const abu = `<g transform="translate(168 150) scale(.95)">${abuInner('wag', config.abuNeck ?? config.abuAccessory)}</g>`;
     return (
       `<svg class="av av-with-abu av-${pose}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" width="${size}" ` +
       `height="${Math.round((size * 300) / 320)}" role="img" aria-label="${label}">${body}${abu}</svg>`

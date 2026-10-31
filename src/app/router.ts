@@ -1,3 +1,4 @@
+import { startAbuLife } from './abu-life';
 import { starSvg } from '../art';
 import { play } from './audio';
 import { applyOptions, getState, subscribe } from './store';
@@ -42,6 +43,7 @@ export function frame(title: string, back?: () => void): HTMLElement {
     warning.textContent = 'O navegador não conseguiu guardar os dados. Podes continuar a jogar nesta visita.';
     main.append(warning);
   }
+  startAbuLife(main, false);
   return main;
 }
 subscribe((state) => {

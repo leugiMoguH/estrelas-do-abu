@@ -18,6 +18,7 @@ export function openOptions(): void {
     for (const [key, title] of [
       ['music', 'Música ambiente'],
       ['sfx', 'Efeitos sonoros'],
+      ['abuLife', 'Travessuras do Abu'],
       ['reduceMotion', 'Reduzir animações'],
     ] as const) {
       const label = document.createElement('label');

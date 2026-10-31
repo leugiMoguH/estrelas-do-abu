@@ -1,3 +1,6 @@
+import { startAbuLife } from './abu-life';
+import { abuSvg } from '../art';
+import { abuReact } from '../art/d/abu';
 import { tutorButton, setTutorMode } from './tutor';
 import { roomSvg } from '../art';
 import { TOPICS, SUBJECTS, gamePack } from '../../content';
@@ -19,6 +22,8 @@ export function openRoom(subject: string, topicId?: string): void {
       'beforeend',
       `<div class="room-art" aria-hidden="true">${roomSvg(subject)}</div><h2>O que vamos descobrir?</h2>`,
     );
+    startAbuLife(main, mode !== 'test');
+    main.insertAdjacentHTML('beforeend', `<aside class="abu-line">${abuSvg('sit',getState().profile.avatar)}</aside>`);
     const cards = document.createElement('div');
     cards.className = 'topic-grid';
     topics.forEach((topic) => {
@@ -74,7 +79,7 @@ export function openRoom(subject: string, topicId?: string): void {
       );
     if (selected) {
       const topic = selected;
-      main.append(tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, practice: () => startSession(topic.id, 'study', count) }));
+      main.append(tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, onTutorOpen:()=>abuReact(main,'tutor'), practice: () => startSession(topic.id, 'study', count) }));
       const due = dueCompetencies(getState().save.mastery, Date.now(), topic.competencyIds);
       main.append(
         button(

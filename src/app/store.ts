@@ -4,14 +4,14 @@ import { buy, type ShopItem } from '../core/rewards';
 
 export interface AppState {
   profile: {
-    version?: 2;
+    version?: 2 | 3;
     nickname?: string;
     grade: number;
     onboarded: boolean;
     avatar: AvatarConfig;
     equipped: Record<string, string | null>;
   };
-  options: { music: boolean; sfx: boolean; volume: number; reduceMotion: boolean; textScale: number };
+  options: { music: boolean; sfx: boolean; volume: number; reduceMotion: boolean; abuLife: boolean; textScale: number };
   lastTopicId: string | null;
   bestTestGrade: number;
   favorites: AvatarConfig[];
@@ -25,8 +25,8 @@ const APP_KEY = `${NS}:app:v1`;
 const SAVE_KEY = `${NS}:save:v2`;
 
 const initial = (): AppState => ({
-  profile: { version: 2, grade: 6, onboarded: false, avatar: defaultAvatar(), equipped: {} },
-  options: { music: true, sfx: true, volume: 0.4, reduceMotion: false, textScale: 1 },
+  profile: { version: 3, grade: 6, onboarded: false, avatar: defaultAvatar(), equipped: {} },
+  options: { music: true, sfx: true, volume: 0.4, reduceMotion: false, abuLife: true, textScale: 1 },
   lastTopicId: null,
   bestTestGrade: 0,
   favorites: [],
@@ -34,6 +34,9 @@ const initial = (): AppState => ({
   ui: {},
 });
 
+export function migrateProfileV3(avatar: unknown, ownedIds: readonly string[]): {version:3;avatar:AvatarConfig} {
+ return {version:3,avatar:normalizeAvatar(avatar,ownedIds)};
+}
 function load(): AppState {
   const state = initial();
   try {
@@ -48,7 +51,7 @@ function load(): AppState {
         state.profile.equipped = { ...state.profile.avatar };
       }
       if (app.options) {
-        for (const key of ['music', 'sfx', 'reduceMotion'] as const)
+        for (const key of ['music', 'sfx', 'reduceMotion', 'abuLife'] as const)
           if (typeof app.options[key] === 'boolean') state.options[key] = app.options[key];
         if (Number.isFinite(app.options.volume))
           state.options.volume = Math.max(0, Math.min(1, app.options.volume));
@@ -72,7 +75,7 @@ function load(): AppState {
   } catch {
     state.ui.storageError = true;
   }
-  state.profile.avatar = normalizeAvatar(state.profile.avatar, state.save.ownedItems);
+  Object.assign(state.profile, migrateProfileV3(state.profile.avatar, state.save.ownedItems));
   state.profile.equipped = { ...state.profile.avatar };
   state.favorites = state.favorites.map(value => normalizeAvatar(value, state.save.ownedItems));
   return state;
@@ -88,7 +91,7 @@ export function applyOptions(): void {
 }
 export function update(change: Partial<AppState> | ((state: AppState) => AppState)): void {
   state = typeof change === 'function' ? change(state) : { ...state, ...change };
-  state.profile.version = 2;
+  state.profile.version = 3;
   try {
     const { save, ui: _ui, ...app } = state;
     localStorage.setItem(APP_KEY, JSON.stringify(app));

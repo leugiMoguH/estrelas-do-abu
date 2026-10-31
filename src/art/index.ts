@@ -21,8 +21,8 @@ export { EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './
 /** As funções públicas despacham pelo tema ativo; sem tema novo disponível usam o desenho atual. */
 export const avatarSvg = (config: AvatarConfig, options?: AvatarOptions): string =>
   (themedArt(getArtTheme())?.avatarSvg ?? avatarAtual)(config, options);
-export const abuSvg = (pose: AbuPose, accessory: string | null = null): string =>
-  (themedArt(getArtTheme())?.abuSvg ?? abuAtual)(pose, accessory);
+export const abuSvg = (pose: AbuPose, accessory: string | null | AvatarConfig = null): string =>
+  themedArt(getArtTheme())?.abuSvg(pose, accessory) ?? abuAtual(pose, typeof accessory === 'object' && accessory ? accessory.abuNeck ?? accessory.abuAccessory : accessory);
 export const mapSvg = (options: { activeSubjects: readonly string[] }): string =>
   (themedArt(getArtTheme())?.mapSvg ?? mapAtual)(options);
 export const welcomeSvg = (): string => (themedArt(getArtTheme())?.welcomeSvg ?? welcomeAtual)();
