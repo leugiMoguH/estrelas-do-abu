@@ -1,0 +1,15 @@
+# Fontes
+
+- `r5-ae` (oficial) DGE — Aprendizagens Essenciais de HGP, 5.º ano (documento oficial; só consultado por excerto de pesquisa) — https://www.dge.mec.pt/sites/default/files/5_hgp.pdf (consultado 2026-10-31)
+- `r5-plan` (oficial) DGE — Planificação por blocos de HGP, 5.º e 6.º anos (Aprendizagens Essenciais), #EstudoEmCasa — https://estudoemcasaapoia.dge.mec.pt/sites/default/files/2022-01/planificacao_historia_e_geografia_de_portugal_5.o_e_6.o_anos_final.pdf (consultado 2026-10-31)
+- `r5-b42` (oficial) DGE — #EstudoEmCasa, HGP 5.º e 6.º anos, Bloco 42 (Portugal nos séculos XV e XVI: conhecer as especiarias) — https://estudoautonomo.dge.mec.pt/sites/default/files/inline-files/42_HGP_5%C2%BA%20e%206%C2%BA%20anos_Portugal%20nos%20s%C3%A9culos%20XV%20e%20XVI%20conhecer%20as%20especiarias.pdf (consultado 2026-10-31)
+- `r5-b44` (oficial) DGE — #EstudoEmCasa, HGP 5.º e 6.º anos, Bloco 44 (Portugal nos séculos XV e XVI: os efeitos da expansão marítima) — https://estudoautonomo.dge.mec.pt/sites/default/files/inline-files/44_HGP_5%C2%BA%20e%206%C2%BA%20anos_Portugal%20no%20s%C3%A9culos%20XV%20e%20XVI%20os%20efeitos%20da%20expans%C3%A3o%20mar%C3%ADtima.%20Sistematiza%C3%A7%C3%A3o%20de%20conte%C3%BAdos.pdf (consultado 2026-10-31)
+- `r5-imp` (enciclopedia) Infopédia — Império Colonial Português — https://www.infopedia.pt/artigos/$imperio-colonial-portugues (consultado 2026-10-31)
+- `r5-crise` (enciclopedia) Infopédia — Crise de 1578-1580 — https://www.infopedia.pt/artigos/$crise-de-1578-1580 (consultado 2026-10-31)
+- `r5-filipe` (enciclopedia) Infopédia — D. Filipe II (I de Portugal) — https://www.infopedia.pt/$d.-filipe-ii-(i-de-portugal) (consultado 2026-10-31)
+- `r5-tomar` (academica) Universidade de Coimbra — O juramento de Tomar — https://dl.uc.pt/bitstream/10316.2/46220/1/o_juramento_de_tomar.pdf (consultado 2026-10-31)
+- `r5-evora` (enciclopedia) Infopédia — Alterações de Évora — https://www.infopedia.pt/artigos/$alteracoes-de-evora (consultado 2026-10-31)
+- `r5-revolta1637` (enciclopedia) Infopédia — Revolta de 1637 — https://www.infopedia.pt/$revolta-de-1637 (consultado 2026-10-31)
+- `r5-rest` (enciclopedia) Infopédia — Restauração — https://www.infopedia.pt/artigos/$restauracao (consultado 2026-10-31)
+- `r5-1dez` (enciclopedia) RFM — Sabes o que se celebra no dia 1 de dezembro? — https://rfm.pt/atualidade/3745/sabes-o-que-se-celebra-no-dia-1-de-dezembro-descobre-aqui (consultado 2026-10-31)
+- `r5-guerra` (enciclopedia) Prepara Enem — Guerra da Restauração (1640–1668) — https://www.preparaenem.com/historia/guerra-restauracao.htm (consultado 2026-10-31)

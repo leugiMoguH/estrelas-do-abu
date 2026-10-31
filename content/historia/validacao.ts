@@ -19,6 +19,8 @@ const A_CONFIRMAR = [
   'hgp-xix-segunda-metade-06', 'hgp-lugares-06',
   // Séc. XVIII, versão provisória (2026-10-31): apoio factual só parcial na ficha (docs/hgp); excluídos das sessões até revisão.
   'hgp-seculo-xviii-55', 'hgp-seculo-xviii-57', 'hgp-seculo-xviii-66', 'hgp-seculo-xviii-67',
+  // Recuperação 5.º ano (2026-10-31): resposta formulada de forma vaga (vice-rei/governadores), sem fonte que a fixe; excluído das sessões.
+  'hgp-recuperacao-5-47',
 ];
 
 export const HGP_A_CONFIRMAR: readonly string[] = A_CONFIRMAR;

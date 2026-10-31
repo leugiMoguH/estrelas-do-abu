@@ -69,14 +69,14 @@ export const RECUP_SECTION_LESSONS: readonly HgpSectionLesson[] = [
   ] },
   { id: 'rec5-crise-1580', title: 'Crise dinástica de 1580 e União Ibérica', explanation: [
     'D. Sebastião morreu em 1578 em Alcácer Quibir, sem filhos. Reinou o Cardeal D. Henrique, já idoso, que morreu em 1580 sem herdeiro direto; vários pretendentes disputaram o trono. Era uma crise dinástica.',
-    'As Cortes de Tomar, em 1581, aclamaram Filipe II de Espanha como Filipe I de Portugal. Ele jurou respeitar as leis e os costumes de Portugal e manter o português como língua oficial: foi uma união dinástica, em que os reinos partilhavam o rei mas mantinham leis e administração próprias.',
+    'As Cortes de Tomar, em 1581, aclamaram Filipe II de Espanha como Filipe I de Portugal. Ele jurou respeitar as leis e os costumes de Portugal: foi uma união dinástica, em que os reinos partilhavam o rei mas mantinham leis e administração próprias.',
   ] },
   { id: 'rec5-filipes', title: 'Portugal sob os Filipes', explanation: [
     'Governaram Portugal três reis chamados Filipe, que eram também reis de Espanha. O rei vivia sobretudo em Madrid e Portugal era governado em seu nome por vice-reis ou governadores.',
     'Os inimigos de Espanha, como holandeses e ingleses, atacaram o império português, que perdeu territórios e rotas. Aumentaram também os impostos e o descontentamento. Filipe III de Portugal começou a reinar em 1621.',
   ] },
   { id: 'rec5-restauracao-1640', title: 'Descontentamento, resistência e Restauração de 1640', explanation: [
-    'Novos impostos, como o real de água e o encabeçamento do sal, provocaram motins, como as Alterações de Évora, em 1637. Havia fome e dificuldades. Mostram o descontentamento com o governo dos Filipes.',
+    'Novos impostos e a carga fiscal provocaram motins, como as Alterações de Évora, em 1637. Havia dificuldades. Mostram o descontentamento com o governo dos Filipes.',
     'A 1 de dezembro de 1640, um grupo de nobres e letrados fez o golpe que restaurou a independência; o povo não foi o autor do golpe. A Espanha estava ocupada com outras guerras e com a revolta da Catalunha. O duque de Bragança foi aclamado rei, com o nome de D. João IV, e começou a Guerra da Restauração (1640–1668).',
   ] },
 ];

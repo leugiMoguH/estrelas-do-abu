@@ -194,7 +194,7 @@ q('consequencias', 'personagem', 3, 'Que obra de Luís de Camões, publicada em 
   }, 'Os Lusíadas, de Luís de Camões, foram publicados em 1572. Cantam as viagens portuguesas, em especial a de Vasco da Gama à Índia. É a grande epopeia da língua portuguesa.',
   ['Fala de Vasco da Gama.', 'O título refere o povo português: os «lusos».'], ['r5-b44']);
 num('consequencias', 'cronologia', 2, 'Quantos anos passaram entre a chegada de Vasco da Gama à Índia (1498) e a conquista de Goa por Afonso de Albuquerque (1510)?', 12,
-  'Subtrai-se 1498 a 1510, o que dá 12 anos. Goa, conquistada em 1510, tornou-se a capital do Estado da Índia. Mostra como Portugal passou do comércio à presença permanente no Oriente.',
+  'Subtrai-se 1498 a 1510, o que dá 12 anos. Goa, conquistada em 1510, tornou-se o centro do poder português no Oriente. Mostra como Portugal passou do comércio à presença permanente no Oriente.',
   ['Subtrai o ano mais antigo ao mais recente.', '1510 menos 1498.'], ['r5-imp']);
 q('consequencias', 'consequencia', 3, 'Qual destes grupos teve grandes lucros com o comércio ultramarino?',
   'A Coroa e os mercadores ligados ao comércio com o Oriente', {
@@ -253,12 +253,12 @@ q('crise-1580', 'personagem', 2, 'Quem foi aclamado rei de Portugal nas Cortes d
   }, 'As Cortes de Tomar, em 1581, aclamaram Filipe II de Espanha como rei de Portugal, com o nome de Filipe I. Foi o início da União Ibérica. O rei jurou respeitar as leis e os costumes portugueses.',
   ['Era rei de Espanha.', 'Em Portugal ficou conhecido como Filipe I.'], ['r5-tomar', 'r5-filipe']);
 q('crise-1580', 'facto', 2, 'Que prometeu Filipe II nas Cortes de Tomar?',
-  'Respeitar as leis e os costumes de Portugal, mantendo o português como língua oficial', {
+  'Respeitar as leis e os costumes de Portugal', {
     'Acabar com as leis portuguesas e usar as leis de Castela': 'Prometeu respeitar as leis e os costumes portugueses.',
-    'Mudar a língua oficial de Portugal para o castelhano': 'O português manteve-se como língua oficial.',
+    'Entregar o governo de Portugal ao Papa': 'Não houve nenhuma promessa desse tipo.',
     'Entregar o império português à Inglaterra': 'Não houve nenhuma promessa desse tipo.',
-  }, 'Nas Cortes de Tomar, Filipe II jurou respeitar as leis e os costumes de Portugal. O português manteve-se como língua oficial. Foi essa a base da chamada união dinástica.',
-  ['Era uma promessa para tranquilizar os portugueses.', 'Fala de leis, costumes e língua.'], ['r5-tomar']);
+  }, 'Nas Cortes de Tomar, Filipe II jurou respeitar as leis e os costumes de Portugal. Foi essa a base da chamada união dinástica.',
+  ['Era uma promessa para tranquilizar os portugueses.', 'Fala de leis e de costumes.'], ['r5-tomar']);
 q('crise-1580', 'conceito', 3, 'Porque se diz que a União Ibérica foi uma união dinástica?',
   'Porque os dois reinos passaram a ter o mesmo rei, mas mantiveram leis e administração próprias', {
     'Porque Portugal e Espanha se juntaram num só país, com as mesmas leis': 'Os reinos mantiveram leis e administração próprias, pelo menos no início.',
@@ -266,11 +266,11 @@ q('crise-1580', 'conceito', 3, 'Porque se diz que a União Ibérica foi uma uni�
     'Porque Portugal ficou sem rei e foi governado por uma república': 'Não houve república; houve um rei comum.',
   }, 'Numa união dinástica, os reinos partilham o mesmo rei, mas mantêm leis e administração próprias. Foi assim que a União Ibérica começou. Mais tarde, as relações tornaram-se mais tensas.',
   ['«Dinástica» liga-se à família do rei.', 'O que mudou foi o rei, não o país.'], ['r5-tomar']);
-q('crise-1580', 'vf', 2, '«Em 1580, Portugal passou a ser uma província de Espanha, sem leis nem língua próprias.» Qual é a correção certa?',
-  'Falsa: Portugal manteve leis, costumes e língua; o que mudou foi ter o mesmo rei que Espanha', {
+q('crise-1580', 'vf', 2, '«Em 1580, Portugal passou a ser uma província de Espanha, sem leis nem costumes próprios.» Qual é a correção certa?',
+  'Falsa: Portugal manteve leis e costumes próprios; o que mudou foi ter o mesmo rei que Espanha', {
     'Verdadeira: Portugal deixou de existir como reino': 'Portugal manteve-se como reino, com o mesmo rei de Espanha.',
     'Falsa: Portugal manteve o seu rei e Espanha deixou de ter rei': 'Foi o rei de Espanha que passou a ser rei de Portugal.',
-  }, 'Em 1580 não foi extinto o reino de Portugal. Manteve leis, costumes e língua, mas passou a ter o mesmo rei que Espanha. Por isso se fala em união dinástica.',
+  }, 'Em 1580 não foi extinto o reino de Portugal. Manteve leis e costumes próprios, mas passou a ter o mesmo rei que Espanha. Por isso se fala em união dinástica.',
   ['Pensa no que mudou: o rei ou o reino?', 'Releva a promessa de Tomar.'], ['r5-tomar', 'r5-crise']);
 order('crise-1580', 2, 'Ordena esta cadeia de acontecimentos, da causa para a consequência.',
   ['D. Sebastião morre em Alcácer Quibir sem deixar filhos', 'O Cardeal D. Henrique, já idoso, torna-se rei', 'D. Henrique morre sem herdeiro e surgem vários pretendentes', 'Filipe II de Espanha é aclamado rei em Tomar'],
@@ -319,7 +319,7 @@ q('restauracao-1640', 'causa', 2, 'O que esteve na origem das Alterações de É
     'A conquista de Ceuta': 'Ceuta foi conquistada em 1415.',
     'A chegada de Vasco da Gama à Índia': 'Isso aconteceu em 1498.',
     'A morte de D. Sebastião': 'D. Sebastião morreu em 1578, muito antes.',
-  }, 'As Alterações de Évora foram motins contra a cobrança de novos impostos, como o real de água e o encabeçamento do sal. Havia também dificuldades e fome. Mostram o descontentamento com o governo dos Filipes.',
+  }, 'As Alterações de Évora foram motins contra a cobrança de novos impostos, e a carga fiscal. Havia também dificuldades. Mostram o descontentamento com o governo dos Filipes.',
   ['Procura uma causa ligada ao dinheiro.', 'Foi uma revolta contra o governo dos Filipes.'], ['r5-evora', 'r5-revolta1637']);
 q('restauracao-1640', 'facto', 1, 'Em que data se comemora hoje a Restauração da Independência?',
   '1 de dezembro', {
@@ -411,7 +411,7 @@ export const bank: HgpBank = {
       ],
       commonErrors: [
         'Bartolomeu Dias dobrou o Cabo da Boa Esperança (1488); a chegada à Índia foi de Vasco da Gama (1498).',
-        'A União Ibérica foi uma união de reis: Portugal manteve leis, costumes e língua.',
+        'A União Ibérica foi uma união de reis: Portugal manteve leis e costumes próprios.',
         'A Restauração de 1640 foi preparada por nobres e letrados; o povo não foi o autor do golpe.',
         'Intercâmbio é troca entre culturas; o choque de culturas inclui violência, escravização e imposição.',
       ],

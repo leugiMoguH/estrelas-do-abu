@@ -54,7 +54,6 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       note.setAttribute('role', 'note');
       note.textContent = 'Versão provisória de estudo — revisão independente pendente. Não cobre todas as páginas do manual.';
       main.append(note);
-      main.append(button('Preparar próximo teste — Portugal no século XVIII', startHgpChapter, 'primary chapter-cta'));
     }
     main.insertAdjacentHTML(
       'beforeend',

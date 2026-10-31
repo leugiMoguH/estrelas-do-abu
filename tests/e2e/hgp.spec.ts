@@ -26,12 +26,12 @@ test('HGP: capítulos e subcapítulos do manual, seleção acessível, tutor e a
  await expect(page.locator('.topic-group[open]')).toHaveCount(1);
  await expect(page.locator('.topic-group[open] summary')).toContainText('D1 — Portugal no século XVIII (págs. 20–40): 8/9 escolhidos');
  await expandTopics(page);
- // 4 capítulos agrupadores + 23 subcapítulos
- await expect(page.getByRole('checkbox', { includeHidden:true })).toHaveCount(27);
- // recuperação: 4 subcapítulos, sem exercícios ainda (assinalados e desativados)
- await expect(page.locator('.topic-card.is-pending')).toHaveCount(4);
- await expect(page.locator('.topic-card.is-pending input:disabled')).toHaveCount(4);
- await expect(page.getByText('Em preparação: ainda sem exercícios ou lição suficientes.').first()).toBeVisible();
+ // 4 capítulos agrupadores + 27 subcapítulos (8 da recuperação do 5.º ano + 19)
+ await expect(page.getByRole('checkbox', { includeHidden:true })).toHaveCount(31);
+ await expect(page.locator('.topic-card.is-pending')).toHaveCount(0);
+ // recuperação: 8 subcapítulos, 4 com título do índice e 4 como subdivisão de trabalho
+ await expect(page.locator('.hgp-editorial', { hasText: 'Título do índice do manual' })).toHaveCount(4);
+ await expect(page.locator('.hgp-editorial', { hasText: 'Subdivisão de trabalho (a confirmar com o manual)' })).toHaveCount(4);
  await page.getByRole('button',{name:'Limpar',exact:true}).click();await expandTopics(page);
  await expect(page.getByRole('button',{name:/Começar a estudar/})).toBeDisabled();
  await expect(page.getByText('0 subcapítulos escolhidos')).toBeVisible();
@@ -41,15 +41,15 @@ test('HGP: capítulos e subcapítulos do manual, seleção acessível, tutor e a
  // capítulo agrupador: seleciona todos os subcapítulos do D1
  await page.getByRole('checkbox',{name:'Selecionar todos os subcapítulos deste capítulo'}).first().check();
  await expect(page.getByText('9 subcapítulos escolhidos')).toBeVisible();
- await page.getByRole('button',{name:'Mistura',exact:true}).click();await expect(page.getByText('19 subcapítulos escolhidos')).toBeVisible();
+ await page.getByRole('button',{name:'Mistura',exact:true}).click();await expect(page.getByText('27 subcapítulos escolhidos')).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth)).toBeLessThanOrEqual(1);
 });
 test('HGP: Estudar, Teste, Rever, estrelas e persistência',async({page})=>{
  await enter(page);await page.getByRole('button',{name:'Mistura',exact:true}).click();await page.getByRole('button',{name:/Começar a estudar/}).click();
  test.skip(await page.getByText(/Ainda não há perguntas/).count()>0,'Bancos HGP ainda ausentes neste checkout');
  const kinds=[];for(let i=0;i<3;i++)kinds.push(await answer(page,'study'));
- await expect(page.locator('main h1')).toHaveText('19 subcapítulos');await expect(page.getByText(/estrelas/).first()).toBeVisible();
- await page.getByRole('button',{name:'Continuar a estudar',exact:true}).click();await expect(page.getByText('19 subcapítulos escolhidos')).toBeVisible();
+ await expect(page.locator('main h1')).toHaveText('27 subcapítulos');await expect(page.getByText(/estrelas/).first()).toBeVisible();
+ await page.getByRole('button',{name:'Continuar a estudar',exact:true}).click();await expect(page.getByText('27 subcapítulos escolhidos')).toBeVisible();
  await page.getByRole('button',{name:/^Teste/}).click();await page.getByRole('button',{name:'Começar o teste'}).click();
  await expect(page.getByRole('button',{name:/Tomé|Uma pista/})).toHaveCount(0);
  for(let i=0;i<5;i++) {if(await page.locator('.grade').count())break;await answer(page,'test');}
@@ -91,23 +91,27 @@ test('HGP: mcq, order, feedback específico e figura com seed fixo (build hgp-e2
  expect(kinds.has('mcq')).toBe(true);expect(kinds.has('order')).toBe(true);expect(sawFigure).toBe(true);
  await page.locator('.correction details').filter({hasText:figure.prompt}).locator('summary').click();await expect(page.locator('.correction .pt-map')).toBeVisible();
 });
-test('HGP: atalho do teste escolar no mapa, na sala e por ligação, só com o capítulo (20 perguntas)',async({page})=>{
- // Instantâneo gerado dos itens do capítulo (docs/hgp/auditoria-seculo-xviii); o Playwright não carrega import.meta.glob.
+test('HGP: mapa limpo, sem atalhos de matérias; ligação ?capitulo= e seleção normal (20 perguntas)',async({page})=>{
  const snapshot=snapshotJson as {id:string;prompt:string;validacao:string}[];
  const active=snapshot.filter(i=>i.validacao!=='a-confirmar');
  expect(active.length).toBe(69);
- // o atalho cobre os 8 subcapítulos do índice (sem o complemento das AE: ids 47–49)
  const chapter=active.filter(i=>!['47','48','49'].includes(i.id.slice(-2)));expect(chapter.length).toBe(66);
  await page.goto('/');await page.getByRole('button',{name:/Jogar/}).first().click();
  await page.getByRole('button',{name:/Surpreende/}).click();await page.getByRole('button',{name:/Vamos ao centro/}).click();
- const cta=page.getByRole('button',{name:'Preparar próximo teste — Portugal no século XVIII'});
- await expect(cta).toBeVisible();await cta.click();
- await expect(page.locator('.question-progress')).toContainText('Pergunta 1 de 3');
+ // mapa: nenhum botão amarelo de teste, nenhum atalho de matéria; sem tema anterior, sem «Continuar a estudar»
+ await expect(page.getByRole('button',{name:/Preparar próximo teste/})).toHaveCount(0);
+ await expect(page.locator('.chapter-cta, .subject-links')).toHaveCount(0);
+ await expect(page.getByRole('button',{name:/Continuar a estudar/})).toHaveCount(0);
+ await page.locator('[data-target="historia"]').click();
+ await expect(page.getByRole('note')).toContainText('Versão provisória de estudo');
+ await expect(page.getByRole('button',{name:/Preparar próximo teste/})).toHaveCount(0);
+ await page.getByRole('button',{name:/Começar a estudar/}).click();
  for(let i=0;i<3;i++)await answer(page,'study');
  await page.getByRole('button',{name:'Voltar ao centro',exact:true}).click();
- // perfil já com progresso: o atalho do mapa abre 20 perguntas, todas do capítulo e das ativas
+ // com progresso: «Continuar a estudar» genérico, e ainda sem atalhos específicos
  await page.reload();await page.getByRole('button',{name:'Continuar',exact:true}).click();
- await expect(page.getByRole('button',{name:'Preparar próximo teste — Portugal no século XVIII'})).toBeVisible();
+ await expect(page.getByRole('button',{name:'Continuar a estudar',exact:true})).toBeVisible();
+ await expect(page.getByRole('button',{name:/Preparar próximo teste/})).toHaveCount(0);
  await page.goto('/?capitulo=seculo-xviii');
  await expect(page.locator('.question-progress')).toContainText('Pergunta 1 de 20');
  const seen=new Set<string>();
@@ -118,11 +122,51 @@ test('HGP: atalho do teste escolar no mapa, na sala e por ligação, só com o c
   await answer(page,'study');
  }
  expect(seen.size).toBe(20);
- // sala de HGP: o atalho está logo no topo e o aviso de edição provisória é visível
- await page.getByRole('button',{name:'Voltar ao centro',exact:true}).click();
- await page.locator('[data-target="historia"]').click();
- await expect(page.getByRole('note')).toContainText('Versão provisória de estudo');
- await expect(page.getByRole('button',{name:'Preparar próximo teste — Portugal no século XVIII'})).toBeVisible();
+});
+const REC5=['Portugal nos séculos XV e XVI','Expansão marítima portuguesa','Intercâmbio e choque de culturas','Consequências da expansão portuguesa','Da União Ibérica à Restauração da Independência','Crise dinástica de 1580 e União Ibérica','Portugal sob os Filipes','Descontentamento, resistência e Restauração de 1640'];
+test('HGP: recuperação do 5.º ano — 8 subcapítulos com lição e sessão própria',async({page})=>{
+ await enter(page);
+ for(const title of REC5){
+  await page.getByRole('button',{name:'Limpar',exact:true}).click();await expandTopics(page);
+  await page.locator('label.topic-card',{has:page.locator('strong',{hasText:new RegExp('^'+title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'$')})}).locator('input').check();
+  await expect(page.getByText('1 subcapítulos escolhidos')).toBeVisible();
+  await page.getByRole('button',{name:/Tomé/}).click();await page.getByRole('button',{name:'Explica-me esta matéria'}).click();
+  await expect(dialogText(page)).toContainText(title.slice(0,12));await page.getByRole('button',{name:'Fechar'}).click();
+  await page.getByRole('button',{name:/Começar a estudar/}).click();
+  await expect(page.locator('.question-progress')).toContainText('Pergunta 1 de');
+  await page.goto('/');await page.getByRole('button',{name:'Continuar',exact:true}).click();await page.locator('[data-target="historia"]').click();
+ }
+});
+test('HGP: recuperação — seleção múltipla, modos Estudar, Teste e Rever, sem scroll lateral',async({page})=>{
+ await enter(page);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expandTopics(page);
+ for(const title of [REC5[1]!,REC5[6]!,REC5[7]!])
+  await page.locator('label.topic-card',{has:page.locator('strong',{hasText:title})}).locator('input').check();
+ await expect(page.getByText('3 subcapítulos escolhidos')).toBeVisible();
+ await page.getByRole('button',{name:/Começar a estudar/}).click();
+ for(let i=0;i<3;i++)await answer(page,'study');
+ await expect(page.getByText(/estrelas/).first()).toBeVisible();
+ await page.getByRole('button',{name:'Continuar a estudar',exact:true}).click();await expect(page.getByText('3 subcapítulos escolhidos')).toBeVisible();
+ await page.getByRole('button',{name:/^Teste/}).click();await page.getByRole('button',{name:'Começar o teste'}).click();
+ for(let i=0;i<5;i++){if(await page.locator('.grade').count())break;await answer(page,'test');}
+ await expect(page.locator('.grade')).toContainText('/ 20');
+ await page.getByRole('button',{name:'Continuar a estudar',exact:true}).click();await page.getByRole('button',{name:/^Rever/}).click();await page.getByRole('button',{name:'Começar a rever'}).click();
+ if(await page.locator('.question-progress').count()) {for(let i=0;i<5;i++){if(!await page.locator('.question-progress').count())break;await answer(page,'review');}}
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth)).toBeLessThanOrEqual(1);
+});
+test('HGP: sessões consecutivas da recuperação não repetem perguntas',async({page})=>{
+ await enter(page);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expandTopics(page);
+ await page.getByRole('checkbox',{name:'Selecionar todos os subcapítulos deste capítulo'}).first().check();
+ await expect(page.getByText('8 subcapítulos escolhidos')).toBeVisible();
+ const all:string[]=[];
+ for(let round=0;round<3;round++){
+  await page.getByRole('button',{name:/Começar a estudar/}).click();
+  const prompts:string[]=[];
+  for(let i=0;i<(round?5:3);i++){prompts.push((await page.locator('form.question').innerText()).split('\n').slice(0,3).join('|'));await answer(page,'study');}
+  expect(new Set(prompts).size).toBe(prompts.length);
+  all.push(...prompts);
+  await page.getByRole('button',{name:'Continuar a estudar',exact:true}).click();
+ }
+ expect(new Set(all).size).toBe(all.length);
 });
 test('HGP: um subcapítulo escolhido só traz perguntas e lição desse subcapítulo',async({page})=>{
  const snapshot=snapshotJson as {id:string;prompt:string;validacao:string}[];

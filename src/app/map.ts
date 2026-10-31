@@ -3,7 +3,7 @@ import { mapSvg, avatarSvg, abuSvg } from '../art';
 import { SUBJECTS, TOPICS } from '../../content';
 import { button, frame, navigate } from './router';
 import { getState } from './store';
-import { openRoom, startHgpChapter } from './room';
+import { openRoom } from './room';
 import { openProfile, openShop, openAchievements, openMinigame, openOptions, openProgress } from './extras';
 
 export function openMap(): void {
@@ -11,7 +11,6 @@ export function openMap(): void {
     const state = getState();
     const main = frame('O teu centro de descobertas');
     startAbuLife(main, true);
-    main.append(button('Preparar próximo teste — Portugal no século XVIII', startHgpChapter, 'primary chapter-cta'));
     const links = document.createElement('div');
     links.className = 'toolbar';
     for (const [label, action] of [
@@ -57,16 +56,10 @@ export function openMap(): void {
         }
       };
     });
-    const subjects = document.createElement('div');
-    subjects.className = 'subject-links';
-    SUBJECTS.filter((subject) => subject.active).forEach((subject) =>
-      subjects.append(button(`→ ${subject.name}`, () => activate(subject.id), 'primary')),
-    );
-    main.append(subjects);
     const last = TOPICS.find((topic) => topic.id === state.lastTopicId);
     if (last)
       main.append(
-        button(`Continuar a estudar · ${last.title}`, () => openRoom(last.subject, last.id), 'primary'),
+        button('Continuar a estudar', () => openRoom(last.subject, last.id), 'primary'),
       );
     main.insertAdjacentHTML(
       'beforeend',

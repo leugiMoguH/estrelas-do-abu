@@ -19,9 +19,18 @@ export interface SessionOptions {
   readonly rng: () => number;
   readonly now: number;
   readonly history?: readonly Seen[];
+  /** Agrupa exercícios (ex.: subcapítulo) para os distribuir; por omissão, por competência. */
+  /** Quantas perguntas recentes penalizar como repetição (por omissão, 20). */
+  readonly recentWindow?: number;
+  /** Custo de repetir uma pergunta recente (por omissão, 12). */
+  readonly repeatPenalty?: number;
+  readonly groupOf?: (ex: Exercise) => string;
 }
 export function buildSession(options: SessionOptions) {
   const { mode, pool, state, rng, now } = options;
+  const recentWindow = options.recentWindow ?? 20;
+  const repeatPenalty = options.repeatPenalty ?? 12;
+  const groupOf = options.groupOf ?? ((e: Exercise) => e.competencyId);
   const n = Number.isFinite(options.n) ? Math.max(0, Math.floor(options.n)) : 0;
   const ids =
     mode === 'review'
@@ -41,7 +50,7 @@ export function buildSession(options: SessionOptions) {
     );
     if (!available.length) break;
     const recent = [
-      ...(options.history ?? []).slice(-20).map((h) => ({
+      ...(options.history ?? []).slice(-recentWindow).map((h) => ({
         signature: h.signature,
         concept: h.conceptId,
         approach: h.approachId,
@@ -56,12 +65,12 @@ export function buildSession(options: SessionOptions) {
         competency: e.competencyId,
       })),
     ];
-    const recentSignatures = new Set(recent.slice(-20).map((h) => h.signature));
+    const recentSignatures = new Set(recent.slice(-recentWindow).map((h) => h.signature));
     const recentConcepts = recent.slice(-3);
     const penalty = (ex: Exercise) =>
       options.history === undefined
         ? 0
-        : Number(recentSignatures.has(signatureOf.get(ex)!)) * 12 +
+        : Number(recentSignatures.has(signatureOf.get(ex)!)) * repeatPenalty +
           recentConcepts.filter(
             (h) => h.competency === ex.competencyId && h.concept !== undefined && h.concept === ex.conceptId,
           ).length *
@@ -78,7 +87,7 @@ export function buildSession(options: SessionOptions) {
             : m.streak >= 3
               ? 3
               : 2;
-      const count = selected.filter((e) => e.competencyId === ex.competencyId).length;
+      const count = selected.filter((e) => groupOf(e) === groupOf(ex)).length;
       return (
         penalty(ex) +
         Math.abs(ex.difficulty - target) * 10 +

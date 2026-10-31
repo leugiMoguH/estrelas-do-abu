@@ -43,6 +43,12 @@ function renderSection(state: HgpTreeState, section: HgpSection, grid: HTMLEleme
   const official = document.createElement('small');
   official.textContent = `Oficial: ${section.official}`;
   text.append(title, detail, official);
+  if (section.editorial) {
+    const tag = document.createElement('small');
+    tag.className = 'hgp-editorial';
+    tag.textContent = section.editorial === 'confirmado' ? 'Título do índice do manual' : 'Subdivisão de trabalho (a confirmar com o manual)';
+    text.append(tag);
+  }
   label.append(input, text);
   grid.append(label);
 }

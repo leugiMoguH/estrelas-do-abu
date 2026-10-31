@@ -62,6 +62,9 @@ export function startSession(
     rng,
     now: Date.now(),
     history: before.seen,
+    recentWindow: context?.sectionIds ? 60 : undefined,
+    repeatPenalty: context?.sectionIds ? 40 : undefined,
+    groupOf: context?.sectionIds ? (e) => hgpItemSection(e.id) ?? e.competencyId : undefined,
   });
   update({ lastTopicId: topicId });
   let index = 0;
