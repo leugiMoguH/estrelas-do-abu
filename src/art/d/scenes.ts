@@ -1,3 +1,4 @@
+import historyRoom from '../assets/d6/room-his.png';
 import campus from '../assets/d/campus.webp';
 import plaza from '../assets/d2/plaza_bg.webp';
 import mathematics from '../assets/d6/room-mat.webp';
@@ -32,8 +33,7 @@ export function mapD({activeSubjects}: {activeSubjects: readonly string[]}): str
  return `<svg class="map-svg map-d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1152" role="group" aria-label="Centro escolar"><image href="${campus}" width="768" height="1152"/>${subjects.map(s=>spot(s)).join('')}${square.map(s=>spot(s,true)).join('')}</svg>`;
 }
 export function roomD(subject: string): string {
- const optional = import.meta.glob('../assets/d6/room-his.webp', { eager:true, query:'?url', import:'default' }) as Record<string,string>;
- const src = subject==='historia' ? (optional['../assets/d6/room-his.webp'] ?? plaza) : subject==='matematica'?mathematics:subject==='portugues'?portuguese:plaza;
+ const src = subject==='historia' ? historyRoom : subject==='matematica'?mathematics:subject==='portugues'?portuguese:plaza;
  return `<svg class="room-svg room-d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 853" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="${src}" width="1280" height="853" preserveAspectRatio="xMidYMid slice"/></svg>`;
 }
 export const welcomeD = (): string => `<svg class="welcome-svg welcome-d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1152" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="${plaza}" width="768" height="1152"/></svg>`;

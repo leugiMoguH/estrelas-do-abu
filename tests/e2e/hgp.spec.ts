@@ -6,6 +6,10 @@ async function enter(page: Page): Promise<void> {
  await page.getByRole('button',{name:/Surpreende/}).click();await page.getByRole('button',{name:/Vamos ao centro/}).click();
  const target=page.locator('[data-target="historia"]');const box=await target.boundingBox();expect(box!.width).toBeGreaterThanOrEqual(44);expect(box!.height).toBeGreaterThanOrEqual(44);await target.click();
 }
+async function expandTopics(page: Page): Promise<void> {
+ const closed=page.locator('.topic-group:not([open]) > summary');
+ while(await closed.count()) await closed.first().click();
+}
 async function answer(page: Page, mode: string): Promise<string> {
  const order=page.locator('.order-options button:not([disabled])');const choices=page.locator('.answer-editor button');let kind='input';
  if(await order.count()){kind='order';while(await order.count())await order.first().click();}
@@ -17,10 +21,12 @@ async function answer(page: Page, mode: string): Promise<string> {
 }
 test('HGP: seleção acessível, filtros, tutor e ausência de scroll',async({page})=>{
  await enter(page);await expect(page.getByRole('button',{name:/Tomé/})).toBeVisible();
- await expect(page.getByRole('checkbox')).toHaveCount(11);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expect(page.getByRole('button',{name:/Começar a estudar/})).toBeDisabled();
+ await expect(page.locator('.topic-group[open]')).toHaveCount(1);
+ await expect(page.locator('.topic-group summary').first()).toContainText('1/');
+ await expect(page.getByRole('checkbox', { includeHidden:true })).toHaveCount(11);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expect(page.getByRole('button',{name:/Começar a estudar/})).toBeDisabled();
  await page.getByRole('button',{name:'Recuperação do 5.º ano',exact:true}).click();await expect(page.getByRole('checkbox')).toHaveCount(1);
  await page.getByRole('checkbox').check();await expect(page.getByText('1 temas escolhidos')).toBeVisible();
- await page.getByRole('button',{name:'Tudo',exact:true}).click();await page.getByRole('checkbox').nth(1).check();await expect(page.getByText('2 temas escolhidos')).toBeVisible();
+ await page.getByRole('button',{name:'Tudo',exact:true}).click();await expandTopics(page);await page.getByRole('checkbox').nth(1).check();await expect(page.getByRole('checkbox').nth(1)).toBeFocused();await expect(page.getByRole('checkbox').nth(1)).toBeChecked();await expect(page.getByText('2 temas escolhidos')).toBeVisible();
  await page.getByRole('button',{name:'Mistura',exact:true}).click();await expect(page.getByText('11 temas escolhidos')).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth)).toBeLessThanOrEqual(1);
 });
@@ -50,6 +56,7 @@ test('HGP: mcq, order, feedback específico e figura com seed fixo (build hgp-e2
  await page.goto(`/?hgpSeed=42&hgpIds=${[mcq,order,figure].map(i=>i.id).join(',')}`);
  await page.getByRole('button',{name:/Continuar/}).first().click();await page.locator('[data-target="historia"]').click();
  await page.getByRole('button',{name:'Limpar',exact:true}).click();
+ await expandTopics(page);
  await page.getByRole('checkbox',{name:new RegExp(hgpTopics.find(t=>t.id===mcq.topic)!.title)}).check();
  await page.getByRole('button',{name:/Tomé/}).click();await expect(page.getByRole('dialog')).toBeVisible();
  await page.getByRole('dialog').getByRole('button',{name:'Mostra um exemplo'}).click();
@@ -58,7 +65,7 @@ test('HGP: mcq, order, feedback específico e figura com seed fixo (build hgp-e2
  const kinds=new Set<string>();let sawFigure=false;
  for(let n=0;n<3;n++){
   const prompt=await page.locator('.question h2').innerText();const item=items.find(i=>i.prompt===prompt)!;kinds.add(item.kind);
-  if(item.figure){await expect(page.getByRole('img',{name:'Mapa de Portugal com a região em causa destacada'})).toBeVisible();await page.screenshot({path:info.outputPath('hgp-figure.png'),fullPage:true,animations:'disabled'});sawFigure=true;}
+  if(item.figure){await expect(page.getByRole('img',{name:item.figure.label ?? 'Mapa de Portugal com a região em causa destacada',exact:true})).toBeVisible();await page.screenshot({path:info.outputPath('hgp-figure.png'),fullPage:true,animations:'disabled'});sawFigure=true;}
   if(item.kind==='mcq'){
    const wrong=item.options.find(o=>o!==item.correct)!;await page.locator('.answer-editor').getByRole('button',{name:wrong,exact:true}).click();await page.getByRole('button',{name:'Verificar',exact:true}).click();await expect(page.locator('.feedback')).toContainText(item.wrong[wrong]!);
    await page.getByRole('button',{name:'Tentar de novo'}).click();await page.locator('.answer-editor').getByRole('button',{name:item.correct,exact:true}).click();

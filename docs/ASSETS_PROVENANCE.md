@@ -14,3 +14,19 @@
 
 Acessórios do Abu e da personagem, rosto (olhos, boca, blush), estrela e interface: SVG/CSS próprios (código do projeto).
 Limitações: modelo/versão exata do gerador não registada pela ferramenta; as cópias automáticas ficam no diretório gerido do Codex (fora do repositório). Antes de qualquer publicação pública definitiva: ler os termos oficiais, decidir se se mantém IA ou se se encomenda arte, e inventariar por ficheiro.
+
+
+## HGP — 2026-10-31
+
+Uma tentativa direta por asset com a ferramenta integrada `image_gen`, ambas com sucesso. Sem referências externas; não foi necessário SVG alternativo. Ficheiros copiados sem alteração do resultado PNG:
+
+- `src/art/assets/d5/tutor-tome-neutral.png`: Tomé, tartaruga com carapaça e mochila de viajante, PNG com alpha. O mesmo retrato é usado em repouso e durante a fala (sem pose de fala separada). O resultado contém um halo de fundo semitransparente, apesar do pedido de transparência.
+- `src/art/assets/d6/room-his.png`: sala com estantes, mapa-mundo decorativo e globo. O mapa é ilustração de ambiente, não material curricular/cartográfico.
+
+Prompts exatos (modo integrado, sem CLI):
+
+> Use case: illustration-story. Asset for a Portuguese educational game for an 11-year-old child. Tomé, a friendly travelling turtle tutor, full body with a patterned green shell and small traveller backpack, welcoming smile, three-quarter view, standing. Polished softly painted storybook illustration with warm light, rounded shapes, gentle dimensional shading, warm cream and sage palette, matching a cosy illustrated school game. Isolated on transparent background, no text, no watermark.
+
+> Use case: illustration-story. Wide room illustration for a Portuguese educational history and geography game for an 11-year-old child. Cosy school library classroom, wooden bookshelves with colourful books, framed world map on the back wall, globe on a wooden desk, warm sunlight through a window, welcoming exploration atmosphere. Polished softly painted storybook game background, rounded shapes and gentle dimensional shading, cream, honey wood, sage and muted blue palette. Wide landscape composition, empty floor in the foreground for game characters. No people, no text, no watermark.
+
+Limitações: versão exata do modelo não exposta; correspondência à direção D avaliada visualmente, sem garantia de identidade estilística. Mantêm-se as limitações gerais acima. PNG originais com cerca de 4,5 MB no total, sem otimização adicional.

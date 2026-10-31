@@ -492,7 +492,13 @@ body.reduce-motion *::after {
 }
 
 /* Multi-seleção de temas HGP. */
-label.topic-card { display:flex; align-items:center; gap:.75rem; min-height:64px; cursor:pointer; }
+label.topic-card { display:flex; flex-direction:row; align-items:center; gap:.75rem; min-height:64px; padding:12px; cursor:pointer; }
+label.topic-card > span { display:flex; flex-direction:column; gap:4px; min-width:0; }
+label.topic-card strong { display:block; }
+.topic-group { margin:12px 0; padding:0; border:1px solid #cdbb9c; border-radius:14px; background:#fffaf0; }
+.topic-group > summary { padding:14px; cursor:pointer; font-weight:700; overflow-wrap:anywhere; }
+.topic-group > summary:focus-visible { outline:3px solid #614276; outline-offset:2px; border-radius:14px; }
+.topic-group > .topic-grid { padding:0 12px 12px; gap:10px; }
 label.topic-card input[type="checkbox"] { width:24px; height:24px; flex-shrink:0; }
 label.topic-card:has(input:checked) { outline:3px solid #bc7927; background:#fff1d5; }
 label.topic-card:focus-within { outline:3px solid #614276; }

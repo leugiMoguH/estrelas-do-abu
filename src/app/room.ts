@@ -15,6 +15,7 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
   const multi = topics.length > 4;
   const chosen = new Set(context?.topicIds ?? (selected ? [selected.id] : []));
   let filter: 'all' | 'recuperacao5' | '6' = 'all';
+  const groupOpen = new Map<string | undefined, boolean>();
   let mode: Mode = 'study';
   let count = getState().save.seen.length ? 5 : 3;
   const render = (): void => {
@@ -40,9 +41,17 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       filters.append(mix,clear); main.append(filters);
       const counter=document.createElement('p');counter.setAttribute('role','status');counter.textContent=`${chosen.size} temas escolhidos`;main.append(counter);
       for (const group of new Set(visible.map(t=>t.group))) {
-        const field=document.createElement('fieldset');const legend=document.createElement('legend');legend.textContent=group ?? 'Temas';field.append(legend);
+        const members = visible.filter(t=>t.group===group);
+        const field=document.createElement('details');field.className='topic-group';
+        const summary=document.createElement('summary');summary.dataset.focusId=`group-${group}`;
+        const selectedCount=members.filter(t=>chosen.has(t.id)).length;
+        summary.textContent=`${group ?? 'Temas'}: ${selectedCount}/${members.length} escolhidos`;
+        field.open=groupOpen.get(group) ?? (selectedCount>0 || group===visible[0]?.group);
+        if(members.some(t=>focusId===`topic-${t.id}`))field.open=true;
+        field.ontoggle=()=>{if(field.isConnected)groupOpen.set(group,field.open);};
+        field.append(summary);
         const grid=document.createElement('div');grid.className='topic-grid';
-        for(const topic of visible.filter(t=>t.group===group)) {
+        for(const topic of members) {
           const label=document.createElement('label');label.className='topic-card';
           const input=document.createElement('input');input.type='checkbox';input.checked=chosen.has(topic.id);input.dataset.focusId=`topic-${topic.id}`;
           input.onchange=()=>{if(input.checked)chosen.add(topic.id);else chosen.delete(topic.id);render();};

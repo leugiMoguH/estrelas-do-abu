@@ -1,3 +1,4 @@
+import tomePortrait from '../art/assets/d5/tutor-tome-neutral.png';
 import { TUTORS, type SubjectId } from '../../content';
 import { button } from './router';
 import type { Mode } from './session';
@@ -41,7 +42,7 @@ export function tutorButton(options: TutorOptions): HTMLElement {
     dialog.append(close, portrait, title, body);
     const picture = (talk: boolean): void => {
       portrait.replaceChildren();
-      const url = assets[`../art/assets/d5/tutor-${tutor.art}-${talk ? 'talk' : 'neutral'}.webp`];
+      const url = options.subject === 'historia' ? tomePortrait : assets[`../art/assets/d5/tutor-${tutor.art}-${talk ? 'talk' : 'neutral'}.webp`];
       if (url) { const img = document.createElement('img'); img.src = url; img.alt = ''; portrait.append(img); }
       else portrait.textContent = `${tutor.name[0]} ${tutor.emoji}`;
       portrait.className = 'tutor-portrait';
@@ -69,7 +70,7 @@ export function tutorButton(options: TutorOptions): HTMLElement {
   trigger.setAttribute('aria-haspopup', 'dialog');
   trigger.setAttribute('aria-label', options.scene ? `${tutor.name}: perguntar` : `Falar com ${tutor.name}`);
   if (options.scene) trigger.classList.add('room-tutor');
-  const url = assets[`../art/assets/d5/tutor-${tutor.art}-neutral.webp`];
+  const url = options.subject === 'historia' ? tomePortrait : assets[`../art/assets/d5/tutor-${tutor.art}-neutral.webp`];
   if (url) { const img = document.createElement('img'); img.src = url; img.alt = ''; trigger.append(img); }
   else { const circle = document.createElement('span'); circle.className = 'tutor-initial'; circle.textContent = `${tutor.name[0]} ${tutor.emoji}`; trigger.append(circle); }
   const label = document.createElement('span');
@@ -77,7 +78,7 @@ export function tutorButton(options: TutorOptions): HTMLElement {
   trigger.append(label);
   const setTriggerPicture = (talk: boolean): void => {
     const img = trigger.querySelector('img');
-    const src = assets[`../art/assets/d5/tutor-${tutor.art}-${talk ? 'talk' : 'neutral'}.webp`];
+    const src = options.subject === 'historia' ? tomePortrait : assets[`../art/assets/d5/tutor-${tutor.art}-${talk ? 'talk' : 'neutral'}.webp`];
     if (img && src) img.src = src;
   };
   trigger.disabled = !tutor.ready;

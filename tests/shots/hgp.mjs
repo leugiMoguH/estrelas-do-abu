@@ -8,7 +8,11 @@ for (const [w, h] of [[390, 844], [820, 1180], [1280, 800]]) {
   await p.goto(base); await p.getByRole('button', { name: /Jogar/ }).first().click();
   await p.getByRole('button', { name: /Surpreende/ }).click(); await p.getByRole('button', { name: /Vamos ao centro/ }).click();
   await shot('mapa'); await p.locator('[data-target="historia"]').click(); await p.waitForTimeout(400); await shot('sala');
+  const roomHeight = await p.evaluate(() => document.documentElement.scrollHeight);
+  const roomOverflow = await p.evaluate(() => document.documentElement.scrollWidth - innerWidth);
   await p.getByRole('button', { name: 'Limpar', exact: true }).click();
+  const closed = p.locator('.topic-group:not([open]) > summary');
+  while (await closed.count()) await closed.first().click();
   await p.getByRole('checkbox').nth(6).check(); await shot('sala-selecao');
   await p.getByRole('button', { name: /Começar a estudar/ }).click();
   let fig = false;
@@ -23,7 +27,7 @@ for (const [w, h] of [[390, 844], [820, 1180], [1280, 800]]) {
     if (i === 0) await shot('feedback');
     await p.getByRole('button', { name: /Próxima pergunta|Ver resultado/ }).click();
   }
-  out.push({ w, h, fig, overflow: await p.evaluate(() => document.documentElement.scrollWidth - innerWidth), errors: errs.length });
+  out.push({ w, h, roomHeight, roomOverflow, fig, overflow: await p.evaluate(() => document.documentElement.scrollWidth - innerWidth), errors: errs });
   await p.close();
 }
 console.log(JSON.stringify(out)); await b.close();
