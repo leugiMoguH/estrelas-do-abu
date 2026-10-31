@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-P2Xu9kJm.js";import{t as e}from"./boot-D9Jkj8s6.js";e(`a`);
