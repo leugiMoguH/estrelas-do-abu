@@ -38,6 +38,7 @@ for f in feats:
     eps = 0.012 if t is main else 0.006
     parts = []
     for r in rings(f):
+        if sid == 'madeira' and max(p[1] for p in r) < 32.3: continue   # ilhas Selvagens (30°N) ficam fora do enquadramento
         if area(r) < (0.0006 if t is main else 0.00002): continue
         pts = dp_ring([tuple(p[:2]) for p in r], eps)
         xy = [t(*p) for p in pts]
@@ -45,7 +46,7 @@ for f in feats:
     out[sid] = {'name': name.replace('Azores', 'Açores'), 'd': ''.join(parts)}
 order = sorted(out)
 ts = ["/** Mapa de Portugal por distritos (Natural Earth, domínio público; simplificado). Gerado por tests/shots/d-src/hgp/build_ptmap.py. */",
-      "export const PT_MAP_VIEWBOX = '0 0 300 400';",
+      "export const PT_MAP_VIEWBOX = '0 0 308 400';",
       "export const PT_MAP: Readonly<Record<string, { name: string; d: string }>> = {"]
 for k in order: ts.append(f"  {json.dumps(k)}: {{ name: {json.dumps(out[k]['name'], ensure_ascii=False)}, d: {json.dumps(out[k]['d'])} }},")
 ts.append('};')

@@ -16,7 +16,7 @@ interface Base {
   readonly conceptId?: string;
   readonly approachId?: string;
   readonly stimulus?: string;
-  readonly figure?: { type: "pt-map"; highlight: readonly string[] };
+  readonly figure?: { type: "pt-map"; highlight: readonly string[]; label?: string };
   readonly id: string;
   readonly competencyId: string;
   readonly difficulty: 1 | 2 | 3;

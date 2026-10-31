@@ -137,7 +137,7 @@ export function startSession(
     if (exercise.stimulus)
       form.innerHTML = `<blockquote class="stimulus">${escape(exercise.stimulus)}</blockquote>`;
     form.insertAdjacentHTML('beforeend', `<h2>${escape(exercise.prompt)}</h2>`);
-    if (exercise.figure) form.insertAdjacentHTML('beforeend', ptMapSvg(exercise.figure.highlight));
+    if (exercise.figure) form.insertAdjacentHTML('beforeend', ptMapSvg(exercise.figure.highlight, exercise.figure.label));
     const editor = answerEditor(exercise);
     const feedback = document.createElement('div');
     feedback.className = 'feedback';

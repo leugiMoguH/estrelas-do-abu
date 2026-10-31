@@ -40,7 +40,7 @@ export function hgpTemplate(item: HgpItem): ExerciseTemplate {
         hints: [...item.hints],
         explanation: item.explanation,
         stimulus: item.stimulus,
-        figure: item.figure ? { type: 'pt-map' as const, highlight: [...item.figure.highlight] } : undefined,
+        figure: item.figure ? { type: 'pt-map' as const, highlight: [...item.figure.highlight], label: item.figure.label } : undefined,
         commonErrors: Object.entries(errors).map(([match, feedback]) => ({ match, feedback })),
       };
       switch (item.kind) {
@@ -49,7 +49,7 @@ export function hgpTemplate(item: HgpItem): ExerciseTemplate {
         case 'order':
           return { ...base, kind: 'order', items: shuffle(item.items), correctAnswer: [...item.correct] };
         case 'numeric':
-          return { ...base, kind: 'numeric', correctAnswer: item.correct, tolerance: 0, units: [] };
+          return { ...base, kind: 'numeric', correctAnswer: item.correct, tolerance: 0, units: item.prompt.includes('%') ? ['%'] : [] };
         case 'cloze':
           return { ...base, kind: 'cloze', correctAnswers: item.correct.map(answers => [...answers]) };
       }

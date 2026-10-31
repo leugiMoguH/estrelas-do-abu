@@ -195,7 +195,7 @@ export const bank: HgpBank = {
     {
       id: 'hgp-republica-08', topic: 'hgp-republica', sub: 'implantacao', skill: 'comparacao', difficulty: 1, kind: 'cloze',
       prompt: 'Completa: Na monarquia, o chefe do Estado era o ___, que herdava o cargo. Na República, o chefe do Estado passou a ser o ___ da República, escolhido por eleição.',
-      correct: [['rei', 'o rei'], ['presidente', 'Presidente']],
+      correct: [['rei'], ['presidente']],
       hints: [
         'Antes de 1910, Portugal tinha reis.',
         'Na República, quem ocupa o cargo mais alto chama-se Presidente.',
@@ -315,10 +315,10 @@ export const bank: HgpBank = {
         'Salgueiro Maia': 'Salgueiro Maia foi um dos capitães do 25 de Abril, que derrubou o regime.',
       },
       hints: [
-        'Começou como ministro das Finanças, em 1928.',
+        'Teve uma breve passagem pelo Ministério das Finanças em 1926 e regressou ao cargo em 1928.',
         'O regime é muitas vezes chamado «salazarismo».',
       ],
-      explanation: 'António de Oliveira Salazar entrou no governo como ministro das Finanças em 1928, ganhou cada vez mais poder e chefiou o Estado Novo, criado com a Constituição de 1933.',
+      explanation: 'António de Oliveira Salazar teve uma breve passagem pelo Ministério das Finanças em 1926 e regressou ao cargo em 1928, ganhou cada vez mais poder e chefiou o Estado Novo, criado com a Constituição de 1933.',
       sources: ['as-salazar', 'wiki-salazar', 'dge-gta14'],
     },
     {
@@ -333,7 +333,7 @@ export const bank: HgpBank = {
       correct: 'Examinava jornais, revistas e outras publicações e cortava o que o governo não queria que se divulgasse',
       wrong: {
         'Garantia que todas as pessoas podiam dizer livremente o que pensavam': 'É o contrário: a censura limitava a liberdade de expressão.',
-        'Prendia as pessoas que se opunham ao regime': 'Isso era o papel da polícia política (PVDE, depois PIDE), não da censura.',
+        'Prendia as pessoas que se opunham ao regime': 'Isso era o papel da polícia política (sucessivamente PVDE, PIDE e DGS), não da censura.',
         'Organizava eleições livres com vários partidos': 'No Estado Novo não havia eleições livres nem vários partidos autorizados.',
       },
       hints: [
@@ -347,22 +347,22 @@ export const bank: HgpBank = {
       id: 'hgp-ditadura-04', topic: 'hgp-ditadura', sub: 'censura-repressao', skill: 'facto', difficulty: 2, kind: 'mcq',
       prompt: 'O que era a PIDE?',
       options: [
-        'A polícia política que vigiava, perseguia e prendia os opositores do regime',
-        'Um partido da oposição ao Estado Novo',
-        'O movimento de militares que fez o 25 de Abril',
-        'A organização juvenil do regime',
+        'Uma polícia política',
+        'Um partido de oposição',
+        'Um movimento militar',
+        'Uma organização juvenil',
       ],
-      correct: 'A polícia política que vigiava, perseguia e prendia os opositores do regime',
+      correct: 'Uma polícia política',
       wrong: {
-        'Um partido da oposição ao Estado Novo': 'A PIDE estava ao serviço do regime e perseguia a oposição.',
-        'O movimento de militares que fez o 25 de Abril': 'Esse era o MFA (Movimento das Forças Armadas).',
-        'A organização juvenil do regime': 'A organização juvenil era a Mocidade Portuguesa.',
+        'Um partido de oposição': 'A PIDE estava ao serviço do regime e perseguia a oposição.',
+        'Um movimento militar': 'Esse era o MFA (Movimento das Forças Armadas).',
+        'Uma organização juvenil': 'A organização juvenil era a Mocidade Portuguesa.',
       },
       hints: [
         'Era uma polícia, mas não tratava de crimes comuns.',
         'Perseguia quem pensava de forma diferente do governo.',
       ],
-      explanation: 'A PIDE era a polícia política do Estado Novo: tinha informadores e prendia opositores. Hoje, o Museu do Aljube, em Lisboa, guarda a memória da resistência à ditadura.',
+      explanation: 'A PIDE era a polícia política do Estado Novo: vigiava, perseguia e prendia opositores e tinha informadores. Hoje, o Museu do Aljube, em Lisboa, guarda a memória da resistência à ditadura.',
       sources: ['dge-emc-bloco47', 'dge-hgp-bloco28', 'wiki-pide', 'aljube'],
     },
     {
@@ -377,7 +377,7 @@ export const bank: HgpBank = {
       correct: 'Verdadeira, porque o regime recusava vários partidos e a União Nacional funcionava como partido único.',
       wrong: {
         'Falsa, porque havia muitos partidos e eleições livres.': 'No Estado Novo não havia eleições livres nem partidos de oposição autorizados.',
-        'Falsa, porque a União Nacional era a polícia política.': 'A polícia política era a PVDE, mais tarde PIDE; a União Nacional era o partido do regime.',
+        'Falsa, porque a União Nacional era a polícia política.': 'A polícia política teve sucessivamente os nomes PVDE, PIDE e DGS; a União Nacional era o partido do regime.',
         'Verdadeira, porque a União Nacional era a organização a que todos os jovens pertenciam.': 'A conclusão está certa, mas a razão não: a organização dos jovens era a Mocidade Portuguesa.',
       },
       hints: [
@@ -400,7 +400,7 @@ export const bank: HgpBank = {
       wrong: {
         'No Estado Novo existia censura.': 'É um facto: a censura está documentada em leis e em jornais cortados da época.',
         'A Guerra Colonial começou em 1961, em Angola.': 'É um facto: a data e o local podem ser confirmados em fontes históricas.',
-        'A Constituição de 1933 deu início ao Estado Novo.': 'É um facto: a Constituição de 1933 é um documento que existe e pode ser consultado.',
+        'A Constituição de 1933 deu início ao Estado Novo.': 'A Constituição de 1933 estabeleceu a organização política do Estado Novo.',
       },
       hints: [
         'Uma opinião depende dos gostos ou sentimentos de quem fala.',
@@ -410,7 +410,7 @@ export const bank: HgpBank = {
       sources: ['dge-ae-hgp6', 'rtp-museu-25abril', 'wiki-estadonovo'],
     },
     {
-      id: 'hgp-ditadura-07', topic: 'hgp-ditadura', sub: 'censura-repressao', skill: 'fonte', difficulty: 3, kind: 'mcq',
+      id: 'hgp-ditadura-07', topic: 'hgp-ditadura', sub: 'censura-repressao', skill: 'fonte', difficulty: 1, kind: 'mcq',
       stimulus: '«O exercício destes direitos não pode ser impedido ou limitado por qualquer tipo ou forma de censura.» — Constituição da República Portuguesa, artigo 37.º (liberdade de expressão)',
       prompt: 'Esta regra da Constituição democrática proíbe algo que existia no Estado Novo. O quê?',
       options: [
@@ -435,7 +435,7 @@ export const bank: HgpBank = {
     {
       id: 'hgp-ditadura-08', topic: 'hgp-ditadura', sub: 'estado-novo', skill: 'comparacao', difficulty: 2, kind: 'cloze',
       prompt: 'Completa: No Estado Novo existia ___, que cortava notícias e livros, e não havia eleições livres. Em democracia há liberdade de ___ e eleições livres.',
-      correct: [['censura', 'a censura'], ['expressão', 'expressao', 'opinião', 'opiniao', 'pensamento', 'imprensa']],
+      correct: [['censura', 'a censura'], ['expressão', 'expressao', 'opinião', 'opiniao', 'pensamento', 'imprensa', 'expressão e opinião']],
       hints: [
         'A primeira palavra é o nome do serviço que cortava publicações.',
         'A segunda é o direito de dizer o que se pensa.',
@@ -447,7 +447,7 @@ export const bank: HgpBank = {
       id: 'hgp-ditadura-09', topic: 'hgp-ditadura', sub: 'golpe-1926', skill: 'causa', difficulty: 3, kind: 'order',
       prompt: 'Ordena, do mais antigo para o mais recente, os passos que levaram à formação do Estado Novo.',
       items: [
-        'Salazar torna-se ministro das Finanças',
+        'Salazar regressa ao Ministério das Finanças, em 1928',
         'Aprovação da Constituição de 1933',
         'Implantação da República',
         'Golpe militar de 28 de maio',
@@ -455,14 +455,14 @@ export const bank: HgpBank = {
       correct: [
         'Implantação da República',
         'Golpe militar de 28 de maio',
-        'Salazar torna-se ministro das Finanças',
+        'Salazar regressa ao Ministério das Finanças, em 1928',
         'Aprovação da Constituição de 1933',
       ],
       hints: [
         'A República (1910) veio antes do golpe que a derrubou (1926).',
-        'Salazar entrou no governo em 1928; o Estado Novo começou em 1933.',
+        'Salazar regressou ao Ministério das Finanças em 1928, após uma breve passagem em 1926; o Estado Novo começou em 1933.',
       ],
-      explanation: 'A Primeira República (1910) foi derrubada pelo golpe de 28 de maio de 1926. Salazar entrou no governo em 1928, como ministro das Finanças, e a Constituição de 1933 deu início ao Estado Novo.',
+      explanation: 'A Primeira República (1910) foi derrubada pelo golpe de 28 de maio de 1926. Salazar foi brevemente ministro das Finanças em 1926 e regressou ao cargo em 1928, e a Constituição de 1933 deu início ao Estado Novo.',
       sources: ['as-salazar', 'dge-gta14', 'wiki-estadonovo', 'wiki-salazar'],
     },
     {
@@ -484,7 +484,7 @@ export const bank: HgpBank = {
         'A guerra começou em 1961 e durou cerca de 13 anos.',
         'As eleições livres foram um ano depois da revolução.',
       ],
-      explanation: 'O Estado Novo começou em 1933. A Guerra Colonial começou em Angola em 1961 e só terminou com a queda do regime, a 25 de Abril de 1974. Em 25 de abril de 1975 houve eleições livres para a Assembleia Constituinte.',
+      explanation: 'O Estado Novo começou em 1933. A Guerra Colonial começou em Angola em 1961 e o 25 de Abril de 1974 abriu caminho às negociações que puseram fim à guerra durante 1974. Em 25 de abril de 1975 houve eleições livres para a Assembleia Constituinte.',
       sources: ['rtp-museu-25abril', 'wiki-guerra-colonial', 'dge-gta33', 'wiki-estadonovo'],
     },
     {
@@ -509,11 +509,11 @@ export const bank: HgpBank = {
       correct: 1933,
       wrongHints: {
         '1926': 'Em 1926 foi o golpe militar; o Estado Novo só começou com a Constituição, alguns anos depois.',
-        '1928': 'Em 1928 Salazar tornou-se ministro das Finanças.',
+        '1928': 'Em 1928 Salazar regressou ao Ministério das Finanças, após uma breve passagem em 1926.',
         '1976': 'A Constituição de 1976 é a da democracia.',
       },
       hints: [
-        'Foi alguns anos depois de Salazar entrar no governo (1928).',
+        'Foi alguns anos depois de Salazar regressar ao Ministério das Finanças (1928), onde estivera brevemente em 1926.',
         'O Estado Novo durou desde a década de 1930 até 1974.',
       ],
       explanation: 'A Constituição de 1933 deu início ao Estado Novo, que durou até ao 25 de Abril de 1974. Entre 1926 e 1933 houve uma ditadura militar.',
@@ -545,7 +545,7 @@ export const bank: HgpBank = {
     },
     {
       id: 'hgp-25-abril-02', topic: 'hgp-25-abril', sub: 'revolucao', skill: 'facto', difficulty: 1, kind: 'mcq',
-      prompt: 'Que canção de Zeca Afonso, transmitida pela Rádio Renascença, foi a senha para as tropas saírem dos quartéis?',
+      prompt: 'Que canção foi transmitida pela Rádio Renascença como segunda senha das operações militares?',
       options: ['Grândola, Vila Morena', 'E Depois do Adeus', 'A Portuguesa'],
       correct: 'Grândola, Vila Morena',
       wrong: {
@@ -556,7 +556,7 @@ export const bank: HgpBank = {
         'O nome da canção fala de uma vila alentejana.',
         'Foi a segunda senha, já na madrugada de 25 de abril.',
       ],
-      explanation: 'Houve duas senhas na rádio: «E Depois do Adeus», às 22h55 de 24 de abril, mandou as tropas prepararem-se; «Grândola, Vila Morena», de Zeca Afonso, na Rádio Renascença, deu a ordem para avançar.',
+      explanation: 'Houve duas senhas na rádio: «E Depois do Adeus», interpretada por Paulo de Carvalho, às 22h55 de 24 de abril, mandou as tropas prepararem-se; «Grândola, Vila Morena», de José Afonso, na Rádio Renascença, deu a ordem para avançar.',
       sources: ['rtp-museu-25abril', 'wiki-grandola', 'wiki-25abril'],
     },
     {
@@ -622,13 +622,13 @@ export const bank: HgpBank = {
         'O 25 de Abril é o feriado mais divertido do ano.',
         'Portugal entrou na CEE a 1 de janeiro de 1986.',
         'A Constituição de 1976 foi aprovada pela Assembleia Constituinte.',
-        'Em 1975 realizaram-se as primeiras eleições livres desde 1926.',
+        'A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal.',
       ],
       correct: 'O 25 de Abril é o feriado mais divertido do ano.',
       wrong: {
         'Portugal entrou na CEE a 1 de janeiro de 1986.': 'É um facto: a data está registada em documentos oficiais da União Europeia.',
         'A Constituição de 1976 foi aprovada pela Assembleia Constituinte.': 'É um facto: está escrito na própria Constituição.',
-        'Em 1975 realizaram-se as primeiras eleições livres desde 1926.': 'É um facto: as eleições para a Assembleia Constituinte foram a 25 de abril de 1975.',
+        'A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal.': 'É um facto: as eleições para a Assembleia Constituinte foram a 25 de abril de 1975.',
       },
       hints: [
         'Uma opinião não se pode provar com documentos.',
@@ -642,12 +642,12 @@ export const bank: HgpBank = {
       stimulus: '«Libertar Portugal da ditadura, da opressão e do colonialismo representou uma transformação revolucionária e o início de uma viragem histórica da sociedade portuguesa.» — Preâmbulo da Constituição da República Portuguesa (1976)',
       prompt: 'Que mudança, depois do 25 de Abril, está ligada à palavra «colonialismo» neste excerto?',
       options: [
-        'A descolonização: as colónias tornaram-se países independentes',
+        'A descolonização: Portugal reconheceu a independência das colónias',
         'A adesão de Portugal à CEE',
         'O fim da censura',
         'A criação do escudo',
       ],
-      correct: 'A descolonização: as colónias tornaram-se países independentes',
+      correct: 'A descolonização: Portugal reconheceu a independência das colónias',
       wrong: {
         'A adesão de Portugal à CEE': 'A adesão à CEE foi em 1986 e não está ligada à palavra «colonialismo».',
         'O fim da censura': 'O fim da censura liga-se às palavras «ditadura» e «opressão», não a «colonialismo».',
@@ -657,18 +657,18 @@ export const bank: HgpBank = {
         '«Colonialismo» é o domínio de um país sobre territórios noutros continentes, as colónias.',
         'Pensa no que aconteceu a Angola, Moçambique ou Guiné-Bissau depois de 1974.',
       ],
-      explanation: 'Depois do 25 de Abril, Portugal aceitou a independência das colónias (descolonização). O Preâmbulo da Constituição de 1976 apresenta o fim do colonialismo como parte da mudança trazida pela revolução.',
+      explanation: 'A Guiné-Bissau proclamou a independência em 1973 e Portugal reconheceu-a em setembro de 1974; Angola, Moçambique, Cabo Verde e São Tomé e Príncipe tornaram-se independentes em 1975. O Preâmbulo da Constituição de 1976 apresenta o fim do colonialismo como parte da mudança trazida pela revolução.',
       sources: ['ar-crp', 'dge-gta35', 'dge-ae-hgp6'],
     },
     {
-      id: 'hgp-25-abril-08', topic: 'hgp-25-abril', sub: 'democracia', skill: 'comparacao', difficulty: 2, kind: 'cloze',
-      prompt: 'Completa: No Estado Novo não havia eleições ___. Depois do 25 de Abril, em 1975, realizaram-se as primeiras eleições livres desde o ano de ___.',
-      correct: [['livres'], ['1926']],
+      id: 'hgp-25-abril-08', topic: 'hgp-25-abril', sub: 'democracia', skill: 'comparacao', difficulty: 2, kind: 'numeric',
+      prompt: 'Em que ano se realizaram, a 25 de abril, eleições livres para a Assembleia Constituinte, por sufrágio universal?',
+      correct: 1975,
       hints: [
         'Em democracia, as pessoas votam em liberdade, escolhendo entre vários partidos.',
-        'Pensa no ano do golpe militar que acabou com a Primeira República.',
+        'Foi um ano depois da revolução de 1974.',
       ],
-      explanation: 'Na ditadura não havia eleições livres. Em 25 de abril de 1975, os portugueses elegeram a Assembleia Constituinte: foram as primeiras eleições livres desde 1926.',
+      explanation: 'A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal.',
       sources: ['dge-gta33', 'wiki-crp1976'],
     },
     {
@@ -677,20 +677,20 @@ export const bank: HgpBank = {
       items: [
         'Revolução de 25 de Abril',
         'Início da Guerra Colonial, em Angola',
-        'As colónias africanas tornam-se países independentes',
+        'Portugal reconhece a independência da Guiné-Bissau, em setembro de 1974',
         'Militares organizam o MFA e preparam um golpe',
       ],
       correct: [
         'Início da Guerra Colonial, em Angola',
         'Militares organizam o MFA e preparam um golpe',
         'Revolução de 25 de Abril',
-        'As colónias africanas tornam-se países independentes',
+        'Portugal reconhece a independência da Guiné-Bissau, em setembro de 1974',
       ],
       hints: [
         'A guerra começou em 1961; o MFA formou-se pouco antes da revolução.',
         'A independência das colónias só foi aceite depois da queda do regime.',
       ],
-      explanation: 'A longa Guerra Colonial (desde 1961) levou militares a organizar o MFA e a preparar um golpe. Depois da revolução de 25 de Abril de 1974, Portugal aceitou a independência das colónias, que se tornaram países independentes (descolonização).',
+      explanation: 'A Guerra Colonial começou em 1961; o MFA organizou-se antes da revolução de 25 de Abril de 1974. A Guiné-Bissau proclamou a independência em 1973 e Portugal reconheceu-a em setembro de 1974; Angola, Moçambique, Cabo Verde e São Tomé e Príncipe tornaram-se independentes em 1975.',
       sources: ['rtp-museu-25abril', 'dge-gta35', 'wiki-guerra-colonial'],
     },
     {
@@ -764,8 +764,8 @@ export const bank: HgpBank = {
       examples: [
         { title: 'Como distinguir monarquia de república', steps: [
           'Pergunta: quem é o chefe do Estado e como chegou ao cargo?',
-          'Se é um rei que herdou o trono da família → monarquia.',
-          'Se é um Presidente escolhido por eleição → república.',
+          'Em Portugal, na monarquia constitucional, o chefe do Estado era um rei hereditário.',
+          'Pela Constituição de 1911, o chefe do Estado passou a ser um Presidente eleito pelo Congresso. Uma república não é necessariamente democrática.',
         ] },
         { title: 'Linha do tempo do fim da monarquia', steps: [
           '1890 – Ultimato inglês.',
@@ -790,8 +790,8 @@ export const bank: HgpBank = {
       topic: 'hgp-ditadura',
       explanation: [
         'A 28 de maio de 1926, um golpe militar acabou com a Primeira República e instalou uma ditadura militar.',
-        'António de Oliveira Salazar entrou no governo como ministro das Finanças em 1928 e foi ganhando poder. A Constituição de 1933 deu início ao Estado Novo, que Salazar chefiou durante muitos anos; depois, Marcelo Caetano sucedeu-lhe.',
-        'No Estado Novo não havia liberdade individual: existia censura, uma polícia política (PVDE, depois PIDE) que perseguia e prendia opositores, um partido único (a União Nacional) e o movimento sindical era reprimido. Mesmo assim, houve pessoas que resistiram ao regime.',
+        'António de Oliveira Salazar teve uma breve passagem pelo Ministério das Finanças em 1926 e regressou ao cargo em 1928 e foi ganhando poder. A Constituição de 1933 deu início ao Estado Novo, que Salazar chefiou durante muitos anos; depois, Marcelo Caetano sucedeu-lhe.',
+        'No Estado Novo não havia liberdade individual: existia censura, uma polícia política (sucessivamente PVDE, PIDE e DGS) que perseguia e prendia opositores, um partido único (a União Nacional) e o movimento sindical era reprimido. Mesmo assim, houve pessoas que resistiram ao regime.',
         'O regime usava a escola e a propaganda para espalhar as suas ideias. A Mocidade Portuguesa procurava ensinar aos jovens a obediência ao regime; um lema conhecido era «Deus, Pátria, Família».',
         'Em 1961 começou a Guerra Colonial, em Angola, que se estendeu à Guiné e a Moçambique: o regime queria manter o império colonial. A guerra durou cerca de 13 anos e o seu desgaste levou militares a preparar o 25 de Abril de 1974.',
       ],
@@ -804,7 +804,7 @@ export const bank: HgpBank = {
         ] },
         { title: 'Linha do tempo da ditadura', steps: [
           '1926 – golpe militar de 28 de maio.',
-          '1928 – Salazar torna-se ministro das Finanças.',
+          '1928 – Salazar regressa ao Ministério das Finanças, após uma breve passagem em 1926.',
           '1933 – Constituição que dá início ao Estado Novo.',
           '1961 – início da Guerra Colonial, em Angola.',
           '1974 – revolução de 25 de Abril, que derruba o regime.',
@@ -825,10 +825,10 @@ export const bank: HgpBank = {
     {
       topic: 'hgp-25-abril',
       explanation: [
-        'Na madrugada de 25 de Abril de 1974, o MFA (Movimento das Forças Armadas), formado por militares conhecidos como «capitães de Abril», fez uma revolução. As senhas foram duas canções na rádio: «E Depois do Adeus» e «Grândola, Vila Morena», de Zeca Afonso.',
+        'Na madrugada de 25 de Abril de 1974, o MFA (Movimento das Forças Armadas), formado por militares conhecidos como «capitães de Abril», fez uma revolução. As senhas foram duas canções na rádio: «E Depois do Adeus», interpretada por Paulo de Carvalho, na noite de 24 de abril, e «Grândola, Vila Morena», de José Afonso, já na madrugada de 25 de abril.',
         'O capitão Salgueiro Maia cercou o quartel do Carmo, em Lisboa. Marcelo Caetano rendeu-se e o poder passou para a Junta de Salvação Nacional, presidida pelo general Spínola. Os cravos tornaram-se o símbolo da revolução.',
-        'Começou a construção da democracia: acabaram a censura e a polícia política, e a 25 de abril de 1975 houve as primeiras eleições livres desde 1926, para a Assembleia Constituinte.',
-        'A Constituição foi aprovada a 2 de abril de 1976 e entrou em vigor a 25 de abril de 1976. Com a descolonização, as colónias africanas tornaram-se países independentes (hoje chamados PALOP).',
+        'Começou a construção da democracia: acabaram a censura e a polícia política. A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal.',
+        'A Constituição foi aprovada a 2 de abril de 1976 e entrou em vigor a 25 de abril de 1976. A Guiné-Bissau proclamou a independência em 1973 e Portugal reconheceu-a em setembro de 1974; Angola, Moçambique, Cabo Verde e São Tomé e Príncipe tornaram-se independentes em 1975.',
         'Portugal assinou o tratado de adesão à CEE em 1985, no Mosteiro dos Jerónimos, e tornou-se membro a 1 de janeiro de 1986. As notas e moedas de euro começaram a circular a 1 de janeiro de 2002.',
       ],
       examples: [

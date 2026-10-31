@@ -41,6 +41,12 @@ describe('banco HGP',()=>{
    } else if(item.kind==='numeric') {expect(Number.isFinite(item.correct),`${item.id}: numeric deve ser finito (${item.correct})`).toBe(true);for(const [value,feedback] of Object.entries(item.wrongHints ?? {}))expect(grade(ex,{kind:'numeric',value})).toMatchObject({correct:false,feedback});}
    else {expect(item.correct.length).toBeGreaterThan(0);expect(item.correct.every(a=>a.length && a.every(x=>x.trim()))).toBe(true);}
  });
+ it('aceita percentagens com vírgula, com ou sem símbolo e espaço',()=>{
+  const item=hgpItems.find(item=>item.kind==='numeric' && item.correct===63.7 && item.prompt.includes('%'))!;
+  expect(item).toBeDefined();
+  const ex=hgpTemplate(item).generate(42,item.difficulty);
+  for(const value of ['63,7%', '63,7', '63,7 %']) expect(grade(ex,{kind:'numeric',value})).toMatchObject({correct:true});
+ });
  it('embaralha cópias e materializa apenas uma instância',()=>{
   const item={id:'fixture',topic:'hgp-lugares' as const,sub:'distrito',skill:'mapa' as const,difficulty:1 as const,prompt:'Localiza a região.',hints:['Observa.','Compara.'],explanation:'Exemplo técnico.',sources:['fixture'],kind:'mcq' as const,options:['A','B','C'],correct:'B',wrong:{A:'Erro A',C:'Erro C'}};
   const t=hgpTemplate(item);const before=JSON.stringify(item);

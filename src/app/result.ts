@@ -68,7 +68,7 @@ export function openResult(result: SessionResult): void {
         typeof answer === 'string' ? answer : answer.join(' → ');
       const item = document.createElement('details');
       item.innerHTML = `<summary>${index + 1}. ${escape(attempt.exercise.prompt)} · ${!attempt.result.invalid && attempt.result.correct ? '✓' : 'A rever'}</summary><p>A tua resposta: ${escape(value(attempt.answer.value))}</p><p>Resposta: ${escape(value(correct))}</p><p>${escape(attempt.exercise.explanation)}</p>`;
-      if (attempt.exercise.figure) item.insertAdjacentHTML('beforeend', ptMapSvg(attempt.exercise.figure.highlight));
+      if (attempt.exercise.figure) item.insertAdjacentHTML('beforeend', ptMapSvg(attempt.exercise.figure.highlight, attempt.exercise.figure.label));
       correction.append(item);
     });
     main.append(correction);

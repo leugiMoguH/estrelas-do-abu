@@ -89,12 +89,12 @@ export const bank: HgpBank = {
     {
       id: 'hgp-lazer-03', topic: 'hgp-lazer', sub: 'areas-protegidas', skill: 'facto', difficulty: 1, kind: 'mcq',
       prompt: 'Qual é o único parque nacional de Portugal?',
-      options: ['Parque Nacional da Peneda-Gerês', 'Serra da Estrela', 'Ria Formosa', 'Serra da Arrábida'],
-      correct: 'Parque Nacional da Peneda-Gerês',
+      options: ['Peneda-Gerês', 'Serra da Estrela', 'Ria Formosa', 'Arrábida'],
+      correct: 'Peneda-Gerês',
       wrong: {
         'Serra da Estrela': 'A Serra da Estrela é uma área protegida importante, mas não tem o estatuto de parque nacional.',
         'Ria Formosa': 'A Ria Formosa, no Algarve, é protegida, mas não é o parque nacional.',
-        'Serra da Arrábida': 'A Arrábida é protegida, mas o único parque nacional fica no norte do país.',
+        'Arrábida': 'A Arrábida é protegida, mas o único parque nacional fica no norte do país.',
       },
       hints: ['Fica no extremo norte de Portugal, junto à fronteira com Espanha.', 'O nome junta duas serras: a da Peneda e a do Gerês.'],
       explanation: 'O Parque Nacional da Peneda-Gerês é a única área protegida portuguesa com o estatuto de parque nacional. Foi também a primeira área protegida do país.',
@@ -188,7 +188,7 @@ export const bank: HgpBank = {
     {
       id: 'hgp-lazer-09', topic: 'hgp-lazer', sub: 'turismo', skill: 'comparacao', difficulty: 2, kind: 'cloze',
       prompt: 'Completa a comparação: um turista ___ pelo menos uma noite fora do sítio onde vive; um visitante do dia (excursionista) regressa a casa no ___ dia.',
-      correct: [['dorme', 'fica', 'pernoita'], ['mesmo']],
+      correct: [['dorme', 'fica', 'pernoita', 'passa'], ['mesmo']],
       hints: ['A diferença está em passar ou não a noite fora.', 'O excursionista vai e volta sem dormir fora.'],
       explanation: 'Nas estatísticas do turismo, o turista é o visitante cuja viagem inclui pelo menos uma noite fora. Se não dorme fora, é um visitante do dia (excursionista).',
       sources: ['untourism', 'ine-es-turista'],
@@ -333,7 +333,7 @@ export const bank: HgpBank = {
       correct: 'Porque um navio leva enormes quantidades de carga de uma só vez e liga continentes separados pelo oceano',
       wrong: {
         'Porque o navio é o meio de transporte mais rápido': 'O avião é muito mais rápido; o navio é lento, mas leva muita carga.',
-        'Porque os aviões não podem levar mercadorias': 'Os aviões também levam carga, mas pouca e com muito mais emissões.',
+        'Porque os aviões não podem levar mercadorias': 'Os aviões também transportam mercadorias; os navios permitem transportar grandes volumes com menor custo por tonelada.',
         'Porque os comboios conseguem atravessar o oceano': 'O comboio circula em terra, sobre carris; não atravessa oceanos.',
       },
       hints: ['Pensa na quantidade de contentores que cabe num navio.', 'A maior parte dos continentes está separada por mar.'],
@@ -342,10 +342,10 @@ export const bank: HgpBank = {
     },
     {
       id: 'hgp-mundo-07', topic: 'hgp-mundo', sub: 'transportes', skill: 'comparacao', difficulty: 2, kind: 'cloze',
-      prompt: 'Completa a comparação: na Europa, o ___ é o meio de transporte de passageiros que emite menos gases com efeito de estufa por passageiro; o avião e o ___ estão entre os que emitem mais.',
+      prompt: 'Entre comboio, automóvel e avião, o ___ apresenta, em média na Europa, menores emissões por passageiro-quilómetro; o ___ é um veículo rodoviário entre os outros dois meios comparados.',
       correct: [['comboio'], ['automóvel', 'automovel', 'carro']],
       hints: ['Um deles anda sobre carris e muitas vezes é elétrico.', 'O outro é o veículo que muitas famílias têm na garagem.'],
-      explanation: 'A Agência Europeia do Ambiente indica que o comboio é o meio de transporte de passageiros mais eficiente e que o avião e o automóvel são os que mais emitem por passageiro e quilómetro. O Parlamento Europeu também considera o comboio um dos meios de transporte mais amigos do ambiente.',
+      explanation: 'Segundo a Agência Europeia do Ambiente, entre comboio, automóvel e avião, o comboio apresenta, em média na Europa, menores emissões por passageiro-quilómetro. O automóvel é o veículo rodoviário desta comparação.',
       sources: ['eea-rail', 'ep-rail'],
     },
     {
@@ -389,7 +389,7 @@ export const bank: HgpBank = {
         '2': 'Conta também Lisboa, com cerca de 13%.',
       },
       hints: ['Compara cada valor com 10%.', 'Setúbal e Aveiro ficam abaixo de 10%.'],
-      explanation: 'Sines, Leixões e Lisboa passam dos 10%. Sines, sozinho, movimentou mais de metade de toda a carga dos portos do continente.',
+      explanation: 'Sines, Leixões e Lisboa passam dos 10%. Sines, sozinho, movimentou mais de metade de toda a carga dos portos do continente. A soma pode diferir de 100% devido aos arredondamentos.',
       sources: ['amt-portos', 'gov-portos'],
     },
     {
@@ -437,7 +437,7 @@ export const bank: HgpBank = {
       topic: 'hgp-lazer',
       explanation: [
         'Lazer é aquilo que fazemos por gosto no tempo livre: desporto, leitura, passeios, ir à praia ou à serra.',
-        'Turismo é viajar para fora do sítio onde se vive. O turista dorme pelo menos uma noite fora; o visitante do dia (excursionista) volta no mesmo dia.',
+        'Turista é um visitante em viagem temporária fora do ambiente habitual com pelo menos uma pernoita; sem pernoita, é excursionista.',
         'O turismo traz emprego e dinheiro, mas quando há muitos visitantes ao mesmo tempo, sobretudo no verão e no litoral, aumenta a pressão sobre a água, o território e o lixo.',
         'Para proteger a natureza existem áreas protegidas. O Parque Nacional da Peneda-Gerês, criado em 1971, foi a primeira e é o único parque nacional de Portugal.',
         'Boas práticas: poupar água e energia, reduzir o plástico e o lixo, respeitar as regras das áreas protegidas e espalhar as viagens ao longo do ano.',
@@ -446,9 +446,9 @@ export const bank: HgpBank = {
         {
           title: 'Turista ou visitante do dia?',
           steps: [
-            'Pergunta: a pessoa dormiu fora do sítio onde vive?',
-            'Se dormiu pelo menos uma noite fora, é turista.',
-            'Se voltou a casa no mesmo dia, é visitante do dia (excursionista).',
+            'Pergunta: a pessoa é visitante em viagem temporária fora do ambiente habitual?',
+            'Se nessa viagem houve pelo menos uma pernoita, é turista.',
+            'Se a visita não incluiu pernoita, é excursionista.',
           ],
         },
         {
@@ -468,7 +468,7 @@ export const bank: HgpBank = {
       ],
       commonErrors: [
         'Pensar que qualquer área protegida é um parque nacional: em Portugal só há um, o da Peneda-Gerês.',
-        'Chamar turista a quem não dormiu fora: sem pelo menos uma noite fora, é visitante do dia.',
+        'Basta dormir fora de casa para ser turista? Não: é preciso ser visitante em viagem temporária fora do ambiente habitual; sem pernoita, é excursionista.',
       ],
       sources: ['dge-ae-6', 'untourism', 'desp-pnpg', 'tp-et27', 'gov-et27', 'dn-golfe'],
     },

@@ -3,7 +3,7 @@ Plano: v1
 Atualizado: 2026-10-31
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: avaliação da criança da versão de testes da Fase 2 (https://leugimoguh.github.io/estrelas-do-abu/preview/e/); não expandir catálogo/currículo antes. Pendentes: termos/direitos das imagens IA, revisão docente das lições do tutor.
+Próximo passo: concluir HGP (polir layout da sala, publicar em preview/e com backup, relatório) — ver .claude/tmp/handoff.md; depois avaliação da criança.
 Decisão necessária:
 
 ## Sucesso
@@ -60,6 +60,8 @@ Decisão necessária:
 ## Pendências visuais registadas (NÃO corrigir antes da avaliação da criança; 2026-10-31)
 - Algumas camisolas não encaixam corretamente nas calças.
 - Os olhos aparecem por cima do cabelo em situações em que deviam ficar parcialmente ocultos.
+
+- HGP (2026-10-31, em curso): 3.ª disciplina (edifício Museu das Descobertas): 132 itens verificados (4 formatos + mapas), 11 lições Tomé, revisões Codex aplicadas; falta layout sala, publicação e relatório. Arte HGP bloqueada pelo classificador (decisão do utilizador).
 
 ## Estacionadas
 ## Bloqueios

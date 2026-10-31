@@ -117,7 +117,7 @@ export const bank: HgpBank = {
       sources: ['rtp-pombal', 'wiki-sismo-1755', 'rtp-1755'],
     },
     {
-      id: 'hgp-seculo-xviii-06', topic: 'hgp-seculo-xviii', sub: 'reformas-pombalinas', skill: 'fonte', difficulty: 3,
+      id: 'hgp-seculo-xviii-06', topic: 'hgp-seculo-xviii', sub: 'reformas-pombalinas', skill: 'fonte', difficulty: 1,
       stimulus: '«Enterrar os mortos e cuidar dos vivos.» — frase que a tradição associa à reação ao terramoto de 1755 e ao futuro Marquês de Pombal (não é certo quem a disse).',
       prompt: 'Segundo esta frase, quais eram as prioridades logo a seguir ao terramoto?',
       ...mcq('Tratar das vítimas e ajudar quem sobreviveu', {
@@ -187,9 +187,9 @@ export const bank: HgpBank = {
     },
     {
       id: 'hgp-seculo-xviii-12', topic: 'hgp-seculo-xviii', sub: 'reformas-pombalinas', skill: 'comparacao', difficulty: 2,
-      prompt: 'Completa: antes do terramoto, a Baixa era um bairro antigo, sem plano. Depois da reconstrução, as ruas ficaram mais ___ (o contrário de «estreitas») e os prédios ganharam uma estrutura de madeira chamada ___ pombalina, para resistirem melhor aos sismos.',
+      prompt: 'Na reconstrução pombalina da Baixa de Lisboa adotaram-se ruas mais ___ e estruturas de madeira chamadas ___ pombalinas.',
       kind: 'cloze',
-      correct: [['largas'], ['gaiola']],
+      correct: [['largas', 'direitas'], ['gaiolas']],
       hints: ['A primeira palavra é o contrário de «estreitas».', 'A segunda palavra é o nome de uma casa para pássaros.'],
       explanation: 'A Baixa Pombalina passou a ter ruas largas e retas, e os prédios a «gaiola pombalina», uma estrutura de madeira pensada para resistir a sismos.',
       sources: ['rtp-pombal', 'wiki-sismo-1755'],
@@ -397,8 +397,8 @@ export const bank: HgpBank = {
       sources: ['rtp-industria', 'dge-bloco20', 'analise-social-habitacao'],
     },
     {
-      id: 'hgp-xix-segunda-metade-06', topic: 'hgp-xix-segunda-metade', sub: 'transformacoes-sociais', skill: 'fonte', difficulty: 3,
-      stimulus: '«Entre 1855 e 1890, mais de 400 mil portugueses deixaram legalmente o país. Pelo menos 85% desses emigrantes foram para o Brasil.» — texto de uma historiadora, a partir de dados de Rui Cascão (adaptado).',
+      id: 'hgp-xix-segunda-metade-06', topic: 'hgp-xix-segunda-metade', sub: 'transformacoes-sociais', skill: 'fonte', difficulty: 1,
+      stimulus: '«Entre 1855 e 1890, mais de 400 mil portugueses deixaram legalmente o país. Pelo menos 85% desses emigrantes foram para o Brasil.» — Ana Silvia Volpi Scott, 2002 (adaptado).',
       prompt: 'Segundo o documento, qual era o principal destino dos emigrantes portugueses?',
       ...mcq('O Brasil', {
         'A França': 'O documento não fala de França; diz que pelo menos 85% foram para o Brasil.',
@@ -537,7 +537,7 @@ export const bank: HgpBank = {
         {
           title: 'Comparar antes e depois de 1822',
           steps: [
-            'Antes (absolutismo): o rei fazia as leis, governava e julgava.',
+            'No absolutismo, a autoridade suprema concentrava-se no rei, embora existissem tribunais e outros órgãos.',
             'Depois (Constituição de 1822): as Cortes faziam as leis, o rei e os ministros governavam e os tribunais julgavam.',
             'Conclusão: o poder deixou de estar todo numa só pessoa.',
           ],

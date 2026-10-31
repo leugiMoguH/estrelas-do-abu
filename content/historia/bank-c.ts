@@ -126,7 +126,7 @@ export const bank: HgpBank = {
       correct: 'imigrantes',
       wrong: {
         emigrantes: 'Emigrante é quem sai do seu país; para Portugal, quem chega para viver é imigrante.',
-        turistas: 'Os turistas vêm só por pouco tempo, de férias; esta família veio para viver cá.',
+        turistas: 'Um turista faz uma visita temporária; esta família mudou a residência para Portugal.',
         'refugiados de guerra': 'Nada no enunciado fala de guerra; a família mudou-se para viver e trabalhar.',
       },
       hints: [
@@ -233,7 +233,7 @@ export const bank: HgpBank = {
         'A mudança das pessoas do litoral para o interior': 'Mudar de região dentro do país não muda o total de habitantes de Portugal.',
       },
       hints: [
-        'Para a população total diminuir, muitas pessoas tiveram de deixar o país.',
+        'Procura a opção que corresponde à saída de pessoas para outros países.',
         'Como se chamam as pessoas que saem do seu país para viver noutro?',
       ],
       explanation:
@@ -246,23 +246,18 @@ export const bank: HgpBank = {
       sub: 'Envelhecimento',
       skill: 'consequencia',
       difficulty: 2,
-      kind: 'order',
-      prompt: 'Ordena desde a causa até à última consequência: o envelhecimento da população.',
-      items: [
-        'O índice de envelhecimento sobe',
-        'Nascem menos crianças',
-        'A parte de idosos na população aumenta',
-        'Há menos jovens na população',
-      ],
-      correct: [
-        'Nascem menos crianças',
-        'Há menos jovens na população',
-        'A parte de idosos na população aumenta',
-        'O índice de envelhecimento sobe',
-      ],
+      kind: 'mcq',
+      prompt: 'Se nascem menos crianças e as pessoas vivem mais anos, o que acontece à proporção de idosos na população?',
+      options: ['Aumenta', 'Diminui', 'Fica igual', 'Desaparece'],
+      correct: 'Aumenta',
+      wrong: {
+        Diminui: 'Menos nascimentos e maior longevidade favorecem uma proporção maior de idosos.',
+        'Fica igual': 'Estas mudanças alteram a estrutura etária, aumentando a proporção de idosos.',
+        Desaparece: 'Viver mais anos não faz desaparecer os idosos; aumenta o seu peso na população.',
+      },
       hints: [
-        'Começa pelo que acontece primeiro: os nascimentos.',
-        'O índice de envelhecimento compara idosos com jovens, por isso vem no fim.',
+        'Pensa no peso relativo dos grupos etários.',
+        'Com menos crianças e maior longevidade, qual dos grupos ganha peso?',
       ],
       explanation:
         'Com menos nascimentos há menos jovens; os idosos passam a pesar mais e o índice de envelhecimento sobe. Em Portugal passou de 128 (2011) para 182 idosos por cada 100 jovens (2021).',
@@ -309,7 +304,7 @@ export const bank: HgpBank = {
       topic: 'hgp-populacao',
       sub: 'Jovens e idosos',
       skill: 'fonte',
-      difficulty: 3,
+      difficulty: 2,
       kind: 'numeric',
       stimulus:
         'População residente por grupos de idade — Portugal, Censos 2021 (INE)\n• 0 a 14 anos (jovens): 12,9%\n• 15 a 64 anos: ?\n• 65 ou mais anos (idosos): 23,4%',
@@ -405,8 +400,7 @@ export const bank: HgpBank = {
         'Densidade = número de habitantes que vivem em cada km².',
         'Lembra-te: a população concentra-se no litoral e nas áreas metropolitanas.',
       ],
-      explanation:
-        'Em 2021, Bragança, Guarda e Portalegre tinham menos de 30 habitantes por km², enquanto Lisboa e Porto tinham mais de 700. O interior tem baixa densidade populacional.',
+      explanation: 'Estes três distritos têm densidades muito inferiores às dos distritos de Lisboa e do Porto.',
       sources: ['wiki-distritos', 'dnoticias-distribuicao'],
     },
 
@@ -428,14 +422,14 @@ export const bank: HgpBank = {
       correct: 'A saída de pessoas do campo para as cidades',
       wrong: {
         'A saída de pessoas das cidades para o campo': 'É o movimento contrário: no êxodo rural as pessoas deixam o campo (rural).',
-        'A saída de pessoas de Portugal para outros países': 'Isso é a emigração; o êxodo rural acontece dentro do país, do campo para a cidade.',
+        'A saída de pessoas de Portugal para outros países': 'Isso é emigração; só é também êxodo rural se a mudança for de uma área rural para uma área urbana.',
         'A chegada de turistas às aldeias': 'Os turistas visitam por pouco tempo; o êxodo é uma saída para ir viver noutro lugar.',
       },
       hints: [
         '«Êxodo» quer dizer saída; «rural» refere-se ao campo.',
         'Para onde vão as pessoas que saem do campo à procura de emprego?',
       ],
-      explanation: 'Êxodo rural é a migração de pessoas das áreas rurais (campo) para as áreas urbanas (cidades).',
+      explanation: 'Êxodo rural é a migração de pessoas das áreas rurais (campo) para as áreas urbanas (cidades), podendo também envolver a saída do país.',
       sources: ['ae-hgp-6', 'wiki-exodo'],
     },
     {
@@ -514,8 +508,7 @@ export const bank: HgpBank = {
         'As áreas urbanas atraem pessoas por causa do emprego e dos serviços.',
         'Só duas regiões ganharam população: o Algarve e esta.',
       ],
-      explanation:
-        'Entre 2011 e 2021, só o Algarve (+3,6%) e a Área Metropolitana de Lisboa (+1,7%) ganharam população; as outras regiões perderam.',
+      explanation: 'Entre 2011 e 2021, só o Algarve (+3,6%) e a Área Metropolitana de Lisboa (+1,7%) ganharam população; as outras regiões perderam. Estes dados referem-se às NUTS II de 2013, usadas nos Censos 2021.',
       sources: ['eco-censos2021', 'rtp-censos2021', 'dnoticias-distribuicao'],
     },
     {
@@ -534,8 +527,8 @@ export const bank: HgpBank = {
       ],
       correct: 'Muitos jovens partem para as cidades à procura de emprego e de serviços',
       wrong: {
-        'As aldeias do interior têm demasiados empregos': 'Se houvesse muitos empregos, as pessoas ficariam; o problema é a falta deles.',
-        'Nas aldeias nascem cada vez mais crianças': 'Mais nascimentos faria a população crescer; o que acontece é o contrário.',
+        'As aldeias do interior têm demasiados empregos': 'A oferta de emprego pode ajudar a fixar população.',
+        'Nas aldeias nascem cada vez mais crianças': 'Mais nascimentos favorecem o crescimento, mas o total também depende dos óbitos e das migrações.',
         'As cidades estão a ficar vazias': 'As grandes áreas urbanas do litoral é que atraem pessoas.',
       },
       hints: [
@@ -553,25 +546,24 @@ export const bank: HgpBank = {
       skill: 'consequencia',
       difficulty: 3,
       kind: 'order',
-      prompt: 'Ordena esta cadeia de consequências do despovoamento de uma aldeia, do início ao fim.',
+      prompt: 'Numa aldeia fictícia, estes acontecimentos sucederam-se pelas etapas indicadas. Ordena-os do início ao fim.',
       items: [
-        'A escola fica com poucos alunos e acaba por fechar',
-        'Os jovens saem da aldeia para trabalhar na cidade',
-        'Ainda menos famílias querem ir viver para a aldeia',
-        'Nascem menos crianças na aldeia',
+        'Na terceira etapa, a escola fica com poucos alunos e pode ficar em risco de fechar',
+        'Primeiro, os jovens saem da aldeia para trabalhar na cidade',
+        'Por fim, menos famílias procuram viver na aldeia',
+        'Depois da saída dos jovens, registam-se menos nascimentos na aldeia',
       ],
       correct: [
-        'Os jovens saem da aldeia para trabalhar na cidade',
-        'Nascem menos crianças na aldeia',
-        'A escola fica com poucos alunos e acaba por fechar',
-        'Ainda menos famílias querem ir viver para a aldeia',
+        'Primeiro, os jovens saem da aldeia para trabalhar na cidade',
+        'Depois da saída dos jovens, registam-se menos nascimentos na aldeia',
+        'Na terceira etapa, a escola fica com poucos alunos e pode ficar em risco de fechar',
+        'Por fim, menos famílias procuram viver na aldeia',
       ],
       hints: [
         'Começa pela saída das pessoas (o êxodo rural).',
-        'Sem crianças, o que acontece à escola? E quem quererá viver numa aldeia sem escola?',
+        'Segue os marcadores: primeiro, depois, terceira etapa e por fim.',
       ],
-      explanation:
-        'A saída dos jovens faz baixar os nascimentos; com menos crianças, os serviços fecham e a aldeia atrai ainda menos famílias. É um problema que se repete em muitas áreas rurais.',
+      explanation: 'Nesta aldeia fictícia, a saída de jovens foi seguida de menos nascimentos, risco de fecho da escola e menor procura por novas famílias. É uma sequência possível, não inevitável.',
       sources: ['ae-hgp-6', 'wiki-exodo'],
     },
     {
@@ -596,11 +588,10 @@ export const bank: HgpBank = {
       difficulty: 1,
       kind: 'numeric',
       prompt:
-        'Entre 2011 e 2021, o Algarve ganhou 3,6% de habitantes e a Área Metropolitana de Lisboa ganhou 1,7%; todas as outras regiões (NUTS II) perderam população (Censos 2021, INE). Quantas regiões ganharam população? (responde com um número)',
+        'Entre 2011 e 2021, o Algarve ganhou 3,6% de habitantes e a Área Metropolitana de Lisboa ganhou 1,7%; todas as outras regiões (NUTS II de 2013, usadas nos Censos 2021) perderam população (Censos 2021, INE). Quantas regiões ganharam população? (responde com um número)',
       correct: 2,
       hints: ['Conta as regiões que o enunciado diz que ganharam habitantes.', 'Foram o Algarve e mais uma.'],
-      explanation:
-        'Só 2 regiões cresceram: o Algarve e a Área Metropolitana de Lisboa. O Alentejo e a Madeira foram as que mais perderam.',
+      explanation: 'Só 2 regiões cresceram: o Algarve e a Área Metropolitana de Lisboa. O Alentejo e a Madeira foram as que mais perderam. Estes dados referem-se às NUTS II de 2013, usadas nos Censos 2021.',
       sources: ['eco-censos2021', 'rtp-censos2021', 'dnoticias-distribuicao'],
     },
     {
@@ -612,7 +603,7 @@ export const bank: HgpBank = {
       kind: 'numeric',
       stimulus:
         'Concentração da população — Portugal, Censos 2021 (INE)\n• 7 concelhos mais populosos: cerca de 20% da população, em cerca de 1% do território\n• 208 concelhos menos populosos: cerca de 20% da população, em cerca de 66% do território\n• Restantes concelhos: ?',
-      prompt: 'Observa o quadro. Que percentagem da população vivia nos restantes concelhos? (responde em %)',
+      prompt: 'Observa o quadro. Aproximadamente, que percentagem da população vivia nos restantes concelhos? (responde em %)',
       correct: 60,
       wrongHints: {
         '40': 'Esse é o total dos dois grupos do quadro; falta tirá-lo a 100%.',
@@ -620,7 +611,7 @@ export const bank: HgpBank = {
       },
       hints: ['Toda a população corresponde a 100%.', 'Calcula 100 − 20 − 20.'],
       explanation:
-        '100 − 20 − 20 = 60%. O quadro mostra um grande desequilíbrio: 7 concelhos em cerca de 1% do território têm tanta gente como 208 concelhos em cerca de 66% do território.',
+        'Aproximadamente, 100 − 20 − 20 = 60%. O quadro mostra um grande desequilíbrio: 7 concelhos em cerca de 1% do território têm tanta gente como 208 concelhos em cerca de 66% do território.',
       sources: ['dnoticias-distribuicao', 'rtp-censos2021'],
     },
     {
@@ -753,23 +744,23 @@ export const bank: HgpBank = {
       kind: 'mcq',
       prompt: 'Quem faz parte da população ativa?',
       options: [
-        'As pessoas empregadas e as desempregadas que procuram emprego',
+        'As pessoas empregadas e as desempregadas disponíveis e à procura de emprego',
         'Só as pessoas empregadas',
         'Todas as pessoas com mais de 15 anos, incluindo estudantes e reformados',
         'Só os reformados',
       ],
-      correct: 'As pessoas empregadas e as desempregadas que procuram emprego',
+      correct: 'As pessoas empregadas e as desempregadas disponíveis e à procura de emprego',
       wrong: {
         'Só as pessoas empregadas': 'Faltam os desempregados que procuram emprego: também fazem parte da mão de obra disponível.',
-        'Todas as pessoas com mais de 15 anos, incluindo estudantes e reformados': 'Estudantes e reformados que não trabalham nem procuram emprego são população inativa.',
-        'Só os reformados': 'Os reformados já não trabalham: fazem parte da população inativa.',
+        'Todas as pessoas com mais de 15 anos, incluindo estudantes e reformados': 'Estudantes e reformados podem trabalhar; se não trabalham, podem ser desempregados, se disponíveis e à procura de emprego, ou inativos.',
+        'Só os reformados': 'Ser reformado não determina a situação: quem trabalha é empregado; quem não trabalha pode ser desempregado, se disponível e à procura de emprego, ou inativo.',
       },
       hints: [
         'A população ativa é a mão de obra disponível para trabalhar.',
         'Quem está desempregado mas procura emprego também está disponível.',
       ],
       explanation:
-        'População ativa = empregados + desempregados que procuram emprego. Crianças, estudantes, reformados e domésticos que não procuram emprego são população inativa.',
+        'População ativa = empregados + desempregados disponíveis e à procura de emprego. Estudantes e reformados que trabalham são empregados; os restantes podem ser desempregados ou inativos, conforme a disponibilidade e a procura de emprego.',
       sources: ['cml-atlas-ativa', 'eco-desemprego', 'ae-hgp-6'],
     },
     {
@@ -809,7 +800,7 @@ export const bank: HgpBank = {
       wrong: {
         'Os portugueses deixaram de comer produtos agrícolas': 'Continuamos a consumir produtos agrícolas; o que mudou foi a forma de os produzir.',
         'A agricultura passou a ser proibida no litoral': 'Não há essa proibição; há agricultura no litoral e no interior.',
-        'Hoje há mais terrenos agrícolas do que em 1960': 'Mais terrenos exigiria mais trabalho, não menos; a explicação está nas máquinas.',
+        'Hoje há mais terrenos agrícolas do que em 1960': 'A área cultivada, por si só, não explica o número de trabalhadores; a mecanização permite trabalhar com menos pessoas.',
       },
       hints: ['Pensa em tratores, ceifeiras e máquinas de rega.', 'Uma máquina pode fazer o trabalho de várias pessoas.'],
       explanation:
@@ -861,7 +852,7 @@ export const bank: HgpBank = {
       topic: 'hgp-atividades',
       sub: 'População ativa e inativa',
       skill: 'conceito',
-      difficulty: 3,
+      difficulty: 2,
       kind: 'numeric',
       prompt:
         'Numa vila há 600 pessoas empregadas, 50 desempregadas que procuram emprego e 300 estudantes e reformados que não trabalham nem procuram emprego. Quantas pessoas formam a população ativa? (responde em número de pessoas)',
@@ -981,7 +972,7 @@ export const bank: HgpBank = {
         'Os Censos contam toda a população de 10 em 10 anos. Em 2021, viviam em Portugal cerca de 10,3 milhões de pessoas, menos 2,1% do que em 2011.',
         'A população muda por duas razões: o saldo natural (nascimentos − óbitos) e o saldo migratório (imigrantes − emigrantes).',
         'Portugal está a envelhecer: em 2021 havia 182 idosos por cada 100 jovens (em 2011 eram 128).',
-        'A população está mal distribuída: concentra-se no litoral e nas áreas metropolitanas de Lisboa e do Porto; o interior tem baixa densidade.',
+        'A população está distribuída de forma desigual: concentra-se no litoral e nas áreas metropolitanas de Lisboa e do Porto; o interior tem baixa densidade.',
         'Nos anos 60, a elevada emigração fez diminuir a população; hoje, a imigração ajuda a compensar o saldo natural negativo.',
       ],
       examples: [
@@ -1018,9 +1009,9 @@ export const bank: HgpBank = {
       topic: 'hgp-lugares',
       explanation: [
         'As áreas urbanas (cidades) têm muitos habitantes, prédios e serviços; as áreas rurais (campo) têm casas mais espalhadas e mais agricultura.',
-        'O êxodo rural é a saída de pessoas do campo para as cidades, à procura de emprego e de serviços.',
+        'O êxodo rural é a mudança das áreas rurais para as áreas urbanas, podendo também envolver a saída do país, à procura de emprego e de serviços.',
         'Por isso, muitas áreas rurais do interior estão despovoadas e envelhecidas, enquanto o litoral concentra pessoas (litoralização).',
-        'Entre 2011 e 2021, só o Algarve e a Área Metropolitana de Lisboa ganharam população.',
+        'Entre 2011 e 2021, só o Algarve e a Área Metropolitana de Lisboa ganharam população, considerando as NUTS II de 2013, usadas nos Censos 2021.',
         'Cidade e campo dependem um do outro: o campo produz alimentos e a cidade oferece serviços e emprego.',
       ],
       examples: [
@@ -1036,7 +1027,7 @@ export const bank: HgpBank = {
           title: 'Explicar o despovoamento de uma aldeia',
           steps: [
             'Os jovens saem para a cidade à procura de emprego.',
-            'Nascem menos crianças e a escola fecha.',
+            'Podem nascer menos crianças e a escola pode ficar em risco de fechar.',
             'A aldeia fica com menos habitantes e mais idosos.',
           ],
         },
@@ -1048,7 +1039,7 @@ export const bank: HgpBank = {
         'Sei localizar as áreas metropolitanas de Lisboa e do Porto no mapa.',
       ],
       commonErrors: [
-        'Confundir êxodo rural (do campo para a cidade, dentro do país) com emigração (saída do país).',
+        'Confundir êxodo rural (das áreas rurais para as urbanas) com emigração (saída do país): uma mudança pode ser ambos.',
         'Pensar que só o campo tem problemas: as cidades também têm (trânsito, poluição, habitação cara).',
       ],
       sources: ['ae-hgp-6', 'wiki-exodo', 'dnoticias-distribuicao', 'eco-censos2021', 'rtp-censos2021'],
@@ -1056,7 +1047,7 @@ export const bank: HgpBank = {
     {
       topic: 'hgp-atividades',
       explanation: [
-        'A população ativa são as pessoas empregadas e as desempregadas que procuram emprego; estudantes, reformados e crianças são população inativa.',
+        'A população ativa inclui empregados e desempregados disponíveis e à procura de emprego. Estudantes e reformados que trabalham são empregados; os restantes podem ser desempregados, se disponíveis e à procura de emprego, ou inativos.',
         'Setor primário: tira recursos da natureza (agricultura, criação de gado, floresta, pesca).',
         'Setor secundário: transforma matérias-primas (indústria e construção). Setor terciário: presta serviços (comércio, saúde, educação, transportes, turismo).',
         'Em 1960, o setor primário era o que tinha mais trabalhadores; hoje, mais de 7 em cada 10 trabalham no terciário.',
@@ -1075,7 +1066,7 @@ export const bank: HgpBank = {
           title: 'Calcular a população ativa',
           steps: [
             'Soma os empregados e os desempregados que procuram emprego: 600 + 50 = 650.',
-            'Não contes estudantes nem reformados: são população inativa.',
+            'Conta estudantes e reformados se trabalham ou se estão desempregados, disponíveis e à procura de emprego; os restantes são inativos.',
           ],
         },
       ],
