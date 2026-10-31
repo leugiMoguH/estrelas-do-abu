@@ -55,7 +55,7 @@ export const bank: HgpBank = {
       'Porque Portugal, aliado da Inglaterra, não quis aderir ao Bloqueio Continental contra os ingleses',
       {
         'Porque os portugueses tinham feito a Revolução Liberal': 'A Revolução Liberal foi em 1820, treze anos depois.',
-        'Porque Portugal tinha deixado de ter rei': 'Em 1807 Portugal era uma monarquia e o rei ainda governava.',
+        'Porque Portugal tinha deixado de ter rei': 'Em 1807 Portugal era uma monarquia e o príncipe regente D. João governava.',
         'Porque Portugal tinha invadido território francês': 'Foi Napoleão quem quis obrigar Portugal a fechar os portos aos ingleses.',
       },
       ['Napoleão queria enfraquecer a Inglaterra.', 'O Bloqueio Continental proibia comerciar com os ingleses.'],
@@ -137,7 +137,7 @@ export const bank: HgpBank = {
         'O Tribunal': 'Os tribunais julgam; não administram o concelho.',
       },
       ['É um órgão do poder local.', 'O presidente deste órgão chama-se presidente da Câmara.'],
-      'No poder local democrático, o concelho é administrado pela Câmara Municipal e a freguesia pela Junta de Freguesia, ambas eleitas pelos cidadãos.',
+      'No poder local democrático, o concelho é administrado pela Câmara Municipal e a freguesia pela Junta de Freguesia. A Câmara é eleita diretamente pelos cidadãos; a Junta é o órgão executivo da freguesia.',
       ['ar-crp', 'dge-ae-hgp6']),
     q('hgp-25-abril-14', 'hgp-25-abril', 'democracia', 'conceito', 2,
       'Qual é o órgão composto por deputados eleitos, que faz as leis do país?',
@@ -162,7 +162,7 @@ export const bank: HgpBank = {
       'A esperança de vida à nascença é o número médio de anos que um recém-nascido pode esperar viver, se as condições se mantiverem. Quando sobe, a população tende a envelhecer.',
       ['ae-hgp-6']),
     q('hgp-populacao-14', 'hgp-populacao', 'Crescimento natural', 'conceito', 2,
-      'O que é a mortalidade infantil?',
+      'Como se calcula a taxa de mortalidade infantil?',
       'Os bebés que morrem antes de fazer 1 ano, por cada mil nascimentos',
       {
         'Os bebés que nascem por cada mil habitantes': 'Isso é a natalidade.',
@@ -174,9 +174,9 @@ export const bank: HgpBank = {
       ['ae-hgp-6']),
     q('hgp-populacao-15', 'hgp-populacao', 'Distribuição da população', 'conceito', 2,
       'O que é uma área atrativa, na distribuição da população?',
-      'Uma área que ganha habitantes, porque oferece emprego, serviços e boas condições de vida',
+      'Uma área que tende a ganhar habitantes, porque oferece emprego, serviços e boas condições de vida',
       {
-        'Uma área que perde habitantes, porque faltam emprego e serviços': 'Isso é uma área repulsiva.',
+        'Uma área que tende a perder habitantes, porque faltam emprego e serviços': 'Isso é uma área repulsiva.',
         'Uma área que só é visitada por turistas': 'Atrativa, aqui, refere-se a quem vem viver, e não a quem visita.',
         'Uma área onde o número de habitantes nunca muda': 'A área atrativa é aquela que ganha população.',
       },

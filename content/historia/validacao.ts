@@ -16,7 +16,7 @@ const DOCUMENTAL = [
 const CALCULO = ['hgp-populacao-08', 'hgp-populacao-09', 'hgp-lugares-09', 'hgp-atividades-08', 'hgp-atividades-09', 'hgp-mundo-10'];
 const A_CONFIRMAR = [
   'hgp-lugares-04', 'hgp-lugares-08', 'hgp-lazer-06', 'hgp-lazer-07', 'hgp-lazer-12', 'hgp-atividades-05', 'hgp-atividades-07',
-  'hgp-xix-segunda-metade-06',
+  'hgp-xix-segunda-metade-06', 'hgp-lugares-06',
 ];
 
 export const HGP_A_CONFIRMAR: readonly string[] = A_CONFIRMAR;

@@ -189,7 +189,7 @@ export const bank: HgpBank = {
       id: 'hgp-seculo-xviii-12', topic: 'hgp-seculo-xviii', sub: 'reformas-pombalinas', skill: 'comparacao', difficulty: 2,
       prompt: 'Na reconstrução pombalina da Baixa de Lisboa adotaram-se ruas mais ___ e estruturas de madeira chamadas ___ pombalinas.',
       kind: 'cloze',
-      correct: [['largas', 'direitas'], ['gaiolas']],
+      correct: [['largas', 'direitas', 'retas'], ['gaiolas']],
       hints: ['A primeira palavra é o contrário de «estreitas».', 'A segunda palavra é o nome de uma casa para pássaros.'],
       explanation: 'A Baixa Pombalina passou a ter ruas largas e retas, e os prédios a «gaiola pombalina», uma estrutura de madeira pensada para resistir a sismos.',
       sources: ['rtp-pombal', 'wiki-sismo-1755'],
