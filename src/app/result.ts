@@ -1,3 +1,5 @@
+import { ptMapSvg } from './figure';
+import type { SessionContext } from './session';
 import { startAbuLife } from './abu-life';
 import { getState } from './store';
 import { abuSvg, starSvg } from '../art';
@@ -11,6 +13,7 @@ import { startSession, type Attempt, type Mode } from './session';
 
 export interface SessionResult {
   topicId: string;
+  context?: SessionContext;
   mode: Mode;
   attempts: Attempt[];
   summary: ReturnType<typeof score>;
@@ -19,7 +22,7 @@ export interface SessionResult {
 export function openResult(result: SessionResult): void {
   navigate(() => {
     const topic = TOPICS.find((t) => t.id === result.topicId)!;
-    const main = frame('Mais um passo na tua aventura!', openMap);
+    const main = frame(result.context?.title ?? 'Mais um passo na tua aventura!', openMap);
     startAbuLife(main, true);
     main.insertAdjacentHTML(
       'beforeend',
@@ -48,12 +51,12 @@ export function openResult(result: SessionResult): void {
           () =>
             startSession(result.topicId, 'study', Math.max(3, errors.length), [
               ...new Set(errors.map((a) => a.exercise.competencyId)),
-            ]),
+            ], result.context),
           'primary',
         ),
       );
     main.append(
-      button('Continuar a estudar', () => openRoom(topic.subject, topic.id)),
+      button('Continuar a estudar', () => openRoom(topic.subject, topic.id, result.context)),
       button('Voltar ao centro', openMap, 'primary'),
     );
     const correction = document.createElement('section');
@@ -65,6 +68,7 @@ export function openResult(result: SessionResult): void {
         typeof answer === 'string' ? answer : answer.join(' → ');
       const item = document.createElement('details');
       item.innerHTML = `<summary>${index + 1}. ${escape(attempt.exercise.prompt)} · ${!attempt.result.invalid && attempt.result.correct ? '✓' : 'A rever'}</summary><p>A tua resposta: ${escape(value(attempt.answer.value))}</p><p>Resposta: ${escape(value(correct))}</p><p>${escape(attempt.exercise.explanation)}</p>`;
+      if (attempt.exercise.figure) item.insertAdjacentHTML('beforeend', ptMapSvg(attempt.exercise.figure.highlight));
       correction.append(item);
     });
     main.append(correction);

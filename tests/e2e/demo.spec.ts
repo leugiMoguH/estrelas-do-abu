@@ -87,7 +87,7 @@ test('edifícios sem conteúdo ficam «Em preparação» e não abrem sala', asy
   await button(page, /Jogar/).click();
   await button(page, /Surpreende/).click();
   await button(page, /Vamos ao centro/).click();
-  await page.locator('[data-target="historia"]').click({ force: true });
+  await page.locator('[data-target="ingles"]').click({ force: true });
   await expect(page.getByText(/em preparação/i).first()).toBeVisible();
   await expect(page.locator('main h1')).toContainText(/centro/i);
 });

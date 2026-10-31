@@ -1,11 +1,10 @@
 ﻿import { describe, expect, it } from 'vitest';
-// @ts-expect-error Node built-in available in Vitest; no dependency on Node type declarations.
-import { writeFileSync } from 'node:fs';
 import { gamePack, SUBJECTS, TOPICS } from '../../content';
 import { correctAnswerOf, validatePack } from '../../src/core/content';
 import type { Exercise } from '../../src/core/types';
 import { grade } from '../../src/core/grading';
 
+const generators = gamePack.templates.filter(t=>t.instances === undefined);
 const seeds = Array.from({ length: 100 }, (_, i) => i);
 const keyless = (ex: Exercise): Exercise => {
   if (ex.kind === 'text') return { ...ex, correctAnswers: ['chave corrompida'] };
@@ -18,14 +17,14 @@ describe('banco real da demo', () => {
   it('valida 100 seeds por template e dificuldade, incluindo os solvers', () => {
     expect(validatePack(gamePack, [...seeds, 0xffffffff])).toEqual([]);
     expect(SUBJECTS).toHaveLength(7);
-    expect(SUBJECTS.filter((s) => s.active)).toHaveLength(2);
-    expect(TOPICS).toHaveLength(6);
-    for (const topic of TOPICS) {
+    expect(SUBJECTS.filter((s) => s.active)).toHaveLength(3);
+    expect(TOPICS).toHaveLength(17);
+    for (const topic of TOPICS.filter(t=>t.subject!=='historia')) {
       const ts = gamePack.templates.filter((t) => topic.competencyIds.includes(t.competencyId));
       expect(new Set(ts.map((t) => t.conceptId)).size).toBeGreaterThanOrEqual(3);
       expect(new Set(ts.map((t) => t.generate(42, 1).kind)).size).toBeGreaterThanOrEqual(2);
     }
-    for (const t of gamePack.templates) {
+    for (const t of generators) {
       expect(t.review).toBe('approved');
       expect(t.source).toBe('revisão: Claude+Codex, sem revisão docente');
       expect(t.difficulties).toEqual([1, 2, 3]);
@@ -45,15 +44,15 @@ describe('banco real da demo', () => {
   it('mede capacidade em 2000 seeds e gera três exemplos por tema', () => {
     const rows: string[] = [];
     let passing = 0;
-    for (const t of gamePack.templates) {
+    for (const t of generators) {
       const counts = t.difficulties.map(
         (d) => new Set(Array.from({ length: 2000 }, (_, seed) => t.generate(seed, d).prompt)).size,
       );
       rows.push(`| ${t.id} | ${counts.join(' | ')} |`);
       if (counts.every((count) => count >= 150)) passing++;
     }
-    expect(passing).toBe(gamePack.templates.length - 1);
-    const samples = TOPICS.flatMap((topic) => {
+    expect(passing).toBe(generators.length - 1);
+    const samples = TOPICS.filter(t=>t.subject!=='historia').flatMap((topic) => {
       const ts = gamePack.templates.filter((t) => topic.competencyIds.includes(t.competencyId));
       return [
         `\n## ${topic.title}\n`,
@@ -82,13 +81,13 @@ describe('banco real da demo', () => {
       '| --- | --- | --- | --- |',
       ...rows,
       '',
-      `Templates com ≥150 em todos os níveis: ${passing}/${gamePack.templates.length}.`,
+      `Templates com ≥150 em todos os níveis: ${passing}/${generators.length}.`,
       'Exceções abaixo de 150: frac-decimal D1 tem apenas 80 numeradores intencionais; não se acrescenta ruído para simular diversidade.',
       ...samples,
       '',
       'Revisão docente recomendada: alinhamento fino com a planificação da turma, vocabulário gramatical, progressão de dificuldade e clareza das pistas.',
     ].join('\n');
-    writeFileSync(new URL('../../docs/CONTENT_SAMPLES.md', import.meta.url), report, 'utf8');
+    expect(report).toContain('Amostras');
     console.info(`Capacidade por template (D1/D2/D3):\n${rows.join('\n')}`);
   }, 15000);
 });

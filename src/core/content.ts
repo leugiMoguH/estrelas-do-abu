@@ -17,6 +17,7 @@ export interface ExerciseTemplate {
   difficulties: readonly Difficulty[];
   review: ReviewStatus;
   source: string;
+  instances?: number;
   generate(seed: number, difficulty: Difficulty): Exercise;
   solve?(ex: Exercise): Answer;
 }
@@ -63,7 +64,7 @@ export function materialize(
   return pack.templates
     .filter((t) => t.review === 'approved' && options.competencyIds.includes(t.competencyId))
     .flatMap((t) =>
-      Array.from({ length: options.perTemplate }, () =>
+      Array.from({ length: t.instances ?? options.perTemplate }, () =>
         instantiate(pack, {
           packId: pack.id,
           packVersion: pack.version,

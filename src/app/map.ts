@@ -29,7 +29,7 @@ export function openMap(): void {
     );
     const hint = document.createElement('p');
     hint.className = 'map-tip';
-    hint.textContent = '☝ Começa aqui: toca no Laboratório dos Números ou na Biblioteca!';
+    hint.textContent = '☝ Toca no Laboratório dos Números, na Biblioteca ou no Museu das Descobertas!';
     main.append(hint);
     const actions: Record<string, () => void> = {
       loja: openShop,
@@ -41,7 +41,7 @@ export function openMap(): void {
       const subject = SUBJECTS.find((s) => s.id === target);
       if (subject?.active) openRoom(subject.id);
       else {
-        hint.textContent = `${subject?.name ?? 'Este espaço'}: em preparação. Experimenta Matemática ou Português!`;
+        hint.textContent = `${subject?.name ?? 'Este espaço'}: em preparação. Experimenta Matemática, Português ou História e Geografia de Portugal!`;
         hint.setAttribute('role', 'status');
       }
     };

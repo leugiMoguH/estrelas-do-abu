@@ -17,6 +17,8 @@ import { getState, update } from './store';
 import { openRoom } from './room';
 import { openResult } from './result';
 
+import { ptMapSvg } from './figure';
+export interface SessionContext { subject: string; topicIds: string[]; competencyIds: string[]; title: string }
 export type Mode = 'study' | 'test' | 'review';
 export interface Attempt {
   exercise: Exercise;
@@ -30,13 +32,15 @@ export function startSession(
   mode: Mode,
   count: number,
   competencyIds?: readonly string[],
+  context?: SessionContext,
 ): void {
   const topic = TOPICS.find((t) => t.id === topicId);
   if (!topic) return;
   setTutorMode(mode);
   const before = getState().save;
-  const rng = seededRng(Date.now());
-  const ids = competencyIds?.length ? competencyIds : topic.competencyIds;
+  const testParams = import.meta.env.MODE === 'hgp-e2e' ? new URLSearchParams(location.search) : undefined;
+  const rng = seededRng(testParams?.has('hgpSeed') ? Number(testParams.get('hgpSeed')) : Date.now());
+  const ids = competencyIds?.length ? competencyIds : context?.competencyIds ?? topic.competencyIds;
   const pool = materialize(gamePack, {
     competencyIds: ids,
     rng,
@@ -49,7 +53,7 @@ export function startSession(
   });
   const session = buildSession({
     mode,
-    pool,
+    pool: testParams?.has('hgpIds') && topic.subject === 'historia' ? pool.filter(e=>testParams.get('hgpIds')!.split(',').includes(e.id)) : pool,
     competencyIds: ids,
     n: before.seen.length ? count : 3,
     state: before.mastery,
@@ -89,7 +93,7 @@ export function startSession(
       bestTestGrade: mode === 'test' ? Math.max(state.bestTestGrade, summary.grade) : state.bestTestGrade,
     }));
     play('stars');
-    openResult({ topicId, mode, attempts, summary, earned: reward.earned });
+    openResult({ topicId, mode, attempts, summary, earned: reward.earned, context });
   };
   const next = (): void => {
     index++;
@@ -99,7 +103,7 @@ export function startSession(
     else navigate(render);
   };
   const render = (): void => {
-    const main = frame(topic.title, () => {
+    const main = frame(context?.title ?? topic.title, () => {
       const dialog = document.createElement('dialog');
       dialog.setAttribute('aria-labelledby', 'exit-session-title');
       dialog.innerHTML =
@@ -108,7 +112,7 @@ export function startSession(
         button('Continuar a jogar', () => dialog.close(), 'primary'),
         button('Voltar à sala', () => {
           dialog.close();
-          openRoom(topic.subject, topicId);
+          openRoom(topic.subject, topicId, context);
         }),
       );
       main.append(dialog);
@@ -121,7 +125,7 @@ export function startSession(
         'beforeend',
         '<p>Ainda não há perguntas disponíveis para esta escolha. Experimenta outro tema.</p>',
       );
-      main.append(button('Voltar à sala', () => openRoom(topic.subject, topicId), 'primary'));
+      main.append(button('Voltar à sala', () => openRoom(topic.subject, topicId, context), 'primary'));
       return;
     }
     main.insertAdjacentHTML(
@@ -133,6 +137,7 @@ export function startSession(
     if (exercise.stimulus)
       form.innerHTML = `<blockquote class="stimulus">${escape(exercise.stimulus)}</blockquote>`;
     form.insertAdjacentHTML('beforeend', `<h2>${escape(exercise.prompt)}</h2>`);
+    if (exercise.figure) form.insertAdjacentHTML('beforeend', ptMapSvg(exercise.figure.highlight));
     const editor = answerEditor(exercise);
     const feedback = document.createElement('div');
     feedback.className = 'feedback';
@@ -166,7 +171,7 @@ export function startSession(
       actions.append(hint);
     }
     main.append(tutorButton({ subject: topic.subject, competencyId: exercise.competencyId, mode,
-      compact: true, onTutorOpen: () => abuReact(main,'tutor'), practice: () => startSession(topic.id, 'study', count),
+      compact: true, onTutorOpen: () => abuReact(main,'tutor'), practice: () => startSession(topic.id, 'study', count, undefined, context),
       hint: mode === 'test' ? undefined : requestHint }));
     const abu = document.createElement('aside');
     abu.className = 'abu-line';

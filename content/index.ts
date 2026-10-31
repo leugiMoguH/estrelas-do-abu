@@ -1,16 +1,22 @@
 ﻿import type { ContentPack } from '../src/core/content';
+import { hgpTemplates } from './historia';
+import { hgpTopics } from './historia/topics';
 import { mathTemplates } from './matematica';
 import { portugueseTemplates } from './portugues';
 
 export interface Topic {
   id: string;
-  subject: 'matematica' | 'portugues';
+  subject: 'matematica' | 'portugues' | 'historia';
+  group?: string;
+  level?: 'recuperacao5' | '6';
+  curriculumRef?: string;
   title: string;
   blurb: string;
   icon: string;
   competencyIds: string[];
 }
 export const TOPICS: Topic[] = [
+  ...hgpTopics,
   {
     id: 'racionais',
     subject: 'matematica',
@@ -65,7 +71,7 @@ export const SUBJECTS: { id: SubjectId; name: string; building: string; active: 
   { id: 'matematica', name: 'Matemática', building: 'Laboratório dos Números', active: true },
   { id: 'portugues', name: 'Português', building: 'Biblioteca', active: true },
   { id: 'ingles', tutor: { id: 'ingles', name: 'Tutor em preparação', ready: false }, name: 'Inglês', building: 'Casa das Línguas', active: false },
-  { id: 'historia', tutor: { id: 'historia', name: 'Tutor em preparação', ready: false }, name: 'História', building: 'Museu das Descobertas', active: false },
+  { id: 'historia', name: 'História e Geografia de Portugal', building: 'Museu das Descobertas', active: true },
   { id: 'ciencias', tutor: { id: 'ciencias', name: 'Tutor em preparação', ready: false }, name: 'Ciências', building: 'Jardim das Ciências', active: false },
   { id: 'evt', tutor: { id: 'evt', name: 'Tutor em preparação', ready: false }, name: 'EVT', building: 'Atelier Criativo', active: false },
   { id: 'musica', tutor: { id: 'musica', name: 'Tutor em preparação', ready: false }, name: 'Música', building: 'Estúdio Musical', active: false },
@@ -77,15 +83,15 @@ export const gamePack: ContentPack & { readonly review: 'approved' } = {
   curriculumVersion: 'DGE-AE-6-demo-2026',
   competencies: TOPICS.map((topic) => ({
     id: topic.competencyIds[0]!,
-    subject: topic.subject === 'matematica' ? 'Matemática' : 'Português',
-    grade: 6,
-    domain: topic.subject === 'matematica' ? 'Números e Álgebra' : 'Gramática',
+    subject: topic.subject === 'historia' ? 'História e Geografia de Portugal' : topic.subject === 'matematica' ? 'Matemática' : 'Português',
+    grade: topic.level === 'recuperacao5' ? 5 : 6,
+    domain: topic.group ?? (topic.subject === 'matematica' ? 'Números e Álgebra' : 'Gramática'),
     theme: topic.title,
     objective: topic.blurb,
-    curriculumRef: `DGE — Aprendizagens Essenciais, 6.º ano: ${topic.title}`,
+    curriculumRef: topic.curriculumRef ?? `DGE — Aprendizagens Essenciais, 6.º ano: ${topic.title}`,
     prerequisites: [],
   })),
-  templates: [...mathTemplates, ...portugueseTemplates],
+  templates: [...mathTemplates, ...portugueseTemplates, ...hgpTemplates],
 };
 
 export { TUTORS, validateLessons } from './tutor';

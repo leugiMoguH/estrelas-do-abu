@@ -490,3 +490,9 @@ body.reduce-motion *::after {
   background: #fff0d6;
   border-left: 6px solid #ffaa5c;
 }
+
+/* Multi-seleção de temas HGP. */
+label.topic-card { display:flex; align-items:center; gap:.75rem; min-height:64px; cursor:pointer; }
+label.topic-card input[type="checkbox"] { width:24px; height:24px; flex-shrink:0; }
+label.topic-card:has(input:checked) { outline:3px solid #bc7927; background:#fff1d5; }
+label.topic-card:focus-within { outline:3px solid #614276; }

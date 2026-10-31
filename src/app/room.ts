@@ -7,11 +7,14 @@ import { dueCompetencies } from '../core/review';
 import { button, escape, frame, navigate } from './router';
 import { getState } from './store';
 import { openMap } from './map';
-import { startSession, type Mode } from './session';
+import { startSession, type Mode, type SessionContext } from './session';
 
-export function openRoom(subject: string, topicId?: string): void {
+export function openRoom(subject: string, topicId?: string, context?: SessionContext): void {
   const topics = TOPICS.filter((topic) => topic.subject === subject);
   let selected = topics.find((topic) => topic.id === (topicId ?? getState().lastTopicId)) ?? topics[0];
+  const multi = topics.length > 4;
+  const chosen = new Set(context?.topicIds ?? (selected ? [selected.id] : []));
+  let filter: 'all' | 'recuperacao5' | '6' = 'all';
   let mode: Mode = 'study';
   let count = getState().save.seen.length ? 5 : 3;
   const render = (): void => {
@@ -25,6 +28,34 @@ export function openRoom(subject: string, topicId?: string): void {
     startAbuLife(main, false);
     const cards = document.createElement('div');
     cards.className = 'topic-grid';
+    if (multi) {
+      const filters = document.createElement('div');
+      for (const [id,label] of [['all','Tudo'],['recuperacao5','Recuperação do 5.º ano'],['6','6.º ano']] as const) {
+        const control = button(label,()=>{ filter=id; render(); });
+        control.dataset.focusId=`filter-${id}`; control.setAttribute('aria-pressed',String(filter===id)); filters.append(control);
+      }
+      const visible = topics.filter(t=>filter==='all'||t.level===filter);
+      const mix = button('Mistura',()=>{visible.forEach(t=>chosen.add(t.id));render();}); mix.dataset.focusId='mix';
+      const clear = button('Limpar',()=>{chosen.clear();render();}); clear.dataset.focusId='clear';
+      filters.append(mix,clear); main.append(filters);
+      const counter=document.createElement('p');counter.setAttribute('role','status');counter.textContent=`${chosen.size} temas escolhidos`;main.append(counter);
+      for (const group of new Set(visible.map(t=>t.group))) {
+        const field=document.createElement('fieldset');const legend=document.createElement('legend');legend.textContent=group ?? 'Temas';field.append(legend);
+        const grid=document.createElement('div');grid.className='topic-grid';
+        for(const topic of visible.filter(t=>t.group===group)) {
+          const label=document.createElement('label');label.className='topic-card';
+          const input=document.createElement('input');input.type='checkbox';input.checked=chosen.has(topic.id);input.dataset.focusId=`topic-${topic.id}`;
+          input.onchange=()=>{if(input.checked)chosen.add(topic.id);else chosen.delete(topic.id);render();};
+          label.append(input);
+          const text=document.createElement('span');
+          const title=document.createElement('strong');title.textContent=`${topic.icon} ${topic.title}`;
+          const blurb=document.createElement('span');blurb.textContent=topic.blurb;
+          text.append(title,blurb);label.append(text);grid.append(label);
+        }
+        field.append(grid);main.append(field);
+      }
+      selected=topics.find(t=>t.id===[...chosen][0]) ?? topics[0];
+    } else {
     topics.forEach((topic) => {
       const card = button(
         '',
@@ -39,6 +70,7 @@ export function openRoom(subject: string, topicId?: string): void {
       card.setAttribute('aria-pressed', String(selected?.id === topic.id));
       cards.append(card);
     });
+    }
     main.append(cards);
     const modes = document.createElement('fieldset');
     modes.innerHTML = '<legend>Como queres aprender?</legend>';
@@ -81,19 +113,25 @@ export function openRoom(subject: string, topicId?: string): void {
       );
     if (selected) {
       const topic = selected;
-      const tutor = tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, scene: true, practice: () => startSession(topic.id, 'study', count) });
+      const selectedTopics = multi ? [...chosen].flatMap(id=>topics.filter(t=>t.id===id)) : [topic];
+      const ids=selectedTopics.flatMap(t=>t.competencyIds);
+      const selection: SessionContext | undefined = multi ? {subject,topicIds:selectedTopics.map(t=>t.id),competencyIds:ids,title:selectedTopics.length===topics.length?'Mistura de temas':selectedTopics.length===1?topic.title:`${selectedTopics.length} temas`} : undefined;
+      const begin=(nextMode: Mode, subset?: readonly string[]):void=>{if(selectedTopics.length)startSession(topic.id,nextMode,count,subset,selection);};
+      const tutor = tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, scene: true, practice: () => begin('study') });
       if (mode === 'test') main.append(tutor);
       else main.querySelector('.room-art')?.append(tutor);
-      const due = dueCompetencies(getState().save.mastery, Date.now(), topic.competencyIds);
+      const due = dueCompetencies(getState().save.mastery, Date.now(), ids);
       main.append(
         button(
           mode === 'test' ? 'Começar o teste' : mode === 'review' ? 'Começar a rever' : 'Começar a estudar',
-          () => startSession(topic.id, mode, count, mode === 'review' ? due : undefined),
+          () => begin(mode, mode === 'review' ? due : undefined),
           'primary sticky-cta',
         ),
       );
+      const start = main.querySelector<HTMLButtonElement>('.sticky-cta');
+      if(start)start.disabled=selectedTopics.length===0;
       const mistakes = getState().save.mistakes;
-      const errorIds = topic.competencyIds.filter((id) =>
+      const errorIds = ids.filter((id) =>
         mistakes.some((mistake) =>
           gamePack.templates.some(
             (template) => template.id === mistake.ref.templateId && template.competencyId === id,
@@ -101,7 +139,7 @@ export function openRoom(subject: string, topicId?: string): void {
         ),
       );
       if (errorIds.length)
-        main.append(button('Estudar os erros', () => startSession(topic.id, 'study', count, errorIds)));
+        main.append(button('Estudar os erros', () => begin('study', errorIds)));
     }
     if (focusId) main.querySelector<HTMLElement>(`[data-focus-id="${CSS.escape(focusId)}"]`)?.focus();
   };

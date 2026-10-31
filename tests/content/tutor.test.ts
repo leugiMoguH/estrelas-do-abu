@@ -1,8 +1,9 @@
+import { hgpBanks } from '../../content/historia';
 import { expect, it } from 'vitest';
 import { gamePack, TUTORS, validateLessons, SUBJECTS } from '../../content';
 it('valida as seis lições e a cobertura das competências existentes', () => {
   const lessons = Object.values(TUTORS).flatMap(t => t.lessons);
-  expect(lessons.map(l => l.id).sort()).toEqual(gamePack.competencies.map(c => c.id).sort());
+  expect(lessons.map(l => l.id).sort()).toEqual(gamePack.competencies.filter(c=>!c.id.startsWith('hgp-') || Object.values(hgpBanks).some(m=>m.bank.items.some(i=>i.topic===c.id))).map(c => c.id).sort());
   expect(validateLessons(lessons, gamePack.competencies)).toEqual([]);
   expect(SUBJECTS.filter(s => !s.active).every(s => s.tutor?.ready === false)).toBe(true);
 });

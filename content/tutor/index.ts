@@ -1,5 +1,6 @@
 import type { Competency } from '../../src/core/types';
 import type { SubjectId } from '../index';
+import { hgpLessons } from '../historia';
 import { mathLessons } from './matematica';
 import { portugueseLessons } from './portugues';
 export interface TutorExample { title: string; steps: string[]; result?: number; compute?: () => number }
@@ -7,12 +8,12 @@ export interface TutorLesson {
   id: string; curriculumRef: string; review: 'needs-human-review';
   explanation: string[]; examples: TutorExample[]; checklist: string[]; commonErrors: string[];
 }
-export interface TutorDef { id: string; name: string; ready: boolean; emoji: string; art?: 'mat' | 'por'; lessons: TutorLesson[] }
+export interface TutorDef { id: string; name: string; ready: boolean; emoji: string; art?: 'mat' | 'por' | 'his'; lessons: TutorLesson[] }
 const planned = (id: string): TutorDef => ({ id, name: 'Tutor em preparação', ready: false, emoji: '🌱', lessons: [] });
 export const TUTORS: Record<SubjectId, TutorDef> = {
   matematica: { id: 'nuno', name: 'Professor Nuno', ready: true, emoji: '🧮', art: 'mat', lessons: mathLessons },
   portugues: { id: 'marta', name: 'Marta, a lontra', ready: true, emoji: '📚', art: 'por', lessons: portugueseLessons },
-  ingles: planned('ingles'), historia: planned('historia'), ciencias: planned('ciencias'), evt: planned('evt'), musica: planned('musica'),
+  ingles: planned('ingles'), historia: { id:'tome', name:'Tomé, a tartaruga', ready:true, emoji:'🐢', art:'his', lessons:hgpLessons }, ciencias: planned('ciencias'), evt: planned('evt'), musica: planned('musica'),
 };
 export function validateLessons(lessons: readonly TutorLesson[], competencies: readonly Competency[]): string[] {
   const errors: string[] = [];

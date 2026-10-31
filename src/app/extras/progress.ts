@@ -25,7 +25,9 @@ export function openProgress(): void {
     const main = screen('O meu progresso');
     message(main, 'Cada tema cresce com a prática. As estrelas são uma recompensa à parte.');
     const now = Date.now();
-    for (const topic of TOPICS) {
+    for (const subject of SUBJECTS.filter(s=>s.active)) {
+    const heading=document.createElement('h2');heading.textContent=subject.name;main.append(heading);
+    for (const topic of TOPICS.filter(t=>t.subject===subject.id)) {
       const rows = topic.competencyIds.map((id) => getState().save.mastery[id] ?? emptyMastery());
       const levels = rows.map((row) => reviewLevel(row, now));
       const level = levels.includes('review')
@@ -46,6 +48,7 @@ export function openProgress(): void {
         panel.append(action('Rever agora', () => startSession(topic.id, 'review', 5, due), 'primary'));
       main.append(panel);
     }
+    }
   });
 }
 export function openAchievements(): void {
@@ -58,7 +61,13 @@ export function openAchievements(): void {
     const session = Object.values(state.save.rewardLedger).some((day) =>
       Object.entries(day).some(([id, amount]) => id !== 'minijogo' && amount > 0),
     );
+    const hgp=TOPICS.filter(t=>t.subject==='historia').map(t=>state.save.mastery[t.id]);
+    const tried=hgp.filter(m=>m && m.attempts>0).length;
+    const advanced=hgp.filter(m=>m && strength[m.level]>=2).length;
     const rows: [string, boolean, string][] = [
+      ['Viajante do tempo',tried>=1,'Pratica um tema de História e Geografia de Portugal.'],
+      ['Explorador de Portugal',tried>=3,'Pratica três temas de História e Geografia de Portugal.'],
+      ['Memória de elefante',advanced>=3,'Chega a A progredir em três temas de História e Geografia de Portugal.'],
       ['Primeira sessão', session, 'Termina uma sessão de aprendizagem e ganha estrelas.'],
       [
         'Primeira nota de 14 ou mais',
