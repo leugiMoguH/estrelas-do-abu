@@ -1118,7 +1118,7 @@ Gerado a partir de `content/historia/bank-a.ts`, `bank-e.ts` e `bank-f.ts`. Cada
 
 **Explicação:** A lei de 1773 estabeleceu o princípio do ventre livre no Reino. Os filhos de mulheres escravizadas nascidos depois dessa data seriam livres. A regra não pode ser alargada ao Brasil, onde a escravatura continuou.
 
-**Estado de validação:** revisto _(revisto = lido e conferido pelo autor; NÃO é validação independente)_
+**Estado de validação:** a-confirmar — **EXCLUÍDO DAS SESSÕES** na versão provisória (apoio factual só parcial; ver README)
 
 **Fontes:**
 - Afro-Ásia (Redalyc) (academica) <https://www.redalyc.org/journal/770/77066580002/77066580002.pdf>
@@ -1161,7 +1161,7 @@ Gerado a partir de `content/historia/bank-a.ts`, `bank-e.ts` e `bank-f.ts`. Cada
 
 **Explicação:** Uma ode é um texto de celebração. O documento de 1775 está ligado à colocação da estátua equestre de D. José I. Ajuda a estudar a imagem do rei e uma cerimónia pública, não acontecimentos de temas que não descreve.
 
-**Estado de validação:** revisto _(revisto = lido e conferido pelo autor; NÃO é validação independente)_
+**Estado de validação:** a-confirmar — **EXCLUÍDO DAS SESSÕES** na versão provisória (apoio factual só parcial; ver README)
 
 **Fontes:**
 - Wikipédia EN, Statue of José I (enciclopedia) <https://en.wikipedia.org/wiki/Statue_of_Jos%C3%A9_I_of_Portugal>
@@ -1349,7 +1349,7 @@ Gerado a partir de `content/historia/bank-a.ts`, `bank-e.ts` e `bank-f.ts`. Cada
 
 **Explicação:** Os africanos escravizados trouxeram para o Brasil músicas, danças e instrumentos. O lundu e o samba têm raízes nestas tradições, sobretudo de Angola e do Congo. A origem exata da palavra samba é discutida, mas a influência africana na música brasileira é reconhecida.
 
-**Estado de validação:** revisto _(revisto = lido e conferido pelo autor; NÃO é validação independente)_
+**Estado de validação:** a-confirmar — **EXCLUÍDO DAS SESSÕES** na versão provisória (apoio factual só parcial; ver README)
 
 **Fontes:**
 - ANPUH — Samba: origens e influências africanas (anais) (academica) <https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548875182_bb23acd9292b1a1862131f88507e051f.pdf>
@@ -1368,7 +1368,7 @@ Gerado a partir de `content/historia/bank-a.ts`, `bank-e.ts` e `bank-f.ts`. Cada
 
 **Explicação:** Os africanos escravizados trouxeram as suas crenças e práticas para o Brasil. Muitas manifestações foram proibidas ou perseguidas. Algumas sobreviveram em segredo ou misturadas com símbolos católicos, o chamado sincretismo.
 
-**Estado de validação:** revisto _(revisto = lido e conferido pelo autor; NÃO é validação independente)_
+**Estado de validação:** a-confirmar — **EXCLUÍDO DAS SESSÕES** na versão provisória (apoio factual só parcial; ver README)
 
 **Fontes:**
 - ANPUH — Samba: origens e influências africanas (anais) (academica) <https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548875182_bb23acd9292b1a1862131f88507e051f.pdf>

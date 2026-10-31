@@ -17,6 +17,8 @@ const CALCULO = ['hgp-populacao-08', 'hgp-populacao-09', 'hgp-lugares-09', 'hgp-
 const A_CONFIRMAR = [
   'hgp-lugares-04', 'hgp-lugares-08', 'hgp-lazer-06', 'hgp-lazer-07', 'hgp-lazer-12', 'hgp-atividades-05', 'hgp-atividades-07',
   'hgp-xix-segunda-metade-06', 'hgp-lugares-06',
+  // Séc. XVIII, versão provisória (2026-10-31): apoio factual só parcial na ficha (docs/hgp); excluídos das sessões até revisão.
+  'hgp-seculo-xviii-55', 'hgp-seculo-xviii-57', 'hgp-seculo-xviii-66', 'hgp-seculo-xviii-67',
 ];
 
 export const HGP_A_CONFIRMAR: readonly string[] = A_CONFIRMAR;

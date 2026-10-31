@@ -27,6 +27,13 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       topics.length ? `<div class="room-art">${roomSvg(subject)}<div class="room-abu">${abuSvg('sit', getState().profile.avatar)}</div></div><h2>O que vamos descobrir?</h2>` : '<p>Esta disciplina está em preparação.</p>',
     );
     startAbuLife(main, false);
+    if (subject === 'historia') {
+      const note = document.createElement('p');
+      note.className = 'edition-note';
+      note.setAttribute('role', 'note');
+      note.textContent = 'Versão provisória de estudo — revisão independente pendente. Não cobre todas as páginas do manual.';
+      main.append(note);
+    }
     const cards = document.createElement('div');
     cards.className = 'topic-grid';
     if (multi) {

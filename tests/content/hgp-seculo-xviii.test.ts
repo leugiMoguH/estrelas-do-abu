@@ -14,6 +14,7 @@ const minima: Record<string, number> = {
   'barroco-patrimonio': 3, pombal: 3, 'terramoto-lisboa': 3,
   'novas-culturas': 3, cronologia: 4, fontes: 4, conceitos: 4,
 };
+const EXCLUIDOS = ['hgp-seculo-xviii-55', 'hgp-seculo-xviii-57', 'hgp-seculo-xviii-66', 'hgp-seculo-xviii-67'];
 const skills: readonly HgpSkill[] = [
   'facto', 'causa', 'consequencia', 'cronologia', 'comparacao', 'fonte',
   'mapa', 'vf', 'personagem', 'conceito', 'opiniao',
@@ -44,6 +45,13 @@ describe('Portugal no século XVIII — preparação temática, sem reprodução
       expect(fresh.items.filter(i => i.kind === kind).length, kind).toBeGreaterThanOrEqual(min);
   });
 
+  it('mantém ≥60 itens ativos nas sessões e exclui só os de apoio parcial', () => {
+    const ativos = items.filter(i => validationOf(i.id) !== 'a-confirmar');
+    expect(ativos.length).toBeGreaterThanOrEqual(60);
+    expect(items.length - ativos.length).toBe(EXCLUIDOS.length);
+    for (const id of EXCLUIDOS) expect(ativos.some(i => i.id === id)).toBe(false);
+  });
+
   it('usa URLs literais da ficha, ids novos e fontes locais em todos os itens novos', () => {
     const ids = new Set(fresh.sources.map(s => s.id));
     expect(ids.size).toBe(fresh.sources.length);
@@ -57,7 +65,8 @@ describe('Portugal no século XVIII — preparação temática, sem reprodução
       expect(item.id).toBe(`hgp-seculo-xviii-${index + 15}`);
       expect(item.sources.length).toBeGreaterThan(0);
       item.sources.forEach(id => expect(ids.has(id), `${item.id}: ${id}`).toBe(true));
-      expect(validationOf(item.id)).not.toBe('a-confirmar');
+      // Versão provisória: só estes itens ficam fora das sessões (apoio factual parcial); nenhum outro pode estar «a-confirmar».
+      expect(validationOf(item.id) === 'a-confirmar', item.id).toBe(EXCLUIDOS.includes(item.id));
       expect(item.hints.length).toBeGreaterThanOrEqual(2);
       // Não conta pontos de abreviaturas como D. ou F.; as frases terminam aqui em ponto.
       const sentences = item.explanation.replace(/D\./g, 'D').split(/\.\s+|\.$/).filter(Boolean);

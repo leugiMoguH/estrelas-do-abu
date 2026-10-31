@@ -2,7 +2,8 @@
 
 Pacote **autónomo** para revisão independente (outra sessão, outra ferramenta ou pessoa). Não depende do repositório para ser lido.
 
-## Estado (2026-10-31)
+## Estado (2026-10-31, versão provisória publicada)
+- Publicada em /preview/e/ como **versão provisória de estudo — revisão independente pendente**. Ficam ativos 69 dos 73 itens do capítulo; 4 estão **excluídos das sessões** por apoio factual só parcial: 55 (lei de 1773, ventre livre), 57 (ode de 1775), 66 (samba/lundu), 67 (religiões de origem africana). Os 69 ativos não estão validados de forma independente: foram conferidos pelo autor contra a ficha (≥2 fontes concordantes) e conhecimento próprio.
 - 73 itens (`itens.md` / `itens.json`) e 1 lição (`licao.md`). Fontes em `fontes.md`; ficha factual completa em `ficha-factual.md`.
 - **Nenhuma revisão independente foi feita.** A revisão do Codex e de um segundo agente foi bloqueada pelo ambiente; o autor só conferiu os itens (estado «revisto» ≠ validação independente).
 - O manual de HGP **não foi consultado**: só se conhece o índice (D1, págs. 20–40). As págs. 8–19 não estão descritas no índice. Os itens preparam a matéria do índice; **não reproduzem o manual**.

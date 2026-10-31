@@ -3,7 +3,7 @@ Plano: v1
 Atualizado: 2026-10-31
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: PRIORIDADE teste HGP (séc. XVIII, págs. 20–40): obter revisão independente do pacote docs/hgp/auditoria-seculo-xviii/ (Codex/agentes bloqueados pelo Auto Mode em 2026-10-31); só depois publicar em preview/e. Matemática (ficheiros em content/matematica, por integrar) suspensa.
+Próximo passo: obter revisão independente do pacote docs/hgp/auditoria-seculo-xviii/ (Codex/agentes bloqueados pelo Auto Mode); depois confirmar/repor os 4 itens excluídos e publicar como validada. Matemática (content/matematica, por integrar) suspensa.
 Decisão necessária:
 
 ## Sucesso
@@ -63,7 +63,7 @@ Decisão necessária:
 
 - HGP (2026-10-31, em curso): 3.ª disciplina (edifício Museu das Descobertas): 132 itens verificados (4 formatos + mapas), 11 lições Tomé, revisões Codex aplicadas; falta layout sala, publicação e relatório. Arte HGP bloqueada pelo classificador (decisão do utilizador).
 
-- 2026-10-31: HGP séc. XVIII com 73 itens, lição, factos verificados (ficha em docs/hgp). Commits aceeda4/a06efae + tag hgp-xviii-checkpoint-1. NÃO publicado: falta revisão independente. Versão pública atual: preview/e (HGP anterior, 14 itens do tema).
+- 2026-10-31: HGP séc. XVIII com 73 itens, lição, factos verificados (ficha em docs/hgp). Commits aceeda4/a06efae + tag hgp-xviii-checkpoint-1. PUBLICADA (2026-10-31, autorização expressa do produtor) como versão provisória de estudo — revisão independente pendente: preview/e, 69 perguntas ativas do tema (4 excluídas: 55, 57, 66, 67). Anterior recuperável em preview/e-hgp3 (mesmo armazenamento eda-e).
 
 ## Estacionadas
 ## Bloqueios
