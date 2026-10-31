@@ -20,23 +20,36 @@ async function answer(page: Page, mode: string): Promise<string> {
  if(mode!=='test') {await expect(page.locator('.feedback')).not.toBeEmpty();await page.getByRole('button',{name:/Próxima pergunta|Ver resultado/}).click();}
  return kind;
 }
-test('HGP: seleção acessível, filtros, tutor e ausência de scroll',async({page})=>{
+test('HGP: capítulos e subcapítulos do manual, seleção acessível, tutor e ausência de scroll',async({page})=>{
  await enter(page);await expect(page.getByRole('button',{name:/Tomé/})).toBeVisible();
+ await expect(page.locator('.topic-group').first().locator('summary')).toContainText('Recuperar aprendizagens — 5.º ano');
  await expect(page.locator('.topic-group[open]')).toHaveCount(1);
- await expect(page.locator('.topic-group summary').first()).toContainText('1/');
- await expect(page.getByRole('checkbox', { includeHidden:true })).toHaveCount(11);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expect(page.getByRole('button',{name:/Começar a estudar/})).toBeDisabled();
- await page.getByRole('button',{name:'6.º ano',exact:true}).click();await expandTopics(page);await expect(page.getByRole('checkbox')).toHaveCount(11);
- await page.getByRole('checkbox').first().check();await expect(page.getByText('1 temas escolhidos')).toBeVisible();
- await page.getByRole('button',{name:'Tudo',exact:true}).click();await expandTopics(page);await page.getByRole('checkbox').nth(1).check();await expect(page.getByRole('checkbox').nth(1)).toBeFocused();await expect(page.getByRole('checkbox').nth(1)).toBeChecked();await expect(page.getByText('2 temas escolhidos')).toBeVisible();
- await page.getByRole('button',{name:'Mistura',exact:true}).click();await expect(page.getByText('11 temas escolhidos')).toBeVisible();
+ await expect(page.locator('.topic-group[open] summary')).toContainText('D1 — Portugal no século XVIII (págs. 20–40): 8/9 escolhidos');
+ await expandTopics(page);
+ // 4 capítulos agrupadores + 23 subcapítulos
+ await expect(page.getByRole('checkbox', { includeHidden:true })).toHaveCount(27);
+ // recuperação: 4 subcapítulos, sem exercícios ainda (assinalados e desativados)
+ await expect(page.locator('.topic-card.is-pending')).toHaveCount(4);
+ await expect(page.locator('.topic-card.is-pending input:disabled')).toHaveCount(4);
+ await expect(page.getByText('Em preparação: ainda sem exercícios ou lição suficientes.').first()).toBeVisible();
+ await page.getByRole('button',{name:'Limpar',exact:true}).click();await expandTopics(page);
+ await expect(page.getByRole('button',{name:/Começar a estudar/})).toBeDisabled();
+ await expect(page.getByText('0 subcapítulos escolhidos')).toBeVisible();
+ // escolher um subcapítulo
+ await page.getByRole('checkbox',{name:/Ouro, diamantes e escravização/}).check();
+ await expect(page.getByText('1 subcapítulos escolhidos')).toBeVisible();await expect(page.getByRole('checkbox',{name:/Ouro, diamantes e escravização/})).toBeFocused();
+ // capítulo agrupador: seleciona todos os subcapítulos do D1
+ await page.getByRole('checkbox',{name:'Selecionar todos os subcapítulos deste capítulo'}).first().check();
+ await expect(page.getByText('9 subcapítulos escolhidos')).toBeVisible();
+ await page.getByRole('button',{name:'Mistura',exact:true}).click();await expect(page.getByText('19 subcapítulos escolhidos')).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth)).toBeLessThanOrEqual(1);
 });
 test('HGP: Estudar, Teste, Rever, estrelas e persistência',async({page})=>{
  await enter(page);await page.getByRole('button',{name:'Mistura',exact:true}).click();await page.getByRole('button',{name:/Começar a estudar/}).click();
  test.skip(await page.getByText(/Ainda não há perguntas/).count()>0,'Bancos HGP ainda ausentes neste checkout');
  const kinds=[];for(let i=0;i<3;i++)kinds.push(await answer(page,'study'));
- await expect(page.locator('main h1')).toHaveText('Mistura de temas');await expect(page.getByText(/estrelas/).first()).toBeVisible();
- await page.getByRole('button',{name:'Continuar a estudar',exact:true}).click();await expect(page.getByText('11 temas escolhidos')).toBeVisible();
+ await expect(page.locator('main h1')).toHaveText('19 subcapítulos');await expect(page.getByText(/estrelas/).first()).toBeVisible();
+ await page.getByRole('button',{name:'Continuar a estudar',exact:true}).click();await expect(page.getByText('19 subcapítulos escolhidos')).toBeVisible();
  await page.getByRole('button',{name:/^Teste/}).click();await page.getByRole('button',{name:'Começar o teste'}).click();
  await expect(page.getByRole('button',{name:/Tomé|Uma pista/})).toHaveCount(0);
  for(let i=0;i<5;i++) {if(await page.locator('.grade').count())break;await answer(page,'test');}
@@ -83,6 +96,8 @@ test('HGP: atalho do teste escolar no mapa, na sala e por ligação, só com o c
  const snapshot=snapshotJson as {id:string;prompt:string;validacao:string}[];
  const active=snapshot.filter(i=>i.validacao!=='a-confirmar');
  expect(active.length).toBe(69);
+ // o atalho cobre os 8 subcapítulos do índice (sem o complemento das AE: ids 47–49)
+ const chapter=active.filter(i=>!['47','48','49'].includes(i.id.slice(-2)));expect(chapter.length).toBe(66);
  await page.goto('/');await page.getByRole('button',{name:/Jogar/}).first().click();
  await page.getByRole('button',{name:/Surpreende/}).click();await page.getByRole('button',{name:/Vamos ao centro/}).click();
  const cta=page.getByRole('button',{name:'Preparar próximo teste — Portugal no século XVIII'});
@@ -98,7 +113,7 @@ test('HGP: atalho do teste escolar no mapa, na sala e por ligação, só com o c
  const seen=new Set<string>();
  for(let i=0;i<20;i++){
   const text=await page.locator('form.question').innerText();
-  const hit=active.find(item=>text.includes(item.prompt.slice(0,30)));
+  const hit=chapter.find(item=>text.includes(item.prompt.slice(0,30)));
   expect(hit,`Pergunta ${i+1} fora do capítulo ou excluída: ${text.slice(0,60)}`).toBeTruthy();seen.add(hit!.id);
   await answer(page,'study');
  }
@@ -109,3 +124,19 @@ test('HGP: atalho do teste escolar no mapa, na sala e por ligação, só com o c
  await expect(page.getByRole('note')).toContainText('Versão provisória de estudo');
  await expect(page.getByRole('button',{name:'Preparar próximo teste — Portugal no século XVIII'})).toBeVisible();
 });
+test('HGP: um subcapítulo escolhido só traz perguntas e lição desse subcapítulo',async({page})=>{
+ const snapshot=snapshotJson as {id:string;prompt:string;validacao:string}[];
+ const ouro=snapshot.filter(i=>['02','18','19','20','21','22'].includes(i.id.slice(-2)));expect(ouro.length).toBe(6);
+ await enter(page);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expandTopics(page);
+ await page.getByRole('checkbox',{name:/Ouro, diamantes e escravização/}).check();
+ await page.getByRole('button',{name:/Tomé/}).click();await page.getByRole('button',{name:'Explica-me esta matéria'}).click();
+ await expect(dialogText(page)).toContainText('O quinto era o imposto');await expect(dialogText(page)).not.toContainText('A sociedade dividia-se');
+ await page.getByRole('button',{name:'Fechar'}).click();
+ await page.getByRole('button',{name:/Começar a estudar/}).click();
+ for(let i=0;i<3;i++){
+  const text=await page.locator('form.question').innerText();
+  expect(ouro.some(item=>text.includes(item.prompt.slice(0,30))),`Pergunta ${i+1} fora do subcapítulo: ${text.slice(0,60)}`).toBe(true);
+  await answer(page,'study');
+ }
+});
+const dialogText=(page: Page)=>page.locator('dialog.tutor-dialog');

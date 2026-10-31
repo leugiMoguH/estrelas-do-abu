@@ -14,7 +14,7 @@ export function setTutorMode(mode: Mode): void {
 }
 export const tutorAllowed = (mode: Mode): boolean => mode !== 'test';
 interface TutorOptions {
-  subject: SubjectId; competencyId: string; mode: Mode; practice: () => void;
+  subject: SubjectId; competencyId: string; mode: Mode; practice: () => void; sectionIds?: readonly string[];
   hint?: () => string; compact?: boolean; scene?: boolean; onTutorOpen?: () => void;
 }
 export function tutorButton(options: TutorOptions): HTMLElement {
@@ -54,7 +54,9 @@ export function tutorButton(options: TutorOptions): HTMLElement {
     };
     const menu = (): void => {
       title.textContent = tutor.name; body.replaceChildren(); picture(false);
-      body.append(button('Explica-me esta matéria', () => page('Explica-me esta matéria', [...lesson.explanation, 'Erros comuns', ...lesson.commonErrors])));
+      const chosen = lesson.sections?.filter(s => options.sectionIds?.includes(s.id));
+      const explained = chosen?.length ? chosen.flatMap(s => [s.title, ...s.explanation]) : lesson.explanation;
+      body.append(button('Explica-me esta matéria', () => page('Explica-me esta matéria', [...explained, 'Erros comuns', ...lesson.commonErrors])));
       if (options.hint) body.append(button('Dá-me uma dica', () => page('Dá-me uma dica', [options.hint!()])));
       body.append(button('Mostra um exemplo', () => {
         title.textContent = 'Escolhe um exemplo'; body.replaceChildren(); picture(false);

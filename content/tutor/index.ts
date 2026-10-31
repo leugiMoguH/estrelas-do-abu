@@ -7,6 +7,8 @@ export interface TutorExample { title: string; steps: string[]; result?: number;
 export interface TutorLesson {
   id: string; curriculumRef: string; review: 'needs-human-review';
   explanation: string[]; examples: TutorExample[]; checklist: string[]; commonErrors: string[];
+  /** Explicação por subcapítulo (HGP); opcional. */
+  sections?: { id: string; title: string; explanation: string[] }[];
 }
 export interface TutorDef { id: string; name: string; ready: boolean; emoji: string; art?: 'mat' | 'por' | 'his'; lessons: TutorLesson[] }
 const planned = (id: string): TutorDef => ({ id, name: 'Tutor em preparação', ready: false, emoji: '🌱', lessons: [] });

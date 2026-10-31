@@ -2,7 +2,8 @@ import { startAbuLife } from './abu-life';
 import { abuSvg } from '../art';
 import { tutorButton, setTutorMode } from './tutor';
 import { roomSvg } from '../art';
-import { TOPICS, SUBJECTS, gamePack } from '../../content';
+import { TOPICS, SUBJECTS, gamePack, HGP_SECTIONS, hgpSectionById, hgpSectionInfo } from '../../content';
+import { renderHgpTree } from './hgp-tree';
 import { dueCompetencies } from '../core/review';
 import { button, escape, frame, navigate } from './router';
 import { getState } from './store';
@@ -16,7 +17,19 @@ export function startHgpChapter(): void {
     topicIds: ['hgp-seculo-xviii'],
     competencyIds: ['hgp-seculo-xviii'],
     title: 'Portugal no século XVIII',
+    sectionIds: d1Sections(),
   });
+}
+/** Subcapítulos funcionais do D1 (sem o complemento das AE, que não consta do índice confirmado). */
+function d1Sections(): string[] {
+  return HGP_SECTIONS.filter((section) => section.topic === 'hgp-seculo-xviii' && !section.extra && hgpSectionInfo(section.id).functional).map((section) => section.id);
+}
+function initialHgpSections(context: SessionContext | undefined, topicId: string | undefined): string[] {
+  const ok = (id: string): boolean => hgpSectionInfo(id).functional;
+  if (context?.sectionIds?.length) return context.sectionIds.filter(ok);
+  const topics = context?.topicIds ?? (topicId ? [topicId] : []);
+  const mine = HGP_SECTIONS.filter((section) => section.topic && topics.includes(section.topic) && !section.extra && ok(section.id)).map((section) => section.id);
+  return mine.length ? mine : d1Sections();
 }
 
 export function openRoom(subject: string, topicId?: string, context?: SessionContext): void {
@@ -24,6 +37,9 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
   let selected = topics.find((topic) => topic.id === (topicId ?? getState().lastTopicId)) ?? topics[0];
   const multi = topics.length > 4;
   const chosen = new Set(context?.topicIds ?? (selected ? [selected.id] : []));
+  const hgp = subject === 'historia';
+  const chosenSections = new Set<string>(hgp ? initialHgpSections(context, topicId ?? getState().lastTopicId ?? undefined) : []);
+  const chapterOpen = new Map<string, boolean>();
   let filter: 'all' | 'recuperacao5' | '6' = 'all';
   const groupOpen = new Map<string | undefined, boolean>();
   let mode: Mode = 'study';
@@ -47,7 +63,12 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
     startAbuLife(main, false);
     const cards = document.createElement('div');
     cards.className = 'topic-grid';
-    if (multi) {
+    if (hgp) {
+      chosen.clear();
+      for (const id of chosenSections) { const t = hgpSectionById(id)?.topic; if (t) chosen.add(t); }
+      renderHgpTree(main, { chosen: chosenSections, open: chapterOpen, focusId, rerender: render });
+      selected = topics.find((t) => t.id === [...chosen][0]) ?? topics[0];
+    } else if (multi) {
       const filters = document.createElement('div');
       for (const [id,label] of [['all','Tudo'],['6','6.º ano']] as const) {
         const control = button(label,()=>{ filter=id; render(); });
@@ -133,7 +154,12 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       counts.append(choice);
     });
     main.append(counts);
-    if (multi && chosen.size > count) {
+    if (hgp && chosenSections.size > count) {
+      const note = document.createElement('p');
+      note.setAttribute('role', 'status');
+      note.textContent = `Escolheste ${chosenSections.size} subcapítulos, mas só vais ter ${count} perguntas: nem todos vão ser perguntados.`;
+      main.append(note);
+    } else if (multi && !hgp && chosen.size > count) {
       const note = document.createElement('p');
       note.setAttribute('role', 'status');
       note.textContent = `Escolheste ${chosen.size} temas, mas só vais ter ${count} perguntas: nem todos os temas vão ser perguntados.`;
@@ -148,9 +174,10 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       const topic = selected;
       const selectedTopics = multi ? [...chosen].flatMap(id=>topics.filter(t=>t.id===id)) : [topic];
       const ids=selectedTopics.flatMap(t=>t.competencyIds);
-      const selection: SessionContext | undefined = multi ? {subject,topicIds:selectedTopics.map(t=>t.id),competencyIds:ids,title:selectedTopics.length===topics.length?'Mistura de temas':selectedTopics.length===1?topic.title:`${selectedTopics.length} temas`} : undefined;
+      const selection: SessionContext | undefined = multi ? {subject,topicIds:selectedTopics.map(t=>t.id),competencyIds:ids,title:selectedTopics.length===topics.length?'Mistura de temas':selectedTopics.length===1?topic.title:`${selectedTopics.length} temas`,...(hgp?{sectionIds:[...chosenSections]}:{})} : undefined;
+      if (selection && hgp) selection.title = chosenSections.size === 1 ? (hgpSectionById([...chosenSections][0]!)?.title ?? topic.title) : `${chosenSections.size} subcapítulos`;
       const begin=(nextMode: Mode, subset?: readonly string[]):void=>{if(selectedTopics.length)startSession(topic.id,nextMode,count,subset,selection);};
-      const tutor = tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, scene: true, practice: () => begin('study') });
+      const tutor = tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, scene: true, sectionIds: hgp ? [...chosenSections] : undefined, practice: () => begin('study') });
       if (mode === 'test') main.append(tutor);
       else main.querySelector('.room-art')?.append(tutor);
       const due = dueCompetencies(getState().save.mastery, Date.now(), ids);

@@ -67,6 +67,8 @@ Decisão necessária:
 
 - 2026-10-31: acesso ao capítulo corrigido: botão «Preparar próximo teste — Portugal no século XVIII» no topo do mapa e da sala HGP e ligação ?capitulo=seculo-xviii (perfil já criado). Causa: atalhos de disciplina escondidos no telemóvel e botão «Continuar» a abrir o último tema; a raiz do site (demo) não tem HGP. Backups: preview/e-prov1, e-prov2.
 
+- 2026-10-31: HGP por capítulos/subcapítulos (content/historia/estrutura.ts): Recuperar aprendizagens (4 subcapítulos confirmados, sem exercícios), D1 (8 subcapítulos do índice + complemento AE), D2 e restantes só como tema completo (provisório). Seleção por subcapítulo, lição por subcapítulo, perguntas ligadas a 1 subcapítulo. BLOQUEIO: fotografias do índice do manual não existem em nenhuma sessão guardada — pedir de novo para completar a hierarquia. Publicado em preview/e (anterior: e-prov3).
+
 ## Estacionadas
 ## Bloqueios
 ## Histórico do plano

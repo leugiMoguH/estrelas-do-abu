@@ -1,7 +1,7 @@
 import { abuReact } from '../art/d/abu';
 import { tutorButton, setTutorMode } from './tutor';
 import { abuSvg } from '../art';
-import { gamePack, TOPICS } from '../../content';
+import { gamePack, hgpItemSection, TOPICS } from '../../content';
 import { materialize } from '../core/content';
 import { grade } from '../core/grading';
 import { emptyMastery, updateMastery } from '../core/mastery';
@@ -18,7 +18,8 @@ import { openRoom } from './room';
 import { openResult } from './result';
 
 import { ptMapSvg } from './figure';
-export interface SessionContext { subject: string; topicIds: string[]; competencyIds: string[]; title: string }
+/** sectionIds: subcapítulos escolhidos (HGP); só entram perguntas desses subcapítulos. */
+export interface SessionContext { subject: string; topicIds: string[]; competencyIds: string[]; title: string; sectionIds?: string[] }
 export type Mode = 'study' | 'test' | 'review';
 export interface Attempt {
   exercise: Exercise;
@@ -53,7 +54,8 @@ export function startSession(
   });
   const session = buildSession({
     mode,
-    pool: testParams?.has('hgpIds') && topic.subject === 'historia' ? pool.filter(e=>testParams.get('hgpIds')!.split(',').includes(e.id)) : pool,
+    pool: (testParams?.has('hgpIds') && topic.subject === 'historia' ? pool.filter(e=>testParams.get('hgpIds')!.split(',').includes(e.id)) : pool)
+      .filter(e => !context?.sectionIds || context.sectionIds.includes(hgpItemSection(e.id) ?? '')),
     competencyIds: ids,
     n: before.seen.length ? count : 3,
     state: before.mastery,
@@ -170,7 +172,7 @@ export function startSession(
       hint = button('Uma pista', requestHint);
       actions.append(hint);
     }
-    main.append(tutorButton({ subject: topic.subject, competencyId: exercise.competencyId, mode,
+    main.append(tutorButton({ subject: topic.subject, competencyId: exercise.competencyId, mode, sectionIds: context?.sectionIds,
       compact: true, onTutorOpen: () => abuReact(main,'tutor'), practice: () => startSession(topic.id, 'study', count, undefined, context),
       hint: mode === 'test' ? undefined : requestHint }));
     const abu = document.createElement('aside');
