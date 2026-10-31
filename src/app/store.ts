@@ -1,9 +1,10 @@
-import { defaultAvatar, type AvatarConfig } from '../art';
+import { defaultAvatar, normalizeAvatar, type AvatarConfig } from '../art';
 import { defaultSave, exportSave, importSave, type Save } from '../core/save';
 import { buy, type ShopItem } from '../core/rewards';
 
 export interface AppState {
   profile: {
+    version?: 2;
     nickname?: string;
     grade: number;
     onboarded: boolean;
@@ -24,7 +25,7 @@ const APP_KEY = `${NS}:app:v1`;
 const SAVE_KEY = `${NS}:save:v2`;
 
 const initial = (): AppState => ({
-  profile: { grade: 6, onboarded: false, avatar: defaultAvatar(), equipped: {} },
+  profile: { version: 2, grade: 6, onboarded: false, avatar: defaultAvatar(), equipped: {} },
   options: { music: true, sfx: true, volume: 0.4, reduceMotion: false, textScale: 1 },
   lastTopicId: null,
   bestTestGrade: 0,
@@ -43,13 +44,7 @@ function load(): AppState {
         state.profile.onboarded = app.profile.onboarded;
         if (typeof app.profile.nickname === 'string')
           state.profile.nickname = app.profile.nickname.slice(0, 24);
-        for (const key of Object.keys(state.profile.avatar) as (keyof AvatarConfig)[]) {
-          const value = app.profile.avatar[key];
-          if (typeof value === 'string' && value.length <= 100)
-            state.profile.avatar = { ...state.profile.avatar, [key]: value };
-          else if (value === null && (key === 'accessory' || key === 'abuAccessory'))
-            state.profile.avatar[key] = null;
-        }
+        state.profile.avatar = app.profile.avatar;
         state.profile.equipped = { ...state.profile.avatar };
       }
       if (app.options) {
@@ -77,6 +72,9 @@ function load(): AppState {
   } catch {
     state.ui.storageError = true;
   }
+  state.profile.avatar = normalizeAvatar(state.profile.avatar, state.save.ownedItems);
+  state.profile.equipped = { ...state.profile.avatar };
+  state.favorites = state.favorites.map(value => normalizeAvatar(value, state.save.ownedItems));
   return state;
 }
 
@@ -90,6 +88,7 @@ export function applyOptions(): void {
 }
 export function update(change: Partial<AppState> | ((state: AppState) => AppState)): void {
   state = typeof change === 'function' ? change(state) : { ...state, ...change };
+  state.profile.version = 2;
   try {
     const { save, ui: _ui, ...app } = state;
     localStorage.setItem(APP_KEY, JSON.stringify(app));

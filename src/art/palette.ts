@@ -64,6 +64,11 @@ export const EXPRESSIONS: readonly Option[] = [
 ];
 
 export interface AvatarConfig {
+  outer: string | null;
+  glasses: string | null;
+  hat: string | null;
+  backpack: string | null;
+  eyeColor: string;
   skin: string;
   hairStyle: string;
   hairColor: string;
@@ -92,3 +97,5 @@ export function shade(hex: string, amount: number): string {
 let counter = 0;
 /** Identificador único por desenho, para clipPaths não colidirem em páginas com vários SVG. */
 export const uid = (prefix: string): string => `${prefix}${(counter += 1)}`;
+
+export const EYE_COLORS = [{ id: 'castanho', name: 'Castanho', hex: '#7a4020' }, { id: 'azul', name: 'Azul', hex: '#3977b4' }, { id: 'verde', name: 'Verde', hex: '#51754a' }, { id: 'mel', name: 'Mel', hex: '#b27e31' }] as const;

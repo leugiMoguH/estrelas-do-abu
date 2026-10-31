@@ -5,6 +5,7 @@ import {
   SKIN_TONES,
   HAIR_COLORS,
   EYE_STYLES,
+  EYE_COLORS,
   defaultAvatar,
   randomAvatar,
   type AvatarConfig,
@@ -71,9 +72,11 @@ export function openOnboarding(): void {
     };
     addChoices('Pele', 'skin', SKIN_TONES);
     addChoices('Cor do cabelo', 'hairColor', HAIR_COLORS);
+    addChoices('Cor dos olhos', 'eyeColor', EYE_COLORS);
     addChoices('Olhos', 'eyes', EYE_STYLES);
-    for (const slot of ['hairStyle', 'top', 'bottom', 'shoes', 'accessory'] as const) {
+    for (const slot of ['hairStyle', 'top', 'bottom', 'shoes', 'accessory', 'outer', 'glasses', 'hat', 'backpack'] as const) {
       const labels = {
+        outer: 'Casaco', glasses: 'Óculos', hat: 'Chapéu', backpack: 'Mochila',
         hairStyle: 'Penteado',
         top: 'Roupa',
         bottom: 'Calças',

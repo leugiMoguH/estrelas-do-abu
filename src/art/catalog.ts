@@ -1,7 +1,7 @@
 import type { AvatarConfig } from './palette';
-import { EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
+import { EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
 
-export type Slot = 'hairStyle' | 'top' | 'bottom' | 'shoes' | 'accessory' | 'abuAccessory';
+export type Slot = 'hairStyle' | 'top' | 'bottom' | 'shoes' | 'accessory' | 'abuAccessory' | 'outer' | 'glasses' | 'hat' | 'backpack';
 export interface CatalogItem {
   id: string;
   slot: Slot;
@@ -52,12 +52,19 @@ export const CATALOG: readonly CatalogItem[] = [
   paid('shoes-chuva', 'shoes', 'Galochas amarelas', 18),
   free('acc-bandolete', 'accessory', 'Bandolete'),
   paid('acc-fita', 'accessory', 'Laço no cabelo', 5),
-  paid('acc-oculos', 'accessory', 'Óculos redondos', 5),
+  paid('acc-oculos', 'glasses', 'Óculos redondos', 5),
   paid('acc-colar', 'accessory', 'Colar de estrela', 8),
-  paid('acc-sol', 'accessory', 'Óculos de sol', 10),
-  paid('acc-gorro', 'accessory', 'Gorro', 15),
-  paid('acc-auscultadores', 'accessory', 'Auscultadores', 20),
-  paid('acc-coroa', 'accessory', 'Coroa', 40),
+  paid('acc-sol', 'glasses', 'Óculos de sol', 10),
+  paid('acc-gorro', 'hat', 'Gorro', 15),
+  paid('acc-auscultadores', 'hat', 'Auscultadores', 20),
+  paid('acc-coroa', 'hat', 'Coroa', 40),
+  free('outer-gabardina', 'outer', 'Gabardina'),
+  paid('acc-oculos-estrela', 'glasses', 'Óculos de estrela', 12),
+  free('hat-sol', 'hat', 'Chapéu de sol'),
+  paid('hat-pompom', 'hat', 'Gorro com pompom', 16),
+  free('acc-laco', 'accessory', 'Laço'),
+  free('backpack-rosa', 'backpack', 'Mochila rosa'),
+  paid('backpack-azul', 'backpack', 'Mochila azul', 12),
   free('abu-coleira', 'abuAccessory', 'Coleira do Abu'),
   paid('abu-laco', 'abuAccessory', 'Laço do Abu', 5),
   paid('abu-lenco', 'abuAccessory', 'Lenço do Abu', 8),
@@ -66,6 +73,7 @@ export const CATALOG: readonly CatalogItem[] = [
 ];
 
 export const defaultAvatar = (): AvatarConfig => ({
+  outer: null, glasses: null, hat: null, backpack: null, eyeColor: 'castanho',
   skin: 'bege',
   hairStyle: 'hair-curto',
   hairColor: 'castanho',
@@ -86,6 +94,7 @@ export function randomAvatar(rng: () => number, ownedIds: readonly string[]): Av
     CATALOG.filter((i) => i.slot === slot && (i.free || ownedIds.includes(i.id))).map((i) => i.id);
   const accessories = allowed('accessory');
   return {
+    outer: null, glasses: null, hat: null, backpack: null, eyeColor: pick(rng, EYE_COLORS).id,
     skin: pick(rng, SKIN_TONES).id,
     hairStyle: pick(rng, allowed('hairStyle')),
     hairColor: pick(rng, HAIR_COLORS).id,
@@ -97,4 +106,25 @@ export function randomAvatar(rng: () => number, ownedIds: readonly string[]): Av
     accessory: rng() < 0.4 ? pick(rng, accessories) : null,
     abuAccessory: pick(rng, allowed('abuAccessory')),
   };
+}
+
+/** Validação e migração v1→v2, sem alterar o objeto de origem. */
+export function normalizeAvatar(value: unknown, ownedIds: readonly string[]): AvatarConfig {
+  const result = defaultAvatar();
+  if (!value || typeof value !== 'object') return result;
+  const source = { ...value } as Record<string, unknown>;
+  const legacy = CATALOG.find(i => i.id === source.accessory);
+  if (legacy && (legacy.slot === 'hat' || legacy.slot === 'glasses')) {
+    if (source[legacy.slot] == null) source[legacy.slot] = legacy.id;
+    source.accessory = null;
+  }
+  for (const [slot, options] of [['skin', SKIN_TONES], ['hairColor', HAIR_COLORS], ['eyes', EYE_STYLES], ['expression', EXPRESSIONS], ['eyeColor', EYE_COLORS]] as const) {
+    if (options.some(i => i.id === source[slot])) result[slot] = source[slot] as string;
+  }
+  for (const slot of ['hairStyle', 'top', 'bottom', 'shoes', 'outer', 'glasses', 'hat', 'backpack', 'accessory', 'abuAccessory'] as const) {
+    const item = CATALOG.find(i => i.id === source[slot] && i.slot === slot);
+    if (item && (item.free || ownedIds.includes(item.id))) result[slot] = item.id;
+    else if (source[slot] === null && ['outer','glasses','hat','backpack','accessory','abuAccessory'].includes(slot)) (result as unknown as Record<string, unknown>)[slot] = null;
+  }
+  return result;
 }

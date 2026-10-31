@@ -84,7 +84,7 @@ export function avatarBody(s: ArtStyle, config: AvatarConfig, pose: AvatarPose):
     `<clipPath id="${headClip}"><path d="${HEAD}"/></clipPath><g clip-path="url(#${headClip})">${tone('M126 40 Q150 92 124 136 L150 136 L150 40 Z', skinShade, 0.45)}</g>` +
     face(s, config.eyes, config.expression, skin, hair) +
     hairFront(s, config.hairStyle, hair) +
-    accessorySvg(s, config.accessory)
+    accessorySvg(s, config.accessory) + accessorySvg(s, config.glasses) + accessorySvg(s, config.hat)
   );
 }
 

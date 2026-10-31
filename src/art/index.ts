@@ -8,14 +8,15 @@ import { starSvg as starAtual, welcomeSvg as welcomeAtual } from './scenes';
 import { getArtTheme } from './theme';
 import { themedArt } from './themes';
 import './v2/themes-ab';
+import './d/register';
 
 export type { ArtTheme } from './theme';
 export { getArtTheme, setArtTheme } from './theme';
 export type { AvatarOptions, AvatarPose } from './avatar';
 export type { CatalogItem, Slot } from './catalog';
-export { CATALOG, defaultAvatar, randomAvatar } from './catalog';
+export { CATALOG, defaultAvatar, randomAvatar, normalizeAvatar } from './catalog';
 export type { AbuPose, AvatarConfig, Option } from './palette';
-export { EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
+export { EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
 
 /** As funções públicas despacham pelo tema ativo; sem tema novo disponível usam o desenho atual. */
 export const avatarSvg = (config: AvatarConfig, options?: AvatarOptions): string =>

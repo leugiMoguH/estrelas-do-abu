@@ -7,7 +7,8 @@ import {
   EYE_STYLES,
   EXPRESSIONS,
   randomAvatar,
-  defaultAvatar,
+  normalizeAvatar,
+  EYE_COLORS,
   starSvg,
   type AvatarConfig,
   type Slot,
@@ -19,6 +20,7 @@ import { play } from '../audio';
 import { action, screen, message } from './ui';
 
 const slots: Record<Slot, string> = {
+  outer: 'Casaco', glasses: 'Óculos', hat: 'Chapéu', backpack: 'Mochila',
   hairStyle: 'Penteado',
   top: 'Parte de cima',
   bottom: 'Parte de baixo',
@@ -31,29 +33,12 @@ const allowed = (id: string): boolean =>
 
 // Favoritos também são dados locais: validar antes de os aplicar.
 export function safeAvatar(value: unknown): AvatarConfig {
-  const avatar = defaultAvatar();
-  if (!value || typeof value !== 'object') return avatar;
-  const source = value as Record<string, unknown>;
-  for (const [slot, options] of [
-    ['skin', SKIN_TONES],
-    ['hairColor', HAIR_COLORS],
-    ['eyes', EYE_STYLES],
-    ['expression', EXPRESSIONS],
-  ] as const) {
-    if (options.some((item) => item.id === source[slot])) avatar[slot] = source[slot] as string;
-  }
-  for (const slot of Object.keys(slots) as Slot[]) {
-    const id = source[slot];
-    if (typeof id === 'string' && CATALOG.some((i) => i.id === id && i.slot === slot) && allowed(id))
-      avatar[slot] = id;
-    else if (id === null && (slot === 'accessory' || slot === 'abuAccessory')) avatar[slot] = null;
-  }
-  return avatar;
+  return normalizeAvatar(value, getState().save.ownedItems);
 }
 export function equip(avatar: AvatarConfig): void {
   update((state) => ({
     ...state,
-    profile: { ...state.profile, avatar, equipped: { ...avatar } },
+    profile: { ...state.profile, avatar: safeAvatar(avatar), equipped: { ...safeAvatar(avatar) } },
   }));
 }
 
@@ -119,6 +104,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
         {
           name: 'Olhos',
           groups: [
+            { title: 'Cor dos olhos', slot: 'eyeColor', items: [...EYE_COLORS] },
             { title: 'Olhos', slot: 'eyes', items: [...EYE_STYLES] },
             { title: 'Expressão', slot: 'expression', items: [...EXPRESSIONS] },
           ],
@@ -140,6 +126,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
           groups: [{ title: 'Acessório do Abu', slot: 'abuAccessory', items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter((i) => i.slot === 'abuAccessory' && allowed(i.id))], crop: 'abu' }],
         },
       ];
+      for (const slot of ['outer', 'glasses', 'hat', 'backpack'] as const) SECTIONS.push({ name: slots[slot], groups: [{ title: slots[slot], slot, items: [{ id: null, name: 'Nenhum' }, ...CATALOG.filter(i => i.slot === slot && allowed(i.id))], crop: '--z:1;--y:0px' }] });
       const current = SECTIONS.find((x) => x.name === section) ?? SECTIONS[0]!;
       const row = document.createElement('div');
       row.className = 'tabs-row';
@@ -182,8 +169,8 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
           } else {
             art.className = 'chip-art';
             if (g.crop === 'abu') art.innerHTML = abuSvg('sit', item.id);
-            else if (g.crop) {
-              art.setAttribute('style', g.crop);
+            else {
+              art.setAttribute('style', g.crop ?? '');
               art.classList.add('is-crop');
               art.innerHTML = avatarSvg({ ...avatar, [g.slot]: item.id }, { size: 100 });
             }

@@ -245,3 +245,17 @@ body.reduce-motion .map-hit {
   gap: 8px;
   justify-content: center;
 }
+
+/* Avatar D: as poses usam o molde idle. */
+.av-d { max-width:100%; height:auto; overflow:visible; }
+.av-d .eye { transform-box:fill-box; transform-origin:center; animation:d-blink 6s infinite; }
+.av-d-cheer .avatar-d-body { animation:d-cheer 1.4s ease-in-out infinite; }
+.av-d-think .avatar-d-body { transform-origin:50% 90%; animation:d-think 3s ease-in-out infinite; }
+@keyframes d-blink { 0%,94%,98%,100% {transform:scaleY(1)} 96% {transform:scaleY(.05)} }
+@keyframes d-cheer { 50% {transform:translateY(-20px)} }
+@keyframes d-think { 50% {transform:rotate(2deg)} }
+.reduce-motion .av-d *, .av-d-still * {animation:none!important}
+@media(prefers-reduced-motion:reduce) { .av-d * {animation:none!important} }
+@media (max-width:650px) {
+  .extras-preview:has(> .av-d) { position:static; }
+}

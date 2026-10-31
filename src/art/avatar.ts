@@ -15,6 +15,7 @@ import { HAIR_COLORS, INK, SKIN_TONES, shade } from './palette';
 
 export type AvatarPose = 'idle' | 'cheer' | 'think';
 export interface AvatarOptions {
+  reduceMotion?: boolean;
   pose?: AvatarPose;
   size?: number;
   withAbu?: boolean;
@@ -66,7 +67,7 @@ export function avatarBody(config: AvatarConfig, pose: AvatarPose): string {
     `<ellipse cx="100" cy="94" rx="50" ry="47" fill="${skin}" stroke="${INK}" stroke-width="3"/>` +
     face(config.eyes, config.expression, skin, hair) +
     hairFront(config.hairStyle, hair) +
-    accessorySvg(config.accessory)
+    accessorySvg(config.accessory) + accessorySvg(config.glasses) + accessorySvg(config.hat)
   );
 }
 
