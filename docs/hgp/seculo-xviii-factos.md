@@ -245,3 +245,16 @@ Nenhuma citação de autor foi inventada. Onde não houve texto literal verifica
 - Quem descobriu os diamantes e quando foram realmente achados (F18).
 - Quem inventou a gaiola pombalina (F89).
 - «Douro, região demarcada mais antiga do mundo» (não verificado).
+
+
+---
+
+## Adenda de verificação (2.ª ronda, 2026-10-31)
+
+Resolve as dúvidas pendentes sobre a batata e o legado africano. Fontes consultadas por pesquisa; as marcadas «excerto» não foram lidas na íntegra.
+
+- **F112 (revista).** A batata, conhecida na Europa desde o século XVI, difundiu-se **lentamente** em Portugal, sobretudo a partir de meados do século XVIII e em tempos de crise e carestia de cereais; na região de Coimbra só se integrou plenamente nos sistemas agrícolas no século XIX. Houve um registo isolado de cultivo em Quiaios no século XVII. Fontes: [Diaita (UC)](https://impactum-journals.uc.pt/diaita/article/download/14381/10141/67238); [Sobral Neto, Introdução e expansão da cultura da batata na região de Coimbra (excerto)](https://ap1.sib.uc.pt/bitstream/10316.2/46353/1/introducao_e_expansao_da_cultura_da_batata.pdf). **CONFIRMADO** (essencial); a data exata de início é debatida.
+- **F201.** O português do Brasil recebeu muitas palavras de línguas africanas trazidas pelos escravizados, sobretudo banto (quimbundo, de Angola) e iorubá (Nigéria). Fonte: [Politize](https://www.politize.com.br/palavras-de-origem-africana/) (lido; cita o linguista E. Bonvini). **CONFIRMADO**
+- **F202.** «Quitanda» vem do quimbundo *kitanda* (tabuleiro de venda) e «dendê» vem do quimbundo *ndende* (palmeira nativa da África Ocidental). Fonte: [InfoEscola](https://www.infoescola.com/noticias/15-palavras-do-dia-a-dia-dos-brasileiros-que-sao-herancas-africanas/) (excerto); dicionários consultados por pesquisa (Priberam, Houaiss, Wiktionary). **CONFIRMADO**. **Não usar:** «caçula» (kasule/quimbundo segundo Priberam; kikongo segundo outras fontes), origem exata de «samba», feijoada.
+- **F203.** O lundu e o samba têm raízes em tradições musicais de africanos escravizados, sobretudo de Angola e do Congo. Fonte: [ANPUH, anais (samba)](https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548875182_bb23acd9292b1a1862131f88507e051f.pdf) (excerto). **PARCIAL** (essencial; a etimologia de «samba» é discutida).
+- **F204.** Manifestações de origem africana (religiões, samba, capoeira) foram proibidas ou perseguidas e sobreviveram em segredo ou em sincretismo com o catolicismo. Fonte: [Correio Braziliense](https://www.correiobraziliense.com.br/opiniao/2023/08/5116419-artigo-a-musica-negra-como-voz-da-resistencia.html) (excerto de pesquisa); ANPUH (F203). **PARCIAL**

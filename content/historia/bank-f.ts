@@ -28,25 +28,12 @@ q('brasil-acucar', 'comparacao', 'Um mapa económico distingue Pernambuco e Bahi
 cl('brasil-acucar', 'Completa: o açúcar era produzido nos ___, onde passou a predominar o trabalho de africanos ___.', [['engenhos'], ['escravizados']],
   'Os engenhos eram locais de produção do açúcar. Neles passou a predominar o trabalho de africanos escravizados. Era trabalho imposto pela força, não uma escolha livre.',
   ['Liga o local de produção à condição dos trabalhadores.', 'O local chama-se engenho; os trabalhadores eram privados da liberdade.'], [1]);
-q('brasil-acucar', 'causa', 'Porque se relaciona o tráfico de africanos com a economia açucareira brasileira?',
-  'Os produtores recorriam ao trabalho forçado nos canaviais e engenhos', {
-    'O açúcar era produzido apenas por colonos livres': 'Nos engenhos passou a predominar o trabalho de africanos escravizados.',
-    'As viagens de africanos para os engenhos eram todas voluntárias': 'O tráfico impunha a deslocação e o trabalho; não era uma migração livre.',
-  }, 'A produção de açúcar dependia do trabalho de pessoas escravizadas. O tráfico levava africanos à força para o Brasil. A procura de trabalhadores relacionava-se, assim, com deslocações forçadas.',
-  ['Pensa na diferença entre escolha e imposição.', 'O tráfico retirava a liberdade às pessoas levadas para os engenhos.'], [1, 6]);
 q('brasil-acucar', 'comparacao', 'Além de fornecer recursos naturais, que papel tinha o Brasil no comércio com Portugal e a Europa?',
   'Era também comprador de produtos manufaturados portugueses e europeus', {
     'Só vendia recursos e nunca recebia produtos': 'O Brasil recebia também manufaturas portuguesas e europeias.',
     'Fornecia apenas manufaturas às cidades portuguesas': 'Isso inverte o papel destacado nas AE: o Brasil recebia manufaturas.',
   }, 'O Brasil fornecia recursos como açúcar e ouro. Também recebia manufaturas portuguesas e europeias. Havia circulação de produtos nos dois sentidos.',
   ['Um mercado é um lugar onde se vendem produtos.', 'Além de fornecedor, o Brasil era recetáculo de manufaturas.'], [1, 22]);
-q('brasil-acucar', 'conceito', 'Que percurso representa uma deslocação forçada associada ao açúcar?',
-  'África → Brasil, com pessoas escravizadas destinadas aos engenhos', {
-    'Portugal → Minas Gerais, com colonos que procuravam oportunidades': 'A procura de oportunidades distingue-se das deslocações impostas pelo tráfico.',
-    'Europa → Brasil, com produtos manufaturados': 'Esse percurso refere mercadorias, não pessoas forçadas a trabalhar.',
-  }, 'O tráfico transportava pessoas escravizadas de África para o Brasil. A viagem era imposta, tal como o trabalho nos engenhos. Não se deve confundir esta viagem forçada com a de colonos atraídos por oportunidades económicas.',
-  ['Identifica pessoas e verifica se podiam escolher viajar.', 'Procura a ligação de África aos engenhos brasileiros.'], [1, 6, 11]);
-
 q('ouro-diamantes', 'facto', 'Como se situa com segurança a descoberta das grandes jazidas de ouro de Minas Gerais?',
   'Nos finais do século XVII, na década de 1690', {
     'No século XVI, quando o açúcar já se destacava no Nordeste': 'Açúcar e ouro têm cronologias diferentes: as grandes jazidas de Minas são de finais do século XVII.',
@@ -81,28 +68,12 @@ q('legado-africano', 'facto', 'Que exemplo mostra a presença africana organizad
     'As pessoas de origem africana não participavam em associações religiosas': 'As confrarias são exemplos dessa participação organizada.',
   }, 'Em Lisboa existiam confrarias de negros, escravizados e libertos. A de Nossa Senhora do Rosário dos Homens Pretos funcionava ainda no século XVIII. Estas associações mostram participação na vida religiosa da cidade.',
   ['Procura uma associação religiosa.', 'Uma irmandade ou confraria reunia pessoas para práticas religiosas.'], [24]);
-q('legado-africano', 'comparacao', 'Que síntese distingue vários campos do legado africano no Brasil?',
-  'Inclui contributos na língua, música, religião e culinária', {
-    'Limita-se à mineração e não tem expressão cultural': 'O legado africano aparece em vários domínios culturais, além do trabalho.',
-    'Existe na culinária, mas não na língua nem na música': 'Há também influências na língua e na música.',
-  }, 'O legado africano aparece em vários campos da cultura brasileira. Os contributos incluem a língua, a música, a religião e a culinária. Esta síntese não atribui uma origem exata a qualquer palavra ou prato sem confirmação própria.',
-  ['Legado cultural abrange mais do que uma atividade económica.', 'Pensa em falar, tocar, celebrar e cozinhar.'], [28, 30, 31, 32]);
 q('legado-africano', 'vf', '«Todos os africanos presentes em Lisboa eram escravizados.» Que avaliação tem justificação correta?',
   'Falsa: as confrarias incluíam escravizados e libertos', {
     'Verdadeira: participar numa confraria significava ser escravizado': 'As confrarias incluíam também libertos.',
     'Falsa: em Portugal europeu nunca houve escravatura': 'Havia escravizados e libertos; existiu escravatura no Reino.',
   }, 'As confrarias de Lisboa reuniam escravizados e libertos. A origem africana não significava que todos tivessem a mesma condição jurídica. Também seria errado negar a existência de escravatura no Portugal europeu.',
   ['Distingue origem de condição jurídica.', 'Liberto é alguém que deixou de ser escravizado.'], [24, 27]);
-cl('legado-africano', 'Completa: as confrarias de negros documentam a presença africana em ___; influências na música e na culinária documentam também o legado no ___.', [['Lisboa'], ['Brasil']],
-  'As confrarias são exemplos documentados em Lisboa. No Brasil, há contributos africanos na música e na culinária. O legado africano deve ser estudado nas duas sociedades, respeitando as diferenças entre os exemplos.',
-  ['A primeira lacuna pede uma cidade portuguesa.', 'A cidade é Lisboa; o país americano é o Brasil.'], [24, 31, 32]);
-
-q('sociedade-ordens', 'comparacao', 'Dois grupos possuíam privilégios, enquanto o povo sustentava o reino com trabalho e impostos. Que leitura está correta?',
-  'Os direitos e deveres variavam conforme a ordem social', {
-    'As três ordens tinham os mesmos direitos e deveres': 'Os privilégios do clero e da nobreza mostram que não havia essa igualdade.',
-    'A sociedade dividia-se apenas entre pessoas com e sem dinheiro': 'As ordens eram clero, nobreza e povo; riqueza não é o nome de uma ordem.',
-  }, 'A sociedade dividia-se em clero, nobreza e povo. Clero e nobreza tinham privilégios que o povo não tinha. Os direitos e deveres não eram iguais para todos os grupos.',
-  ['Compara privilégios e impostos.', 'As ordens privilegiadas eram o clero e a nobreza.'], [34]);
 cl('sociedade-ordens', 'Completa os nomes das três ordens: ___, nobreza e ___ (Terceiro Estado).', [['clero'], ['povo']],
   'As três ordens eram clero, nobreza e povo. Clero e nobreza eram privilegiados. Os escravizados não formavam uma quarta ordem neste esquema social.',
   ['A primeira ordem liga-se à Igreja.', 'Faltam clero e povo.'], [34, 27]);
@@ -119,25 +90,12 @@ q('sociedade-ordens', 'causa', 'Porque é que as exigências de «limpeza de san
   }, 'Para muitos cargos e honras exigia-se a chamada limpeza de sangue. Isso excluía pessoas por causa de certos antepassados, incluindo judeus. A ascendência podia limitar oportunidades independentemente dos conhecimentos de uma pessoa.',
   ['Interpreta a expressão no contexto histórico, não como saúde.', 'A discriminação estava ligada aos antepassados.'], [39, 38]);
 
-q('monarquia-absoluta', 'conceito', 'Qual é a caracterização mais rigorosa da monarquia absoluta de D. João V?',
-  'O rei concentrava a autoridade suprema e governava sem convocar as Cortes', {
-    'O rei tinha de ser autorizado por um parlamento eleito por todos': 'Esta descrição não corresponde ao absolutismo joanino.',
-    'O rei extinguiu todas as instituições do reino': 'Concentrar autoridade não significa eliminar todos os órgãos de governo.',
-  }, 'No absolutismo, o rei concentrava a autoridade suprema. D. João V não convocou as Cortes. Isso não significa que tivessem desaparecido todas as instituições e funções de governo.',
-  ['Distingue concentração de poder de ausência de instituições.', 'As Cortes não foram convocadas durante este reinado.'], [44, 45, 42]);
 q('monarquia-absoluta', 'vf', '«D. João V aboliu as Cortes.» Qual é a correção adequada?',
   'Falsa: não as convocou, mas isso não é o mesmo que as abolir', {
     'Verdadeira: nunca mais houve Cortes depois do seu reinado': 'As Cortes voltaram a reunir-se com o liberalismo.',
     'Falsa: convocou as Cortes em todos os anos do reinado': 'D. João V não convocou as Cortes no seu reinado.',
   }, 'As últimas Cortes anteriores ao liberalismo reuniram-se ainda com D. Pedro II. D. João V governou sem as convocar. Não convocar uma instituição não equivale a decretar a sua extinção.',
   ['Distingue não reunir de deixar de existir por lei.', 'D. João V não convocou as Cortes.'], [44, 45]);
-q('monarquia-absoluta', 'consequencia', 'Que efeito político tinha governar sem consultar as Cortes?',
-  'Reforçava a concentração das decisões na Coroa', {
-    'Transferia a autoridade suprema para o povo': 'Não convocar as Cortes não entregava o poder ao povo.',
-    'Transformava automaticamente o reino numa república': 'O reino continuava a ser uma monarquia com o rei como autoridade suprema.',
-  }, 'D. João V governou sem consultar as Cortes. As decisões ficavam mais concentradas na Coroa. Esta prática manifesta a centralização do poder associada ao absolutismo.',
-  ['Pergunta em quem ficava a decisão.', 'A autoridade concentrava-se no rei.'], [44, 45]);
-
 q('d-joao-v', 'comparacao', 'Que associação distingue corretamente a Biblioteca Joanina do conjunto de Mafra?',
   'A Joanina fica na Universidade de Coimbra; Mafra tem outra biblioteca', {
     'A Biblioteca Joanina é a biblioteca do convento de Mafra': 'A Joanina situa-se em Coimbra, embora Mafra também tenha biblioteca.',
@@ -176,13 +134,6 @@ q('barroco-patrimonio', 'comparacao', 'Que ligação artística existiu entre Po
     'A talha de Minas Gerais não tinha relação com o barroco': 'A talha em Minas Gerais é um exemplo da expansão deste estilo.',
   }, 'O barroco joanino inspirou-se no barroco romano. A sua influência chegou também ao Brasil. A talha em Minas Gerais e São Paulo mostra esta circulação de modelos artísticos.',
   ['A circulação entre os territórios incluía arte.', 'Há talha barroca em Minas Gerais e em São Paulo.'], [70]);
-q('barroco-patrimonio', 'opiniao', 'Numa visita a monumentos, qual das frases apresenta um gosto pessoal?',
-  'A talha dourada é a decoração mais bonita de todas', {
-    'A Biblioteca Joanina situa-se na Universidade de Coimbra': 'A localização é um facto verificável, não um gosto pessoal.',
-    'A talha dourada utiliza madeira esculpida coberta de ouro': 'Os materiais podem ser verificados; não exprimem uma preferência.',
-  }, 'Dizer que uma decoração é a mais bonita exprime uma preferência. Outra pessoa pode preferir outro estilo. A localização de uma biblioteca e os materiais de uma obra podem ser confirmados por fontes.',
-  ['Procura uma avaliação que varie de pessoa para pessoa.', 'A expressão «mais bonita» indica uma preferência.'], [69, 59]);
-
 q('pombal', 'personagem', 'Que relação entre rei e ministro permite situar corretamente as reformas pombalinas?',
   'D. José I era o rei e Sebastião José de Carvalho e Melo era o ministro', {
     'Pombal era o rei e D. José I o seu ministro': 'Pombal foi ministro de D. José I, não rei.',
@@ -234,12 +185,6 @@ q('terramoto-lisboa', 'consequencia', 'Porque é incompleto dizer que Lisboa foi
     'Porque a destruição foi causada apenas pelo maremoto': 'Houve uma combinação de sismo, maremoto e incêndios.',
   }, 'O sismo de 1 de novembro de 1755 foi seguido de um maremoto e incêndios. Estes fenómenos agravaram a destruição. Para explicar a catástrofe, é preciso considerar o conjunto e não apenas o tremor inicial.',
   ['Há três fenómenos a distinguir.', 'Depois do sismo vieram o maremoto e os incêndios.'], [82, 83, 91]);
-q('terramoto-lisboa', 'comparacao', 'Que comparação descreve a mudança urbana entre a antiga Baixa e a reconstrução pombalina?',
-  'A reconstrução adotou ruas mais regulares e um plano organizado', {
-    'A reconstrução repetiu todas as ruas antigas sem alterações': 'Introduziu um plano novo, não uma cópia integral da malha antiga.',
-    'A reconstrução limitou-se a substituir o nome da praça': 'A intervenção transformou o espaço urbano e os edifícios.',
-  }, 'A reconstrução da Baixa seguiu um plano organizado. A regularidade das ruas fazia parte da nova organização. A gaiola de madeira procurava também aumentar a resistência dos edifícios aos sismos.',
-  ['Compara o traçado das ruas e a forma de construir.', 'A nova Baixa passou a ter ruas regulares e planeadas.'], [88, 89, 93]);
 q('terramoto-lisboa', 'mapa', 'O mapa destaca Faro, no Algarve. Que exemplo mostra que o urbanismo pombalino se estendeu para além de Lisboa?',
   'Vila Real de Santo António foi fundada no Algarve com um plano regular', {
     'A Biblioteca Joanina foi transferida para o Algarve': 'A Joanina fica na Universidade de Coimbra.',
@@ -255,10 +200,10 @@ q('terramoto-lisboa', 'vf', '«O sismo de 1 de novembro de 1755 atingiu apenas L
   ['Distingue o nome da área atingida.', 'Setúbal e o Algarve também foram atingidos.'], [82, 84]);
 
 q('novas-culturas', 'cronologia', 'Que frase situa corretamente a difusão do milho e da batata em Portugal?',
-  'O milho já se difundira antes; a batata espalhou-se sobretudo a partir do século XVIII', {
+  'O milho difundiu-se a partir do século XVI; a batata espalhou-se devagar, sobretudo a partir de meados do século XVIII', {
     'Os dois só chegaram depois do terramoto de Lisboa': 'O milho já era importante em regiões portuguesas no início do século XVII.',
     'A batata era a única base da alimentação portuguesa no século XVI': 'A sua expansão ocorreu sobretudo a partir do século XVIII.',
-  }, 'O milho americano chegou antes do século XVIII. No início do século XVII já era importante no Minho e na Beira Litoral. A batata espalhou-se sobretudo a partir do século XVIII, em contexto de crises e falta de cereais.',
+  }, 'O milho chegou a Portugal a partir de meados do século XVI e, no início do século XVII, já era a base da alimentação no Minho e na Beira Litoral. A batata foi aceite devagar e espalhou-se sobretudo a partir de meados do século XVIII, em tempos de crises e falta de cereais. Continuou a difundir-se no século XIX.',
   ['As duas culturas não têm a mesma cronologia.', 'O milho já tinha importância regional no século XVII.'], [111, 112]);
 q('novas-culturas', 'causa', 'Que problema ajuda a explicar a expansão da batata em Portugal a partir do século XVIII?',
   'As crises alimentares e a falta de cereais', {
@@ -266,11 +211,11 @@ q('novas-culturas', 'causa', 'Que problema ajuda a explicar a expansão da batat
     'A necessidade de substituir o vinho do Porto nas exportações': 'A batata é tratada como recurso alimentar, não como substituto do vinho.',
   }, 'A falta de cereais e as crises favoreceram a expansão da batata. Esta cultura passou a ser uma alternativa alimentar. Isso não permite afirmar que todos os problemas desapareceram.',
   ['Procura uma necessidade ligada à dieta.', 'Quando faltavam cereais, a batata oferecia uma alternativa alimentar.'], [112]);
-q('novas-culturas', 'consequencia', 'O milho e a batata mudaram a alimentação em Portugal. Que frase descreve corretamente a consequência?',
+q('novas-culturas', 'consequencia', 'Segundo as Aprendizagens Essenciais, que consequência teve a introdução do milho e da batata em Portugal?',
   'Milho e batata contribuíram para melhorar a dieta e favorecer o aumento populacional', {
     'O milho fez a população duplicar num ano': 'Foi uma mudança gradual, sem saltos de um ano para o outro.',
     'A batata eliminou imediatamente todas as crises alimentares': 'Melhorar a dieta não significa acabar com todas as crises.',
-  }, 'O milho e a batata ampliaram os recursos alimentares, melhoraram a dieta e favoreceram o aumento da população. Foi uma mudança gradual, sem saltos de um ano para o outro. Por isso as frases com «duplicou num ano» ou «eliminou todas as crises» são exageros.',
+  }, 'Os programas escolares (Aprendizagens Essenciais) ligam estas culturas à melhoria da dieta e ao aumento da população. Os dois alimentos ampliaram os recursos alimentares. Foi uma mudança gradual, sem saltos de um ano para o outro. Por isso as frases com «duplicou num ano» ou «eliminou todas as crises» são exageros.',
   ['Usa a relação qualitativa indicada nas AE.', 'Mais recursos alimentares podem melhorar a dieta e favorecer o crescimento da população.'], [111, 112]);
 
 order('cronologia', 'Ordena estes marcos de obras e abastecimento no reinado de D. João V.',
@@ -340,6 +285,72 @@ order('terramoto-lisboa', 'Ordena a resposta construtiva à destruição da Baix
   ['Destruição da Baixa pelo sismo, maremoto e incêndios de 1 de novembro de 1755', 'Preparação de planos para a reconstrução', 'Construção de edifícios com gaiola interior de madeira'],
   'A destruição tornou necessária a reconstrução da Baixa. Os planos organizaram a intervenção no espaço urbano. A gaiola de madeira foi uma solução para melhorar a resistência dos novos edifícios aos sismos.',
   ['A solução é posterior ao problema que procura resolver.', 'Primeiro a destruição, depois os planos e a construção.'], [82, 83, 88, 89, 92]);
+
+q('legado-africano', 'facto', 'Que línguas africanas deixaram palavras ao português do Brasil?',
+  'Línguas banto, como o quimbundo (falado em Angola), e também o iorubá', {
+    'Só línguas ameríndias, como o tupi': 'O tupi também deixou palavras, mas os africanos escravizados trouxeram línguas como o quimbundo e o iorubá.',
+    'Apenas o árabe, trazido pelos mouros': 'O árabe deixou palavras ao português da Península Ibérica; as palavras africanas do Brasil vêm sobretudo do quimbundo e do iorubá.',
+    'Nenhuma: o português do Brasil não recebeu palavras de África': 'Recebeu muitas palavras de línguas africanas, como o quimbundo (Angola) e o iorubá (região da Nigéria).',
+  }, 'Os africanos escravizados trouxeram línguas diferentes para o Brasil. Muitas palavras do português do Brasil vêm do quimbundo, falado em Angola, e do iorubá, da região da Nigéria. O português do Brasil guarda assim marcas do encontro com línguas africanas.',
+  ['Pensa nas regiões de África de onde vinham muitas pessoas escravizadas.', 'Uma destas línguas é falada em Angola.'], [201, 202]);
+q('legado-africano', 'conceito', 'Qual destas palavras do português vem de uma língua africana, o quimbundo?',
+  'quitanda', {
+    'janela': '«Janela» vem do latim, não de uma língua africana.',
+    'açúcar': '«Açúcar» vem do árabe, não de uma língua africana.',
+    'abacaxi': '«Abacaxi» vem do tupi, uma língua indígena do Brasil.',
+  }, 'A palavra quitanda vem do quimbundo kitanda, que designava um tabuleiro onde se vendiam produtos. Também dendê, o óleo de palma, vem do quimbundo. Janela vem do latim, açúcar do árabe e abacaxi do tupi.',
+  ['Três das palavras vêm do latim, do árabe e do tupi.', 'A palavra pedida designava um lugar onde se vendiam frutas e legumes.'], [201, 202]);
+cl('legado-africano', 'Completa: dendê é uma palavra do quimbundo que designa o óleo de ___, muito usado na culinária de origem africana.', [['palma']],
+  'O dendê é o fruto de uma palmeira originária da África Ocidental, de onde se extrai o óleo. A palavra vem do quimbundo. Este óleo ficou associado à culinária de origem africana no Brasil.',
+  ['O dendezeiro é uma palmeira.', 'O óleo vem do fruto da palmeira: óleo de ___.'], [202]);
+q('legado-africano', 'conceito', 'O samba e o lundu têm raízes em tradições musicais de que origem?',
+  'Trazidas por africanos escravizados, sobretudo de Angola e do Congo', {
+    'Da música tradicional do Minho': 'São géneros brasileiros com raízes em tradições africanas, e não da música tradicional do Minho.',
+    'Dos povos indígenas da Amazónia': 'Os povos indígenas deram contributos próprios, mas estas raízes são sobretudo africanas.',
+    'Da música de corte do tempo de D. João V': 'Foram géneros populares ligados a africanos e seus descendentes, não à música de corte.',
+  }, 'Os africanos escravizados trouxeram para o Brasil músicas, danças e instrumentos. O lundu e o samba têm raízes nestas tradições, sobretudo de Angola e do Congo. A origem exata da palavra samba é discutida, mas a influência africana na música brasileira é reconhecida.',
+  ['Pensa em quem trouxe música e dança de África para o Brasil.', 'Procura uma origem africana, não europeia nem indígena.'], [203]);
+q('legado-africano', 'vf', '«As religiões de origem africana foram sempre aceites no Brasil colonial.» Qual é a correção certa?',
+  'Falsa: muitas práticas eram proibidas e sobreviveram em segredo ou misturadas com o catolicismo', {
+    'Verdadeira: eram protegidas pelo rei': 'As práticas de origem africana sofreram proibições e perseguições.',
+    'Falsa: não havia religiões africanas no Brasil': 'Os africanos escravizados trouxeram as suas crenças e práticas para o Brasil.',
+  }, 'Os africanos escravizados trouxeram as suas crenças e práticas para o Brasil. Muitas manifestações foram proibidas ou perseguidas. Algumas sobreviveram em segredo ou misturadas com símbolos católicos, o chamado sincretismo.',
+  ['Pensa no que acontecia a práticas culturais dos escravizados.', 'Houve proibições; como sobreviveram algumas?'], [203, 204]);
+q('sociedade-ordens', 'facto', 'Qual destes era um privilégio do clero no século XVIII?',
+  'Ter tribunais próprios e receber o dízimo', {
+    'Pagar mais impostos do que o povo': 'O clero estava isento de impostos; quem sustentava o reino com impostos era o povo.',
+    'Ser escolhido pelo povo para governar': 'O clero era uma ordem privilegiada e não era escolhido pelo povo.',
+    'Não possuir propriedades': 'O clero possuía grandes propriedades.',
+  }, 'O clero era uma ordem privilegiada. Tinha tribunais próprios, recebia o dízimo, um imposto pago à Igreja, e possuía grandes propriedades. Não pagava impostos, ao contrário do povo.',
+  ['Os privilégios do clero eram diferentes dos deveres do povo.', 'Um dos privilégios era ter os seus próprios tribunais.'], [34]);
+q('sociedade-ordens', 'conceito', 'Que ordem social ocupava os altos cargos da administração e do exército?',
+  'A nobreza', {
+    'O povo, ou Terceiro Estado': 'O povo não tinha estes privilégios; trabalhava e pagava impostos.',
+    'Os escravizados': 'Os escravizados não tinham liberdade e não formavam uma ordem privilegiada.',
+    'Os mercadores estrangeiros': 'Os mercadores não formavam uma ordem; os altos cargos eram da nobreza.',
+  }, 'A nobreza era uma ordem privilegiada. Ocupava os altos cargos da administração e do exército e tinha leis próprias. Não pagava impostos, exceto em tempo de guerra.',
+  ['É uma das duas ordens privilegiadas.', 'Não é o clero.'], [34]);
+q('monarquia-absoluta', 'facto', 'Em 1736 criaram-se três Secretarias de Estado. Para que serviam?',
+  'Para ajudar o rei a governar áreas como o Reino, a Marinha e o Ultramar, e os Negócios Estrangeiros e da Guerra', {
+    'Para escolher o rei através de uma eleição': 'O rei não era eleito; as Secretarias ajudavam-no a governar.',
+    'Para substituir o rei na chefia do governo': 'As Secretarias ajudavam o rei, que mantinha a autoridade suprema.',
+    'Para convocar as Cortes todos os anos': 'D. João V não convocou as Cortes no seu reinado.',
+  }, 'Em 1736 foram criadas três Secretarias de Estado: Negócios Interiores do Reino, Marinha e Domínios Ultramarinos, e Negócios Estrangeiros e da Guerra. Serviam para organizar a governação. O rei absoluto mantinha a autoridade suprema e governava com o seu apoio.',
+  ['Uma secretaria trata de uma área da governação.', 'Eram um apoio ao rei, não um poder acima dele.'], [46]);
+cl('d-joao-v', 'Completa: em 1748, o Papa deu a D. João V o título de Rei ___.', [['Fidelíssimo', 'Fidelissimo']],
+  'O título de Rei Fidelíssimo foi concedido a D. João V pelo Papa Bento XIV, em 1748. Esse título aumentava o prestígio da monarquia portuguesa. Tal como a embaixada de 1716 a Roma, é um exemplo da relação do rei com a Igreja.',
+  ['O título tem o sentido de «muito fiel».', 'Começa por F.'], [52, 49]);
+order('cronologia', 'Ordena estes acontecimentos do reinado de D. João V.',
+  ['Lisboa passa a ter um Patriarca (1716)', 'Fundação da Academia Real da História (1720)', 'Autorização do Aqueduto das Águas Livres (1731)', 'O Papa concede o título de Rei Fidelíssimo (1748)'],
+  'O Patriarcado de Lisboa foi criado em 1716 e a Academia Real da História em 1720. O aqueduto foi autorizado em 1731. O título de Rei Fidelíssimo é de 1748, perto do fim do reinado, que terminou em 1750.',
+  ['Todos os acontecimentos são do reinado de D. João V, entre 1706 e 1750.', 'Compara os anos entre parênteses.'], [47, 51, 61, 52]);
+q('sociedade-ordens', 'facto', 'Em 1739, o dramaturgo António José da Silva, o Judeu, foi condenado pela Inquisição e morreu num auto de fé. Que ideia isto ilustra?',
+  'A Inquisição continuava ativa no reinado de D. João V', {
+    'A Inquisição tinha sido extinta antes de 1700': 'Em 1739 a Inquisição ainda funcionava em Portugal.',
+    'Os cristãos-novos tinham os mesmos direitos que os cristãos-velhos': 'O caso mostra perseguição a um descendente de cristãos-novos; a distinção legal só acabou em 1773.',
+    'A Inquisição só atuava no Brasil': 'A Inquisição atuava em Portugal; este auto de fé foi em Lisboa.',
+  }, 'António José da Silva, conhecido como o Judeu, foi condenado pela Inquisição e executado em Lisboa, em 1739. O caso mostra que a Inquisição continuava ativa no reinado de D. João V. Os descendentes de cristãos-novos podiam ser perseguidos.',
+  ['Pensa em que instituição o condenou.', 'Compara 1739 com o reinado de D. João V, que acabou em 1750.'], [66]);
 
 /** Preparação temática baseada na ficha F1–F113; não reproduz o manual.
  * PARCIAL: apenas o essencial, sem pormenores incertos. Referências F nos ids das fontes.
@@ -745,6 +756,69 @@ export const bank: HgpBank = {
     "url": "https://impactum-journals.uc.pt/diaita/article/download/14381/10141/67238",
     "accessed": "2026-10-31",
     "kind": "academica"
+  },
+  {
+    "id": "xviii-f46-1",
+    "title": "Governo de Portugal — História do Ministério dos Negócios Estrangeiros",
+    "url": "https://portugal.gov.pt/pt/gc21/area-de-governo/negocios-estrangeiros/informacao-adicional/historia-do-ministerio-dos-negocios-estrangeiros",
+    "accessed": "2026-10-31",
+    "kind": "oficial"
+  },
+  {
+    "id": "xviii-f47-1",
+    "title": "FIU — Cardinals: Tomás de Almeida, primeiro Patriarca de Lisboa",
+    "url": "https://cardinals.fiu.edu/bios1737.htm",
+    "accessed": "2026-10-31",
+    "kind": "academica"
+  },
+  {
+    "id": "xviii-f51-1",
+    "title": "Biblioteca Nacional — Dicionário de Historiadores: Academia Real da História",
+    "url": "https://dichp.bnportugal.gov.pt/imagens/academia_historia_eng.pdf",
+    "accessed": "2026-10-31",
+    "kind": "museu-arquivo"
+  },
+  {
+    "id": "xviii-f52-1",
+    "title": "Wikipédia EN — Most Faithful Majesty",
+    "url": "https://en.wikipedia.org/wiki/Most_Faithful_Majesty",
+    "accessed": "2026-10-31",
+    "kind": "enciclopedia"
+  },
+  {
+    "id": "xviii-f66-1",
+    "title": "Infopédia — António José da Silva",
+    "url": "https://www.infopedia.pt/artigos/$antonio-jose-da-silva",
+    "accessed": "2026-10-31",
+    "kind": "enciclopedia"
+  },
+  {
+    "id": "xviii-f201-1",
+    "title": "Politize — Existem palavras de origem africana na língua portuguesa?",
+    "url": "https://www.politize.com.br/palavras-de-origem-africana/",
+    "accessed": "2026-10-31",
+    "kind": "enciclopedia"
+  },
+  {
+    "id": "xviii-f202-1",
+    "title": "InfoEscola — 15 palavras do dia a dia dos brasileiros que são heranças africanas",
+    "url": "https://www.infoescola.com/noticias/15-palavras-do-dia-a-dia-dos-brasileiros-que-sao-herancas-africanas/",
+    "accessed": "2026-10-31",
+    "kind": "enciclopedia"
+  },
+  {
+    "id": "xviii-f203-1",
+    "title": "ANPUH — Samba: origens e influências africanas (anais)",
+    "url": "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548875182_bb23acd9292b1a1862131f88507e051f.pdf",
+    "accessed": "2026-10-31",
+    "kind": "academica"
+  },
+  {
+    "id": "xviii-f204-1",
+    "title": "Correio Braziliense — A música negra como voz da resistência",
+    "url": "https://www.correiobraziliense.com.br/opiniao/2023/08/5116419-artigo-a-musica-negra-como-voz-da-resistencia.html",
+    "accessed": "2026-10-31",
+    "kind": "enciclopedia"
   }
 ],
   items,
