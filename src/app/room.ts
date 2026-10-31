@@ -31,7 +31,7 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
     cards.className = 'topic-grid';
     if (multi) {
       const filters = document.createElement('div');
-      for (const [id,label] of [['all','Tudo'],['recuperacao5','Recuperação do 5.º ano'],['6','6.º ano']] as const) {
+      for (const [id,label] of [['all','Tudo'],['6','6.º ano']] as const) {
         const control = button(label,()=>{ filter=id; render(); });
         control.dataset.focusId=`filter-${id}`; control.setAttribute('aria-pressed',String(filter===id)); filters.append(control);
       }
@@ -104,7 +104,7 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
     main.append(modes);
     const counts = document.createElement('fieldset');
     counts.innerHTML = '<legend>Quantas perguntas?</legend>';
-    (multi ? [3, 5, 8, 12] : [3, 5, 8]).forEach((n) => {
+    (multi ? [3, 5, 8, 12, 20] : [3, 5, 8]).forEach((n) => {
       const choice = button(String(n), () => {
         count = n;
         render();

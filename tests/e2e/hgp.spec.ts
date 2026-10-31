@@ -24,8 +24,8 @@ test('HGP: seleção acessível, filtros, tutor e ausência de scroll',async({pa
  await expect(page.locator('.topic-group[open]')).toHaveCount(1);
  await expect(page.locator('.topic-group summary').first()).toContainText('1/');
  await expect(page.getByRole('checkbox', { includeHidden:true })).toHaveCount(11);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expect(page.getByRole('button',{name:/Começar a estudar/})).toBeDisabled();
- await page.getByRole('button',{name:'Recuperação do 5.º ano',exact:true}).click();await expect(page.getByRole('checkbox')).toHaveCount(1);
- await page.getByRole('checkbox').check();await expect(page.getByText('1 temas escolhidos')).toBeVisible();
+ await page.getByRole('button',{name:'6.º ano',exact:true}).click();await expandTopics(page);await expect(page.getByRole('checkbox')).toHaveCount(11);
+ await page.getByRole('checkbox').first().check();await expect(page.getByText('1 temas escolhidos')).toBeVisible();
  await page.getByRole('button',{name:'Tudo',exact:true}).click();await expandTopics(page);await page.getByRole('checkbox').nth(1).check();await expect(page.getByRole('checkbox').nth(1)).toBeFocused();await expect(page.getByRole('checkbox').nth(1)).toBeChecked();await expect(page.getByText('2 temas escolhidos')).toBeVisible();
  await page.getByRole('button',{name:'Mistura',exact:true}).click();await expect(page.getByText('11 temas escolhidos')).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth)).toBeLessThanOrEqual(1);

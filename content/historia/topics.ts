@@ -1,8 +1,8 @@
 import type { Topic } from '../index';
 import type { HgpTopicId } from './schema';
-export const RECOVERY_TOPICS: readonly HgpTopicId[] = ['hgp-seculo-xviii'];
+export const RECOVERY_TOPICS: readonly HgpTopicId[] = [];
 const rows: [HgpTopicId, string, string, string, string][] = [
-['hgp-seculo-xviii','Portugal no século XVIII','Descobre a sociedade e o poder no século XVIII.','👑','Recuperação do 5.º ano'],
+['hgp-seculo-xviii','Portugal no século XVIII','Descobre a sociedade e o poder no século XVIII.','👑','Teste escolar — capítulo 1 (págs. 20–40)'],
 ['hgp-liberalismo','O triunfo do liberalismo','Compreende a mudança para o liberalismo.','📜','O liberalismo e o século XIX'],
 ['hgp-xix-segunda-metade','Portugal na segunda metade do século XIX','Explora as mudanças do país.','🚂','O liberalismo e o século XIX'],
 ['hgp-republica','A revolução republicana','Descobre a implantação da República.','🏛️','Portugal no século XX'],

@@ -3,7 +3,7 @@ Plano: v1
 Atualizado: 2026-10-31
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: avaliação da criança de HGP (preview/e); depois confirmar descritores AE em falta, rever itens «a-confirmar» e revisão docente/independente (Codex). Ver docs/audit/relatorio-qualidade.md.
+Próximo passo: produzir conteúdo Matemática (geradores) e restantes disciplinas por blocos publicados; ver .claude/tmp/handoff.md.
 Decisão necessária:
 
 ## Sucesso
