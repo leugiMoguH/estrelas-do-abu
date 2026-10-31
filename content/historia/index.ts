@@ -5,7 +5,7 @@ import type { TutorLesson } from '../tutor';
 import type { HgpBank, HgpItem } from './schema';
 import { hgpTopics } from './topics';
 import { validationOf } from './validacao';
-import { D1_SECTION_LESSONS } from './licoes-secoes';
+import { D1_SECTION_LESSONS, RECUP_SECTION_LESSONS } from './licoes-secoes';
 import { hgpSectionOfItem, hgpSectionById } from './estrutura';
 
 export const hgpBanks = import.meta.glob('./bank-*.ts', { eager: true }) as Record<string, { bank: HgpBank }>;
@@ -68,7 +68,7 @@ export const hgpLessons: TutorLesson[] = banks.flatMap(bank => bank.lessons.map(
   examples: lesson.examples.map(example => ({ title: example.title, steps: [...example.steps] })),
   checklist: [...lesson.checklist],
   commonErrors: [...lesson.commonErrors],
-  ...(lesson.topic === 'hgp-seculo-xviii' ? { sections: D1_SECTION_LESSONS.map(s => ({ id: s.id, title: s.title, explanation: [...s.explanation] })) } : {}),
+  ...(lesson.topic === 'hgp-seculo-xviii' || lesson.topic === 'hgp-recuperacao-5' ? { sections: (lesson.topic === 'hgp-seculo-xviii' ? D1_SECTION_LESSONS : RECUP_SECTION_LESSONS).map(s => ({ id: s.id, title: s.title, explanation: [...s.explanation] })) } : {}),
 })));
 
 // Disponível apenas em builds de teste; eliminado do bundle de produção.
@@ -76,7 +76,7 @@ if (import.meta.env.MODE === 'hgp-e2e') Object.assign(window, { hgpE2eItems: hgp
 
 export { HGP_CHAPTERS, HGP_SECTIONS, hgpSectionById, hgpChapterOfSection } from './estrutura';
 export const HGP_MIN_FUNCTIONAL = 3;
-const sectionByItem = new Map(hgpItems.map(item => [item.id, hgpSectionOfItem(item.id, item.topic)]));
+const sectionByItem = new Map(hgpItems.map(item => [item.id, hgpSectionOfItem(item.id, item.topic, item.sub)]));
 /** Subcapítulo de uma pergunta (exercício) de HGP. */
 export const hgpItemSection = (itemId: string): string | undefined => sectionByItem.get(itemId);
 /** Perguntas ativas (fora das «a confirmar»), se há lição e se o subcapítulo é funcional (≥ HGP_MIN_FUNCTIONAL perguntas ativas). */

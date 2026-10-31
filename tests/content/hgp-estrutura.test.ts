@@ -5,11 +5,15 @@ import { validationOf } from '../../content/historia/validacao';
 import { hgpTopics } from '../../content/historia/topics';
 
 describe('estrutura editorial de HGP (capítulos e subcapítulos do índice confirmado)', () => {
-  it('capítulo de recuperação vem antes de D1 e traz só os títulos confirmados', () => {
+  it('capítulo de recuperação vem antes de D1; distingue títulos confirmados e subdivisões de trabalho', () => {
     expect(HGP_CHAPTERS.slice(0, 3).map(c => c.id)).toEqual(['rec5', 'd1', 'd2']);
     expect(HGP_CHAPTERS[0]!.title).toBe('Recuperar aprendizagens — 5.º ano');
-    expect(HGP_CHAPTERS[0]!.sections.map(s => s.title)).toEqual([
+    const rec = HGP_CHAPTERS[0]!.sections;
+    expect(rec.filter(s => s.editorial === 'confirmado').map(s => s.title)).toEqual([
       'Portugal nos séculos XV e XVI', 'Expansão marítima portuguesa', 'Intercâmbio e choque de culturas', 'Da União Ibérica à Restauração da Independência',
+    ]);
+    expect(rec.filter(s => s.editorial === 'trabalho').map(s => s.title)).toEqual([
+      'Consequências da expansão portuguesa', 'Crise dinástica de 1580 e União Ibérica', 'Portugal sob os Filipes', 'Descontentamento, resistência e Restauração de 1640',
     ]);
     expect(HGP_CHAPTERS[0]!.pending).toBeTruthy();
     expect(HGP_CHAPTERS[1]!.pages).toBe('págs. 20–40');
@@ -41,7 +45,8 @@ describe('estrutura editorial de HGP (capítulos e subcapítulos do índice conf
       const info = hgpSectionInfo(s.id);
       expect(info.functional, s.id).toBe(info.active >= 3 && info.lesson);
     }
-    for (const id of ['rec5-xv-xvi', 'rec5-expansao', 'rec5-intercambio', 'rec5-uniao-restauracao']) expect(hgpSectionInfo(id).functional, id).toBe(false);
+    // recuperação do 5.º ano: todos os 8 subcapítulos publicados têm lição e ≥3 perguntas ativas
+    for (const s of HGP_CHAPTERS[0]!.sections) expect(hgpSectionInfo(s.id).functional, s.id).toBe(true);
     const d1 = HGP_CHAPTERS.find(c => c.id === 'd1')!;
     for (const s of d1.sections) expect(hgpSectionInfo(s.id).functional, s.id).toBe(true);
     // 66 perguntas ativas nos 8 subcapítulos do índice (+3 do complemento), 69 ao todo
@@ -52,7 +57,7 @@ describe('estrutura editorial de HGP (capítulos e subcapítulos do índice conf
   it('perguntas excluídas não contam e os temas restantes ficam acessíveis pelo tema completo', () => {
     const excluded = hgpItems.filter(i => validationOf(i.id) === 'a-confirmar');
     for (const i of excluded) expect(hgpItemSection(i.id)).toBeTruthy();
-    for (const topic of hgpTopics.filter(t => t.id !== 'hgp-seculo-xviii')) {
+    for (const topic of hgpTopics.filter(t => t.id !== 'hgp-seculo-xviii' && t.id !== 'hgp-recuperacao-5')) {
       const info = hgpSectionInfo(`prov-${topic.id}`);
       expect(info.total, topic.id).toBeGreaterThan(0);
     }

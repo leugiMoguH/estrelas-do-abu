@@ -18,7 +18,7 @@ describe('banco real da demo', () => {
     expect(validatePack(gamePack, [...seeds, 0xffffffff])).toEqual([]);
     expect(SUBJECTS).toHaveLength(7);
     expect(SUBJECTS.filter((s) => s.active)).toHaveLength(3);
-    expect(TOPICS).toHaveLength(17);
+    expect(TOPICS).toHaveLength(18); // 17 + «Recuperar aprendizagens — 5.º ano» (HGP)
     for (const topic of TOPICS.filter(t=>t.subject!=='historia')) {
       const ts = gamePack.templates.filter((t) => topic.competencyIds.includes(t.competencyId));
       expect(new Set(ts.map((t) => t.conceptId)).size).toBeGreaterThanOrEqual(3);

@@ -1,7 +1,8 @@
 import type { Topic } from '../index';
 import type { HgpTopicId } from './schema';
-export const RECOVERY_TOPICS: readonly HgpTopicId[] = [];
+export const RECOVERY_TOPICS: readonly HgpTopicId[] = ['hgp-recuperacao-5'];
 const rows: [HgpTopicId, string, string, string, string][] = [
+['hgp-recuperacao-5','Recuperar aprendizagens — 5.º ano','Revê a expansão marítima e a União Ibérica até à Restauração.','⛵','Recuperar aprendizagens — 5.º ano'],
 ['hgp-seculo-xviii','Portugal no século XVIII','Descobre a sociedade e o poder no século XVIII.','👑','Teste escolar — capítulo 1 (págs. 20–40)'],
 ['hgp-liberalismo','O triunfo do liberalismo','Compreende a mudança para o liberalismo.','📜','O liberalismo e o século XIX'],
 ['hgp-xix-segunda-metade','Portugal na segunda metade do século XIX','Explora as mudanças do país.','🚂','O liberalismo e o século XIX'],
@@ -14,4 +15,4 @@ const rows: [HgpTopicId, string, string, string, string][] = [
 ['hgp-lazer','Como ocupamos os tempos livres','Descobre formas de lazer.','🎭','Portugal atual'],
 ['hgp-mundo','O mundo mais perto de nós','Explora as ligações ao mundo.','🌍','Portugal atual'],
 ];
-export const hgpTopics: Topic[] = rows.map(([id,title,blurb,icon,group]) => ({id, title, blurb, icon, group, subject:'historia', competencyIds:[id], level:RECOVERY_TOPICS.includes(id)?'recuperacao5':'6', curriculumRef:`DGE — Aprendizagens Essenciais, HGP: ${title}`}));
+export const hgpTopics: Topic[] = rows.map(([id,title,blurb,icon,group]) => ({id, title, blurb, icon, group, subject:'historia', competencyIds:[id], level:RECOVERY_TOPICS.includes(id)?'recuperacao5':'6', curriculumRef:`DGE — Aprendizagens Essenciais, HGP${RECOVERY_TOPICS.includes(id)?' 5.º ano':''}: ${title}`}));

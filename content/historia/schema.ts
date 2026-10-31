@@ -1,6 +1,6 @@
 /** Banco verificado de História e Geografia de Portugal (HGP). Sem geração livre: cada item é um facto/competência revisto. */
 export type HgpTopicId =
-  | 'hgp-seculo-xviii' | 'hgp-liberalismo' | 'hgp-xix-segunda-metade'
+  | 'hgp-recuperacao-5' | 'hgp-seculo-xviii' | 'hgp-liberalismo' | 'hgp-xix-segunda-metade'
   | 'hgp-republica' | 'hgp-ditadura' | 'hgp-25-abril'
   | 'hgp-populacao' | 'hgp-lugares' | 'hgp-atividades' | 'hgp-lazer' | 'hgp-mundo';
 export type HgpSkill =

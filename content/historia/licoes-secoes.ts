@@ -43,3 +43,40 @@ export const D1_SECTION_LESSONS: readonly HgpSectionLesson[] = [
     'As Aprendizagens Essenciais ligam estas culturas à melhoria da dieta e ao aumento da população. Este complemento não consta como subcapítulo confirmado do índice do manual.',
   ] },
 ];
+
+/** Lição por subcapítulo de «Recuperar aprendizagens — 5.º ano» (subdivisões de trabalho; ver estrutura.ts). */
+export const RECUP_SECTION_LESSONS: readonly HgpSectionLesson[] = [
+  { id: 'rec5-xv-xvi', title: 'Portugal nos séculos XV e XVI', explanation: [
+    'A expansão marítima começou no reinado de D. João I, com a conquista de Ceuta, em 1415. D. João I iniciara a dinastia de Avis em 1385; seguiram-se D. João II (1481), D. Manuel I (1495) e D. João III (1521).',
+    'Os motivos da expansão juntaram-se: religiosos (combater os muçulmanos e espalhar o cristianismo), económicos (ouro, especiarias, novos mercados), políticos (prestígio do rei e da nobreza) e científicos (conhecer mares, terras e povos). O infante D. Henrique promoveu e financiou muitas explorações da costa africana.',
+    'A caravela, leve e manobrável, e instrumentos como a bússola e o astrolábio ou o quadrante tornaram as viagens possíveis e mais seguras.',
+  ] },
+  { id: 'rec5-expansao', title: 'Expansão marítima portuguesa', explanation: [
+    'Os navegadores portugueses foram avançando: Gil Eanes dobrou o Cabo Bojador (1434), Bartolomeu Dias dobrou o Cabo da Boa Esperança (1488), Vasco da Gama chegou à Índia (1498) e Pedro Álvares Cabral chegou ao Brasil (1500).',
+    'A rota marítima para a Índia permitia comprar especiarias diretamente no Oriente, com menos intermediários. O Tratado de Tordesilhas (1494) dividiu as terras a descobrir entre Portugal e Castela.',
+  ] },
+  { id: 'rec5-intercambio', title: 'Intercâmbio e choque de culturas', explanation: [
+    'Do Oriente vinham especiarias, como a pimenta e a canela; da América chegaram plantas como o milho, a batata e o tabaco. Ideias, técnicas e palavras também passaram de um povo para outro: é o intercâmbio. As feitorias eram entrepostos comerciais fortificados.',
+    'O contacto trouxe também violência: guerras, a escravização de africanos e a imposição de religião e costumes. É o choque de culturas. Os dois lados fazem parte da história da expansão.',
+  ] },
+  { id: 'rec5-consequencias', title: 'Consequências da expansão portuguesa', explanation: [
+    'Lisboa tornou-se um grande porto do comércio com o Oriente e a Coroa controlava esse comércio através da Casa da Índia. Os lucros concentraram-se na Coroa e nos mercadores.',
+    'A expansão ampliou o conhecimento do mundo, melhorou os mapas e inspirou o estilo manuelino (Mosteiro dos Jerónimos, Torre de Belém) e Os Lusíadas, de Camões (1572). Em 1510, Goa foi conquistada por Afonso de Albuquerque. (Esta subdivisão segue as Aprendizagens Essenciais e ainda não tem correspondência confirmada com o índice do manual.)',
+  ] },
+  { id: 'rec5-uniao-restauracao', title: 'Da União Ibérica à Restauração da Independência', explanation: [
+    'Entre 1580 e 1640, durante sessenta anos, Portugal e Espanha tiveram o mesmo rei: a União Ibérica. Começou com a crise dinástica de 1578–1580 e terminou com a Restauração da Independência, a 1 de dezembro de 1640.',
+    'Para ordenar este período, lembra os marcos: 1578 (morre D. Sebastião), 1580 (morre o Cardeal D. Henrique), 1581 (Cortes de Tomar), 1637 (Alterações de Évora) e 1640 (Restauração).',
+  ] },
+  { id: 'rec5-crise-1580', title: 'Crise dinástica de 1580 e União Ibérica', explanation: [
+    'D. Sebastião morreu em 1578 em Alcácer Quibir, sem filhos. Reinou o Cardeal D. Henrique, já idoso, que morreu em 1580 sem herdeiro direto; vários pretendentes disputaram o trono. Era uma crise dinástica.',
+    'As Cortes de Tomar, em 1581, aclamaram Filipe II de Espanha como Filipe I de Portugal. Ele jurou respeitar as leis e os costumes de Portugal e manter o português como língua oficial: foi uma união dinástica, em que os reinos partilhavam o rei mas mantinham leis e administração próprias.',
+  ] },
+  { id: 'rec5-filipes', title: 'Portugal sob os Filipes', explanation: [
+    'Governaram Portugal três reis chamados Filipe, que eram também reis de Espanha. O rei vivia sobretudo em Madrid e Portugal era governado em seu nome por vice-reis ou governadores.',
+    'Os inimigos de Espanha, como holandeses e ingleses, atacaram o império português, que perdeu territórios e rotas. Aumentaram também os impostos e o descontentamento. Filipe III de Portugal começou a reinar em 1621.',
+  ] },
+  { id: 'rec5-restauracao-1640', title: 'Descontentamento, resistência e Restauração de 1640', explanation: [
+    'Novos impostos, como o real de água e o encabeçamento do sal, provocaram motins, como as Alterações de Évora, em 1637. Havia fome e dificuldades. Mostram o descontentamento com o governo dos Filipes.',
+    'A 1 de dezembro de 1640, um grupo de nobres e letrados fez o golpe que restaurou a independência; o povo não foi o autor do golpe. A Espanha estava ocupada com outras guerras e com a revolta da Catalunha. O duque de Bragança foi aclamado rei, com o nome de D. João IV, e começou a Guerra da Restauração (1640–1668).',
+  ] },
+];

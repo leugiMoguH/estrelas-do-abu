@@ -19,6 +19,8 @@ export interface HgpSection {
   provisional?: boolean;
   /** Complemento das AE que não consta como subcapítulo confirmado do índice. */
   extra?: boolean;
+  /** 'confirmado' = título do índice do manual; 'trabalho' = subdivisão fundamentada nas AE, sem correspondência editorial confirmada. */
+  editorial?: 'confirmado' | 'trabalho';
 }
 export interface HgpChapter {
   id: string;
@@ -38,12 +40,16 @@ export const HGP_CHAPTERS: readonly HgpChapter[] = [
   {
     id: 'rec5',
     title: 'Recuperar aprendizagens — 5.º ano',
-    pending: 'Faltam confirmar no índice os restantes subcapítulos deste capítulo.',
+    pending: 'Os títulos «confirmados» vêm do índice do manual; as subdivisões «de trabalho» seguem as Aprendizagens Essenciais e serão ajustadas ao índice quando as fotografias estiverem disponíveis.',
     sections: [
-      { id: 'rec5-xv-xvi', title: 'Portugal nos séculos XV e XVI', official: 'Matéria de recuperação do 5.º ano' },
-      { id: 'rec5-expansao', title: 'Expansão marítima portuguesa', official: 'Matéria de recuperação do 5.º ano' },
-      { id: 'rec5-intercambio', title: 'Intercâmbio e choque de culturas', official: 'Matéria de recuperação do 5.º ano' },
-      { id: 'rec5-uniao-restauracao', title: 'Da União Ibérica à Restauração da Independência', official: 'Matéria de recuperação do 5.º ano' },
+      { id: 'rec5-xv-xvi', title: 'Portugal nos séculos XV e XVI', official: 'AE HGP 5.º ano: Portugal nos séculos XV e XVI', topic: 'hgp-recuperacao-5', editorial: 'confirmado' },
+      { id: 'rec5-expansao', title: 'Expansão marítima portuguesa', official: 'AE HGP 5.º ano: Portugal nos séculos XV e XVI', topic: 'hgp-recuperacao-5', editorial: 'confirmado' },
+      { id: 'rec5-intercambio', title: 'Intercâmbio e choque de culturas', official: 'AE HGP 5.º ano: Portugal nos séculos XV e XVI', topic: 'hgp-recuperacao-5', editorial: 'confirmado' },
+      { id: 'rec5-consequencias', title: 'Consequências da expansão portuguesa', official: 'AE HGP 5.º ano: Portugal nos séculos XV e XVI', topic: 'hgp-recuperacao-5', editorial: 'trabalho' },
+      { id: 'rec5-uniao-restauracao', title: 'Da União Ibérica à Restauração da Independência', official: 'AE HGP 5.º ano: Portugal, da União Ibérica à Restauração da Independência', topic: 'hgp-recuperacao-5', editorial: 'confirmado' },
+      { id: 'rec5-crise-1580', title: 'Crise dinástica de 1580 e União Ibérica', official: 'AE HGP 5.º ano: Portugal, da União Ibérica à Restauração da Independência', topic: 'hgp-recuperacao-5', editorial: 'trabalho' },
+      { id: 'rec5-filipes', title: 'Portugal sob os Filipes', official: 'AE HGP 5.º ano: Portugal, da União Ibérica à Restauração da Independência', topic: 'hgp-recuperacao-5', editorial: 'trabalho' },
+      { id: 'rec5-restauracao-1640', title: 'Descontentamento, resistência e Restauração de 1640', official: 'AE HGP 5.º ano: Portugal, da União Ibérica à Restauração da Independência', topic: 'hgp-recuperacao-5', editorial: 'trabalho' },
     ],
   },
   {
@@ -107,7 +113,8 @@ const D1_ITEMS = new Map<string, string>([
 ]);
 
 /** Id do subcapítulo da pergunta; os restantes temas usam a entrada provisória do tema completo. */
-export function hgpSectionOfItem(itemId: string, topic: HgpTopicId): string | undefined {
+export function hgpSectionOfItem(itemId: string, topic: HgpTopicId, sub?: string): string | undefined {
   if (topic === D1) return D1_ITEMS.get(itemId);
+  if (topic === 'hgp-recuperacao-5') return sub ? `rec5-${sub}` : undefined;
   return `prov-${topic}`;
 }
