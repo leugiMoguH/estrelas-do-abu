@@ -3,7 +3,7 @@ import { mapSvg, avatarSvg, abuSvg } from '../art';
 import { SUBJECTS, TOPICS } from '../../content';
 import { button, frame, navigate } from './router';
 import { getState } from './store';
-import { openRoom } from './room';
+import { openRoom, startHgpChapter } from './room';
 import { openProfile, openShop, openAchievements, openMinigame, openOptions, openProgress } from './extras';
 
 export function openMap(): void {
@@ -11,6 +11,7 @@ export function openMap(): void {
     const state = getState();
     const main = frame('O teu centro de descobertas');
     startAbuLife(main, true);
+    main.append(button('Preparar próximo teste — Portugal no século XVIII', startHgpChapter, 'primary chapter-cta'));
     const links = document.createElement('div');
     links.className = 'toolbar';
     for (const [label, action] of [

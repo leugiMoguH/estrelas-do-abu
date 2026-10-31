@@ -502,3 +502,12 @@ label.topic-card strong { display:block; }
 label.topic-card input[type="checkbox"] { width:24px; height:24px; flex-shrink:0; }
 label.topic-card:has(input:checked) { outline:3px solid #bc7927; background:#fff1d5; }
 label.topic-card:focus-within { outline:3px solid #614276; }
+
+.chapter-cta {
+  width: 100%;
+  margin: 8px 0 12px;
+}
+.edition-note {
+  font-size: 0.9em;
+  margin: 4px 0;
+}

@@ -65,6 +65,8 @@ Decisão necessária:
 
 - 2026-10-31: HGP séc. XVIII com 73 itens, lição, factos verificados (ficha em docs/hgp). Commits aceeda4/a06efae + tag hgp-xviii-checkpoint-1. PUBLICADA (2026-10-31, autorização expressa do produtor) como versão provisória de estudo — revisão independente pendente: preview/e, 69 perguntas ativas do tema (4 excluídas: 55, 57, 66, 67). Anterior recuperável em preview/e-hgp3 (mesmo armazenamento eda-e).
 
+- 2026-10-31: acesso ao capítulo corrigido: botão «Preparar próximo teste — Portugal no século XVIII» no topo do mapa e da sala HGP e ligação ?capitulo=seculo-xviii (perfil já criado). Causa: atalhos de disciplina escondidos no telemóvel e botão «Continuar» a abrir o último tema; a raiz do site (demo) não tem HGP. Backups: preview/e-prov1, e-prov2.
+
 ## Estacionadas
 ## Bloqueios
 ## Histórico do plano

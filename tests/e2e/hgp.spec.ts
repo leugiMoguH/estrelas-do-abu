@@ -1,6 +1,7 @@
 import { hgpTopics } from '../../content/historia/topics';
 import type { HgpItem } from '../../content/historia/schema';
 import { test, expect, type Page } from '@playwright/test';
+import snapshotJson from '../../docs/hgp/auditoria-seculo-xviii/itens.json' with { type: 'json' };
 async function enter(page: Page): Promise<void> {
  await page.goto('/');await page.getByRole('button',{name:/Jogar/}).first().click();
  await page.getByRole('button',{name:/Surpreende/}).click();await page.getByRole('button',{name:/Vamos ao centro/}).click();
@@ -76,4 +77,35 @@ test('HGP: mcq, order, feedback específico e figura com seed fixo (build hgp-e2
  }
  expect(kinds.has('mcq')).toBe(true);expect(kinds.has('order')).toBe(true);expect(sawFigure).toBe(true);
  await page.locator('.correction details').filter({hasText:figure.prompt}).locator('summary').click();await expect(page.locator('.correction .pt-map')).toBeVisible();
+});
+test('HGP: atalho do teste escolar no mapa, na sala e por ligação, só com o capítulo (20 perguntas)',async({page})=>{
+ // Instantâneo gerado dos itens do capítulo (docs/hgp/auditoria-seculo-xviii); o Playwright não carrega import.meta.glob.
+ const snapshot=snapshotJson as {id:string;prompt:string;validacao:string}[];
+ const active=snapshot.filter(i=>i.validacao!=='a-confirmar');
+ expect(active.length).toBe(69);
+ await page.goto('/');await page.getByRole('button',{name:/Jogar/}).first().click();
+ await page.getByRole('button',{name:/Surpreende/}).click();await page.getByRole('button',{name:/Vamos ao centro/}).click();
+ const cta=page.getByRole('button',{name:'Preparar próximo teste — Portugal no século XVIII'});
+ await expect(cta).toBeVisible();await cta.click();
+ await expect(page.locator('.question-progress')).toContainText('Pergunta 1 de 3');
+ for(let i=0;i<3;i++)await answer(page,'study');
+ await page.getByRole('button',{name:'Voltar ao centro',exact:true}).click();
+ // perfil já com progresso: o atalho do mapa abre 20 perguntas, todas do capítulo e das ativas
+ await page.reload();await page.getByRole('button',{name:'Continuar',exact:true}).click();
+ await expect(page.getByRole('button',{name:'Preparar próximo teste — Portugal no século XVIII'})).toBeVisible();
+ await page.goto('/?capitulo=seculo-xviii');
+ await expect(page.locator('.question-progress')).toContainText('Pergunta 1 de 20');
+ const seen=new Set<string>();
+ for(let i=0;i<20;i++){
+  const text=await page.locator('form.question').innerText();
+  const hit=active.find(item=>text.includes(item.prompt.slice(0,30)));
+  expect(hit,`Pergunta ${i+1} fora do capítulo ou excluída: ${text.slice(0,60)}`).toBeTruthy();seen.add(hit!.id);
+  await answer(page,'study');
+ }
+ expect(seen.size).toBe(20);
+ // sala de HGP: o atalho está logo no topo e o aviso de edição provisória é visível
+ await page.getByRole('button',{name:'Voltar ao centro',exact:true}).click();
+ await page.locator('[data-target="historia"]').click();
+ await expect(page.getByRole('note')).toContainText('Versão provisória de estudo');
+ await expect(page.getByRole('button',{name:'Preparar próximo teste — Portugal no século XVIII'})).toBeVisible();
 });

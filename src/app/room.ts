@@ -9,6 +9,16 @@ import { getState } from './store';
 import { openMap } from './map';
 import { startSession, type Mode, type SessionContext } from './session';
 
+/** Atalho do teste escolar: abre uma sessão só com o capítulo «Portugal no século XVIII» (20 perguntas; 3 na primeira aventura). */
+export function startHgpChapter(): void {
+  startSession('hgp-seculo-xviii', 'study', 20, undefined, {
+    subject: 'historia',
+    topicIds: ['hgp-seculo-xviii'],
+    competencyIds: ['hgp-seculo-xviii'],
+    title: 'Portugal no século XVIII',
+  });
+}
+
 export function openRoom(subject: string, topicId?: string, context?: SessionContext): void {
   const topics = TOPICS.filter((topic) => topic.subject === subject);
   let selected = topics.find((topic) => topic.id === (topicId ?? getState().lastTopicId)) ?? topics[0];
@@ -22,18 +32,19 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
     const focusId = (document.activeElement as HTMLElement | null)?.dataset.focusId;
     setTutorMode(mode);
     const main = frame(SUBJECTS.find((s) => s.id === subject)?.building ?? 'A tua sala', openMap);
-    main.insertAdjacentHTML(
-      'beforeend',
-      topics.length ? `<div class="room-art">${roomSvg(subject)}<div class="room-abu">${abuSvg('sit', getState().profile.avatar)}</div></div><h2>O que vamos descobrir?</h2>` : '<p>Esta disciplina está em preparação.</p>',
-    );
-    startAbuLife(main, false);
     if (subject === 'historia') {
       const note = document.createElement('p');
       note.className = 'edition-note';
       note.setAttribute('role', 'note');
       note.textContent = 'Versão provisória de estudo — revisão independente pendente. Não cobre todas as páginas do manual.';
       main.append(note);
+      main.append(button('Preparar próximo teste — Portugal no século XVIII', startHgpChapter, 'primary chapter-cta'));
     }
+    main.insertAdjacentHTML(
+      'beforeend',
+      topics.length ? `<div class="room-art">${roomSvg(subject)}<div class="room-abu">${abuSvg('sit', getState().profile.avatar)}</div></div><h2>O que vamos descobrir?</h2>` : '<p>Esta disciplina está em preparação.</p>',
+    );
+    startAbuLife(main, false);
     const cards = document.createElement('div');
     cards.className = 'topic-grid';
     if (multi) {
