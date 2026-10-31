@@ -1,0 +1,1 @@
+var e=new URL(`campus-CgYLgnpa.webp`,import.meta.url).href;export{e as t};
