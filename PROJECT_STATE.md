@@ -57,6 +57,10 @@ Decisão necessária:
 
 - Fase 2 (2026-10-31): direção D aprovada pela criança. Personalização por camadas (corpo-molde + camadas raster geradas no lugar + rosto/acessórios SVG, cor por mapa de gradiente): 8 tons de pele, 8 penteados, 7 tops, 5 baixos, 4 calçados, casaco, 3 óculos, 4 chapéus, 4 acessórios, 2 mochilas; Abu com 8 poses, acessórios (pescoço/corpo/cabeça), piscar, saltos, travessuras opcionais; tutores Matemática (Professor Nuno) e Português (Marta, a lontra) com lições pré-escritas (needs-human-review), bloqueados no Teste; salas e mapa D. Revisão independente do Codex feita e defeitos confirmados corrigidos. Verificado: tsc, 70 unit, 27 e2e (3 viewports), build. Publicado só em preview/e/ (armazenamento eda-e). Demo raiz e previews A–D intactas; tag v0.1-demo-publicada e phase2-checkpoint-pre para recuperar. Ver docs/PHASE2_SPEC.md e docs/ASSETS_PROVENANCE.md.
 
+## Pendências visuais registadas (NÃO corrigir antes da avaliação da criança; 2026-10-31)
+- Algumas camisolas não encaixam corretamente nas calças.
+- Os olhos aparecem por cima do cabelo em situações em que deviam ficar parcialmente ocultos.
+
 ## Estacionadas
 ## Bloqueios
 ## Histórico do plano
