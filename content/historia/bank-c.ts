@@ -131,7 +131,7 @@ export const bank: HgpBank = {
       },
       hints: [
         'Pensa na direção da viagem: estas pessoas entraram ou saíram de Portugal?',
-        'IMigrante = entra no país; Emigrante = sai do país.',
+        'Imigrante = entra no país; Emigrante = sai do país.',
       ],
       explanation:
         'Quem entra num país para lá viver é imigrante desse país. Nos Censos 2021, a nacionalidade estrangeira mais numerosa em Portugal era a brasileira.',
@@ -349,7 +349,7 @@ export const bank: HgpBank = {
         'Os distritos do interior costumam ter menos habitantes.',
       ],
       explanation:
-        'Bragança fica no interior Norte e é um dos distritos com menos habitantes; nos Censos 2021, todos os seus concelhos perderam população.',
+        'Bragança fica no interior Norte e é um dos distritos com menos habitantes; nos Censos 2021, perdeu população em relação a 2011.',
       sources: ['wiki-distritos', 'observador-censos2021'],
     },
     {
@@ -422,14 +422,14 @@ export const bank: HgpBank = {
       correct: 'A saída de pessoas do campo para as cidades',
       wrong: {
         'A saída de pessoas das cidades para o campo': 'É o movimento contrário: no êxodo rural as pessoas deixam o campo (rural).',
-        'A saída de pessoas de Portugal para outros países': 'Isso é emigração; só é também êxodo rural se a mudança for de uma área rural para uma área urbana.',
+        'A saída de pessoas de Portugal para outros países': 'Isso é emigração: sair do país é diferente de mudar do campo para a cidade dentro do país.',
         'A chegada de turistas às aldeias': 'Os turistas visitam por pouco tempo; o êxodo é uma saída para ir viver noutro lugar.',
       },
       hints: [
         '«Êxodo» quer dizer saída; «rural» refere-se ao campo.',
         'Para onde vão as pessoas que saem do campo à procura de emprego?',
       ],
-      explanation: 'Êxodo rural é a migração de pessoas das áreas rurais (campo) para as áreas urbanas (cidades), podendo também envolver a saída do país.',
+      explanation: 'Êxodo rural é a migração de pessoas das áreas rurais (campo) para as áreas urbanas (cidades), Se as pessoas saem do país, é emigração, que é outra coisa.',
       sources: ['ae-hgp-6', 'wiki-exodo'],
     },
     {
@@ -548,22 +548,22 @@ export const bank: HgpBank = {
       kind: 'order',
       prompt: 'Numa aldeia fictícia, estes acontecimentos sucederam-se pelas etapas indicadas. Ordena-os do início ao fim.',
       items: [
-        'Na terceira etapa, a escola fica com poucos alunos e pode ficar em risco de fechar',
-        'Primeiro, os jovens saem da aldeia para trabalhar na cidade',
-        'Por fim, menos famílias procuram viver na aldeia',
-        'Depois da saída dos jovens, registam-se menos nascimentos na aldeia',
+        'A escola fica com poucos alunos e pode ficar em risco de fechar',
+        'Os jovens saem da aldeia para trabalhar na cidade',
+        'Menos famílias procuram viver na aldeia',
+        'Registam-se menos nascimentos na aldeia',
       ],
       correct: [
-        'Primeiro, os jovens saem da aldeia para trabalhar na cidade',
-        'Depois da saída dos jovens, registam-se menos nascimentos na aldeia',
-        'Na terceira etapa, a escola fica com poucos alunos e pode ficar em risco de fechar',
-        'Por fim, menos famílias procuram viver na aldeia',
+        'Os jovens saem da aldeia para trabalhar na cidade',
+        'Registam-se menos nascimentos na aldeia',
+        'A escola fica com poucos alunos e pode ficar em risco de fechar',
+        'Menos famílias procuram viver na aldeia',
       ],
       hints: [
         'Começa pela saída das pessoas (o êxodo rural).',
-        'Segue os marcadores: primeiro, depois, terceira etapa e por fim.',
+        'Cada acontecimento é consequência do anterior: pergunta «e o que acontece a seguir?».',
       ],
-      explanation: 'Nesta aldeia fictícia, a saída de jovens foi seguida de menos nascimentos, risco de fecho da escola e menor procura por novas famílias. É uma sequência possível, não inevitável.',
+      explanation: 'Nesta aldeia fictícia, a saída de jovens foi seguida de menos nascimentos, risco de fecho da escola e menor procura por novas famílias. É uma sequência possível, não inevitável: depende, por exemplo, de haver ou não emprego e serviços na aldeia.',
       sources: ['ae-hgp-6', 'wiki-exodo'],
     },
     {
@@ -588,10 +588,11 @@ export const bank: HgpBank = {
       difficulty: 1,
       kind: 'numeric',
       prompt:
-        'Entre 2011 e 2021, o Algarve ganhou 3,6% de habitantes e a Área Metropolitana de Lisboa ganhou 1,7%; todas as outras regiões (NUTS II de 2013, usadas nos Censos 2021) perderam população (Censos 2021, INE). Quantas regiões ganharam população? (responde com um número)',
-      correct: 2,
-      hints: ['Conta as regiões que o enunciado diz que ganharam habitantes.', 'Foram o Algarve e mais uma.'],
-      explanation: 'Só 2 regiões cresceram: o Algarve e a Área Metropolitana de Lisboa. O Alentejo e a Madeira foram as que mais perderam. Estes dados referem-se às NUTS II de 2013, usadas nos Censos 2021.',
+        'Entre 2011 e 2021, a população do Algarve cresceu 3,6% e a da Área Metropolitana de Lisboa cresceu 1,7% (Censos 2021, INE; NUTS II de 2013). Quantos pontos percentuais cresceu o Algarve a mais do que a Área Metropolitana de Lisboa? (responde com um número, p. ex. 2,5)',
+      correct: 1.9,
+      wrongHints: { '5,3': 'Somaste os dois valores; para comparar, subtrai: 3,6 − 1,7.' },
+      hints: ['«A mais» pede uma subtração.', 'Calcula 3,6 − 1,7.'],
+      explanation: '3,6 − 1,7 = 1,9 pontos percentuais. Só estas duas regiões ganharam população entre 2011 e 2021; todas as outras perderam, e o interior perdeu mais.',
       sources: ['eco-censos2021', 'rtp-censos2021', 'dnoticias-distribuicao'],
     },
     {
@@ -829,7 +830,7 @@ export const bank: HgpBank = {
       ],
       hints: ['Começa pela mudança no campo: as máquinas.', 'O resultado final vê-se no setor com mais trabalhadores hoje.'],
       explanation:
-        'A modernização agrícola libertou trabalhadores, que passaram para outros setores; desde 1991 que o terciário reúne mais de metade dos trabalhadores e hoje mais de 70%.',
+        'A modernização agrícola libertou trabalhadores, que passaram para outros setores; hoje o terciário reúne mais de 70% dos trabalhadores.',
       sources: ['dge-gta18', 'gpp-emprego'],
     },
     {
@@ -877,16 +878,16 @@ export const bank: HgpBank = {
       difficulty: 2,
       kind: 'numeric',
       stimulus:
-        'População empregada por setor de atividade — Portugal, Censos 2021 (INE, arredondado)\n• Primário: cerca de 3%\n• Secundário: cerca de 25%\n• Terciário: ?',
+        'População empregada por setor de atividade — Portugal, 4.º trimestre de 2025 (INE/GPP, Inquérito ao Emprego, arredondado)\n• Primário: cerca de 2%\n• Secundário: cerca de 24%\n• Terciário: ?',
       prompt: 'Observa o quadro. Qual era, aproximadamente, a percentagem de pessoas empregadas no setor terciário? (responde em %)',
-      correct: 72,
+      correct: 74,
       wrongHints: {
-        '28': 'Esse é o total do primário e do secundário; falta tirá-lo a 100%.',
-        '75': 'Tiraste só o secundário; tens de tirar também o primário.',
+        '26': 'Esse é o total do primário e do secundário; falta tirá-lo a 100%.',
+        '76': 'Tiraste só o secundário; tens de tirar também o primário.',
       },
-      hints: ['Os três setores juntos fazem 100%.', 'Calcula 100 − 3 − 25.'],
+      hints: ['Os três setores juntos fazem 100%.', 'Calcula 100 − 2 − 24.'],
       explanation:
-        '100 − 3 − 25 = 72%. Mais de 7 em cada 10 pessoas empregadas trabalhavam no setor terciário.',
+        '100 − 2 − 24 = 74%. Mais de 7 em cada 10 pessoas empregadas trabalham no setor terciário.',
       sources: ['dge-gta18', 'gpp-emprego'],
     },
     {
@@ -973,7 +974,7 @@ export const bank: HgpBank = {
         'A população muda por duas razões: o saldo natural (nascimentos − óbitos) e o saldo migratório (imigrantes − emigrantes).',
         'Portugal está a envelhecer: em 2021 havia 182 idosos por cada 100 jovens (em 2011 eram 128).',
         'A população está distribuída de forma desigual: concentra-se no litoral e nas áreas metropolitanas de Lisboa e do Porto; o interior tem baixa densidade.',
-        'Nos anos 60, a elevada emigração fez diminuir a população; hoje, a imigração ajuda a compensar o saldo natural negativo.',
+        'Nos anos 60, a elevada emigração fez diminuir a população; hoje, a imigração ajuda a compensar o saldo natural negativo. Esperança de vida à nascença é o número médio de anos que um recém-nascido pode esperar viver; mortalidade infantil é o número de bebés que morrem antes de fazer 1 ano por cada mil nascimentos; natalidade e mortalidade são os nascimentos e as mortes numa população. Uma área atrativa é a que ganha população, porque tem emprego e serviços; uma área repulsiva perde população.',
       ],
       examples: [
         {
@@ -1009,7 +1010,7 @@ export const bank: HgpBank = {
       topic: 'hgp-lugares',
       explanation: [
         'As áreas urbanas (cidades) têm muitos habitantes, prédios e serviços; as áreas rurais (campo) têm casas mais espalhadas e mais agricultura.',
-        'O êxodo rural é a mudança das áreas rurais para as áreas urbanas, podendo também envolver a saída do país, à procura de emprego e de serviços.',
+        'O êxodo rural é a mudança das áreas rurais para as áreas urbanas, à procura de emprego e de serviços. Se as pessoas saem do país, é emigração, que é outra coisa.',
         'Por isso, muitas áreas rurais do interior estão despovoadas e envelhecidas, enquanto o litoral concentra pessoas (litoralização).',
         'Entre 2011 e 2021, só o Algarve e a Área Metropolitana de Lisboa ganharam população, considerando as NUTS II de 2013, usadas nos Censos 2021.',
         'Cidade e campo dependem um do outro: o campo produz alimentos e a cidade oferece serviços e emprego.',
@@ -1039,7 +1040,7 @@ export const bank: HgpBank = {
         'Sei localizar as áreas metropolitanas de Lisboa e do Porto no mapa.',
       ],
       commonErrors: [
-        'Confundir êxodo rural (das áreas rurais para as urbanas) com emigração (saída do país): uma mudança pode ser ambos.',
+        'Confundir êxodo rural (das áreas rurais para as urbanas) com emigração (saída do país).',
         'Pensar que só o campo tem problemas: as cidades também têm (trânsito, poluição, habitação cara).',
       ],
       sources: ['ae-hgp-6', 'wiki-exodo', 'dnoticias-distribuicao', 'eco-censos2021', 'rtp-censos2021'],

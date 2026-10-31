@@ -1,0 +1,542 @@
+[
+ {
+  "topic": "hgp-seculo-xviii",
+  "explanation": [
+   "Na primeira metade do século XVIII, no reinado de D. João V, chegou muito ouro do Brasil, que ajudou a pagar grandes obras; deste reinado são o Palácio-Convento de Mafra e a Biblioteca Joanina.",
+   "D. João V foi um rei absoluto: concentrava em si todos os poderes.",
+   "Em 1755, um terramoto, seguido de maremoto e incêndios, destruiu grande parte de Lisboa.",
+   "O Marquês de Pombal, ministro de D. José I, dirigiu a reconstrução da Baixa e fez reformas: expulsou os Jesuítas (1759), reformou o ensino e criou companhias de comércio, como a dos Vinhos do Alto Douro.",
+   "A sociedade era de ordens: o clero e a nobreza tinham privilégios; o povo, a maioria, trabalhava e pagava impostos. No Brasil, a cultura do açúcar e a exploração do ouro e de outros recursos dependiam do trabalho de africanos escravizados, trazidos à força; por isso, os africanos deixaram um legado importante na sociedade e na cultura portuguesa e brasileira. Em tempo de absolutismo, o rei decidia sem as Cortes: com D. João V, as Cortes não foram convocadas."
+  ],
+  "examples": [
+   {
+    "title": "Como ordenar acontecimentos do século XVIII",
+    "steps": [
+     "Escreve o ano ao lado de cada acontecimento: terramoto → 1755; expulsão dos Jesuítas → 1759.",
+     "Se não souberes o ano, usa pistas: o reinado de D. João V vem antes do de D. José I.",
+     "Ordena do ano mais pequeno para o maior e lê em voz alta: «primeiro…, depois…, por fim…»."
+    ]
+   },
+   {
+    "title": "Causa e consequência: o terramoto de 1755",
+    "steps": [
+     "Causa: o terramoto, o maremoto e os incêndios destruíram a Baixa de Lisboa.",
+     "Consequência: a Baixa foi reconstruída com um plano novo, ruas largas e prédios com «gaiola».",
+     "Testa a ligação com «Porquê? Porque…»: «Porque se reconstruiu a Baixa? Porque o terramoto a destruiu.»"
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei situar D. João V e D. José I no século XVIII.",
+   "Sei explicar o terramoto de 1755 e as suas consequências.",
+   "Sei dar dois exemplos de reformas do Marquês de Pombal.",
+   "Sei dizer que grupos tinham privilégios na sociedade de ordens."
+  ],
+  "commonErrors": [
+   "Confundir D. João V com D. José I: o terramoto e o Marquês de Pombal pertencem ao reinado de D. José I.",
+   "Pensar que o povo tinha privilégios: os privilégios eram do clero e da nobreza."
+  ],
+  "sources": [
+   "dge-ae-plan",
+   "wiki-joao-v",
+   "museus-mafra",
+   "uc-joanina",
+   "wiki-sismo-1755",
+   "rtp-1755",
+   "rtp-pombal",
+   "wiki-pombal",
+   "wiki-sociedade-ordens"
+  ]
+ },
+ {
+  "topic": "hgp-liberalismo",
+  "explanation": [
+   "A partir de 1807, Portugal sofreu três invasões francesas (Junot, Soult e Massena), por não cumprir o Bloqueio Continental de Napoleão; a Corte partiu para o Brasil.",
+   "Com o rei no Brasil, o domínio inglês e a crise económica, começou no Porto a Revolução Liberal, a 24 de agosto de 1820.",
+   "As Cortes fizeram a Constituição de 1822: a soberania passou a residir na Nação e os poderes ficaram separados (legislativo, executivo e judicial).",
+   "A 7 de setembro de 1822, D. Pedro proclamou a independência do Brasil.",
+   "D. Miguel proclamou-se rei absoluto; a Guerra Civil (1832–1834) entre liberais e absolutistas acabou com a vitória liberal na Convenção de Évora-Monte, em 1834. A terceira invasão (Massena, 1810) foi travada nas Linhas de Torres Vedras, um sistema de fortificações a norte de Lisboa; as invasões foram destrutivas e a população resistiu, com apoio inglês. A Constituição de 1822 dizia, no artigo 26.º, que a soberania reside na Nação e só pode ser exercida pelos seus representantes eleitos."
+  ],
+  "examples": [
+   {
+    "title": "Ligar causas e consequências: das invasões a 1820",
+    "steps": [
+     "Causa: as invasões francesas levaram a Corte a partir para o Brasil, em 1807.",
+     "Consequência: Portugal ficou sem rei por perto e com forte presença inglesa.",
+     "Esta consequência tornou-se causa da Revolução de 1820, que pediu o regresso do rei e uma Constituição."
+    ]
+   },
+   {
+    "title": "Comparar antes e depois de 1822",
+    "steps": [
+     "No absolutismo, a autoridade suprema concentrava-se no rei, embora existissem tribunais e outros órgãos.",
+     "Depois (Constituição de 1822): as Cortes faziam as leis, o rei e os ministros governavam e os tribunais julgavam.",
+     "Conclusão: o poder deixou de estar todo numa só pessoa."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei dizer quantas invasões francesas houve e quem as comandou.",
+   "Sei explicar duas causas da Revolução de 1820.",
+   "Sei dizer o que mudou com a Constituição de 1822.",
+   "Sei quem lutou na Guerra Civil e como acabou."
+  ],
+  "commonErrors": [
+   "Pensar que os liberais de 1820 queriam acabar com o rei: queriam um rei com poderes limitados por uma Constituição.",
+   "Confundir a Revolução de 1820, no Porto, com a independência do Brasil, em 1822."
+  ],
+  "sources": [
+   "dge-ae-plan",
+   "rtp-invasoes",
+   "wiki-invasoes",
+   "rhlt-linhas",
+   "wiki-rev-1820",
+   "parlamento-cortes-1821",
+   "dge-10b29",
+   "alsp-independencia",
+   "rtp-guerra-civil",
+   "wiki-guerra-civil"
+  ]
+ },
+ {
+  "topic": "hgp-xix-segunda-metade",
+  "explanation": [
+   "A partir de 1851, a Regeneração trouxe estabilidade política e permitiu fazer muitas obras públicas.",
+   "Com Fontes Pereira de Melo, ministro das Obras Públicas, construíram-se estradas e caminhos de ferro; o primeiro comboio circulou em 1856, entre Lisboa e o Carregado.",
+   "A máquina a vapor espalhou-se pelas fábricas, sobretudo nas zonas de Lisboa e do Porto.",
+   "Muita gente saiu do campo para as cidades (êxodo rural) ou emigrou, sobretudo para o Brasil; cresceu o operariado e a burguesia ganhou importância.",
+   "Nas cidades, muitos operários viviam em casas pobres, como as «ilhas» do Porto. Em 1867, Portugal aboliu a pena de morte para os crimes civis. Em 1877 foi inaugurada a Ponte D. Maria Pia, no Porto, para o comboio atravessar o Douro. Os governos liberais fizeram reformas na educação (em 1836, a reforma de Passos Manuel criou os liceus) e na justiça. Em 1867 aboliu-se a pena de morte para os crimes civis e, em 1869, a escravatura em todos os territórios portugueses."
+  ],
+  "examples": [
+   {
+    "title": "Causa e consequência na industrialização",
+    "steps": [
+     "Causa: as fábricas nas cidades precisavam de trabalhadores.",
+     "Consequência: muitas pessoas do campo mudaram-se para Lisboa e para o Porto (êxodo rural).",
+     "Nova consequência: as cidades cresceram e muitos operários viviam em casas pobres."
+    ]
+   },
+   {
+    "title": "Distinguir êxodo rural de emigração",
+    "steps": [
+     "Pergunta: a pessoa saiu do país?",
+     "Se não saiu (foi do campo para a cidade), é êxodo rural.",
+     "Se saiu (por exemplo, para o Brasil), é emigração."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei dizer quem foi Fontes Pereira de Melo.",
+   "Sei o ano e o percurso do primeiro comboio em Portugal.",
+   "Sei explicar o êxodo rural e a emigração.",
+   "Sei distinguir um facto de uma opinião."
+  ],
+  "commonErrors": [
+   "Confundir êxodo rural (do campo para a cidade, dentro do país) com emigração (para outro país).",
+   "Pensar que, no fim do século XIX, a maioria dos portugueses já vivia nas cidades."
+  ],
+  "sources": [
+   "dge-ae-plan",
+   "wiki-regeneracao",
+   "rtp-obstaculos",
+   "rtp-regeneracao",
+   "rtp-comboios",
+   "cp-cronologia",
+   "imt-1856",
+   "rtp-industria",
+   "analise-social-habitacao",
+   "up-ilhas",
+   "rebep-emigracao",
+   "dge-bloco20",
+   "gov-pena-morte",
+   "wiki-pena-morte"
+  ]
+ },
+ {
+  "topic": "hgp-republica",
+  "explanation": [
+   "No fim do século XIX, a monarquia constitucional foi perdendo apoio. O Ultimato inglês (1890) causou grande descontentamento, aproveitado pela propaganda republicana, e em 31 de janeiro de 1891 houve uma revolta republicana no Porto, que falhou.",
+   "A 1 de fevereiro de 1908, o rei D. Carlos e o príncipe herdeiro foram assassinados em Lisboa (o regicídio), o que enfraqueceu ainda mais a monarquia.",
+   "Entre 3 e 5 de outubro de 1910, uma revolução derrubou a monarquia. A República foi proclamada a 5 de outubro, da varanda da Câmara Municipal de Lisboa, e o rei D. Manuel II partiu para o exílio.",
+   "Um Governo Provisório, chefiado por Teófilo Braga, fez grandes mudanças: Lei da Separação do Estado e das Igrejas (1911), nova moeda (o escudo, 1911), novos símbolos (bandeira verde e vermelha) e direito à greve. A Constituição de 1911 criou um Presidente da República eleito pelo Congresso.",
+   "A Primeira República teve muitas mudanças de governo e terminou com o golpe militar de 28 de maio de 1926. A Lei da Separação do Estado e das Igrejas foi preparada pelo ministro da Justiça, Afonso Costa. Em 1911 foram ainda criadas as Universidades de Lisboa e do Porto, para combater o atraso na educação, e reconheceu-se o direito à greve."
+  ],
+  "examples": [
+   {
+    "title": "Como distinguir monarquia de república",
+    "steps": [
+     "Pergunta: quem é o chefe do Estado e como chegou ao cargo?",
+     "Em Portugal, na monarquia constitucional, o chefe do Estado era um rei hereditário.",
+     "Pela Constituição de 1911, o chefe do Estado passou a ser um Presidente eleito pelo Congresso. Uma república não é necessariamente democrática."
+    ]
+   },
+   {
+    "title": "Linha do tempo do fim da monarquia",
+    "steps": [
+     "1890 – Ultimato inglês.",
+     "1891 – revolta republicana no Porto (31 de janeiro).",
+     "1908 – regicídio (1 de fevereiro).",
+     "1910 – implantação da República (5 de outubro)."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei a data da implantação da República: 5 de outubro de 1910.",
+   "Consigo explicar dois acontecimentos que enfraqueceram a monarquia.",
+   "Sei dar dois exemplos de medidas da Primeira República.",
+   "Sei como terminou a Primeira República: golpe militar de 28 de maio de 1926."
+  ],
+  "commonErrors": [
+   "Confundir o 5 de outubro de 1910 (República) com o 25 de Abril de 1974 (fim da ditadura).",
+   "Pensar que o Presidente da República herdava o cargo, como o rei: na República, o Presidente é eleito."
+  ],
+  "sources": [
+   "dge-ae-hgp6",
+   "incm-1rep",
+   "bnp-1908",
+   "bdp-1910",
+   "up-separacao",
+   "ar-crp",
+   "wiki-implantacao",
+   "wiki-1rep"
+  ]
+ },
+ {
+  "topic": "hgp-ditadura",
+  "explanation": [
+   "A 28 de maio de 1926, um golpe militar acabou com a Primeira República e instalou uma ditadura militar.",
+   "António de Oliveira Salazar teve uma breve passagem pelo Ministério das Finanças em 1926 e regressou ao cargo em 1928 e foi ganhando poder. A Constituição de 1933 deu início ao Estado Novo, que Salazar chefiou durante muitos anos; depois, Marcelo Caetano sucedeu-lhe.",
+   "No Estado Novo não havia liberdade individual: existia censura, uma polícia política (sucessivamente PVDE, PIDE e DGS) que perseguia e prendia opositores, um partido único (a União Nacional) e o movimento sindical era reprimido. Mesmo assim, houve pessoas que resistiram ao regime.",
+   "O regime usava a escola e a propaganda para espalhar as suas ideias. A Mocidade Portuguesa procurava ensinar aos jovens a obediência ao regime; um lema conhecido era «Deus, Pátria, Família».",
+   "Em 1961 começou a Guerra Colonial, em Angola, que se estendeu à Guiné e a Moçambique: o regime queria manter o império colonial. A guerra durou cerca de 13 anos e o seu desgaste levou militares a preparar o 25 de Abril de 1974. Houve oposição ao regime, apesar da repressão: por exemplo, em 1958 o general Humberto Delgado candidatou-se à Presidência da República contra o candidato do regime; foi mais tarde assassinado pela PIDE, em 1965."
+  ],
+  "examples": [
+   {
+    "title": "Reconhecer uma ditadura",
+    "steps": [
+     "Pode-se criticar o governo livremente? No Estado Novo não: havia censura.",
+     "Há vários partidos e eleições livres? Não: havia um partido único.",
+     "Os opositores podiam ser presos? Sim, pela polícia política.",
+     "Conclusão: o Estado Novo era uma ditadura."
+    ]
+   },
+   {
+    "title": "Linha do tempo da ditadura",
+    "steps": [
+     "1926 – golpe militar de 28 de maio.",
+     "1928 – Salazar regressa ao Ministério das Finanças, após uma breve passagem em 1926.",
+     "1933 – Constituição que dá início ao Estado Novo.",
+     "1961 – início da Guerra Colonial, em Angola.",
+     "1974 – revolução de 25 de Abril, que derruba o regime."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei explicar o que era a censura.",
+   "Sei explicar o que era a PIDE.",
+   "Consigo dar três características do Estado Novo.",
+   "Sei relacionar a Guerra Colonial com a vontade do regime de manter o império."
+  ],
+  "commonErrors": [
+   "Confundir a PIDE (polícia política que prendia opositores) com a censura (que controlava o que se publicava).",
+   "Pensar que o Estado Novo começou em 1926: em 1926 começou a ditadura militar; o Estado Novo começou com a Constituição de 1933."
+  ],
+  "sources": [
+   "dge-ae-hgp6",
+   "dge-hgp-bloco28",
+   "dge-gta14",
+   "as-salazar",
+   "rtp-museu-25abril",
+   "aljube",
+   "wiki-estadonovo",
+   "wiki-mocidade",
+   "wiki-guerra-colonial"
+  ]
+ },
+ {
+  "topic": "hgp-25-abril",
+  "explanation": [
+   "Na madrugada de 25 de Abril de 1974, o MFA (Movimento das Forças Armadas), formado por militares conhecidos como «capitães de Abril», fez uma revolução. As senhas foram duas canções na rádio: «E Depois do Adeus», interpretada por Paulo de Carvalho, na noite de 24 de abril, e «Grândola, Vila Morena», de José Afonso, já na madrugada de 25 de abril.",
+   "O capitão Salgueiro Maia cercou o quartel do Carmo, em Lisboa. Marcelo Caetano rendeu-se e o poder passou para a Junta de Salvação Nacional, presidida pelo general Spínola. Os cravos tornaram-se o símbolo da revolução.",
+   "Começou a construção da democracia: acabaram a censura e a polícia política. A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal.",
+   "A Constituição foi aprovada a 2 de abril de 1976 e entrou em vigor a 25 de abril de 1976. A Guiné-Bissau proclamou a independência em 1973 e Portugal reconheceu-a em setembro de 1974; Angola, Moçambique, Cabo Verde e São Tomé e Príncipe tornaram-se independentes em 1975.",
+   "Portugal assinou o tratado de adesão à CEE em 1985, no Mosteiro dos Jerónimos, e tornou-se membro a 1 de janeiro de 1986. As notas e moedas de euro começaram a circular a 1 de janeiro de 2002. Na democracia, os principais órgãos do poder são o Presidente da República, a Assembleia da República, o Governo e os tribunais; a nível local, o concelho é governado pela Câmara Municipal e a freguesia pela Junta de Freguesia."
+  ],
+  "examples": [
+   {
+    "title": "Ditadura e democracia lado a lado",
+    "steps": [
+     "Liberdade de expressão: na ditadura havia censura; na democracia há liberdade de expressão.",
+     "Eleições: na ditadura não eram livres; na democracia todos os cidadãos adultos podem votar livremente.",
+     "Partidos: na ditadura havia um partido único; na democracia há vários partidos."
+    ]
+   },
+   {
+    "title": "Da revolução à Europa",
+    "steps": [
+     "1974 – revolução de 25 de Abril.",
+     "1975 – eleições para a Assembleia Constituinte.",
+     "1976 – Constituição aprovada (2 de abril) e em vigor (25 de abril).",
+     "1986 – Portugal entra na CEE.",
+     "2002 – começam a circular as notas e moedas de euro."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei quem fez a revolução de 25 de Abril (o MFA).",
+   "Sei dizer duas mudanças trazidas pela democracia.",
+   "Sei explicar o que foi a descolonização.",
+   "Sei o ano da entrada de Portugal na CEE (1986)."
+  ],
+  "commonErrors": [
+   "Pensar que a Constituição de 1976 foi aprovada a 25 de abril: foi aprovada a 2 de abril e entrou em vigor a 25 de abril de 1976.",
+   "Trocar as senhas: «E Depois do Adeus» mandou as tropas prepararem-se; «Grândola, Vila Morena» mandou avançar.",
+   "Confundir a assinatura do tratado com a CEE (1985) com a entrada efetiva de Portugal (1 de janeiro de 1986)."
+  ],
+  "sources": [
+   "dge-ae-hgp6",
+   "rtp-museu-25abril",
+   "dge-emc-bloco47",
+   "dge-gta33",
+   "dge-gta35",
+   "ar-crp",
+   "ec-pt-ue",
+   "pe-40anos",
+   "bdp-euro",
+   "wiki-25abril",
+   "wiki-grandola"
+  ]
+ },
+ {
+  "topic": "hgp-populacao",
+  "explanation": [
+   "Os Censos contam toda a população de 10 em 10 anos. Em 2021, viviam em Portugal cerca de 10,3 milhões de pessoas, menos 2,1% do que em 2011.",
+   "A população muda por duas razões: o saldo natural (nascimentos − óbitos) e o saldo migratório (imigrantes − emigrantes).",
+   "Portugal está a envelhecer: em 2021 havia 182 idosos por cada 100 jovens (em 2011 eram 128).",
+   "A população está distribuída de forma desigual: concentra-se no litoral e nas áreas metropolitanas de Lisboa e do Porto; o interior tem baixa densidade.",
+   "Nos anos 60, a elevada emigração fez diminuir a população; hoje, a imigração ajuda a compensar o saldo natural negativo. Esperança de vida à nascença é o número médio de anos que um recém-nascido pode esperar viver; mortalidade infantil é o número de bebés que morrem antes de fazer 1 ano por cada mil nascimentos; natalidade e mortalidade são os nascimentos e as mortes numa população. Uma área atrativa é a que ganha população, porque tem emprego e serviços; uma área repulsiva perde população."
+  ],
+  "examples": [
+   {
+    "title": "Calcular o saldo natural",
+    "steps": [
+     "Num ano, numa vila, nasceram 80 bebés e morreram 120 pessoas.",
+     "Saldo natural = 80 − 120 = −40.",
+     "É negativo: morreram mais pessoas do que as que nasceram."
+    ]
+   },
+   {
+    "title": "Ler um quadro de idades",
+    "steps": [
+     "Censos 2021: jovens (0–14 anos) 12,9%; idosos (65 ou mais) 23,4%.",
+     "Compara: há quase o dobro de idosos em relação a jovens.",
+     "Conclusão: a população portuguesa está envelhecida."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei distinguir imigrante (entra) de emigrante (sai).",
+   "Sei calcular o saldo natural e o saldo migratório.",
+   "Sei explicar o que é o envelhecimento da população.",
+   "Sei onde se concentra a população no mapa (litoral, Lisboa e Porto)."
+  ],
+  "commonErrors": [
+   "Trocar o saldo natural (nascimentos e óbitos) com o saldo migratório (entradas e saídas de pessoas).",
+   "Fazer «óbitos − nascimentos» em vez de «nascimentos − óbitos»."
+  ],
+  "sources": [
+   "ae-hgp-6",
+   "observador-censos2021",
+   "rtp-censos2021",
+   "eco-censos2021",
+   "eurostat-populacao",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "topic": "hgp-lugares",
+  "explanation": [
+   "As áreas urbanas (cidades) têm muitos habitantes, prédios e serviços; as áreas rurais (campo) têm casas mais espalhadas e mais agricultura.",
+   "O êxodo rural é a mudança das áreas rurais para as áreas urbanas, à procura de emprego e de serviços. Se as pessoas saem do país, é emigração, que é outra coisa.",
+   "Por isso, muitas áreas rurais do interior estão despovoadas e envelhecidas, enquanto o litoral concentra pessoas (litoralização).",
+   "Entre 2011 e 2021, só o Algarve e a Área Metropolitana de Lisboa ganharam população, considerando as NUTS II de 2013, usadas nos Censos 2021.",
+   "Cidade e campo dependem um do outro: o campo produz alimentos e a cidade oferece serviços e emprego."
+  ],
+  "examples": [
+   {
+    "title": "Comparar urbano e rural",
+    "steps": [
+     "Olha para o tipo de casas: prédios (urbano) ou casas espalhadas (rural).",
+     "Olha para as atividades: serviços e comércio (urbano) ou agricultura (rural).",
+     "Decide o tipo de área com base nas diferenças."
+    ]
+   },
+   {
+    "title": "Explicar o despovoamento de uma aldeia",
+    "steps": [
+     "Os jovens saem para a cidade à procura de emprego.",
+     "Podem nascer menos crianças e a escola pode ficar em risco de fechar.",
+     "A aldeia fica com menos habitantes e mais idosos."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei distinguir área urbana de área rural.",
+   "Sei explicar o êxodo rural e a litoralização.",
+   "Sei dar exemplos de problemas das cidades e do campo.",
+   "Sei localizar as áreas metropolitanas de Lisboa e do Porto no mapa."
+  ],
+  "commonErrors": [
+   "Confundir êxodo rural (das áreas rurais para as urbanas) com emigração (saída do país).",
+   "Pensar que só o campo tem problemas: as cidades também têm (trânsito, poluição, habitação cara)."
+  ],
+  "sources": [
+   "ae-hgp-6",
+   "wiki-exodo",
+   "dnoticias-distribuicao",
+   "eco-censos2021",
+   "rtp-censos2021"
+  ]
+ },
+ {
+  "topic": "hgp-atividades",
+  "explanation": [
+   "A população ativa inclui empregados e desempregados disponíveis e à procura de emprego. Estudantes e reformados que trabalham são empregados; os restantes podem ser desempregados, se disponíveis e à procura de emprego, ou inativos.",
+   "Setor primário: tira recursos da natureza (agricultura, criação de gado, floresta, pesca).",
+   "Setor secundário: transforma matérias-primas (indústria e construção). Setor terciário: presta serviços (comércio, saúde, educação, transportes, turismo).",
+   "Em 1960, o setor primário era o que tinha mais trabalhadores; hoje, mais de 7 em cada 10 trabalham no terciário.",
+   "A modernização da agricultura (máquinas) fez com que fossem precisos menos trabalhadores no campo."
+  ],
+  "examples": [
+   {
+    "title": "Do campo à mesa: os três setores",
+    "steps": [
+     "Um agricultor cultiva tomate (primário).",
+     "Uma fábrica transforma-o em polpa (secundário).",
+     "Uma loja vende a polpa (terciário)."
+    ]
+   },
+   {
+    "title": "Calcular a população ativa",
+    "steps": [
+     "Soma os empregados e os desempregados que procuram emprego: 600 + 50 = 650.",
+     "Conta estudantes e reformados se trabalham ou se estão desempregados, disponíveis e à procura de emprego; os restantes são inativos."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei classificar uma atividade no setor primário, secundário ou terciário.",
+   "Sei quem faz parte da população ativa e da inativa.",
+   "Sei comparar os setores em 1960 e hoje."
+  ],
+  "commonErrors": [
+   "Pensar que os desempregados não fazem parte da população ativa (fazem, se procurarem emprego).",
+   "Classificar uma atividade pelo lugar onde acontece em vez de pelo que se faz (a pesca é primário em qualquer região)."
+  ],
+  "sources": [
+   "ae-hgp-6",
+   "dge-gta18",
+   "gpp-emprego",
+   "cml-atlas-ativa",
+   "eco-desemprego"
+  ]
+ },
+ {
+  "topic": "hgp-lazer",
+  "explanation": [
+   "Lazer é aquilo que fazemos por gosto no tempo livre: desporto, leitura, passeios, ir à praia ou à serra.",
+   "Turista é um visitante em viagem temporária fora do ambiente habitual com pelo menos uma pernoita; sem pernoita, é excursionista.",
+   "O turismo traz emprego e dinheiro, mas quando há muitos visitantes ao mesmo tempo, sobretudo no verão e no litoral, aumenta a pressão sobre a água, o território e o lixo.",
+   "Para proteger a natureza existem áreas protegidas. O Parque Nacional da Peneda-Gerês, criado em 1971, foi a primeira e é o único parque nacional de Portugal.",
+   "Boas práticas: poupar água e energia, reduzir o plástico e o lixo, respeitar as regras das áreas protegidas e espalhar as viagens ao longo do ano. A Bandeira Azul é um símbolo de qualidade ambiental atribuído a praias, portos de recreio e marinas que cumprem critérios, como a qualidade da água. Um turismo sustentável traz benefícios às pessoas e à economia sem estragar o ambiente. Património cultural são os bens herdados que queremos proteger, como monumentos e tradições; em Portugal, a UNESCO classificou como Património Mundial, por exemplo, o Mosteiro dos Jerónimos e a Torre de Belém (1983) e o Centro Histórico do Porto (1996)."
+  ],
+  "examples": [
+   {
+    "title": "Turista ou visitante do dia?",
+    "steps": [
+     "Pergunta: a pessoa é visitante em viagem temporária fora do ambiente habitual?",
+     "Se nessa viagem houve pelo menos uma pernoita, é turista.",
+     "Se a visita não incluiu pernoita, é excursionista."
+    ]
+   },
+   {
+    "title": "Ligar causa e consequência: a seca no Algarve",
+    "steps": [
+     "Causa: chove pouco e há seca.",
+     "Algumas atividades de lazer, como o golfe, precisam de muita água para rega.",
+     "Consequência: em 2023 o Governo cortou parte da água para regar campos de golfe e jardins."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei distinguir lazer de turismo.",
+   "Sei dizer qual é o único parque nacional e em que região fica.",
+   "Sei dar dois exemplos de impactos do turismo no ambiente.",
+   "Sei dar duas boas práticas de turismo sustentável."
+  ],
+  "commonErrors": [
+   "Pensar que qualquer área protegida é um parque nacional: em Portugal só há um, o da Peneda-Gerês.",
+   "Basta dormir fora de casa para ser turista? Não: é preciso ser visitante em viagem temporária fora do ambiente habitual; sem pernoita, é excursionista."
+  ],
+  "sources": [
+   "dge-ae-6",
+   "untourism",
+   "desp-pnpg",
+   "tp-et27",
+   "gov-et27",
+   "dn-golfe"
+  ]
+ },
+ {
+  "topic": "hgp-mundo",
+  "explanation": [
+   "Há vários modos de transporte: rodoviário, ferroviário, marítimo, aéreo e fluvial. Cada um tem vantagens e desvantagens.",
+   "O navio leva enormes quantidades de carga (mais de 80% do volume do comércio mundial); o avião é rápido mas emite muito; o comboio é dos que emitem menos por passageiro.",
+   "As telecomunicações evoluíram do telégrafo elétrico (1855) ao telefone (1882), à televisão (1957) e à internet (1991), aproximando pessoas e empresas.",
+   "Portugal relaciona-se com o mundo através de organizações: NATO (membro fundador, 1949), ONU (1955), CEE/União Europeia (1986) e CPLP (1996).",
+   "Portugal também comercia com outros países (Espanha é o principal destino das exportações) e tem comunidades portuguesas espalhadas pelo mundo. Os maiores aeroportos do continente são os de Lisboa, Porto e Faro. O Dia de Portugal, a 10 de junho, é também o Dia de Camões e das Comunidades Portuguesas. Portugal entrou na zona euro em 1999 e as notas e moedas de euro circulam desde 2002."
+  ],
+  "examples": [
+   {
+    "title": "Escolher o transporte adequado",
+    "steps": [
+     "Muita carga para outro continente: navio, porque leva muito de uma só vez.",
+     "Pessoas com pressa numa viagem longa: avião, mas emite muitos gases.",
+     "Viagem entre cidades a poluir menos: comboio."
+    ]
+   },
+   {
+    "title": "Não confundir as datas das organizações",
+    "steps": [
+     "1949 – NATO (Portugal é membro fundador).",
+     "1955 – Portugal entra na ONU.",
+     "1986 – Portugal entra na CEE, hoje União Europeia.",
+     "1996 – É criada a CPLP, em Lisboa."
+    ]
+   }
+  ],
+  "checklist": [
+   "Sei comparar vantagens e desvantagens de pelo menos três modos de transporte.",
+   "Sei ordenar o telégrafo, o telefone, a televisão e a internet.",
+   "Sei associar NATO, ONU, União Europeia e CPLP às respetivas datas.",
+   "Sei explicar o que são as comunidades portuguesas."
+  ],
+  "commonErrors": [
+   "Confundir 1999 (entrada na zona euro) com 2002 (notas e moedas de euro em circulação).",
+   "Pensar que Portugal fundou a ONU: entrou em 1955; foi fundador da NATO, em 1949."
+  ],
+  "sources": [
+   "dge-ae-6",
+   "unctad",
+   "eea-rail",
+   "fpc-telegrafo",
+   "fccn-internet",
+   "nato-treaty",
+   "unric",
+   "eu-pt",
+   "cplp-hist",
+   "aicep-exp",
+   "marinha-10jun"
+  ]
+ }
+]

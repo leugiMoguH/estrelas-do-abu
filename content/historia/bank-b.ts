@@ -759,7 +759,7 @@ export const bank: HgpBank = {
         'A 1 de fevereiro de 1908, o rei D. Carlos e o príncipe herdeiro foram assassinados em Lisboa (o regicídio), o que enfraqueceu ainda mais a monarquia.',
         'Entre 3 e 5 de outubro de 1910, uma revolução derrubou a monarquia. A República foi proclamada a 5 de outubro, da varanda da Câmara Municipal de Lisboa, e o rei D. Manuel II partiu para o exílio.',
         'Um Governo Provisório, chefiado por Teófilo Braga, fez grandes mudanças: Lei da Separação do Estado e das Igrejas (1911), nova moeda (o escudo, 1911), novos símbolos (bandeira verde e vermelha) e direito à greve. A Constituição de 1911 criou um Presidente da República eleito pelo Congresso.',
-        'A Primeira República teve muitas mudanças de governo e terminou com o golpe militar de 28 de maio de 1926.',
+        'A Primeira República teve muitas mudanças de governo e terminou com o golpe militar de 28 de maio de 1926. A Lei da Separação do Estado e das Igrejas foi preparada pelo ministro da Justiça, Afonso Costa. Em 1911 foram ainda criadas as Universidades de Lisboa e do Porto, para combater o atraso na educação, e reconheceu-se o direito à greve.',
       ],
       examples: [
         { title: 'Como distinguir monarquia de república', steps: [
@@ -793,7 +793,7 @@ export const bank: HgpBank = {
         'António de Oliveira Salazar teve uma breve passagem pelo Ministério das Finanças em 1926 e regressou ao cargo em 1928 e foi ganhando poder. A Constituição de 1933 deu início ao Estado Novo, que Salazar chefiou durante muitos anos; depois, Marcelo Caetano sucedeu-lhe.',
         'No Estado Novo não havia liberdade individual: existia censura, uma polícia política (sucessivamente PVDE, PIDE e DGS) que perseguia e prendia opositores, um partido único (a União Nacional) e o movimento sindical era reprimido. Mesmo assim, houve pessoas que resistiram ao regime.',
         'O regime usava a escola e a propaganda para espalhar as suas ideias. A Mocidade Portuguesa procurava ensinar aos jovens a obediência ao regime; um lema conhecido era «Deus, Pátria, Família».',
-        'Em 1961 começou a Guerra Colonial, em Angola, que se estendeu à Guiné e a Moçambique: o regime queria manter o império colonial. A guerra durou cerca de 13 anos e o seu desgaste levou militares a preparar o 25 de Abril de 1974.',
+        'Em 1961 começou a Guerra Colonial, em Angola, que se estendeu à Guiné e a Moçambique: o regime queria manter o império colonial. A guerra durou cerca de 13 anos e o seu desgaste levou militares a preparar o 25 de Abril de 1974. Houve oposição ao regime, apesar da repressão: por exemplo, em 1958 o general Humberto Delgado candidatou-se à Presidência da República contra o candidato do regime; foi mais tarde assassinado pela PIDE, em 1965.',
       ],
       examples: [
         { title: 'Reconhecer uma ditadura', steps: [
@@ -829,7 +829,7 @@ export const bank: HgpBank = {
         'O capitão Salgueiro Maia cercou o quartel do Carmo, em Lisboa. Marcelo Caetano rendeu-se e o poder passou para a Junta de Salvação Nacional, presidida pelo general Spínola. Os cravos tornaram-se o símbolo da revolução.',
         'Começou a construção da democracia: acabaram a censura e a polícia política. A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal.',
         'A Constituição foi aprovada a 2 de abril de 1976 e entrou em vigor a 25 de abril de 1976. A Guiné-Bissau proclamou a independência em 1973 e Portugal reconheceu-a em setembro de 1974; Angola, Moçambique, Cabo Verde e São Tomé e Príncipe tornaram-se independentes em 1975.',
-        'Portugal assinou o tratado de adesão à CEE em 1985, no Mosteiro dos Jerónimos, e tornou-se membro a 1 de janeiro de 1986. As notas e moedas de euro começaram a circular a 1 de janeiro de 2002.',
+        'Portugal assinou o tratado de adesão à CEE em 1985, no Mosteiro dos Jerónimos, e tornou-se membro a 1 de janeiro de 1986. As notas e moedas de euro começaram a circular a 1 de janeiro de 2002. Na democracia, os principais órgãos do poder são o Presidente da República, a Assembleia da República, o Governo e os tribunais; a nível local, o concelho é governado pela Câmara Municipal e a freguesia pela Junta de Freguesia.',
       ],
       examples: [
         { title: 'Ditadura e democracia lado a lado', steps: [

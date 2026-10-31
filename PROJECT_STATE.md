@@ -3,7 +3,7 @@ Plano: v1
 Atualizado: 2026-10-31
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: avaliação da criança de HGP em /preview/e/ (anterior em /preview/e-v1/). Lacunas HGP e pendências visuais (camisolas, olhos/cabelo) só depois. Ver .claude/tmp/handoff.md.
+Próximo passo: avaliação da criança de HGP (preview/e); depois confirmar descritores AE em falta, rever itens «a-confirmar» e revisão docente/independente (Codex). Ver docs/audit/relatorio-qualidade.md.
 Decisão necessária:
 
 ## Sucesso

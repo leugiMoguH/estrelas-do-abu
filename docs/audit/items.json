@@ -1,0 +1,4512 @@
+[
+ {
+  "id": "hgp-seculo-xviii-01",
+  "topic": "hgp-seculo-xviii",
+  "sub": "reformas-pombalinas",
+  "skill": "personagem",
+  "difficulty": 1,
+  "prompt": "Quem dirigiu a reconstrução de Lisboa depois do terramoto de 1755?",
+  "kind": "mcq",
+  "options": [
+   "O Marquês de Pombal, ministro de D. José I",
+   "D. João V, o rei do ouro do Brasil",
+   "Fontes Pereira de Melo, ministro das obras",
+   "Junot, general do exército francês"
+  ],
+  "correct": "O Marquês de Pombal, ministro de D. José I",
+  "wrong": {
+   "D. João V, o rei do ouro do Brasil": "D. João V morreu em 1750, cinco anos antes do terramoto.",
+   "Fontes Pereira de Melo, ministro das obras": "Fontes Pereira de Melo foi ministro no século XIX, quase cem anos depois.",
+   "Junot, general do exército francês": "Junot comandou a primeira invasão francesa, em 1807, e não reconstruiu Lisboa."
+  },
+  "hints": [
+   "Pensa em quem governava Portugal no reinado de D. José I.",
+   "A parte de Lisboa reconstruída ficou conhecida pelo título deste ministro."
+  ],
+  "explanation": "Sebastião José de Carvalho e Melo, mais tarde Marquês de Pombal, era ministro de D. José I e liderou a reconstrução de Lisboa após o terramoto de 1755. Por isso, a Baixa reconstruída chama-se Baixa Pombalina.",
+  "sources": [
+   "rtp-pombal",
+   "wiki-pombal",
+   "wiki-sismo-1755"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-02",
+  "topic": "hgp-seculo-xviii",
+  "sub": "economia",
+  "skill": "facto",
+  "difficulty": 1,
+  "prompt": "No reinado de D. João V, que riqueza chegava do Brasil a Portugal em grande quantidade?",
+  "kind": "mcq",
+  "options": [
+   "Ouro",
+   "Pimenta e canela",
+   "Carvão",
+   "Seda"
+  ],
+  "correct": "Ouro",
+  "wrong": {
+   "Pimenta e canela": "As especiarias vinham do Oriente; do Brasil, nesta época, chegava sobretudo ouro.",
+   "Carvão": "O carvão para máquinas a vapor só se tornou importante no século XIX.",
+   "Seda": "A seda não era a grande riqueza vinda do Brasil; essa riqueza era o ouro."
+  },
+  "hints": [
+   "É um metal precioso.",
+   "É amarelo e brilhante e servia para fazer moedas e decorar igrejas."
+  ],
+  "explanation": "Durante o reinado de D. João V chegou a Portugal muito ouro do Brasil. Essa riqueza ajudou o rei a pagar grandes obras.",
+  "sources": [
+   "wiki-joao-v",
+   "dge-ae-plan",
+   "rtp-pombal"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-03",
+  "topic": "hgp-seculo-xviii",
+  "sub": "sociedade-cultura",
+  "skill": "conceito",
+  "difficulty": 3,
+  "prompt": "Na sociedade de ordens do século XVIII, que grupos tinham privilégios, como não pagar certos impostos?",
+  "kind": "mcq",
+  "options": [
+   "O clero e a nobreza",
+   "O povo e os camponeses",
+   "Os operários das fábricas",
+   "Os comerciantes ricos"
+  ],
+  "correct": "O clero e a nobreza",
+  "wrong": {
+   "O povo e os camponeses": "O povo era a maioria, trabalhava e pagava impostos, sem os privilégios do clero e da nobreza.",
+   "Os operários das fábricas": "Os operários só se tornaram um grupo importante com a industrialização do século XIX.",
+   "Os comerciantes ricos": "Os comerciantes, mesmo ricos, pertenciam ao povo (terceiro estado), que não tinha esses privilégios."
+  },
+  "hints": [
+   "A sociedade dividia-se em três ordens: clero, nobreza e povo.",
+   "Os privilegiados eram as duas ordens que rezavam e que combatiam."
+  ],
+  "explanation": "Na sociedade de ordens havia clero, nobreza e povo. O clero e a nobreza tinham privilégios, como a isenção de certos impostos; o povo, a maioria da população, sustentava a sociedade com o seu trabalho.",
+  "sources": [
+   "wiki-sociedade-ordens",
+   "dge-ae-plan",
+   "rtp-pombal"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-04",
+  "topic": "hgp-seculo-xviii",
+  "sub": "reformas-pombalinas",
+  "skill": "causa",
+  "difficulty": 2,
+  "prompt": "Porque é que, na reconstrução da Baixa de Lisboa, se fizeram ruas largas e prédios com uma estrutura de madeira chamada «gaiola»?",
+  "kind": "mcq",
+  "options": [
+   "Para a cidade ficar organizada e resistir melhor a sismos",
+   "Para imitar as ruas estreitas da Lisboa antiga",
+   "Porque já não havia pedra para construir",
+   "Para a cidade ficar pronta para o comboio"
+  ],
+  "correct": "Para a cidade ficar organizada e resistir melhor a sismos",
+  "wrong": {
+   "Para imitar as ruas estreitas da Lisboa antiga": "Foi o contrário: as novas ruas eram largas e retas, diferentes das antigas.",
+   "Porque já não havia pedra para construir": "A «gaiola» foi pensada para resistir aos sismos, não por falta de pedra.",
+   "Para a cidade ficar pronta para o comboio": "O primeiro comboio só circulou em Portugal em 1856, cerca de cem anos depois."
+  },
+  "hints": [
+   "Pensa no que tinha acabado de acontecer a Lisboa.",
+   "A «gaiola» de madeira ajudava os prédios a aguentar tremores de terra."
+  ],
+  "explanation": "Depois do terramoto, a Baixa foi reconstruída com um plano: ruas largas e retas e prédios com a «gaiola pombalina», uma estrutura de madeira pensada para resistir a sismos.",
+  "sources": [
+   "rtp-pombal",
+   "wiki-sismo-1755"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-05",
+  "topic": "hgp-seculo-xviii",
+  "sub": "reformas-pombalinas",
+  "skill": "vf",
+  "difficulty": 2,
+  "prompt": "Lê a afirmação: «O terramoto de 1755 levou à reconstrução da Baixa de Lisboa segundo um plano novo.» Escolhe a opção certa.",
+  "kind": "mcq",
+  "options": [
+   "Verdadeira, porque a Baixa destruída foi refeita com ruas novas e planeadas",
+   "Verdadeira, porque o sismo só atingiu a Baixa e o resto ficou intacto",
+   "Falsa, porque a Baixa foi reconstruída exatamente como era antes",
+   "Falsa, porque, depois do sismo, Lisboa foi abandonada"
+  ],
+  "correct": "Verdadeira, porque a Baixa destruída foi refeita com ruas novas e planeadas",
+  "wrong": {
+   "Verdadeira, porque o sismo só atingiu a Baixa e o resto ficou intacto": "A justificação está errada: o sismo, o maremoto e os incêndios causaram estragos em muitos outros lugares.",
+   "Falsa, porque a Baixa foi reconstruída exatamente como era antes": "A Baixa ganhou um plano novo, com ruas largas e retas, muito diferente do bairro antigo.",
+   "Falsa, porque, depois do sismo, Lisboa foi abandonada": "Lisboa não foi abandonada: foi reconstruída e continuou a ser a capital."
+  },
+  "hints": [
+   "Primeiro decide se a afirmação é verdadeira; depois escolhe a justificação certa.",
+   "Lembra-te do nome que a Baixa ganhou depois da reconstrução."
+  ],
+  "explanation": "A afirmação é verdadeira: depois do terramoto, do maremoto e dos incêndios de 1755, a Baixa foi reconstruída com um plano novo, e por isso se chama Baixa Pombalina. Numa pergunta «Verdadeira/Falsa, porque…», a justificação também tem de estar certa.",
+  "sources": [
+   "rtp-pombal",
+   "wiki-sismo-1755",
+   "rtp-1755"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-06",
+  "topic": "hgp-seculo-xviii",
+  "sub": "reformas-pombalinas",
+  "skill": "fonte",
+  "difficulty": 1,
+  "stimulus": "«Enterrar os mortos e cuidar dos vivos.» — frase que a tradição associa à reação ao terramoto de 1755 e ao futuro Marquês de Pombal (não é certo quem a disse).",
+  "prompt": "Segundo esta frase, quais eram as prioridades logo a seguir ao terramoto?",
+  "kind": "mcq",
+  "options": [
+   "Tratar das vítimas e ajudar quem sobreviveu",
+   "Construir um palácio novo para o rei",
+   "Preparar a guerra contra os franceses",
+   "Abandonar Lisboa e mudar a capital"
+  ],
+  "correct": "Tratar das vítimas e ajudar quem sobreviveu",
+  "wrong": {
+   "Construir um palácio novo para o rei": "A frase não fala de palácios; fala de quem morreu e de quem sobreviveu.",
+   "Preparar a guerra contra os franceses": "A frase não fala de guerra; as invasões francesas só começaram em 1807.",
+   "Abandonar Lisboa e mudar a capital": "A frase fala em cuidar das pessoas, não em abandonar a cidade."
+  },
+  "hints": [
+   "Lê a frase devagar e procura as duas ações que ela pede.",
+   "A frase fala de dois grupos de pessoas: os que morreram e os que ficaram vivos."
+  ],
+  "explanation": "A frase indica duas urgências: sepultar os mortos e socorrer os vivos. Ao interpretar uma fonte, responde com base no que o texto diz e repara na sua origem: esta frase é tradicional e não se sabe ao certo quem a disse.",
+  "sources": [
+   "rtp-1755",
+   "wiki-pombal"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-07",
+  "topic": "hgp-seculo-xviii",
+  "sub": "d-joao-v",
+  "skill": "opiniao",
+  "difficulty": 1,
+  "prompt": "Sobre D. João V e Mafra, qual destas frases é uma OPINIÃO, e não um facto?",
+  "kind": "mcq",
+  "options": [
+   "O Palácio de Mafra é o edifício mais bonito de Portugal.",
+   "O Palácio de Mafra foi mandado construir por D. João V.",
+   "D. João V governou como rei absoluto.",
+   "O Palácio de Mafra começou a ser construído no século XVIII."
+  ],
+  "correct": "O Palácio de Mafra é o edifício mais bonito de Portugal.",
+  "wrong": {
+   "O Palácio de Mafra foi mandado construir por D. João V.": "É um facto: está registado em documentos e pode ser confirmado.",
+   "D. João V governou como rei absoluto.": "É um facto: no seu reinado, o rei concentrava todos os poderes.",
+   "O Palácio de Mafra começou a ser construído no século XVIII.": "É um facto: a construção começou no início do século XVIII, no reinado de D. João V."
+  },
+  "hints": [
+   "Um facto pode ser confirmado em documentos; uma opinião depende do gosto de cada um.",
+   "Procura a frase com uma palavra de gosto pessoal, como «mais bonito»."
+  ],
+  "explanation": "«Mais bonito» é um gosto pessoal: outra pessoa pode pensar de forma diferente. As outras frases são factos que se confirmam em documentos e fontes históricas.",
+  "sources": [
+   "museus-mafra",
+   "wiki-joao-v",
+   "dge-ae-plan"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-08",
+  "topic": "hgp-seculo-xviii",
+  "sub": "cronologia",
+  "skill": "cronologia",
+  "difficulty": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente, estes acontecimentos dos reinados de D. João V e D. José I.",
+  "kind": "order",
+  "items": [
+   "Um terramoto destrói grande parte de Lisboa",
+   "Morre D. José I e termina o seu reinado",
+   "D. João V manda construir o Palácio-Convento de Mafra"
+  ],
+  "correct": [
+   "D. João V manda construir o Palácio-Convento de Mafra",
+   "Um terramoto destrói grande parte de Lisboa",
+   "Morre D. José I e termina o seu reinado"
+  ],
+  "hints": [
+   "D. João V reinou antes de D. José I.",
+   "O terramoto aconteceu durante o reinado de D. José I, que morreu em 1777."
+  ],
+  "explanation": "Mafra começou a ser construído no início do século XVIII, no reinado de D. João V; o terramoto foi em 1755, já no reinado de D. José I; D. José I morreu em 1777.",
+  "sources": [
+   "museus-mafra",
+   "wiki-joao-v",
+   "wiki-sismo-1755",
+   "rtp-djose"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-09",
+  "topic": "hgp-seculo-xviii",
+  "sub": "cronologia",
+  "skill": "cronologia",
+  "difficulty": 3,
+  "prompt": "Ordena, do mais antigo para o mais recente, estes acontecimentos do século XVIII.",
+  "kind": "order",
+  "items": [
+   "Os Jesuítas são expulsos de Portugal",
+   "Morre D. José I",
+   "Terramoto de Lisboa",
+   "Morre D. João V e começa o reinado de D. José I"
+  ],
+  "correct": [
+   "Morre D. João V e começa o reinado de D. José I",
+   "Terramoto de Lisboa",
+   "Os Jesuítas são expulsos de Portugal",
+   "Morre D. José I"
+  ],
+  "hints": [
+   "Escreve o ano que conheces ao lado de cada acontecimento.",
+   "Os anos são 1750, 1755, 1759 e 1777."
+  ],
+  "explanation": "D. José I começou a reinar em 1750; o terramoto foi em 1755; os Jesuítas foram expulsos em 1759; D. José I morreu em 1777.",
+  "sources": [
+   "wiki-pombal",
+   "wiki-joao-v",
+   "rtp-djose",
+   "rtp-pombal",
+   "wiki-sismo-1755"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-10",
+  "topic": "hgp-seculo-xviii",
+  "sub": "reformas-pombalinas",
+  "skill": "cronologia",
+  "difficulty": 1,
+  "prompt": "Em que ano aconteceu o grande terramoto que destruiu grande parte de Lisboa, a 1 de novembro?",
+  "kind": "numeric",
+  "correct": 1755,
+  "wrongHints": {
+   "1750": "Em 1750 começou o reinado de D. José I; o terramoto foi cinco anos depois.",
+   "1759": "1759 é o ano da expulsão dos Jesuítas, quatro anos depois do terramoto."
+  },
+  "hints": [
+   "Foi a meio do século XVIII.",
+   "O ano começa por 17 e acaba em 5."
+  ],
+  "explanation": "O terramoto de Lisboa aconteceu a 1 de novembro de 1755 e foi seguido de um maremoto e de incêndios.",
+  "sources": [
+   "wiki-sismo-1755",
+   "rtp-1755",
+   "rtp-pombal"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-11",
+  "topic": "hgp-seculo-xviii",
+  "sub": "reformas-pombalinas",
+  "skill": "cronologia",
+  "difficulty": 3,
+  "prompt": "O governo de D. José I, com o Marquês de Pombal, expulsou os Jesuítas de Portugal. Em que ano?",
+  "kind": "numeric",
+  "correct": 1759,
+  "wrongHints": {
+   "1755": "1755 é o ano do terramoto; a expulsão dos Jesuítas foi quatro anos depois.",
+   "1777": "Em 1777 morreu D. José I; a expulsão foi muito antes."
+  },
+  "hints": [
+   "Foi poucos anos depois do terramoto de 1755.",
+   "Está entre 1755 e 1760."
+  ],
+  "explanation": "Os Jesuítas foram expulsos de Portugal em 1759. Esta medida levou a uma reforma do ensino.",
+  "sources": [
+   "wiki-pombal",
+   "rtp-pombal",
+   "rtp-djose"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-12",
+  "topic": "hgp-seculo-xviii",
+  "sub": "reformas-pombalinas",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "prompt": "Na reconstrução pombalina da Baixa de Lisboa adotaram-se ruas mais ___ e estruturas de madeira chamadas ___ pombalinas.",
+  "kind": "cloze",
+  "correct": [
+   [
+    "largas",
+    "direitas"
+   ],
+   [
+    "gaiolas"
+   ]
+  ],
+  "hints": [
+   "A primeira palavra é o contrário de «estreitas».",
+   "A segunda palavra é o nome de uma casa para pássaros."
+  ],
+  "explanation": "A Baixa Pombalina passou a ter ruas largas e retas, e os prédios a «gaiola pombalina», uma estrutura de madeira pensada para resistir a sismos.",
+  "sources": [
+   "rtp-pombal",
+   "wiki-sismo-1755"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-01",
+  "topic": "hgp-liberalismo",
+  "sub": "independencia-brasil",
+  "skill": "personagem",
+  "difficulty": 1,
+  "prompt": "Quem proclamou a independência do Brasil, a 7 de setembro de 1822?",
+  "kind": "mcq",
+  "options": [
+   "D. Pedro, filho de D. João VI",
+   "D. Miguel, irmão de D. Pedro",
+   "Junot, general francês",
+   "O Marquês de Pombal"
+  ],
+  "correct": "D. Pedro, filho de D. João VI",
+  "wrong": {
+   "D. Miguel, irmão de D. Pedro": "D. Miguel ficou ligado à defesa do absolutismo em Portugal, não à independência do Brasil.",
+   "Junot, general francês": "Junot comandou a primeira invasão francesa de Portugal, em 1807.",
+   "O Marquês de Pombal": "O Marquês de Pombal governou no século XVIII, no reinado de D. José I."
+  },
+  "hints": [
+   "Era o príncipe que tinha ficado no Brasil como regente.",
+   "Antes, tinha anunciado que ficava no Brasil, no chamado «Dia do Fico»."
+  ],
+  "explanation": "D. Pedro, filho de D. João VI, ficou no Brasil como regente e proclamou a independência a 7 de setembro de 1822, junto ao riacho Ipiranga, em São Paulo.",
+  "sources": [
+   "alsp-independencia",
+   "wiki-independencia",
+   "parlamento-cortes-1821"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-02",
+  "topic": "hgp-liberalismo",
+  "sub": "invasoes-francesas",
+  "skill": "facto",
+  "difficulty": 2,
+  "prompt": "Quantas invasões francesas sofreu Portugal, a partir de 1807?",
+  "kind": "mcq",
+  "options": [
+   "Três",
+   "Duas",
+   "Quatro",
+   "Uma"
+  ],
+  "correct": "Três",
+  "wrong": {
+   "Duas": "Houve mais: a de Junot (1807), a de Soult (1809) e a de Massena (1810).",
+   "Quatro": "Foram três, comandadas por Junot, Soult e Massena.",
+   "Uma": "Os franceses invadiram Portugal mais do que uma vez."
+  },
+  "hints": [
+   "Cada invasão teve um general francês diferente.",
+   "Os generais foram Junot, Soult e Massena."
+  ],
+  "explanation": "Portugal sofreu três invasões francesas: Junot (1807), Soult (1809) e Massena (1810). Massena foi travado nas Linhas de Torres Vedras.",
+  "sources": [
+   "rtp-invasoes",
+   "wiki-invasoes",
+   "dge-ae-plan",
+   "dge-bloco13",
+   "rhlt-linhas"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-03",
+  "topic": "hgp-liberalismo",
+  "sub": "guerra-civil",
+  "skill": "facto",
+  "difficulty": 3,
+  "prompt": "Na Guerra Civil de 1832–1834, quem lutou contra quem?",
+  "kind": "mcq",
+  "options": [
+   "Liberais (com D. Pedro) contra absolutistas (com D. Miguel)",
+   "Portugueses contra as tropas francesas de Napoleão",
+   "Portugueses contra brasileiros, pela posse do Brasil",
+   "Republicanos contra os apoiantes de D. Maria II"
+  ],
+  "correct": "Liberais (com D. Pedro) contra absolutistas (com D. Miguel)",
+  "wrong": {
+   "Portugueses contra as tropas francesas de Napoleão": "Isso aconteceu nas invasões francesas, que começaram em 1807.",
+   "Portugueses contra brasileiros, pela posse do Brasil": "A Guerra Civil foi dentro de Portugal, entre liberais e absolutistas.",
+   "Republicanos contra os apoiantes de D. Maria II": "Não houve lado republicano: os liberais apoiavam D. Pedro e a filha, D. Maria II, e os absolutistas apoiavam D. Miguel."
+  },
+  "hints": [
+   "Foi uma guerra entre portugueses.",
+   "Um lado queria uma Constituição; o outro queria um rei com todos os poderes."
+  ],
+  "explanation": "A Guerra Civil opôs os liberais, que apoiavam D. Pedro e a filha D. Maria II, aos absolutistas, que apoiavam D. Miguel. Terminou em 1834 com a vitória liberal.",
+  "sources": [
+   "rtp-guerra-civil",
+   "wiki-guerra-civil",
+   "dge-ae-plan"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-04",
+  "topic": "hgp-liberalismo",
+  "sub": "revolucao-1820",
+  "skill": "causa",
+  "difficulty": 2,
+  "prompt": "Qual destas foi uma causa da Revolução Liberal de 1820?",
+  "kind": "mcq",
+  "options": [
+   "A ausência do rei, que continuava no Brasil",
+   "A derrota de D. Miguel em Évora-Monte",
+   "A construção dos primeiros caminhos de ferro",
+   "A destruição de Lisboa pelo terramoto"
+  ],
+  "correct": "A ausência do rei, que continuava no Brasil",
+  "wrong": {
+   "A derrota de D. Miguel em Évora-Monte": "A Convenção de Évora-Monte foi em 1834, catorze anos depois da revolução.",
+   "A construção dos primeiros caminhos de ferro": "O primeiro comboio só circulou em Portugal em 1856.",
+   "A destruição de Lisboa pelo terramoto": "O terramoto foi em 1755, muito antes; não foi uma causa da revolução de 1820."
+  },
+  "hints": [
+   "Pensa onde estava o rei desde as invasões francesas.",
+   "Uma causa tem de acontecer antes do acontecimento que provoca."
+  ],
+  "explanation": "Em 1820 havia descontentamento com a ausência do rei e da Corte no Brasil, com o domínio inglês e com a crise económica. Por isso, os revoltosos do Porto pediram o regresso do rei e uma Constituição.",
+  "sources": [
+   "rtp-invasoes",
+   "wiki-rev-1820",
+   "parlamento-cortes-1821",
+   "dge-ae-plan"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-05",
+  "topic": "hgp-liberalismo",
+  "sub": "invasoes-francesas",
+  "skill": "vf",
+  "difficulty": 3,
+  "prompt": "Lê a afirmação: «As invasões francesas levaram a família real a partir para o Brasil.» Escolhe a opção certa.",
+  "kind": "mcq",
+  "options": [
+   "Verdadeira, porque a Corte partiu quando Junot invadiu Portugal",
+   "Verdadeira, porque os liberais expulsaram o rei em 1820",
+   "Falsa, porque a Corte só partiu depois da Guerra Civil",
+   "Falsa, porque a Corte ficou em Lisboa a combater"
+  ],
+  "correct": "Verdadeira, porque a Corte partiu quando Junot invadiu Portugal",
+  "wrong": {
+   "Verdadeira, porque os liberais expulsaram o rei em 1820": "A justificação está errada: em 1820 os liberais pediam o regresso do rei, que voltou em 1821.",
+   "Falsa, porque a Corte só partiu depois da Guerra Civil": "A Corte partiu em 1807, muito antes da Guerra Civil (1832–1834).",
+   "Falsa, porque a Corte ficou em Lisboa a combater": "A Corte não ficou: partiu para o Brasil com escolta inglesa."
+  },
+  "hints": [
+   "Primeiro decide se a afirmação é verdadeira; depois verifica a justificação.",
+   "Pensa no que fez a Corte quando o primeiro general francês entrou em Portugal."
+  ],
+  "explanation": "A afirmação é verdadeira: em 1807, perante a primeira invasão francesa, comandada por Junot, a Corte partiu para o Brasil com escolta inglesa. A justificação certa refere a data e a causa corretas.",
+  "sources": [
+   "rtp-invasoes",
+   "wiki-invasoes",
+   "parlamento-cortes-1821"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-06",
+  "topic": "hgp-liberalismo",
+  "sub": "revolucao-1820",
+  "skill": "fonte",
+  "difficulty": 3,
+  "stimulus": "«A soberania reside essencialmente na Nação, mas só pode ser exercida pelos seus representantes legalmente eleitos.» — Constituição de 1822, artigo 26.º (linguagem atualizada).",
+  "prompt": "Segundo este artigo, quem pode exercer a soberania em nome da Nação?",
+  "kind": "mcq",
+  "options": [
+   "Os representantes eleitos pelos cidadãos, reunidos nas Cortes",
+   "O rei, porque herdou o trono",
+   "Qualquer pessoa que tenha riqueza ou um título de nobreza",
+   "Os governantes estrangeiros que apoiaram a revolução"
+  ],
+  "correct": "Os representantes eleitos pelos cidadãos, reunidos nas Cortes",
+  "wrong": {
+   "O rei, porque herdou o trono": "O artigo diz que a soberania só se exerce por representantes eleitos; não fala de poder herdado.",
+   "Qualquer pessoa que tenha riqueza ou um título de nobreza": "O artigo não dá poder a quem é rico ou nobre; fala de representantes legalmente eleitos.",
+   "Os governantes estrangeiros que apoiaram a revolução": "O artigo não fala de estrangeiros: a soberania pertence à Nação portuguesa."
+  },
+  "hints": [
+   "Procura no excerto a palavra «eleitos».",
+   "A soberania reside na Nação, mas é exercida por outros: os representantes."
+  ],
+  "explanation": "A Constituição de 1822 rompeu com o absolutismo: a soberania pertence à Nação e só pode ser exercida por representantes legalmente eleitos, reunidos nas Cortes. Já não bastava herdar o trono para mandar sem limites.",
+  "sources": [
+   "const1822-art26",
+   "parlamento-cortes-1821",
+   "dge-10b29"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-07",
+  "topic": "hgp-liberalismo",
+  "sub": "revolucao-1820",
+  "skill": "opiniao",
+  "difficulty": 1,
+  "prompt": "Sobre a Constituição de 1822, qual destas frases é uma OPINIÃO, e não um facto?",
+  "kind": "mcq",
+  "options": [
+   "A Constituição de 1822 foi a melhor lei que Portugal já teve.",
+   "A Constituição de 1822 dizia que a soberania reside na Nação.",
+   "A Constituição de 1822 separava os três poderes do Estado.",
+   "D. João VI jurou a Constituição de 1822."
+  ],
+  "correct": "A Constituição de 1822 foi a melhor lei que Portugal já teve.",
+  "wrong": {
+   "A Constituição de 1822 dizia que a soberania reside na Nação.": "É um facto: está escrito no texto da Constituição.",
+   "A Constituição de 1822 separava os três poderes do Estado.": "É um facto: pode confirmar-se no próprio texto da Constituição.",
+   "D. João VI jurou a Constituição de 1822.": "É um facto registado: o rei jurou-a a 1 de outubro de 1822."
+  },
+  "hints": [
+   "Um facto confirma-se em documentos; uma opinião é um juízo pessoal.",
+   "Procura a frase com uma palavra de avaliação, como «melhor»."
+  ],
+  "explanation": "«A melhor lei» é um juízo pessoal, com que outras pessoas podem não concordar. As restantes frases descrevem o que a Constituição dizia ou o que aconteceu, e confirmam-se em fontes.",
+  "sources": [
+   "parlamento-cortes-1821",
+   "dge-10b29",
+   "wiki-rev-1820"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-08",
+  "topic": "hgp-liberalismo",
+  "sub": "revolucao-1820",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "prompt": "Completa: no absolutismo, o rei concentrava todos os poderes. Com a Constituição de 1822, o poder de fazer as leis — o poder ___ — passou para as Cortes, e a soberania passou a residir na ___.",
+  "kind": "cloze",
+  "correct": [
+   [
+    "legislativo"
+   ],
+   [
+    "Nação",
+    "nação",
+    "Nacao",
+    "nacao"
+   ]
+  ],
+  "hints": [
+   "Os três poderes são o legislativo, o executivo e o judicial: qual deles faz as leis?",
+   "A segunda palavra designa o conjunto dos cidadãos de um país e começa por «N»."
+  ],
+  "explanation": "A Constituição de 1822 rompeu com o absolutismo: o poder legislativo passou para as Cortes, o executivo ficou com o rei e os ministros, o judicial com os tribunais, e a soberania passou a residir na Nação.",
+  "sources": [
+   "parlamento-cortes-1821",
+   "dge-10b29"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-09",
+  "topic": "hgp-liberalismo",
+  "sub": "cronologia",
+  "skill": "cronologia",
+  "difficulty": 1,
+  "prompt": "Ordena, do mais antigo para o mais recente, estes acontecimentos entre as invasões francesas e o fim da Guerra Civil.",
+  "kind": "order",
+  "items": [
+   "Independência do Brasil",
+   "Convenção de Évora-Monte",
+   "Primeira invasão francesa, comandada por Junot",
+   "Revolução Liberal no Porto"
+  ],
+  "correct": [
+   "Primeira invasão francesa, comandada por Junot",
+   "Revolução Liberal no Porto",
+   "Independência do Brasil",
+   "Convenção de Évora-Monte"
+  ],
+  "hints": [
+   "Começa pelas invasões francesas, no início do século XIX.",
+   "Os anos são 1807, 1820, 1822 e 1834."
+  ],
+  "explanation": "Primeira invasão francesa: 1807. Revolução Liberal: 24 de agosto de 1820. Independência do Brasil: 7 de setembro de 1822. Convenção de Évora-Monte: maio de 1834.",
+  "sources": [
+   "rtp-invasoes",
+   "wiki-rev-1820",
+   "alsp-independencia",
+   "rtp-guerra-civil"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-10",
+  "topic": "hgp-liberalismo",
+  "sub": "cronologia",
+  "skill": "cronologia",
+  "difficulty": 3,
+  "prompt": "Ordena, do mais antigo para o mais recente, estes acontecimentos que envolvem a Corte, o Brasil e os liberais.",
+  "kind": "order",
+  "items": [
+   "D. João VI regressa a Portugal",
+   "Tropas liberais desembarcam no Mindelo",
+   "A Corte parte para o Brasil",
+   "D. Pedro proclama a independência do Brasil",
+   "Revolução Liberal no Porto"
+  ],
+  "correct": [
+   "A Corte parte para o Brasil",
+   "Revolução Liberal no Porto",
+   "D. João VI regressa a Portugal",
+   "D. Pedro proclama a independência do Brasil",
+   "Tropas liberais desembarcam no Mindelo"
+  ],
+  "hints": [
+   "O rei só regressou depois de os liberais o pedirem.",
+   "Os anos são 1807, 1820, 1821, 1822 e 1832."
+  ],
+  "explanation": "A Corte partiu em 1807; a revolução foi em 1820; D. João VI regressou em 1821; D. Pedro proclamou a independência do Brasil em 1822; os liberais desembarcaram no Mindelo em 1832, no início da Guerra Civil.",
+  "sources": [
+   "rtp-invasoes",
+   "wiki-rev-1820",
+   "parlamento-cortes-1821",
+   "alsp-independencia",
+   "rtp-guerra-civil",
+   "wiki-guerra-civil"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-11",
+  "topic": "hgp-liberalismo",
+  "sub": "revolucao-1820",
+  "skill": "cronologia",
+  "difficulty": 1,
+  "prompt": "Em que ano começou a Revolução Liberal, no Porto, a 24 de agosto?",
+  "kind": "numeric",
+  "correct": 1820,
+  "wrongHints": {
+   "1807": "1807 é o ano da primeira invasão francesa.",
+   "1822": "1822 é o ano da Constituição e da independência do Brasil, dois anos depois."
+  },
+  "hints": [
+   "Foi no primeiro quarto do século XIX.",
+   "É um ano que acaba em 0."
+  ],
+  "explanation": "A Revolução Liberal começou no Porto a 24 de agosto de 1820 e chegou a Lisboa no mês seguinte.",
+  "sources": [
+   "wiki-rev-1820",
+   "rtp-invasoes",
+   "parlamento-cortes-1821"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-12",
+  "topic": "hgp-liberalismo",
+  "sub": "guerra-civil",
+  "skill": "cronologia",
+  "difficulty": 2,
+  "prompt": "Em que ano a Convenção de Évora-Monte pôs fim à Guerra Civil entre liberais e absolutistas?",
+  "kind": "numeric",
+  "correct": 1834,
+  "wrongHints": {
+   "1820": "1820 é o ano da Revolução Liberal.",
+   "1832": "1832 foi o início da guerra, com o desembarque no Mindelo; a guerra acabou dois anos depois."
+  },
+  "hints": [
+   "A guerra durou cerca de dois anos.",
+   "A guerra começou em 1832."
+  ],
+  "explanation": "A Convenção de Évora-Monte, assinada em maio de 1834, terminou a Guerra Civil: D. Miguel rendeu-se e partiu para o exílio, e os liberais ficaram no poder.",
+  "sources": [
+   "rtp-guerra-civil",
+   "wiki-guerra-civil"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-01",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transportes-comunicacoes",
+  "skill": "personagem",
+  "difficulty": 1,
+  "prompt": "Que político, ministro das Obras Públicas, ficou ligado à construção de estradas e caminhos de ferro na segunda metade do século XIX?",
+  "kind": "mcq",
+  "options": [
+   "Fontes Pereira de Melo",
+   "O Marquês de Pombal",
+   "O rei D. Miguel",
+   "O marechal Saldanha"
+  ],
+  "correct": "Fontes Pereira de Melo",
+  "wrong": {
+   "O Marquês de Pombal": "Pombal governou no século XVIII, no reinado de D. José I.",
+   "O rei D. Miguel": "D. Miguel foi o rei absolutista derrotado na Guerra Civil, que acabou em 1834.",
+   "O marechal Saldanha": "Saldanha chefiou o governo no início da Regeneração, mas o ministro das Obras Públicas era Fontes Pereira de Melo."
+  },
+  "hints": [
+   "O seu nome deu origem à palavra «fontismo».",
+   "Foi ministro no período da Regeneração, depois de 1851."
+  ],
+  "explanation": "Fontes Pereira de Melo, ministro das Obras Públicas, impulsionou estradas e caminhos de ferro. Esta política de obras públicas ficou conhecida como fontismo.",
+  "sources": [
+   "rtp-comboios",
+   "wiki-regeneracao",
+   "rtp-industria"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-02",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transportes-comunicacoes",
+  "skill": "facto",
+  "difficulty": 2,
+  "prompt": "Entre que locais fez a sua primeira viagem o primeiro comboio de Portugal, em 1856?",
+  "kind": "mcq",
+  "options": [
+   "Lisboa e Carregado",
+   "Lisboa e Porto",
+   "Porto e Braga",
+   "Coimbra e Figueira da Foz"
+  ],
+  "correct": "Lisboa e Carregado",
+  "wrong": {
+   "Lisboa e Porto": "A ligação ao Porto só veio mais tarde; o primeiro troço foi entre Lisboa e o Carregado.",
+   "Porto e Braga": "O primeiro comboio não partiu do Porto, mas de Lisboa.",
+   "Coimbra e Figueira da Foz": "O primeiro troço não passava por Coimbra; ligava Lisboa ao Carregado."
+  },
+  "hints": [
+   "O comboio partiu da capital.",
+   "O destino ficava a poucas dezenas de quilómetros da capital."
+  ],
+  "explanation": "A 28 de outubro de 1856 inaugurou-se o primeiro troço de caminho de ferro em Portugal, entre Lisboa e o Carregado. Depois, a rede foi crescendo.",
+  "sources": [
+   "cp-cronologia",
+   "imt-1856",
+   "rtp-comboios"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-03",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transformacoes-sociais",
+  "skill": "facto",
+  "difficulty": 2,
+  "prompt": "Com a industrialização, que grupo social cresceu muito em Lisboa e no Porto?",
+  "kind": "mcq",
+  "options": [
+   "O operariado (trabalhadores das fábricas)",
+   "O clero (padres e frades)",
+   "A nobreza (os fidalgos)",
+   "Os camponeses que ficavam no campo"
+  ],
+  "correct": "O operariado (trabalhadores das fábricas)",
+  "wrong": {
+   "O clero (padres e frades)": "O clero já existia há séculos; o grupo que cresceu com as fábricas foi o dos operários.",
+   "A nobreza (os fidalgos)": "Neste tempo a nobreza perdia privilégios; quem crescia eram o operariado e a burguesia.",
+   "Os camponeses que ficavam no campo": "Quem ficava no campo não fazia crescer as cidades; quem ia para as fábricas tornava-se operário."
+  },
+  "hints": [
+   "Pensa em quem trabalhava nas fábricas.",
+   "O nome deste grupo vem da palavra «operário»."
+  ],
+  "explanation": "Com as fábricas surgiu e cresceu um novo grupo social, o operariado. Ao mesmo tempo, a burguesia ganhou importância e a nobreza perdeu privilégios.",
+  "sources": [
+   "dge-ae-plan",
+   "rtp-industria",
+   "analise-social-habitacao"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-04",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transformacoes-sociais",
+  "skill": "causa",
+  "difficulty": 2,
+  "prompt": "Porque saíram muitas pessoas do campo para Lisboa e para o Porto (êxodo rural) na segunda metade do século XIX?",
+  "kind": "mcq",
+  "options": [
+   "Procuravam trabalho nas fábricas e uma vida melhor",
+   "As cidades tinham casas boas e baratas para todos",
+   "O rei obrigou os camponeses a mudar de casa",
+   "Fugiam das tropas de Napoleão"
+  ],
+  "correct": "Procuravam trabalho nas fábricas e uma vida melhor",
+  "wrong": {
+   "As cidades tinham casas boas e baratas para todos": "Muitos operários viviam em casas pobres e sem condições, como as «ilhas» do Porto.",
+   "O rei obrigou os camponeses a mudar de casa": "Ninguém foi obrigado pelo rei; as pessoas saíam à procura de trabalho.",
+   "Fugiam das tropas de Napoleão": "As invasões francesas foram no início do século; o êxodo rural da segunda metade ligava-se às fábricas."
+  },
+  "hints": [
+   "Pensa no que estava a crescer nas cidades.",
+   "As fábricas precisavam de muitos trabalhadores."
+  ],
+  "explanation": "A industrialização atraiu para as cidades muita gente do campo, à procura de trabalho. As cidades cresceram, mas muitos operários viviam em casas pobres e insalubres, como as «ilhas» do Porto.",
+  "sources": [
+   "analise-social-habitacao",
+   "dge-ae-plan",
+   "dge-bloco20",
+   "up-ilhas"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-05",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "vida-cidades",
+  "skill": "vf",
+  "difficulty": 3,
+  "prompt": "Lê a afirmação: «No fim do século XIX, a maior parte dos portugueses já vivia nas cidades.» Escolhe a opção certa.",
+  "kind": "mcq",
+  "options": [
+   "Falsa, porque, apesar do êxodo rural, a maioria vivia no campo",
+   "Verdadeira, porque o êxodo rural levou quase todos para as cidades",
+   "Verdadeira, porque havia tantas fábricas como nos países ricos",
+   "Falsa, porque ninguém saía do campo para as cidades"
+  ],
+  "correct": "Falsa, porque, apesar do êxodo rural, a maioria vivia no campo",
+  "wrong": {
+   "Verdadeira, porque o êxodo rural levou quase todos para as cidades": "As cidades cresceram, mas Portugal continuou a ser um país sobretudo rural.",
+   "Verdadeira, porque havia tantas fábricas como nos países ricos": "A indústria portuguesa cresceu, mas era pequena comparada com a de outros países europeus.",
+   "Falsa, porque ninguém saía do campo para as cidades": "A conclusão está certa, mas a justificação não: houve êxodo rural."
+  },
+  "hints": [
+   "Primeiro decide se é verdadeira ou falsa; depois verifica a justificação.",
+   "O êxodo rural fez crescer as cidades, mas não esvaziou o campo."
+  ],
+  "explanation": "A afirmação é falsa: as cidades cresceram com o êxodo rural, mas Portugal continuou a ser um país essencialmente rural. Uma conclusão certa com uma justificação errada continua a ser uma resposta errada.",
+  "sources": [
+   "rtp-industria",
+   "dge-bloco20",
+   "analise-social-habitacao"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-06",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transformacoes-sociais",
+  "skill": "fonte",
+  "difficulty": 1,
+  "stimulus": "«Entre 1855 e 1890, mais de 400 mil portugueses deixaram legalmente o país. Pelo menos 85% desses emigrantes foram para o Brasil.» — Ana Silvia Volpi Scott, 2002 (adaptado).",
+  "prompt": "Segundo o documento, qual era o principal destino dos emigrantes portugueses?",
+  "kind": "mcq",
+  "options": [
+   "O Brasil",
+   "A França",
+   "As cidades de Lisboa e Porto",
+   "A Espanha"
+  ],
+  "correct": "O Brasil",
+  "wrong": {
+   "A França": "O documento não fala de França; diz que pelo menos 85% foram para o Brasil.",
+   "As cidades de Lisboa e Porto": "Ir do campo para Lisboa ou Porto é êxodo rural; o documento fala de quem saiu do país.",
+   "A Espanha": "O documento não fala de Espanha; indica o Brasil como destino principal."
+  },
+  "hints": [
+   "Procura no documento a percentagem.",
+   "85% é muito mais de metade dos emigrantes."
+  ],
+  "explanation": "O documento diz que pelo menos 85% dos emigrantes foram para o Brasil. Emigrar é sair do país; ir do campo para a cidade, dentro do país, é êxodo rural.",
+  "sources": [
+   "rebep-emigracao",
+   "dge-bloco20"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-07",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transportes-comunicacoes",
+  "skill": "opiniao",
+  "difficulty": 1,
+  "prompt": "Sobre os transportes no século XIX, qual destas frases é uma OPINIÃO, e não um facto?",
+  "kind": "mcq",
+  "options": [
+   "Viajar de comboio era muito mais agradável do que de carruagem.",
+   "O primeiro comboio em Portugal circulou em 1856.",
+   "Fontes Pereira de Melo foi ministro das Obras Públicas.",
+   "A Ponte D. Maria Pia, no Porto, foi inaugurada em 1877."
+  ],
+  "correct": "Viajar de comboio era muito mais agradável do que de carruagem.",
+  "wrong": {
+   "O primeiro comboio em Portugal circulou em 1856.": "É um facto: a data está registada e pode ser confirmada.",
+   "Fontes Pereira de Melo foi ministro das Obras Públicas.": "É um facto: pode confirmar-se nos registos do governo.",
+   "A Ponte D. Maria Pia, no Porto, foi inaugurada em 1877.": "É um facto: a data da inauguração está registada."
+  },
+  "hints": [
+   "Um facto pode ser confirmado; uma opinião depende do gosto de cada um.",
+   "Procura a frase com uma palavra de gosto pessoal, como «agradável»."
+  ],
+  "explanation": "«Mais agradável» é uma apreciação pessoal: cada viajante podia sentir de forma diferente. As outras frases são factos com datas e cargos registados.",
+  "sources": [
+   "cp-cronologia",
+   "rtp-comboios",
+   "wiki-ponte-maria-pia"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-08",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "industrializacao",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "prompt": "Completa: antes de 1856, em Portugal, as viagens por terra faziam-se a pé ou com a força de animais. A partir de 1856, o ___, puxado por locomotivas a ___, tornou as viagens mais rápidas.",
+  "kind": "cloze",
+  "correct": [
+   [
+    "comboio"
+   ],
+   [
+    "vapor"
+   ]
+  ],
+  "hints": [
+   "O primeiro fez a viagem entre Lisboa e o Carregado.",
+   "A segunda palavra é a energia que também movia as máquinas das fábricas."
+  ],
+  "explanation": "O comboio, puxado por locomotivas a vapor, transformou a deslocação de pessoas e mercadorias. A energia a vapor também se espalhou pelas fábricas.",
+  "sources": [
+   "imt-1856",
+   "rtp-comboios",
+   "cp-cronologia",
+   "dge-ae-plan"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-09",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "cronologia",
+  "skill": "cronologia",
+  "difficulty": 1,
+  "prompt": "Ordena, do mais antigo para o mais recente, estes marcos do século XIX: do fim da guerra às grandes obras.",
+  "kind": "order",
+  "items": [
+   "Inauguração da Ponte D. Maria Pia, no Porto",
+   "Fim da Guerra Civil (Convenção de Évora-Monte)",
+   "Primeira viagem de comboio em Portugal"
+  ],
+  "correct": [
+   "Fim da Guerra Civil (Convenção de Évora-Monte)",
+   "Primeira viagem de comboio em Portugal",
+   "Inauguração da Ponte D. Maria Pia, no Porto"
+  ],
+  "hints": [
+   "Só depois da paz se fizeram as grandes obras públicas.",
+   "Os anos são 1834, 1856 e 1877."
+  ],
+  "explanation": "A Guerra Civil acabou em 1834; o primeiro comboio circulou em 1856; a Ponte D. Maria Pia, para o comboio atravessar o Douro, foi inaugurada em 1877.",
+  "sources": [
+   "rtp-guerra-civil",
+   "cp-cronologia",
+   "imt-1856",
+   "wiki-ponte-maria-pia"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-10",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "cronologia",
+  "skill": "cronologia",
+  "difficulty": 3,
+  "prompt": "Ordena, do mais antigo para o mais recente, estes acontecimentos da segunda metade do século XIX.",
+  "kind": "order",
+  "items": [
+   "Abolição da pena de morte para os crimes civis",
+   "Inauguração da Ponte D. Maria Pia",
+   "Início da Regeneração",
+   "Primeira viagem de comboio, entre Lisboa e o Carregado"
+  ],
+  "correct": [
+   "Início da Regeneração",
+   "Primeira viagem de comboio, entre Lisboa e o Carregado",
+   "Abolição da pena de morte para os crimes civis",
+   "Inauguração da Ponte D. Maria Pia"
+  ],
+  "hints": [
+   "A Regeneração trouxe a estabilidade que permitiu as obras públicas.",
+   "Os anos são 1851, 1856, 1867 e 1877."
+  ],
+  "explanation": "A Regeneração começou em 1851; o primeiro comboio circulou em 1856; a pena de morte para os crimes civis foi abolida em 1867; a Ponte D. Maria Pia foi inaugurada em 1877.",
+  "sources": [
+   "wiki-regeneracao",
+   "rtp-obstaculos",
+   "cp-cronologia",
+   "imt-1856",
+   "gov-pena-morte",
+   "wiki-pena-morte",
+   "wiki-ponte-maria-pia"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-11",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transportes-comunicacoes",
+  "skill": "cronologia",
+  "difficulty": 1,
+  "prompt": "Em que ano fez a sua primeira viagem o primeiro comboio de Portugal?",
+  "kind": "numeric",
+  "correct": 1856,
+  "wrongHints": {
+   "1851": "1851 marca o início da Regeneração; o primeiro comboio veio cinco anos depois.",
+   "1877": "1877 é o ano da inauguração da Ponte D. Maria Pia."
+  },
+  "hints": [
+   "Foi a meio do século XIX.",
+   "Foi a 28 de outubro, num ano entre 1850 e 1860."
+  ],
+  "explanation": "O primeiro comboio português viajou entre Lisboa e o Carregado a 28 de outubro de 1856.",
+  "sources": [
+   "cp-cronologia",
+   "imt-1856",
+   "rtp-comboios"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-12",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transformacoes-sociais",
+  "skill": "cronologia",
+  "difficulty": 3,
+  "prompt": "Portugal foi um dos primeiros países da Europa a abolir a pena de morte para os crimes civis. Em que ano?",
+  "kind": "numeric",
+  "correct": 1867,
+  "wrongHints": {
+   "1856": "1856 é o ano do primeiro comboio; a abolição veio onze anos depois.",
+   "1877": "1877 é o ano da Ponte D. Maria Pia; a abolição foi dez anos antes."
+  },
+  "hints": [
+   "Foi na segunda metade do século XIX, nos anos 60.",
+   "O ano está entre 1865 e 1870."
+  ],
+  "explanation": "A lei de 1 de julho de 1867 aboliu a pena de morte para os crimes civis, Portugal foi um dos primeiros países europeus a dar este passo.",
+  "sources": [
+   "gov-pena-morte",
+   "wiki-pena-morte"
+  ]
+ },
+ {
+  "id": "hgp-republica-01",
+  "topic": "hgp-republica",
+  "sub": "implantacao",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Onde foi proclamada a República, em Lisboa, a 5 de outubro de 1910?",
+  "options": [
+   "Na varanda da Câmara Municipal de Lisboa",
+   "No Mosteiro dos Jerónimos",
+   "No Largo do Carmo"
+  ],
+  "correct": "Na varanda da Câmara Municipal de Lisboa",
+  "wrong": {
+   "No Mosteiro dos Jerónimos": "No Mosteiro dos Jerónimos foi assinado, em 1985, o tratado de adesão de Portugal à CEE.",
+   "No Largo do Carmo": "O Largo do Carmo ficou famoso no 25 de Abril de 1974, quando Marcelo Caetano se rendeu no quartel que lá existe."
+  },
+  "hints": [
+   "Foi num edifício onde funciona o governo da cidade.",
+   "A notícia foi anunciada ao povo de uma varanda, nos Paços do Concelho."
+  ],
+  "explanation": "Depois de uma revolta entre 3 e 5 de outubro de 1910, a República foi proclamada a 5 de outubro da varanda da Câmara Municipal de Lisboa (Paços do Concelho).",
+  "sources": [
+   "bdp-1910",
+   "wiki-implantacao"
+  ]
+ },
+ {
+  "id": "hgp-republica-02",
+  "topic": "hgp-republica",
+  "sub": "primeira-republica",
+  "skill": "facto",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Como terminou a Primeira República?",
+  "options": [
+   "Com um golpe militar, a 28 de maio de 1926",
+   "Com a revolução de 25 de Abril de 1974",
+   "Com o regresso do rei D. Manuel II ao trono",
+   "Com a entrada de Portugal na CEE"
+  ],
+  "correct": "Com um golpe militar, a 28 de maio de 1926",
+  "wrong": {
+   "Com a revolução de 25 de Abril de 1974": "O 25 de Abril de 1974 acabou com o Estado Novo, quase 50 anos depois do fim da Primeira República.",
+   "Com o regresso do rei D. Manuel II ao trono": "D. Manuel II partiu para o exílio em 1910 e a monarquia não voltou a ser restaurada.",
+   "Com a entrada de Portugal na CEE": "Portugal só entrou na CEE em 1986, já em democracia."
+  },
+  "hints": [
+   "Foram militares que tomaram o poder pela força.",
+   "Aconteceu em 1926 e deu origem a uma ditadura."
+  ],
+  "explanation": "A Primeira República durou de 1910 a 1926. O golpe militar de 28 de maio de 1926 derrubou-a e iniciou uma ditadura militar, que mais tarde deu lugar ao Estado Novo.",
+  "sources": [
+   "incm-1rep",
+   "wiki-28maio",
+   "dge-hb13"
+  ]
+ },
+ {
+  "id": "hgp-republica-03",
+  "topic": "hgp-republica",
+  "sub": "implantacao",
+  "skill": "personagem",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Quem chefiou o Governo Provisório formado logo após a implantação da República?",
+  "options": [
+   "Teófilo Braga",
+   "Afonso Costa",
+   "Manuel de Arriaga",
+   "D. Manuel II"
+  ],
+  "correct": "Teófilo Braga",
+  "wrong": {
+   "Afonso Costa": "Afonso Costa fez parte do Governo Provisório como ministro da Justiça, mas não o chefiava.",
+   "Manuel de Arriaga": "Manuel de Arriaga foi o primeiro Presidente da República eleito, já depois da Constituição de 1911.",
+   "D. Manuel II": "D. Manuel II era o último rei; com a revolução partiu para o exílio."
+  },
+  "hints": [
+   "Dirigiu o país até à aprovação da Constituição de 1911.",
+   "O primeiro nome dele é Teófilo."
+  ],
+  "explanation": "Depois do 5 de outubro de 1910, o país foi dirigido por um Governo Provisório presidido por Teófilo Braga, até à aprovação da Constituição de 1911.",
+  "sources": [
+   "incm-1rep",
+   "wiki-implantacao"
+  ]
+ },
+ {
+  "id": "hgp-republica-04",
+  "topic": "hgp-republica",
+  "sub": "primeira-republica",
+  "skill": "personagem",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Que ministro da Justiça do Governo Provisório ficou ligado à Lei da Separação do Estado e das Igrejas, de 20 de abril de 1911?",
+  "options": [
+   "Afonso Costa",
+   "Teófilo Braga",
+   "Manuel de Arriaga",
+   "João Franco"
+  ],
+  "correct": "Afonso Costa",
+  "wrong": {
+   "Teófilo Braga": "Teófilo Braga presidia ao Governo Provisório; a lei foi preparada pelo ministro da Justiça.",
+   "Manuel de Arriaga": "Manuel de Arriaga só foi eleito Presidente da República em 1911, depois da Constituição.",
+   "João Franco": "João Franco foi chefe de governo ainda no tempo da monarquia, antes de 1910."
+  },
+  "hints": [
+   "Era um político republicano muito conhecido da Primeira República.",
+   "O apelido dele é Costa."
+  ],
+  "explanation": "Afonso Costa, ministro da Justiça do Governo Provisório, foi o responsável pela Lei da Separação de 20 de abril de 1911, que separou o Estado das igrejas.",
+  "sources": [
+   "up-separacao",
+   "wiki-afonso-costa"
+  ]
+ },
+ {
+  "id": "hgp-republica-05",
+  "topic": "hgp-republica",
+  "sub": "implantacao",
+  "skill": "vf",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Lê a afirmação: «A bandeira verde e vermelha que Portugal usa hoje foi adotada pela República nascida da revolução de 5 de outubro de 1910.» Escolhe a opção correta.",
+  "options": [
+   "Verdadeira, porque a Constituição atual diz que a Bandeira Nacional é a adotada pela República instaurada a 5 de outubro de 1910.",
+   "Falsa, porque a bandeira verde e vermelha só foi criada depois do 25 de Abril de 1974.",
+   "Falsa, porque a bandeira atual é a mesma que era usada pelos reis.",
+   "Verdadeira, porque foi escolhida pelo rei D. Carlos antes de morrer."
+  ],
+  "correct": "Verdadeira, porque a Constituição atual diz que a Bandeira Nacional é a adotada pela República instaurada a 5 de outubro de 1910.",
+  "wrong": {
+   "Falsa, porque a bandeira verde e vermelha só foi criada depois do 25 de Abril de 1974.": "A bandeira verde e vermelha já existia desde a Primeira República; o 25 de Abril não a mudou.",
+   "Falsa, porque a bandeira atual é a mesma que era usada pelos reis.": "A bandeira da monarquia era diferente; a República mudou os símbolos nacionais.",
+   "Verdadeira, porque foi escolhida pelo rei D. Carlos antes de morrer.": "A conclusão está certa, mas a razão não: foi a República, e não um rei, que adotou esta bandeira."
+  },
+  "hints": [
+   "Pensa em quem quis mudar os símbolos do país depois de 1910.",
+   "A Constituição de hoje fala da bandeira no artigo 11.º."
+  ],
+  "explanation": "A República criou novos símbolos nacionais. A Constituição em vigor diz que a Bandeira Nacional é a adotada pela República instaurada pela Revolução de 5 de outubro de 1910 e que o hino nacional é «A Portuguesa».",
+  "sources": [
+   "ar-crp",
+   "incm-1rep",
+   "wiki-implantacao"
+  ]
+ },
+ {
+  "id": "hgp-republica-06",
+  "topic": "hgp-republica",
+  "sub": "primeira-republica",
+  "skill": "opiniao",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Sobre a Primeira República, qual destas frases é uma OPINIÃO e não um facto?",
+  "options": [
+   "A Primeira República foi o melhor regime que Portugal alguma vez teve.",
+   "A República foi proclamada a 5 de outubro de 1910.",
+   "O rei D. Carlos foi assassinado em Lisboa, em 1908.",
+   "Em 1911 foi criada uma nova moeda, o escudo."
+  ],
+  "correct": "A Primeira República foi o melhor regime que Portugal alguma vez teve.",
+  "wrong": {
+   "A República foi proclamada a 5 de outubro de 1910.": "É um facto: a data pode ser confirmada em documentos da época.",
+   "O rei D. Carlos foi assassinado em Lisboa, em 1908.": "É um facto: o regicídio está registado em jornais e documentos de 1908.",
+   "Em 1911 foi criada uma nova moeda, o escudo.": "É um facto: o escudo foi criado por um decreto de 1911."
+  },
+  "hints": [
+   "Um facto pode ser confirmado com documentos; uma opinião depende do que cada pessoa pensa.",
+   "Procura a frase com uma palavra de avaliação, como «melhor»."
+  ],
+  "explanation": "Dizer que um regime foi «o melhor» é uma avaliação pessoal, com a qual outras pessoas podem discordar. As outras frases descrevem acontecimentos que podem ser confirmados em fontes.",
+  "sources": [
+   "bdp-1910",
+   "bnp-1908",
+   "wiki-escudo"
+  ]
+ },
+ {
+  "id": "hgp-republica-07",
+  "topic": "hgp-republica",
+  "sub": "primeira-republica",
+  "skill": "fonte",
+  "difficulty": 3,
+  "kind": "mcq",
+  "stimulus": "«A República Portuguesa não admite privilégio de nascimento, nem foros de nobreza, extingue os títulos nobiliárquicos […].» — Constituição de 1911, artigo 3.º",
+  "prompt": "O que mostra este excerto sobre as ideias da República?",
+  "options": [
+   "Que ninguém devia ter vantagens só por ter nascido numa família nobre.",
+   "Que os nobres passaram a ter mais direitos do que os outros cidadãos.",
+   "Que o rei continuava a ser o chefe do Estado.",
+   "Que só os nobres podiam votar."
+  ],
+  "correct": "Que ninguém devia ter vantagens só por ter nascido numa família nobre.",
+  "wrong": {
+   "Que os nobres passaram a ter mais direitos do que os outros cidadãos.": "O texto diz o contrário: acaba com os títulos de nobreza e com os privilégios de nascimento.",
+   "Que o rei continuava a ser o chefe do Estado.": "O excerto fala da «República Portuguesa»; com a República deixou de haver rei.",
+   "Que só os nobres podiam votar.": "O excerto não fala de votar; fala do fim dos privilégios de nascimento."
+  },
+  "hints": [
+   "«Privilégio de nascimento» é uma vantagem que alguém tem só por causa da família onde nasceu.",
+   "O verbo «extingue» quer dizer «acaba com»."
+  ],
+  "explanation": "A Constituição de 1911 acabou com os títulos de nobreza e com os privilégios de nascimento, defendendo a igualdade entre os cidadãos, uma ideia central da República.",
+  "sources": [
+   "incm-1rep",
+   "wiki-const1911"
+  ]
+ },
+ {
+  "id": "hgp-republica-08",
+  "topic": "hgp-republica",
+  "sub": "implantacao",
+  "skill": "comparacao",
+  "difficulty": 1,
+  "kind": "cloze",
+  "prompt": "Completa: Na monarquia, o chefe do Estado era o ___, que herdava o cargo. Na República, o chefe do Estado passou a ser o ___ da República, escolhido por eleição.",
+  "correct": [
+   [
+    "rei"
+   ],
+   [
+    "presidente"
+   ]
+  ],
+  "hints": [
+   "Antes de 1910, Portugal tinha reis.",
+   "Na República, quem ocupa o cargo mais alto chama-se Presidente."
+  ],
+  "explanation": "Na monarquia o rei herdava o trono da família. Na República o chefe do Estado é o Presidente da República; pela Constituição de 1911, era eleito pelo Congresso (o parlamento).",
+  "sources": [
+   "incm-1rep",
+   "wiki-const1911"
+  ]
+ },
+ {
+  "id": "hgp-republica-09",
+  "topic": "hgp-republica",
+  "sub": "desgaste-monarquia",
+  "skill": "causa",
+  "difficulty": 3,
+  "kind": "order",
+  "prompt": "Ordena, do mais antigo para o mais recente, os acontecimentos que enfraqueceram a monarquia até à sua queda.",
+  "items": [
+   "Regicídio: morte do rei D. Carlos e do príncipe herdeiro",
+   "Implantação da República",
+   "Ultimato inglês",
+   "Revolta republicana no Porto (31 de janeiro)"
+  ],
+  "correct": [
+   "Ultimato inglês",
+   "Revolta republicana no Porto (31 de janeiro)",
+   "Regicídio: morte do rei D. Carlos e do príncipe herdeiro",
+   "Implantação da República"
+  ],
+  "hints": [
+   "O Ultimato inglês aconteceu em 1890 e a revolta do Porto no ano seguinte.",
+   "O regicídio foi em 1908; a República chegou em 1910."
+  ],
+  "explanation": "O Ultimato inglês (1890) causou grande descontentamento, aproveitado pela propaganda republicana; seguiu-se a revolta falhada do Porto (31 de janeiro de 1891), o regicídio (1908) e, por fim, a implantação da República (1910).",
+  "sources": [
+   "bnp-1908",
+   "incm-1rep",
+   "wiki-implantacao"
+  ]
+ },
+ {
+  "id": "hgp-republica-10",
+  "topic": "hgp-republica",
+  "sub": "primeira-republica",
+  "skill": "consequencia",
+  "difficulty": 3,
+  "kind": "order",
+  "prompt": "Ordena, do mais antigo para o mais recente, estas mudanças que se seguiram à revolução republicana.",
+  "items": [
+   "Criação do escudo como nova moeda",
+   "Aprovação da Constituição de 1911",
+   "Proclamação da República em Lisboa",
+   "Lei da Separação do Estado e das Igrejas"
+  ],
+  "correct": [
+   "Proclamação da República em Lisboa",
+   "Lei da Separação do Estado e das Igrejas",
+   "Criação do escudo como nova moeda",
+   "Aprovação da Constituição de 1911"
+  ],
+  "hints": [
+   "Tudo começou em outubro de 1910.",
+   "Em 1911: a Lei da Separação foi em abril, o escudo em maio e a Constituição em agosto."
+  ],
+  "explanation": "Depois da proclamação (5 de outubro de 1910), o Governo Provisório publicou a Lei da Separação (20 de abril de 1911) e criou o escudo (decreto de 22 de maio de 1911); a Constituição foi aprovada em agosto de 1911.",
+  "sources": [
+   "bdp-1910",
+   "up-separacao",
+   "incm-1rep",
+   "wiki-escudo"
+  ]
+ },
+ {
+  "id": "hgp-republica-11",
+  "topic": "hgp-republica",
+  "sub": "implantacao",
+  "skill": "cronologia",
+  "difficulty": 1,
+  "kind": "numeric",
+  "prompt": "Em que ano foi implantada a República em Portugal?",
+  "correct": 1910,
+  "wrongHints": {
+   "1908": "Em 1908 foi o regicídio; a República chegou dois anos depois.",
+   "1911": "Em 1911 foi aprovada a Constituição; a revolução foi no ano anterior.",
+   "1926": "Em 1926 houve o golpe militar que acabou com a Primeira República.",
+   "1974": "Em 1974 foi o 25 de Abril, que acabou com a ditadura."
+  },
+  "hints": [
+   "O feriado é a 5 de outubro.",
+   "Foi no início do século XX, no ano que termina em 10."
+  ],
+  "explanation": "A República foi implantada a 5 de outubro de 1910, pondo fim à monarquia constitucional.",
+  "sources": [
+   "bdp-1910",
+   "ar-crp",
+   "wiki-implantacao"
+  ]
+ },
+ {
+  "id": "hgp-republica-12",
+  "topic": "hgp-republica",
+  "sub": "desgaste-monarquia",
+  "skill": "cronologia",
+  "difficulty": 2,
+  "kind": "numeric",
+  "prompt": "Em que ano foram assassinados, em Lisboa, o rei D. Carlos e o príncipe herdeiro D. Luís Filipe (o regicídio)?",
+  "correct": 1908,
+  "wrongHints": {
+   "1890": "Em 1890 foi o Ultimato inglês.",
+   "1891": "Em 1891 foi a revolta republicana do Porto.",
+   "1910": "Em 1910 caiu a monarquia; o regicídio foi dois anos antes."
+  },
+  "hints": [
+   "Aconteceu a 1 de fevereiro, poucos anos antes da República.",
+   "Foi dois anos antes de 1910."
+  ],
+  "explanation": "A 1 de fevereiro de 1908, o rei D. Carlos e o príncipe D. Luís Filipe foram mortos a tiro no Terreiro do Paço, em Lisboa. O acontecimento enfraqueceu ainda mais a monarquia.",
+  "sources": [
+   "bnp-1908",
+   "wiki-implantacao"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-01",
+  "topic": "hgp-ditadura",
+  "sub": "golpe-1926",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Como começou a ditadura em Portugal, em 1926?",
+  "options": [
+   "Com um golpe militar, a 28 de maio de 1926",
+   "Com eleições livres ganhas por Salazar",
+   "Com a revolução de 5 de outubro",
+   "Com a aprovação da Constituição de 1976"
+  ],
+  "correct": "Com um golpe militar, a 28 de maio de 1926",
+  "wrong": {
+   "Com eleições livres ganhas por Salazar": "Não houve eleições livres: foram militares que tomaram o poder pela força.",
+   "Com a revolução de 5 de outubro": "A revolução de 5 de outubro de 1910 implantou a República, não a ditadura.",
+   "Com a aprovação da Constituição de 1976": "A Constituição de 1976 é a da democracia, aprovada depois do 25 de Abril."
+  },
+  "hints": [
+   "Foi uma ação de militares.",
+   "O dia é 28 de maio."
+  ],
+  "explanation": "O golpe militar de 28 de maio de 1926 derrubou a Primeira República e instalou uma ditadura militar. Mais tarde, com a Constituição de 1933, nasceu o Estado Novo.",
+  "sources": [
+   "wiki-28maio",
+   "incm-1rep",
+   "dge-hb13"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-02",
+  "topic": "hgp-ditadura",
+  "sub": "estado-novo",
+  "skill": "personagem",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Quem foi o principal chefe do Estado Novo, que governou Portugal durante muitos anos?",
+  "options": [
+   "António de Oliveira Salazar",
+   "Marcelo Caetano",
+   "Afonso Costa",
+   "Salgueiro Maia"
+  ],
+  "correct": "António de Oliveira Salazar",
+  "wrong": {
+   "Marcelo Caetano": "Marcelo Caetano sucedeu a Salazar e foi o último chefe do Governo do Estado Novo.",
+   "Afonso Costa": "Afonso Costa foi um político da Primeira República, antes da ditadura.",
+   "Salgueiro Maia": "Salgueiro Maia foi um dos capitães do 25 de Abril, que derrubou o regime."
+  },
+  "hints": [
+   "Teve uma breve passagem pelo Ministério das Finanças em 1926 e regressou ao cargo em 1928.",
+   "O regime é muitas vezes chamado «salazarismo»."
+  ],
+  "explanation": "António de Oliveira Salazar teve uma breve passagem pelo Ministério das Finanças em 1926 e regressou ao cargo em 1928, ganhou cada vez mais poder e chefiou o Estado Novo, criado com a Constituição de 1933.",
+  "sources": [
+   "as-salazar",
+   "wiki-salazar",
+   "dge-gta14"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-03",
+  "topic": "hgp-ditadura",
+  "sub": "censura-repressao",
+  "skill": "facto",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "O que fazia a censura no tempo do Estado Novo?",
+  "options": [
+   "Examinava jornais, revistas e outras publicações e cortava o que o governo não queria que se divulgasse",
+   "Garantia que todas as pessoas podiam dizer livremente o que pensavam",
+   "Prendia as pessoas que se opunham ao regime",
+   "Organizava eleições livres com vários partidos"
+  ],
+  "correct": "Examinava jornais, revistas e outras publicações e cortava o que o governo não queria que se divulgasse",
+  "wrong": {
+   "Garantia que todas as pessoas podiam dizer livremente o que pensavam": "É o contrário: a censura limitava a liberdade de expressão.",
+   "Prendia as pessoas que se opunham ao regime": "Isso era o papel da polícia política (sucessivamente PVDE, PIDE e DGS), não da censura.",
+   "Organizava eleições livres com vários partidos": "No Estado Novo não havia eleições livres nem vários partidos autorizados."
+  },
+  "hints": [
+   "Tem a ver com o que se podia ou não publicar.",
+   "Os textos eram examinados antes de chegarem aos leitores."
+  ],
+  "explanation": "A censura examinava jornais, revistas e outras publicações e cortava tudo o que o regime considerava perigoso. Assim, as pessoas não tinham liberdade de expressão.",
+  "sources": [
+   "dge-hgp-bloco28",
+   "dge-gta14",
+   "wiki-censura"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-04",
+  "topic": "hgp-ditadura",
+  "sub": "censura-repressao",
+  "skill": "facto",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "O que era a PIDE?",
+  "options": [
+   "Uma polícia política",
+   "Um partido de oposição",
+   "Um movimento militar",
+   "Uma organização juvenil"
+  ],
+  "correct": "Uma polícia política",
+  "wrong": {
+   "Um partido de oposição": "A PIDE estava ao serviço do regime e perseguia a oposição.",
+   "Um movimento militar": "Esse era o MFA (Movimento das Forças Armadas).",
+   "Uma organização juvenil": "A organização juvenil era a Mocidade Portuguesa."
+  },
+  "hints": [
+   "Era uma polícia, mas não tratava de crimes comuns.",
+   "Perseguia quem pensava de forma diferente do governo."
+  ],
+  "explanation": "A PIDE era a polícia política do Estado Novo: vigiava, perseguia e prendia opositores e tinha informadores. Hoje, o Museu do Aljube, em Lisboa, guarda a memória da resistência à ditadura.",
+  "sources": [
+   "dge-emc-bloco47",
+   "dge-hgp-bloco28",
+   "wiki-pide",
+   "aljube"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-05",
+  "topic": "hgp-ditadura",
+  "sub": "estado-novo",
+  "skill": "vf",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Lê a afirmação: «No Estado Novo existia um partido único, a União Nacional.» Escolhe a opção correta.",
+  "options": [
+   "Verdadeira, porque o regime recusava vários partidos e a União Nacional funcionava como partido único.",
+   "Falsa, porque havia muitos partidos e eleições livres.",
+   "Falsa, porque a União Nacional era a polícia política.",
+   "Verdadeira, porque a União Nacional era a organização a que todos os jovens pertenciam."
+  ],
+  "correct": "Verdadeira, porque o regime recusava vários partidos e a União Nacional funcionava como partido único.",
+  "wrong": {
+   "Falsa, porque havia muitos partidos e eleições livres.": "No Estado Novo não havia eleições livres nem partidos de oposição autorizados.",
+   "Falsa, porque a União Nacional era a polícia política.": "A polícia política teve sucessivamente os nomes PVDE, PIDE e DGS; a União Nacional era o partido do regime.",
+   "Verdadeira, porque a União Nacional era a organização a que todos os jovens pertenciam.": "A conclusão está certa, mas a razão não: a organização dos jovens era a Mocidade Portuguesa."
+  },
+  "hints": [
+   "Pensa: no Estado Novo havia liberdade para criar partidos?",
+   "A organização dos jovens tinha outro nome: Mocidade Portuguesa."
+  ],
+  "explanation": "O Estado Novo recusava a democracia com vários partidos. A União Nacional funcionava como partido único e apoiava o regime.",
+  "sources": [
+   "dge-ae-hgp6",
+   "dge-gta14",
+   "wiki-estadonovo"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-06",
+  "topic": "hgp-ditadura",
+  "sub": "censura-repressao",
+  "skill": "opiniao",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Sobre o Estado Novo, qual destas frases é uma OPINIÃO e não um facto?",
+  "options": [
+   "Viver no tempo do Estado Novo era mais aborrecido do que viver hoje.",
+   "No Estado Novo existia censura.",
+   "A Guerra Colonial começou em 1961, em Angola.",
+   "A Constituição de 1933 deu início ao Estado Novo."
+  ],
+  "correct": "Viver no tempo do Estado Novo era mais aborrecido do que viver hoje.",
+  "wrong": {
+   "No Estado Novo existia censura.": "É um facto: a censura está documentada em leis e em jornais cortados da época.",
+   "A Guerra Colonial começou em 1961, em Angola.": "É um facto: a data e o local podem ser confirmados em fontes históricas.",
+   "A Constituição de 1933 deu início ao Estado Novo.": "A Constituição de 1933 estabeleceu a organização política do Estado Novo."
+  },
+  "hints": [
+   "Uma opinião depende dos gostos ou sentimentos de quem fala.",
+   "Procura uma palavra de avaliação pessoal, como «aborrecido»."
+  ],
+  "explanation": "«Aborrecido» é uma avaliação pessoal: cada pessoa pode sentir de forma diferente. As outras frases descrevem factos que se podem confirmar em documentos.",
+  "sources": [
+   "dge-ae-hgp6",
+   "rtp-museu-25abril",
+   "wiki-estadonovo"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-07",
+  "topic": "hgp-ditadura",
+  "sub": "censura-repressao",
+  "skill": "fonte",
+  "difficulty": 1,
+  "kind": "mcq",
+  "stimulus": "«O exercício destes direitos não pode ser impedido ou limitado por qualquer tipo ou forma de censura.» — Constituição da República Portuguesa, artigo 37.º (liberdade de expressão)",
+  "prompt": "Esta regra da Constituição democrática proíbe algo que existia no Estado Novo. O quê?",
+  "options": [
+   "A censura, que cortava notícias e opiniões de que o regime não gostava",
+   "O direito de votar em eleições livres",
+   "As escolas públicas",
+   "O hino nacional"
+  ],
+  "correct": "A censura, que cortava notícias e opiniões de que o regime não gostava",
+  "wrong": {
+   "O direito de votar em eleições livres": "Votar em eleições livres é um direito da democracia, não algo que a Constituição proíba.",
+   "As escolas públicas": "O excerto não fala de escolas; fala de censura.",
+   "O hino nacional": "O hino continua a existir; o excerto fala de censura."
+  },
+  "hints": [
+   "Procura no texto a palavra que nomeia aquilo que fica proibido.",
+   "No Estado Novo, os jornais eram examinados antes de serem publicados."
+  ],
+  "explanation": "A Constituição democrática garante a liberdade de expressão e proíbe qualquer forma de censura. No Estado Novo, a censura examinava e cortava publicações.",
+  "sources": [
+   "ar-crp",
+   "dge-hgp-bloco28",
+   "dge-gta33"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-08",
+  "topic": "hgp-ditadura",
+  "sub": "estado-novo",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "kind": "cloze",
+  "prompt": "Completa: No Estado Novo existia ___, que cortava notícias e livros, e não havia eleições livres. Em democracia há liberdade de ___ e eleições livres.",
+  "correct": [
+   [
+    "censura",
+    "a censura"
+   ],
+   [
+    "expressão",
+    "expressao",
+    "opinião",
+    "opiniao",
+    "pensamento",
+    "imprensa",
+    "expressão e opinião"
+   ]
+  ],
+  "hints": [
+   "A primeira palavra é o nome do serviço que cortava publicações.",
+   "A segunda é o direito de dizer o que se pensa."
+  ],
+  "explanation": "Na ditadura havia censura e não havia liberdade de expressão nem eleições livres. Em democracia, estas liberdades são garantidas pela Constituição.",
+  "sources": [
+   "dge-ae-hgp6",
+   "ar-crp"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-09",
+  "topic": "hgp-ditadura",
+  "sub": "golpe-1926",
+  "skill": "causa",
+  "difficulty": 3,
+  "kind": "order",
+  "prompt": "Ordena, do mais antigo para o mais recente, os passos que levaram à formação do Estado Novo.",
+  "items": [
+   "Salazar regressa ao Ministério das Finanças, em 1928",
+   "Aprovação da Constituição de 1933",
+   "Implantação da República",
+   "Golpe militar de 28 de maio"
+  ],
+  "correct": [
+   "Implantação da República",
+   "Golpe militar de 28 de maio",
+   "Salazar regressa ao Ministério das Finanças, em 1928",
+   "Aprovação da Constituição de 1933"
+  ],
+  "hints": [
+   "A República (1910) veio antes do golpe que a derrubou (1926).",
+   "Salazar regressou ao Ministério das Finanças em 1928, após uma breve passagem em 1926; o Estado Novo começou em 1933."
+  ],
+  "explanation": "A Primeira República (1910) foi derrubada pelo golpe de 28 de maio de 1926. Salazar foi brevemente ministro das Finanças em 1926 e regressou ao cargo em 1928, e a Constituição de 1933 deu início ao Estado Novo.",
+  "sources": [
+   "as-salazar",
+   "dge-gta14",
+   "wiki-estadonovo",
+   "wiki-salazar"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-10",
+  "topic": "hgp-ditadura",
+  "sub": "guerra-colonial",
+  "skill": "consequencia",
+  "difficulty": 2,
+  "kind": "order",
+  "prompt": "Ordena, do mais antigo para o mais recente: do início do Estado Novo à democracia.",
+  "items": [
+   "Revolução de 25 de Abril",
+   "Início da Guerra Colonial, em Angola",
+   "Eleições livres para a Assembleia Constituinte",
+   "Constituição de 1933"
+  ],
+  "correct": [
+   "Constituição de 1933",
+   "Início da Guerra Colonial, em Angola",
+   "Revolução de 25 de Abril",
+   "Eleições livres para a Assembleia Constituinte"
+  ],
+  "hints": [
+   "A guerra começou em 1961 e durou cerca de 13 anos.",
+   "As eleições livres foram um ano depois da revolução."
+  ],
+  "explanation": "O Estado Novo começou em 1933. A Guerra Colonial começou em Angola em 1961 e o 25 de Abril de 1974 abriu caminho às negociações que puseram fim à guerra durante 1974. Em 25 de abril de 1975 houve eleições livres para a Assembleia Constituinte.",
+  "sources": [
+   "rtp-museu-25abril",
+   "wiki-guerra-colonial",
+   "dge-gta33",
+   "wiki-estadonovo"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-11",
+  "topic": "hgp-ditadura",
+  "sub": "guerra-colonial",
+  "skill": "cronologia",
+  "difficulty": 1,
+  "kind": "numeric",
+  "prompt": "Em que ano começou a Guerra Colonial, em Angola?",
+  "correct": 1961,
+  "wrongHints": {
+   "1933": "Em 1933 começou o Estado Novo; a guerra só começou quase 30 anos depois.",
+   "1974": "Em 1974 deu-se o 25 de Abril, que levou ao fim da guerra.",
+   "1975": "Em 1975 várias colónias já se tinham tornado independentes; a guerra começou muito antes."
+  },
+  "hints": [
+   "A guerra durou cerca de 13 anos e terminou em 1974.",
+   "Faz 1974 − 13."
+  ],
+  "explanation": "A Guerra Colonial começou em 1961, em Angola, e estendeu-se à Guiné e a Moçambique. O regime queria manter o império colonial; a guerra só terminou depois do 25 de Abril de 1974.",
+  "sources": [
+   "rtp-museu-25abril",
+   "wiki-guerra-colonial",
+   "dge-gta35"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-12",
+  "topic": "hgp-ditadura",
+  "sub": "estado-novo",
+  "skill": "cronologia",
+  "difficulty": 2,
+  "kind": "numeric",
+  "prompt": "Em que ano foi aprovada a Constituição que deu início ao Estado Novo?",
+  "correct": 1933,
+  "wrongHints": {
+   "1926": "Em 1926 foi o golpe militar; o Estado Novo só começou com a Constituição, alguns anos depois.",
+   "1928": "Em 1928 Salazar regressou ao Ministério das Finanças, após uma breve passagem em 1926.",
+   "1976": "A Constituição de 1976 é a da democracia."
+  },
+  "hints": [
+   "Foi alguns anos depois de Salazar regressar ao Ministério das Finanças (1928), onde estivera brevemente em 1926.",
+   "O Estado Novo durou desde a década de 1930 até 1974."
+  ],
+  "explanation": "A Constituição de 1933 deu início ao Estado Novo, que durou até ao 25 de Abril de 1974. Entre 1926 e 1933 houve uma ditadura militar.",
+  "sources": [
+   "dge-gta14",
+   "wiki-estadonovo",
+   "as-salazar"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-01",
+  "topic": "hgp-25-abril",
+  "sub": "revolucao",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Que movimento de militares organizou a revolução de 25 de Abril de 1974?",
+  "options": [
+   "O Movimento das Forças Armadas (MFA)",
+   "A PIDE",
+   "A Mocidade Portuguesa",
+   "A União Nacional"
+  ],
+  "correct": "O Movimento das Forças Armadas (MFA)",
+  "wrong": {
+   "A PIDE": "A PIDE era a polícia política do regime que a revolução derrubou.",
+   "A Mocidade Portuguesa": "A Mocidade Portuguesa era a organização juvenil do Estado Novo.",
+   "A União Nacional": "A União Nacional era o partido único do Estado Novo."
+  },
+  "hints": [
+   "Eram militares, muitos deles capitães.",
+   "A sigla tem três letras: M, F e A."
+  ],
+  "explanation": "A revolução foi feita pelo MFA, um movimento de militares conhecidos como «capitães de Abril», que derrubou a ditadura a 25 de Abril de 1974.",
+  "sources": [
+   "rtp-museu-25abril",
+   "dge-emc-bloco47",
+   "wiki-25abril"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-02",
+  "topic": "hgp-25-abril",
+  "sub": "revolucao",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Que canção foi transmitida pela Rádio Renascença como segunda senha das operações militares?",
+  "options": [
+   "Grândola, Vila Morena",
+   "E Depois do Adeus",
+   "A Portuguesa"
+  ],
+  "correct": "Grândola, Vila Morena",
+  "wrong": {
+   "E Depois do Adeus": "«E Depois do Adeus» foi a primeira senha, na noite de 24 de abril, para as tropas se prepararem.",
+   "A Portuguesa": "«A Portuguesa» é o hino nacional, não uma das senhas."
+  },
+  "hints": [
+   "O nome da canção fala de uma vila alentejana.",
+   "Foi a segunda senha, já na madrugada de 25 de abril."
+  ],
+  "explanation": "Houve duas senhas na rádio: «E Depois do Adeus», interpretada por Paulo de Carvalho, às 22h55 de 24 de abril, mandou as tropas prepararem-se; «Grândola, Vila Morena», de José Afonso, na Rádio Renascença, deu a ordem para avançar.",
+  "sources": [
+   "rtp-museu-25abril",
+   "wiki-grandola",
+   "wiki-25abril"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-03",
+  "topic": "hgp-25-abril",
+  "sub": "revolucao",
+  "skill": "personagem",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Que capitão saiu de Santarém com as suas tropas e cercou o quartel do Carmo, em Lisboa, onde estava Marcelo Caetano?",
+  "options": [
+   "Salgueiro Maia",
+   "Otelo Saraiva de Carvalho",
+   "António de Spínola",
+   "Afonso Costa"
+  ],
+  "correct": "Salgueiro Maia",
+  "wrong": {
+   "Otelo Saraiva de Carvalho": "Otelo teve um papel de comando nas operações do MFA, mas não foi quem cercou o quartel do Carmo.",
+   "António de Spínola": "Spínola era general e não fazia o cerco; foi ao Carmo receber o poder de Marcelo Caetano.",
+   "Afonso Costa": "Afonso Costa foi um político da Primeira República, muitos anos antes."
+  },
+  "hints": [
+   "Vinha da Escola Prática de Cavalaria.",
+   "O apelido dele é Maia."
+  ],
+  "explanation": "O capitão Salgueiro Maia saiu de Santarém com a Escola Prática de Cavalaria, controlou o Terreiro do Paço e cercou o quartel do Carmo, onde Marcelo Caetano acabou por se render.",
+  "sources": [
+   "rtp-museu-25abril",
+   "wiki-25abril"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-04",
+  "topic": "hgp-25-abril",
+  "sub": "revolucao",
+  "skill": "personagem",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Depois de Marcelo Caetano se render, que general passou a presidir à Junta de Salvação Nacional?",
+  "options": [
+   "António de Spínola",
+   "Salgueiro Maia",
+   "Otelo Saraiva de Carvalho",
+   "António de Oliveira Salazar"
+  ],
+  "correct": "António de Spínola",
+  "wrong": {
+   "Salgueiro Maia": "Salgueiro Maia era capitão e comandou o cerco ao quartel do Carmo.",
+   "Otelo Saraiva de Carvalho": "Otelo teve um papel de comando nas operações militares, mas não presidiu à Junta.",
+   "António de Oliveira Salazar": "Em 1974 Salazar já não governava; o chefe do Governo era Marcelo Caetano."
+  },
+  "hints": [
+   "Era um general, não um capitão.",
+   "Foi ao Largo do Carmo falar com Marcelo Caetano."
+  ],
+  "explanation": "Marcelo Caetano rendeu-se no quartel do Carmo e o general António de Spínola foi ao local. A Junta de Salvação Nacional, presidida por Spínola, assumiu o poder até à formação de um governo provisório.",
+  "sources": [
+   "rtp-museu-25abril",
+   "wiki-25abril",
+   "wiki-otelo"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-05",
+  "topic": "hgp-25-abril",
+  "sub": "revolucao",
+  "skill": "vf",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Lê a afirmação: «A revolução de 25 de Abril de 1974 também ficou conhecida como Revolução dos Cravos.» Escolhe a opção correta.",
+  "options": [
+   "Verdadeira, porque os cravos se tornaram o símbolo desta revolução.",
+   "Falsa, porque «Revolução dos Cravos» é o nome da revolução de 5 de outubro de 1910.",
+   "Falsa, porque o 25 de Abril ficou conhecido como Restauração da Independência.",
+   "Verdadeira, porque a revolução começou num campo de cravos no Alentejo."
+  ],
+  "correct": "Verdadeira, porque os cravos se tornaram o símbolo desta revolução.",
+  "wrong": {
+   "Falsa, porque «Revolução dos Cravos» é o nome da revolução de 5 de outubro de 1910.": "A revolução de 1910 implantou a República; o nome «Revolução dos Cravos» é do 25 de Abril.",
+   "Falsa, porque o 25 de Abril ficou conhecido como Restauração da Independência.": "A Restauração da Independência foi em 1640, não em 1974.",
+   "Verdadeira, porque a revolução começou num campo de cravos no Alentejo.": "A conclusão está certa, mas a razão não: a revolução começou com militares a sair dos quartéis."
+  },
+  "hints": [
+   "Pensa na flor que muitas pessoas usam no dia 25 de Abril.",
+   "Atenção: a razão também tem de estar certa."
+  ],
+  "explanation": "O 25 de Abril é também chamado Revolução dos Cravos, porque os cravos se tornaram o seu símbolo.",
+  "sources": [
+   "rtp-museu-25abril",
+   "wiki-25abril"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-06",
+  "topic": "hgp-25-abril",
+  "sub": "democracia",
+  "skill": "opiniao",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Sobre o 25 de Abril e a democracia, qual destas frases é uma OPINIÃO e não um facto?",
+  "options": [
+   "O 25 de Abril é o feriado mais divertido do ano.",
+   "Portugal entrou na CEE a 1 de janeiro de 1986.",
+   "A Constituição de 1976 foi aprovada pela Assembleia Constituinte.",
+   "A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal."
+  ],
+  "correct": "O 25 de Abril é o feriado mais divertido do ano.",
+  "wrong": {
+   "Portugal entrou na CEE a 1 de janeiro de 1986.": "É um facto: a data está registada em documentos oficiais da União Europeia.",
+   "A Constituição de 1976 foi aprovada pela Assembleia Constituinte.": "É um facto: está escrito na própria Constituição.",
+   "A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal.": "É um facto: as eleições para a Assembleia Constituinte foram a 25 de abril de 1975."
+  },
+  "hints": [
+   "Uma opinião não se pode provar com documentos.",
+   "Procura uma palavra de gosto pessoal, como «divertido»."
+  ],
+  "explanation": "Achar um feriado «divertido» depende de cada pessoa: é uma opinião. As outras frases são factos confirmados por documentos.",
+  "sources": [
+   "ec-pt-ue",
+   "ar-crp",
+   "dge-gta33"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-07",
+  "topic": "hgp-25-abril",
+  "sub": "descolonizacao",
+  "skill": "fonte",
+  "difficulty": 3,
+  "kind": "mcq",
+  "stimulus": "«Libertar Portugal da ditadura, da opressão e do colonialismo representou uma transformação revolucionária e o início de uma viragem histórica da sociedade portuguesa.» — Preâmbulo da Constituição da República Portuguesa (1976)",
+  "prompt": "Que mudança, depois do 25 de Abril, está ligada à palavra «colonialismo» neste excerto?",
+  "options": [
+   "A descolonização: Portugal reconheceu a independência das colónias",
+   "A adesão de Portugal à CEE",
+   "O fim da censura",
+   "A criação do escudo"
+  ],
+  "correct": "A descolonização: Portugal reconheceu a independência das colónias",
+  "wrong": {
+   "A adesão de Portugal à CEE": "A adesão à CEE foi em 1986 e não está ligada à palavra «colonialismo».",
+   "O fim da censura": "O fim da censura liga-se às palavras «ditadura» e «opressão», não a «colonialismo».",
+   "A criação do escudo": "O escudo foi criado em 1911, na Primeira República."
+  },
+  "hints": [
+   "«Colonialismo» é o domínio de um país sobre territórios noutros continentes, as colónias.",
+   "Pensa no que aconteceu a Angola, Moçambique ou Guiné-Bissau depois de 1974."
+  ],
+  "explanation": "A Guiné-Bissau proclamou a independência em 1973 e Portugal reconheceu-a em setembro de 1974; Angola, Moçambique, Cabo Verde e São Tomé e Príncipe tornaram-se independentes em 1975. O Preâmbulo da Constituição de 1976 apresenta o fim do colonialismo como parte da mudança trazida pela revolução.",
+  "sources": [
+   "ar-crp",
+   "dge-gta35",
+   "dge-ae-hgp6"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-08",
+  "topic": "hgp-25-abril",
+  "sub": "democracia",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "kind": "numeric",
+  "prompt": "Em que ano se realizaram, a 25 de abril, eleições livres para a Assembleia Constituinte, por sufrágio universal?",
+  "correct": 1975,
+  "hints": [
+   "Em democracia, as pessoas votam em liberdade, escolhendo entre vários partidos.",
+   "Foi um ano depois da revolução de 1974."
+  ],
+  "explanation": "A 25 de abril de 1975 realizaram-se eleições livres para a Assembleia Constituinte, por sufrágio universal.",
+  "sources": [
+   "dge-gta33",
+   "wiki-crp1976"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-09",
+  "topic": "hgp-25-abril",
+  "sub": "revolucao",
+  "skill": "causa",
+  "difficulty": 3,
+  "kind": "order",
+  "prompt": "Ordena, do mais antigo para o mais recente, estes acontecimentos ligados às causas e efeitos do 25 de Abril.",
+  "items": [
+   "Revolução de 25 de Abril",
+   "Início da Guerra Colonial, em Angola",
+   "Portugal reconhece a independência da Guiné-Bissau, em setembro de 1974",
+   "Militares organizam o MFA e preparam um golpe"
+  ],
+  "correct": [
+   "Início da Guerra Colonial, em Angola",
+   "Militares organizam o MFA e preparam um golpe",
+   "Revolução de 25 de Abril",
+   "Portugal reconhece a independência da Guiné-Bissau, em setembro de 1974"
+  ],
+  "hints": [
+   "A guerra começou em 1961; o MFA formou-se pouco antes da revolução.",
+   "A independência das colónias só foi aceite depois da queda do regime."
+  ],
+  "explanation": "A Guerra Colonial começou em 1961; o MFA organizou-se antes da revolução de 25 de Abril de 1974. A Guiné-Bissau proclamou a independência em 1973 e Portugal reconheceu-a em setembro de 1974; Angola, Moçambique, Cabo Verde e São Tomé e Príncipe tornaram-se independentes em 1975.",
+  "sources": [
+   "rtp-museu-25abril",
+   "dge-gta35",
+   "wiki-guerra-colonial"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-10",
+  "topic": "hgp-25-abril",
+  "sub": "portugal-ue",
+  "skill": "consequencia",
+  "difficulty": 3,
+  "kind": "order",
+  "prompt": "Ordena, do mais antigo para o mais recente, estas etapas da democracia portuguesa.",
+  "items": [
+   "Notas e moedas de euro começam a circular",
+   "Aprovação da Constituição",
+   "Adesão de Portugal à CEE",
+   "Eleições para a Assembleia Constituinte",
+   "Revolução de 25 de Abril"
+  ],
+  "correct": [
+   "Revolução de 25 de Abril",
+   "Eleições para a Assembleia Constituinte",
+   "Aprovação da Constituição",
+   "Adesão de Portugal à CEE",
+   "Notas e moedas de euro começam a circular"
+  ],
+  "hints": [
+   "1974 → 1975 → 1976: revolução, eleições, Constituição.",
+   "A CEE foi em 1986 e o euro em notas e moedas em 2002."
+  ],
+  "explanation": "Depois da revolução (1974), houve eleições para a Assembleia Constituinte (1975), que aprovou a Constituição (1976). Portugal aderiu à CEE em 1986 e as notas e moedas de euro começaram a circular em 2002.",
+  "sources": [
+   "dge-gta33",
+   "ar-crp",
+   "ec-pt-ue",
+   "bdp-euro",
+   "wiki-escudo"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-11",
+  "topic": "hgp-25-abril",
+  "sub": "portugal-ue",
+  "skill": "cronologia",
+  "difficulty": 1,
+  "kind": "numeric",
+  "prompt": "Em que ano Portugal se tornou membro da CEE (hoje União Europeia)?",
+  "correct": 1986,
+  "wrongHints": {
+   "1974": "Em 1974 foi o 25 de Abril; a entrada na CEE foi mais de dez anos depois.",
+   "1985": "Em 1985 foi assinado o tratado de adesão; a entrada efetiva foi a 1 de janeiro do ano seguinte.",
+   "2002": "Em 2002 começaram a circular as notas e moedas de euro."
+  },
+  "hints": [
+   "O tratado foi assinado em 1985, no Mosteiro dos Jerónimos.",
+   "A entrada foi a 1 de janeiro do ano seguinte."
+  ],
+  "explanation": "Portugal assinou o tratado de adesão a 12 de junho de 1985, no Mosteiro dos Jerónimos, e tornou-se membro a 1 de janeiro de 1986.",
+  "sources": [
+   "ec-pt-ue",
+   "pe-40anos",
+   "ue-portugal"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-12",
+  "topic": "hgp-25-abril",
+  "sub": "democracia",
+  "skill": "cronologia",
+  "difficulty": 2,
+  "kind": "numeric",
+  "prompt": "Em que ano foi aprovada a Constituição da República Portuguesa que, com revisões, ainda hoje está em vigor?",
+  "correct": 1976,
+  "wrongHints": {
+   "1933": "A Constituição de 1933 foi a do Estado Novo.",
+   "1974": "Em 1974 foi a revolução; a Constituição demorou cerca de dois anos a ser feita.",
+   "1975": "Em 1975 foram eleitos os deputados que escreveram a Constituição."
+  },
+  "hints": [
+   "Foi aprovada a 2 de abril e entrou em vigor a 25 de abril do mesmo ano.",
+   "Foi dois anos depois da revolução."
+  ],
+  "explanation": "A Assembleia Constituinte aprovou a Constituição a 2 de abril de 1976; ela entrou em vigor a 25 de abril de 1976 e já foi revista várias vezes.",
+  "sources": [
+   "ar-crp",
+   "wiki-crp1976",
+   "dge-gta33"
+  ]
+ },
+ {
+  "id": "hgp-populacao-01",
+  "topic": "hgp-populacao",
+  "sub": "Migrações",
+  "skill": "conceito",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Uma família que vivia no Brasil mudou-se para Portugal para aqui viver e trabalhar. Para Portugal, estas pessoas são…",
+  "options": [
+   "imigrantes",
+   "emigrantes",
+   "turistas",
+   "refugiados de guerra"
+  ],
+  "correct": "imigrantes",
+  "wrong": {
+   "emigrantes": "Emigrante é quem sai do seu país; para Portugal, quem chega para viver é imigrante.",
+   "turistas": "Um turista faz uma visita temporária; esta família mudou a residência para Portugal.",
+   "refugiados de guerra": "Nada no enunciado fala de guerra; a família mudou-se para viver e trabalhar."
+  },
+  "hints": [
+   "Pensa na direção da viagem: estas pessoas entraram ou saíram de Portugal?",
+   "Imigrante = entra no país; Emigrante = sai do país."
+  ],
+  "explanation": "Quem entra num país para lá viver é imigrante desse país. Nos Censos 2021, a nacionalidade estrangeira mais numerosa em Portugal era a brasileira.",
+  "sources": [
+   "ae-hgp-6",
+   "rtp-censos2021",
+   "dn-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-populacao-02",
+  "topic": "hgp-populacao",
+  "sub": "Evolução da população",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Segundo os Censos 2021 (INE), quantas pessoas viviam em Portugal?",
+  "options": [
+   "Cerca de 10,3 milhões",
+   "Cerca de 5 milhões",
+   "Cerca de 20 milhões",
+   "Cerca de 1 milhão"
+  ],
+  "correct": "Cerca de 10,3 milhões",
+  "wrong": {
+   "Cerca de 5 milhões": "É menos de metade do valor real; os Censos 2021 contaram mais de 10 milhões de residentes.",
+   "Cerca de 20 milhões": "É quase o dobro do valor real; Portugal tinha pouco mais de 10 milhões de residentes.",
+   "Cerca de 1 milhão": "Só a Área Metropolitana de Lisboa já tem mais do que isso; o país tinha cerca de 10,3 milhões."
+  },
+  "hints": [
+   "O número tem duas casas antes da vírgula, em milhões.",
+   "É um pouco mais de 10 milhões."
+  ],
+  "explanation": "Os Censos 2021 contaram cerca de 10,3 milhões de residentes em Portugal, menos 2,1% do que em 2011.",
+  "sources": [
+   "observador-censos2021",
+   "rtp-censos2021",
+   "eco-censos2021",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "id": "hgp-populacao-03",
+  "topic": "hgp-populacao",
+  "sub": "Crescimento natural",
+  "skill": "conceito",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "O que é o saldo natural de um país?",
+  "options": [
+   "O número de nascimentos menos o número de óbitos",
+   "O número de imigrantes menos o número de emigrantes",
+   "O número total de pessoas que vivem no país",
+   "O número de óbitos menos o número de nascimentos"
+  ],
+  "correct": "O número de nascimentos menos o número de óbitos",
+  "wrong": {
+   "O número de imigrantes menos o número de emigrantes": "Isso é o saldo migratório, que conta as entradas e saídas de pessoas.",
+   "O número total de pessoas que vivem no país": "Isso é a população absoluta, não um saldo.",
+   "O número de óbitos menos o número de nascimentos": "A conta faz-se ao contrário: primeiro os nascimentos, depois tiram-se os óbitos."
+  },
+  "hints": [
+   "«Natural» tem a ver com nascer e morrer.",
+   "Começa pelos nascimentos e tira os óbitos."
+  ],
+  "explanation": "Saldo natural = nascimentos − óbitos. Se morrem mais pessoas do que as que nascem, o saldo natural é negativo, como aconteceu em Portugal em 2020.",
+  "sources": [
+   "eurostat-populacao",
+   "observador-saldos2020"
+  ]
+ },
+ {
+  "id": "hgp-populacao-04",
+  "topic": "hgp-populacao",
+  "sub": "Distribuição da população",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "No mapa estão destacados os dois distritos com mais habitantes, segundo os Censos 2021. Quais são?",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "lisboa",
+    "porto"
+   ],
+   "label": "Distritos mais populosos (Censos 2021)"
+  },
+  "options": [
+   "Lisboa e Porto",
+   "Bragança e Guarda",
+   "Beja e Évora",
+   "Faro e Viseu"
+  ],
+  "correct": "Lisboa e Porto",
+  "wrong": {
+   "Bragança e Guarda": "Estes distritos do interior estão entre os que têm menos habitantes.",
+   "Beja e Évora": "São distritos do Alentejo, uma região com pouca população.",
+   "Faro e Viseu": "Têm população média; os dois maiores ficam à volta das duas grandes cidades do litoral."
+  },
+  "hints": [
+   "Os distritos destacados ficam no litoral e têm as duas maiores cidades do país.",
+   "Uma delas é a capital."
+  ],
+  "explanation": "Os distritos de Lisboa e do Porto são os mais populosos: grande parte da população vive nas áreas metropolitanas de Lisboa e do Porto, no litoral.",
+  "sources": [
+   "wiki-distritos",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "id": "hgp-populacao-05",
+  "topic": "hgp-populacao",
+  "sub": "Migrações",
+  "skill": "causa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "No Censo de 1970, a população de Portugal diminuiu em relação a 1960. Qual foi a principal causa, segundo o INE?",
+  "options": [
+   "A elevada emigração dos anos 60",
+   "Uma grande subida dos nascimentos",
+   "A chegada de muitos imigrantes",
+   "A mudança das pessoas do litoral para o interior"
+  ],
+  "correct": "A elevada emigração dos anos 60",
+  "wrong": {
+   "Uma grande subida dos nascimentos": "Mais nascimentos faria a população aumentar, não diminuir.",
+   "A chegada de muitos imigrantes": "A chegada de imigrantes aumenta a população; aqui aconteceu o contrário.",
+   "A mudança das pessoas do litoral para o interior": "Mudar de região dentro do país não muda o total de habitantes de Portugal."
+  },
+  "hints": [
+   "Procura a opção que corresponde à saída de pessoas para outros países.",
+   "Como se chamam as pessoas que saem do seu país para viver noutro?"
+  ],
+  "explanation": "Antes de 2021, o único Censo com descida da população foi o de 1970, por causa da elevada emigração na década de 60.",
+  "sources": [
+   "rtp-censos2021",
+   "eco-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-populacao-06",
+  "topic": "hgp-populacao",
+  "sub": "Envelhecimento",
+  "skill": "consequencia",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Se nascem menos crianças e as pessoas vivem mais anos, o que acontece à proporção de idosos na população?",
+  "options": [
+   "Aumenta",
+   "Diminui",
+   "Fica igual",
+   "Desaparece"
+  ],
+  "correct": "Aumenta",
+  "wrong": {
+   "Diminui": "Menos nascimentos e maior longevidade favorecem uma proporção maior de idosos.",
+   "Fica igual": "Estas mudanças alteram a estrutura etária, aumentando a proporção de idosos.",
+   "Desaparece": "Viver mais anos não faz desaparecer os idosos; aumenta o seu peso na população."
+  },
+  "hints": [
+   "Pensa no peso relativo dos grupos etários.",
+   "Com menos crianças e maior longevidade, qual dos grupos ganha peso?"
+  ],
+  "explanation": "Com menos nascimentos há menos jovens; os idosos passam a pesar mais e o índice de envelhecimento sobe. Em Portugal passou de 128 (2011) para 182 idosos por cada 100 jovens (2021).",
+  "sources": [
+   "observador-censos2021",
+   "rtp-censos2021",
+   "dn-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-populacao-07",
+  "topic": "hgp-populacao",
+  "sub": "Crescimento natural e migratório",
+  "skill": "conceito",
+  "difficulty": 2,
+  "kind": "cloze",
+  "prompt": "Completa: «Quando morrem mais pessoas do que as que nascem, o saldo natural é ___. Quando entram no país mais pessoas do que as que saem, o saldo ___ é positivo.»",
+  "correct": [
+   [
+    "negativo"
+   ],
+   [
+    "migratório",
+    "migratorio"
+   ]
+  ],
+  "hints": [
+   "Nascimentos − óbitos: se os óbitos são maiores, o resultado fica abaixo de zero.",
+   "O saldo que conta entradas e saídas de pessoas tem o nome de «migrações»."
+  ],
+  "explanation": "Mais óbitos do que nascimentos dá saldo natural negativo; mais imigrantes do que emigrantes dá saldo migratório positivo. Em 2020, em Portugal, aconteceram as duas coisas.",
+  "sources": [
+   "eurostat-populacao",
+   "observador-saldos2020"
+  ]
+ },
+ {
+  "id": "hgp-populacao-08",
+  "topic": "hgp-populacao",
+  "sub": "Envelhecimento",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "kind": "numeric",
+  "prompt": "O índice de envelhecimento era de 128 idosos por cada 100 jovens em 2011 e de 182 em 2021 (Censos, INE). Quantos idosos a mais por cada 100 jovens havia em 2021? (responde em número de idosos)",
+  "correct": 54,
+  "wrongHints": {
+   "64": "Revê a subtração: 182 − 128.",
+   "310": "Somaste os dois valores; para comparar, subtrai: 182 − 128."
+  },
+  "hints": [
+   "Para saber «quantos a mais», faz uma subtração.",
+   "Calcula 182 − 128."
+  ],
+  "explanation": "182 − 128 = 54. Em dez anos, passou a haver mais 54 idosos por cada 100 jovens: a população envelheceu.",
+  "sources": [
+   "observador-censos2021",
+   "rtp-censos2021",
+   "dn-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-populacao-09",
+  "topic": "hgp-populacao",
+  "sub": "Jovens e idosos",
+  "skill": "fonte",
+  "difficulty": 2,
+  "kind": "numeric",
+  "stimulus": "População residente por grupos de idade — Portugal, Censos 2021 (INE)\n• 0 a 14 anos (jovens): 12,9%\n• 15 a 64 anos: ?\n• 65 ou mais anos (idosos): 23,4%",
+  "prompt": "Observa o quadro. Que percentagem da população tinha entre 15 e 64 anos? (responde em %)",
+  "correct": 63.7,
+  "wrongHints": {
+   "36,3": "Esse é o total de jovens e idosos juntos; falta tirar esse valor a 100%.",
+   "76,6": "Tiraste só os idosos; tens de tirar também os jovens.",
+   "87,1": "Tiraste só os jovens; tens de tirar também os idosos."
+  },
+  "hints": [
+   "Os três grupos juntos fazem 100%.",
+   "Calcula 100 − 12,9 − 23,4."
+  ],
+  "explanation": "100 − 12,9 − 23,4 = 63,7%. O quadro mostra também que, em 2021, havia quase o dobro de idosos em relação a jovens.",
+  "sources": [
+   "observador-censos2021",
+   "rtp-censos2021",
+   "dn-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-populacao-10",
+  "topic": "hgp-populacao",
+  "sub": "Distribuição da população",
+  "skill": "vf",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Lê a afirmação sobre o distrito destacado (Bragança): «Fica no litoral e é um dos distritos mais populosos do país.»",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "braganca"
+   ],
+   "label": "Distrito de Bragança"
+  },
+  "options": [
+   "Verdadeira, porque fica junto ao mar e tem muitas cidades grandes.",
+   "Falsa, porque fica no interior e é um dos distritos com menos habitantes.",
+   "Falsa, porque fica no litoral mas tem poucos habitantes.",
+   "Verdadeira, porque todos os distritos do Norte são muito populosos."
+  ],
+  "correct": "Falsa, porque fica no interior e é um dos distritos com menos habitantes.",
+  "wrong": {
+   "Verdadeira, porque fica junto ao mar e tem muitas cidades grandes.": "Bragança fica no Nordeste, junto à fronteira com Espanha, longe do mar.",
+   "Falsa, porque fica no litoral mas tem poucos habitantes.": "A parte dos poucos habitantes está certa, mas Bragança não fica no litoral.",
+   "Verdadeira, porque todos os distritos do Norte são muito populosos.": "No Norte há diferenças: o Porto é muito populoso, Bragança não."
+  },
+  "hints": [
+   "Repara onde fica o distrito destacado: perto do mar ou perto de Espanha?",
+   "Os distritos do interior costumam ter menos habitantes."
+  ],
+  "explanation": "Bragança fica no interior Norte e é um dos distritos com menos habitantes; nos Censos 2021, perdeu população em relação a 2011.",
+  "sources": [
+   "wiki-distritos",
+   "observador-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-populacao-11",
+  "topic": "hgp-populacao",
+  "sub": "Facto e opinião",
+  "skill": "opiniao",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Sobre a população portuguesa, qual destas frases é uma OPINIÃO (e não um facto)?",
+  "options": [
+   "Portugal seria um país mais bonito se toda a gente vivesse no campo.",
+   "Em 2021, havia 182 idosos por cada 100 jovens em Portugal.",
+   "Em 2021, cerca de 5% dos residentes em Portugal tinham nacionalidade estrangeira.",
+   "Os Censos 2021 contaram cerca de 10,3 milhões de residentes."
+  ],
+  "correct": "Portugal seria um país mais bonito se toda a gente vivesse no campo.",
+  "wrong": {
+   "Em 2021, havia 182 idosos por cada 100 jovens em Portugal.": "É um facto: é um número medido pelos Censos 2021 e pode ser confirmado.",
+   "Em 2021, cerca de 5% dos residentes em Portugal tinham nacionalidade estrangeira.": "É um facto: os Censos 2021 registaram cerca de 5,2% de residentes estrangeiros.",
+   "Os Censos 2021 contaram cerca de 10,3 milhões de residentes.": "É um facto: é o resultado da contagem oficial do INE."
+  },
+  "hints": [
+   "Um facto pode ser confirmado com dados; uma opinião depende do gosto de cada pessoa.",
+   "Procura a frase com uma palavra de gosto, como «bonito»."
+  ],
+  "explanation": "«Mais bonito» é um gosto pessoal e não se pode medir: é uma opinião. As outras frases são dados dos Censos 2021.",
+  "sources": [
+   "observador-censos2021",
+   "rtp-censos2021",
+   "dn-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-populacao-12",
+  "topic": "hgp-populacao",
+  "sub": "Distribuição da população",
+  "skill": "mapa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Os distritos destacados ficam no interior, junto à fronteira com Espanha. Comparada com a dos distritos de Lisboa e do Porto, como é a sua densidade populacional (habitantes por km²)?",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "braganca",
+    "guarda",
+    "portalegre"
+   ],
+   "label": "Distritos do interior"
+  },
+  "options": [
+   "Muito mais baixa",
+   "Muito mais alta",
+   "Mais ou menos igual"
+  ],
+  "correct": "Muito mais baixa",
+  "wrong": {
+   "Muito mais alta": "É ao contrário: Lisboa e Porto têm centenas de habitantes por km² e estes distritos poucas dezenas.",
+   "Mais ou menos igual": "A diferença é enorme: o interior tem muito menos habitantes por km² do que o litoral."
+  },
+  "hints": [
+   "Densidade = número de habitantes que vivem em cada km².",
+   "Lembra-te: a população concentra-se no litoral e nas áreas metropolitanas."
+  ],
+  "explanation": "Estes três distritos têm densidades muito inferiores às dos distritos de Lisboa e do Porto.",
+  "sources": [
+   "wiki-distritos",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "id": "hgp-lugares-01",
+  "topic": "hgp-lugares",
+  "sub": "Áreas urbanas e rurais",
+  "skill": "conceito",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "O que é o êxodo rural?",
+  "options": [
+   "A saída de pessoas do campo para as cidades",
+   "A saída de pessoas das cidades para o campo",
+   "A saída de pessoas de Portugal para outros países",
+   "A chegada de turistas às aldeias"
+  ],
+  "correct": "A saída de pessoas do campo para as cidades",
+  "wrong": {
+   "A saída de pessoas das cidades para o campo": "É o movimento contrário: no êxodo rural as pessoas deixam o campo (rural).",
+   "A saída de pessoas de Portugal para outros países": "Isso é emigração: sair do país é diferente de mudar do campo para a cidade dentro do país.",
+   "A chegada de turistas às aldeias": "Os turistas visitam por pouco tempo; o êxodo é uma saída para ir viver noutro lugar."
+  },
+  "hints": [
+   "«Êxodo» quer dizer saída; «rural» refere-se ao campo.",
+   "Para onde vão as pessoas que saem do campo à procura de emprego?"
+  ],
+  "explanation": "Êxodo rural é a migração de pessoas das áreas rurais (campo) para as áreas urbanas (cidades), Se as pessoas saem do país, é emigração, que é outra coisa.",
+  "sources": [
+   "ae-hgp-6",
+   "wiki-exodo"
+  ]
+ },
+ {
+  "id": "hgp-lugares-02",
+  "topic": "hgp-lugares",
+  "sub": "Áreas urbanas e rurais",
+  "skill": "conceito",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Qual destas descrições corresponde melhor a uma área urbana?",
+  "options": [
+   "Muitos habitantes, prédios, lojas, hospitais e transportes públicos",
+   "Casas espalhadas, campos de cultivo e poucos habitantes",
+   "Floresta sem casas nem estradas",
+   "Pequenas aldeias onde quase todos vivem da agricultura"
+  ],
+  "correct": "Muitos habitantes, prédios, lojas, hospitais e transportes públicos",
+  "wrong": {
+   "Casas espalhadas, campos de cultivo e poucos habitantes": "Essa é a descrição de uma área rural.",
+   "Floresta sem casas nem estradas": "Uma área sem pessoas não é uma área urbana.",
+   "Pequenas aldeias onde quase todos vivem da agricultura": "As aldeias agrícolas são típicas das áreas rurais."
+  },
+  "hints": [
+   "«Urbano» vem de «urbe», que quer dizer cidade.",
+   "Procura a descrição com mais pessoas, construções e serviços."
+  ],
+  "explanation": "As áreas urbanas têm muitos habitantes, construções em altura e muitos serviços; as áreas rurais têm menos habitantes e mais atividades agrícolas.",
+  "sources": [
+   "ae-hgp-6"
+  ]
+ },
+ {
+  "id": "hgp-lugares-03",
+  "topic": "hgp-lugares",
+  "sub": "Organização do espaço",
+  "skill": "conceito",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "O que significa «litoralização»?",
+  "options": [
+   "A concentração da população e das atividades junto ao litoral",
+   "A construção de praias artificiais",
+   "A saída da população do litoral para o interior",
+   "O aumento do nível do mar"
+  ],
+  "correct": "A concentração da população e das atividades junto ao litoral",
+  "wrong": {
+   "A construção de praias artificiais": "Não tem a ver com obras na praia, mas com onde as pessoas vivem.",
+   "A saída da população do litoral para o interior": "É o contrário: as pessoas concentram-se no litoral.",
+   "O aumento do nível do mar": "Isso é um fenómeno do clima, não da distribuição da população."
+  },
+  "hints": [
+   "A palavra vem de «litoral», a zona junto ao mar.",
+   "Pensa em onde vive a maior parte dos portugueses."
+  ],
+  "explanation": "Litoralização é a concentração de pessoas e atividades no litoral. Segundo o INE, esse padrão foi reforçado entre 2011 e 2021.",
+  "sources": [
+   "ae-hgp-6",
+   "dnoticias-distribuicao",
+   "rtp-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-lugares-04",
+  "topic": "hgp-lugares",
+  "sub": "Áreas urbanas",
+  "skill": "facto",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "A Área Metropolitana de Lisboa abrange concelhos dos distritos destacados (Lisboa e Setúbal). Entre 2011 e 2021, o que aconteceu à sua população?",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "lisboa",
+    "setubal"
+   ],
+   "label": "Distritos de Lisboa e Setúbal"
+  },
+  "options": [
+   "Aumentou",
+   "Diminuiu",
+   "Ficou exatamente igual"
+  ],
+  "correct": "Aumentou",
+  "wrong": {
+   "Diminuiu": "O país perdeu população, mas a Área Metropolitana de Lisboa foi uma das duas regiões que cresceram.",
+   "Ficou exatamente igual": "Houve mudança: a Área Metropolitana de Lisboa ganhou cerca de 1,7% de habitantes."
+  },
+  "hints": [
+   "As áreas urbanas atraem pessoas por causa do emprego e dos serviços.",
+   "Só duas regiões ganharam população: o Algarve e esta."
+  ],
+  "explanation": "Entre 2011 e 2021, só o Algarve (+3,6%) e a Área Metropolitana de Lisboa (+1,7%) ganharam população; as outras regiões perderam. Estes dados referem-se às NUTS II de 2013, usadas nos Censos 2021.",
+  "sources": [
+   "eco-censos2021",
+   "rtp-censos2021",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "id": "hgp-lugares-05",
+  "topic": "hgp-lugares",
+  "sub": "Problemas e desafios",
+  "skill": "causa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Porque é que muitas aldeias do interior têm perdido habitantes?",
+  "options": [
+   "Muitos jovens partem para as cidades à procura de emprego e de serviços",
+   "As aldeias do interior têm demasiados empregos",
+   "Nas aldeias nascem cada vez mais crianças",
+   "As cidades estão a ficar vazias"
+  ],
+  "correct": "Muitos jovens partem para as cidades à procura de emprego e de serviços",
+  "wrong": {
+   "As aldeias do interior têm demasiados empregos": "A oferta de emprego pode ajudar a fixar população.",
+   "Nas aldeias nascem cada vez mais crianças": "Mais nascimentos favorecem o crescimento, mas o total também depende dos óbitos e das migrações.",
+   "As cidades estão a ficar vazias": "As grandes áreas urbanas do litoral é que atraem pessoas."
+  },
+  "hints": [
+   "Pensa no êxodo rural: quem sai e para onde vai?",
+   "As cidades oferecem mais empregos, escolas e hospitais."
+  ],
+  "explanation": "A falta de emprego e de serviços leva muitos jovens a sair para as cidades (êxodo rural); por isso, muitas áreas rurais ficam despovoadas e envelhecidas.",
+  "sources": [
+   "ae-hgp-6",
+   "wiki-exodo",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "id": "hgp-lugares-06",
+  "topic": "hgp-lugares",
+  "sub": "Problemas e desafios",
+  "skill": "consequencia",
+  "difficulty": 3,
+  "kind": "order",
+  "prompt": "Numa aldeia fictícia, estes acontecimentos sucederam-se pelas etapas indicadas. Ordena-os do início ao fim.",
+  "items": [
+   "A escola fica com poucos alunos e pode ficar em risco de fechar",
+   "Os jovens saem da aldeia para trabalhar na cidade",
+   "Menos famílias procuram viver na aldeia",
+   "Registam-se menos nascimentos na aldeia"
+  ],
+  "correct": [
+   "Os jovens saem da aldeia para trabalhar na cidade",
+   "Registam-se menos nascimentos na aldeia",
+   "A escola fica com poucos alunos e pode ficar em risco de fechar",
+   "Menos famílias procuram viver na aldeia"
+  ],
+  "hints": [
+   "Começa pela saída das pessoas (o êxodo rural).",
+   "Cada acontecimento é consequência do anterior: pergunta «e o que acontece a seguir?»."
+  ],
+  "explanation": "Nesta aldeia fictícia, a saída de jovens foi seguida de menos nascimentos, risco de fecho da escola e menor procura por novas famílias. É uma sequência possível, não inevitável: depende, por exemplo, de haver ou não emprego e serviços na aldeia.",
+  "sources": [
+   "ae-hgp-6",
+   "wiki-exodo"
+  ]
+ },
+ {
+  "id": "hgp-lugares-07",
+  "topic": "hgp-lugares",
+  "sub": "Áreas urbanas e rurais",
+  "skill": "conceito",
+  "difficulty": 1,
+  "kind": "cloze",
+  "prompt": "Completa: «As áreas ___ têm muitos habitantes, prédios e serviços. As áreas ___ têm casas mais espalhadas e mais atividades agrícolas.»",
+  "correct": [
+   [
+    "urbanas"
+   ],
+   [
+    "rurais"
+   ]
+  ],
+  "hints": [
+   "Cidade = urbano; campo = rural.",
+   "Escreve as palavras no feminino plural (as áreas…)."
+  ],
+  "explanation": "As áreas urbanas (cidades) concentram pessoas e serviços; as áreas rurais (campo) têm povoamento mais disperso e mais agricultura.",
+  "sources": [
+   "ae-hgp-6"
+  ]
+ },
+ {
+  "id": "hgp-lugares-08",
+  "topic": "hgp-lugares",
+  "sub": "Organização do espaço",
+  "skill": "comparacao",
+  "difficulty": 1,
+  "kind": "numeric",
+  "prompt": "Entre 2011 e 2021, a população do Algarve cresceu 3,6% e a da Área Metropolitana de Lisboa cresceu 1,7% (Censos 2021, INE; NUTS II de 2013). Quantos pontos percentuais cresceu o Algarve a mais do que a Área Metropolitana de Lisboa? (responde com um número, p. ex. 2,5)",
+  "correct": 1.9,
+  "wrongHints": {
+   "5,3": "Somaste os dois valores; para comparar, subtrai: 3,6 − 1,7."
+  },
+  "hints": [
+   "«A mais» pede uma subtração.",
+   "Calcula 3,6 − 1,7."
+  ],
+  "explanation": "3,6 − 1,7 = 1,9 pontos percentuais. Só estas duas regiões ganharam população entre 2011 e 2021; todas as outras perderam, e o interior perdeu mais.",
+  "sources": [
+   "eco-censos2021",
+   "rtp-censos2021",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "id": "hgp-lugares-09",
+  "topic": "hgp-lugares",
+  "sub": "Organização do espaço",
+  "skill": "fonte",
+  "difficulty": 3,
+  "kind": "numeric",
+  "stimulus": "Concentração da população — Portugal, Censos 2021 (INE)\n• 7 concelhos mais populosos: cerca de 20% da população, em cerca de 1% do território\n• 208 concelhos menos populosos: cerca de 20% da população, em cerca de 66% do território\n• Restantes concelhos: ?",
+  "prompt": "Observa o quadro. Aproximadamente, que percentagem da população vivia nos restantes concelhos? (responde em %)",
+  "correct": 60,
+  "wrongHints": {
+   "40": "Esse é o total dos dois grupos do quadro; falta tirá-lo a 100%.",
+   "80": "Tiraste só um dos grupos; tens de tirar os dois (20% + 20%)."
+  },
+  "hints": [
+   "Toda a população corresponde a 100%.",
+   "Calcula 100 − 20 − 20."
+  ],
+  "explanation": "Aproximadamente, 100 − 20 − 20 = 60%. O quadro mostra um grande desequilíbrio: 7 concelhos em cerca de 1% do território têm tanta gente como 208 concelhos em cerca de 66% do território.",
+  "sources": [
+   "dnoticias-distribuicao",
+   "rtp-censos2021"
+  ]
+ },
+ {
+  "id": "hgp-lugares-10",
+  "topic": "hgp-lugares",
+  "sub": "Problemas e desafios",
+  "skill": "vf",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Lê a afirmação sobre o distrito destacado (Guarda): «Entre 2011 e 2021, a sua população aumentou muito.»",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "guarda"
+   ],
+   "label": "Distrito da Guarda"
+  },
+  "options": [
+   "Falsa, porque o distrito perdeu cerca de 18 mil habitantes e todos os concelhos perderam população.",
+   "Verdadeira, porque as pessoas estão a sair das cidades do litoral para lá.",
+   "Verdadeira, porque é um dos distritos mais populosos do país.",
+   "Falsa, porque a população ficou exatamente igual."
+  ],
+  "correct": "Falsa, porque o distrito perdeu cerca de 18 mil habitantes e todos os concelhos perderam população.",
+  "wrong": {
+   "Verdadeira, porque as pessoas estão a sair das cidades do litoral para lá.": "O movimento principal é o contrário: do interior para o litoral.",
+   "Verdadeira, porque é um dos distritos mais populosos do país.": "A Guarda está entre os distritos com menos habitantes.",
+   "Falsa, porque a população ficou exatamente igual.": "É falsa, mas por outro motivo: a população diminuiu."
+  },
+  "hints": [
+   "A Guarda fica no interior, junto à fronteira com Espanha.",
+   "Lembra-te do que aconteceu à população do interior entre 2011 e 2021."
+  ],
+  "explanation": "O distrito da Guarda passou de cerca de 161 mil para cerca de 143 mil habitantes entre 2011 e 2021; todos os seus concelhos perderam população.",
+  "sources": [
+   "observador-guarda",
+   "wiki-distritos"
+  ]
+ },
+ {
+  "id": "hgp-lugares-11",
+  "topic": "hgp-lugares",
+  "sub": "Facto e opinião",
+  "skill": "opiniao",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Sobre os lugares onde vivemos, qual destas frases é uma OPINIÃO (e não um facto)?",
+  "options": [
+   "Viver na cidade é muito melhor do que viver no campo.",
+   "Entre 2011 e 2021, o Algarve ganhou população.",
+   "Todos os concelhos do distrito da Guarda perderam habitantes entre 2011 e 2021.",
+   "Os 7 concelhos mais populosos ocupam cerca de 1% do território."
+  ],
+  "correct": "Viver na cidade é muito melhor do que viver no campo.",
+  "wrong": {
+   "Entre 2011 e 2021, o Algarve ganhou população.": "É um facto confirmado pelos Censos 2021 (+3,6%).",
+   "Todos os concelhos do distrito da Guarda perderam habitantes entre 2011 e 2021.": "É um facto: foi medido nos Censos 2021.",
+   "Os 7 concelhos mais populosos ocupam cerca de 1% do território.": "É um facto: é um dado do INE sobre os Censos 2021."
+  },
+  "hints": [
+   "Uma opinião mostra o que alguém pensa ou prefere.",
+   "Procura a frase com «melhor»."
+  ],
+  "explanation": "«Muito melhor» é uma preferência pessoal: cada lugar tem vantagens e problemas. As outras frases são dados verificáveis dos Censos 2021.",
+  "sources": [
+   "eco-censos2021",
+   "observador-guarda",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "id": "hgp-lugares-12",
+  "topic": "hgp-lugares",
+  "sub": "Áreas urbanas",
+  "skill": "mapa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Portugal tem duas áreas metropolitanas. Qual delas fica, em grande parte, no distrito destacado?",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "porto"
+   ],
+   "label": "Distrito do Porto"
+  },
+  "options": [
+   "Área Metropolitana do Porto",
+   "Área Metropolitana de Lisboa",
+   "Nenhuma: é uma área rural"
+  ],
+  "correct": "Área Metropolitana do Porto",
+  "wrong": {
+   "Área Metropolitana de Lisboa": "A de Lisboa fica mais a sul, nos distritos de Lisboa e Setúbal.",
+   "Nenhuma: é uma área rural": "O distrito do Porto é o segundo mais populoso do país e muito urbanizado."
+  },
+  "hints": [
+   "O distrito destacado fica no litoral Norte.",
+   "Tem o nome da segunda maior cidade do país."
+  ],
+  "explanation": "O distrito do Porto inclui grande parte da Área Metropolitana do Porto; é o segundo distrito mais populoso, logo a seguir a Lisboa.",
+  "sources": [
+   "wiki-distritos",
+   "dnoticias-distribuicao"
+  ]
+ },
+ {
+  "id": "hgp-atividades-01",
+  "topic": "hgp-atividades",
+  "sub": "Setores de atividade",
+  "skill": "conceito",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Qual destas atividades pertence ao setor primário?",
+  "options": [
+   "A pesca",
+   "A construção de casas",
+   "O ensino numa escola",
+   "A venda numa loja"
+  ],
+  "correct": "A pesca",
+  "wrong": {
+   "A construção de casas": "A construção pertence ao setor secundário, tal como a indústria.",
+   "O ensino numa escola": "Ensinar é um serviço: pertence ao setor terciário.",
+   "A venda numa loja": "O comércio é um serviço: pertence ao setor terciário."
+  },
+  "hints": [
+   "O setor primário tira recursos diretamente da natureza.",
+   "Agricultura, criação de gado, floresta e…"
+  ],
+  "explanation": "O setor primário reúne a agricultura, a criação de gado, a floresta e a pesca: atividades que obtêm recursos diretamente da natureza.",
+  "sources": [
+   "ae-hgp-6",
+   "gpp-emprego",
+   "dge-gta18"
+  ]
+ },
+ {
+  "id": "hgp-atividades-02",
+  "topic": "hgp-atividades",
+  "sub": "Setores de atividade",
+  "skill": "conceito",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Uma fábrica transforma tomate em polpa de tomate. A que setor de atividade pertence?",
+  "options": [
+   "Secundário",
+   "Primário",
+   "Terciário"
+  ],
+  "correct": "Secundário",
+  "wrong": {
+   "Primário": "Quem cultiva o tomate é do primário; a fábrica transforma-o, por isso é do secundário.",
+   "Terciário": "O terciário presta serviços (como vender a polpa na loja); a fábrica produz um bem."
+  },
+  "hints": [
+   "A fábrica não cultiva nem vende: transforma.",
+   "Indústria e construção formam o setor…"
+  ],
+  "explanation": "O setor secundário inclui a indústria e a construção: transforma matérias-primas em produtos, como o tomate em polpa.",
+  "sources": [
+   "ae-hgp-6",
+   "gpp-emprego",
+   "dge-gta18"
+  ]
+ },
+ {
+  "id": "hgp-atividades-03",
+  "topic": "hgp-atividades",
+  "sub": "População ativa e inativa",
+  "skill": "conceito",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Quem faz parte da população ativa?",
+  "options": [
+   "As pessoas empregadas e as desempregadas disponíveis e à procura de emprego",
+   "Só as pessoas empregadas",
+   "Todas as pessoas com mais de 15 anos, incluindo estudantes e reformados",
+   "Só os reformados"
+  ],
+  "correct": "As pessoas empregadas e as desempregadas disponíveis e à procura de emprego",
+  "wrong": {
+   "Só as pessoas empregadas": "Faltam os desempregados que procuram emprego: também fazem parte da mão de obra disponível.",
+   "Todas as pessoas com mais de 15 anos, incluindo estudantes e reformados": "Estudantes e reformados podem trabalhar; se não trabalham, podem ser desempregados, se disponíveis e à procura de emprego, ou inativos.",
+   "Só os reformados": "Ser reformado não determina a situação: quem trabalha é empregado; quem não trabalha pode ser desempregado, se disponível e à procura de emprego, ou inativo."
+  },
+  "hints": [
+   "A população ativa é a mão de obra disponível para trabalhar.",
+   "Quem está desempregado mas procura emprego também está disponível."
+  ],
+  "explanation": "População ativa = empregados + desempregados disponíveis e à procura de emprego. Estudantes e reformados que trabalham são empregados; os restantes podem ser desempregados ou inativos, conforme a disponibilidade e a procura de emprego.",
+  "sources": [
+   "cml-atlas-ativa",
+   "eco-desemprego",
+   "ae-hgp-6"
+  ]
+ },
+ {
+  "id": "hgp-atividades-04",
+  "topic": "hgp-atividades",
+  "sub": "Setores de atividade",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Em que setor de atividade trabalha hoje a maioria das pessoas empregadas em Portugal?",
+  "options": [
+   "Terciário",
+   "Primário",
+   "Secundário"
+  ],
+  "correct": "Terciário",
+  "wrong": {
+   "Primário": "Hoje, menos de 5 em cada 100 trabalhadores estão no setor primário.",
+   "Secundário": "O secundário tem cerca de 1 em cada 4 trabalhadores; não é a maioria."
+  },
+  "hints": [
+   "Pensa em lojas, escolas, hospitais, transportes e turismo.",
+   "É o setor dos serviços."
+  ],
+  "explanation": "Mais de 7 em cada 10 pessoas empregadas trabalham no setor terciário (serviços), segundo os dados do INE.",
+  "sources": [
+   "dge-gta18",
+   "gpp-emprego"
+  ]
+ },
+ {
+  "id": "hgp-atividades-05",
+  "topic": "hgp-atividades",
+  "sub": "Evolução dos setores",
+  "skill": "causa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Porque é que hoje trabalham muito menos pessoas na agricultura do que em 1960?",
+  "options": [
+   "A agricultura modernizou-se e as máquinas passaram a fazer o trabalho de muitas pessoas",
+   "Os portugueses deixaram de comer produtos agrícolas",
+   "A agricultura passou a ser proibida no litoral",
+   "Hoje há mais terrenos agrícolas do que em 1960"
+  ],
+  "correct": "A agricultura modernizou-se e as máquinas passaram a fazer o trabalho de muitas pessoas",
+  "wrong": {
+   "Os portugueses deixaram de comer produtos agrícolas": "Continuamos a consumir produtos agrícolas; o que mudou foi a forma de os produzir.",
+   "A agricultura passou a ser proibida no litoral": "Não há essa proibição; há agricultura no litoral e no interior.",
+   "Hoje há mais terrenos agrícolas do que em 1960": "A área cultivada, por si só, não explica o número de trabalhadores; a mecanização permite trabalhar com menos pessoas."
+  },
+  "hints": [
+   "Pensa em tratores, ceifeiras e máquinas de rega.",
+   "Uma máquina pode fazer o trabalho de várias pessoas."
+  ],
+  "explanation": "Com a modernização (tratores e outras máquinas), são precisas menos pessoas no campo; muitos trabalhadores passaram para a indústria e sobretudo para os serviços.",
+  "sources": [
+   "dge-gta18",
+   "ae-hgp-6"
+  ]
+ },
+ {
+  "id": "hgp-atividades-06",
+  "topic": "hgp-atividades",
+  "sub": "Evolução dos setores",
+  "skill": "consequencia",
+  "difficulty": 2,
+  "kind": "order",
+  "prompt": "Ordena desde a causa até à última consequência: a mudança dos setores de atividade.",
+  "items": [
+   "Muitas pessoas procuram emprego na indústria e nos serviços",
+   "A agricultura passa a usar tratores e outras máquinas",
+   "O setor terciário passa a ter a maioria dos trabalhadores",
+   "São precisos menos trabalhadores no campo"
+  ],
+  "correct": [
+   "A agricultura passa a usar tratores e outras máquinas",
+   "São precisos menos trabalhadores no campo",
+   "Muitas pessoas procuram emprego na indústria e nos serviços",
+   "O setor terciário passa a ter a maioria dos trabalhadores"
+  ],
+  "hints": [
+   "Começa pela mudança no campo: as máquinas.",
+   "O resultado final vê-se no setor com mais trabalhadores hoje."
+  ],
+  "explanation": "A modernização agrícola libertou trabalhadores, que passaram para outros setores; hoje o terciário reúne mais de 70% dos trabalhadores.",
+  "sources": [
+   "dge-gta18",
+   "gpp-emprego"
+  ]
+ },
+ {
+  "id": "hgp-atividades-07",
+  "topic": "hgp-atividades",
+  "sub": "Evolução dos setores",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "kind": "cloze",
+  "prompt": "Completa com o nome do setor: «Em 1960, o setor com mais trabalhadores em Portugal era o ___. Hoje, é o setor ___.»",
+  "correct": [
+   [
+    "primário",
+    "primario",
+    "setor primário"
+   ],
+   [
+    "terciário",
+    "terciario",
+    "setor terciário"
+   ]
+  ],
+  "hints": [
+   "Em 1960, Portugal era um país muito agrícola.",
+   "Hoje, a maioria trabalha em serviços."
+  ],
+  "explanation": "Em 1960, o setor primário (agricultura, pesca) era o que tinha mais trabalhadores; hoje é o terciário (serviços), com mais de 70%.",
+  "sources": [
+   "dge-gta18",
+   "gpp-emprego"
+  ]
+ },
+ {
+  "id": "hgp-atividades-08",
+  "topic": "hgp-atividades",
+  "sub": "População ativa e inativa",
+  "skill": "conceito",
+  "difficulty": 2,
+  "kind": "numeric",
+  "prompt": "Numa vila há 600 pessoas empregadas, 50 desempregadas que procuram emprego e 300 estudantes e reformados que não trabalham nem procuram emprego. Quantas pessoas formam a população ativa? (responde em número de pessoas)",
+  "correct": 650,
+  "wrongHints": {
+   "600": "Esqueceste os desempregados que procuram emprego: também são população ativa.",
+   "900": "Os estudantes e reformados são população inativa; os desempregados que procuram emprego é que contam.",
+   "950": "Juntaste os estudantes e reformados, mas eles são população inativa."
+  },
+  "hints": [
+   "População ativa = empregados + desempregados que procuram emprego.",
+   "Calcula 600 + 50."
+  ],
+  "explanation": "600 + 50 = 650. Os 300 estudantes e reformados não contam: são população inativa.",
+  "sources": [
+   "cml-atlas-ativa",
+   "eco-desemprego"
+  ]
+ },
+ {
+  "id": "hgp-atividades-09",
+  "topic": "hgp-atividades",
+  "sub": "Setores de atividade",
+  "skill": "fonte",
+  "difficulty": 2,
+  "kind": "numeric",
+  "stimulus": "População empregada por setor de atividade — Portugal, 4.º trimestre de 2025 (INE/GPP, Inquérito ao Emprego, arredondado)\n• Primário: cerca de 2%\n• Secundário: cerca de 24%\n• Terciário: ?",
+  "prompt": "Observa o quadro. Qual era, aproximadamente, a percentagem de pessoas empregadas no setor terciário? (responde em %)",
+  "correct": 74,
+  "wrongHints": {
+   "26": "Esse é o total do primário e do secundário; falta tirá-lo a 100%.",
+   "76": "Tiraste só o secundário; tens de tirar também o primário."
+  },
+  "hints": [
+   "Os três setores juntos fazem 100%.",
+   "Calcula 100 − 2 − 24."
+  ],
+  "explanation": "100 − 2 − 24 = 74%. Mais de 7 em cada 10 pessoas empregadas trabalham no setor terciário.",
+  "sources": [
+   "dge-gta18",
+   "gpp-emprego"
+  ]
+ },
+ {
+  "id": "hgp-atividades-10",
+  "topic": "hgp-atividades",
+  "sub": "Setores de atividade",
+  "skill": "vf",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Lê a afirmação: «Um pescador que trabalha nas ilhas destacadas (Açores) pertence ao setor terciário.»",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "acores"
+   ],
+   "label": "Região Autónoma dos Açores"
+  },
+  "options": [
+   "Falsa, porque a pesca pertence ao setor primário.",
+   "Verdadeira, porque nas ilhas todas as atividades são serviços.",
+   "Falsa, porque a pesca pertence ao setor secundário.",
+   "Verdadeira, porque o peixe é vendido nas lojas."
+  ],
+  "correct": "Falsa, porque a pesca pertence ao setor primário.",
+  "wrong": {
+   "Verdadeira, porque nas ilhas todas as atividades são serviços.": "O setor de uma atividade não depende do lugar: a pesca é sempre do primário.",
+   "Falsa, porque a pesca pertence ao setor secundário.": "É falsa, mas o secundário é a indústria; a pesca tira recursos da natureza.",
+   "Verdadeira, porque o peixe é vendido nas lojas.": "Vender é do terciário, mas quem vende é o comerciante; o pescador apanha o peixe."
+  },
+  "hints": [
+   "O pescador tira o peixe diretamente da natureza (do mar).",
+   "Que setor obtém recursos diretamente da natureza?"
+  ],
+  "explanation": "A pesca obtém recursos diretamente da natureza, por isso pertence ao setor primário, em qualquer região do país.",
+  "sources": [
+   "gpp-emprego",
+   "dge-gta18"
+  ]
+ },
+ {
+  "id": "hgp-atividades-11",
+  "topic": "hgp-atividades",
+  "sub": "Facto e opinião",
+  "skill": "opiniao",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Sobre as atividades económicas, qual destas frases é uma OPINIÃO (e não um facto)?",
+  "options": [
+   "Trabalhar num escritório é mais importante do que trabalhar no campo.",
+   "Hoje, a maioria das pessoas empregadas em Portugal trabalha no setor terciário.",
+   "Em 1960, havia muito mais pessoas a trabalhar no setor primário do que hoje.",
+   "Os desempregados que procuram emprego fazem parte da população ativa."
+  ],
+  "correct": "Trabalhar num escritório é mais importante do que trabalhar no campo.",
+  "wrong": {
+   "Hoje, a maioria das pessoas empregadas em Portugal trabalha no setor terciário.": "É um facto: os dados do INE mostram mais de 70% no terciário.",
+   "Em 1960, havia muito mais pessoas a trabalhar no setor primário do que hoje.": "É um facto: pode ser confirmado com os dados dos Censos.",
+   "Os desempregados que procuram emprego fazem parte da população ativa.": "É um facto: é assim que as estatísticas definem a população ativa."
+  },
+  "hints": [
+   "Uma opinião não se confirma com números; depende do que cada pessoa pensa.",
+   "Todas as atividades são necessárias: quem diz que uma é «mais importante» está a opinar."
+  ],
+  "explanation": "«Mais importante» é um juízo pessoal; todos os setores são precisos (sem agricultura não há alimentos). As outras frases podem ser confirmadas com dados.",
+  "sources": [
+   "dge-gta18",
+   "gpp-emprego",
+   "cml-atlas-ativa"
+  ]
+ },
+ {
+  "id": "hgp-atividades-12",
+  "topic": "hgp-atividades",
+  "sub": "Comércio e serviços",
+  "skill": "mapa",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "O distrito destacado (Faro, no Algarve) recebe muitos turistas: há hotéis, restaurantes e guias turísticos. A que setor de atividade pertence o turismo?",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "faro"
+   ],
+   "label": "Distrito de Faro (Algarve)"
+  },
+  "options": [
+   "Terciário",
+   "Primário",
+   "Secundário"
+  ],
+  "correct": "Terciário",
+  "wrong": {
+   "Primário": "O primário tira recursos da natureza (agricultura, pesca); o turismo presta serviços.",
+   "Secundário": "O secundário transforma matérias-primas (indústria); o turismo presta serviços."
+  },
+  "hints": [
+   "Hotéis e restaurantes não produzem bens: servem pessoas.",
+   "É o setor dos serviços."
+  ],
+  "explanation": "O turismo, tal como o comércio, a saúde e a educação, é um serviço: pertence ao setor terciário.",
+  "sources": [
+   "ae-hgp-6",
+   "gpp-emprego"
+  ]
+ },
+ {
+  "id": "hgp-lazer-01",
+  "topic": "hgp-lazer",
+  "sub": "lazer",
+  "skill": "conceito",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "O que é o lazer?",
+  "options": [
+   "Atividades que fazemos por gosto no tempo livre, para descansar ou divertir",
+   "Trabalho extra feito ao fim de semana para ganhar mais dinheiro",
+   "Os trabalhos de casa que a escola manda fazer",
+   "Uma viagem obrigatória feita por motivos de trabalho"
+  ],
+  "correct": "Atividades que fazemos por gosto no tempo livre, para descansar ou divertir",
+  "wrong": {
+   "Trabalho extra feito ao fim de semana para ganhar mais dinheiro": "Trabalhar é uma obrigação; o lazer acontece no tempo livre, sem obrigações.",
+   "Os trabalhos de casa que a escola manda fazer": "Os trabalhos de casa são uma obrigação escolar, não uma atividade de tempo livre.",
+   "Uma viagem obrigatória feita por motivos de trabalho": "Se é obrigatória e por trabalho, não é lazer: o lazer escolhe-se por gosto."
+  },
+  "hints": [
+   "Pensa no que fazes quando não tens aulas nem obrigações.",
+   "Ler, jogar, ir à praia ou passear são exemplos."
+  ],
+  "explanation": "Lazer é o conjunto de atividades que escolhemos fazer no tempo livre, por gosto, como desporto, leitura ou passeios. As Aprendizagens Essenciais do 6.º ano pedem para exemplificar a importância do lazer e do turismo.",
+  "sources": [
+   "dge-ae-6",
+   "dge-plan"
+  ]
+ },
+ {
+  "id": "hgp-lazer-02",
+  "topic": "hgp-lazer",
+  "sub": "ambiente",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "O que significa uma Bandeira Azul hasteada numa praia?",
+  "options": [
+   "É um símbolo de qualidade ambiental dado a praias que cumprem critérios, como a boa qualidade da água",
+   "Avisa que o mar está perigoso e é proibido nadar",
+   "Indica que a praia é privada e é preciso pagar para entrar",
+   "Mostra que a praia fica dentro de um parque nacional"
+  ],
+  "correct": "É um símbolo de qualidade ambiental dado a praias que cumprem critérios, como a boa qualidade da água",
+  "wrong": {
+   "Avisa que o mar está perigoso e é proibido nadar": "Isso é a bandeira vermelha dos nadadores-salvadores; a Bandeira Azul é um galardão ambiental.",
+   "Indica que a praia é privada e é preciso pagar para entrar": "A Bandeira Azul não tem nada a ver com pagar; reconhece a qualidade ambiental da praia.",
+   "Mostra que a praia fica dentro de um parque nacional": "A Bandeira Azul não depende de parques nacionais; avalia a água, a gestão ambiental, a informação e a segurança."
+  },
+  "hints": [
+   "É um prémio, não um aviso de perigo.",
+   "Tem a ver com o ambiente e com a qualidade da água."
+  ],
+  "explanation": "A Bandeira Azul é um símbolo de qualidade ambiental para praias, portos de recreio e marinas. Para a receber, a praia tem de cumprir critérios de qualidade da água, educação ambiental, gestão ambiental e segurança.",
+  "sources": [
+   "abaae",
+   "abaae-crit",
+   "postal-ba"
+  ]
+ },
+ {
+  "id": "hgp-lazer-03",
+  "topic": "hgp-lazer",
+  "sub": "areas-protegidas",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Qual é o único parque nacional de Portugal?",
+  "options": [
+   "Peneda-Gerês",
+   "Serra da Estrela",
+   "Ria Formosa",
+   "Arrábida"
+  ],
+  "correct": "Peneda-Gerês",
+  "wrong": {
+   "Serra da Estrela": "A Serra da Estrela é uma área protegida importante, mas não tem o estatuto de parque nacional.",
+   "Ria Formosa": "A Ria Formosa, no Algarve, é protegida, mas não é o parque nacional.",
+   "Arrábida": "A Arrábida é protegida, mas o único parque nacional fica no norte do país."
+  },
+  "hints": [
+   "Fica no extremo norte de Portugal, junto à fronteira com Espanha.",
+   "O nome junta duas serras: a da Peneda e a do Gerês."
+  ],
+  "explanation": "O Parque Nacional da Peneda-Gerês é a única área protegida portuguesa com o estatuto de parque nacional. Foi também a primeira área protegida do país.",
+  "sources": [
+   "desp-pnpg",
+   "rcm-pnpg"
+  ]
+ },
+ {
+  "id": "hgp-lazer-04",
+  "topic": "hgp-lazer",
+  "sub": "turismo-sustentavel",
+  "skill": "conceito",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "O que é um turismo sustentável?",
+  "options": [
+   "Turismo que traz benefícios às pessoas e à economia sem estragar o ambiente, poupando água e energia e reduzindo o lixo",
+   "Turismo que tenta receber o maior número possível de visitantes só no verão",
+   "Turismo feito apenas por pessoas que vivem em Portugal",
+   "Turismo que constrói hotéis junto a todas as praias"
+  ],
+  "correct": "Turismo que traz benefícios às pessoas e à economia sem estragar o ambiente, poupando água e energia e reduzindo o lixo",
+  "wrong": {
+   "Turismo que tenta receber o maior número possível de visitantes só no verão": "Concentrar os visitantes no verão é a sazonalidade, um problema que a Estratégia Turismo 2027 quer reduzir.",
+   "Turismo feito apenas por pessoas que vivem em Portugal": "Ser sustentável não depende da nacionalidade dos turistas, mas da forma como o turismo é feito.",
+   "Turismo que constrói hotéis junto a todas as praias": "Construir demasiado no litoral aumenta a pressão sobre o território; isso não é sustentável."
+  },
+  "hints": [
+   "Sustentável quer dizer que pode continuar no futuro sem esgotar os recursos.",
+   "Pensa em poupar água e energia e em tratar bem quem vive no local."
+  ],
+  "explanation": "Um turismo sustentável traz benefícios sem estragar o ambiente nem prejudicar quem vive no local. A Estratégia Turismo 2027 quer, por exemplo, que mais de 90% das empresas do turismo usem a energia e a água de forma eficiente e tratem bem os resíduos.",
+  "sources": [
+   "tp-et27",
+   "gov-et27",
+   "gov-tsust"
+  ]
+ },
+ {
+  "id": "hgp-lazer-05",
+  "topic": "hgp-lazer",
+  "sub": "areas-protegidas",
+  "skill": "mapa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "viana-do-castelo",
+    "braga",
+    "vila-real"
+   ],
+   "label": "Distritos destacados"
+  },
+  "prompt": "O mapa destaca os distritos onde fica uma área protegida muito especial, nos concelhos de Melgaço, Arcos de Valdevez, Ponte da Barca, Terras de Bouro e Montalegre. Que área protegida é?",
+  "options": [
+   "Parque Nacional da Peneda-Gerês",
+   "Serra da Estrela",
+   "Ria Formosa",
+   "Serra da Arrábida"
+  ],
+  "correct": "Parque Nacional da Peneda-Gerês",
+  "wrong": {
+   "Serra da Estrela": "A Serra da Estrela fica no centro do país, longe destes distritos do norte.",
+   "Ria Formosa": "A Ria Formosa fica no Algarve, no sul, e não no norte.",
+   "Serra da Arrábida": "A Arrábida fica perto de Setúbal, a sul de Lisboa."
+  },
+  "hints": [
+   "Os distritos destacados ficam no extremo noroeste de Portugal.",
+   "É o único parque nacional do país."
+  ],
+  "explanation": "O Parque Nacional da Peneda-Gerês abrange os concelhos de Melgaço, Arcos de Valdevez, Ponte da Barca, Terras de Bouro e Montalegre, nos distritos de Viana do Castelo, Braga e Vila Real.",
+  "sources": [
+   "desp-pnpg",
+   "rcm-pnpg"
+  ]
+ },
+ {
+  "id": "hgp-lazer-06",
+  "topic": "hgp-lazer",
+  "sub": "impacto-ambiental",
+  "skill": "causa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Porque é que o turismo e o lazer podem aumentar a falta de água no Algarve?",
+  "options": [
+   "Porque chegam muitos visitantes ao mesmo tempo e atividades como o golfe e os jardins precisam de muita água para rega",
+   "Porque os turistas não usam água durante as férias",
+   "Porque o Algarve é a região onde mais chove em Portugal",
+   "Porque os hotéis do Algarve só abrem no inverno"
+  ],
+  "correct": "Porque chegam muitos visitantes ao mesmo tempo e atividades como o golfe e os jardins precisam de muita água para rega",
+  "wrong": {
+   "Porque os turistas não usam água durante as férias": "Pelo contrário: mais visitantes significa mais consumo de água.",
+   "Porque o Algarve é a região onde mais chove em Portugal": "Não é assim: em 2023 o Algarve teve uma seca que obrigou a cortar água.",
+   "Porque os hotéis do Algarve só abrem no inverno": "A maior procura turística é no verão, quando chove pouco."
+  },
+  "hints": [
+   "Pensa no que acontece quando há muita gente e pouca chuva.",
+   "Um campo de golfe precisa de ser regado muitas vezes."
+  ],
+  "explanation": "Quando há muitos visitantes e pouca chuva, o consumo de água sobe numa altura em que ela é escassa. Por isso, na seca de 2023, o Governo cortou parte da água usada para regar campos de golfe e jardins no Algarve, e o plano para um turismo sustentável inclui a eficiência no uso da água nos campos de golfe.",
+  "sources": [
+   "dn-golfe",
+   "gov-tsust"
+  ]
+ },
+ {
+  "id": "hgp-lazer-07",
+  "topic": "hgp-lazer",
+  "sub": "impacto-ambiental",
+  "skill": "consequencia",
+  "difficulty": 2,
+  "kind": "order",
+  "prompt": "Ordena esta cadeia de causas e consequências, da primeira para a última.",
+  "items": [
+   "O Governo decide cortar parte da água usada para regar campos de golfe e jardins.",
+   "Chove pouco durante muito tempo e há seca.",
+   "Os campos de golfe têm de regar com menos água e poupar.",
+   "A água disponível fica escassa."
+  ],
+  "correct": [
+   "Chove pouco durante muito tempo e há seca.",
+   "A água disponível fica escassa.",
+   "O Governo decide cortar parte da água usada para regar campos de golfe e jardins.",
+   "Os campos de golfe têm de regar com menos água e poupar."
+  ],
+  "hints": [
+   "Começa pela causa natural: o tempo.",
+   "A decisão do Governo vem depois de faltar água; a poupança dos campos vem no fim."
+  ],
+  "explanation": "A seca reduz a água disponível; para a poupar, em 2023 o Governo cortou parte da água para rega de golfe e jardins no Algarve. A consequência final é que essas atividades de lazer têm de usar menos água.",
+  "sources": [
+   "dn-golfe",
+   "gov-tsust"
+  ]
+ },
+ {
+  "id": "hgp-lazer-08",
+  "topic": "hgp-lazer",
+  "sub": "turismo-sustentavel",
+  "skill": "fonte",
+  "difficulty": 2,
+  "kind": "numeric",
+  "stimulus": "Metas da Estratégia Turismo 2027 (Turismo de Portugal, adaptado):\n• Aumentar a procura em todo o território: 80 milhões de dormidas.\n• Alargar a atividade turística a todo o ano.\n• Mais de 90% das empresas do turismo com medidas de uso eficiente de energia e de água e de gestão dos resíduos.",
+  "prompt": "Segundo o quadro, que percentagem de empresas do turismo se quer ultrapassar no uso eficiente de energia e de água? Escreve só o número.",
+  "correct": 90,
+  "wrongHints": {
+   "80": "80 é o número de milhões de dormidas, não uma percentagem de empresas.",
+   "2027": "2027 é o ano da meta, não a percentagem."
+  },
+  "hints": [
+   "Procura a linha que fala de energia e de água.",
+   "O número vem antes do símbolo %."
+  ],
+  "explanation": "A meta é que mais de 90% das empresas do turismo usem a energia e a água de forma eficiente e façam gestão dos resíduos. É uma das metas ambientais da Estratégia Turismo 2027, que tem como horizonte o ano de 2027 (entretanto o Governo apresentou a Estratégia Turismo 2035).",
+  "sources": [
+   "tp-et27",
+   "gov-et27"
+  ]
+ },
+ {
+  "id": "hgp-lazer-09",
+  "topic": "hgp-lazer",
+  "sub": "turismo",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "kind": "cloze",
+  "prompt": "Completa a comparação: um turista ___ pelo menos uma noite fora do sítio onde vive; um visitante do dia (excursionista) regressa a casa no ___ dia.",
+  "correct": [
+   [
+    "dorme",
+    "fica",
+    "pernoita",
+    "passa"
+   ],
+   [
+    "mesmo"
+   ]
+  ],
+  "hints": [
+   "A diferença está em passar ou não a noite fora.",
+   "O excursionista vai e volta sem dormir fora."
+  ],
+  "explanation": "Nas estatísticas do turismo, o turista é o visitante cuja viagem inclui pelo menos uma noite fora. Se não dorme fora, é um visitante do dia (excursionista).",
+  "sources": [
+   "untourism",
+   "ine-es-turista"
+  ]
+ },
+ {
+  "id": "hgp-lazer-10",
+  "topic": "hgp-lazer",
+  "sub": "areas-protegidas",
+  "skill": "vf",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "«O Parque Nacional da Peneda-Gerês foi a primeira área protegida de Portugal.» Esta afirmação é…",
+  "options": [
+   "Verdadeira, porque foi a primeira área protegida do país e continua a ser o único parque nacional",
+   "Falsa, porque a primeira área protegida só foi criada depois do 25 de Abril",
+   "Falsa, porque Portugal não tem nenhum parque nacional",
+   "Verdadeira, porque é a área protegida mais pequena do país"
+  ],
+  "correct": "Verdadeira, porque foi a primeira área protegida do país e continua a ser o único parque nacional",
+  "wrong": {
+   "Falsa, porque a primeira área protegida só foi criada depois do 25 de Abril": "O Peneda-Gerês foi criado em 1971, antes do 25 de Abril de 1974, e foi o primeiro.",
+   "Falsa, porque Portugal não tem nenhum parque nacional": "Portugal tem um parque nacional: o da Peneda-Gerês.",
+   "Verdadeira, porque é a área protegida mais pequena do país": "A afirmação é verdadeira, mas a justificação está errada: o motivo é ter sido a primeira, não o tamanho."
+  },
+  "hints": [
+   "Lê com atenção também a justificação de cada opção.",
+   "O parque foi criado em 1971."
+  ],
+  "explanation": "Documentos oficiais afirmam que o Parque Nacional da Peneda-Gerês foi a primeira área protegida do país e é a única com o estatuto de parque nacional. Foi criado em 1971.",
+  "sources": [
+   "desp-pnpg",
+   "rcm-pnpg"
+  ]
+ },
+ {
+  "id": "hgp-lazer-11",
+  "topic": "hgp-lazer",
+  "sub": "areas-protegidas",
+  "skill": "facto",
+  "difficulty": 3,
+  "kind": "numeric",
+  "prompt": "Em que ano foi criado o Parque Nacional da Peneda-Gerês?",
+  "correct": 1971,
+  "wrongHints": {
+   "1974": "1974 é o ano do 25 de Abril; o parque foi criado uns anos antes.",
+   "1986": "1986 é o ano da entrada de Portugal na CEE; o parque é muito mais antigo."
+  },
+  "hints": [
+   "Foi criado antes do 25 de Abril de 1974.",
+   "É no início da década de 1970."
+  ],
+  "explanation": "O Parque Nacional da Peneda-Gerês foi criado pelo Decreto-Lei n.º 187/71, de 8 de maio de 1971.",
+  "sources": [
+   "desp-pnpg",
+   "lusa-pnpg"
+  ]
+ },
+ {
+  "id": "hgp-lazer-12",
+  "topic": "hgp-lazer",
+  "sub": "facto-opiniao",
+  "skill": "opiniao",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Sobre lazer e turismo, qual destas frases é uma opinião (e não um facto)?",
+  "options": [
+   "As praias do Algarve são as mais bonitas do mundo.",
+   "O Peneda-Gerês é o único parque nacional de Portugal.",
+   "A Bandeira Azul avalia a qualidade da água das praias.",
+   "Em 2023, por causa da seca, houve cortes na água para regar campos de golfe no Algarve."
+  ],
+  "correct": "As praias do Algarve são as mais bonitas do mundo.",
+  "wrong": {
+   "O Peneda-Gerês é o único parque nacional de Portugal.": "É um facto: pode ser confirmado em documentos oficiais.",
+   "A Bandeira Azul avalia a qualidade da água das praias.": "É um facto: a qualidade da água faz parte dos critérios da Bandeira Azul.",
+   "Em 2023, por causa da seca, houve cortes na água para regar campos de golfe no Algarve.": "É um facto: foi uma decisão do Governo, noticiada em 2023."
+  },
+  "hints": [
+   "Um facto pode ser confirmado; uma opinião depende do gosto de cada pessoa.",
+   "Procura uma palavra que mostre um gosto pessoal, como «mais bonitas»."
+  ],
+  "explanation": "Dizer que umas praias são «as mais bonitas» é uma opinião: outras pessoas podem pensar diferente. As outras frases são factos que se podem confirmar em fontes.",
+  "sources": [
+   "desp-pnpg",
+   "abaae-crit",
+   "dn-golfe"
+  ]
+ },
+ {
+  "id": "hgp-mundo-01",
+  "topic": "hgp-mundo",
+  "sub": "cplp",
+  "skill": "facto",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Que organização, criada em Lisboa em 1996, reúne países que têm a língua portuguesa como base?",
+  "options": [
+   "CPLP – Comunidade dos Países de Língua Portuguesa",
+   "ONU – Organização das Nações Unidas",
+   "NATO – Organização do Tratado do Atlântico Norte",
+   "União Europeia"
+  ],
+  "correct": "CPLP – Comunidade dos Países de Língua Portuguesa",
+  "wrong": {
+   "ONU – Organização das Nações Unidas": "A ONU reúne quase todos os países do mundo; Portugal entrou em 1955.",
+   "NATO – Organização do Tratado do Atlântico Norte": "A NATO é uma aliança de defesa criada em 1949, não uma comunidade de língua.",
+   "União Europeia": "A União Europeia junta países europeus; Portugal entrou na CEE em 1986."
+  },
+  "hints": [
+   "O nome da organização fala da língua.",
+   "Inclui Portugal, Brasil, Angola, Moçambique e outros países."
+  ],
+  "explanation": "A CPLP foi criada em Lisboa a 17 de julho de 1996 e tem hoje nove Estados-membros. A língua portuguesa é o fundamento desta comunidade.",
+  "sources": [
+   "cplp-hist",
+   "gov-cplp"
+  ]
+ },
+ {
+  "id": "hgp-mundo-02",
+  "topic": "hgp-mundo",
+  "sub": "comercio-externo",
+  "skill": "facto",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Segundo o INE, qual foi o principal destino das exportações portuguesas de bens em 2024?",
+  "options": [
+   "Espanha",
+   "Alemanha",
+   "França",
+   "Estados Unidos"
+  ],
+  "correct": "Espanha",
+  "wrong": {
+   "Alemanha": "A Alemanha ficou atrás, com cerca de 12% das exportações.",
+   "França": "A França também ficou atrás, com cerca de 12% das exportações.",
+   "Estados Unidos": "Os Estados Unidos não foram o principal destino; o primeiro foi um país vizinho."
+  },
+  "hints": [
+   "É o único país com fronteira terrestre com Portugal.",
+   "Recebeu cerca de um quarto das exportações."
+  ],
+  "explanation": "Em 2024, Espanha foi o principal destino das exportações portuguesas de bens, com cerca de 26% do total. A Alemanha e a França vieram a seguir, com cerca de 12% cada.",
+  "sources": [
+   "aicep-exp",
+   "obs-exp"
+  ]
+ },
+ {
+  "id": "hgp-mundo-03",
+  "topic": "hgp-mundo",
+  "sub": "nato",
+  "skill": "facto",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Portugal é membro fundador de uma aliança de defesa criada em 1949. Qual?",
+  "options": [
+   "NATO",
+   "CPLP",
+   "União Europeia",
+   "ONU"
+  ],
+  "correct": "NATO",
+  "wrong": {
+   "CPLP": "A CPLP foi criada em 1996 e liga países de língua portuguesa.",
+   "União Europeia": "Portugal só entrou na CEE, hoje União Europeia, em 1986.",
+   "ONU": "Portugal entrou na ONU em 1955, por isso não foi seu fundador."
+  },
+  "hints": [
+   "O tratado foi assinado em Washington.",
+   "O nome refere o oceano Atlântico."
+  ],
+  "explanation": "O Tratado do Atlântico Norte foi assinado em Washington a 4 de abril de 1949 por 12 países, entre eles Portugal. Por isso, Portugal é membro fundador da NATO.",
+  "sources": [
+   "nato-treaty",
+   "gov-nato"
+  ]
+ },
+ {
+  "id": "hgp-mundo-04",
+  "topic": "hgp-mundo",
+  "sub": "onu",
+  "skill": "facto",
+  "difficulty": 3,
+  "kind": "mcq",
+  "prompt": "Em que ano Portugal se tornou membro da ONU?",
+  "options": [
+   "1949",
+   "1955",
+   "1986",
+   "1996"
+  ],
+  "correct": "1955",
+  "wrong": {
+   "1949": "1949 é o ano em que Portugal ajudou a fundar a NATO.",
+   "1986": "1986 é o ano da entrada de Portugal na CEE, hoje União Europeia.",
+   "1996": "1996 é o ano da criação da CPLP."
+  },
+  "hints": [
+   "Foi na década de 1950.",
+   "Foi seis anos depois da fundação da NATO."
+  ],
+  "explanation": "Portugal foi admitido na ONU a 14 de dezembro de 1955, por decisão da Assembleia Geral. Não foi membro fundador da ONU, criada em 1945.",
+  "sources": [
+   "unric",
+   "un-555"
+  ]
+ },
+ {
+  "id": "hgp-mundo-05",
+  "topic": "hgp-mundo",
+  "sub": "transportes",
+  "skill": "mapa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "figure": {
+   "type": "pt-map",
+   "highlight": [
+    "lisboa",
+    "porto",
+    "faro"
+   ],
+   "label": "Distritos destacados"
+  },
+  "prompt": "O mapa destaca três distritos do continente. Em cada um fica um dos três aeroportos do continente com mais passageiros em 2024. Que aeroportos são?",
+  "options": [
+   "Lisboa, Porto e Faro",
+   "Braga, Coimbra e Évora",
+   "Beja, Bragança e Viseu",
+   "Aveiro, Leiria e Setúbal"
+  ],
+  "correct": "Lisboa, Porto e Faro",
+  "wrong": {
+   "Braga, Coimbra e Évora": "Estes distritos não têm nenhum dos grandes aeroportos internacionais do continente.",
+   "Beja, Bragança e Viseu": "Estes distritos ficam no interior e não têm os aeroportos com mais passageiros.",
+   "Aveiro, Leiria e Setúbal": "Estes distritos não estão destacados no mapa nem têm os aeroportos com mais passageiros."
+  },
+  "hints": [
+   "Repara que um distrito está no norte, outro no centro-litoral e outro no sul.",
+   "O do sul serve sobretudo os turistas do Algarve."
+  ],
+  "explanation": "Em 2024, o aeroporto de Lisboa teve mais de 30 milhões de passageiros, o do Porto mais de 14 milhões e o de Faro quase 10 milhões (dados do INE). Ficam nos distritos de Lisboa, Porto e Faro.",
+  "sources": [
+   "forbes-aero",
+   "postal-faro"
+  ]
+ },
+ {
+  "id": "hgp-mundo-06",
+  "topic": "hgp-mundo",
+  "sub": "transportes",
+  "skill": "causa",
+  "difficulty": 2,
+  "kind": "mcq",
+  "prompt": "Porque é que a maior parte das mercadorias trocadas no mundo viaja de navio?",
+  "options": [
+   "Porque um navio leva enormes quantidades de carga de uma só vez e liga continentes separados pelo oceano",
+   "Porque o navio é o meio de transporte mais rápido",
+   "Porque os aviões não podem levar mercadorias",
+   "Porque os comboios conseguem atravessar o oceano"
+  ],
+  "correct": "Porque um navio leva enormes quantidades de carga de uma só vez e liga continentes separados pelo oceano",
+  "wrong": {
+   "Porque o navio é o meio de transporte mais rápido": "O avião é muito mais rápido; o navio é lento, mas leva muita carga.",
+   "Porque os aviões não podem levar mercadorias": "Os aviões também transportam mercadorias; os navios permitem transportar grandes volumes com menor custo por tonelada.",
+   "Porque os comboios conseguem atravessar o oceano": "O comboio circula em terra, sobre carris; não atravessa oceanos."
+  },
+  "hints": [
+   "Pensa na quantidade de contentores que cabe num navio.",
+   "A maior parte dos continentes está separada por mar."
+  ],
+  "explanation": "Segundo a UNCTAD (ONU), o transporte marítimo leva mais de 80% do volume de mercadorias do comércio mundial. Em Portugal, o porto de Sines movimentou mais de metade da carga dos portos do continente em 2024.",
+  "sources": [
+   "unctad",
+   "eea-rail",
+   "amt-portos",
+   "gov-portos"
+  ]
+ },
+ {
+  "id": "hgp-mundo-07",
+  "topic": "hgp-mundo",
+  "sub": "transportes",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "kind": "cloze",
+  "prompt": "Completa: em média, na Europa, o ___ emite menos gases com efeito de estufa por passageiro e por quilómetro do que o automóvel e o avião.",
+  "correct": [
+   [
+    "comboio"
+   ]
+  ],
+  "hints": [
+   "Um meio de transporte que anda sobre carris e muitas vezes é elétrico.",
+   "Liga as carruagens a uma locomotiva."
+  ],
+  "explanation": "Segundo a Agência Europeia do Ambiente, entre comboio, automóvel e avião, o comboio é, em média na Europa, o que emite menos gases por passageiro e por quilómetro. Por isso, é uma boa opção para viagens entre cidades.",
+  "sources": [
+   "eea-rail",
+   "ep-rail"
+  ]
+ },
+ {
+  "id": "hgp-mundo-08",
+  "topic": "hgp-mundo",
+  "sub": "comunicacoes",
+  "skill": "cronologia",
+  "difficulty": 2,
+  "kind": "order",
+  "prompt": "Ordena estes marcos das telecomunicações em Portugal, do mais antigo para o mais recente.",
+  "items": [
+   "Ligação de Portugal à internet",
+   "Primeiras redes de telefone em Lisboa e no Porto",
+   "Início do telégrafo elétrico em Portugal",
+   "Início das emissões regulares de televisão (RTP)"
+  ],
+  "correct": [
+   "Início do telégrafo elétrico em Portugal",
+   "Primeiras redes de telefone em Lisboa e no Porto",
+   "Início das emissões regulares de televisão (RTP)",
+   "Ligação de Portugal à internet"
+  ],
+  "hints": [
+   "O telégrafo enviava mensagens por fios antes de existir o telefone.",
+   "A internet é a mais recente: chegou no fim do século XX."
+  ],
+  "explanation": "O telégrafo elétrico começou em 1855, as redes de telefone de Lisboa e Porto surgiram a partir de 1882, a RTP iniciou as emissões regulares em 1957 e Portugal ligou-se à internet em 1991.",
+  "sources": [
+   "fpc-telegrafo",
+   "as-telefone",
+   "dn-rtp",
+   "rtp-1957",
+   "fccn-internet"
+  ]
+ },
+ {
+  "id": "hgp-mundo-09",
+  "topic": "hgp-mundo",
+  "sub": "uniao-europeia",
+  "skill": "consequencia",
+  "difficulty": 2,
+  "kind": "numeric",
+  "prompt": "Portugal entrou na zona euro a 1 de janeiro de 1999. Como consequência, as notas e moedas de euro substituíram o escudo. Em que ano começaram a circular essas notas e moedas?",
+  "correct": 2002,
+  "wrongHints": {
+   "1986": "1986 é o ano da entrada de Portugal na CEE.",
+   "1999": "Em 1999 Portugal entrou na zona euro, mas as notas e moedas só circularam três anos depois."
+  },
+  "hints": [
+   "Houve um período de transição de três anos.",
+   "Foi no início do século XXI."
+  ],
+  "explanation": "As notas e moedas de euro começaram a circular em Portugal a 1 de janeiro de 2002 e substituíram o escudo. A entrada na zona euro tinha acontecido em 1999.",
+  "sources": [
+   "ec-euro",
+   "eu-pt"
+  ]
+ },
+ {
+  "id": "hgp-mundo-10",
+  "topic": "hgp-mundo",
+  "sub": "transportes",
+  "skill": "fonte",
+  "difficulty": 2,
+  "kind": "numeric",
+  "stimulus": "Carga movimentada nos portos comerciais do continente em 2024 (Governo/AMT, valores arredondados):\n• Todos os portos do continente: cerca de 88 milhões de toneladas\n• Porto de Sines: cerca de 47 milhões de toneladas",
+  "prompt": "Segundo o quadro, quantos milhões de toneladas foram movimentados, aproximadamente, nos restantes portos do continente? Escreve só o número.",
+  "correct": 41,
+  "wrongHints": {
+   "47": "47 é a carga de Sines; os restantes portos movimentaram o que sobra do total.",
+   "135": "Somaste os dois valores; para saber o que falta, subtrai: 88 − 47."
+  },
+  "hints": [
+   "O total é a soma de Sines com todos os outros portos.",
+   "Calcula 88 − 47."
+  ],
+  "explanation": "88 − 47 = 41 milhões de toneladas (valores arredondados). Sines movimentou mais de metade da carga de todos os portos do continente.",
+  "sources": [
+   "amt-portos",
+   "gov-portos"
+  ]
+ },
+ {
+  "id": "hgp-mundo-11",
+  "topic": "hgp-mundo",
+  "sub": "comunidades",
+  "skill": "vf",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "«O 10 de junho é também um dia para lembrar os portugueses que vivem no estrangeiro.» Esta afirmação é…",
+  "options": [
+   "Verdadeira, porque é o Dia de Portugal, de Camões e das Comunidades Portuguesas",
+   "Falsa, porque o 10 de junho só celebra o 25 de Abril",
+   "Falsa, porque os portugueses que vivem no estrangeiro não fazem parte das comunidades portuguesas",
+   "Verdadeira, porque é o dia em que Portugal entrou na União Europeia"
+  ],
+  "correct": "Verdadeira, porque é o Dia de Portugal, de Camões e das Comunidades Portuguesas",
+  "wrong": {
+   "Falsa, porque o 10 de junho só celebra o 25 de Abril": "O 25 de Abril celebra-se a 25 de abril; o 10 de junho é o Dia de Portugal.",
+   "Falsa, porque os portugueses que vivem no estrangeiro não fazem parte das comunidades portuguesas": "São precisamente os portugueses espalhados pelo mundo que formam as comunidades portuguesas.",
+   "Verdadeira, porque é o dia em que Portugal entrou na União Europeia": "A afirmação é verdadeira, mas a razão está errada: a entrada na CEE foi a 1 de janeiro de 1986."
+  },
+  "hints": [
+   "Lembra-te do nome completo do feriado de 10 de junho.",
+   "O nome inclui um poeta e as comunidades."
+  ],
+  "explanation": "O 10 de junho é o Dia de Portugal, de Camões e das Comunidades Portuguesas. Celebra o país, o poeta Luís de Camões e os portugueses que vivem espalhados pelo mundo.",
+  "sources": [
+   "marinha-10jun",
+   "sousel-10jun"
+  ]
+ },
+ {
+  "id": "hgp-mundo-12",
+  "topic": "hgp-mundo",
+  "sub": "facto-opiniao",
+  "skill": "opiniao",
+  "difficulty": 1,
+  "kind": "mcq",
+  "prompt": "Sobre Portugal e o mundo, qual destas frases é uma opinião (e não um facto)?",
+  "options": [
+   "A União Europeia é a organização internacional mais importante do mundo.",
+   "Portugal entrou na CEE, hoje União Europeia, em 1986.",
+   "A CPLP tem nove Estados-membros.",
+   "Portugal é membro fundador da NATO."
+  ],
+  "correct": "A União Europeia é a organização internacional mais importante do mundo.",
+  "wrong": {
+   "Portugal entrou na CEE, hoje União Europeia, em 1986.": "É um facto: a data de 1 de janeiro de 1986 está confirmada pela União Europeia.",
+   "A CPLP tem nove Estados-membros.": "É um facto: pode contar-se e confirmar-se na CPLP.",
+   "Portugal é membro fundador da NATO.": "É um facto: Portugal assinou o tratado da NATO em 1949."
+  },
+  "hints": [
+   "Uma opinião é uma ideia pessoal que outras pessoas podem não partilhar.",
+   "Desconfia de expressões como «a mais importante»."
+  ],
+  "explanation": "Dizer que uma organização é «a mais importante do mundo» é uma opinião, porque depende do ponto de vista. As outras frases são factos que se podem confirmar em fontes oficiais.",
+  "sources": [
+   "eu-pt",
+   "ec-pt-ue",
+   "cplp-hist",
+   "nato-treaty"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-13",
+  "topic": "hgp-seculo-xviii",
+  "sub": "economia",
+  "skill": "causa",
+  "difficulty": 2,
+  "prompt": "No Brasil do século XVIII, quem fazia o trabalho duro nas minas de ouro e nas plantações de açúcar?",
+  "kind": "mcq",
+  "options": [
+   "Africanos escravizados, trazidos à força para o Brasil",
+   "Soldados portugueses pagos pelo rei",
+   "Operários das fábricas inglesas",
+   "Camponeses europeus com bons salários"
+  ],
+  "correct": "Africanos escravizados, trazidos à força para o Brasil",
+  "wrong": {
+   "Soldados portugueses pagos pelo rei": "Os soldados defendiam o território; o trabalho nas minas e nas plantações era feito sobretudo por escravizados.",
+   "Operários das fábricas inglesas": "As fábricas inglesas ficavam em Inglaterra; no Brasil, o trabalho era feito sobretudo por escravizados.",
+   "Camponeses europeus com bons salários": "Alguns europeus emigraram, mas foi o trabalho forçado de africanos escravizados que sustentou o açúcar e as minas."
+  },
+  "hints": [
+   "Pensa em quem era obrigado a trabalhar sem ser pago.",
+   "O comércio de escravos ligava África ao Brasil."
+  ],
+  "explanation": "O açúcar e a exploração mineira do Brasil dependeram do trabalho de africanos escravizados, trazidos à força. Esse comércio de escravos explica também o legado africano na sociedade e na cultura portuguesa e brasileira.",
+  "sources": [
+   "dge-ae-plan"
+  ]
+ },
+ {
+  "id": "hgp-seculo-xviii-14",
+  "topic": "hgp-seculo-xviii",
+  "sub": "d-joao-v",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "Em tempo de absolutismo, como decidia o rei?",
+  "kind": "mcq",
+  "options": [
+   "Concentrava em si todos os poderes, sem precisar de convocar as Cortes",
+   "Só decidia depois de uma Constituição lhe dar autorização",
+   "Decidia com a aprovação de um parlamento eleito pelo povo",
+   "Decidia depois de ouvir o voto de todos os camponeses"
+  ],
+  "correct": "Concentrava em si todos os poderes, sem precisar de convocar as Cortes",
+  "wrong": {
+   "Só decidia depois de uma Constituição lhe dar autorização": "No século XVIII ainda não havia Constituição: a primeira foi a de 1822.",
+   "Decidia com a aprovação de um parlamento eleito pelo povo": "Parlamentos eleitos só se tornaram o centro do poder com o liberalismo.",
+   "Decidia depois de ouvir o voto de todos os camponeses": "O povo não votava; era o rei quem decidia."
+  },
+  "hints": [
+   "«Absoluto» quer dizer sem limites.",
+   "Pensa em D. João V."
+  ],
+  "explanation": "No absolutismo, o rei concentrava todos os poderes. Com D. João V, as Cortes não foram convocadas. O liberalismo mudou isto, ao limitar o poder do rei com uma Constituição.",
+  "sources": [
+   "dge-ae-plan",
+   "wiki-joao-v"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-13",
+  "topic": "hgp-liberalismo",
+  "sub": "invasoes-francesas",
+  "skill": "causa",
+  "difficulty": 2,
+  "prompt": "Porque invadiram as tropas de Napoleão Portugal, em 1807?",
+  "kind": "mcq",
+  "options": [
+   "Porque Portugal, aliado da Inglaterra, não quis aderir ao Bloqueio Continental contra os ingleses",
+   "Porque os portugueses tinham feito a Revolução Liberal",
+   "Porque Portugal tinha deixado de ter rei",
+   "Porque Portugal tinha invadido território francês"
+  ],
+  "correct": "Porque Portugal, aliado da Inglaterra, não quis aderir ao Bloqueio Continental contra os ingleses",
+  "wrong": {
+   "Porque os portugueses tinham feito a Revolução Liberal": "A Revolução Liberal foi em 1820, treze anos depois.",
+   "Porque Portugal tinha deixado de ter rei": "Em 1807 Portugal era uma monarquia e o rei ainda governava.",
+   "Porque Portugal tinha invadido território francês": "Foi Napoleão quem quis obrigar Portugal a fechar os portos aos ingleses."
+  },
+  "hints": [
+   "Napoleão queria enfraquecer a Inglaterra.",
+   "O Bloqueio Continental proibia comerciar com os ingleses."
+  ],
+  "explanation": "Napoleão decretou o Bloqueio Continental para isolar a Inglaterra. Portugal, velho aliado inglês, não o cumpriu, e por isso foi invadido pela primeira vez em 1807.",
+  "sources": [
+   "rtp-invasoes",
+   "dge-bloco13"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-14",
+  "topic": "hgp-liberalismo",
+  "sub": "invasoes-francesas",
+  "skill": "facto",
+  "difficulty": 2,
+  "prompt": "Que sistema de fortificações, a norte de Lisboa, travou a terceira invasão francesa, comandada por Massena?",
+  "kind": "mcq",
+  "options": [
+   "As Linhas de Torres Vedras",
+   "As Linhas de Elvas",
+   "A Muralha Fernandina",
+   "O Forte de Peniche"
+  ],
+  "correct": "As Linhas de Torres Vedras",
+  "wrong": {
+   "As Linhas de Elvas": "As Linhas de Elvas defendem a fronteira alentejana e são mais antigas.",
+   "A Muralha Fernandina": "A Muralha Fernandina é uma muralha medieval de Lisboa; não travou os franceses.",
+   "O Forte de Peniche": "O Forte de Peniche é uma fortaleza na costa, que mais tarde foi usada como prisão."
+  },
+  "hints": [
+   "O nome refere uma vila a norte de Lisboa.",
+   "Massena foi travado em 1810."
+  ],
+  "explanation": "As Linhas de Torres Vedras, construídas com apoio inglês, impediram Massena de chegar a Lisboa em 1810. A população resistiu e a guerra foi muito destrutiva.",
+  "sources": [
+   "rhlt-linhas",
+   "rtp-invasoes"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-13",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "educacao-justica",
+  "skill": "facto",
+  "difficulty": 2,
+  "prompt": "Que escolas criou a reforma de Passos Manuel, em 1836, para o ensino secundário?",
+  "kind": "mcq",
+  "options": [
+   "Os liceus",
+   "As universidades",
+   "As aulas régias de Latim",
+   "Os colégios dos Jesuítas"
+  ],
+  "correct": "Os liceus",
+  "wrong": {
+   "As universidades": "Já existia a Universidade de Coimbra; a reforma de 1836 criou escolas para o ensino secundário.",
+   "As aulas régias de Latim": "As aulas régias vinham do tempo de Pombal; os liceus vieram substituí-las.",
+   "Os colégios dos Jesuítas": "Os Jesuítas tinham sido expulsos em 1759."
+  },
+  "hints": [
+   "O nome é uma palavra que ainda hoje se usa para escolas do secundário.",
+   "Foi uma medida dos governos liberais."
+  ],
+  "explanation": "Os governos liberais fizeram reformas na educação. Em 1836, Passos Manuel criou os liceus, que foram o ensino secundário público, em substituição das antigas aulas de Latim.",
+  "sources": [
+   "mec-liceus-1836"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-14",
+  "topic": "hgp-xix-segunda-metade",
+  "sub": "transformacoes-sociais",
+  "skill": "cronologia",
+  "difficulty": 3,
+  "kind": "numeric",
+  "prompt": "Em que ano um decreto de Sá da Bandeira aboliu a escravatura em todos os territórios portugueses?",
+  "correct": 1869,
+  "wrongHints": {
+   "1836": "Em 1836 Portugal proibiu a exportação de escravos dos seus territórios, mas a escravatura continuou.",
+   "1867": "Em 1867 foi abolida a pena de morte para os crimes civis, e não a escravatura."
+  },
+  "hints": [
+   "Foi dois anos depois da abolição da pena de morte para crimes civis.",
+   "Está entre 1865 e 1870."
+  ],
+  "explanation": "O decreto de 25 de fevereiro de 1869 aboliu a escravatura em todos os territórios portugueses, depois de um processo que começou com leis anteriores, como a proibição do tráfico em 1836.",
+  "sources": [
+   "marinha-escravatura",
+   "analise-social-trafico"
+  ]
+ },
+ {
+  "id": "hgp-republica-13",
+  "topic": "hgp-republica",
+  "sub": "primeira-republica",
+  "skill": "facto",
+  "difficulty": 2,
+  "prompt": "Que duas universidades foram criadas em 1911, a seguir à implantação da República?",
+  "kind": "mcq",
+  "options": [
+   "As de Lisboa e do Porto",
+   "As de Lisboa e de Coimbra",
+   "As de Aveiro e do Minho",
+   "As do Algarve e da Madeira"
+  ],
+  "correct": "As de Lisboa e do Porto",
+  "wrong": {
+   "As de Lisboa e de Coimbra": "A Universidade de Coimbra já existia desde a Idade Média.",
+   "As de Aveiro e do Minho": "Foram criadas só na década de 1970.",
+   "As do Algarve e da Madeira": "Foram criadas muito mais tarde, nas décadas de 1970 e 1980."
+  },
+  "hints": [
+   "Em 1911 havia só uma universidade em Portugal.",
+   "Foram criadas nas duas maiores cidades do país."
+  ],
+  "explanation": "Em março de 1911, a República criou as Universidades de Lisboa e do Porto, além da de Coimbra, para expandir a educação e combater o atraso do país.",
+  "sources": [
+   "uporto-1911",
+   "dge-ae-hgp6"
+  ]
+ },
+ {
+  "id": "hgp-republica-14",
+  "topic": "hgp-republica",
+  "sub": "primeira-republica",
+  "skill": "facto",
+  "difficulty": 2,
+  "prompt": "Qual destas medidas, a favor dos trabalhadores, foi tomada pelo Governo Provisório da República, em 1910?",
+  "kind": "mcq",
+  "options": [
+   "O reconhecimento do direito à greve",
+   "A proibição de todas as greves",
+   "O direito de voto reconhecido a todas as mulheres",
+   "O regresso dos privilégios da nobreza"
+  ],
+  "correct": "O reconhecimento do direito à greve",
+  "wrong": {
+   "A proibição de todas as greves": "Foi o contrário: o direito à greve foi reconhecido, embora com regras.",
+   "O direito de voto reconhecido a todas as mulheres": "Na Primeira República a lei não reconhecia o voto das mulheres; a igualdade só chegou muito depois.",
+   "O regresso dos privilégios da nobreza": "A República acabou com os privilégios de nascimento e os títulos de nobreza."
+  },
+  "hints": [
+   "Uma greve é uma paragem do trabalho para exigir melhores condições.",
+   "A medida foi publicada em dezembro de 1910."
+  ],
+  "explanation": "Em dezembro de 1910, o Governo Provisório reconheceu o direito à greve, uma medida a favor dos trabalhadores, embora com regras.",
+  "sources": [
+   "infopedia-legis-rep",
+   "dge-ae-hgp6"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-13",
+  "topic": "hgp-ditadura",
+  "sub": "oposicao",
+  "skill": "personagem",
+  "difficulty": 3,
+  "prompt": "Que general se candidatou à Presidência da República, em 1958, contra o candidato do regime, e ficou conhecido como «o general sem medo»?",
+  "kind": "mcq",
+  "options": [
+   "Humberto Delgado",
+   "António de Spínola",
+   "Óscar Carmona",
+   "Marcelo Caetano"
+  ],
+  "correct": "Humberto Delgado",
+  "wrong": {
+   "António de Spínola": "Spínola ficou conhecido pelo 25 de Abril de 1974, e não por esta candidatura.",
+   "Óscar Carmona": "Carmona foi Presidente da República durante o regime, e não um opositor.",
+   "Marcelo Caetano": "Marcelo Caetano era do regime e chefiou o Governo depois de Salazar."
+  },
+  "hints": [
+   "Foi uma candidatura de oposição, apesar da repressão.",
+   "Foi assassinado pela PIDE em 1965."
+  ],
+  "explanation": "Humberto Delgado, general, candidatou-se em 1958 contra o candidato do regime e tornou-se um símbolo da oposição ao Estado Novo. Foi assassinado pela PIDE, em 1965, perto de Badajoz.",
+  "sources": [
+   "aljube-delgado",
+   "dge-ae-hgp6"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-13",
+  "topic": "hgp-25-abril",
+  "sub": "democracia",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "Que órgão é responsável pela administração de um concelho (município)?",
+  "kind": "mcq",
+  "options": [
+   "A Câmara Municipal",
+   "A Junta de Freguesia",
+   "A Assembleia da República",
+   "O Tribunal"
+  ],
+  "correct": "A Câmara Municipal",
+  "wrong": {
+   "A Junta de Freguesia": "A Junta de Freguesia administra a freguesia, que é uma divisão menor do concelho.",
+   "A Assembleia da República": "É o parlamento nacional, onde trabalham os deputados.",
+   "O Tribunal": "Os tribunais julgam; não administram o concelho."
+  },
+  "hints": [
+   "É um órgão do poder local.",
+   "O presidente deste órgão chama-se presidente da Câmara."
+  ],
+  "explanation": "No poder local democrático, o concelho é administrado pela Câmara Municipal e a freguesia pela Junta de Freguesia, ambas eleitas pelos cidadãos.",
+  "sources": [
+   "ar-crp",
+   "dge-ae-hgp6"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-14",
+  "topic": "hgp-25-abril",
+  "sub": "democracia",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "Qual é o órgão composto por deputados eleitos, que faz as leis do país?",
+  "kind": "mcq",
+  "options": [
+   "A Assembleia da República",
+   "O Governo",
+   "Os Tribunais",
+   "A Câmara Municipal"
+  ],
+  "correct": "A Assembleia da República",
+  "wrong": {
+   "O Governo": "O Governo, chefiado pelo Primeiro-Ministro, executa as leis e dirige a administração.",
+   "Os Tribunais": "Os tribunais julgam e aplicam a lei.",
+   "A Câmara Municipal": "É um órgão local; não faz as leis de todo o país."
+  },
+  "hints": [
+   "Os deputados reúnem-se no Palácio de São Bento, em Lisboa.",
+   "Faz as leis: é o poder legislativo."
+  ],
+  "explanation": "A Constituição de 1976 separa os poderes: a Assembleia da República faz as leis, o Governo governa e os tribunais julgam. O Presidente da República é eleito pelos cidadãos.",
+  "sources": [
+   "ar-crp",
+   "dge-ae-hgp6"
+  ]
+ },
+ {
+  "id": "hgp-populacao-13",
+  "topic": "hgp-populacao",
+  "sub": "Crescimento natural",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "O que mede a esperança de vida à nascença?",
+  "kind": "mcq",
+  "options": [
+   "O número médio de anos que um recém-nascido pode esperar viver",
+   "A idade com que as pessoas se reformam",
+   "A idade da pessoa mais velha do país",
+   "A percentagem de idosos na população"
+  ],
+  "correct": "O número médio de anos que um recém-nascido pode esperar viver",
+  "wrong": {
+   "A idade com que as pessoas se reformam": "A reforma é outra coisa; a esperança de vida mede a duração média da vida.",
+   "A idade da pessoa mais velha do país": "Não é um caso isolado: é uma média para toda a população.",
+   "A percentagem de idosos na população": "Isso é o peso dos idosos; a esperança de vida é um número médio de anos."
+  },
+  "hints": [
+   "A palavra «média» ajuda a responder.",
+   "Mede-se desde o momento do nascimento."
+  ],
+  "explanation": "A esperança de vida à nascença é o número médio de anos que um recém-nascido pode esperar viver, se as condições se mantiverem. Quando sobe, a população tende a envelhecer.",
+  "sources": [
+   "ae-hgp-6"
+  ]
+ },
+ {
+  "id": "hgp-populacao-14",
+  "topic": "hgp-populacao",
+  "sub": "Crescimento natural",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "O que é a mortalidade infantil?",
+  "kind": "mcq",
+  "options": [
+   "Os bebés que morrem antes de fazer 1 ano, por cada mil nascimentos",
+   "Os bebés que nascem por cada mil habitantes",
+   "Todas as pessoas que morrem num ano",
+   "As crianças que morrem antes dos 10 anos"
+  ],
+  "correct": "Os bebés que morrem antes de fazer 1 ano, por cada mil nascimentos",
+  "wrong": {
+   "Os bebés que nascem por cada mil habitantes": "Isso é a natalidade.",
+   "Todas as pessoas que morrem num ano": "Isso é a mortalidade geral; a infantil só conta bebés com menos de 1 ano.",
+   "As crianças que morrem antes dos 10 anos": "A mortalidade infantil conta apenas os bebés com menos de 1 ano."
+  },
+  "hints": [
+   "«Infantil» aqui quer dizer bebé.",
+   "Compara-se com o número de nascimentos."
+  ],
+  "explanation": "A mortalidade infantil mede os bebés que morrem antes de completar 1 ano, por cada mil nascimentos. Portugal reduziu-a muito desde 1960, graças à melhoria da saúde.",
+  "sources": [
+   "ae-hgp-6"
+  ]
+ },
+ {
+  "id": "hgp-populacao-15",
+  "topic": "hgp-populacao",
+  "sub": "Distribuição da população",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "O que é uma área atrativa, na distribuição da população?",
+  "kind": "mcq",
+  "options": [
+   "Uma área que ganha habitantes, porque oferece emprego, serviços e boas condições de vida",
+   "Uma área que perde habitantes, porque faltam emprego e serviços",
+   "Uma área que só é visitada por turistas",
+   "Uma área onde o número de habitantes nunca muda"
+  ],
+  "correct": "Uma área que ganha habitantes, porque oferece emprego, serviços e boas condições de vida",
+  "wrong": {
+   "Uma área que perde habitantes, porque faltam emprego e serviços": "Isso é uma área repulsiva.",
+   "Uma área que só é visitada por turistas": "Atrativa, aqui, refere-se a quem vem viver, e não a quem visita.",
+   "Uma área onde o número de habitantes nunca muda": "A área atrativa é aquela que ganha população."
+  },
+  "hints": [
+   "«Atrair» é puxar para perto.",
+   "O contrário chama-se «repulsiva»."
+  ],
+  "explanation": "Áreas atrativas ganham população porque têm emprego e serviços; as repulsivas perdem população. O litoral e as áreas metropolitanas são mais atrativos do que o interior.",
+  "sources": [
+   "ae-hgp-6"
+  ]
+ },
+ {
+  "id": "hgp-lugares-13",
+  "topic": "hgp-lugares",
+  "sub": "Áreas urbanas e rurais",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "Porque se diz que o campo e a cidade são complementares?",
+  "kind": "mcq",
+  "options": [
+   "Porque o campo fornece alimentos e matérias-primas e a cidade oferece serviços, emprego e mercados",
+   "Porque o campo e a cidade não têm nenhuma ligação",
+   "Porque só a cidade precisa do campo",
+   "Porque na cidade se produzem todos os alimentos"
+  ],
+  "correct": "Porque o campo fornece alimentos e matérias-primas e a cidade oferece serviços, emprego e mercados",
+  "wrong": {
+   "Porque o campo e a cidade não têm nenhuma ligação": "Têm ligações: dependem um do outro.",
+   "Porque só a cidade precisa do campo": "Também o campo precisa de serviços e de mercados para vender o que produz.",
+   "Porque na cidade se produzem todos os alimentos": "Os alimentos vêm sobretudo do campo."
+  },
+  "hints": [
+   "Complementar quer dizer que um completa o outro.",
+   "Pensa em de onde vem a comida e onde estão os hospitais."
+  ],
+  "explanation": "O campo e a cidade completam-se: o campo produz alimentos e matérias-primas; a cidade oferece serviços, emprego e mercados. Por isso se fala em interdependência.",
+  "sources": [
+   "ae-hgp-6"
+  ]
+ },
+ {
+  "id": "hgp-lazer-13",
+  "topic": "hgp-lazer",
+  "sub": "patrimonio",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "O que é património cultural?",
+  "kind": "mcq",
+  "options": [
+   "Bens herdados do passado, como monumentos, objetos e tradições, que queremos proteger e transmitir",
+   "Apenas o dinheiro que um país tem guardado",
+   "Só os edifícios construídos este ano",
+   "Os animais e as plantas de uma área protegida"
+  ],
+  "correct": "Bens herdados do passado, como monumentos, objetos e tradições, que queremos proteger e transmitir",
+  "wrong": {
+   "Apenas o dinheiro que um país tem guardado": "Património cultural não é dinheiro: são bens que têm valor para a identidade.",
+   "Só os edifícios construídos este ano": "O património vem do passado; não depende de ser novo.",
+   "Os animais e as plantas de uma área protegida": "Isso é património natural."
+  },
+  "hints": [
+   "«Património» é o que se herda.",
+   "Pensa num mosteiro ou numa festa tradicional."
+  ],
+  "explanation": "Património cultural é o conjunto de bens herdados, materiais (monumentos) e imateriais (tradições), que protegemos e transmitimos às gerações seguintes. O património natural é o que a natureza criou.",
+  "sources": [
+   "dge-ae-6",
+   "unesco-pt"
+  ]
+ },
+ {
+  "id": "hgp-lazer-14",
+  "topic": "hgp-lazer",
+  "sub": "patrimonio",
+  "skill": "facto",
+  "difficulty": 1,
+  "prompt": "Qual destes locais foi classificado pela UNESCO como Património Mundial em Portugal?",
+  "kind": "mcq",
+  "options": [
+   "O Mosteiro dos Jerónimos e a Torre de Belém, em Lisboa",
+   "O Estádio da Luz",
+   "A Ponte Vasco da Gama",
+   "O Oceanário de Lisboa"
+  ],
+  "correct": "O Mosteiro dos Jerónimos e a Torre de Belém, em Lisboa",
+  "wrong": {
+   "O Estádio da Luz": "É um estádio moderno; não está na lista do Património Mundial.",
+   "A Ponte Vasco da Gama": "É uma ponte moderna, e não um bem classificado como Património Mundial.",
+   "O Oceanário de Lisboa": "É um equipamento recente; não está na lista."
+  },
+  "hints": [
+   "É um bem antigo, ligado aos Descobrimentos.",
+   "Fica em Belém, junto ao Tejo."
+  ],
+  "explanation": "O Mosteiro dos Jerónimos e a Torre de Belém foram classificados Património Mundial pela UNESCO em 1983. Outro exemplo é o Centro Histórico do Porto, classificado em 1996.",
+  "sources": [
+   "unesco-pt"
+  ]
+ },
+ {
+  "id": "hgp-mundo-13",
+  "topic": "hgp-mundo",
+  "sub": "transportes",
+  "skill": "comparacao",
+  "difficulty": 2,
+  "prompt": "Qual é uma desvantagem do transporte rodoviário (automóvel, camião), em média, em comparação com o comboio?",
+  "kind": "mcq",
+  "options": [
+   "Emite mais gases com efeito de estufa por pessoa ou por carga transportada",
+   "Só pode circular sobre carris",
+   "Não consegue chegar a pequenas aldeias",
+   "É o único meio de transporte que não polui"
+  ],
+  "correct": "Emite mais gases com efeito de estufa por pessoa ou por carga transportada",
+  "wrong": {
+   "Só pode circular sobre carris": "Isso é o comboio; a estrada permite chegar a muitos lugares.",
+   "Não consegue chegar a pequenas aldeias": "Pelo contrário: a estrada chega a muitos lugares onde o comboio não chega.",
+   "É o único meio de transporte que não polui": "Todos os meios têm impactos ambientais."
+  },
+  "hints": [
+   "Pensa no ambiente.",
+   "O comboio é, em média, dos que emitem menos por passageiro."
+  ],
+  "explanation": "O transporte rodoviário é flexível e chega a muitos lugares, mas, em média, emite mais gases por pessoa ou por carga do que o comboio. Cada meio tem vantagens e desvantagens.",
+  "sources": [
+   "eea-rail",
+   "dge-ae-6"
+  ]
+ },
+ {
+  "id": "hgp-mundo-14",
+  "topic": "hgp-mundo",
+  "sub": "comunicacoes",
+  "skill": "conceito",
+  "difficulty": 2,
+  "prompt": "Qual destes é um exemplo de como as telecomunicações melhoram a qualidade de vida?",
+  "kind": "mcq",
+  "options": [
+   "Permitem consultas médicas, aulas e contacto com a família à distância",
+   "Obrigam as pessoas a viajar mais para falarem umas com as outras",
+   "Substituem a necessidade de haver escolas e hospitais",
+   "Só servem para ver televisão"
+  ],
+  "correct": "Permitem consultas médicas, aulas e contacto com a família à distância",
+  "wrong": {
+   "Obrigam as pessoas a viajar mais para falarem umas com as outras": "Pelo contrário: permitem comunicar sem viajar.",
+   "Substituem a necessidade de haver escolas e hospitais": "Ajudam o ensino e a saúde, mas não substituem escolas e hospitais.",
+   "Só servem para ver televisão": "Servem também para trabalhar, estudar e comunicar."
+  },
+  "hints": [
+   "Pensa em chamadas de vídeo.",
+   "Telecomunicações = comunicação à distância."
+  ],
+  "explanation": "As telecomunicações aproximam pessoas e serviços: permitem estudar, falar com a família ou fazer consultas à distância. É um dos efeitos da globalização.",
+  "sources": [
+   "dge-ae-6",
+   "fccn-internet"
+  ]
+ }
+]

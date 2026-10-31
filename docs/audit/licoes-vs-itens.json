@@ -1,0 +1,121 @@
+[
+ {
+  "topic": "hgp-seculo-xviii",
+  "itens": 14,
+  "comResposta": 11,
+  "pct": "78,6%",
+  "semResposta": [
+   "hgp-seculo-xviii-04",
+   "hgp-seculo-xviii-05",
+   "hgp-seculo-xviii-06"
+  ]
+ },
+ {
+  "topic": "hgp-liberalismo",
+  "itens": 14,
+  "comResposta": 11,
+  "pct": "78,6%",
+  "semResposta": [
+   "hgp-liberalismo-01",
+   "hgp-liberalismo-04",
+   "hgp-liberalismo-13"
+  ]
+ },
+ {
+  "topic": "hgp-xix-segunda-metade",
+  "itens": 14,
+  "comResposta": 11,
+  "pct": "78,6%",
+  "semResposta": [
+   "hgp-xix-segunda-metade-04",
+   "hgp-xix-segunda-metade-07",
+   "hgp-xix-segunda-metade-09"
+  ]
+ },
+ {
+  "topic": "hgp-republica",
+  "itens": 14,
+  "comResposta": 13,
+  "pct": "92,9%",
+  "semResposta": [
+   "hgp-republica-07"
+  ]
+ },
+ {
+  "topic": "hgp-ditadura",
+  "itens": 13,
+  "comResposta": 11,
+  "pct": "84,6%",
+  "semResposta": [
+   "hgp-ditadura-03",
+   "hgp-ditadura-07"
+  ]
+ },
+ {
+  "topic": "hgp-25-abril",
+  "itens": 14,
+  "comResposta": 13,
+  "pct": "92,9%",
+  "semResposta": [
+   "hgp-25-abril-06"
+  ]
+ },
+ {
+  "topic": "hgp-populacao",
+  "itens": 15,
+  "comResposta": 10,
+  "pct": "66,7%",
+  "semResposta": [
+   "hgp-populacao-06",
+   "hgp-populacao-08",
+   "hgp-populacao-09",
+   "hgp-populacao-10",
+   "hgp-populacao-11"
+  ]
+ },
+ {
+  "topic": "hgp-lugares",
+  "itens": 13,
+  "comResposta": 8,
+  "pct": "61,5%",
+  "semResposta": [
+   "hgp-lugares-02",
+   "hgp-lugares-04",
+   "hgp-lugares-08",
+   "hgp-lugares-09",
+   "hgp-lugares-10"
+  ]
+ },
+ {
+  "topic": "hgp-atividades",
+  "itens": 12,
+  "comResposta": 8,
+  "pct": "66,7%",
+  "semResposta": [
+   "hgp-atividades-05",
+   "hgp-atividades-08",
+   "hgp-atividades-09",
+   "hgp-atividades-11"
+  ]
+ },
+ {
+  "topic": "hgp-lazer",
+  "itens": 14,
+  "comResposta": 12,
+  "pct": "85,7%",
+  "semResposta": [
+   "hgp-lazer-08",
+   "hgp-lazer-12"
+  ]
+ },
+ {
+  "topic": "hgp-mundo",
+  "itens": 14,
+  "comResposta": 12,
+  "pct": "85,7%",
+  "semResposta": [
+   "hgp-mundo-10",
+   "hgp-mundo-14"
+  ]
+ }
+]

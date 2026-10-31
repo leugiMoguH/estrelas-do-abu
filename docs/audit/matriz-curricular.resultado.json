@@ -1,0 +1,142 @@
+{
+ "all": {
+  "C": 28,
+  "P": 23,
+  "N": 10,
+  "AC": 4
+ },
+ "noTic": {
+  "C": 28,
+  "P": 23,
+  "N": 6,
+  "AC": 4
+ },
+ "nAll": 65,
+ "nNoTic": 61,
+ "nAssessable": 57,
+ "perTopic": [
+  {
+   "tema": "hgp-seculo-xviii",
+   "C": 1,
+   "P": 7,
+   "N": 1,
+   "AC": 2,
+   "total": 11,
+   "itens": 14
+  },
+  {
+   "tema": "hgp-liberalismo",
+   "C": 4,
+   "P": 2,
+   "N": 0,
+   "AC": 1,
+   "total": 7,
+   "itens": 14
+  },
+  {
+   "tema": "hgp-xix-segunda-metade",
+   "C": 3,
+   "P": 2,
+   "N": 2,
+   "AC": 0,
+   "total": 7,
+   "itens": 14
+  },
+  {
+   "tema": "hgp-republica",
+   "C": 3,
+   "P": 2,
+   "N": 0,
+   "AC": 0,
+   "total": 5,
+   "itens": 14
+  },
+  {
+   "tema": "hgp-ditadura",
+   "C": 4,
+   "P": 1,
+   "N": 0,
+   "AC": 0,
+   "total": 5,
+   "itens": 13
+  },
+  {
+   "tema": "hgp-25-abril",
+   "C": 4,
+   "P": 2,
+   "N": 0,
+   "AC": 1,
+   "total": 7,
+   "itens": 14
+  },
+  {
+   "tema": "hgp-populacao",
+   "C": 3,
+   "P": 0,
+   "N": 1,
+   "AC": 0,
+   "total": 4,
+   "itens": 15
+  },
+  {
+   "tema": "hgp-lugares",
+   "C": 2,
+   "P": 3,
+   "N": 3,
+   "AC": 0,
+   "total": 8,
+   "itens": 13
+  },
+  {
+   "tema": "hgp-atividades",
+   "C": 1,
+   "P": 0,
+   "N": 2,
+   "AC": 0,
+   "total": 3,
+   "itens": 12
+  },
+  {
+   "tema": "hgp-lazer",
+   "C": 1,
+   "P": 3,
+   "N": 0,
+   "AC": 0,
+   "total": 4,
+   "itens": 14
+  },
+  {
+   "tema": "hgp-mundo",
+   "C": 2,
+   "P": 1,
+   "N": 1,
+   "AC": 0,
+   "total": 4,
+   "itens": 14
+  }
+ ],
+ "orfaos": [
+  "hgp-seculo-xviii-06",
+  "hgp-xix-segunda-metade-01",
+  "hgp-xix-segunda-metade-07",
+  "hgp-xix-segunda-metade-09",
+  "hgp-republica-03",
+  "hgp-republica-05",
+  "hgp-ditadura-06",
+  "hgp-25-abril-06",
+  "hgp-populacao-01",
+  "hgp-populacao-11",
+  "hgp-lugares-08",
+  "hgp-lugares-09",
+  "hgp-atividades-10",
+  "hgp-atividades-11",
+  "hgp-atividades-12",
+  "hgp-lazer-02",
+  "hgp-lazer-08",
+  "hgp-lazer-12",
+  "hgp-mundo-02",
+  "hgp-mundo-09",
+  "hgp-mundo-11",
+  "hgp-mundo-12"
+ ]
+}

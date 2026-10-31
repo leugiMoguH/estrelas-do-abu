@@ -226,7 +226,7 @@ export const bank: HgpBank = {
       ...mcq('Liberais (com D. Pedro) contra absolutistas (com D. Miguel)', {
         'Portugueses contra as tropas francesas de Napoleão': 'Isso aconteceu nas invasões francesas, que começaram em 1807.',
         'Portugueses contra brasileiros, pela posse do Brasil': 'A Guerra Civil foi dentro de Portugal, entre liberais e absolutistas.',
-        'Republicanos contra os apoiantes do rei D. Pedro': 'Não houve lado republicano: os liberais apoiavam D. Pedro e D. Maria II, e os absolutistas D. Miguel.',
+        'Republicanos contra os apoiantes de D. Maria II': 'Não houve lado republicano: os liberais apoiavam D. Pedro e a filha, D. Maria II, e os absolutistas apoiavam D. Miguel.',
       }),
       hints: ['Foi uma guerra entre portugueses.', 'Um lado queria uma Constituição; o outro queria um rei com todos os poderes.'],
       explanation: 'A Guerra Civil opôs os liberais, que apoiavam D. Pedro e a filha D. Maria II, aos absolutistas, que apoiavam D. Miguel. Terminou em 1834 com a vitória liberal.',
@@ -258,16 +258,16 @@ export const bank: HgpBank = {
     },
     {
       id: 'hgp-liberalismo-06', topic: 'hgp-liberalismo', sub: 'revolucao-1820', skill: 'fonte', difficulty: 3,
-      stimulus: '«Viva o nosso bom rei! Vivam as Cortes e por elas a Constituição!» — final do Manifesto aos Portugueses, publicado pelos revoltosos do Porto em agosto de 1820.',
-      prompt: 'Segundo este excerto, o que queriam os revoltosos de 1820?',
-      ...mcq('Um rei com Cortes e uma Constituição', {
-        'Acabar com o rei e criar uma república': 'O excerto dá vivas ao rei: os revoltosos não queriam acabar com a monarquia.',
-        'Voltar a obedecer a Napoleão e à França': 'O excerto não fala de França; fala do rei, das Cortes e da Constituição.',
-        'Dar a independência ao Brasil': 'O excerto não fala do Brasil; pede Cortes e uma Constituição.',
+      stimulus: '«A soberania reside essencialmente na Nação, mas só pode ser exercida pelos seus representantes legalmente eleitos.» — Constituição de 1822, artigo 26.º (linguagem atualizada).',
+      prompt: 'Segundo este artigo, quem pode exercer a soberania em nome da Nação?',
+      ...mcq('Os representantes eleitos pelos cidadãos, reunidos nas Cortes', {
+        'O rei, porque herdou o trono': 'O artigo diz que a soberania só se exerce por representantes eleitos; não fala de poder herdado.',
+        'Qualquer pessoa que tenha riqueza ou um título de nobreza': 'O artigo não dá poder a quem é rico ou nobre; fala de representantes legalmente eleitos.',
+        'Os governantes estrangeiros que apoiaram a revolução': 'O artigo não fala de estrangeiros: a soberania pertence à Nação portuguesa.',
       }),
-      hints: ['Repara nas três coisas a que o excerto dá vivas.', 'O excerto diz que é «por elas», as Cortes, que se chega à Constituição.'],
-      explanation: 'O excerto dá vivas ao rei, às Cortes e à Constituição: os liberais queriam um rei com poderes limitados por uma Constituição feita pelas Cortes. As Cortes Constituintes reuniram-se em 1821.',
-      sources: ['wiki-rev-1820', 'rtp-invasoes', 'parlamento-cortes-1821'],
+      hints: ['Procura no excerto a palavra «eleitos».', 'A soberania reside na Nação, mas é exercida por outros: os representantes.'],
+      explanation: 'A Constituição de 1822 rompeu com o absolutismo: a soberania pertence à Nação e só pode ser exercida por representantes legalmente eleitos, reunidos nas Cortes. Já não bastava herdar o trono para mandar sem limites.',
+      sources: ['const1822-art26', 'parlamento-cortes-1821', 'dge-10b29'],
     },
     {
       id: 'hgp-liberalismo-07', topic: 'hgp-liberalismo', sub: 'revolucao-1820', skill: 'opiniao', difficulty: 1,
@@ -464,14 +464,14 @@ export const bank: HgpBank = {
     },
     {
       id: 'hgp-xix-segunda-metade-12', topic: 'hgp-xix-segunda-metade', sub: 'transformacoes-sociais', skill: 'cronologia', difficulty: 3,
-      prompt: 'Portugal foi pioneiro ao abolir a pena de morte para os crimes civis. Em que ano?',
+      prompt: 'Portugal foi um dos primeiros países da Europa a abolir a pena de morte para os crimes civis. Em que ano?',
       kind: 'numeric', correct: 1867,
       wrongHints: {
         '1856': '1856 é o ano do primeiro comboio; a abolição veio onze anos depois.',
         '1877': '1877 é o ano da Ponte D. Maria Pia; a abolição foi dez anos antes.',
       },
       hints: ['Foi na segunda metade do século XIX, nos anos 60.', 'O ano está entre 1865 e 1870.'],
-      explanation: 'A lei de 1 de julho de 1867 aboliu a pena de morte para os crimes civis, um exemplo pioneiro na Europa.',
+      explanation: 'A lei de 1 de julho de 1867 aboliu a pena de morte para os crimes civis, Portugal foi um dos primeiros países europeus a dar este passo.',
       sources: ['gov-pena-morte', 'wiki-pena-morte'],
     },
   ],
@@ -484,7 +484,7 @@ export const bank: HgpBank = {
         'D. João V foi um rei absoluto: concentrava em si todos os poderes.',
         'Em 1755, um terramoto, seguido de maremoto e incêndios, destruiu grande parte de Lisboa.',
         'O Marquês de Pombal, ministro de D. José I, dirigiu a reconstrução da Baixa e fez reformas: expulsou os Jesuítas (1759), reformou o ensino e criou companhias de comércio, como a dos Vinhos do Alto Douro.',
-        'A sociedade era de ordens: o clero e a nobreza tinham privilégios; o povo, a maioria, trabalhava e pagava impostos.',
+        'A sociedade era de ordens: o clero e a nobreza tinham privilégios; o povo, a maioria, trabalhava e pagava impostos. No Brasil, a cultura do açúcar e a exploração do ouro e de outros recursos dependiam do trabalho de africanos escravizados, trazidos à força; por isso, os africanos deixaram um legado importante na sociedade e na cultura portuguesa e brasileira. Em tempo de absolutismo, o rei decidia sem as Cortes: com D. João V, as Cortes não foram convocadas.',
       ],
       examples: [
         {
@@ -523,7 +523,7 @@ export const bank: HgpBank = {
         'Com o rei no Brasil, o domínio inglês e a crise económica, começou no Porto a Revolução Liberal, a 24 de agosto de 1820.',
         'As Cortes fizeram a Constituição de 1822: a soberania passou a residir na Nação e os poderes ficaram separados (legislativo, executivo e judicial).',
         'A 7 de setembro de 1822, D. Pedro proclamou a independência do Brasil.',
-        'D. Miguel proclamou-se rei absoluto; a Guerra Civil (1832–1834) entre liberais e absolutistas acabou com a vitória liberal na Convenção de Évora-Monte, em 1834.',
+        'D. Miguel proclamou-se rei absoluto; a Guerra Civil (1832–1834) entre liberais e absolutistas acabou com a vitória liberal na Convenção de Évora-Monte, em 1834. A terceira invasão (Massena, 1810) foi travada nas Linhas de Torres Vedras, um sistema de fortificações a norte de Lisboa; as invasões foram destrutivas e a população resistiu, com apoio inglês. A Constituição de 1822 dizia, no artigo 26.º, que a soberania reside na Nação e só pode ser exercida pelos seus representantes eleitos.',
       ],
       examples: [
         {
@@ -562,7 +562,7 @@ export const bank: HgpBank = {
         'Com Fontes Pereira de Melo, ministro das Obras Públicas, construíram-se estradas e caminhos de ferro; o primeiro comboio circulou em 1856, entre Lisboa e o Carregado.',
         'A máquina a vapor espalhou-se pelas fábricas, sobretudo nas zonas de Lisboa e do Porto.',
         'Muita gente saiu do campo para as cidades (êxodo rural) ou emigrou, sobretudo para o Brasil; cresceu o operariado e a burguesia ganhou importância.',
-        'Nas cidades, muitos operários viviam em casas pobres, como as «ilhas» do Porto. Em 1867, Portugal aboliu a pena de morte para os crimes civis.',
+        'Nas cidades, muitos operários viviam em casas pobres, como as «ilhas» do Porto. Em 1867, Portugal aboliu a pena de morte para os crimes civis. Em 1877 foi inaugurada a Ponte D. Maria Pia, no Porto, para o comboio atravessar o Douro. Os governos liberais fizeram reformas na educação (em 1836, a reforma de Passos Manuel criou os liceus) e na justiça. Em 1867 aboliu-se a pena de morte para os crimes civis e, em 1869, a escravatura em todos os territórios portugueses.',
       ],
       examples: [
         {

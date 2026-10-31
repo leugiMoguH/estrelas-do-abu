@@ -182,7 +182,7 @@ export const bank: HgpBank = {
         '2027': '2027 é o ano da meta, não a percentagem.',
       },
       hints: ['Procura a linha que fala de energia e de água.', 'O número vem antes do símbolo %.'],
-      explanation: 'A meta é que mais de 90% das empresas do turismo usem a energia e a água de forma eficiente e façam gestão dos resíduos. É uma das metas ambientais da Estratégia Turismo 2027.',
+      explanation: 'A meta é que mais de 90% das empresas do turismo usem a energia e a água de forma eficiente e façam gestão dos resíduos. É uma das metas ambientais da Estratégia Turismo 2027, que tem como horizonte o ano de 2027 (entretanto o Governo apresentou a Estratégia Turismo 2035).',
       sources: ['tp-et27', 'gov-et27'],
     },
     {
@@ -342,10 +342,10 @@ export const bank: HgpBank = {
     },
     {
       id: 'hgp-mundo-07', topic: 'hgp-mundo', sub: 'transportes', skill: 'comparacao', difficulty: 2, kind: 'cloze',
-      prompt: 'Entre comboio, automóvel e avião, o ___ apresenta, em média na Europa, menores emissões por passageiro-quilómetro; o ___ é um veículo rodoviário entre os outros dois meios comparados.',
-      correct: [['comboio'], ['automóvel', 'automovel', 'carro']],
-      hints: ['Um deles anda sobre carris e muitas vezes é elétrico.', 'O outro é o veículo que muitas famílias têm na garagem.'],
-      explanation: 'Segundo a Agência Europeia do Ambiente, entre comboio, automóvel e avião, o comboio apresenta, em média na Europa, menores emissões por passageiro-quilómetro. O automóvel é o veículo rodoviário desta comparação.',
+      prompt: 'Completa: em média, na Europa, o ___ emite menos gases com efeito de estufa por passageiro e por quilómetro do que o automóvel e o avião.',
+      correct: [['comboio']],
+      hints: ['Um meio de transporte que anda sobre carris e muitas vezes é elétrico.', 'Liga as carruagens a uma locomotiva.'],
+      explanation: 'Segundo a Agência Europeia do Ambiente, entre comboio, automóvel e avião, o comboio é, em média na Europa, o que emite menos gases por passageiro e por quilómetro. Por isso, é uma boa opção para viagens entre cidades.',
       sources: ['eea-rail', 'ep-rail'],
     },
     {
@@ -381,15 +381,15 @@ export const bank: HgpBank = {
     },
     {
       id: 'hgp-mundo-10', topic: 'hgp-mundo', sub: 'transportes', skill: 'fonte', difficulty: 2, kind: 'numeric',
-      stimulus: 'Carga movimentada nos portos comerciais do continente em 2024 (AMT, valores arredondados):\nSines ≈ 56% | Leixões ≈ 16% | Lisboa ≈ 13% | Setúbal ≈ 7% | Aveiro ≈ 6% | Outros ≈ 3%',
-      prompt: 'Segundo o quadro, quantos portos movimentaram mais de 10% da carga? Escreve o número.',
-      correct: 3,
+      stimulus: 'Carga movimentada nos portos comerciais do continente em 2024 (Governo/AMT, valores arredondados):\n• Todos os portos do continente: cerca de 88 milhões de toneladas\n• Porto de Sines: cerca de 47 milhões de toneladas',
+      prompt: 'Segundo o quadro, quantos milhões de toneladas foram movimentados, aproximadamente, nos restantes portos do continente? Escreve só o número.',
+      correct: 41,
       wrongHints: {
-        '1': 'Repara que Leixões e Lisboa também passam dos 10%.',
-        '2': 'Conta também Lisboa, com cerca de 13%.',
+        '135': 'Somaste os dois valores; para saber o que falta, subtrai: 88 − 47.',
+        '47': '47 é a carga de Sines; os restantes portos movimentaram o que sobra do total.',
       },
-      hints: ['Compara cada valor com 10%.', 'Setúbal e Aveiro ficam abaixo de 10%.'],
-      explanation: 'Sines, Leixões e Lisboa passam dos 10%. Sines, sozinho, movimentou mais de metade de toda a carga dos portos do continente. A soma pode diferir de 100% devido aos arredondamentos.',
+      hints: ['O total é a soma de Sines com todos os outros portos.', 'Calcula 88 − 47.'],
+      explanation: '88 − 47 = 41 milhões de toneladas (valores arredondados). Sines movimentou mais de metade da carga de todos os portos do continente.',
       sources: ['amt-portos', 'gov-portos'],
     },
     {
@@ -440,7 +440,7 @@ export const bank: HgpBank = {
         'Turista é um visitante em viagem temporária fora do ambiente habitual com pelo menos uma pernoita; sem pernoita, é excursionista.',
         'O turismo traz emprego e dinheiro, mas quando há muitos visitantes ao mesmo tempo, sobretudo no verão e no litoral, aumenta a pressão sobre a água, o território e o lixo.',
         'Para proteger a natureza existem áreas protegidas. O Parque Nacional da Peneda-Gerês, criado em 1971, foi a primeira e é o único parque nacional de Portugal.',
-        'Boas práticas: poupar água e energia, reduzir o plástico e o lixo, respeitar as regras das áreas protegidas e espalhar as viagens ao longo do ano.',
+        'Boas práticas: poupar água e energia, reduzir o plástico e o lixo, respeitar as regras das áreas protegidas e espalhar as viagens ao longo do ano. A Bandeira Azul é um símbolo de qualidade ambiental atribuído a praias, portos de recreio e marinas que cumprem critérios, como a qualidade da água. Um turismo sustentável traz benefícios às pessoas e à economia sem estragar o ambiente. Património cultural são os bens herdados que queremos proteger, como monumentos e tradições; em Portugal, a UNESCO classificou como Património Mundial, por exemplo, o Mosteiro dos Jerónimos e a Torre de Belém (1983) e o Centro Histórico do Porto (1996).',
       ],
       examples: [
         {
@@ -479,7 +479,7 @@ export const bank: HgpBank = {
         'O navio leva enormes quantidades de carga (mais de 80% do volume do comércio mundial); o avião é rápido mas emite muito; o comboio é dos que emitem menos por passageiro.',
         'As telecomunicações evoluíram do telégrafo elétrico (1855) ao telefone (1882), à televisão (1957) e à internet (1991), aproximando pessoas e empresas.',
         'Portugal relaciona-se com o mundo através de organizações: NATO (membro fundador, 1949), ONU (1955), CEE/União Europeia (1986) e CPLP (1996).',
-        'Portugal também comercia com outros países (Espanha é o principal destino das exportações) e tem comunidades portuguesas espalhadas pelo mundo.',
+        'Portugal também comercia com outros países (Espanha é o principal destino das exportações) e tem comunidades portuguesas espalhadas pelo mundo. Os maiores aeroportos do continente são os de Lisboa, Porto e Faro. O Dia de Portugal, a 10 de junho, é também o Dia de Camões e das Comunidades Portuguesas. Portugal entrou na zona euro em 1999 e as notas e moedas de euro circulam desde 2002.',
       ],
       examples: [
         {

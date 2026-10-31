@@ -1,0 +1,1769 @@
+[
+ {
+  "id": "hgp-seculo-xviii-01",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-02",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-03",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-04",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-05",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-06",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-07",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-08",
+  "tema": "hgp-seculo-xviii",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-09",
+  "tema": "hgp-seculo-xviii",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 5,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-10",
+  "tema": "hgp-seculo-xviii",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-11",
+  "tema": "hgp-seculo-xviii",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-12",
+  "tema": "hgp-seculo-xviii",
+  "formato": "cloze",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-01",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-02",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 5,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-03",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "corrigido",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [
+   "Opção «apoiantes do rei D. Pedro» imprecisa (D. Pedro não era rei de Portugal em 1832): reescrita."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-04",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-05",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-06",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "corrigido",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [
+   "Excerto atribuído ao «Manifesto aos Portugueses» não foi confirmado em nenhuma fonte: substituído pelo art. 26.º da Constituição de 1822 (texto confirmado)."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": [
+   "const1822-art26"
+  ]
+ },
+ {
+  "id": "hgp-liberalismo-07",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-08",
+  "tema": "hgp-liberalismo",
+  "formato": "cloze",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-09",
+  "tema": "hgp-liberalismo",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-10",
+  "tema": "hgp-liberalismo",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 6,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-11",
+  "tema": "hgp-liberalismo",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-12",
+  "tema": "hgp-liberalismo",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-01",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-02",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-03",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": [
+   "analise-social-habitacao"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-04",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": [
+   "analise-social-habitacao"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-05",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": [
+   "analise-social-habitacao"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-06",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "mcq",
+  "estado": "a-confirmar",
+  "verificacao": "por-confirmar",
+  "problemas": [
+   "Citação atribuída a Ana Silvia Volpi Scott (2002): confirmar na fonte (REBEP)."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-07",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-08",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "cloze",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-09",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-10",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 7,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-11",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-12",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "numeric",
+  "estado": "corrigido",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [
+   "«Pioneiro» afirmado sem fonte primária: passou a «um dos primeiros países da Europa»."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-01",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "so-3-opcoes"
+  ],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-02",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-03",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-04",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-05",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-06",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-07",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-08",
+  "tema": "hgp-republica",
+  "formato": "cloze",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-09",
+  "tema": "hgp-republica",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-10",
+  "tema": "hgp-republica",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-11",
+  "tema": "hgp-republica",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-republica-12",
+  "tema": "hgp-republica",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-01",
+  "tema": "hgp-ditadura",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-02",
+  "tema": "hgp-ditadura",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-03",
+  "tema": "hgp-ditadura",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-04",
+  "tema": "hgp-ditadura",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": [
+   "aljube"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-05",
+  "tema": "hgp-ditadura",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-06",
+  "tema": "hgp-ditadura",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-07",
+  "tema": "hgp-ditadura",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-08",
+  "tema": "hgp-ditadura",
+  "formato": "cloze",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-09",
+  "tema": "hgp-ditadura",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-10",
+  "tema": "hgp-ditadura",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-11",
+  "tema": "hgp-ditadura",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-ditadura-12",
+  "tema": "hgp-ditadura",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-01",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-02",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "so-3-opcoes"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-03",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-04",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-05",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-06",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-07",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-08",
+  "tema": "hgp-25-abril",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-09",
+  "tema": "hgp-25-abril",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-10",
+  "tema": "hgp-25-abril",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 5,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-11",
+  "tema": "hgp-25-abril",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-12",
+  "tema": "hgp-25-abril",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-01",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "corrigido",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [
+   "Gralha na pista («IMigrante»)."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-02",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-03",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-04",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-05",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-06",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-07",
+  "tema": "hgp-populacao",
+  "formato": "cloze",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-08",
+  "tema": "hgp-populacao",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-09",
+  "tema": "hgp-populacao",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-10",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "corrigido",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [
+   "Afirmação «todos os concelhos de Bragança perderam população» sem fonte: reduzida ao que está apoiado (o distrito perdeu população)."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-11",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-12",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "so-3-opcoes"
+  ],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-01",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "corrigido",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [
+   "Explicação confundia êxodo rural com emigração: corrigida (e na lição)."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-02",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-03",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-04",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "a-confirmar",
+  "verificacao": "por-confirmar",
+  "problemas": [
+   "Variação +1,7% da AML (Censos 2021) por confirmar em tabela do INE."
+  ],
+  "sinalizacoes": [
+   "so-3-opcoes"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-05",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-06",
+  "tema": "hgp-lugares",
+  "formato": "order",
+  "estado": "corrigido",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [
+   "Marcadores ordinais («Primeiro», «Por fim»…) revelavam a ordem: removidos."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-07",
+  "tema": "hgp-lugares",
+  "formato": "cloze",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-08",
+  "tema": "hgp-lugares",
+  "formato": "numeric",
+  "estado": "a-confirmar",
+  "verificacao": "por-confirmar",
+  "problemas": [
+   "Resposta lida diretamente no enunciado: passou a exigir um cálculo (diferença de percentagens).",
+   "Usa os +1,7% da AML, por confirmar em tabela do INE."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-09",
+  "tema": "hgp-lugares",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-10",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-11",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-12",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "so-3-opcoes"
+  ],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-01",
+  "tema": "hgp-atividades",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-02",
+  "tema": "hgp-atividades",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "so-3-opcoes"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-03",
+  "tema": "hgp-atividades",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-04",
+  "tema": "hgp-atividades",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [
+   "so-3-opcoes"
+  ],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-05",
+  "tema": "hgp-atividades",
+  "formato": "mcq",
+  "estado": "a-confirmar",
+  "verificacao": "por-confirmar",
+  "problemas": [
+   "Comparação com 1960 sem fonte consultada nesta auditoria."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-06",
+  "tema": "hgp-atividades",
+  "formato": "order",
+  "estado": "corrigido",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [
+   "Afirmação «desde 1991 o terciário tem mais de metade» sem fonte: retirada."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-07",
+  "tema": "hgp-atividades",
+  "formato": "cloze",
+  "estado": "a-confirmar",
+  "verificacao": "por-confirmar",
+  "problemas": [
+   "Setor com mais trabalhadores em 1960 (primário): confirmar em série do INE/PORDATA."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-08",
+  "tema": "hgp-atividades",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-09",
+  "tema": "hgp-atividades",
+  "formato": "numeric",
+  "estado": "corrigido",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [
+   "Percentagens atribuídas aos Censos 2021 não confirmadas: substituídas por dados confirmados (INE/GPP, 4.º trimestre de 2025: 2%, 24%, 74%)."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-10",
+  "tema": "hgp-atividades",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-11",
+  "tema": "hgp-atividades",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-atividades-12",
+  "tema": "hgp-atividades",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "so-3-opcoes"
+  ],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-01",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-02",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-03",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-04",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-05",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-06",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "a-confirmar",
+  "verificacao": "por-confirmar",
+  "problemas": [
+   "Cortes de água para o golfe em 2023: fonte jornalística; confirmar em documento oficial."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-07",
+  "tema": "hgp-lazer",
+  "formato": "order",
+  "estado": "a-confirmar",
+  "verificacao": "por-confirmar",
+  "problemas": [
+   "Idem (cadeia causal baseada nos cortes de 2023)."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-08",
+  "tema": "hgp-lazer",
+  "formato": "numeric",
+  "estado": "corrigido",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [
+   "Estratégia Turismo 2027 apresentada como atual: acrescentada a nota da Estratégia Turismo 2035."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-09",
+  "tema": "hgp-lazer",
+  "formato": "cloze",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-10",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-11",
+  "tema": "hgp-lazer",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-12",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "a-confirmar",
+  "verificacao": "por-confirmar",
+  "problemas": [
+   "Idem (afirmação sobre os cortes de 2023)."
+  ],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 3,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-01",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-02",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-03",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-04",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-05",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-06",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-07",
+  "tema": "hgp-mundo",
+  "formato": "cloze",
+  "estado": "corrigido",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [
+   "Segundo espaço do cloze ambíguo e artificial: reformulado com um só espaço."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-08",
+  "tema": "hgp-mundo",
+  "formato": "order",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 5,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-09",
+  "tema": "hgp-mundo",
+  "formato": "numeric",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-10",
+  "tema": "hgp-mundo",
+  "formato": "numeric",
+  "estado": "corrigido",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [
+   "Quota de Sines (56%) incoerente com o total (47 de 88 milhões de t, ≈53%) e restantes quotas por confirmar: substituída por cálculo com valores confirmados."
+  ],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-11",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": [
+   "marinha-10jun"
+  ]
+ },
+ {
+  "id": "hgp-mundo-12",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "ok",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [
+   "tarefa-facto-vs-opiniao (modelo repetido em 11 temas; resposta identificável pelo adjetivo)"
+  ],
+  "fontesRegistadas": 4,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-13",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-seculo-xviii-14",
+  "tema": "hgp-seculo-xviii",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-13",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-liberalismo-14",
+  "tema": "hgp-liberalismo",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-xix-segunda-metade-13",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": [
+   "mec-liceus-1836"
+  ]
+ },
+ {
+  "id": "hgp-xix-segunda-metade-14",
+  "tema": "hgp-xix-segunda-metade",
+  "formato": "numeric",
+  "estado": "novo",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": [
+   "marinha-escravatura",
+   "analise-social-trafico"
+  ]
+ },
+ {
+  "id": "hgp-republica-13",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": [
+   "uporto-1911"
+  ]
+ },
+ {
+  "id": "hgp-republica-14",
+  "tema": "hgp-republica",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": [
+   "infopedia-legis-rep"
+  ]
+ },
+ {
+  "id": "hgp-ditadura-13",
+  "tema": "hgp-ditadura",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": [
+   "aljube-delgado"
+  ]
+ },
+ {
+  "id": "hgp-25-abril-13",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-25-abril-14",
+  "tema": "hgp-25-abril",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-13",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-14",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-populacao-15",
+  "tema": "hgp-populacao",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lugares-13",
+  "tema": "hgp-lugares",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-lazer-13",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": [
+   "unesco-pt"
+  ]
+ },
+ {
+  "id": "hgp-lazer-14",
+  "tema": "hgp-lazer",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "fonte-consultada-nesta-auditoria",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 1,
+  "fontesNovasConsultadasPorPesquisa": [
+   "unesco-pt"
+  ]
+ },
+ {
+  "id": "hgp-mundo-13",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ },
+ {
+  "id": "hgp-mundo-14",
+  "tema": "hgp-mundo",
+  "formato": "mcq",
+  "estado": "novo",
+  "verificacao": "conhecimento-do-revisor+coerencia-interna (fonte do banco não reaberta)",
+  "problemas": [],
+  "sinalizacoes": [],
+  "fontesRegistadas": 2,
+  "fontesNovasConsultadasPorPesquisa": []
+ }
+]

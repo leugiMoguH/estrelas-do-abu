@@ -1,0 +1,926 @@
+[
+ {
+  "id": "dge-ae-plan",
+  "title": "DGE — Planificação por blocos de HGP, 5.º e 6.º anos (Aprendizagens Essenciais), #EstudoEmCasa",
+  "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/2022-01/planificacao_historia_e_geografia_de_portugal_5.o_e_6.o_anos_final.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-bloco13",
+  "title": "DGE — #EstudoEmCasa, HGP 5.º e 6.º anos, Bloco 13 (As invasões napoleónicas)",
+  "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/inline-files/13_HGP_5%C2%BA%20e%206%C2%BA%20anos_Aspetos%20da%20sociedade%20portuguesa%20nos%20s%C3%A9culos%20XIII%20e%20XIV.%20As%20invas%C3%B5es%20napole%C3%B3nicas.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-bloco20",
+  "title": "DGE — #EstudoEmCasa, HGP 5.º e 6.º anos, Bloco 20 (O crescimento da população e o êxodo rural)",
+  "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/20_HGP_5%C2%BA%20e%206%C2%BA%20anos_O%20crescimento%20da%20popula%C3%A7%C3%A3o%20e%20o%20%C3%AAxodo%20rural%2C%20em%20Portugal%20na%20segunda%20metade%20do%20s%C3%A9culo%20XIX.%20Compreender%20o%20s%C3%A9culo%20XIV%20europeu~.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-10b29",
+  "title": "DGE — #EstudoEmCasa, História B 10.º ano, Bloco 29 (As resistências ao liberalismo em Portugal, 1820-1834)",
+  "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/inline-files/10B29.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "parlamento-cortes-1821",
+  "title": "Assembleia da República — «As Cortes Constituintes (1821)», revista Comunicar",
+  "url": "https://app.parlamento.pt/comunicar/v1/202010/66/artigos/art7.html",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "alsp-independencia",
+  "title": "Assembleia Legislativa do Estado de São Paulo — Independência do Brasil completa 199 anos",
+  "url": "https://www.al.sp.gov.br/noticia/?id=427247",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "cp-cronologia",
+  "title": "CP — Comboios de Portugal: Cronologia",
+  "url": "https://www.cp.pt/info/pt/cronologia",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "imt-1856",
+  "title": "IMT — Inauguração do Caminho de Ferro em Portugal, 28 de outubro de 1856",
+  "url": "https://www.imt-ip.pt/noticias/inauguracao-do-caminho-de-ferro-em-portugal-28-de-outubro-de-1856/",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "gov-pena-morte",
+  "title": "Governo de Portugal — Dia Europeu e Mundial contra a Pena de Morte",
+  "url": "https://portugal.gov.pt/gc22/comunicacao/comunicados/dia-europeu-e-mundial-contra-a-pena-de-morte",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "rhlt-linhas",
+  "title": "Rota Histórica das Linhas de Torres — The Lines of Torres",
+  "url": "https://www.rhlt.pt/?p=2133",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "museus-mafra",
+  "title": "Museus e Monumentos de Portugal — Palácio Nacional de Mafra",
+  "url": "https://www.museusemonumentos.pt/en/museus-e-monumentos/national-palace-of-mafra",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "uc-joanina",
+  "title": "Universidade de Coimbra — Biblioteca Joanina",
+  "url": "https://www.uc.pt/en/bguc/the-library/joanina-library/",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "rtp-pombal",
+  "title": "RTP Ensina — A governação do Marquês de Pombal e a reconstrução de Lisboa",
+  "url": "https://ensina.rtp.pt/explicador/a-governacao-do-marques-de-pombal-e-a-reconstrucao-de-lisboa-h56/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "rtp-1755",
+  "title": "RTP Ensina — 1 de novembro de 1755, um sismo para a história",
+  "url": "https://ensina.rtp.pt/artigo/1755-um-sismo-para-a-historia/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "rtp-djose",
+  "title": "RTP Ensina — D. José, o rei que mandou reconstruir Lisboa",
+  "url": "https://ensina.rtp.pt/artigo/d-jose-i-1714-1777/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "rtp-invasoes",
+  "title": "RTP Ensina — Invasões francesas e ideias liberais em Portugal",
+  "url": "https://ensina.rtp.pt/explicador/invasoes-francesas-e-ideias-liberais-em-portugal-h63/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "rtp-guerra-civil",
+  "title": "RTP Ensina — A guerra civil entre liberais e absolutistas",
+  "url": "https://ensina.rtp.pt/explicador/a-guerra-civil-entre-liberais-e-absolutistas-h65/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "rtp-obstaculos",
+  "title": "RTP Ensina — Os obstáculos à modernização portuguesa na primeira metade do século XIX",
+  "url": "https://ensina.rtp.pt/explicador/os-obstaculos-a-modernizacao-portuguesa-na-primeira-metade-do-seculo-xix/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "rtp-regeneracao",
+  "title": "RTP Ensina — O período da Regeneração ou do Fontismo",
+  "url": "https://ensina.rtp.pt/artigo/o-periodo-da-regeneracao-ou-do-fontismo/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "rtp-comboios",
+  "title": "RTP Ensina — História dos comboios em Portugal",
+  "url": "https://ensina.rtp.pt/artigo/historia-dos-comboios-em-portugal/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "rtp-industria",
+  "title": "RTP Ensina — O desenvolvimento industrial da segunda metade do século XIX",
+  "url": "https://ensina.rtp.pt/explicador/o-desenvolvimento-industrial-da-segunda-metade-do-seculo-xix-h80/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "analise-social-habitacao",
+  "title": "Teixeira, M. C. — As estratégias de habitação em Portugal, 1880-1940 (Análise Social)",
+  "url": "https://revistas.rcaap.pt/analisesocial/article/view/40996",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "up-ilhas",
+  "title": "FLUP — Habitação e população no Grande Porto: as condições habitacionais, um percurso histórico (cap. IV)",
+  "url": "https://ler.letras.up.pt/uploads/ficheiros/artigo9311.PDF",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "rebep-emigracao",
+  "title": "Scott, A. S. V. — Alternativas regionais e locais à emigração para o Brasil no final do século XIX: o exemplo do concelho de Guimarães (Revista Brasileira de Estudos de População, 2002)",
+  "url": "https://rebep.org.br/revista/article/download/332/pdf_312/972",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "wiki-sismo-1755",
+  "title": "Wikipédia — Sismo de Lisboa de 1755",
+  "url": "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-pombal",
+  "title": "Wikipédia — Sebastião José de Carvalho e Melo, marquês de Pombal",
+  "url": "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-joao-v",
+  "title": "Wikipédia — João V de Portugal",
+  "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-sociedade-ordens",
+  "title": "Wikipédia — Sociedade de ordens",
+  "url": "https://pt.wikipedia.org/wiki/Sociedade_de_ordens",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-invasoes",
+  "title": "Wikipédia — Invasões francesas de Portugal",
+  "url": "https://pt.wikipedia.org/wiki/Invas%C3%B5es_francesas_de_Portugal",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-rev-1820",
+  "title": "Wikipédia — Revolução Liberal do Porto",
+  "url": "https://pt.wikipedia.org/wiki/Revolu%C3%A7%C3%A3o_Liberal_do_Porto",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-independencia",
+  "title": "Wikipédia — Independência do Brasil",
+  "url": "https://pt.wikipedia.org/wiki/Independ%C3%AAncia_do_Brasil",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-guerra-civil",
+  "title": "Wikipédia — Guerra Civil Portuguesa (1832–1834)",
+  "url": "https://pt.wikipedia.org/wiki/Guerra_Civil_Portuguesa_(1832%E2%80%931834)",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-regeneracao",
+  "title": "Wikipédia — Regeneração (Portugal)",
+  "url": "https://pt.wikipedia.org/wiki/Regenera%C3%A7%C3%A3o_(Portugal)",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-pena-morte",
+  "title": "Wikipédia — Pena de morte em Portugal",
+  "url": "https://pt.wikipedia.org/wiki/Pena_de_morte_em_Portugal",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-ponte-maria-pia",
+  "title": "Wikipédia — Ponte D. Maria Pia",
+  "url": "https://pt.wikipedia.org/wiki/Ponte_D._Maria_Pia",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "dge-ae-hgp6",
+  "title": "DGE — Aprendizagens Essenciais, História e Geografia de Portugal, 6.º ano (julho de 2018; cópia arquivada no repositório Edumedia do Georg-Eckert-Institut)",
+  "url": "https://edumedia-depot.gei.de/bitstream/handle/11163/6364/1690053771.pdf?sequence=1",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "ar-crp",
+  "title": "Assembleia da República — Constituição da República Portuguesa (texto em vigor, VII revisão)",
+  "url": "https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "incm-1rep",
+  "title": "Paulo Ferreira da Cunha — O Essencial sobre a I República e a Constituição de 1911 (Imprensa Nacional; inclui o texto da Constituição de 1911)",
+  "url": "https://imprensanacional.pt/wp-content/uploads/2022/03/115_OEssencialSobreAPrimeiraRepublica.pdf",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "bnp-1908",
+  "title": "Biblioteca Nacional de Portugal — 1908: Do Regicídio à ascensão do Republicanismo (mostra bibliográfica, 2008)",
+  "url": "https://www.bnportugal.gov.pt/agenda/1908/1908-ver-reduzida.pdf",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "bdp-1910",
+  "title": "Banco de Portugal — Newsletter da Biblioteca n.º 4/2010: «Do 5 de Outubro de 1910 aos primeiros escudos»",
+  "url": "https://www.bportugal.pt/sites/default/files/anexos/pdf-boletim/2010_4_newsletter_outubro_2010.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "up-separacao",
+  "title": "Repositório Aberto da Universidade do Porto — «Liberdade de consciência, liberdade de cultos: o papel da lei da separação do estado das igrejas (1911)»",
+  "url": "https://repositorio-aberto.up.pt/handle/10216/65923",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "dge-hgp-bloco28",
+  "title": "DGE #EstudoEmCasa — HGP 5.º e 6.º anos, Bloco 28: mecanismos de difusão dos ideais do Estado Novo e de repressão dos opositores",
+  "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/inline-files/28_HGP_5%C2%BA%20e%206%C2%BA%20anos_Portugal%20no%20s%C3%A9culo%20XX%20-%20os%20mecanismo%20de%20difus%C3%A3o%20dos%20ideais%20do%20Estado%20Novo%20e%20de%20repress%C3%A3o%20para%20os%20opositores.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-emc-bloco47",
+  "title": "DGE #EstudoEmCasa — Estudo do Meio, Bloco 47: O 25 de abril",
+  "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/47_EMC_3e4_O%2025%20de%20abril.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-hb13",
+  "title": "DGE #EstudoEmCasa — História B 11.º ano, Bloco 13: Portugal, o Estado Novo",
+  "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/inline-files/13_Hist%C3%B3ria%20B_11%C2%BA%20ano_Portugal%20O%20Estado%20Novo.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-gta14",
+  "title": "DGE — Guião de Trabalho Autónomo 14, História A 12.º ano: pilares e organismos do Estado Novo",
+  "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/2025-03/GTA%2014_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%204_Portugal%20e%20o%20Estado%20Novo_0.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-gta33",
+  "title": "DGE — Guião de Trabalho Autónomo 33, História A 12.º ano: a elaboração da Constituição de 1976",
+  "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/2025-07/gta-33_historia-a.o-ano_tema-2_-subtema-3_-portugal-do-autoritarismo-a-democracia.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-gta35",
+  "title": "DGE — Guião de Trabalho Autónomo 35, História A 12.º ano: o processo de descolonização",
+  "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/2025-07/gta-35_historia-a.o-ano_tema-2_-subtema-3_-portugal-do-autoritarismo-a-democracia.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "as-salazar",
+  "title": "António Costa Pinto — «O império do professor: Salazar e a elite ministerial do Estado Novo (1933-1945)», Análise Social, n.º 157 (2000)",
+  "url": "https://revistas.rcaap.pt/analisesocial/article/download/37267/25762/166944",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "rtp-museu-25abril",
+  "title": "Museu Virtual da RTP — exposição temporária «25 de Abril»",
+  "url": "https://museu.rtp.pt/en/temporary-exhibits/12/april-25",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "aljube",
+  "title": "Museu do Aljube Resistência e Liberdade — Sobre o Museu",
+  "url": "https://www.museudoaljube.pt/sobre-o-museu/",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "ec-pt-ue",
+  "title": "Representação da Comissão Europeia em Portugal — Portugal na UE",
+  "url": "https://portugal.representation.ec.europa.eu/quem-somos/portugal-na-ue_pt",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "pe-40anos",
+  "title": "Gabinete do Parlamento Europeu em Portugal — 40 Anos de Portugal na União Europeia",
+  "url": "https://lisbon.europarl.europa.eu/home/pagecontent/grid/main/news/40-years_of_Portugal_in_EU.html",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "ue-portugal",
+  "title": "União Europeia — Portugal, país membro da UE",
+  "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/portugal_pt",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "bdp-euro",
+  "title": "Banco de Portugal — Boletim Notas e Moedas 2021 (20 anos das notas de euro)",
+  "url": "https://www.bportugal.pt/sites/default/files/anexos/pdf-boletim/boletim_notas_e_moedas_2021_0.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "wiki-implantacao",
+  "title": "Wikipédia — Implantação da República Portuguesa",
+  "url": "https://pt.wikipedia.org/wiki/Implanta%C3%A7%C3%A3o_da_Rep%C3%BAblica_Portuguesa",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-1rep",
+  "title": "Wikipédia — Primeira República Portuguesa",
+  "url": "https://pt.wikipedia.org/wiki/Primeira_Rep%C3%BAblica_Portuguesa",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-const1911",
+  "title": "Wikipédia — Constituição portuguesa de 1911",
+  "url": "https://pt.wikipedia.org/wiki/Constitui%C3%A7%C3%A3o_portuguesa_de_1911",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-afonso-costa",
+  "title": "Wikipédia — Afonso Costa",
+  "url": "https://pt.wikipedia.org/wiki/Afonso_Costa",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-escudo",
+  "title": "Wikipédia — Escudo português",
+  "url": "https://pt.wikipedia.org/wiki/Escudo_portugu%C3%AAs",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-28maio",
+  "title": "Wikipédia — Golpe de Estado de 28 de Maio de 1926",
+  "url": "https://pt.wikipedia.org/wiki/Golpe_de_28_de_Maio_de_1926",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-estadonovo",
+  "title": "Wikipédia — Estado Novo (Portugal)",
+  "url": "https://pt.wikipedia.org/wiki/Estado_Novo_(Portugal)",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-salazar",
+  "title": "Wikipédia — António de Oliveira Salazar",
+  "url": "https://pt.wikipedia.org/wiki/Ant%C3%B3nio_de_Oliveira_Salazar",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-pide",
+  "title": "Wikipédia — Polícia Internacional e de Defesa do Estado",
+  "url": "https://pt.wikipedia.org/wiki/Pol%C3%ADcia_Internacional_e_de_Defesa_do_Estado",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-censura",
+  "title": "Wikipédia — Censura em Portugal",
+  "url": "https://pt.wikipedia.org/wiki/Censura_em_Portugal",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-mocidade",
+  "title": "Wikipédia — Mocidade Portuguesa",
+  "url": "https://pt.wikipedia.org/wiki/Mocidade_Portuguesa",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-guerra-colonial",
+  "title": "Wikipédia — Guerra Colonial Portuguesa",
+  "url": "https://pt.wikipedia.org/wiki/Guerra_Colonial_Portuguesa",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-25abril",
+  "title": "Wikipédia — Revolução de 25 de Abril de 1974",
+  "url": "https://pt.wikipedia.org/wiki/Revolu%C3%A7%C3%A3o_de_25_de_Abril_de_1974",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-grandola",
+  "title": "Wikipédia — Grândola, Vila Morena",
+  "url": "https://pt.wikipedia.org/wiki/Gr%C3%A2ndola,_Vila_Morena",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-otelo",
+  "title": "Wikipédia — Otelo Saraiva de Carvalho",
+  "url": "https://pt.wikipedia.org/wiki/Otelo_Saraiva_de_Carvalho",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-crp1976",
+  "title": "Wikipédia — Constituição portuguesa de 1976",
+  "url": "https://pt.wikipedia.org/wiki/Constitui%C3%A7%C3%A3o_portuguesa_de_1976",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "ae-hgp-6",
+  "title": "Aprendizagens Essenciais — História e Geografia de Portugal, 6.º ano (DGE, julho de 2018), domínio «Portugal hoje» (cópia do documento da DGE no repositório GEI)",
+  "url": "https://edumedia-depot.gei.de/bitstream/handle/11163/6364/1690053771.pdf?sequence=1",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "observador-censos2021",
+  "title": "Observador (23/11/2022) — resultados definitivos dos Censos 2021 (INE): população, idades, estrangeiros",
+  "url": "https://observador.pt/2022/11/23/pela-segunda-vez-desde-que-ha-registos-a-populacao-de-portugal-baixou-segundo-os-resultados-definitivos-dos-censos-2021/",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "rtp-censos2021",
+  "title": "RTP Notícias — «Tendência inverte-se: Portugal perde 2,1% da população em dez anos» (Censos 2021, INE)",
+  "url": "https://www.rtp.pt/noticias/pais/tendencia-inverte-se-portugal-perde-21-da-populacao-em-dez-anos_n1449050",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "eco-censos2021",
+  "title": "ECO (23/11/2022) — «Portugal perde 2,1% da população em 10 anos e inverte tendência de crescimento» (Censos 2021, INE)",
+  "url": "https://eco.sapo.pt/2022/11/23/portugal-perde-21-da-populacao-em-10-anos-e-inverte-tendencia-de-crescimento/",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "dn-censos2021",
+  "title": "Diário de Notícias — «Envelhecimento da população agravou-se e há mais estrangeiros a viver no país» (Censos 2021, INE)",
+  "url": "https://www.dn.pt/sociedade/envelhecimento-da-populacao-agravou-se-e-ha-mais-estrangeiros-a-viver-no-pais-15379571.html",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "dnoticias-distribuicao",
+  "title": "DNOTICIAS.PT (23/11/2022) — «Desequilíbrio na distribuição populacional pelo território acentuou-se» (Censos 2021, INE)",
+  "url": "https://www.dnoticias.pt/2022/11/23/337494-desequilibrio-na-distribuicao-populacional-pelo-territorio-acentuou-se/",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "observador-guarda",
+  "title": "Observador (25/11/2022) — «Censos2021: distrito da Guarda perde cerca de 18 mil habitantes em dez anos»",
+  "url": "https://observador.pt/2022/11/25/censos2021-distrito-da-guarda-perde-cerca-de-18-mil-habitantes-em-dez-anos/",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "observador-saldos2020",
+  "title": "Observador/Lusa (16/11/2021) — «Imigrantes compensaram saldo natural negativo da população portuguesa» (INE, estimativas 2020)",
+  "url": "https://observador.pt/2021/11/16/imigrantes-compensaram-saldo-natural-negativo-da-populacao-portuguesa/",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "eurostat-populacao",
+  "title": "Eurostat, Statistics Explained — «Beginners: População» (saldo natural, saldo migratório, taxas de natalidade e mortalidade)",
+  "url": "https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/70155.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "wiki-distritos",
+  "title": "Wikipédia — Ranked list of Portuguese districts (população e densidade, Censos 2021)",
+  "url": "https://en.wikipedia.org/wiki/Ranked_list_of_Portuguese_districts",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "wiki-exodo",
+  "title": "Wikipédia — Êxodo rural",
+  "url": "https://pt.wikipedia.org/wiki/%C3%8Axodo_rural",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "dge-gta18",
+  "title": "DGE, Estudo Autónomo — GTA 18, Geografia: estrutura da população ativa por setores, 1960–2021 (adaptado do INE)",
+  "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/2025-01/GTA%2018_Geografia%20A.%C2%BA%20ano_Tema%201_Subtema%201.3_Estrutura%20ativa%20da%20popula%C3%A7%C3%A3o.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "gpp-emprego",
+  "title": "GPP (Gabinete de Planeamento, Políticas e Administração Geral) — Nota sobre emprego, 1.º trimestre de 2026 (dados do Inquérito ao Emprego do INE)",
+  "url": "https://www.gpp.pt/images/Estatisticas_e_analises/Estatisticas/AgricolasEstruturais_Producao/NotaEmprego_1T-2026_PowerBI.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "cml-atlas-ativa",
+  "title": "Câmara Municipal de Lisboa, Atlas Social — definições de população ativa e desempregados",
+  "url": "https://gisapps.cm-lisboa.pt/arcgis/rest/services/AtlasSocial/MER_TRAB_FF/MapServer/layers",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "eco-desemprego",
+  "title": "ECO — «Trocado por miúdos: conceitos e contas do desemprego» (critérios do INE)",
+  "url": "https://eco.sapo.pt/descodificador/conceitos-e-contas-do-desemprego/",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "dge-ae-6",
+  "title": "Aprendizagens Essenciais – HGP 6.º ano (DGE, julho 2018; cópia do PDF da DGE no GEI)",
+  "url": "https://edumedia-depot.gei.de/bitstream/handle/11163/6364/1690053771.pdf?sequence=1",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dge-plan",
+  "title": "DGE #EstudoEmCasa – Planificação de HGP 5.º e 6.º anos",
+  "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/2022-01/planificacao_historia_e_geografia_de_portugal_5.o_e_6.o_anos_final.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "desp-pnpg",
+  "title": "Despacho n.º 3578/2017 – Programa especial do Parque Nacional da Peneda-Gerês (DGT)",
+  "url": "https://pcgt.dgterritorio.gov.pt/sites/default/files/Despacho_3578_2017.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "rcm-pnpg",
+  "title": "Resolução do Conselho de Ministros n.º 134/95 – Plano de Ordenamento do PNPG (cópia FAOLEX)",
+  "url": "https://faolex.fao.org/docs/pdf/por26000.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "lusa-pnpg",
+  "title": "Notícia (Lusa/Notícias ao Minuto) – Parque Nacional da Peneda-Gerês, criado em 1971 e gerido pelo ICNF",
+  "url": "https://www.noticiasaominuto.com/pais/2832874/fogo-no-parque-nacional-da-peneda-geres-em-conclusao",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "untourism",
+  "title": "UN Tourism – Glossary of tourism terms (visitante, turista, visitante do dia)",
+  "url": "https://www.untourism.int/node/15971",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "ine-es-turista",
+  "title": "INE (Espanha) – Conceito: Turista",
+  "url": "https://www.ine.es/DEFIne/en/concepto.htm?c=5411",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "tp-et27",
+  "title": "Turismo de Portugal – Metas da Estratégia Turismo 2027",
+  "url": "https://business.turismodeportugal.pt/pt/Conhecer/estrategia-turismo/Estrategia_2027/Paginas/Metas-Estrategia-Turismo-2027.aspx",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "gov-et27",
+  "title": "Portal do Governo (2016) – Estratégia Turismo 2027: sazonalidade, sustentabilidade e território",
+  "url": "https://portugal.gov.pt/gc21/comunicacao/noticias/20160524-meco-turismo",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "gov-tsust",
+  "title": "Portal do Governo – Apresentado o Plano Turismo + Sustentável 20-23",
+  "url": "https://portugal.gov.pt/gc22/comunicacao/noticias/apresentado-o-plano-turismo-sustentavel-20-23",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "abaae",
+  "title": "Associação Bandeira Azul de Ambiente e Educação – Bandeira Azul",
+  "url": "https://bandeiraazul.abaae.pt/",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "abaae-crit",
+  "title": "ABAAE – Critérios da Bandeira Azul para praias",
+  "url": "https://bandeiraazul.abaae.pt/criterios/",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "postal-ba",
+  "title": "Notícia (Postal do Algarve) – Bandeira Azul reconhece praias de Tavira pela qualidade e gestão ambiental",
+  "url": "https://postal.pt/algarve/bandeira-azul-volta-a-reconhecer-praias-de-tavira-pela-qualidade-e-gestao-ambiental",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dn-golfe",
+  "title": "Notícia (DN, 1 jun. 2023) – Seca: Governo restringe uso da água no sotavento algarvio",
+  "url": "https://www.dn.pt/sociedade/seca-governo-restringe-uso-da-agua-no-sotavento-algarvio--16460871.html",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "ec-pt-ue",
+  "title": "Representação da Comissão Europeia em Portugal – Portugal na UE (cronologia)",
+  "url": "https://portugal.representation.ec.europa.eu/quem-somos/portugal-na-ue_en",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "eu-pt",
+  "title": "União Europeia – Portugal (país da UE)",
+  "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/portugal_en",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "ec-euro",
+  "title": "Comissão Europeia – Portugal and the euro",
+  "url": "https://economy-finance.ec.europa.eu/euro/eu-countries-and-euro/portugal-and-euro_en",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "gov-cplp",
+  "title": "Portal do Governo – Portugal inaugura nova Chancelaria junto da CPLP",
+  "url": "https://portugal.gov.pt/gc25/comunicacao/noticias/portugal-inaugura-nova-chancelaria-junto-da-comunidade-dos-paises-de-lingua-portuguesa",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "cplp-hist",
+  "title": "CPLP – Histórico: como surgiu?",
+  "url": "https://www.cplp.org/organizacao/historico-como-surgiu/",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "unric",
+  "title": "UNRIC – Portugal and the United Nations: 70 years of partnership",
+  "url": "https://unric.org/en/portugal-and-the-united-nations-70-years-of-partnership-in-defence-of-multilateralism/",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "un-555",
+  "title": "Assembleia Geral da ONU – Ata A/10/PV.555 (14 dez. 1955), admissão de Portugal",
+  "url": "https://un-project.org/meeting/A-10-PV-555/",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "nato-treaty",
+  "title": "NATO – The North Atlantic Treaty (assinatura e membros fundadores)",
+  "url": "https://www.nato.int/cps/en/natohq/topics_67656.htm",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "gov-nato",
+  "title": "Portal do Governo (2026) – Portugal reafirma compromisso para com a NATO na Cimeira de Ancara",
+  "url": "https://portugal.gov.pt/gc25/comunicacao/noticias/portugal-reafirma-compromisso-para-com-a-nato-na-cimeira-de-ancara-",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "aicep-exp",
+  "title": "AICEP Portugal Global – Exportações portuguesas de bens cresceram 2,5% em 2024 (dados INE)",
+  "url": "https://www.portugalglobal.pt/noticias/2025/fevereiro/exportacoes-portuguesas-de-bens-cresceram-2-5-em-2024/",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "obs-exp",
+  "title": "Notícia (Observador, 2025) – Petrogal e Autoeuropa em 2024; citação do INE sobre Espanha",
+  "url": "https://observador.pt/2025/02/20/petrogal-e-autoeuropa-mantiveram-lideranca-como-exportadoras-e-importadoras-em-2024/",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "amt-portos",
+  "title": "AMT – Acompanhamento do Mercado Portuário, dezembro e ano de 2024",
+  "url": "https://amt-autoridade.pt/media/5115/relat-_estat_port_dez_2024.pdf",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "gov-portos",
+  "title": "Portal do Governo – Portos movimentam 88 milhões de toneladas em 2024",
+  "url": "https://portugal.gov.pt/gc24/comunicacao/noticias/portos-movimentam-88-milhoes-de-toneladas-em-2024-e-registam-crescimento-de-6",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "forbes-aero",
+  "title": "Notícia (Forbes Portugal) – Passageiros nos aeroportos nacionais em 2024 (dados INE)",
+  "url": "https://www.forbespt.com/?p=148609",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "postal-faro",
+  "title": "Notícia (Postal do Algarve) – Aeroporto de Faro movimenta 9,8 milhões de passageiros em 2024 (dados INE)",
+  "url": "https://postal.pt/edicaopapel/aeroporto-de-faro-cresce-2-e-movimenta-98-milhoes-de-passageiros-em-2024/",
+  "accessed": "2026-10-31",
+  "kind": "estatistica"
+ },
+ {
+  "id": "eea-rail",
+  "title": "Agência Europeia do Ambiente – Rail and waterborne: best for low-carbon motorised transport",
+  "url": "https://www.eea.europa.eu/publications/rail-and-waterborne-transport/rail-and-waterborne-best/",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "ep-rail",
+  "title": "Parlamento Europeu (OEIL) – Ano Europeu do Transporte Ferroviário 2021",
+  "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1611012",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "unctad",
+  "title": "UNCTAD – Transporte marítimo: novas estatísticas",
+  "url": "https://unctad.org/es/news/transporte-maritimo-unctad-publica-nuevas-estadisticas",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "fpc-telegrafo",
+  "title": "Fundação Portuguesa das Comunicações – Os avós do Telex (2014)",
+  "url": "https://www.fpc.pt/Portals/0/PDF%20Exposicoes/2014/Os%20av%C3%B3s%20do%20Telex.2014.11.28.pdf",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "as-telefone",
+  "title": "Análise Social (2002) – Recensão de «Olhos de Boneca. Uma História das Telecomunicações 1880-1952»",
+  "url": "https://revistas.rcaap.pt/analisesocial/article/download/37018/25600/166091",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "rtp-1957",
+  "title": "RTP Notícias – 1957: Isabel II em Portugal e a primeira grande operação da RTP",
+  "url": "https://www.rtp.pt/noticias/pais/1957-isabel-ii-em-portugal-e-a-primeira-grande-operacao-da-rtp_n1362173",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "dn-rtp",
+  "title": "Notícia (DN) – Como era Portugal quando a RTP entrou na nossa vida",
+  "url": "https://www.dn.pt/sociedade/como-era-portugal-quando-a-rtp-entrou-na-nossa-vida-5708655.html",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "fccn-internet",
+  "title": "FCCN (FCT) – 30 anos da Internet em Portugal",
+  "url": "https://fccn.pt/en/blog/fccn-30-anos-internet",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "marinha-10jun",
+  "title": "Marinha Portuguesa – Dia de Portugal, de Camões e das Comunidades Portuguesas",
+  "url": "https://cultura.marinha.pt/en/biblioteca_web/multimedia_web/Pages/dia-portugal-camoes-comunidades-portuguesas-2020.aspx",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "sousel-10jun",
+  "title": "Câmara Municipal de Sousel – 10 de junho: Dia de Portugal, de Camões e das Comunidades",
+  "url": "https://cm-sousel.pt/10-de-junho-dia-de-portugal-de-camoes-e-das-comunidades",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "const1822-art26",
+  "title": "Constituição de 1822, art. 26.º — texto transcrito em Observador, «Em louvor da Constituição liberal de 1822» (secundária)",
+  "url": "https://observador.pt/opiniao/em-louvor-da-constituicao-liberal-de-1822/",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "aljube-delgado",
+  "title": "Museu do Aljube — Resistência e Liberdade, «A candidatura de Humberto Delgado»",
+  "url": "https://www.museudoaljube.pt/en/2026/05/15/humberto-delgados-candidacy-a-journey-of-resistance/",
+  "accessed": "2026-10-31",
+  "kind": "museu-arquivo"
+ },
+ {
+  "id": "uporto-1911",
+  "title": "Universidade do Porto — As origens da Universidade do Porto (criada a 22 de março de 1911)",
+  "url": "https://www.uporto.pt/portal/en/explore/about-uporto/history/",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "infopedia-legis-rep",
+  "title": "Infopedia — Legislação político-social da República (direito à greve, dezembro de 1910) (secundária)",
+  "url": "https://www.infopedia.pt/artigos/$legislacao-politico-social-da-republica",
+  "accessed": "2026-10-31",
+  "kind": "enciclopedia"
+ },
+ {
+  "id": "analise-social-trafico",
+  "title": "Análise Social — Portugal e a abolição do tráfico de escravos (1834-51)",
+  "url": "https://revistas.rcaap.pt/analisesocial/article/view/41199",
+  "accessed": "2026-10-31",
+  "kind": "academica"
+ },
+ {
+  "id": "marinha-escravatura",
+  "title": "Marinha — Dia Internacional da Lembrança do Tráfico de Escravos e da sua Abolição (decreto de 25 de fevereiro de 1869)",
+  "url": "https://cultura.marinha.pt/en/biblioteca_web/multimedia_web/Pages/dia-internacional-lembranca-trafico-escravos-e-sua-abolicao-2020.aspx",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "mec-liceus-1836",
+  "title": "Secretaria-Geral da Educação e Ciência — Os liceus da República (reforma de Passos Manuel, 1836)",
+  "url": "https://www.sec-geral.mec.pt/sites/default/files/liceus_republica_-_comunicacao.pdf",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ },
+ {
+  "id": "unesco-pt",
+  "title": "UNESCO — Centro do Património Mundial: Portugal",
+  "url": "https://whc.unesco.org/es/list/?iso=pt",
+  "accessed": "2026-10-31",
+  "kind": "oficial"
+ }
+]

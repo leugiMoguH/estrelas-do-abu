@@ -104,7 +104,7 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
     main.append(modes);
     const counts = document.createElement('fieldset');
     counts.innerHTML = '<legend>Quantas perguntas?</legend>';
-    [3, 5, 8].forEach((n) => {
+    (multi ? [3, 5, 8, 12] : [3, 5, 8]).forEach((n) => {
       const choice = button(String(n), () => {
         count = n;
         render();
@@ -115,6 +115,12 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       counts.append(choice);
     });
     main.append(counts);
+    if (multi && chosen.size > count) {
+      const note = document.createElement('p');
+      note.setAttribute('role', 'status');
+      note.textContent = `Escolheste ${chosen.size} temas, mas só vais ter ${count} perguntas: nem todos os temas vão ser perguntados.`;
+      main.append(note);
+    }
     if (!getState().save.seen.length)
       main.insertAdjacentHTML(
         'beforeend',

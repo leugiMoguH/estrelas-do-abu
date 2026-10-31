@@ -1,0 +1,17 @@
+import { bank as a } from '../../content/historia/bank-a';
+import { bank as b } from '../../content/historia/bank-b';
+import { bank as c } from '../../content/historia/bank-c';
+import { bank as d } from '../../content/historia/bank-d';
+import { bank as e } from '../../content/historia/bank-e';
+import { writeFileSync } from 'node:fs';
+const banks = [a, b, c, d, e];
+const items = banks.flatMap((x) => x.items);
+const lessons = banks.flatMap((x) => x.lessons);
+const sources = banks.flatMap((x) => x.sources);
+writeFileSync('docs/audit/items.json', JSON.stringify(items, null, 1));
+writeFileSync('docs/audit/lessons.json', JSON.stringify(lessons, null, 1));
+writeFileSync('docs/audit/sources.json', JSON.stringify(sources, null, 1));
+const byTopic: Record<string, number> = {};
+for (const i of items) byTopic[i.topic] = (byTopic[i.topic] ?? 0) + 1;
+console.log(items.length, lessons.length, sources.length, JSON.stringify(byTopic));
+const kinds: Record<string, number> = {}; for (const i of items) kinds[i.kind] = (kinds[i.kind] ?? 0) + 1; console.log(JSON.stringify(kinds));
