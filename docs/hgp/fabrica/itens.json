@@ -1,0 +1,3226 @@
+[
+ {
+  "id": "hgp-seculo-xviii-01",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Quem dirigiu a reconstrução de Lisboa depois do terramoto de 1 de novembro de 1755?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-02",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "No reinado de D. João V, que riqueza das minas do Brasil chegava a Portugal em maior quantidade e ajudou a pagar grandes obras?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-03",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 3,
+  "prompt": "Na sociedade de ordens do século XVIII, que grupos tinham privilégios, como não pagar certos impostos?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-04",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Porque é que, na reconstrução da Baixa de Lisboa, se fizeram ruas largas e prédios com uma estrutura de madeira chamada «gaiola»?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-05",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a afirmação: «O terramoto de 1 de novembro de 1755 levou à reconstrução da Baixa de Lisboa segundo um plano novo.» Escolhe a opção certa.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-06",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Para que servia recolher respostas de várias paróquias sobre o terramoto?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-07",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Sobre D. João V e Mafra, qual destas frases é uma OPINIÃO, e não um facto?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-08",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente, estes acontecimentos dos reinados de D. João V e D. José I.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-09",
+  "secao": "d1-sintese",
+  "nivel": 3,
+  "prompt": "Ordena, do mais antigo para o mais recente, estes acontecimentos do século XVIII.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-10",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano aconteceu o grande terramoto que destruiu grande parte de Lisboa, a 1 de novembro?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-11",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "O governo de D. José I, com o Marquês de Pombal, expulsou os Jesuítas de Portugal. Em que ano?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-12",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Na reconstrução pombalina da Baixa de Lisboa adotaram-se ruas mais ___ e estruturas de madeira chamadas ___ pombalinas.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-13",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "No Brasil do século XVIII, quem fazia grande parte do trabalho forçado nas minas e plantações de açúcar?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-14",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Em tempo de absolutismo, como decidia o rei?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-15",
+  "secao": "d1-brasil-acucar",
+  "nivel": 1,
+  "prompt": "Um mapa económico distingue Pernambuco e Bahia de Minas Gerais. Que legenda está correta?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-16",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Completa: o açúcar era produzido nos ___, onde passou a predominar o trabalho de africanos ___.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-17",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Além de fornecer recursos naturais, que papel tinha o Brasil no comércio com Portugal e a Europa?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-18",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 3,
+  "prompt": "Como se situa com segurança a descoberta das grandes jazidas de ouro de Minas Gerais?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-19",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "A descoberta de ouro fez aumentar a exploração mineira. Que consequência humana está documentada?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-20",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Num exemplo de cálculo, extraem-se 150 unidades de ouro. Se o quinto da Coroa corresponde a 20%, quantas unidades cabem à Coroa?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-21",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 3,
+  "prompt": "O que se pode afirmar sobre o Tejuco e os diamantes em 1729?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-22",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "Como se relacionam as minas brasileiras com as grandes construções de D. João V?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-23",
+  "secao": "d1-legado-africano",
+  "nivel": 2,
+  "prompt": "Que exemplo mostra a presença africana organizada na vida religiosa de Lisboa no século XVIII?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-24",
+  "secao": "d1-legado-africano",
+  "nivel": 3,
+  "prompt": "«Todos os africanos presentes em Lisboa eram escravizados.» Que avaliação tem justificação correta?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-25",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "Completa os nomes das três ordens: ___, nobreza e ___ (Terceiro Estado).",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-26",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Qual destas classificações da sociedade de ordens NÃO é verdadeira?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-27",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Porque é que as exigências de «limpeza de sangue» criavam discriminação?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-28",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "«D. João V aboliu as Cortes.» Qual é a correção adequada?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-29",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Que associação distingue corretamente a Biblioteca Joanina do conjunto de Mafra?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-30",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "O Aqueduto das Águas Livres ajuda a corrigir que confusão sobre a autoria das grandes obras?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-31",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Que mensagem transmitiam as construções monumentais e as cerimónias faustosas de D. João V?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-32",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Ordena os marcos de Mafra, distinguindo a condição da promessa, o início da obra e a sagração.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-33",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Completa: a talha dourada é ___ esculpida e coberta de ___, muito usada em interiores de igrejas barrocas.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-34",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 3,
+  "prompt": "O mapa destaca o distrito do Porto. Que monumento deste distrito está ligado a Nicolau Nasoni?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-35",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Que ligação artística existiu entre Portugal e o Brasil no barroco joanino?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-36",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Que relação entre rei e ministro permite situar corretamente as reformas pombalinas?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-37",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Que objetivo económico tinha a Companhia das Vinhas do Alto Douro, criada em 1756?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-38",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Que informação se podia obter ao observar um marco pombalino no Douro?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-39",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Que mudança no ensino se relaciona com as reformas de 1759?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-40",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "«As leis de Pombal acabaram com a escravatura em todo o império.» Qual é a avaliação correta?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-41",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Completa: a lei de 1773 acabou com a distinção legal entre cristãos-___ e cristãos-___.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-42",
+  "secao": "d1-sintese",
+  "nivel": 1,
+  "prompt": "Que comparação entre D. João V e o governo pombalino é correta?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-43",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Ordena estas medidas sobre ensino e distinções legais no governo pombalino.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-44",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Porque é incompleto dizer que Lisboa foi destruída apenas pelo tremor de terra de 1 de novembro de 1755?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-45",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "O mapa destaca Faro, no Algarve. Que exemplo mostra que o urbanismo pombalino se estendeu para além de Lisboa?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-46",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "«O sismo de 1 de novembro de 1755 atingiu apenas Lisboa.» Que resposta corrige a afirmação?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-47",
+  "secao": "d1-extra-novas-culturas",
+  "nivel": 2,
+  "prompt": "Que frase situa corretamente a difusão do milho e da batata em Portugal?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-48",
+  "secao": "d1-extra-novas-culturas",
+  "nivel": 3,
+  "prompt": "Que problema ajuda a explicar a expansão da batata em Portugal a partir do século XVIII?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-49",
+  "secao": "d1-extra-novas-culturas",
+  "nivel": 1,
+  "prompt": "Segundo as Aprendizagens Essenciais, que consequência teve a introdução do milho e da batata em Portugal?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-50",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Ordena estes marcos de obras e abastecimento no reinado de D. João V.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-51",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Ordena os marcos do Douro, de Vila Real de Santo António e da mudança de reinado.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-52",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "D. João V reinou de 1706 a 1750. Calculando a diferença entre os anos, quantos anos decorrem entre o início e o fim do reinado?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-53",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "A Biblioteca Joanina foi construída entre 1717 e 1728. Qual é a diferença, em anos, entre estas datas?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-54",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Na descrição do alvará de 1761, que informação se conclui sobre o território de aplicação?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-55",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Que conclusão permite a descrição da lei de 1773 sobre crianças nascidas no Reino?",
+  "validacao": "a-confirmar",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-56",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "O Coche dos Oceanos pode servir como fonte para estudar que aspeto do reinado de D. João V?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-57",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Uma ode de 1775 à colocação da estátua de D. José I seria adequada para estudar sobretudo o quê?",
+  "validacao": "a-confirmar",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-58",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 3,
+  "prompt": "Qual é o significado histórico de «cristão-novo» neste capítulo?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-59",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Completa: numa monarquia ___, a autoridade suprema concentra-se no rei.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-60",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual dos exemplos distingue uma mudança de uma continuidade no século XVIII?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-61",
+  "secao": "d1-sintese",
+  "nivel": 3,
+  "prompt": "Ordena o raciocínio de causa e consequência entre ouro brasileiro e exibição do poder de D. João V.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-62",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Ordena a resposta construtiva à destruição da Baixa, do problema à solução técnica.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-63",
+  "secao": "d1-legado-africano",
+  "nivel": 2,
+  "prompt": "Que línguas africanas deixaram palavras ao português do Brasil?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-64",
+  "secao": "d1-legado-africano",
+  "nivel": 3,
+  "prompt": "Qual destas palavras do português vem de uma língua africana, o quimbundo?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-65",
+  "secao": "d1-legado-africano",
+  "nivel": 1,
+  "prompt": "Completa: dendê é uma palavra do quimbundo que designa o óleo de ___, muito usado na culinária de origem africana.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-66",
+  "secao": "d1-legado-africano",
+  "nivel": 2,
+  "prompt": "O samba e o lundu têm raízes em tradições musicais de que origem?",
+  "validacao": "a-confirmar",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-67",
+  "secao": "d1-legado-africano",
+  "nivel": 2,
+  "prompt": "«As religiões de origem africana foram sempre aceites no Brasil colonial.» Qual é a correção certa?",
+  "validacao": "a-confirmar",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-68",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 3,
+  "prompt": "Qual destes era um privilégio do clero no século XVIII?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-69",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "Que ordem social ocupava os altos cargos da administração e do exército?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-70",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Em 1736 criaram-se três Secretarias de Estado. Para que serviam?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-71",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Completa: em 1748, o Papa deu a D. João V o título de Rei ___.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-72",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Ordena estes acontecimentos do reinado de D. João V.",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-73",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Em 1739, o dramaturgo António José da Silva, o Judeu, foi condenado pela Inquisição e morreu num auto de fé. Que ideia isto ilustra?",
+  "validacao": "revisto",
+  "origem": "manual"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-regiao-mcq",
+  "secao": "d1-brasil-acucar",
+  "nivel": 1,
+  "prompt": "Em que região do Brasil se produzia sobretudo o açúcar?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-regiao-vf",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «No Brasil colonial, o açúcar produzia-se sobretudo no Sul, no Rio Grande.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-engenho-mcq",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Como se chamavam os locais onde se produzia o açúcar?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-engenho-vf",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O açúcar era produzido em unidades chamadas engenhos.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-engenho-free",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "O açúcar era produzido em unidades chamadas ___.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-trabalho-mcq",
+  "secao": "d1-brasil-acucar",
+  "nivel": 1,
+  "prompt": "Que trabalhadores passaram a predominar nos engenhos depois dos indígenas?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-trabalho-vf",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Nos engenhos, depois dos indígenas, passou a predominar a mão-de-obra de colonos portugueses assalariados.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-methuen-mcq",
+  "secao": "d1-brasil-acucar",
+  "nivel": 1,
+  "prompt": "Em que ano foi assinado o Tratado de Methuen entre Portugal e Inglaterra?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-methuen-vf",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Tratado de Methuen, entre Portugal e Inglaterra, foi assinado em 1703.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-methuen-free",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O Tratado de Methuen, entre Portugal e Inglaterra, foi assinado em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-methuen-vinhos-mcq",
+  "secao": "d1-brasil-acucar",
+  "nivel": 1,
+  "prompt": "Que produto português passou a entrar em Inglaterra com vantagem, pelo Tratado de Methuen?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-methuen-vinhos-vf",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Pelo Tratado de Methuen, passaram a entrar com vantagem em Inglaterra os os vinhos portugueses.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-methuen-panos-mcq",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Que produtos ingleses passaram a entrar em Portugal pelo Tratado de Methuen?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-methuen-panos-vf",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Pelo Tratado de Methuen, passaram a entrar em Portugal os os panos (lanifícios) ingleses.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-salvador-mcq",
+  "secao": "d1-brasil-acucar",
+  "nivel": 1,
+  "prompt": "Que porto da Bahia cresceu muito com a procura de escravizados para as minas de ouro?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ba-salvador-vf",
+  "secao": "d1-brasil-acucar",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Com a descoberta do ouro, cresceu muito o porto baiano de Salvador.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-decada-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "Em que década foram descobertas as grandes jazidas de ouro de Minas Gerais?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-decada-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As grandes jazidas de ouro de Minas Gerais foram descobertas na década de 1690.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-quem-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "Quem descobriu as grandes jazidas de ouro em Minas Gerais?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-quem-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As grandes jazidas de ouro de Minas Gerais foram descobertas por os bandeirantes.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-capitania-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "Em que ano foi criada a capitania de Minas Gerais, separando-se de São Paulo?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-capitania-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A capitania de Minas Gerais foi criada em 1720, separando-se de São Paulo.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-capitania-free",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A capitania de Minas Gerais foi criada em …, separando-se de São Paulo.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-quinto-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "No imposto chamado «quinto», que parte do ouro extraído pertencia à Coroa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-quinto-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O «quinto» era o imposto régio sobre o ouro: pertencia à Coroa um quinto (20%) do ouro extraído.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-fundicao-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "Onde era fundido o ouro em barras para cobrar o quinto?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-fundicao-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Para cobrar o quinto, o ouro era fundido em barras na Casa da Índia.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-revolta-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Que revolta de 1720 se opôs às Casas de Fundição e ao quinto?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-revolta-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Em 1720, a as Alterações de Évora protestou contra as Casas de Fundição e o quinto.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-revolta-ano-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "Em que ano se deu a Revolta de Vila Rica contra as Casas de Fundição?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-revolta-ano-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Revolta de Vila Rica, contra as Casas de Fundição e o quinto, deu-se em 1720.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-revolta-ano-free",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A Revolta de Vila Rica, contra as Casas de Fundição e o quinto, deu-se em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-diamantes-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "Em que ano foi comunicada oficialmente à Coroa a descoberta de diamantes no Brasil?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-diamantes-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A descoberta de diamantes no Brasil foi comunicada oficialmente à Coroa em 1729.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-diamantes-free",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A descoberta de diamantes no Brasil foi comunicada oficialmente à Coroa em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-tejuco-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Em que arraial de Minas Gerais foi comunicada a descoberta de diamantes?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-tejuco-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A descoberta de diamantes foi comunicada oficialmente no arraial do no Tejuco.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-tejuco-free",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "A descoberta de diamantes foi comunicada oficialmente no arraial do ___.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-declinio-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Por volta de que década se foram esgotando os depósitos de ouro de aluvião?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-declinio-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Os depósitos de ouro de aluvião foram-se esgotando por volta da década de 1790.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-mafra-mcq",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 1,
+  "prompt": "Que obra de D. João V foi sobretudo paga com o ouro do Brasil?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-od-mafra-vf",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Uma grande parte do ouro do Brasil serviu para pagar as obras de D. João V, sobretudo Vila Real de Santo António.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-la-irmandade-mcq",
+  "secao": "d1-legado-africano",
+  "nivel": 2,
+  "prompt": "Que irmandade de negros, escravizados e libertos existia em Lisboa no século XVIII?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-la-irmandade-vf",
+  "secao": "d1-legado-africano",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Em Lisboa, no século XVIII, ainda funcionava a irmandade de Santo António dos Navegantes.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-la-escravatura-mcq",
+  "secao": "d1-legado-africano",
+  "nivel": 2,
+  "prompt": "Como sabemos que havia pessoas escravizadas no Portugal continental do século XVIII?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-la-escravatura-vf",
+  "secao": "d1-legado-africano",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «No Portugal continental havia pessoas escravizadas, porque a lei de 1773 obrigou todos os africanos a trabalhar no Reino.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-tres-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "Em quantas ordens se dividia a sociedade do Antigo Regime?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-tres-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A sociedade do Antigo Regime dividia-se em cinco ordens.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-tres-free",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "A sociedade do Antigo Regime dividia-se em ___ ordens.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-nomes-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "Quais eram as três ordens da sociedade do Antigo Regime?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-nomes-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As três ordens eram militares, comerciantes e povo.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-privilegiadas-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "Quais eram as duas ordens privilegiadas?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-privilegiadas-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As ordens privilegiadas eram a nobreza e o povo.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-povo-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "Que ordem não tinha privilégios e sustentava o reino com o seu trabalho e os seus impostos?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-povo-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A ordem sem privilégios, que sustentava o reino com o trabalho e os impostos, era a nobreza.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-clero-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "Que privilégio era próprio do clero?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-clero-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Um privilégio próprio do clero era receber o dízimo.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-nobreza-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Que privilégio era próprio da nobreza?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-nobreza-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Um privilégio próprio da nobreza era ocupar os altos cargos da administração e do exército.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-cristao-novo-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "O que era um «cristão-novo»?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-cristao-novo-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Um «cristão-novo» era um camponês que mudou de aldeia.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-limpeza-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Que exigência, certificada pela Inquisição, se fazia para muitos cargos e honras?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-limpeza-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Para muitos cargos e honras exigia-se, com certidão da Inquisição, a dez anos de serviço militar.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-lei-1773-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 1,
+  "prompt": "Em que ano uma Carta de Lei acabou com a distinção legal entre cristãos-novos e cristãos-velhos?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-lei-1773-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A distinção legal entre cristãos-novos e cristãos-velhos acabou em 1773.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-lei-1773-free",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A distinção legal entre cristãos-novos e cristãos-velhos acabou em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-cortes-mcq",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Quando se reuniram as últimas Cortes antes da revolução liberal?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-so-cortes-vf",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As últimas Cortes antes do liberalismo reuniram-se em 1706–1707.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-nasc-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano nasceu D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-nasc-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «D. João V nasceu em Lisboa em 1691.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-nasc-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: D. João V nasceu em Lisboa em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-inicio-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano começou o reinado de D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-inicio-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «D. João V começou a reinar em 1703.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-inicio-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: D. João V começou a reinar em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-morte-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano morreu D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-morte-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «D. João V morreu em 1751.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-morte-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: D. João V morreu em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-pai-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "A que rei sucedeu D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-pai-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «D. João V sucedeu a D. Pedro II.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-cognome-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Qual era o cognome de D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-cognome-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O cognome de D. João V era «o Magnânimo».»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-cognome-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "O cognome de D. João V era «___».",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-secretarias-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano foram criadas as três Secretarias de Estado?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-secretarias-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As três Secretarias de Estado foram criadas por alvará de 1736.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-secretarias-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: As três Secretarias de Estado foram criadas por alvará de ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-patriarcado-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano a Capela Real foi elevada a Igreja Patriarcal, a pedido de D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-patriarcado-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Capela Real foi elevada a Igreja Patriarcal, a pedido de D. João V, em 1716.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-patriarcado-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A Capela Real foi elevada a Igreja Patriarcal, a pedido de D. João V, em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-papa-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Que Papa elevou a Capela Real a Igreja Patriarcal a pedido de D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-papa-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Capela Real foi elevada a Igreja Patriarcal pelo Papa Clemente XI.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-patriarca-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Quem foi o primeiro Patriarca de Lisboa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-patriarca-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O primeiro Patriarca de Lisboa foi Nicolau Nasoni.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-embaixada-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Quem chefiou a embaixada enviada a Roma em 1716, com 15 coches?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-embaixada-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A embaixada de 1716 ao Papa, com 15 coches, foi chefiada por o Marquês de Fontes.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-academia-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano D. João V fundou a Academia Real da História Portuguesa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-academia-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «D. João V fundou a Academia Real da História Portuguesa em 1722.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-academia-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: D. João V fundou a Academia Real da História Portuguesa em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-fidelissimo-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano o Papa deu a D. João V o título de «Rei Fidelíssimo»?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-fidelissimo-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Papa Bento XIV deu a D. João V o título de «Rei Fidelíssimo» em 1748.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-fidelissimo-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O Papa Bento XIV deu a D. João V o título de «Rei Fidelíssimo» em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-titulo-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Que título deu o Papa Bento XIV a D. João V em 1748?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-titulo-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Em 1748 o Papa deu a D. João V o título de «Rei Católico».»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-mafra-promessa-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Porque mandou D. João V construir o convento de Mafra?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-mafra-promessa-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «D. João V mandou construir Mafra para cumprir uma promessa, feita se a rainha lhe desse descendência.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-mafra-pedra-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano foi lançada a primeira pedra de Mafra?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-mafra-pedra-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A primeira pedra de Mafra foi lançada em 1717.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-mafra-pedra-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A primeira pedra de Mafra foi lançada em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-mafra-sagrada-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano foi sagrada a basílica de Mafra?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-mafra-sagrada-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A basílica de Mafra foi sagrada em 1731, no dia do 41.º aniversário do rei.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-mafra-sagrada-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A basílica de Mafra foi sagrada em …, no dia do 41.º aniversário do rei.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-biblioteca-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que cidade fica a Biblioteca Joanina?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-biblioteca-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Biblioteca Joanina fica em Coimbra.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-biblioteca-fim-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano ficou concluída a construção da Biblioteca Joanina?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-biblioteca-fim-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A construção da Biblioteca Joanina, paga por D. João V, terminou em 1726.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-biblioteca-fim-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A construção da Biblioteca Joanina, paga por D. João V, terminou em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-capela-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Onde foi construída a Capela de São João Batista antes de ser montada em Lisboa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-capela-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Capela de São João Batista foi construída em Roma e depois montada em Lisboa.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-autorizado-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano foi autorizada a construção do Aqueduto das Águas Livres?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-autorizado-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A construção do Aqueduto das Águas Livres foi autorizada em 1733.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-autorizado-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A construção do Aqueduto das Águas Livres foi autorizada em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-agua-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano chegou a Lisboa a água do Aqueduto das Águas Livres?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-agua-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A água do Aqueduto das Águas Livres chegou a Lisboa em 1751.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-agua-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A água do Aqueduto das Águas Livres chegou a Lisboa em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-altura-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Qual é a altura aproximada do Arco Grande do aqueduto, no vale de Alcântara?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-altura-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Arco Grande do aqueduto, no vale de Alcântara, tem cerca de 65 metros de altura.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-sismo-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "O que aconteceu ao Aqueduto das Águas Livres no terramoto de 1755?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-aq-sismo-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «No terramoto de 1755, o Aqueduto das Águas Livres resistiu sem danos importantes.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-auto-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 1,
+  "prompt": "Em que ano foi condenado num auto-de-fé o dramaturgo António José da Silva, «o Judeu»?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-auto-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O dramaturgo António José da Silva, «o Judeu», foi condenado num auto-de-fé em 1742.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-auto-free",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O dramaturgo António José da Silva, «o Judeu», foi condenado num auto-de-fé em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-queluz-mcq",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Quem mandou ampliar o paço de Queluz em 1747?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-mj-queluz-vf",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O paço de Queluz foi ampliado em 1747 por ordem do o infante D. Pedro.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-estilo-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Que nome tem o estilo artístico do reinado de D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-estilo-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O estilo artístico do reinado de D. João V chama-se românico.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-talha-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Que arte cobria os interiores das igrejas do barroco joanino?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-talha-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Os interiores das igrejas do barroco joanino cobriram-se de vitrais góticos.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-azulejo-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Que cores tinha o azulejo, uma das artes mais originais do barroco joanino?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-azulejo-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Uma das artes mais originais do barroco joanino foi o azulejo preto e dourado.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-inspiracao-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Que barroco inspirou o barroco joanino?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-inspiracao-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O barroco joanino inspirou-se no barroco o barroco romano.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-brasil-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Em que regiões do Brasil chegou o barroco joanino (talha)?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-brasil-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O barroco joanino chegou também ao Brasil, a em Minas Gerais e em São Paulo.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-nasoni-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Quem foi o arquiteto da Igreja e da Torre dos Clérigos, no Porto?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-nasoni-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Igreja e a Torre dos Clérigos são obra do arquiteto italiano Joaquim Machado de Castro.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-clerigos-inicio-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Em que ano começou a construção da Igreja dos Clérigos, no Porto?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-clerigos-inicio-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Igreja dos Clérigos começou a ser construída em 1733.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-clerigos-inicio-free",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A Igreja dos Clérigos começou a ser construída em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-clerigos-torre-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Em que ano ficou concluída a Torre dos Clérigos?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-clerigos-torre-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Torre dos Clérigos ficou concluída em 1763.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-clerigos-torre-free",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A Torre dos Clérigos ficou concluída em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-mafra-unesco-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Em que ano o Real Edifício de Mafra foi inscrito como Património Mundial da UNESCO?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-mafra-unesco-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Real Edifício de Mafra é Património Mundial da UNESCO desde 2019.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-mafra-unesco-free",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O Real Edifício de Mafra é Património Mundial da UNESCO desde ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-bomjesus-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Em que cidade fica o Santuário do Bom Jesus do Monte, exemplo do barroco português?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-bomjesus-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Santuário do Bom Jesus do Monte fica em Faro.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-coimbra-unesco-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Em que ano a Universidade de Coimbra (Alta e Sofia) foi inscrita como Património Mundial?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-coimbra-unesco-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Universidade de Coimbra é Património Mundial desde 2013.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-coimbra-unesco-free",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A Universidade de Coimbra é Património Mundial desde ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-porto-unesco-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Em que ano o Centro Histórico do Porto foi inscrito como Património Mundial?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-porto-unesco-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Centro Histórico do Porto é Património Mundial desde 1999.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-porto-unesco-free",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O Centro Histórico do Porto é Património Mundial desde ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-ouropreto-unesco-mcq",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 1,
+  "prompt": "Em que ano a cidade histórica de Ouro Preto (antiga Vila Rica) foi inscrita como Património Mundial?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-ouropreto-unesco-vf",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Ouro Preto, antiga Vila Rica, é Património Mundial desde 1980.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-bp-ouropreto-unesco-free",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Escreve o ano: Ouro Preto, antiga Vila Rica, é Património Mundial desde ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-nome-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual era o nome de nascimento do Marquês de Pombal?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-nome-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Marquês de Pombal chamava-se Sebastião José de Carvalho e Melo.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-nasc-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano nasceu o Marquês de Pombal?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-nasc-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Marquês de Pombal nasceu em Lisboa em 1699.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-nasc-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O Marquês de Pombal nasceu em Lisboa em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-terramoto-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano foi o grande terramoto de Lisboa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-terramoto-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O grande terramoto de Lisboa foi em 1755.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-terramoto-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O grande terramoto de Lisboa foi em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-dia-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Em que dia do ano ocorreu o terramoto de 1755?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-dia-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O terramoto de 1755 ocorreu a 5 de outubro.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-seguiu-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Que fenómenos se seguiram ao sismo de 1755?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-seguiu-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Ao sismo de 1755 seguiram-se uma erupção vulcânica e uma peste.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-maia-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Quem coordenou, como engenheiro-mor, a reconstrução da Baixa de Lisboa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-maia-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A reconstrução da Baixa foi coordenada pelo engenheiro-mor Nicolau Nasoni.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-gaiola-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Que estrutura de madeira tornava os prédios pombalinos mais resistentes aos sismos?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-gaiola-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Os prédios pombalinos usam a a gaiola pombalina, uma estrutura de madeira entrecruzada mais resistente aos sismos.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-gaiola-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Os prédios pombalinos usam a ___, uma estrutura de madeira entrecruzada mais resistente aos sismos.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-praca-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Que praça foi construída no lugar do antigo Terreiro do Paço?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-praca-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «No lugar do antigo Terreiro do Paço, onde ficava o Paço da Ribeira, construiu-se a Praça do Comércio.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-eugenio-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Quem desenhou a Praça do Comércio?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-eugenio-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Praça do Comércio foi desenhada por Nicola Salvi.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-estatua-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Quem foi o autor da estátua equestre de D. José I, na Praça do Comércio?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-estatua-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A estátua equestre de D. José I é obra do escultor Joaquim Machado de Castro.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-estatua-ano-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano foi inaugurada a estátua equestre de D. José I?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-estatua-ano-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A estátua equestre de D. José I foi inaugurada em 1773.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-estatua-ano-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A estátua equestre de D. José I foi inaugurada em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-casa-risco-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Como se chamava a repartição criada para fazer os planos da reconstrução da Baixa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-casa-risco-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Os planos da reconstrução da Baixa fizeram-se na Casa do Risco.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-casa-risco-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Os planos da reconstrução da Baixa fizeram-se na ___.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-vrsa-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano Pombal fundou Vila Real de Santo António?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-vrsa-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Vila Real de Santo António foi fundada por Pombal em 1775.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-vrsa-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: Vila Real de Santo António foi fundada por Pombal em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-vrsa-func-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Para que servia Vila Real de Santo António, junto ao rio Guadiana?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-vrsa-func-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Vila Real de Santo António foi fundada para afirmar a presença portuguesa diante de Ayamonte e controlar o comércio da fronteira.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-douro-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano foi criada a Companhia Geral da Agricultura das Vinhas do Alto Douro?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-douro-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Companhia Geral da Agricultura das Vinhas do Alto Douro foi criada em 1756.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-douro-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A Companhia Geral da Agricultura das Vinhas do Alto Douro foi criada em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-marcos-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Como se chamam os marcos de pedra que delimitaram a região demarcada do Douro?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-marcos-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A demarcação do Douro foi marcada no terreno com os marcos pombalinos.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-atentado-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano foi atacada a tiro a carruagem de D. José I?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-atentado-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A carruagem de D. José I foi atacada a tiro em 1757.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-atentado-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A carruagem de D. José I foi atacada a tiro em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-jesuitas-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano os Jesuítas foram expulsos de Portugal e do ultramar?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-jesuitas-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «Os Jesuítas foram expulsos de Portugal e do ultramar em 1762.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-jesuitas-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: Os Jesuítas foram expulsos de Portugal e do ultramar em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-aulas-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano foram criadas as Aulas Régias, gratuitas?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-aulas-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As Aulas Régias, gratuitas, foram criadas em 1756.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-aulas-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: As Aulas Régias, gratuitas, foram criadas em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-policia-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano foi criada a Intendência Geral da Polícia da Corte e do Reino?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-policia-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Intendência Geral da Polícia da Corte e do Reino foi criada em 1760.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-policia-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A Intendência Geral da Polícia da Corte e do Reino foi criada em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-alvara-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano um alvará proibiu trazer escravizados das colónias para o Reino?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-alvara-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O alvará que proibiu trazer escravizados das colónias para o Reino é de 1761.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-alvara-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O alvará que proibiu trazer escravizados das colónias para o Reino é de ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-colegio-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano abriu o Colégio Real dos Nobres?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-colegio-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «O Colégio Real dos Nobres abriu em 1769, embora os estatutos fossem de 1761.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-colegio-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: O Colégio Real dos Nobres abriu em …, embora os estatutos fossem de 1761.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-universidade-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano a Universidade de Coimbra recebeu novos Estatutos, que criaram a Faculdade de Matemática?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-universidade-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A Universidade de Coimbra recebeu novos Estatutos em 1772.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-universidade-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A Universidade de Coimbra recebeu novos Estatutos em ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-ventre-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano uma lei declarou livres os filhos de escravas nascidos no Reino («ventre livre»)?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-ventre-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A lei do «ventre livre», para os nascidos no Reino, é de 1771.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-ventre-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: A lei do «ventre livre», para os nascidos no Reino, é de ….",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-ambito-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Onde se aplicavam as leis de 1761 e 1773 sobre a escravatura?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-ambito-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As leis de 1761 e 1773 aplicavam-se em todo o império português.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-viradeira-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 1,
+  "prompt": "Em que ano morreu D. José I, a que se seguiu a «Viradeira»?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-viradeira-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «D. José I morreu em 1777, sucedendo-lhe a filha, D. Maria I.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-viradeira-free",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Escreve o ano: D. José I morreu em …, sucedendo-lhe a filha, D. Maria I.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-jose-sucessora-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Quem sucedeu a D. José I, afastando Pombal do governo?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-jose-sucessora-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «A D. José I sucedeu o seu irmão, o infante D. Pedro.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-aulas-gratis-mcq",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Que ensino as Aulas Régias vieram substituir?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-pl-aulas-gratis-vf",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Lê a frase e decide: «As Aulas Régias, gratuitas, foram criadas para substituir o ensino dos o dos Jesuítas.»",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-mj-mafra-pedra-mj-mafra-sagrada-calc",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de o lançamento da primeira pedra de Mafra e o ano de a sagração da basílica de Mafra?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-mj-aq-autorizado-mj-aq-agua-calc",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a autorização do Aqueduto das Águas Livres e o ano de a chegada da água do aqueduto a Lisboa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-mj-patriarcado-mj-academia-calc",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a elevação da Capela Real a Igreja Patriarcal e o ano de a fundação da Academia Real da História Portuguesa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-mj-secretarias-mj-fidelissimo-calc",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a criação das três Secretarias de Estado e o ano de a atribuição do título de Rei Fidelíssimo?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-mj-morte-pl-terramoto-calc",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a morte de D. João V e o ano de o terramoto de Lisboa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-mj-auto-pl-terramoto-calc",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a condenação do dramaturgo António José da Silva, «o Judeu» e o ano de o terramoto de Lisboa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-bp-clerigos-inicio-bp-clerigos-torre-calc",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de o início das obras da Igreja dos Clérigos e o ano de a conclusão da Torre dos Clérigos?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-bp-porto-unesco-bp-mafra-unesco-calc",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a inscrição do Centro Histórico do Porto como Património Mundial e o ano de a inscrição de Mafra como Património Mundial?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-bp-ouropreto-unesco-bp-coimbra-unesco-calc",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a inscrição de Ouro Preto como Património Mundial e o ano de a inscrição da Universidade de Coimbra como Património Mundial?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-od-revolta-ano-od-diamantes-calc",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a Revolta de Vila Rica e o ano de a comunicação oficial da descoberta de diamantes?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-pl-nasc-pl-terramoto-calc",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de o nascimento de Pombal e o ano de o terramoto de Lisboa?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-pl-terramoto-pl-vrsa-calc",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de o terramoto de Lisboa e o ano de a fundação de Vila Real de Santo António?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-pl-terramoto-pl-estatua-ano-calc",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de o terramoto de Lisboa e o ano de a inauguração da estátua equestre de D. José I?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-pl-jesuitas-pl-universidade-calc",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a expulsão dos Jesuítas e o ano de os novos Estatutos da Universidade de Coimbra?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-pl-alvara-pl-ventre-calc",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de o alvará que proibiu trazer escravizados para o Reino e o ano de a lei do «ventre livre»?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-pl-aulas-pl-colegio-calc",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a criação das Aulas Régias e o ano de a abertura do Colégio Real dos Nobres?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-pl-douro-pl-atentado-calc",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de a criação da Companhia Geral da Agricultura das Vinhas do Alto Douro e o ano de o atentado contra D. José I?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-par-mj-inicio-mj-morte-calc",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "Qual é a diferença, em anos, entre o ano de o início do reinado de D. João V e o ano de a morte de D. João V?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-0-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A fundação da Academia Real da História Portuguesa · A criação das três Secretarias de Estado · A lei que acabou com a distinção entre cristãos-novos e cristãos-velhos.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-1-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A elevação da Capela Real a Igreja Patriarcal · A chegada da água do aqueduto a Lisboa · A comunicação oficial da descoberta de diamantes · A criação da capitania de Minas Gerais.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-3-ord",
+  "secao": "d1-sintese",
+  "nivel": 3,
+  "prompt": "Ordena, do mais antigo para o mais recente: O Tratado de Methuen · A atribuição do título de Rei Fidelíssimo · O início do reinado de D. João V.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-4-ord",
+  "secao": "d1-sintese",
+  "nivel": 3,
+  "prompt": "Ordena, do mais antigo para o mais recente: A morte de D. João V · A inscrição de Mafra como Património Mundial · A Revolta de Vila Rica · A autorização do Aqueduto das Águas Livres · O nascimento de D. João V.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-5-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A criação da Companhia Geral da Agricultura das Vinhas do Alto Douro · A conclusão da Biblioteca Joanina · A fundação de Vila Real de Santo António · A conclusão da Torre dos Clérigos.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-6-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A inscrição do Centro Histórico do Porto como Património Mundial · O terramoto de Lisboa · A inauguração da estátua equestre de D. José I · A expulsão dos Jesuítas.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-7-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: O nascimento de Pombal · O início das obras da Igreja dos Clérigos · O atentado contra D. José I.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-8-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A morte de D. José I e a Viradeira · A inscrição de Ouro Preto como Património Mundial · A condenação do dramaturgo António José da Silva, «o Judeu» · A lei do «ventre livre».",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-9-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A criação da capitania de Minas Gerais · O Tratado de Methuen · Os novos Estatutos da Universidade de Coimbra.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-10-ord",
+  "secao": "d1-sintese",
+  "nivel": 3,
+  "prompt": "Ordena, do mais antigo para o mais recente: O alvará que proibiu trazer escravizados para o Reino · A criação das três Secretarias de Estado · A comunicação oficial da descoberta de diamantes · A inscrição da Universidade de Coimbra como Património Mundial · A criação das Aulas Régias.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-11-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A atribuição do título de Rei Fidelíssimo · O início do reinado de D. João V · A fundação da Academia Real da História Portuguesa · A lei que acabou com a distinção entre cristãos-novos e cristãos-velhos.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-12-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: O nascimento de D. João V · A criação da Intendência Geral da Polícia · A autorização do Aqueduto das Águas Livres · A condenação do dramaturgo António José da Silva, «o Judeu».",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-14-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A conclusão da Torre dos Clérigos · A conclusão da Biblioteca Joanina · A elevação da Capela Real a Igreja Patriarcal.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-15-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: O terramoto de Lisboa · O lançamento da primeira pedra de Mafra · A inscrição da Universidade de Coimbra como Património Mundial · A inscrição de Ouro Preto como Património Mundial.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-16-ord",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Ordena, do mais antigo para o mais recente: A abertura do Colégio Real dos Nobres · A morte de D. João V · O lançamento da primeira pedra de Mafra.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-ord-17-ord",
+  "secao": "d1-sintese",
+  "nivel": 3,
+  "prompt": "Ordena, do mais antigo para o mais recente: A inscrição de Mafra como Património Mundial · A criação da Companhia Geral da Agricultura das Vinhas do Alto Douro · O nascimento de Pombal · O atentado contra D. José I · A fundação de Vila Real de Santo António.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-0-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais antigo? O Tratado de Methuen · A criação da capitania de Minas Gerais · A morte de D. João V · A criação das três Secretarias de Estado",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-1-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais recente? A atribuição do título de Rei Fidelíssimo · A lei que acabou com a distinção entre cristãos-novos e cristãos-velhos · A conclusão da Biblioteca Joanina · O nascimento de D. João V",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-2-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais antigo? A conclusão da Torre dos Clérigos · A chegada da água do aqueduto a Lisboa · A comunicação oficial da descoberta de diamantes · A Revolta de Vila Rica",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-3-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais recente? A sagração da basílica de Mafra · O início do reinado de D. João V · A inscrição da Universidade de Coimbra como Património Mundial · A elevação da Capela Real a Igreja Patriarcal",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-4-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais antigo? A inscrição de Mafra como Património Mundial · O lançamento da primeira pedra de Mafra · A inscrição de Ouro Preto como Património Mundial · O início das obras da Igreja dos Clérigos",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-5-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais recente? A criação da Companhia Geral da Agricultura das Vinhas do Alto Douro · A inauguração da estátua equestre de D. José I · A autorização do Aqueduto das Águas Livres · O nascimento de Pombal",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-6-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais antigo? O atentado contra D. José I · A fundação da Academia Real da História Portuguesa · A abertura do Colégio Real dos Nobres · A fundação de Vila Real de Santo António",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-7-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais recente? A criação das Aulas Régias · A inscrição do Centro Histórico do Porto como Património Mundial · A criação da capitania de Minas Gerais · O alvará que proibiu trazer escravizados para o Reino",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-8-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais antigo? A Revolta de Vila Rica · A morte de D. José I e a Viradeira · Os novos Estatutos da Universidade de Coimbra · O Tratado de Methuen",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-9-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais recente? A elevação da Capela Real a Igreja Patriarcal · A criação da Intendência Geral da Polícia · A condenação do dramaturgo António José da Silva, «o Judeu» · A criação das três Secretarias de Estado",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-10-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais antigo? O terramoto de Lisboa · A atribuição do título de Rei Fidelíssimo · A lei do «ventre livre» · A comunicação oficial da descoberta de diamantes",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cmp-11-cmp",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi o mais recente? O nascimento de D. João V · A lei que acabou com a distinção entre cristãos-novos e cristãos-velhos · A sagração da basílica de Mafra · O início do reinado de D. João V",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cadeia-ouro-chain",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Ordena esta cadeia de causas e consequências (o ouro de Minas Gerais), da causa para a consequência.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cadeia-quinto-chain",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 2,
+  "prompt": "Ordena esta cadeia de causas e consequências (o quinto e a Revolta de Vila Rica), da causa para a consequência.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cadeia-mafra-chain",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Ordena esta cadeia de causas e consequências (a promessa de Mafra), da causa para a consequência.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cadeia-terramoto-chain",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Ordena esta cadeia de causas e consequências (o terramoto de 1755), da causa para a consequência.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-cadeia-viradeira-chain",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Ordena esta cadeia de causas e consequências (a morte de D. José I), da causa para a consequência.",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-joao-v-0-odd",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Qual destas obras NÃO foi feita por vontade de D. João V (1706–1750)? A Biblioteca Joanina, em Coimbra · O Palácio-Convento de Mafra · O alargamento do paço de Queluz · A Capela de São João Batista, na Igreja de São Roque",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-joao-v-1-odd",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Qual destas obras NÃO foi feita por vontade de D. João V (1706–1750)? A Praça do Comércio · O Aqueduto das Águas Livres · A Biblioteca Joanina, em Coimbra · O Palácio-Convento de Mafra",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-joao-v-2-odd",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Qual destas obras NÃO foi feita por vontade de D. João V (1706–1750)? A Capela de São João Batista, na Igreja de São Roque · O Palácio-Convento de Mafra · Vila Real de Santo António · O Aqueduto das Águas Livres",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-joao-v-3-odd",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Qual destas obras NÃO foi feita por vontade de D. João V (1706–1750)? A Capela de São João Batista, na Igreja de São Roque · O Colégio Real dos Nobres · O Palácio-Convento de Mafra · O Aqueduto das Águas Livres",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-privilegios-0-odd",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 3,
+  "prompt": "Qual destas NÃO era um privilégio das ordens privilegiadas? Receber o dízimo (clero) · Não pagar impostos (clero e nobreza) · Ter direito de asilo nas igrejas (clero) · Pagar impostos ao rei",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-privilegios-1-odd",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 3,
+  "prompt": "Qual destas NÃO era um privilégio das ordens privilegiadas? Sustentar o reino com o seu trabalho · Receber o dízimo (clero) · Ocupar os altos cargos da administração e do exército (nobreza) · Ter direito de asilo nas igrejas (clero)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-pombal-0-odd",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual destas decisões NÃO foi tomada depois do terramoto de 1755? A criação das três Secretarias de Estado (1736) · A criação das Aulas Régias (1759) · A expulsão dos Jesuítas (1759) · Os novos Estatutos da Universidade de Coimbra (1772)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-pombal-1-odd",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual destas decisões NÃO foi tomada depois do terramoto de 1755? A criação da Companhia Geral da Agricultura das Vinhas do Alto Douro (1756) · A criação da Intendência Geral da Polícia (1760) · A fundação da Academia Real da História Portuguesa (1720) · A criação das Aulas Régias (1759)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-pombal-2-odd",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual destas decisões NÃO foi tomada depois do terramoto de 1755? A criação das Aulas Régias (1759) · A criação da Intendência Geral da Polícia (1760) · A expulsão dos Jesuítas (1759) · A elevação da Capela Real a Igreja Patriarcal (1716)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-pombal-3-odd",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 2,
+  "prompt": "Qual destas decisões NÃO foi tomada depois do terramoto de 1755? Os novos Estatutos da Universidade de Coimbra (1772) · A criação da Intendência Geral da Polícia (1760) · A criação da Companhia Geral da Agricultura das Vinhas do Alto Douro (1756) · A atribuição do título de Rei Fidelíssimo (1748)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-1750-0-odd",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi DEPOIS da morte de D. João V, em 1750? A criação da Intendência Geral da Polícia (1760) · A atribuição do título de Rei Fidelíssimo (1748) · A fundação da Academia Real da História Portuguesa (1720) · A sagração da basílica de Mafra (1730)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-1750-1-odd",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi DEPOIS da morte de D. João V, em 1750? A fundação da Academia Real da História Portuguesa (1720) · A abertura do Colégio Real dos Nobres (1766) · A elevação da Capela Real a Igreja Patriarcal (1716) · A sagração da basílica de Mafra (1730)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-1750-2-odd",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi DEPOIS da morte de D. João V, em 1750? A criação das três Secretarias de Estado (1736) · A inauguração da estátua equestre de D. José I (1775) · A atribuição do título de Rei Fidelíssimo (1748) · A elevação da Capela Real a Igreja Patriarcal (1716)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-excecao-1750-3-odd",
+  "secao": "d1-sintese",
+  "nivel": 2,
+  "prompt": "Qual destes acontecimentos foi DEPOIS da morte de D. João V, em 1750? A fundação de Vila Real de Santo António (1774) · A atribuição do título de Rei Fidelíssimo (1748) · A sagração da basílica de Mafra (1730) · A fundação da Academia Real da História Portuguesa (1720)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-0-f4",
+  "secao": "d1-brasil-acucar",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (No Brasil colonial, o açúcar / Pelo Tratado de Methuen, passaram / Nos engenhos, depois dos indígenas, / Com a descoberta do ouro,)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-1-f4",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (As grandes jazidas de ouro / As grandes jazidas de ouro / A Revolta de Vila Rica, / Para cobrar o quinto, o)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-2-f4",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (Para muitos cargos e honras / As ordens privilegiadas eram / As três ordens eram / A ordem sem privilégios, que)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-3-f4",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (A Capela Real foi elevada / O cognome de D. João / A Capela Real foi elevada / D. João V sucedeu)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-4-f4",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (Uma das artes mais originais / A Torre dos Clérigos ficou / Os interiores das igrejas do / A Igreja dos Clérigos começou)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-5-f4",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (No lugar do antigo Terreiro / O Marquês de Pombal chamava-se / O Marquês de Pombal nasceu / O terramoto de 1755 ocorreu)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-6-f4",
+  "secao": "d1-brasil-acucar",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (Com a descoberta do ouro, / Pelo Tratado de Methuen, passaram / No Brasil colonial, o açúcar / Pelo Tratado de Methuen, passaram)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-7-f4",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (A descoberta de diamantes foi / As grandes jazidas de ouro / Uma grande parte do ouro / A capitania de Minas Gerais)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-8-f4",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (Um privilégio próprio da nobreza / Um privilégio próprio do clero / Um «cristão-novo» era / As últimas Cortes antes do)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-9-f4",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (O primeiro Patriarca de Lisboa / As três Secretarias de Estado / D. João V fundou a / D. João V nasceu em)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-10-f4",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (O Centro Histórico do Porto / O barroco joanino chegou também / O Santuário do Bom Jesus / O estilo artístico do reinado)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-11-f4",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (A reconstrução da Baixa foi / A estátua equestre de D. / A Praça do Comércio foi / A estátua equestre de D.)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-12-f4",
+  "secao": "d1-brasil-acucar",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (O Tratado de Methuen, entre / Com a descoberta do ouro, / Pelo Tratado de Methuen, passaram / Nos engenhos, depois dos indígenas,)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-f4-13-f4",
+  "secao": "d1-ouro-diamantes",
+  "nivel": 3,
+  "prompt": "Qual destas frases é FALSA? (A capitania de Minas Gerais / A descoberta de diamantes no / A Revolta de Vila Rica, / As grandes jazidas de ouro)",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-idade-joao-v-case",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "D. João V nasceu a 22 de outubro de 1689 e morreu a 31 de julho de 1750. Que idade tinha quando morreu?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-idade-pombal-case",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "O Marquês de Pombal nasceu a 13 de maio de 1699. O terramoto foi a 1 de novembro de 1755. Que idade tinha Pombal quando houve o terramoto?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-praca-joao-v-case",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "D. João V morreu em 1750. A Praça do Comércio foi construída no lugar do Paço da Ribeira, destruído em 1755. Foi D. João V que mandou construir a Praça do Comércio?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-aqueduto-antes-case",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 2,
+  "prompt": "A água do Aqueduto das Águas Livres chegou a Lisboa em 1748. O terramoto foi em 1755. O que se pode concluir com segurança?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-escravizado-1762-case",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Em 1762, um homem escravizado desembarca em Lisboa, trazido do Brasil. Segundo o alvará de 1761, o que lhe acontecia?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-ventre-livre-case",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Em 1780, nasce em Lisboa o filho de uma mulher escravizada. Segundo a lei de 1773, esse menino era…",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-ventre-brasil-case",
+  "secao": "d1-pombal-lisboa",
+  "nivel": 3,
+  "prompt": "Em 1780, nasce no Brasil o filho de uma mulher escravizada. A lei de 1773 tornava esse menino livre?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-cristao-novo-1780-case",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 3,
+  "prompt": "Em 1780, um cristão-novo e um cristão-velho comparecem perante a lei. A lei tratava-os de forma diferente?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-sem-cortes-case",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "As últimas Cortes antes do liberalismo reuniram-se em 1697–1698 e só voltaram a reunir-se com a revolução liberal, já no século XIX. O que se conclui sobre o reinado de D. João V (1706–1750)?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-bispo-case",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Um bispo do século XVIII pertencia a que ordem e que privilégio tinha?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-duque-case",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Um duque comandava um regimento do exército. A que ordem pertencia e o que mostra isso?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-lavrador-case",
+  "secao": "d1-sociedade-ordens",
+  "nivel": 2,
+  "prompt": "Um lavrador trabalhava a terra e pagava impostos ao rei, sem privilégios. A que ordem pertencia?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-intervalo-obras-case",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 3,
+  "prompt": "Qual dos dois intervalos foi mais longo: da primeira pedra de Mafra (1717) à sagração da basílica (1730), ou do início da Igreja dos Clérigos (1732) à conclusão da sua torre (1763)?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-intervalo-aq-case",
+  "secao": "d1-monarquia-joao-v",
+  "nivel": 3,
+  "prompt": "Qual levou mais anos: construir a Biblioteca Joanina (1717–1728) ou levar a água a Lisboa pelo aqueduto (da autorização, em 1731, à chegada da água, em 1748)?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ },
+ {
+  "id": "hgp-seculo-xviii-k-caso-unesco-primeiro-case",
+  "secao": "d1-barroco-patrimonio",
+  "nivel": 2,
+  "prompt": "Qual destes lugares foi inscrito primeiro como Património Mundial da UNESCO?",
+  "validacao": "documental",
+  "origem": "fabrica"
+ }
+]

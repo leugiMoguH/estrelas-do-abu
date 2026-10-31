@@ -27,6 +27,7 @@ export const HGP_A_CONFIRMAR: readonly string[] = A_CONFIRMAR;
 
 export function validationOf(id: string): HgpValidation {
   if (A_CONFIRMAR.includes(id)) return 'a-confirmar';
+  if (id.startsWith('hgp-seculo-xviii-k-')) return 'documental'; // gerado de conhecimentos CONFIRMADOS na ficha factual (ver content/kb)
   if (CALCULO.includes(id) && !DOCUMENTAL.includes(id)) return 'calculo';
   if (DOCUMENTAL.includes(id)) return 'documental';
   return 'revisto';

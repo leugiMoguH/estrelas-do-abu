@@ -114,7 +114,7 @@ const D1_ITEMS = new Map<string, string>([
 
 /** Id do subcapítulo da pergunta; os restantes temas usam a entrada provisória do tema completo. */
 export function hgpSectionOfItem(itemId: string, topic: HgpTopicId, sub?: string): string | undefined {
-  if (topic === D1) return D1_ITEMS.get(itemId);
+  if (topic === D1) return D1_ITEMS.get(itemId) ?? (itemId.startsWith('hgp-seculo-xviii-k-') && sub ? `d1-${sub}` : undefined);
   if (topic === 'hgp-recuperacao-5') return sub ? `rec5-${sub}` : undefined;
   return `prov-${topic}`;
 }

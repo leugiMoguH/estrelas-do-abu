@@ -18,7 +18,7 @@ export function hgpTemplate(item: HgpItem): ExerciseTemplate {
   return {
     id: item.id,
     competencyId: item.topic,
-    conceptId: item.sub,
+    conceptId: item.kb?.knowledge[0] ?? item.sub,
     approachId: item.skill,
     difficulties: [item.difficulty],
     instances: 1,

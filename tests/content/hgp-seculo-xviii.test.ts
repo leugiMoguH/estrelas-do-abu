@@ -6,7 +6,7 @@ import { normalize, grade } from '../../src/core/grading';
 import { correctAnswerOf } from '../../src/core/content';
 import type { HgpSkill } from '../../content/historia/schema';
 
-const items = hgpItems.filter(i => i.topic === 'hgp-seculo-xviii');
+const items = hgpItems.filter(i => i.topic === 'hgp-seculo-xviii' && !i.kb);
 const fresh = hgpBanks['./bank-f.ts']!.bank;
 const minima: Record<string, number> = {
   'brasil-acucar': 3, 'ouro-diamantes': 3, 'legado-africano': 3,

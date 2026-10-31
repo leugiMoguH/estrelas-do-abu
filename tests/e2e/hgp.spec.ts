@@ -1,7 +1,8 @@
 import { hgpTopics } from '../../content/historia/topics';
 import type { HgpItem } from '../../content/historia/schema';
 import { test, expect, type Page } from '@playwright/test';
-import snapshotJson from '../../docs/hgp/auditoria-seculo-xviii/itens.json' with { type: 'json' };
+import snapshotJson from '../../docs/hgp/fabrica/itens.json' with { type: 'json' };
+type Snap={id:string;prompt:string;validacao:string;secao:string;nivel:number;origem:string};
 async function enter(page: Page): Promise<void> {
  await page.goto('/');await page.getByRole('button',{name:/Jogar/}).first().click();
  await page.getByRole('button',{name:/Surpreende/}).click();await page.getByRole('button',{name:/Vamos ao centro/}).click();
@@ -92,10 +93,10 @@ test('HGP: mcq, order, feedback específico e figura com seed fixo (build hgp-e2
  await page.locator('.correction details').filter({hasText:figure.prompt}).locator('summary').click();await expect(page.locator('.correction .pt-map')).toBeVisible();
 });
 test('HGP: mapa limpo, sem atalhos de matérias; ligação ?capitulo= e seleção normal (20 perguntas)',async({page})=>{
- const snapshot=snapshotJson as {id:string;prompt:string;validacao:string}[];
+ const snapshot=snapshotJson as Snap[];
  const active=snapshot.filter(i=>i.validacao!=='a-confirmar');
- expect(active.length).toBe(69);
- const chapter=active.filter(i=>!['47','48','49'].includes(i.id.slice(-2)));expect(chapter.length).toBe(66);
+ expect(active.filter(i=>i.origem==='manual').length).toBe(69);
+ const chapter=active.filter(i=>i.secao!=='d1-extra-novas-culturas');expect(chapter.length).toBeGreaterThanOrEqual(350);
  await page.goto('/');await page.getByRole('button',{name:/Jogar/}).first().click();
  await page.getByRole('button',{name:/Surpreende/}).click();await page.getByRole('button',{name:/Vamos ao centro/}).click();
  // mapa: nenhum botão amarelo de teste, nenhum atalho de matéria; sem tema anterior, sem «Continuar a estudar»
@@ -117,8 +118,8 @@ test('HGP: mapa limpo, sem atalhos de matérias; ligação ?capitulo= e seleçã
  const seen=new Set<string>();
  for(let i=0;i<20;i++){
   const text=await page.locator('form.question').innerText();
-  const hit=chapter.find(item=>text.includes(item.prompt.slice(0,30)));
-  expect(hit,`Pergunta ${i+1} fora do capítulo ou excluída: ${text.slice(0,60)}`).toBeTruthy();seen.add(hit!.id);
+  const hit=chapter.find(item=>text.includes(item.prompt.slice(0,40)));
+  expect(hit,`Pergunta ${i+1} fora do capítulo ou excluída: ${text.slice(0,60)}`).toBeTruthy();seen.add(text.split(String.fromCharCode(10))[0]!);
   await answer(page,'study');
  }
  expect(seen.size).toBe(20);
@@ -169,8 +170,8 @@ test('HGP: sessões consecutivas da recuperação não repetem perguntas',async(
  expect(new Set(all).size).toBe(all.length);
 });
 test('HGP: um subcapítulo escolhido só traz perguntas e lição desse subcapítulo',async({page})=>{
- const snapshot=snapshotJson as {id:string;prompt:string;validacao:string}[];
- const ouro=snapshot.filter(i=>['02','18','19','20','21','22'].includes(i.id.slice(-2)));expect(ouro.length).toBe(6);
+ const snapshot=snapshotJson as Snap[];
+ const ouro=snapshot.filter(i=>i.secao==='d1-ouro-diamantes'&&i.validacao!=='a-confirmar');expect(ouro.length).toBeGreaterThanOrEqual(30);
  await enter(page);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expandTopics(page);
  await page.getByRole('checkbox',{name:/Ouro, diamantes e escravização/}).check();
  await page.getByRole('button',{name:/Tomé/}).click();await page.getByRole('button',{name:'Explica-me esta matéria'}).click();
@@ -179,7 +180,7 @@ test('HGP: um subcapítulo escolhido só traz perguntas e lição desse subcapí
  await page.getByRole('button',{name:/Começar a estudar/}).click();
  for(let i=0;i<3;i++){
   const text=await page.locator('form.question').innerText();
-  expect(ouro.some(item=>text.includes(item.prompt.slice(0,30))),`Pergunta ${i+1} fora do subcapítulo: ${text.slice(0,60)}`).toBe(true);
+  expect(ouro.some(item=>text.includes(item.prompt.slice(0,40))),`Pergunta ${i+1} fora do subcapítulo: ${text.slice(0,60)}`).toBe(true);
   await answer(page,'study');
  }
 });

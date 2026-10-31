@@ -13,6 +13,8 @@ interface Common {
   id: string; topic: HgpTopicId; sub: string; skill: HgpSkill; difficulty: 1 | 2 | 3;
   prompt: string; stimulus?: string; figure?: HgpFigure;
   hints: readonly string[]; explanation: string; sources: readonly string[];
+  /** Origem na fábrica de exercícios: conhecimentos testados, raciocínio e molde (ver content/kb). */
+  kb?: { knowledge: readonly string[]; reasoning: string; template: string; fichas: readonly string[] };
 }
 export type HgpItem = Common & (
   | { kind: 'mcq'; options: readonly string[]; correct: string; wrong: Readonly<Record<string, string>> }

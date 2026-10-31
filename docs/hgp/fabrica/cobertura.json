@@ -1,0 +1,84 @@
+{
+ "conhecimentos": 96,
+ "exercicios": 330,
+ "multiConhecimento": 93,
+ "variantesFormato": 140,
+ "porNivel": {
+  "1": 61,
+  "2": 233,
+  "3": 36
+ },
+ "porSubcapitulo": {
+  "brasil-acucar": {
+   "1": 5,
+   "2": 11,
+   "3": 3
+  },
+  "ouro-diamantes": {
+   "1": 7,
+   "2": 22,
+   "3": 3
+  },
+  "legado-africano": {
+   "2": 4
+  },
+  "sociedade-ordens": {
+   "1": 7,
+   "2": 18,
+   "3": 5
+  },
+  "monarquia-joao-v": {
+   "1": 15,
+   "2": 55,
+   "3": 10
+  },
+  "barroco-patrimonio": {
+   "1": 10,
+   "2": 26,
+   "3": 3
+  },
+  "pombal-lisboa": {
+   "1": 17,
+   "2": 67,
+   "3": 8
+  },
+  "sintese": {
+   "2": 30,
+   "3": 4
+  }
+ },
+ "porRaciocinio": {
+  "reconhecer": 96,
+  "verificar": 110,
+  "recordar": 44,
+  "calcular": 20,
+  "ordenar": 21,
+  "comparar": 15,
+  "classificar": 17,
+  "inferir": 7
+ },
+ "porMolde": {
+  "reconhecer-mcq": 96,
+  "verificar-frase": 96,
+  "recordar-livre": 44,
+  "calcular-intervalo": 18,
+  "ordenar-cronologia": 16,
+  "comparar-cronologia": 12,
+  "ordenar-causas": 5,
+  "excecao": 14,
+  "frase-falsa": 14,
+  "caso": 15
+ },
+ "porCompetencia": {
+  "mapa": 15,
+  "conceito": 45,
+  "facto": 28,
+  "cronologia": 165,
+  "causa": 12,
+  "personagem": 27,
+  "consequencia": 14,
+  "fonte": 2,
+  "comparacao": 22
+ },
+ "errosQA": []
+}

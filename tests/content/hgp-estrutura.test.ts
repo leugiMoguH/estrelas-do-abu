@@ -49,10 +49,11 @@ describe('estrutura editorial de HGP (capítulos e subcapítulos do índice conf
     for (const s of HGP_CHAPTERS[0]!.sections) expect(hgpSectionInfo(s.id).functional, s.id).toBe(true);
     const d1 = HGP_CHAPTERS.find(c => c.id === 'd1')!;
     for (const s of d1.sections) expect(hgpSectionInfo(s.id).functional, s.id).toBe(true);
-    // 66 perguntas ativas nos 8 subcapítulos do índice (+3 do complemento), 69 ao todo
+    // 66 perguntas escritas à mão nos 8 subcapítulos do índice (+3 do complemento), 69 ao todo; mais as geradas pela fábrica (content/kb)
+    const gerados = hgpItems.filter(i => i.kb).length;
     const active = (ids: string[]) => ids.reduce((n, id) => n + hgpSectionInfo(id).active, 0);
-    expect(active(d1.sections.filter(s => !s.extra).map(s => s.id))).toBe(66);
-    expect(active(d1.sections.map(s => s.id))).toBe(69);
+    expect(active(d1.sections.filter(s => !s.extra).map(s => s.id))).toBe(66 + gerados);
+    expect(active(d1.sections.map(s => s.id))).toBe(69 + gerados);
   });
   it('perguntas excluídas não contam e os temas restantes ficam acessíveis pelo tema completo', () => {
     const excluded = hgpItems.filter(i => validationOf(i.id) === 'a-confirmar');

@@ -65,7 +65,7 @@ export function buildSession(options: SessionOptions) {
         competency: e.competencyId,
       })),
     ];
-    const recentSignatures = new Set(recent.slice(-recentWindow).map((h) => h.signature));
+    const recentSignatures = new Set(recent.map((h) => h.signature));
     const recentConcepts = recent.slice(-3);
     const penalty = (ex: Exercise) =>
       options.history === undefined
