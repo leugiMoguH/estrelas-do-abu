@@ -15,6 +15,8 @@ interface Base {
   readonly ref?: ExerciseRef;
   readonly conceptId?: string;
   readonly approachId?: string;
+  /** Competência para a progressão (ex.: «hgp-seculo-xviii:causa»); opcional. */
+  readonly skillId?: string;
   readonly stimulus?: string;
   readonly figure?: { type: "pt-map"; highlight: readonly string[]; label?: string };
   readonly id: string;

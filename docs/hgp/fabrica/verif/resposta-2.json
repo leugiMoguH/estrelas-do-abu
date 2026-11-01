@@ -1,0 +1,577 @@
+[
+  {
+    "atom": "mj-nasc",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Arquivo Municipal de Lisboa — João V",
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "nasceu em Lisboa a 22 de outubro de 1689"
+      },
+      {
+        "titulo": "Store norske leksikon — Johan 5.",
+        "url": "https://snl.no/Johan_5.",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "22. oktober 1689, Lisboa, Portugal"
+      }
+    ],
+    "qualificacoes": "Nascimento em 22 de outubro de 1689. Neste relatório, explicacao_ok avalia apenas a afirmação fornecida: o pedido não contém os textos explicativos das fichas.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-inicio",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Portugal, Dicionário Histórico — D. João V (edição histórica digitalizada)",
+        "url": "https://www.arqnet.pt/dicionario/joao5.html",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "em dezembro de 1706, subiu ao trono"
+      },
+      {
+        "titulo": "Store norske leksikon — Johan 5.",
+        "url": "https://snl.no/Johan_5.",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "fra 1706 til 1750"
+      }
+    ],
+    "qualificacoes": "Distinguir sucessão ao trono, em dezembro de 1706, da aclamação, em 1 de janeiro de 1707. Algumas fontes, incluindo o texto da Infopédia e o Arquivo Municipal de Lisboa, apresentam 1707 por referência à aclamação.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores. Se 1707 for usado, é ambíguo sem distinguir início do reinado e aclamação.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-morte",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Infopédia — D. João V",
+        "url": "https://www.infopedia.pt/artigos/$d.-joao-v",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "morte em 1750"
+      },
+      {
+        "titulo": "Store norske leksikon — Johan 5.",
+        "url": "https://snl.no/Johan_5.",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "31. juli 1750"
+      }
+    ],
+    "qualificacoes": "Morreu em 31 de julho de 1750.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-pai",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Portugal, Dicionário Histórico — D. João V (edição histórica digitalizada)",
+        "url": "https://www.arqnet.pt/dicionario/joao5.html",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "Era segundo filho de D. Pedro II"
+      },
+      {
+        "titulo": "Arquivo Municipal de Lisboa — João V",
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Filho de D. Pedro II"
+      }
+    ],
+    "qualificacoes": "D. Pedro II era seu pai e antecessor imediato. A sucessão por morte do pai é explicitada no Dicionário Histórico; a ficha municipal confirma filiação e acesso ao trono.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-cognome",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Infopédia — D. João V",
+        "url": "https://www.infopedia.pt/artigos/$d.-joao-v",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "\"o Magnânimo\""
+      },
+      {
+        "titulo": "Arquivo Municipal de Lisboa — João V",
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "O Magnânimo"
+      }
+    ],
+    "qualificacoes": "",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-secretarias",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Mário Francisco Simões Junior — dissertação sobre a Secretaria do Ultramar (USP, 2017)",
+        "url": "https://teses.usp.br/teses/disponiveis/8/8137/tde-07022018-123131/publico/2017_MarioFranciscoSimoesJunior_VCorr.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "No alvará de 28 de julho de 1736"
+      },
+      {
+        "titulo": "Universidade do Porto — arquivos da administração central: Negócios Estrangeiros",
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/artigo1631.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "O Alvará de 1736 criando as duas novas secretarias"
+      }
+    ],
+    "qualificacoes": "Confirma a reorganização de 28 de julho de 1736: Negócios Interiores do Reino; Marinha e Domínios Ultramarinos; Negócios Estrangeiros e Guerra. Havia secretarias anteriores; não significa que o cargo ou todas as repartições tenham surgido do nada em 1736.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-patriarcado",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Museu do Tesouro Real — Ofertas Diplomáticas",
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Igreja Patriarcal em 1716"
+      },
+      {
+        "titulo": "Cadernos do Arquivo Municipal — Entre castiçais, vasos, bustos de santos e estátuas de apóstolos",
+        "url": "https://www.lisboa.pt/fileadmin/informacao/publicacoes/arquivo_municipal/Cadernos_Arquivo_Municipal_1.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "a 7 de novembro de 1716"
+      }
+    ],
+    "qualificacoes": "A bula In supremo apostolatus solio, de 7 de novembro de 1716, elevou a Capela Real e criou inicialmente a jurisdição de Lisboa Ocidental, separada da Oriental. O pedido régio insere-se numa negociação diplomática mais ampla.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-papa",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Cadernos do Arquivo Municipal — Entre castiçais, vasos, bustos de santos e estátuas de apóstolos",
+        "url": "https://www.lisboa.pt/fileadmin/informacao/publicacoes/arquivo_municipal/Cadernos_Arquivo_Municipal_1.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "de Clemente XI"
+      },
+      {
+        "titulo": "Conferência Episcopal Portuguesa — Patriarcado de Lisboa: nota de imprensa",
+        "url": "https://www.conferenciaepiscopal.pt/v1/wp-content/uploads/JMJ2022_Patriarcado_NotaImprensa.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "o Papa Clemente XI concedeu o título de ‘Patriarcal’ à Capela Real de Lisboa"
+      }
+    ],
+    "qualificacoes": "A decisão é de Clemente XI, em 1716. A nota da Conferência Episcopal é institucional; o estudo municipal constitui investigação distinta.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-patriarca",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "José Pedro Paiva — Os bispos de Portugal e do Império (1495–1777)",
+        "url": "https://ap1.sib.uc.pt/bitstream/10316.2/40746/1/os_bispos_de_portugal.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "primeiro patriarca de Lisboa"
+      },
+      {
+        "titulo": "Luísa Arruda — Figura de Convite, Museum With No Frontiers",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=object%3BBAR%3Bpt%3BMus11_A%3B40%3Bpt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "D. Tomás de Almeida, primeiro Patriarca de Lisboa"
+      }
+    ],
+    "qualificacoes": "O livro de José Pedro Paiva identifica D. Tomás de Almeida no parágrafo que o apresenta como primeiro patriarca. Inicialmente, a jurisdição era Lisboa Ocidental.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-embaixada",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Museu Nacional dos Coches — Coche dos Oceanos",
+        "url": "https://www.mncoches.gov.pt/colecao/coche-dos-oceanos",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "cinco coches temáticos e dez coches de acompanhamento"
+      },
+      {
+        "titulo": "Sara Augusto — Diário da jornada de Roma do embaixador extraordinário, o Marquês de Fontes",
+        "url": "https://revistas.ucp.pt/index.php/mathesis/article/view/5168/5045",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "em 1716, quarta-feira 8 de Julho"
+      }
+    ],
+    "qualificacoes": "A entrada solene de 1716 foi a do Marquês de Fontes, embaixador em Roma desde 1712; não foi o início da missão. O museu confirma 5 + 10 = 15 coches; Sara Augusto identifica o embaixador e a entrada de julho de 1716. Corrigir a redação para «pelo Marquês de Fontes».",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-academia",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Rui Manuel Mesquita Mendes — A Academia Real da História e a Academia Real de Ciências",
+        "url": "https://run.unl.pt/bitstream/10362/188781/1/HistoriografiaCidades_Completo.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "foi fundada por D. João V em 1720"
+      },
+      {
+        "titulo": "Revista de Teoria da História, volume 17, n.º 1 (2017) — referência à criação da Academia",
+        "url": "https://comum.rcaap.pt/bitstreams/f20c247d-2d3e-4a6d-9b59-617b26bfb72b/download",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "a criação, em 8 de Dezembro de 1720"
+      }
+    ],
+    "qualificacoes": "Criação por decreto de 8 de dezembro de 1720; os estatutos foram confirmados em janeiro de 1721. A entrada geral da Infopédia sobre D. João V dá 1722, divergência rejeitada face aos estudos citados.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-fidelissimo",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Museu do Tesouro Real — Ofertas Diplomáticas",
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "em 1748, à concessão por Bento XIV"
+      },
+      {
+        "titulo": "Manuel de Azevedo, S.J. — Ilias in nuce (edição e estudo), nota 55",
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/18318.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "por Bula de 23-XII-1748"
+      }
+    ],
+    "qualificacoes": "Concessão em 23 de dezembro de 1748, extensiva aos sucessores na Coroa portuguesa.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-titulo",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Museu do Tesouro Real — Ofertas Diplomáticas",
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "título de “Fidelíssimo”"
+      },
+      {
+        "titulo": "Manuel de Azevedo, S.J. — Ilias in nuce (edição e estudo), nota 55",
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/18318.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "por Bula de 23-XII-1748"
+      }
+    ],
+    "qualificacoes": "O título também se aplica aos sucessores. Os títulos Cristianíssimo e Católico referem-se, neste contexto diplomático, às coroas francesa e espanhola, respetivamente.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-mafra-promessa",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Palácio Nacional de Mafra — apresentação do monumento",
+        "url": "https://www.pnmafra.gov.pt/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "no cumprimento de um voto de sucessão"
+      },
+      {
+        "titulo": "Infopédia — Palácio-Convento de Mafra",
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "promessa feita por D. João V"
+      }
+    ],
+    "qualificacoes": "É a explicação tradicional do voto religioso, cumprido com o nascimento de Maria Bárbara em 1711. Não reduzir a motivação política e artística de todo o complexo à promessa, nem afirmar que a primeira criança foi um filho varão.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-mafra-pedra",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Palácio Nacional de Mafra — apresentação do monumento",
+        "url": "https://www.pnmafra.gov.pt/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "A primeira pedra foi lançada a 17 de novembro de 1717"
+      },
+      {
+        "titulo": "Infopédia — Palácio-Convento de Mafra",
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "a 17 de novembro de 1717"
+      }
+    ],
+    "qualificacoes": "Data cerimonial da primeira pedra da basílica: 17 de novembro de 1717.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-mafra-sagrada",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Palácio Nacional de Mafra — Basílica",
+        "url": "https://www.pnmafra.gov.pt/basilica/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "22 de outubro de 1730, dia do 41.º aniversário"
+      },
+      {
+        "titulo": "Câmara Municipal de Mafra — História",
+        "url": "https://www.cm-mafra.pt/pages/1085",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "A sagração da Basílica deu-se a 22 de outubro de 1730"
+      }
+    ],
+    "qualificacoes": "A sagração não corresponde à conclusão de todas as obras do complexo. Aniversário verificado por cálculo: 1730 − 1689 = 41, no mesmo dia e mês.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-biblioteca",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "A. E. Maia do Amaral — Biblioteca Joanina da Universidade de Coimbra, Museum With No Frontiers",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B11%3Ben",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Parish of Sé Nova, Coimbra, Coimbra, Portugal"
+      },
+      {
+        "titulo": "Comissão Europeia — Biblioteca Geral da Universidade de Coimbra, Portugal",
+        "url": "https://culture.ec.europa.eu/pt-pt/cultural-heritage/initiatives-and-success-stories/european-heritage-label/european-heritage-label-sites/general-library-of-the-university-of-coimbra-portugal",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Biblioteca Geral da Universidade de Coimbra"
+      }
+    ],
+    "qualificacoes": "A ficha museológica situa explicitamente a Joanina em Coimbra; a Comissão Europeia inclui-a na Biblioteca Geral da Universidade de Coimbra. A ficha museológica é de autoria de um bibliotecário da UC; a segunda entidade é a Comissão Europeia.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-biblioteca-fim",
+    "veredicto": "contradiz",
+    "fontes": [
+      {
+        "titulo": "Universidade de Coimbra — Biblioteca Joanina",
+        "url": "https://visit.uc.pt/pt/space-list/joanina",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "A sua construção ficou concluída em 1728"
+      },
+      {
+        "titulo": "Paulo J. S. Barata — Os livros em sua ordem: para a história da Biblioteca Geral da Universidade (recensão, Cadernos BAD, 2015)",
+        "url": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/download/1246/pdf_15/3440",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "aval de D. João V mas paga pela Universidade"
+      }
+    ],
+    "qualificacoes": "Correção: «A Biblioteca Joanina, construída com autorização de D. João V e paga pela Universidade de Coimbra, ficou concluída em 1728.» O financiamento pelo rei é refutado pela recensão académica de Paulo Barata. O dossiê de candidatura UNESCO repete a versão do patrocínio régio pelo ouro brasileiro; não é uma investigação independente do financiamento. Distinguir conclusão da ornamentação em 1728 da abertura em 1777.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "mj-capela",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Diário da República — Decreto n.º 7/2026, de 16 de fevereiro",
+        "url": "https://diariodarepublica.pt/dr/detalhe/decreto/7-2026-1051282296",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "em Roma e de lá transportado para Lisboa"
+      },
+      {
+        "titulo": "Museu de São Roque — Capela de São João Batista",
+        "url": "https://museusaoroque.scml.pt/colecoes/csjb/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Integralmente realizada e importada de Roma"
+      }
+    ],
+    "qualificacoes": "Trata-se da capela da Igreja de São Roque, em Lisboa. Foi executada em Roma, desmontada, transportada e remontada; o decreto de classificação explicita a remontagem integral na Igreja de São Roque.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-aq-autorizado",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Inventário de Lisboa — Aqueduto das Águas Livres (Hemeroteca Municipal de Lisboa)",
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Em 12 de Maio de 1731 foi ordenado"
+      },
+      {
+        "titulo": "Boletim da Sociedade Histórica da Independência de Portugal, 102–103 — O Aqueduto das Águas Livres",
+        "url": "https://sociedadehistorica.pt/wp-content/uploads/Boletim-SHIP-102-103_compressed.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Dado em Lisboa occidental, a 12 de maio de 1731"
+      }
+    ],
+    "qualificacoes": "Alvará de 12 de maio de 1731, precedido de decreto de 13 de abril. Distinguir autorização régia, preparação e início efetivo dos trabalhos de campo. A segunda fonte transcreve o alvará.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-aq-agua",
+    "veredicto": "contradiz",
+    "fontes": [
+      {
+        "titulo": "Inventário de Lisboa — Aqueduto das Águas Livres (Hemeroteca Municipal de Lisboa)",
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "primeira vez, num improvisado tanque das Amoreiras"
+      },
+      {
+        "titulo": "Museum With No Frontiers — Águas Livres Aqueduct",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B27%3Ben",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "water was first channelled by the structure to Lisbon in 1744"
+      }
+    ],
+    "qualificacoes": "Correção: a água correu pela primeira vez num tanque das Amoreiras em 30 de outubro de 1744; 1748 é a data do ingresso triunfal/oficial, assinalada no arco das Amoreiras. Sem essa distinção, «chegou em 1748» é impreciso. A ficha do IPT reproduz a cronologia resumida de 1748, sem resolver a primeira chegada. A Infopédia também apresenta 1748 como primeira chegada; a cronologia pormenorizada municipal e a ficha museológica distinguem 1744 de 1748.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores. Se 1744 for gerado como falso, é verdadeiro para a primeira chegada da água.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "mj-aq-altura",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "EPAL / Museu da Água — Aqueduto das Águas Livres",
+        "url": "https://www.epal.pt/EPAL/menu/museu-da-%C3%A1gua/exposi%C3%A7%C3%A3o-permanente-patrim%C3%B3nio-associado/aqueduto-das-%C3%A1guas-livres",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "com 65,29 m de altura"
+      },
+      {
+        "titulo": "Infopédia — Aqueduto das Águas Livres",
+        "url": "https://www.infopedia.pt/artigos/$aqueduto-das-aguas-livres",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "29 metros de largura por 65 de altura"
+      }
+    ],
+    "qualificacoes": "65 m é arredondamento adequado dos 65,29 m indicados pela EPAL; a Infopédia confirma a ordem de grandeza do arco central.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-aq-sismo",
+    "veredicto": "contradiz",
+    "fontes": [
+      {
+        "titulo": "Bárbara Bruno — O Aqueduto das Águas Livres e o terramoto de 1755, Arqueologia & História, 68",
+        "url": "https://www.museuarqueologicodocarmo.arqueologos.pt/publicacoes/arqueologia_historia/serie_13/Vol_68/AH_Vol68.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "consertos grandes que se fizeram no Aqueduto Geral em consequência do Terramoto de 1755"
+      },
+      {
+        "titulo": "Inventário de Lisboa — Aqueduto das Águas Livres (Hemeroteca Municipal de Lisboa)",
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "ao qual resistiu pela solidez da construção"
+      }
+    ],
+    "qualificacoes": "Correção de âmbito: a arcaria de Alcântara sobreviveu com poucos danos, mas o sistema do aqueduto sofreu estragos documentados, incluindo grandes consertos no Aqueduto Geral e ruína no de Carenque. Não generalizar «sem danos importantes» a todo o sistema. O estudo de Bárbara Bruno é publicado em revista académica, mas a autora pertence ao Museu da Água/EPAL; por isso a segunda fonte é municipal, e não outra página da EPAL.",
+    "distratores": "Os três distratores continuam falsos: os danos documentados não equivalem à destruição total, arrastamento pelo maremoto ou desabamento nos incêndios.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "mj-auto",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Infopédia — António José da Silva",
+        "url": "https://www.infopedia.pt/artigos/$antonio-jose-da-silva",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "executado em 1739"
+      },
+      {
+        "titulo": "A Universidade de Coimbra e o Brasil: percurso iconobibliográfico (2012), p. 86",
+        "url": "https://ap1.sib.uc.pt/bitstream/10316.2/5641/1/a_universidade_de_coimbra_e_o_brasil_2012.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "em domingo 18 de outubro de 1739"
+      }
+    ],
+    "qualificacoes": "A publicação da UC reproduz e identifica a lista de condenados do auto de 18 de outubro de 1739, incluindo António José da Silva. Distinguir julgamento, leitura pública da sentença e execução pelo braço secular; a formulação escolar é aceitável para o ano.",
+    "distratores": "O pedido não fornece os anos concretos gerados por ±; não é possível verificar individualmente esses distratores.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "mj-queluz",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Parques de Sintra — História do Palácio Nacional e Jardins de Queluz",
+        "url": "https://www.parquesdesintra.pt/pt/parques-monumentos/palacio-nacional-e-jardins-de-queluz/historia/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Em 1747, o Infante D. Pedro"
+      },
+      {
+        "titulo": "Câmara Municipal de Sintra — PDM: Património Natural, Arquitetónico e Arqueológico",
+        "url": "https://cm-sintra.pt/phocadownload/PDF/consulta_publica/revisao_pdm/documentos-consulta/relatorios-diagnostico/Tema-11-Patrimonio-Natural-Arquitetonico-e-Arqueologico.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Em 1747, D. Pedro III inicia as obras de ampliação"
+      }
+    ],
+    "qualificacoes": "Em 1747, o infante, futuro D. Pedro III, encomendou a Mateus Vicente de Oliveira a ampliação do Paço Velho. As obras prosseguiram e intensificaram-se em 1760. Corrigir «por ordem do o infante» para «por ordem do infante».",
+    "distratores": "",
+    "explicacao_ok": true
+  }
+]

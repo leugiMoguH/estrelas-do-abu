@@ -1,0 +1,387 @@
+[
+ {
+  "atom": "mj-nasc",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "D. João V nasceu em Lisboa em 1689.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F41"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+   "https://en.wikipedia.org/wiki/John_V_of_Portugal"
+  ]
+ },
+ {
+  "atom": "mj-inicio",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "D. João V começou a reinar em 1706.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F42"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+   "https://en.wikipedia.org/wiki/John_V_of_Portugal"
+  ]
+ },
+ {
+  "atom": "mj-morte",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "D. João V morreu em 1750.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F41"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+   "https://en.wikipedia.org/wiki/John_V_of_Portugal"
+  ]
+ },
+ {
+  "atom": "mj-pai",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "D. João V sucedeu a D. Pedro II.",
+  "distratores_falsos": [
+   "a D. José I",
+   "a D. Afonso VI",
+   "a D. João IV"
+  ],
+  "fichas": [
+   "F42"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+   "https://en.wikipedia.org/wiki/John_V_of_Portugal"
+  ]
+ },
+ {
+  "atom": "mj-cognome",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "O cognome de D. João V era «o Magnânimo».",
+  "distratores_falsos": [
+   "o Lavrador",
+   "o Venturoso",
+   "o Desejado"
+  ],
+  "fichas": [
+   "F43"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+   "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra"
+  ]
+ },
+ {
+  "atom": "mj-secretarias",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "As três Secretarias de Estado foram criadas por alvará de 1736.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F46"
+  ],
+  "fontes_atuais": [
+   "https://portugal.gov.pt/pt/gc21/area-de-governo/negocios-estrangeiros/informacao-adicional/historia-do-ministerio-dos-negocios-estrangeiros",
+   "https://revistas.usp.br/ran/es/article/view/126962",
+   "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548945019_bac22fd30f0c48b2e05f65d2fd3ae72d.pdf"
+  ]
+ },
+ {
+  "atom": "mj-patriarcado",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A Capela Real foi elevada a Igreja Patriarcal, a pedido de D. João V, em 1716.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F47"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Patriarchate_of_Lisbon",
+   "https://cardinals.fiu.edu/bios1737.htm",
+   "https://www.tesouroreal.pt/en/pages/f9c5d0d7"
+  ]
+ },
+ {
+  "atom": "mj-papa",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A Capela Real foi elevada a Igreja Patriarcal pelo Papa Clemente XI.",
+  "distratores_falsos": [
+   "Bento XIV",
+   "Pio VII",
+   "João Paulo II"
+  ],
+  "fichas": [
+   "F47"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Patriarchate_of_Lisbon",
+   "https://cardinals.fiu.edu/bios1737.htm",
+   "https://www.tesouroreal.pt/en/pages/f9c5d0d7"
+  ]
+ },
+ {
+  "atom": "mj-patriarca",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "O primeiro Patriarca de Lisboa foi D. Tomás de Almeida.",
+  "distratores_falsos": [
+   "Marquês de Fontes",
+   "Manuel da Maia",
+   "Nicolau Nasoni"
+  ],
+  "fichas": [
+   "F48"
+  ],
+  "fontes_atuais": [
+   "https://cardinals.fiu.edu/bios1737.htm",
+   "https://en.wikipedia.org/wiki/Patriarch_of_Lisbon"
+  ]
+ },
+ {
+  "atom": "mj-embaixada",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A embaixada de 1716 ao Papa, com 15 coches, foi chefiada por o Marquês de Fontes.",
+  "distratores_falsos": [
+   "o Marquês de Pombal",
+   "Manuel da Maia",
+   "o Duque de Aveiro"
+  ],
+  "fichas": [
+   "F49"
+  ],
+  "fontes_atuais": [
+   "https://www.dns.pt/en/galeriapt/details.php?id=16",
+   "https://en.citaliarestauro.com/?p=41984",
+   "https://www.dn.pt/arquivo/diario-de-noticias/coche-dos-oceanos-voltou-a-sair-a-rua.html"
+  ]
+ },
+ {
+  "atom": "mj-academia",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "D. João V fundou a Academia Real da História Portuguesa em 1720.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F51"
+  ],
+  "fontes_atuais": [
+   "https://dichp.bnportugal.gov.pt/imagens/academia_historia_eng.pdf",
+   "https://ap1.sib.uc.pt/bitstream/10316.2/27950/1/rph42_artigo14.pdf",
+   "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548206372_0cb934859fa1e57f5220b3ca79a1ae83.pdf"
+  ]
+ },
+ {
+  "atom": "mj-fidelissimo",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "O Papa Bento XIV deu a D. João V o título de «Rei Fidelíssimo» em 1748.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F52"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Most_Faithful_Majesty",
+   "https://www.janusonline.pt/arquivo/docs9900/artigo_janus9900_1_18.doc"
+  ]
+ },
+ {
+  "atom": "mj-titulo",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "Em 1748 o Papa deu a D. João V o título de «Rei Fidelíssimo».",
+  "distratores_falsos": [
+   "Rei Cristianíssimo",
+   "Rei Católico",
+   "Defensor da Fé"
+  ],
+  "fichas": [
+   "F52"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Most_Faithful_Majesty",
+   "https://www.janusonline.pt/arquivo/docs9900/artigo_janus9900_1_18.doc"
+  ]
+ },
+ {
+  "atom": "mj-mafra-promessa",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "D. João V mandou construir Mafra para cumprir uma promessa, feita se a rainha lhe desse descendência.",
+  "distratores_falsos": [
+   "para fugir ao terramoto de 1755",
+   "para servir de residência ao Marquês de Pombal",
+   "para guardar a coleção de coches do museu"
+  ],
+  "fichas": [
+   "F53"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+   "https://estudogeral.sib.uc.pt/bitstream/10316/85057/1/D4_AFPimentel_Monumentos%2035.pdf",
+   "https://en.wikipedia.org/wiki/John_V_of_Portugal"
+  ]
+ },
+ {
+  "atom": "mj-mafra-pedra",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A primeira pedra de Mafra foi lançada em 1717.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F54"
+  ],
+  "fontes_atuais": [
+   "https://estudogeral.sib.uc.pt/bitstream/10316/85057/1/D4_AFPimentel_Monumentos%2035.pdf",
+   "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra"
+  ]
+ },
+ {
+  "atom": "mj-mafra-sagrada",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A basílica de Mafra foi sagrada em 1730, no dia do 41.º aniversário do rei.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F55"
+  ],
+  "fontes_atuais": [
+   "https://observador.pt/especiais/a-boda-real-e-o-regresso-dos-braganca-a-mafra-o-palacio-onde-uma-princesa-foi-batizada-e-de-onde-partiu-o-ultimo-rei-portugues/",
+   "https://www.idealista.pt/news/node/66653"
+  ]
+ },
+ {
+  "atom": "mj-biblioteca",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A Biblioteca Joanina fica em Coimbra.",
+  "distratores_falsos": [
+   "Lisboa",
+   "Porto",
+   "Mafra"
+  ],
+  "fichas": [
+   "F59"
+  ],
+  "fontes_atuais": [
+   "https://www.uc.pt/en/tourism/unesco/joanina-library",
+   "https://pages.uc.pt/en/bguc/activities/joanina300years",
+   "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  ]
+ },
+ {
+  "atom": "mj-biblioteca-fim",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A construção da Biblioteca Joanina, paga por D. João V, terminou em 1728.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F59"
+  ],
+  "fontes_atuais": [
+   "https://www.uc.pt/en/tourism/unesco/joanina-library",
+   "https://pages.uc.pt/en/bguc/activities/joanina300years",
+   "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  ]
+ },
+ {
+  "atom": "mj-capela",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A Capela de São João Batista foi construída em Roma e depois montada em Lisboa.",
+  "distratores_falsos": [
+   "no Porto",
+   "em Minas Gerais",
+   "em Mafra"
+  ],
+  "fichas": [
+   "F60"
+  ],
+  "fontes_atuais": [
+   "https://www.theartnewspaper.com/2018/08/20/prefabulous-the-story-of-an-18th-century-chapel-made-entirely-in-rome-for-a-church-in-lisbon",
+   "https://econtents.bc.unicamp.br/eventos/index.php/eha/article/download/4682/4491/12648",
+   "https://comum.rcaap.pt/bitstream/10400.26/46409/1/Silva_Andre_Martins_A_CSJB.pdf"
+  ]
+ },
+ {
+  "atom": "mj-aq-autorizado",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A construção do Aqueduto das Águas Livres foi autorizada em 1731.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F61"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Aqueduto_das_%C3%81guas_Livres",
+   "https://en.wikipedia.org/wiki/%C3%81guas_Livres_Aqueduct",
+   "https://www.visitlisboa.com/en/c/sightseeing-and-activities/museums-and-monuments/monuments/p/aqueduto-das-aguas-livres"
+  ]
+ },
+ {
+  "atom": "mj-aq-agua",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "A água do Aqueduto das Águas Livres chegou a Lisboa em 1748.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F61"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Aqueduto_das_%C3%81guas_Livres",
+   "https://en.wikipedia.org/wiki/%C3%81guas_Livres_Aqueduct",
+   "https://www.visitlisboa.com/en/c/sightseeing-and-activities/museums-and-monuments/monuments/p/aqueduto-das-aguas-livres"
+  ]
+ },
+ {
+  "atom": "mj-aq-altura",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "O Arco Grande do aqueduto, no vale de Alcântara, tem cerca de 65 metros de altura.",
+  "distratores_falsos": [
+   "cerca de 15 metros",
+   "cerca de 30 metros",
+   "cerca de 120 metros"
+  ],
+  "fichas": [
+   "F62"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/%C3%81guas_Livres_Aqueduct",
+   "https://rfm.pt/atualidade/23701/o-maior-arco-em-ogiva-de-pedra-do-mundo-fica-em-lisboa-e-e-apenas-uma-pequena-parte-de-um-monumento-gigantesco"
+  ]
+ },
+ {
+  "atom": "mj-aq-sismo",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "No terramoto de 1755, o Aqueduto das Águas Livres resistiu sem danos importantes.",
+  "distratores_falsos": [
+   "ficou totalmente destruído",
+   "foi levado pelo maremoto",
+   "desabou nos incêndios"
+  ],
+  "fichas": [
+   "F63"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/%C3%81guas_Livres_Aqueduct",
+   "https://www.visitlisboa.com/en/c/sightseeing-and-activities/museums-and-monuments/monuments/p/aqueduto-das-aguas-livres"
+  ]
+ },
+ {
+  "atom": "mj-auto",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "O dramaturgo António José da Silva, «o Judeu», foi condenado num auto-de-fé em 1739.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F66"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$antonio-jose-da-silva",
+   "https://www.britannica.com/print/article/544722",
+   "https://www.jewishvirtuallibrary.org/antonio-jose-da-silva"
+  ]
+ },
+ {
+  "atom": "mj-queluz",
+  "subcapitulo": "monarquia-joao-v",
+  "afirmacao": "O paço de Queluz foi ampliado em 1747 por ordem do o infante D. Pedro.",
+  "distratores_falsos": [
+   "D. João V",
+   "Manuel da Maia",
+   "Eugénio dos Santos"
+  ],
+  "fichas": [
+   "F67"
+  ],
+  "fontes_atuais": [
+   "https://www.parquesdesintra.pt/en/parks-monuments/national-palace-and-gardens-of-queluz/history/",
+   "https://nppg.org.br/revistas/gestaoegerenciamento/article/download/16/14"
+  ]
+ }
+]

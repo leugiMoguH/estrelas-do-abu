@@ -14,6 +14,7 @@ export interface ExerciseTemplate {
   competencyId: string;
   conceptId: string;
   approachId: string;
+  skillId?: string;
   difficulties: readonly Difficulty[];
   review: ReviewStatus;
   source: string;
@@ -48,7 +49,7 @@ export function instantiate(pack: ContentPack, ref: ExerciseRef): Exercise {
   const ex = t.generate(ref.seed, ref.difficulty);
   if (ex.competencyId !== t.competencyId || ex.difficulty !== ref.difficulty)
     throw new Error('Metadados incompatíveis');
-  return { ...ex, review: t.review, ref: { ...ref }, conceptId: t.conceptId, approachId: t.approachId };
+  return { ...ex, review: t.review, ref: { ...ref }, conceptId: t.conceptId, approachId: t.approachId, ...(t.skillId ? { skillId: t.skillId } : {}) };
 }
 export function materialize(
   pack: ContentPack,

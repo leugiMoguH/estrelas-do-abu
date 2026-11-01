@@ -1,5 +1,5 @@
 import type { Exercise } from './types';
-import { normalize } from './grading';
+import { exerciseSignature } from './grading';
 export function measure(
   sessions: readonly (readonly Exercise[])[],
   eligibleConcepts: readonly string[],
@@ -20,7 +20,7 @@ export function measure(
     run = concept === last ? run + 1 : 1;
     longest = Math.max(longest, run);
     last = concept;
-    if (all.slice(Math.max(0, i - window), i).some((e) => normalize(e.prompt) === normalize(ex.prompt)))
+    if (all.slice(Math.max(0, i - window), i).some((e) => exerciseSignature(e) === exerciseSignature(ex)))
       repeats++;
     const approach = ex.approachId ?? 'unknown';
     approaches[approach] = (approaches[approach] ?? 0) + 1;
@@ -28,7 +28,7 @@ export function measure(
   });
   const signatureCounts = new Map<string, number>();
   for (const ex of all) {
-    const signature = normalize(ex.prompt);
+    const signature = exerciseSignature(ex);
     signatureCounts.set(signature, (signatureCounts.get(signature) ?? 0) + 1);
   }
   const reuseCounts = [...signatureCounts.values()];

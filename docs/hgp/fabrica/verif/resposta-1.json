@@ -1,0 +1,706 @@
+[
+  {
+    "atom": "ba-regiao",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Entre aldeamentos, mocambos e engenhos: etnogéneses e reconfigurações — UFBA",
+        "url": "https://ppgh.ufba.br/sites/ppgh.ufba.br/files/entre_aldeamentos_mocambos_e_engenhos_etnogeneses_e_reconfiguracoes_0.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "ficando atrás somente da capitania de Pernambuco"
+      },
+      {
+        "titulo": "A formação e consolidação de um grupo de produtores de açúcar da nobreza da terra — Tempo",
+        "url": "https://www.scielo.br/j/tem/a/WqHJJSskCq6cVBgcbz9fMrB/?format=html",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Pernambuco como o principal produtor"
+      },
+      {
+        "titulo": "O açúcar amargo: Suor, sangue e lágrimas nos engenhos — Varia Historia",
+        "url": "https://www.scielo.br/j/vh/a/J78YQTr9ssvPDfj9Mq5k3kp/?lang=pt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "em Minas Gerais que produziam açúcar e aguardente"
+      }
+    ],
+    "qualificacoes": "Síntese válida dos principais centros coloniais, não de todo o período e de todas as regiões. Havia produção noutras capitanias; a fonte da UFBA refere especificamente 1580.",
+    "distratores": "«Em Minas Gerais» é verdadeiro como local de produção, mas falso como principal centro colonial: havia engenhos de açúcar mineiros no século XVIII (terceira fonte). A pergunta deve manter «sobretudo» para não sugerir exclusividade regional.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "ba-engenho",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Sociedade do Açúcar — Arquivo Nacional",
+        "url": "https://historialuso.arquivonacional.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/sociedade-do-acucar",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "desde o cultivo da cana até o comércio do açúcar"
+      },
+      {
+        "titulo": "A formação e consolidação de um grupo de produtores de açúcar da nobreza da terra — Tempo",
+        "url": "https://www.scielo.br/j/tem/a/WqHJJSskCq6cVBgcbz9fMrB/?format=html",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "engenhos de fabricação de mel de cana-de-açúcar e rapadura"
+      }
+    ],
+    "qualificacoes": "Engenho pode designar o equipamento de moagem ou o conjunto da unidade produtiva; nem todo o engenho fabricava açúcar cristalizado.",
+    "distratores": "Feitorias eram entrepostos comerciais; não são a designação das unidades de transformação em causa.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "ba-trabalho",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Sociedade do Açúcar — Arquivo Nacional",
+        "url": "https://historialuso.arquivonacional.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/sociedade-do-acucar",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "a escravidão africana começou a suplantar a indígena"
+      },
+      {
+        "titulo": "A dinâmica da escravidão no Brasil: resistência, tráfico negreiro e alforrias — Novos Estudos CEBRAP",
+        "url": "https://new.scielo.br/j/nec/a/xB5SjkdK7zXRvRjKRXRfKPh/?lang=pt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "A mão-de-obra empregada na montagem dos engenhos de açúcar no Brasil foi predominantemente indígena."
+      }
+    ],
+    "qualificacoes": "A substituição foi gradual, desigual e incompleta; coexistiram trabalhadores indígenas, africanos escravizados e trabalhadores livres. Corrigir a redação para «mão de obra de africanos escravizados».",
+    "distratores": "Colonos portugueses assalariados podiam trabalhar nos engenhos; só é falso atribuir-lhes o predomínio.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "ba-methuen",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Tratado de Methuen — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "27 de dezembro de 1703"
+      },
+      {
+        "titulo": "METHUEN, John — Enciclopedia Italiana, Treccani",
+        "url": "https://www.treccani.it/enciclopedia/john-methuen_(Enciclopedia-Italiana)/",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "Fu stipulato il 27 dicembre del 1703"
+      }
+    ],
+    "qualificacoes": "Trata-se do tratado comercial; houve também tratados de aliança em maio de 1703.",
+    "distratores": "O pedido não enumera os anos efetivamente gerados; não foi possível auditar cada distrator dinâmico.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "ba-methuen-vinhos",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Tratado de Methuen — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "uma redução nas tarifas impostas aos vinhos portugueses"
+      },
+      {
+        "titulo": "Methuen, Treaty of (1703) — Encyclopedia of Latin American History and Culture",
+        "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/methuen-treaty-1703",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "preferential duties on such Portuguese products as olive oil and wine"
+      }
+    ],
+    "qualificacoes": "A preferência era tarifária, em comparação com os vinhos franceses; não significava ausência de direitos nem início absoluto das exportações. Eliminar «os os».",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "ba-methuen-panos",
+    "veredicto": "contradiz",
+    "fontes": [
+      {
+        "titulo": "Tratado de Methuen — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "livre entrada dos lanifícios ingleses"
+      },
+      {
+        "titulo": "METHUEN, John — Enciclopedia Italiana, Treccani",
+        "url": "https://www.treccani.it/enciclopedia/john-methuen_(Enciclopedia-Italiana)/",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "fu abolita in Portogallo la proibizione"
+      }
+    ],
+    "qualificacoes": "Imprecisão cronológica: os tecidos ingleses já eram comercializados anteriormente. O tratado restabeleceu a sua admissão, removendo proibições. Redação: «Portugal voltou a admitir os lanifícios ingleses». A Infopédia situa a revogação da pragmática em abril de 1704. Eliminar «os os».",
+    "distratores": "",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "ba-salvador",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "O mercado brasileiro do século XIX: uma visão por meio do comércio de cabotagem",
+        "url": "https://www.scielo.br/j/rep/a/QzGzHffGRLphKvjvFwQbFbK/",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Inicialmente, Salvador beneficiou-se por ser o principal porto e capital da colônia."
+      },
+      {
+        "titulo": "A estrada dos tijolos dourados: ouro, escravos e as relações anglo-portuguesas na África Ocidental",
+        "url": "https://www.scielo.br/j/alm/a/WwVvCfwppdkBNDQZx3qCXYg/?lang=pt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Até cerca de 1730, Salvador e Recife lideravam o comércio que fornecia escravos minas"
+      }
+    ],
+    "qualificacoes": "A primeira fonte relaciona diretamente mineração, expansão das trocas e benefício de Salvador; a segunda documenta a ligação comercial às minas. «Cresceu muito» não vem acompanhado de uma medida quantitativa. O Rio de Janeiro ganhou posteriormente centralidade.",
+    "distratores": "Santos também participou na expansão das comunicações marítimas associada às minas (primeira fonte). Não é seguro apresentá-lo como porto que não cresceu; é falso apenas como identificação do porto baiano.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-decada",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Histórico do Tribunal de Justiça do Estado de Minas Gerais — Jurisprudência Mineira, n.º 193",
+        "url": "https://bd-login.tjmg.jus.br/jspui/bitstream/tjmg/29/1/Edicao193.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Entre 1693 e 1695"
+      },
+      {
+        "titulo": "O toque dos sinos em Minas Gerais — IPHAN",
+        "url": "https://portal.iphan.gov.br/uploads/ckfinder/arquivos/Dossie%20toque%20dos%20sinos%281%29.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "datam de 1693"
+      }
+    ],
+    "qualificacoes": "Datação convencional dos achados que desencadearam a expansão mineira, não de todo e qualquer conhecimento anterior de ouro em Minas.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-quem",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "O toque dos sinos em Minas Gerais — IPHAN",
+        "url": "https://portal.iphan.gov.br/uploads/ckfinder/arquivos/Dossie%20toque%20dos%20sinos%281%29.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "bandeirante Antonio Rodrigues Arzão"
+      },
+      {
+        "titulo": "Ouro e Diamantes na Colônia Americana — Arquivo Nacional",
+        "url": "https://historialuso.an.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/ouro-e-diamantes",
+        "tipo": "oficial",
+        "leitura": "excerto",
+        "excerto": "por bandeirantes"
+      }
+    ],
+    "qualificacoes": "A atribuição convencional refere-se às expedições paulistas, que incluíam indígenas e outros participantes; não implica descoberta individual exclusivamente europeia. A página do Arquivo Nacional foi aberta, mas devolveu bloqueio; apenas se leu o excerto indexado. Corrigir «por os» para «pelos».",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-capitania",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Estrutura e dinâmica da organização político-administrativa de Minas Gerais — Arquivo Público Mineiro",
+        "url": "https://www.arquivopublico.mg.gov.br/estrutura-e-dinamica-da-organizacao-politico-administrativa-de-minas-gerais/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "A Carta Régia de 2 de dezembro de 1720"
+      },
+      {
+        "titulo": "Histórico do Tribunal de Justiça do Estado de Minas Gerais — Jurisprudência Mineira, n.º 193",
+        "url": "https://bd-login.tjmg.jus.br/jspui/bitstream/tjmg/29/1/Edicao193.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "A Capitania de Minas Gerais é criada em 1720"
+      }
+    ],
+    "qualificacoes": "A unidade anterior chamava-se Capitania de São Paulo e Minas do Ouro; o desmembramento originou as capitanias de São Paulo e de Minas Gerais.",
+    "distratores": "O pedido não enumera os anos efetivamente gerados; não foi possível auditar cada distrator dinâmico.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-quinto",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Dinheiro no Brasil — Banco Central do Brasil",
+        "url": "https://www.bcb.gov.br/content/acessoinformacao/museudocs/pub/Cartilha_Dinheiro_no_Brasil.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "20% eram retirados para pagar o imposto denominado “quinto”"
+      },
+      {
+        "titulo": "O quinto do ouro no regime tributário nas Minas Gerais — Friedrich Renger",
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Entrega direta dos 20%"
+      }
+    ],
+    "qualificacoes": "O valor nominal corresponde a 1/5 = 20%, verificado por cálculo. A cobrança conheceu quotas, capitação e alterações de taxa; a definição não descreve todos os regimes efetivos.",
+    "distratores": "Um décimo não define o quinto nominal, mas houve reduções: não transformar o distrator numa afirmação de que nunca existiu tributação de 10%.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-fundicao",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Dinheiro no Brasil — Banco Central do Brasil",
+        "url": "https://www.bcb.gov.br/content/acessoinformacao/museudocs/pub/Cartilha_Dinheiro_no_Brasil.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "barras fundidas"
+      },
+      {
+        "titulo": "O quinto do ouro no regime tributário nas Minas Gerais — Friedrich Renger",
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "sendo o resto fundido em uma barra"
+      }
+    ],
+    "qualificacoes": "No regime descrito, retirava-se o imposto e o restante era transformado em barras identificadas. Não foi o único método de arrecadação durante todo o século.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-revolta",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Casas de Fundição (1603–1821) — Arquivo Nacional / MAPA",
+        "url": "https://mapa.an.gov.br/index.php/assuntos/15-dicionario/57-dicionario-da-administracao-publica-brasileira-do-periodo-colonial/146-casas-de-fundicao-1603-1821",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "sublevação contra as autoridades portuguesas ocorresse em Vila Rica"
+      },
+      {
+        "titulo": "História — 1.º Vestibular UFOP 2003, questão 48",
+        "url": "https://vestibular.ufop.br/downloads/vestibulares/provasanteriores/1vest2003/2003_1_historia.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "a ameaça de instalação das “Casas de Fundição”"
+      }
+    ],
+    "qualificacoes": "Reação à intensificação do controlo fiscal e à instalação projetada das casas; não pressupor que já funcionavam regularmente. A questão UFOP foi lida com as alternativas e confrontada com o Arquivo Nacional. Eliminar «a a».",
+    "distratores": "A Inconfidência Mineira também teve causas fiscais ligadas à tributação do ouro; é falsa como identificação da revolta de 1720, não como revolta sem relação com impostos.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-revolta-ano",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "História — 1.º Vestibular UFOP 2003, questão 48",
+        "url": "https://vestibular.ufop.br/downloads/vestibulares/provasanteriores/1vest2003/2003_1_historia.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "“Revolta de Felipe dos Santos” (1720)"
+      },
+      {
+        "titulo": "O quinto do ouro no regime tributário nas Minas Gerais — Friedrich Renger",
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "também chamada revolta de Felipe dos Santos"
+      }
+    ],
+    "qualificacoes": "A fonte de Renger descreve a oposição às casas e identifica a sedição; a UFOP confirma expressamente o ano. Não confundir com a Conjuração Mineira de 1789.",
+    "distratores": "O pedido não enumera os anos efetivamente gerados; não foi possível auditar cada distrator dinâmico.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-diamantes",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Pesquisa reconstitui a história dos dois maiores diamantes encontrados no Brasil Colonial — CNPq",
+        "url": "https://www.gov.br/cnpq/pt-br/assuntos/noticias/atualidades/pesquisa-do-inct-sobre-o-patrimonio-brasileiro-reconstitui-a-historia-dos-dois-maiores-diamantes-encontrados-no-brasil-colonial/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Em 1729, a Coroa Portuguesa confirmou de forma oficial"
+      },
+      {
+        "titulo": "Sítios e conjuntos urbanos de monumentos nacionais — IPHAN / Programa Monumenta",
+        "url": "https://portal.iphan.gov.br/uploads/publicacao/CadTec4_SitiosHistoricos_m.pdf",
+        "tipo": "oficial",
+        "leitura": "excerto",
+        "excerto": "A Coroa é notificada em 1729"
+      }
+    ],
+    "qualificacoes": "1729 é o marco de reconhecimento/notificação oficial, não necessariamente o primeiro achado. O PDF do IPHAN devolveu erro 502 ao abrir: a segunda passagem foi lida apenas no resultado indexado.",
+    "distratores": "O pedido não enumera os anos efetivamente gerados; não foi possível auditar cada distrator dinâmico.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-tejuco",
+    "veredicto": "incerto",
+    "fontes": [
+      {
+        "titulo": "Ouro e Diamantes na Colônia Americana — Arquivo Nacional",
+        "url": "https://historialuso.an.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/ouro-e-diamantes",
+        "tipo": "oficial",
+        "leitura": "excerto",
+        "excerto": "oficialização da descoberta de diamantes na região deste arraial"
+      },
+      {
+        "titulo": "Pesquisa reconstitui a história dos dois maiores diamantes encontrados no Brasil Colonial — CNPq",
+        "url": "https://www.gov.br/cnpq/pt-br/assuntos/noticias/atualidades/pesquisa-do-inct-sobre-o-patrimonio-brasileiro-reconstitui-a-historia-dos-dois-maiores-diamantes-encontrados-no-brasil-colonial/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "no arraial do Tijuco, atual cidade de Diamantina"
+      }
+    ],
+    "qualificacoes": "As fontes situam os achados na região do Tejuco e a sede da Intendência ali em 1734; não demonstram que a comunicação oficial foi feita ou recebida no próprio arraial. Corrigir para «Os diamantes foram encontrados na região do Tejuco, atual Diamantina». Eliminar «do no». A segunda citação prova localização da Intendência, não o local da comunicação; a primeira é apenas excerto devido a bloqueio.",
+    "distratores": "",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "od-declinio",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Projeto SEDUC — Fundação CECIERJ: Inconfidência Mineira",
+        "url": "https://canal.cecierj.edu.br/012016/094d83ac6d7030c6e62c96b15708d1ba.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "a partir da década de 1760, a extração do ouro entrou em declínio"
+      },
+      {
+        "titulo": "Formação Econômica do Brasil — Celso Furtado (UNIRIO)",
+        "url": "https://www.unirio.br/cchs/ess/Members/morena-marques/formacao-social-do-brasil/Celso%20Furtado%20-%20Formacao%20Economica%20do%20Brasil.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Os depósitos de aluvião se esgotam tanto mais rapidamente"
+      }
+    ],
+    "qualificacoes": "Cronologia aproximada e regionalmente desigual: declínio da produção/exportação, não desaparecimento de todo o ouro numa década. Furtado distingue a duração produtiva das sub-regiões; o declínio não se explica apenas por esgotamento físico.",
+    "distratores": "A década de 1790 também integra o processo de declínio: só é falsa como data convencional do início, não como período em que continuava o esgotamento.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "od-mafra",
+    "veredicto": "contradiz",
+    "fontes": [
+      {
+        "titulo": "Palácio Nacional de Mafra — Cultura Portugal",
+        "url": "https://culturaportugal.gov.pt/pt/conhecer/local/mmp-locais/palacio-nacional-de-mafra/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "magnificência apenas tornada possível pelo afluxo de ouro do Brasil"
+      },
+      {
+        "titulo": "Royal Building of Mafra — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "one of the most magnificent works undertaken by King João V"
+      }
+    ],
+    "qualificacoes": "A redação confunde duas proporções: obras financiadas pelo ouro não provam que uma grande parte de todo o ouro brasileiro foi aplicada nessas obras, sobretudo em Mafra. Correção: «As receitas do ouro brasileiro ajudaram a financiar as obras de D. João V, como Mafra». Nenhuma das duas fontes quantifica aquela fração; a UNESCO sustenta a atribuição régia, não a proporção financeira.",
+    "distratores": "Queluz, a reconstrução da Praça do Comércio e Vila Real de Santo António pertencem a outros contextos régios; não são exemplos das obras joaninas referidas.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "la-irmandade",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Confrarias de negros no império português — Jorge Fonseca, NOVA FCSH",
+        "url": "https://eve.fcsh.unl.pt/pt/temas-e-factos/confrarias-de-negros-no-imperio-portugues",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "séculos XVII e XVIII"
+      },
+      {
+        "titulo": "África em Portugal: devoções, irmandades e escravidão no Reino de Portugal, século XVIII",
+        "url": "https://www.scielo.br/j/his/a/qvqDbVM7RsyLp7jrFNWySwG/",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Confraria de N. S. do Rosário dos Homens Pretos do Reinado do Congo"
+      }
+    ],
+    "qualificacoes": "Existiam várias irmandades lisboetas sob esta invocação, nomeadamente no Salvador, na Trindade e na Graça. Não apresentar uma única instituição nem pressupor continuidade autónoma da primitiva irmandade de São Domingos. As fontes são de autores distintos. Corrigir «de a de».",
+    "distratores": "Não se demonstrou que as restantes invocações nunca existiram como confrarias; não correspondem à identificação específica da irmandade perguntada.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "la-escravatura",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Leonorama: volume de homenagem a Ana Hatherly — estudo sobre escravatura e folhetos portugueses",
+        "url": "https://run.unl.pt/bitstream/10362/50434/1/Leonorama_FINAL.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Relativamente aos escravos que já aqui se encontravam"
+      },
+      {
+        "titulo": "Valer-se da autoridade do trono para obter sua liberdade: fuga e alforria — Bahia e Lisboa, 1761–1804",
+        "url": "https://www.scielo.br/j/rh/a/FmzWFfbgj9CqdXdCQgJdmVt/?lang=pt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "998 registros de escravos despachados na Alfândega de Lisboa, entre 1756 e 1763"
+      }
+    ],
+    "qualificacoes": "As leis não criaram a escravatura: em 1761 restringiu-se a entrada e em 1773 determinou-se a liberdade de certos cativos e dos nascidos após a publicação. Abolição gradual na metrópole, não imediata em todo o império. Há prova documental independente da mera existência das leis.",
+    "distratores": "O terramoto não explica a origem da escravatura em Lisboa, que lhe era muito anterior; a lei de 1773 não impôs trabalho obrigatório a todos os africanos.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-tres",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "estratificação tripartida"
+      },
+      {
+        "titulo": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "três ordens sociais"
+      }
+    ],
+    "qualificacoes": "Modelo jurídico e social de síntese; cada ordem incluía múltiplos estratos. `explicacao_ok` avalia a afirmação fornecida: o pedido não inclui uma explicação pedagógica autónoma.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-nomes",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "(clero, nobreza, povo)"
+      },
+      {
+        "titulo": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "clero, nobreza e povo"
+      }
+    ],
+    "qualificacoes": "Povo é aqui equivalente a Terceiro Estado; burguesia e camponeses integravam-no, não constituíam ordens separadas.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-privilegiadas",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Os privilegiados compostos pela nobreza e o clero"
+      },
+      {
+        "titulo": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "Isenção do pagamento"
+      }
+    ],
+    "qualificacoes": "Privilégios fiscais, judiciais e honoríficos variavam; não equivalem a uma isenção absoluta de todos os tributos em qualquer circunstância.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-povo",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "Sustentam a sociedade com o seu trabalho."
+      },
+      {
+        "titulo": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "não privilegiados"
+      }
+    ],
+    "qualificacoes": "Síntese escolar sobre o estatuto da ordem: o povo era muito heterogéneo e certos indivíduos e corpos possuíam privilégios particulares. Não interpretar «sem privilégios» como inexistência absoluta de exceções ou «impostos» como inexistência de contribuições das outras ordens.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-clero",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "Cobra o dízimo"
+      },
+      {
+        "titulo": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "recolha de dízimos"
+      }
+    ],
+    "qualificacoes": "Prerrogativa institucional eclesiástica; não era um rendimento igual para todos os clérigos nem excluía apropriações, arrendamentos e direitos particulares sobre dízimos.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-nobreza",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "cargos importantes na administração e no exército"
+      },
+      {
+        "titulo": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "administrativos, militares e religiosos"
+      },
+      {
+        "titulo": "As Memórias Paroquiais de 1758: uma microfonte para a macro-história do vinho do Douro — Francisco Ribeiro da Silva",
+        "url": "https://www.cepese.pt/portal%22/pt/publicacoes/obras/os-arquivos-da-vinha-e-do-vinho-do-douro/as-memorias-paroquiais-de-1758-2013-uma-microfonte-para-a-macro-historia-do-vinho-do-douro/as-memorias-paroquiais-de-1758-2013-uma-microfonte-para-a-macro-historia-do-vinho-do-douro/%40%40download/file/As%20mem%C3%B3rias%20paroquiais%20de%201758%20%E2%80%93%20uma%20microfonte%20para%20a%20macro-hist%C3%B3ria%20do%20vinho%20do%20douro.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "os dízimos de Vila Marim e freguesias anexas pertenciam ao Conde de Mirinho-Mor"
+      }
+    ],
+    "qualificacoes": "Característica e acesso favorecido, não monopólio absoluto de todos os cargos administrativos: havia nobreza de toga e mobilidade por serviço régio.",
+    "distratores": "«Receber o dízimo» é ambíguo: nobres também podiam receber dízimos. A terceira fonte documenta os dízimos de Vila Marim pertencentes ao Conde de Mirinho-Mor e outros recebidos pelo senhor da casa de Murça. Não usar esse distrator como incompatibilidade absoluta entre nobreza e recebimento de dízimos.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-cristao-novo",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Estudo sobre cristãos-novos e criptojudeus — Universidade do Estado da Bahia",
+        "url": "https://saberaberto.uneb.br/server/api/core/bitstreams/61caf427-0867-4f84-8af5-3ac2139e268e/content",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "era descendente de judeus naturais da Península Ibérica"
+      },
+      {
+        "titulo": "Cristãos-novos e seus descendentes no Ceará Grande: a inquisição nos sertões de fora",
+        "url": "https://run.unl.pt/entities/publication/0be93ff0-3ac9-4f1e-ae7f-b1d6bfc903be",
+        "tipo": "academica",
+        "leitura": "excerto",
+        "excerto": "quem descende de judeu e de cristão-novo"
+      }
+    ],
+    "qualificacoes": "A designação abrangia os próprios convertidos e os descendentes, mesmo católicos havia gerações; também podia abranger outras origens convertidas. Não confundir cristão-novo com criptojudeu. A página NOVA foi aberta, mas mostrou proteção de acesso: apenas se leu o excerto indexado.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-limpeza",
+    "veredicto": "contradiz",
+    "fontes": [
+      {
+        "titulo": "As Ordens Militares e o Estado Moderno — Fernanda Olival, Universidade de Évora",
+        "url": "https://dspace.uevora.pt/rdpc/bitstream/10174/11061/1/Maria%20Fernanda%20de%20Olival%20-%20100%20467%20-%20.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "habilitações na Mesa da Consciência"
+      },
+      {
+        "titulo": "Nobreza e riqueza no Antigo Regime ibérico setecentista",
+        "url": "https://www.scielo.br/j/rh/a/WSvycVb5gHzM3xrZKQZVXJm/?lang=pt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "solicitavam à Mesa da Consciência e Ordens as provanças"
+      }
+    ],
+    "qualificacoes": "A exigência de provas de ascendência para muitos cargos é real, mas não dependia universalmente de certidão emitida pela Inquisição. Diversas instituições instruíam habilitações próprias; para hábitos militares intervinha a Mesa da Consciência e Ordens. Correção: «Para muitos cargos e honras exigiam-se provas da chamada limpeza de sangue». Eliminar «a a».",
+    "distratores": "«Prova de riqueza» não substitui limpeza de sangue, mas podia haver requisitos económicos e de modo de vida para determinadas honras. Evitar afirmar que a riqueza nunca era requisito.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "so-lei-1773",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Exílios, fluxos migratórios e solidariedade — Arquivo Nacional da Torre do Tombo",
+        "url": "https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2022/06/catalogo-3-PT_exilios.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "aprovou a lei que aboliu a distinção"
+      },
+      {
+        "titulo": "Escritas e cultura na Europa e no Atlântico modernos — A herança de Espinosa, Ana Cristina Araújo",
+        "url": "https://repositorio.ulisboa.pt/bitstream/10451/46737/1/_Ebook_Escritas%2520e%2520Cultura_completo.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "carta de lei de 25 de maio de 1773"
+      }
+    ],
+    "qualificacoes": "Abolição da distinção legal, não desaparecimento imediato do preconceito social nem extinção da Inquisição, ocorrida em 1821.",
+    "distratores": "O pedido não enumera os anos efetivamente gerados; não foi possível auditar cada distrator dinâmico.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "so-cortes",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Santa Justa, Lisboa, 1693 — estudo académico, NOVA",
+        "url": "https://run.unl.pt/server/api/core/bitstreams/148d38ad-4d72-4918-9daf-5939c8974b45/content",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Entre 15 de Novembro de 1697 e 3 de Abril de 1698"
+      },
+      {
+        "titulo": "2121.pdf — estudo sobre o constitucionalismo luso-brasileiro, NOVA School of Law",
+        "url": "https://www.fd.unl.pt/Anexos/Investigacao/2121.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "As últimas Cortes ordinárias haviam-se reunido em 1698."
+      }
+    ],
+    "qualificacoes": "Últimas Cortes tradicionais do Antigo Regime; as Cortes constituintes liberais reuniram-se em 1821. As duas obras académicas são distintas, apesar de ambas estarem alojadas na NOVA.",
+    "distratores": "",
+    "explicacao_ok": true
+  }
+]

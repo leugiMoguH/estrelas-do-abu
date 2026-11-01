@@ -1,0 +1,26 @@
+{
+ "X1": { "status": "confirmado", "text": "A palavra «fubá» vem do quimbundo, língua africana (farinha).", "chave": ["quimbundo", "fuba"],
+  "sources": [
+   { "title": "Infopédia — fubá", "url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/fub%C3%A1", "atestado": "Codex 2026-10-31, lida: «Do quimbundo fubá, farinha»" },
+   { "title": "Priberam — fubá", "url": "https://dicionario.priberam.org/fub%C3%A1", "atestado": "Codex 2026-10-31, lida: «Origem: quimbundo fuba»" } ] },
+ "X2": { "status": "confirmado", "text": "A palavra «quilombo» vem do quimbundo.", "chave": ["quimbundo", "quilombo"],
+  "sources": [
+   { "title": "Infopédia — quilombo", "url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/quilombo", "atestado": "Codex 2026-10-31, lida: «Do quimbundo kilombo»" },
+   { "title": "Priberam — quilombo", "url": "https://dicionario.priberam.org/quilombo", "atestado": "Codex 2026-10-31, lida: «Origem: quimbundo kilombo»" } ] },
+ "X3": { "status": "confirmado", "text": "O acarajé é um bolinho de feijão-fradinho frito em azeite de dendê.", "chave": ["acaraje", "fradinho", "dende"],
+  "sources": [
+   { "title": "IPHAN — Ofício das baianas de acarajé", "url": "https://sicg.iphan.gov.br/sicg/bemImaterial/rel/106/", "atestado": "Codex 2026-10-31, lida: «bolinho de feijão fradinho», «frito no azeite de dendê»" },
+   { "title": "IPAC-Bahia — Ofício das baianas do acarajé", "url": "https://www.ba.gov.br/ipac/oficio-das-baianas-do-acaraje", "atestado": "Codex 2026-10-31, lida: «Feito de feijão fradinho e cebola»" } ] },
+ "X4": { "status": "confirmado", "text": "Algumas irmandades de pessoas negras, em Portugal e no Brasil, procuravam obter a liberdade de membros escravizados.", "chave": ["irmandades", "liberdade"],
+  "sources": [
+   { "title": "NOVA FCSH — Confrarias de negros no império português", "url": "https://eve.fcsh.unl.pt/pt/temas-e-factos/confrarias-de-negros-no-imperio-portugues", "atestado": "Codex 2026-10-31, lida: «pugnavam pela liberdade dos escravos»" },
+   { "title": "Revista História (SciELO) — irmandades de negros", "url": "https://www.scielo.br/j/his/a/qvqDbVM7RsyLp7jrFNWySwG/", "atestado": "Codex 2026-10-31, lida: «processos de resgate de irmãos cativos»" } ] },
+ "X5": { "status": "confirmado", "text": "Palmares foi um conjunto de povoações (mocambos) onde pessoas fugidas da escravatura organizaram comunidades de resistência, sobretudo no século XVII.", "chave": ["palmares", "mocambos"],
+  "sources": [
+   { "title": "UFF — Palmares (Silvia Lara)", "url": "https://www.historia.uff.br/impressoesrebeldes/revolta/palmares/", "atestado": "Codex 2026-10-31, lida: «compostos por vários mocambos»" },
+   { "title": "Fundação Cultural Palmares — Serra da Barriga", "url": "https://www.gov.br/palmares/pt-br/departamentos/protecao-preservacao-e-articulacao/serra-da-barriga-1/tour-pelo-parque/zumbi", "atestado": "Codex 2026-10-31, lida: «Quilombo dos Palmares»" } ] },
+ "X6": { "status": "confirmado", "text": "Zumbi foi um comandante do Quilombo dos Palmares e morreu a 20 de novembro de 1695.", "chave": ["zumbi", "palmares", "1695"],
+  "sources": [
+   { "title": "UFF — Palmares (Silvia Lara)", "url": "https://www.historia.uff.br/impressoesrebeldes/revolta/palmares/", "atestado": "Codex 2026-10-31, lida: «morto em 20 de novembro de 1695»" },
+   { "title": "Fundação Cultural Palmares — Zumbi", "url": "https://www.gov.br/palmares/pt-br/departamentos/protecao-preservacao-e-articulacao/serra-da-barriga-1/tour-pelo-parque/zumbi", "atestado": "Codex 2026-10-31, lida: «20 de novembro de 1695»" } ] }
+}

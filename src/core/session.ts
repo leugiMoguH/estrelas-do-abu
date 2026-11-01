@@ -2,7 +2,8 @@ import type { Seen } from './save';
 import type { Exercise } from './types';
 import type { MasteryState } from './mastery';
 import { dueCompetencies } from './review';
-import { normalize } from './grading';
+import { exerciseSignature } from './grading';
+import { skillDue, skillStatus, skillTarget, type SkillsState } from './skills';
 export function seededRng(seed: number): () => number {
   let value = seed >>> 0;
   return () => {
@@ -20,6 +21,8 @@ export interface SessionOptions {
   readonly now: number;
   readonly history?: readonly Seen[];
   /** Agrupa exercícios (ex.: subcapítulo) para os distribuir; por omissão, por competência. */
+  /** Progressão por competência (opcional): define a exigência alvo e reforça competências/conhecimentos fracos. */
+  readonly skills?: SkillsState;
   /** Quantas perguntas recentes penalizar como repetição (por omissão, 20). */
   readonly recentWindow?: number;
   /** Custo de repetir uma pergunta recente (por omissão, 12). */
@@ -40,7 +43,7 @@ export function buildSession(options: SessionOptions) {
   const selected: Exercise[] = [];
   const usedIds = new Set<string>();
   const signatures = new Set<string>();
-  const signatureOf = new Map(pool.map((ex) => [ex, normalize(ex.prompt)]));
+  const signatureOf = new Map(pool.map((ex) => [ex, exerciseSignature(ex)]));
   const candidates = pool
     .filter((e) => e.review !== 'needs-human-review' && ids.includes(e.competencyId))
     .map((ex) => ({ ex, random: rng() }));
@@ -58,7 +61,7 @@ export function buildSession(options: SessionOptions) {
         competency: h.competencyId,
       })),
       ...selected.map((e) => ({
-        signature: normalize(e.prompt),
+        signature: exerciseSignature(e),
         concept: e.conceptId,
         approach: e.approachId,
         format: e.kind,
@@ -79,7 +82,7 @@ export function buildSession(options: SessionOptions) {
           Number(recent.at(-1)?.format === ex.kind) * 3;
     const rank = (ex: Exercise): number => {
       const m = state[ex.competencyId];
-      const target =
+      const topicTarget =
         !m || m.attempts < 3
           ? 1
           : m.recent.slice(-2).length === 2 && m.recent.slice(-2).every((v) => !v)
@@ -87,12 +90,20 @@ export function buildSession(options: SessionOptions) {
             : m.streak >= 3
               ? 3
               : 2;
+      const sk = ex.skillId ? options.skills?.[ex.skillId] : undefined;
+      const target = sk ? skillTarget(options.skills, ex.skillId, topicTarget) : topicTarget;
+      // reforço: conhecimento falhado (exercício diferente), dificuldade persistente e revisão espaçada da competência
+      const support =
+        (sk?.weak.some((w) => w.concept === ex.conceptId) ? -8 : 0) +
+        (skillStatus(sk) === 'persistente' ? -4 : 0) +
+        (skillDue(sk, now) ? (mode === 'review' ? -6 : -2) : 0);
       const count = selected.filter((e) => groupOf(e) === groupOf(ex)).length;
       return (
         penalty(ex) +
         Math.abs(ex.difficulty - target) * 10 +
         count * 4 +
         Number(selected.some((e) => e.kind === ex.kind)) * 2 +
+        support +
         (mode === 'review' ? ids.indexOf(ex.competencyId) : 0)
       );
     };
@@ -102,7 +113,7 @@ export function buildSession(options: SessionOptions) {
     if (penalty(ex) > 0) relaxed++;
     selected.push(mode === 'test' ? { ...ex, hints: [] } : ex);
     usedIds.add(ex.id);
-    signatures.add(normalize(ex.prompt));
+    signatures.add(exerciseSignature(ex));
   }
   return {
     relaxed,

@@ -9,6 +9,7 @@ import { rewardSession } from '../core/rewards';
 import { recordAttempt } from '../core/save';
 import { score } from '../core/score';
 import { buildSession, seededRng } from '../core/session';
+import { emptySkill, updateSkill } from '../core/skills';
 import type { Answer, Exercise, GradeResult } from '../core/types';
 import { answerEditor } from './answers';
 import { play } from './audio';
@@ -62,6 +63,7 @@ export function startSession(
     rng,
     now: Date.now(),
     history: before.seen,
+    skills: getState().skills,
     recentWindow: context?.sectionIds ? 60 : undefined,
     repeatPenalty: context?.sectionIds ? 40 : undefined,
     groupOf: context?.sectionIds ? (e) => hgpItemSection(e.id) ?? e.competencyId : undefined,
@@ -199,8 +201,12 @@ export function startSession(
         attempts.push(firstAttempt);
         update((state) => {
           const save = recordAttempt(state.save, exercise, answer, result.correct, Date.now());
+          const sid = exercise.skillId;
           return {
             ...state,
+            skills: sid
+              ? { ...state.skills, [sid]: updateSkill(state.skills[sid] ?? emptySkill(), { correct: result.correct, difficulty: exercise.difficulty, hints: hintCount, conceptId: exercise.conceptId, now: Date.now() }) }
+              : state.skills,
             save: {
               ...save,
               mastery: {

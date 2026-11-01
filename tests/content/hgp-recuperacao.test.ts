@@ -4,7 +4,7 @@ import { hgpBanks, hgpItems, hgpLessons } from '../../content/historia';
 import { validationOf } from '../../content/historia/validacao';
 import { materialize } from '../../src/core/content';
 import { buildSession, seededRng } from '../../src/core/session';
-import { normalize } from '../../src/core/grading';
+import { exerciseSignature, normalize } from '../../src/core/grading';
 import type { Seen } from '../../src/core/save';
 import type { Exercise } from '../../src/core/types';
 
@@ -17,7 +17,7 @@ const bank = hgpBanks['./bank-g.ts']!.bank;
 const pool = (seed: number) =>
   materialize(gamePack, { competencyIds: [TOPIC], rng: seededRng(seed), perTemplate: 4, difficultyFor: (t) => t.difficulties[0]! });
 const seenOf = (e: Exercise, at: number): Seen =>
-  ({ ref: {} as Seen['ref'], signature: normalize(e.prompt), competencyId: e.competencyId, conceptId: e.conceptId ?? '', approachId: e.approachId ?? '', format: e.kind, at });
+  ({ ref: {} as Seen['ref'], signature: exerciseSignature(e), competencyId: e.competencyId, conceptId: e.conceptId ?? '', approachId: e.approachId ?? '', format: e.kind, at });
 const run = (chosen: readonly string[], history: readonly Seen[], seed: number, n = 8, mode: 'study' | 'test' | 'review' = 'study') =>
   buildSession({
     mode, n, history, competencyIds: [TOPIC], state: {}, rng: seededRng(seed), now: 0,

@@ -8,7 +8,7 @@ import { gamePack, hgpItemSection } from '../../content';
 import { hgpItems } from '../../content/historia';
 import { materialize } from '../../src/core/content';
 import { buildSession, seededRng } from '../../src/core/session';
-import { normalize } from '../../src/core/grading';
+import { exerciseSignature, normalize } from '../../src/core/grading';
 import type { Seen } from '../../src/core/save';
 import type { Exercise } from '../../src/core/types';
 
@@ -75,7 +75,7 @@ describe('fábrica de conhecimento — Portugal no século XVIII', () => {
     const chosen = ['d1-ouro-diamantes', 'd1-sociedade-ordens', 'd1-monarquia-joao-v', 'd1-pombal-lisboa'];
     const pool = (seed: number) =>
       materialize(gamePack, { competencyIds: ['hgp-seculo-xviii'], rng: seededRng(seed), perTemplate: 4, difficultyFor: (t) => t.difficulties[0]! }).filter((e) => chosen.includes(hgpItemSection(e.id) ?? ''));
-    const seenOf = (e: Exercise, at: number): Seen => ({ ref: {} as Seen['ref'], signature: normalize(e.prompt), competencyId: e.competencyId, conceptId: e.conceptId ?? '', approachId: e.approachId ?? '', format: e.kind, at });
+    const seenOf = (e: Exercise, at: number): Seen => ({ ref: {} as Seen['ref'], signature: exerciseSignature(e), competencyId: e.competencyId, conceptId: e.conceptId ?? '', approachId: e.approachId ?? '', format: e.kind, at });
     let history: Seen[] = [];
     const sessions: string[][] = [];
     const sectionShare: Record<string, number> = {};

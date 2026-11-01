@@ -1,6 +1,7 @@
 import { defaultAvatar, normalizeAvatar, type AvatarConfig } from '../art';
 import { defaultSave, exportSave, importSave, type Save } from '../core/save';
 import { buy, type ShopItem } from '../core/rewards';
+import { sanitizeSkills, type SkillsState } from '../core/skills';
 
 export interface AppState {
   profile: {
@@ -16,6 +17,8 @@ export interface AppState {
   bestTestGrade: number;
   favorites: AvatarConfig[];
   save: Save;
+  /** Progressão por competência; vive fora do Save (compatível com versões anteriores, que a ignoram). */
+  skills: SkillsState;
   ui: { storageError?: boolean };
 }
 
@@ -31,6 +34,7 @@ const initial = (): AppState => ({
   bestTestGrade: 0,
   favorites: [],
   save: defaultSave(),
+  skills: {},
   ui: {},
 });
 
@@ -61,6 +65,7 @@ function load(): AppState {
       if (Number.isFinite(app.bestTestGrade))
         state.bestTestGrade = Math.max(0, Math.min(20, app.bestTestGrade as number));
       if (Array.isArray(app.favorites)) state.favorites = app.favorites.slice(0, 20);
+      state.skills = sanitizeSkills(app.skills);
     }
   } catch {
     state.ui.storageError = true;

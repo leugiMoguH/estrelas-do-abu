@@ -94,7 +94,7 @@ export function openOptions(): void {
           'Substituir o progresso atual?',
           'O ficheiro foi validado. Estrelas, compras e aprendizagem serão substituídas.',
           () => {
-            update({ save: result.save });
+            update({ save: result.save, skills: {} });
             update((state) => {
               const avatar = safeAvatar(state.profile.avatar);
               return {
@@ -130,6 +130,7 @@ export function openOptions(): void {
                 () => {
                   update({
                     save: defaultSave(),
+                    skills: {},
                     favorites: [],
                     lastTopicId: null,
                     ui: {},

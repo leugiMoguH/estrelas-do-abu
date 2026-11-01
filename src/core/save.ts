@@ -1,6 +1,6 @@
 import type { Answer, Exercise } from './types';
 import type { ExerciseRef } from './content';
-import { normalize } from './grading';
+import { exerciseSignature } from './grading';
 export interface Seen {
   readonly ref: ExerciseRef;
   readonly signature: string;
@@ -156,7 +156,7 @@ export function seenExercise(ex: Exercise, at: number): Seen {
   if (!ex.ref || !ex.conceptId || !ex.approachId) throw new Error('Exercício sem referência');
   const seen: Seen = {
     ref: ex.ref,
-    signature: normalize(ex.prompt),
+    signature: exerciseSignature(ex),
     competencyId: ex.competencyId,
     conceptId: ex.conceptId,
     approachId: ex.approachId,

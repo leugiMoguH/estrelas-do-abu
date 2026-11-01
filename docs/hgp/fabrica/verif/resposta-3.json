@@ -1,0 +1,959 @@
+[
+  {
+    "atom": "bp-estilo",
+    "veredicto": "contradiz",
+    "fontes": [
+      {
+        "titulo": "Barroco Joanino — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "designação genérica de Barroco Joanino"
+      },
+      {
+        "titulo": "Uma Roma para D. João V — Anna Lygia Stavale Frazão, Encontro de História da Arte",
+        "url": "https://econtents.sbu.unicamp.br/eventos/index.php/eha/article/view/4682",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "estilo joanino ou D. João V"
+      }
+    ],
+    "qualificacoes": "Correção: «A produção artística barroca do reinado de D. João V recebe a designação genérica de barroco joanino.» Não constitui um estilo único e homogéneo: coexistem influências italianas, francesas e rocaille. Neste relatório, explicacao_ok avalia a formulação fornecida no pedido; não certifica explicações das fichas F68–F109, que não foram fornecidas.",
+    "distratores": "",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "bp-talha",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Barroco Joanino — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "onda dourada de talha"
+      },
+      {
+        "titulo": "Igreja paroquial de Matosinhos — Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=73419",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "totalmente revestidos a talha dourada, de estilo joanino"
+      }
+    ],
+    "qualificacoes": "A talha dourada caracteriza muitos interiores e retábulos, mas não todos os interiores integralmente. Corrigir a redação para «cobriram-se de talha dourada».",
+    "distratores": "Vitrais góticos e colunas manuelinas podem subsistir em igrejas mais antigas com decoração barroca. São inadequados para caracterizar a decoração joanina, mas não se deve afirmar que nunca coexistiram no mesmo templo.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "bp-azulejo",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Barroco Joanino — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "azul e branco dos tapetes de azulejaria"
+      },
+      {
+        "titulo": "Faina na Praia — inventário RAIZ, Museu Nacional do Azulejo",
+        "url": "https://raiz.museusemonumentos.pt/DetalhesObra/Index/229814?tipo=OBJ",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "azul e branco do Barroco"
+      }
+    ],
+    "qualificacoes": "O comentário histórico da ficha museológica, embora relativo a uma obra posterior, identifica o azul e branco com o Barroco da primeira metade do século XVIII. A originalidade refere-se ao desenvolvimento português da azulejaria; o azulejo e esta combinação cromática não foram inventados nesse reinado.",
+    "distratores": "As combinações alternativas não caracterizam a azulejaria joanina dominante; não são uma prova de que nunca existiram azulejos policromos.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "bp-inspiracao",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Uma Roma para D. João V — Anna Lygia Stavale Frazão, Encontro de História da Arte",
+        "url": "https://econtents.sbu.unicamp.br/eventos/index.php/eha/article/view/4682",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "influência da linguagem barroca romana"
+      },
+      {
+        "titulo": "Royal Building of Mafra — UNESCO",
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "João V adopted Roman and Italian baroque architectural and artistic models"
+      }
+    ],
+    "qualificacoes": "Roma foi uma influência principal, sem excluir outras influências europeias. Corrigir para «O barroco joanino inspirou-se no barroco romano».",
+    "distratores": "",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "bp-brasil",
+    "veredicto": "incerto",
+    "fontes": [
+      {
+        "titulo": "Barroco em Minas — Museu de Arte Sacra de São Paulo",
+        "url": "https://museuartesacra.org.br/barroco-em-minas/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "barroco joanino nas igrejas de Mariana, Ouro Preto"
+      },
+      {
+        "titulo": "Igrejas Paulistas da Colônia e do Império: Arquitetura e Ornamentação — Mateus Rosada, USP, parte II",
+        "url": "https://teses.usp.br/teses/disponiveis/102/102132/tde-30062016-112001/publico/Corrigida2.pdf",
+        "tipo": "academica",
+        "leitura": "excerto",
+        "excerto": "o segundo período do barroco, o joanino"
+      }
+    ],
+    "qualificacoes": "A presença em Minas Gerais foi lida; a pesquisa da tese da USP associa expressamente os exemplares paulistas ao período joanino, mas a abertura integral da parte II falhou por tamanho excessivo. A parte III abriu com texto corrompido. As duas fontes sustentam regiões diferentes, sem dupla corroboração integral da frase: mantém-se incerto. Corrigir também «ao Brasil, nomeadamente a Minas Gerais e a São Paulo».",
+    "distratores": "Não foi demonstrada a ausência de barroco joanino na Amazónia, no Pantanal, no Rio Grande do Sul ou em Santa Catarina. A presença em Minas e São Paulo não torna falsas as outras regiões; estes distratores geográficos exigem prova própria ou substituição. Evitar confundir o estilo de D. João V com o período de D. João VI.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "bp-nasoni",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Igreja dos Clérigos — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "Da autoria do italiano Nicolau Nasoni"
+      },
+      {
+        "titulo": "328.º aniversário do nascimento de Nicolau Nasoni — Irmandade dos Clérigos",
+        "url": "https://www.torredosclerigos.pt/328-o-aniversario-do-nascimento-de-nicolau-nasoni/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "a Irmandade contou com o profissionalismo do seu arquiteto"
+      }
+    ],
+    "qualificacoes": "A autoria do projeto não exclui a intervenção de mestres construtores e outros artistas.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "bp-clerigos-inicio",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Igreja dos Clérigos — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "No ano seguinte é dado início às obras"
+      },
+      {
+        "titulo": "História da Irmandade dos Clérigos",
+        "url": "https://www.torredosclerigos.pt/historia-da-irmandade-dos-clerigos/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Colocação da primeira pedra que deu início às obras da Igreja dos Clérigos"
+      }
+    ],
+    "qualificacoes": "A Infopédia situa a aprovação do plano em 1731 e o início no ano seguinte; a cronologia da Irmandade coloca a primeira pedra em 1732. A ficha do Museum With No Frontiers menciona 1731 como início: divergência registada, preferindo-se a cronologia da instituição detentora do arquivo.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "bp-clerigos-torre",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Igreja dos Clérigos — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "edificada entre os anos de 1757 e 1763"
+      },
+      {
+        "titulo": "História da Irmandade dos Clérigos",
+        "url": "https://www.torredosclerigos.pt/historia-da-irmandade-dos-clerigos/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Conclusão das obras da Torre"
+      }
+    ],
+    "qualificacoes": "Na cronologia oficial da Irmandade, a conclusão está sob 1763. Existem diferentes datas para o começo da torre, sem afetar a conclusão.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "bp-mafra-unesco",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Royal Building of Mafra — UNESCO",
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Date of Inscription: 2019"
+      },
+      {
+        "titulo": "UNESCO — Mafra, Câmara Municipal de Mafra",
+        "url": "https://www.cm-mafra.pt/pages/3176",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Património Mundial da UNESCO, desde julho de 2019"
+      }
+    ],
+    "qualificacoes": "O bem inscrito abrange Palácio, Basílica, Convento, Jardim do Cerco e Tapada.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "bp-bomjesus",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Sanctuary of Bom Jesus do Monte in Braga — UNESCO",
+        "url": "https://whc.unesco.org/en/list/1590/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Sanctuary of Bom Jesus do Monte in Braga"
+      },
+      {
+        "titulo": "Santuário do Bom Jesus do Monte — Câmara Municipal de Braga",
+        "url": "https://www.cm-braga.pt/pt/1201/conhecer/historia-e-patrimonio/patrimonio-cultural/patrimonio-edificado/item/item-1-657",
+        "tipo": "oficial",
+        "leitura": "excerto",
+        "excerto": "Santuário do Bom Jesus do Monte"
+      }
+    ],
+    "qualificacoes": "A página municipal foi encontrada e a abertura tentada, mas falhou por ciclo de redirecionamento: apenas excerto. A página UNESCO foi lida. Não se conta como terceira fonte independente a tradução UNESCO reproduzida pelo Património Cultural.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "bp-coimbra-unesco",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "University of Coimbra – Alta and Sofia — UNESCO",
+        "url": "https://whc.unesco.org/en/list/1387/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Date of Inscription: 2013"
+      },
+      {
+        "titulo": "A UC em números — Universidade de Coimbra",
+        "url": "https://www.uc.pt/dados/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "classificação como património mundial pela UNESCO em 2013"
+      }
+    ],
+    "qualificacoes": "A designação exata do bem é «Universidade de Coimbra — Alta e Sofia»; não significa que todos os imóveis da Universidade estejam inscritos.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "bp-porto-unesco",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Historic Centre of Oporto, Luiz I Bridge and Monastery of Serra do Pilar — UNESCO",
+        "url": "https://whc.unesco.org/en/list/755/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Date of Inscription: 1996"
+      },
+      {
+        "titulo": "Sobre o Porto — Faculdade de Economia da Universidade do Porto",
+        "url": "https://www.up.pt/fep/pt/porto/viver-no-porto/sobre-o-porto/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "classificado como Património Mundial pela UNESCO em 1996"
+      }
+    ],
+    "qualificacoes": "A designação atual inclui a Ponte Luiz I e o Mosteiro da Serra do Pilar, em Vila Nova de Gaia. Não corresponde à cidade inteira.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "bp-ouropreto-unesco",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Historic Town of Ouro Preto — UNESCO",
+        "url": "https://whc.unesco.org/en/list/124",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Date of Inscription: 1980"
+      },
+      {
+        "titulo": "Ouro Preto (MG) celebra 45 anos como Patrimônio Mundial Cultural — IPHAN",
+        "url": "https://www.gov.br/iphan/pt-br/assuntos/noticias/ouro-preto-mg-celebra-45-anos-como-patrimonio-mundial-da-humanidade",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "O título da Unesco, conquistado em 1980"
+      }
+    ],
+    "qualificacoes": "O IPHAN identifica a cidade com a antiga Vila Rica. Trata-se do conjunto histórico inscrito.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-nome",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Marquês de Pombal — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$marques-de-pombal",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "Sebastião José de Carvalho e Melo"
+      },
+      {
+        "titulo": "Do Terreiro do Paço à Praça do Comércio — Imprensa Nacional",
+        "url": "https://imprensanacional.pt/do-terreiro-do-paco-a-praca-do-comercio-historia-de-um-espaco-urbano-nos-320-anos-do-marques/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Sebastião José de Carvalho e Melo"
+      }
+    ],
+    "qualificacoes": "Recebeu o título de marquês de Pombal apenas em 1769.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-nasc",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Do Terreiro do Paço à Praça do Comércio — Imprensa Nacional",
+        "url": "https://imprensanacional.pt/do-terreiro-do-paco-a-praca-do-comercio-historia-de-um-espaco-urbano-nos-320-anos-do-marques/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "nasceu nas Mercês, em Lisboa"
+      },
+      {
+        "titulo": "Marquês de Pombal — glossário HISTEDBR, Faculdade de Educação da Unicamp",
+        "url": "https://histedbrantigo.fe.unicamp.br/navegando/glossario/verb_b_marques_de_pombal.htm",
+        "tipo": "academica",
+        "leitura": "excerto",
+        "excerto": "Sebastião José de Carvalho e Melo (1699-1782)"
+      },
+      {
+        "titulo": "Marquês de Pombal — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$marques-de-pombal",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "nasceu a 13 de maio de 1699"
+      }
+    ],
+    "qualificacoes": "A Imprensa Nacional indica Lisboa e 13 de maio de 1699 no texto lido. O glossário universitário também indica Lisboa, mas a abertura falhou por descodificação: classificado como excerto. A Infopédia fornece corroboração independente do ano.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-terramoto",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Da Sismicidade à Ciência dos Sismos — Jorge Ferreira, IPMA, pp. 18–19",
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "primeiro de novembro de 1755"
+      },
+      {
+        "titulo": "Algumas Ruínas de Lisboa — Museu Medeiros e Almeida",
+        "url": "https://www.museumedeirosealmeida.pt/2024/10/23/algumas-ruinas-de-lisboa/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Lisboa, 1 de novembro de 1755"
+      }
+    ],
+    "qualificacoes": "O sismo afetou também outras regiões de Portugal, Espanha e o norte de África.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-dia",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Da Sismicidade à Ciência dos Sismos — Jorge Ferreira, IPMA, pp. 18–19",
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "primeiro de novembro de 1755"
+      },
+      {
+        "titulo": "Terramoto de 1755 e Reconstrução Pombalina — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$terramoto-de-1755-e-reconstrucao-pombalina",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "1 de novembro, dia de Todos os Santos"
+      }
+    ],
+    "qualificacoes": "",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-seguiu",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Da Sismicidade à Ciência dos Sismos — Jorge Ferreira, IPMA, pp. 18–19",
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "provocada directamente pelos abalos e pelo tsunami e indirectamente pelo incêndio"
+      },
+      {
+        "titulo": "MPR+ n.º 41 — Museu da Presidência da República",
+        "url": "https://www.museu.presidencia.pt/pt/conhecer/mprplus/quadragesimo-primeiro-numero/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "se seguiram um maremoto e múltiplos incêndios"
+      }
+    ],
+    "qualificacoes": "Os incêndios resultaram de fontes de ignição urbanas; o tsunami foi provocado pelo sismo. Não implicar que todos os incêndios começaram depois do tsunami.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-maia",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Praça do Comércio — inventário do Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "chefiada por Manuel da Maia"
+      },
+      {
+        "titulo": "Pombaline Lisbon — candidatura portuguesa à Lista Indicativa UNESCO",
+        "url": "https://whc.unesco.org/en/tentativelists/6226",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "drawn up by Manuel da Maia"
+      }
+    ],
+    "qualificacoes": "Coordenação técnica de Manuel da Maia; direção política de Carvalho e Melo. Eugénio dos Santos e Carlos Mardel tiveram papéis fundamentais no projeto e na execução. A página UNESCO é uma candidatura apresentada por Portugal, não uma inscrição na Lista do Património Mundial.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-gaiola",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Dia Internacional dos Monumentos e Sítios 2022 — Técnico ULisboa",
+        "url": "https://tecnico.ulisboa.pt/pt/eventos/dia-internacional-dos-monumentos-e-sitios-2022/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "elementos de madeira verticais, horizontais e inclinados"
+      },
+      {
+        "titulo": "Baixa Pombalina — Museum With No Frontiers, ficha de especialistas do Museu da Cidade",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "uma maior resistência aos terramotos"
+      }
+    ],
+    "qualificacoes": "A gaiola é integrada na construção de alvenaria; a resistência depende da conservação e das alterações posteriores. Corrigir «usam a gaiola pombalina». Não significa imunidade aos sismos.",
+    "distratores": "",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "pl-praca",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Praça do Comércio — inventário do Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "substituir o espaço do Terreiro do Paço"
+      },
+      {
+        "titulo": "Baixa Pombalina — Museum With No Frontiers, ficha de especialistas do Museu da Cidade",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "substituição do velho Terreiro do Paço pela nova Praça do Comércio"
+      }
+    ],
+    "qualificacoes": "Foi uma reconstrução e reorganização do espaço onde se encontrava o Paço da Ribeira, destruído em 1755. «Terreiro do Paço» continua a designar a Praça do Comércio.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-eugenio",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Praça do Comércio — inventário do Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "desenhada por Eugénio dos Santos"
+      },
+      {
+        "titulo": "Praça do Comércio de Lisboa — DGAEP / Museu da Cidade",
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "projecto de Eugénio dos Santos e Carlos Mardel"
+      }
+    ],
+    "qualificacoes": "A atribuição a Eugénio dos Santos é válida para o desenho inicial, mas deve mencionar a colaboração de Carlos Mardel e o enquadramento de Manuel da Maia. O arco atual inclui um projeto posterior.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-estatua",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Praça do Comércio de Lisboa — DGAEP / Museu da Cidade",
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "da autoria do mestre Machado de Castro"
+      },
+      {
+        "titulo": "Baixa Pombalina — Museum With No Frontiers, ficha de especialistas do Museu da Cidade",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "de D. José, de Machado de Castro"
+      }
+    ],
+    "qualificacoes": "A autoria escultórica é de Joaquim Machado de Castro. Houve desenhos preliminares de Eugénio dos Santos, intervenção de Reinaldo Manuel dos Santos e fundição por Bartolomeu da Costa.",
+    "distratores": "Eugénio dos Santos é ambíguo se a pergunta disser apenas «autor»: desenhou uma proposta preliminar. Permanece falso como identificação do escultor executante; explicitar «Qual foi o escultor?».",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-estatua-ano",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Caracterização do Espaço Público da Baixa Pombalina — Câmara Municipal de Lisboa, p. 12",
+        "url": "https://informacao.lisboa.pt/fileadmin/portal/temas/urbanismo/planos_pormenor/baixa_pombalina/pecas_escritas/relatorio_anexos/pp_baixa_pombalina_relatorio_05_relatorio_setorial_carac_espaco_publico.pdf",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "foi inaugurada em 1775"
+      },
+      {
+        "titulo": "Praça do Comércio de Lisboa — DGAEP / Museu da Cidade",
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "inaugurada em 27 de Maio de 1775"
+      }
+    ],
+    "qualificacoes": "O ano é consensual nas fontes lidas. A DGAEP indica 27 de maio, enquanto a ficha do Museum With No Frontiers indica 6 de junho de 1775; não usar o dia como dado consensual sem resolver a divergência.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-casa-risco",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Praça do Comércio — inventário do Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Casa do Risco das Obras Públicas"
+      },
+      {
+        "titulo": "História do Terreiro do Paço — DGAEP, projeto n.º 1",
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0402.htm",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "A Casa do Risco é constituída como o garante da execução"
+      }
+    ],
+    "qualificacoes": "Era um gabinete de trabalho técnico para o projeto e a uniformização da reconstrução. Não confundir com a Casa do Risco do Arsenal. A ficha do Património Cultural identifica a equipa de engenheiros; a DGAEP descreve a sua função.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-vrsa",
+    "veredicto": "contradiz",
+    "fontes": [
+      {
+        "titulo": "Vila Real de Santo António — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$vila-real-de-santo-antonio",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "cidade criada em 1774"
+      },
+      {
+        "titulo": "Núcleo histórico pombalino de Vila Real de Santo António — Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72810",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "em 1773, o Marquês de Pombal ordenou"
+      }
+    ],
+    "qualificacoes": "1774 corresponde ao arranque da edificação e é usado como data de criação em referências gerais. A ordem régia é de 1773 e as festividades de fundação/conclusão são de 1776, como assinala a investigação da Universidade do Algarve encontrada na pesquisa. Correção inequívoca para pergunta de ano: «A construção da nova Vila Real de Santo António começou em 1774, por iniciativa pombalina, no reinado de D. José I.»",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas. Em especial, 1773 e 1776 não devem ser tratados como falsos sem precisar o acontecimento.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "pl-vrsa-func",
+    "veredicto": "incerto",
+    "fontes": [
+      {
+        "titulo": "Vila Real de Santo António — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$vila-real-de-santo-antonio",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "reforçar a presença portuguesa em frente à localidade espanhola de Ayamonte"
+      },
+      {
+        "titulo": "Borders in Globalization Review — estudo depositado na Universidade de Sevilha",
+        "url": "https://idus.us.es/bitstreams/6b3ddcdd-c91c-4cd9-b51f-4fe805530660/download",
+        "tipo": "academica",
+        "leitura": "excerto",
+        "excerto": "designed to control smuggling, protect the state’s territory and resource exploitation rights on the border"
+      }
+    ],
+    "qualificacoes": "A Infopédia confirma o reforço territorial e acrescenta as reais pescarias. O estudo académico identifica o controlo do contrabando e os direitos de exploração fronteiriça, mas a abertura falhou com 403. Não se obtiveram duas leituras independentes que comprovem integralmente ambas as finalidades. A fonte UNESCO atual indicada no pedido trata de Lisboa Pombalina e não prova esta finalidade.",
+    "distratores": "",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "pl-douro",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "História do Vinho do Porto — IVDP",
+        "url": "https://www.ivdp.pt/pt/vinhos/vinhos-do-porto/historia/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "é criada a 10 de setembro de 1756"
+      },
+      {
+        "titulo": "Junta do Comércio: catálogo — Arquivo Nacional Torre do Tombo",
+        "url": "https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2018/02/ID-L-739-PT-TT-JC-v1_2017.pdf",
+        "tipo": "oficial",
+        "leitura": "excerto",
+        "excerto": "confirmada por Alvará de 10 de Setembro de 1756"
+      }
+    ],
+    "qualificacoes": "O IVDP foi lido. O catálogo arquivístico foi localizado na pesquisa, mas a abertura devolveu 404; apenas excerto. As instituições e os documentos são distintos.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-marcos",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Marcos Pombalinos — Câmara Municipal de Mesão Frio",
+        "url": "https://www.cm-mesaofrio.pt/pages/672?poi_id=73",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "marcos de demarcação da zona de vinhos generosos do Douro"
+      },
+      {
+        "titulo": "Marco granítico n.º 71 — Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72382",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "serviram para delimitar geograficamente a Região Vinhateira do Alto Douro"
+      }
+    ],
+    "qualificacoes": "A colocação dos marcos começou em 1758; não confundir o ano da criação da Companhia e da demarcação regulamentar (1756) com o da implantação dos marcos.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-atentado",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "MPR+ n.º 14 — Museu da Presidência da República",
+        "url": "https://www.museu.presidencia.pt/pt/conhecer/mprplus/decimo-quarto-numero/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "do dia 3 de setembro de 1758"
+      },
+      {
+        "titulo": "Nobreza no cadafalso — projeto de investigação Impressões Rebeldes, UFF",
+        "url": "https://www.historia.uff.br/impressoesrebeldes/revista/nobreza-no-cadafalso/",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "disparou “golpes de fogo” quase à queima roupa contra o rei"
+      }
+    ],
+    "qualificacoes": "O veículo era uma sege de duas rodas. O ataque está documentado; a responsabilidade dos acusados no processo dos Távoras não deve ser apresentada como facto historicamente indiscutível.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-jesuitas",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Expulsão dos Jesuítas — Arquivo Nacional Torre do Tombo",
+        "url": "https://antt.dglab.gov.pt/exposicoes-virtuais-2/expulsao-dos-jesuitas/",
+        "tipo": "oficial",
+        "leitura": "excerto",
+        "excerto": "A 3 de Setembro de 1759 foi promulgada"
+      },
+      {
+        "titulo": "Das maquinações aos estratagemas — Revista Brasileira de História da Educação",
+        "url": "https://www.scielo.br/j/rbhe/a/v8Ln7mgRh4Gm3z7kZVpXr9R/?lang=pt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Pombal expulsou a Companhia de Jesus de todos os domínios de Portugal"
+      }
+    ],
+    "qualificacoes": "A lei de expulsão é de 3 de setembro de 1759. A aplicação e as deportações decorreram em momentos diferentes nos vários territórios. A abertura da página da Torre do Tombo falhou com 404: apenas excerto; o artigo académico foi lido.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-aulas",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Os estudos menores e as reformas pombalinas — Teresa Rosa e Patrícia Gomes",
+        "url": "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "aulas régias gratuitas de gramática latina, de grego e de retórica"
+      },
+      {
+        "titulo": "Educação no Brasil no século XVIII e início do século XIX: olhares em escala — Thais Fonseca",
+        "url": "https://educa.fcc.org.br/scielo.php?lng=pt&nrm=iso&pid=S1984-64442024000100267&script=sci_arttext&tlng=pt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Em 1759 foi decretada a primeira lei"
+      }
+    ],
+    "qualificacoes": "O alvará é de 28 de junho de 1759; inicialmente, as aulas visavam as humanidades. A reforma e a ampliação de 1772 são outro momento. Gratuito não significa universal nem obrigatório.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-policia",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Intendência Geral da Polícia — Arquivo Nacional Torre do Tombo",
+        "url": "https://antt.dglab.gov.pt/exposicoes-virtuais-2/intendencia-geral-da-policia/",
+        "tipo": "oficial",
+        "leitura": "excerto",
+        "excerto": "Alvará com força de lei de 25 de Junho de 1760"
+      },
+      {
+        "titulo": "História — Polícia de Segurança Pública",
+        "url": "https://www.psp.pt/Pages/sobre-nos/quem-somos/historia.aspx",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "pela Lei de 25 e Junho de 1760, é criada a Intendência"
+      }
+    ],
+    "qualificacoes": "A data é 25 de junho de 1760. A página da PSP foi lida e contém a gralha «25 e Junho», preservada no excerto. A abertura da página da Torre do Tombo devolveu 404: leitura limitada ao excerto da pesquisa.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-alvara",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Memória acerca da Extinção da Escravidão — Assembleia da República",
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "alvará de 7 de setembro de 1761"
+      },
+      {
+        "titulo": "Datas Históricas — Sociedade Histórica da Independência de Portugal",
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "Já, em 1761"
+      }
+    ],
+    "qualificacoes": "Proibia a importação de pessoas escravizadas para Portugal continental; não aboliu então a escravatura colonial nem libertou automaticamente todas as pessoas já escravizadas no Reino. Não acrescentar o dia sem conferir o original: a bibliografia consultada apresenta variantes.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-colegio",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Colégio dos Nobres — Associação dos Amigos da Torre do Tombo",
+        "url": "https://www.aatt.org/site/index.php?id=221&op=Nucleo",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "iniciou efectivamente a sua actividade a 19 de Março de 1766"
+      },
+      {
+        "titulo": "Compêndio Histórico da Universidade de Coimbra — introdução crítica, Lusosofia/UBI, p. 30",
+        "url": "https://lusosofia.ubi.pt/textos/20111031-marques_de_pombal_compendio_historico_da_universidade_de_coimbra.pdf",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "criado por Alvará Régio a 7 de Março de 1761"
+      }
+    ],
+    "qualificacoes": "Distinguir aprovação da fundação e dos estatutos (1761) do início efetivo das aulas (19 de março de 1766). A introdução crítica da edição também confirma a abertura em 1766.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas. 1761 só é falso se a pergunta pedir a abertura efetiva.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-universidade",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "O Edifício — Imprensa da Universidade de Coimbra",
+        "url": "https://www.uc.pt/imprensa/descobrir/o-edificio/",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "novos estatutos foram entregues em 1772"
+      },
+      {
+        "titulo": "O antijesuitismo como instrumento reformador do ensino luso — Jansen Gusmão Salles, UFES",
+        "url": "https://periodicos.ufes.br/ufesupem/article/view/11768/8464",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "Estatutos da Universidade de Coimbra, publicados no ano de 1772"
+      }
+    ],
+    "qualificacoes": "A reforma introduziu novos métodos e estruturas de ensino científico. Não confundir os Estatutos de 1772 com o Compêndio Histórico de 1771.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-ventre",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Memória acerca da Extinção da Escravidão — Assembleia da República",
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "um alvará de 1773"
+      },
+      {
+        "titulo": "Datas Históricas — Sociedade Histórica da Independência de Portugal",
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "com este Alvará, de 1773"
+      }
+    ],
+    "qualificacoes": "O alvará de 16 de janeiro de 1773 abrangia os filhos de mulheres escravizadas que nascessem no Reino depois da sua publicação, além de disposições relativas à quarta geração. Não significa liberdade imediata de todas as pessoas escravizadas já nascidas, nem aplicação geral às colónias.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-ambito",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Memória acerca da Extinção da Escravidão — Assembleia da República",
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "em Portugal Continental"
+      },
+      {
+        "titulo": "Datas Históricas — Sociedade Histórica da Independência de Portugal",
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "apenas ao território metropolitano (e não às terras do além-mar)"
+      }
+    ],
+    "qualificacoes": "Válido quanto ao território beneficiário da proibição de importação e da liberdade de nascimento: o Reino continental. A lei de 1761 regulava também o transporte a partir de territórios ultramarinos; «só no Reino» não deve ser interpretado como ausência de consequências para embarcações ou agentes coloniais. A escravatura colonial continuou.",
+    "distratores": "",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-viradeira",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "D. José I — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$d.-jose-i",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "faleceu a 24 de fevereiro de 1777"
+      },
+      {
+        "titulo": "Maria I, Queen of Portugal — National Portrait Gallery",
+        "url": "https://www.npg.org.uk/collections/search/person/mp63332/maria-i-queen-of-portugal",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "succeeded to the throne in 1777"
+      },
+      {
+        "titulo": "D. Maria I — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$d.-maria-i",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "filha primogénita de D. José I"
+      }
+    ],
+    "qualificacoes": "A sucessão é correta. «Viradeira» designa a reação política e o afastamento de Pombal, não a simples morte do rei; não representou a anulação integral de todas as reformas.",
+    "distratores": "O pedido não apresenta os anos efetivamente gerados como distratores; não foi possível verificar essas alternativas.",
+    "explicacao_ok": true
+  },
+  {
+    "atom": "pl-jose-sucessora",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "D. Maria I — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$d.-maria-i",
+        "tipo": "referencia",
+        "leitura": "lida",
+        "excerto": "subiu ao trono português em 1777"
+      },
+      {
+        "titulo": "Maria I, Queen of Portugal — National Portrait Gallery",
+        "url": "https://www.npg.org.uk/collections/search/person/mp63332/maria-i-queen-of-portugal",
+        "tipo": "oficial",
+        "leitura": "lida",
+        "excerto": "Born to Joseph I, King of Portugal"
+      }
+    ],
+    "qualificacoes": "Maria I era filha de D. José I; o seu marido e tio D. Pedro recebeu o título de D. Pedro III.",
+    "distratores": "«O seu irmão, o infante D. Pedro» é ambíguo: esse irmão tornou-se efetivamente rei D. Pedro III como marido de Maria I. Não foi o sucessor dinástico autónomo, mas a alternativa deve explicitar essa diferença ou ser substituída.",
+    "explicacao_ok": false
+  },
+  {
+    "atom": "pl-aulas-gratis",
+    "veredicto": "confirma",
+    "fontes": [
+      {
+        "titulo": "Os estudos menores e as reformas pombalinas — Teresa Rosa e Patrícia Gomes",
+        "url": "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "resolver o problema deixado pelo fecho dos Colégios Jesuítas"
+      },
+      {
+        "titulo": "Educação no Brasil no século XVIII e início do século XIX: olhares em escala — Thais Fonseca",
+        "url": "https://educa.fcc.org.br/scielo.php?lng=pt&nrm=iso&pid=S1984-64442024000100267&script=sci_arttext&tlng=pt",
+        "tipo": "academica",
+        "leitura": "lida",
+        "excerto": "em substituição ao ensino jesuítico"
+      }
+    ],
+    "qualificacoes": "As aulas eram gratuitas, mas de acesso limitado e implantação gradual. O ensino não passou imediatamente a abranger toda a população. Corrigir para «substituir o ensino dos Jesuítas».",
+    "distratores": "",
+    "explicacao_ok": false
+  }
+]

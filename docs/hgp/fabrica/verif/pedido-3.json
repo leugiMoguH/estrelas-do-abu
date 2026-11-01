@@ -1,0 +1,641 @@
+[
+ {
+  "atom": "bp-estilo",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "O estilo artístico do reinado de D. João V chama-se barroco joanino.",
+  "distratores_falsos": [
+   "manuelino",
+   "românico",
+   "gótico"
+  ],
+  "fichas": [
+   "F68"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$barroco-joanino",
+   "https://rihgb.emnuvens.com.br/revista/article/download/77/63/127"
+  ]
+ },
+ {
+  "atom": "bp-talha",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "Os interiores das igrejas do barroco joanino cobriram-se de a talha dourada.",
+  "distratores_falsos": [
+   "vitrais góticos",
+   "colunas manuelinas",
+   "pinturas impressionistas"
+  ],
+  "fichas": [
+   "F69"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$barroco-joanino",
+   "https://rihgb.emnuvens.com.br/revista/article/download/77/63/127"
+  ]
+ },
+ {
+  "atom": "bp-azulejo",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "Uma das artes mais originais do barroco joanino foi o azulejo azul e branco.",
+  "distratores_falsos": [
+   "verde e vermelho",
+   "preto e dourado",
+   "amarelo e castanho"
+  ],
+  "fichas": [
+   "F69"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$barroco-joanino",
+   "https://rihgb.emnuvens.com.br/revista/article/download/77/63/127"
+  ]
+ },
+ {
+  "atom": "bp-inspiracao",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "O barroco joanino inspirou-se no barroco o barroco romano.",
+  "distratores_falsos": [
+   "inglês",
+   "holandês",
+   "russo"
+  ],
+  "fichas": [
+   "F70"
+  ],
+  "fontes_atuais": [
+   "https://ojs3.ge-iic.com/index.php/revista/article/download/21/pdf",
+   "https://rio.upo.es/entities/publication/a42adc9a-4198-4e99-ba7b-5efd478ccc0f/full"
+  ]
+ },
+ {
+  "atom": "bp-brasil",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "O barroco joanino chegou também ao Brasil, a em Minas Gerais e em São Paulo.",
+  "distratores_falsos": [
+   "à Amazónia e ao Pantanal",
+   "ao Rio Grande do Sul",
+   "a Santa Catarina"
+  ],
+  "fichas": [
+   "F70"
+  ],
+  "fontes_atuais": [
+   "https://ojs3.ge-iic.com/index.php/revista/article/download/21/pdf",
+   "https://rio.upo.es/entities/publication/a42adc9a-4198-4e99-ba7b-5efd478ccc0f/full"
+  ]
+ },
+ {
+  "atom": "bp-nasoni",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "A Igreja e a Torre dos Clérigos são obra do arquiteto italiano Nicolau Nasoni.",
+  "distratores_falsos": [
+   "Eugénio dos Santos",
+   "Carlos Mardel",
+   "Joaquim Machado de Castro"
+  ],
+  "fichas": [
+   "F71"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Torre_dos_Cl%C3%A9rigos",
+   "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+   "https://structurae.net/en/structures/clerigos-tower"
+  ]
+ },
+ {
+  "atom": "bp-clerigos-inicio",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "A Igreja dos Clérigos começou a ser construída em 1732.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F72"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Torre_dos_Cl%C3%A9rigos",
+   "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+   "https://porto.pt/en/news/you-are-in-porto-and-thinking-where-to-head-next--how-about-the-clerigos-tower"
+  ]
+ },
+ {
+  "atom": "bp-clerigos-torre",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "A Torre dos Clérigos ficou concluída em 1763.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F72"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Torre_dos_Cl%C3%A9rigos",
+   "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+   "https://porto.pt/en/news/you-are-in-porto-and-thinking-where-to-head-next--how-about-the-clerigos-tower"
+  ]
+ },
+ {
+  "atom": "bp-mafra-unesco",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "O Real Edifício de Mafra é Património Mundial da UNESCO desde 2019.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F73"
+  ],
+  "fontes_atuais": [
+   "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list",
+   "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290",
+   "https://www.sabado.pt/portugal/amp/sabe-quais-sao-os-17-bens-portugueses-na-lista-do-patrimonio-mundial-da-unesco"
+  ]
+ },
+ {
+  "atom": "bp-bomjesus",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "O Santuário do Bom Jesus do Monte fica em Braga.",
+  "distratores_falsos": [
+   "Porto",
+   "Coimbra",
+   "Faro"
+  ],
+  "fichas": [
+   "F74"
+  ],
+  "fontes_atuais": [
+   "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list",
+   "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290"
+  ]
+ },
+ {
+  "atom": "bp-coimbra-unesco",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "A Universidade de Coimbra é Património Mundial desde 2013.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F75"
+  ],
+  "fontes_atuais": [
+   "https://www.uc.pt/en/tourism/unesco/joanina-library",
+   "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list",
+   "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290",
+   "https://www.sabado.pt/portugal/amp/sabe-quais-sao-os-17-bens-portugueses-na-lista-do-patrimonio-mundial-da-unesco"
+  ]
+ },
+ {
+  "atom": "bp-porto-unesco",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "O Centro Histórico do Porto é Património Mundial desde 1996.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F76"
+  ],
+  "fontes_atuais": [
+   "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list",
+   "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290",
+   "https://www.sabado.pt/portugal/amp/sabe-quais-sao-os-17-bens-portugueses-na-lista-do-patrimonio-mundial-da-unesco"
+  ]
+ },
+ {
+  "atom": "bp-ouropreto-unesco",
+  "subcapitulo": "barroco-patrimonio",
+  "afirmacao": "Ouro Preto, antiga Vila Rica, é Património Mundial desde 1980.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F77"
+  ],
+  "fontes_atuais": [
+   "https://whc.unesco.org/en/list/124",
+   "https://en.wikipedia.org/wiki/Ouro_Preto",
+   "https://www.ipatrimonio.org/wp-content/uploads/2018/03/Patrim%C3%B4nio-Mundial-Cultural-e-Nacional_semcapa.pdf"
+  ]
+ },
+ {
+  "atom": "pl-nome",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "O Marquês de Pombal chamava-se Sebastião José de Carvalho e Melo.",
+  "distratores_falsos": [
+   "José de Seabra da Silva",
+   "Manuel da Maia e Melo",
+   "Tomás de Almeida e Melo"
+  ],
+  "fichas": [
+   "F79"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+   "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_1st_Marquis_of_Pombal"
+  ]
+ },
+ {
+  "atom": "pl-nasc",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "O Marquês de Pombal nasceu em Lisboa em 1699.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F79"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+   "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_1st_Marquis_of_Pombal"
+  ]
+ },
+ {
+  "atom": "pl-terramoto",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "O grande terramoto de Lisboa foi em 1755.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F82"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+   "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake",
+   "https://www.nationalgeographicbrasil.com/meio-ambiente/2024/08/terremoto-em-portugal-traz-de-volta-a-historia-do-catastrofico-tremor-de-terra-que-atingiu-lisboa-em-1755"
+  ]
+ },
+ {
+  "atom": "pl-dia",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "O terramoto de 1755 ocorreu a 1 de novembro, Dia de Todos-os-Santos.",
+  "distratores_falsos": [
+   "a 25 de dezembro, no Natal",
+   "a 5 de outubro",
+   "a 1 de dezembro"
+  ],
+  "fichas": [
+   "F82"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+   "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake",
+   "https://www.nationalgeographicbrasil.com/meio-ambiente/2024/08/terremoto-em-portugal-traz-de-volta-a-historia-do-catastrofico-tremor-de-terra-que-atingiu-lisboa-em-1755"
+  ]
+ },
+ {
+  "atom": "pl-seguiu",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "Ao sismo de 1755 seguiram-se um maremoto e incêndios.",
+  "distratores_falsos": [
+   "uma erupção vulcânica e uma peste",
+   "cheias e geadas",
+   "uma tempestade de neve"
+  ],
+  "fichas": [
+   "F83"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+   "https://www.nationalgeographicbrasil.com/meio-ambiente/2024/08/terremoto-em-portugal-traz-de-volta-a-historia-do-catastrofico-tremor-de-terra-que-atingiu-lisboa-em-1755"
+  ]
+ },
+ {
+  "atom": "pl-maia",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A reconstrução da Baixa foi coordenada pelo engenheiro-mor Manuel da Maia.",
+  "distratores_falsos": [
+   "Nicolau Nasoni",
+   "Luigi Vanvitelli",
+   "Mateus Vicente de Oliveira"
+  ],
+  "fichas": [
+   "F88"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$eugenio-dos-santos",
+   "https://en.wikipedia.org/wiki/Eug%C3%A9nio_dos_Santos"
+  ]
+ },
+ {
+  "atom": "pl-gaiola",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "Os prédios pombalinos usam a a gaiola pombalina, uma estrutura de madeira entrecruzada mais resistente aos sismos.",
+  "distratores_falsos": [
+   "a talha dourada",
+   "a abóbada gótica",
+   "a cúpula barroca"
+  ],
+  "fichas": [
+   "F89"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$eugenio-dos-santos",
+   "https://periodicos.puc-campinas.edu.br/oculum/article/download/798/778/1620",
+   "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755"
+  ]
+ },
+ {
+  "atom": "pl-praca",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "No lugar do antigo Terreiro do Paço, onde ficava o Paço da Ribeira, construiu-se a Praça do Comércio.",
+  "distratores_falsos": [
+   "o Rossio",
+   "a Praça da Alegria",
+   "a Praça dos Restauradores"
+  ],
+  "fichas": [
+   "F90"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Pra%C3%A7a_do_Com%C3%A9rcio",
+   "https://www.visitportugal.com/pt-pt/node/139363"
+  ]
+ },
+ {
+  "atom": "pl-eugenio",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A Praça do Comércio foi desenhada por Eugénio dos Santos.",
+  "distratores_falsos": [
+   "Nicolau Nasoni",
+   "Luigi Vanvitelli",
+   "Nicola Salvi"
+  ],
+  "fichas": [
+   "F90"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Pra%C3%A7a_do_Com%C3%A9rcio",
+   "https://www.visitportugal.com/pt-pt/node/139363"
+  ]
+ },
+ {
+  "atom": "pl-estatua",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A estátua equestre de D. José I é obra do escultor Joaquim Machado de Castro.",
+  "distratores_falsos": [
+   "Eugénio dos Santos",
+   "Carlos Mardel",
+   "Nicolau Nasoni"
+  ],
+  "fichas": [
+   "F91"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Statue_of_Jos%C3%A9_I_of_Portugal",
+   "https://archive.org/details/aoreyfidelissimo00mach",
+   "https://mail.anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548953099_66430b677ba62f5df90dd0e6500c68c4.pdf"
+  ]
+ },
+ {
+  "atom": "pl-estatua-ano",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A estátua equestre de D. José I foi inaugurada em 1775.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F91"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Statue_of_Jos%C3%A9_I_of_Portugal",
+   "https://archive.org/details/aoreyfidelissimo00mach",
+   "https://mail.anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548953099_66430b677ba62f5df90dd0e6500c68c4.pdf"
+  ]
+ },
+ {
+  "atom": "pl-casa-risco",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "Os planos da reconstrução da Baixa fizeram-se na Casa do Risco.",
+  "distratores_falsos": [
+   "Casa da Índia",
+   "Casa da Moeda",
+   "Casa dos Bicos"
+  ],
+  "fichas": [
+   "F92"
+  ],
+  "fontes_atuais": [
+   "https://baixoguadiana.com/en/territorio/patrimonio-edificado/nucleo-pombalino/",
+   "https://www.infopedia.pt/$vila-real-de-santo-antonio"
+  ]
+ },
+ {
+  "atom": "pl-vrsa",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "Vila Real de Santo António foi fundada por Pombal em 1774.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F93"
+  ],
+  "fontes_atuais": [
+   "https://baixoguadiana.com/en/territorio/patrimonio-edificado/nucleo-pombalino/",
+   "https://postal.pt/algarve/esta-cidade-do-algarve-ao-pe-da-praia-foi-construida-em-menos-de-dois-anos-e-e-das-mais-baratas-para-fazer-ferias/",
+   "https://www.infopedia.pt/$vila-real-de-santo-antonio"
+  ]
+ },
+ {
+  "atom": "pl-vrsa-func",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "Vila Real de Santo António foi fundada para afirmar a presença portuguesa diante de Ayamonte e controlar o comércio da fronteira.",
+  "distratores_falsos": [
+   "para proteger Lisboa dos terramotos",
+   "para receber as riquezas do Brasil",
+   "para substituir o porto de Salvador"
+  ],
+  "fichas": [
+   "F94"
+  ],
+  "fontes_atuais": [
+   "https://baixoguadiana.com/en/territorio/patrimonio-edificado/nucleo-pombalino/",
+   "https://whc.unesco.org/en/tentativelists/6226"
+  ]
+ },
+ {
+  "atom": "pl-douro",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A Companhia Geral da Agricultura das Vinhas do Alto Douro foi criada em 1756.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F95"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$vinho-do-porto",
+   "https://realcompanhiavelha.pt/en/?p=3397",
+   "https://pt.wikipedia.org/wiki/Real_Companhia_Velha"
+  ]
+ },
+ {
+  "atom": "pl-marcos",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A demarcação do Douro foi marcada no terreno com os marcos pombalinos.",
+  "distratores_falsos": [
+   "padrões dos Descobrimentos",
+   "marcos quilométricos",
+   "pelourinhos"
+  ],
+  "fichas": [
+   "F96"
+  ],
+  "fontes_atuais": [
+   "https://www.taylor.pt/en/what-is-port-wine/history-of-port/the-marquis-of-pombal",
+   "https://www.infopedia.pt/artigos/$vinho-do-porto"
+  ]
+ },
+ {
+  "atom": "pl-atentado",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A carruagem de D. José I foi atacada a tiro em 1758.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F97"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Processo_dos_T%C3%A1voras",
+   "https://britannica.com/print/article/584484",
+   "https://www.infopedia.pt/artigos/$francisco-de-assis-de-tavora"
+  ]
+ },
+ {
+  "atom": "pl-jesuitas",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "Os Jesuítas foram expulsos de Portugal e do ultramar em 1759.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F98"
+  ],
+  "fontes_atuais": [
+   "https://periodicos.ufes.br/ufesupem/article/view/11768/8464",
+   "https://pt.wikipedia.org/wiki/Processo_dos_T%C3%A1voras"
+  ]
+ },
+ {
+  "atom": "pl-aulas",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "As Aulas Régias, gratuitas, foram criadas em 1759.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F103"
+  ],
+  "fontes_atuais": [
+   "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+   "https://periodicos.ufes.br/ufesupem/article/view/11768/8464"
+  ]
+ },
+ {
+  "atom": "pl-policia",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A Intendência Geral da Polícia da Corte e do Reino foi criada em 1760.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F106"
+  ],
+  "fontes_atuais": [
+   "https://rdpc.uevora.pt/bitstream/10174/35521/1/LH_A%20pol%c3%adcia%20em%20Portugal%20no%20s%c3%a9culo%20XVIII_%20ambiguidades%20e%20equ%c3%advocos.pdf",
+   "https://portal.uab.pt/wp-content/uploads/2022/05/NOT-resumo-CEG.pdf",
+   "https://en.wikipedia.org/wiki/Pol%C3%ADcia_de_Seguran%C3%A7a_P%C3%BAblica"
+  ]
+ },
+ {
+  "atom": "pl-alvara",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "O alvará que proibiu trazer escravizados das colónias para o Reino é de 1761.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F99"
+  ],
+  "fontes_atuais": [
+   "https://periodicos.usp.br/revhistoria/article/download/18912/20975/22443",
+   "https://www.redalyc.org/journal/770/77066580002/77066580002.pdf",
+   "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_1st_Marquis_of_Pombal"
+  ]
+ },
+ {
+  "atom": "pl-colegio",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "O Colégio Real dos Nobres abriu em 1766, embora os estatutos fossem de 1761.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F104"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/apoio/artigos/$real-colegio-dos-nobres",
+   "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/download/242/214/589",
+   "https://mail.anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548206372_ebe311c735bc175337cd8a1a8736fad7.pdf"
+  ]
+ },
+ {
+  "atom": "pl-universidade",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A Universidade de Coimbra recebeu novos Estatutos em 1772.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F105"
+  ],
+  "fontes_atuais": [
+   "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+   "https://periodicos.ufes.br/ufesupem/article/view/11768/8464"
+  ]
+ },
+ {
+  "atom": "pl-ventre",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A lei do «ventre livre», para os nascidos no Reino, é de 1773.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F100"
+  ],
+  "fontes_atuais": [
+   "https://www.redalyc.org/journal/770/77066580002/77066580002.pdf",
+   "https://thefreewombproject.com/portugal-2/",
+   "https://www.e-publicacoes.uerj.br/dia-logos/article/download/23367/16649/75239"
+  ]
+ },
+ {
+  "atom": "pl-ambito",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "As leis de 1761 e 1773 aplicavam-se só no Reino (Portugal europeu).",
+  "distratores_falsos": [
+   "em todo o império português",
+   "só no Brasil",
+   "só em África"
+  ],
+  "fichas": [
+   "F101"
+  ],
+  "fontes_atuais": [
+   "https://periodicos.usp.br/revhistoria/article/download/18912/20975/22443",
+   "https://observador.pt/opiniao/fernando-rosas-nao-entende-o-marques-de-pombal/"
+  ]
+ },
+ {
+  "atom": "pl-viradeira",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "D. José I morreu em 1777, sucedendo-lhe a filha, D. Maria I.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F109"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$viradeira",
+   "https://ihu.unisinos.br/categorias/170-noticias-2014/528898-4-de-marco-de-1777-desgraca-e-demissao-de-pombal",
+   "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal"
+  ]
+ },
+ {
+  "atom": "pl-jose-sucessora",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "A D. José I sucedeu a sua filha, D. Maria I.",
+  "distratores_falsos": [
+   "o seu irmão, o infante D. Pedro",
+   "o seu filho, D. João VI",
+   "D. João V"
+  ],
+  "fichas": [
+   "F109"
+  ],
+  "fontes_atuais": [
+   "https://www.infopedia.pt/artigos/$viradeira",
+   "https://ihu.unisinos.br/categorias/170-noticias-2014/528898-4-de-marco-de-1777-desgraca-e-demissao-de-pombal",
+   "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal"
+  ]
+ },
+ {
+  "atom": "pl-aulas-gratis",
+  "subcapitulo": "pombal-lisboa",
+  "afirmacao": "As Aulas Régias, gratuitas, foram criadas para substituir o ensino dos o dos Jesuítas.",
+  "distratores_falsos": [
+   "frades franciscanos",
+   "professores da Universidade de Coimbra",
+   "mestres de ofícios"
+  ],
+  "fichas": [
+   "F103"
+  ],
+  "fontes_atuais": [
+   "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+   "https://periodicos.ufes.br/ufesupem/article/view/11768/8464"
+  ]
+ }
+]

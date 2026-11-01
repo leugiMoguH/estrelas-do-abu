@@ -20,6 +20,7 @@ export function hgpTemplate(item: HgpItem): ExerciseTemplate {
     competencyId: item.topic,
     conceptId: item.kb?.knowledge[0] ?? item.sub,
     approachId: item.skill,
+    skillId: `${item.topic}:${item.skill}`,
     difficulties: [item.difficulty],
     instances: 1,
     review: validationOf(item.id) === 'a-confirmar' ? 'needs-human-review' : 'approved',

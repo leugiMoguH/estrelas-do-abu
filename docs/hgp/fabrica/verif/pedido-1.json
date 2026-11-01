@@ -1,0 +1,504 @@
+[
+ {
+  "atom": "ba-regiao",
+  "subcapitulo": "brasil-acucar",
+  "afirmacao": "No Brasil colonial, o açúcar produzia-se sobretudo no Nordeste, em Pernambuco e na Bahia.",
+  "distratores_falsos": [
+   "no Sul, no Rio Grande",
+   "na Amazónia",
+   "em Minas Gerais"
+  ],
+  "fichas": [
+   "F1"
+  ],
+  "fontes_atuais": [
+   "https://cesad.ufs.br/ORBI/public/uploadCatalago/17292505102012Historia_do_Brasil_Colonia_Aula_4.pdf",
+   "https://companhiadasletras.com.br/sala_professor/pdfs/CadernoAtividades_BrasilUmaBiografia_cap2.pdf"
+  ]
+ },
+ {
+  "atom": "ba-engenho",
+  "subcapitulo": "brasil-acucar",
+  "afirmacao": "O açúcar era produzido em unidades chamadas engenhos.",
+  "distratores_falsos": [
+   "feitorias",
+   "fundições",
+   "aldeias"
+  ],
+  "fichas": [
+   "F2"
+  ],
+  "fontes_atuais": [
+   "https://cesad.ufs.br/ORBI/public/uploadCatalago/17292505102012Historia_do_Brasil_Colonia_Aula_4.pdf",
+   "https://companhiadasletras.com.br/sala_professor/pdfs/CadernoAtividades_BrasilUmaBiografia_cap2.pdf"
+  ]
+ },
+ {
+  "atom": "ba-trabalho",
+  "subcapitulo": "brasil-acucar",
+  "afirmacao": "Nos engenhos, depois dos indígenas, passou a predominar a mão-de-obra de os africanos escravizados.",
+  "distratores_falsos": [
+   "colonos portugueses assalariados",
+   "soldados da Coroa",
+   "padres jesuítas"
+  ],
+  "fichas": [
+   "F2"
+  ],
+  "fontes_atuais": [
+   "https://cesad.ufs.br/ORBI/public/uploadCatalago/17292505102012Historia_do_Brasil_Colonia_Aula_4.pdf",
+   "https://companhiadasletras.com.br/sala_professor/pdfs/CadernoAtividades_BrasilUmaBiografia_cap2.pdf"
+  ]
+ },
+ {
+  "atom": "ba-methuen",
+  "subcapitulo": "brasil-acucar",
+  "afirmacao": "O Tratado de Methuen, entre Portugal e Inglaterra, foi assinado em 1703.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F5"
+  ],
+  "fontes_atuais": [
+   "https://www.redalyc.org/pdf/3033/303325733006.pdf",
+   "https://www.infoescola.com/historia-europa/tratado-de-methuen/",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/10B11c.pdf"
+  ]
+ },
+ {
+  "atom": "ba-methuen-vinhos",
+  "subcapitulo": "brasil-acucar",
+  "afirmacao": "Pelo Tratado de Methuen, passaram a entrar com vantagem em Inglaterra os os vinhos portugueses.",
+  "distratores_falsos": [
+   "diamantes",
+   "cacau",
+   "ferro"
+  ],
+  "fichas": [
+   "F5"
+  ],
+  "fontes_atuais": [
+   "https://www.redalyc.org/pdf/3033/303325733006.pdf",
+   "https://www.infoescola.com/historia-europa/tratado-de-methuen/",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/10B11c.pdf"
+  ]
+ },
+ {
+  "atom": "ba-methuen-panos",
+  "subcapitulo": "brasil-acucar",
+  "afirmacao": "Pelo Tratado de Methuen, passaram a entrar em Portugal os os panos (lanifícios) ingleses.",
+  "distratores_falsos": [
+   "os vinhos",
+   "os diamantes",
+   "as especiarias"
+  ],
+  "fichas": [
+   "F5"
+  ],
+  "fontes_atuais": [
+   "https://www.redalyc.org/pdf/3033/303325733006.pdf",
+   "https://www.infoescola.com/historia-europa/tratado-de-methuen/",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/10B11c.pdf"
+  ]
+ },
+ {
+  "atom": "ba-salvador",
+  "subcapitulo": "brasil-acucar",
+  "afirmacao": "Com a descoberta do ouro, cresceu muito o porto baiano de Salvador.",
+  "distratores_falsos": [
+   "Belém",
+   "Santos",
+   "Manaus"
+  ],
+  "fichas": [
+   "F6"
+  ],
+  "fontes_atuais": [
+   "https://www.redalyc.org/pdf/770/77003103.pdf",
+   "https://periodicoscientificos.ufmt.br/territoriosefronteiras/index.php/v03n02/article/download/691/349/1890"
+  ]
+ },
+ {
+  "atom": "od-decada",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "As grandes jazidas de ouro de Minas Gerais foram descobertas na década de 1690.",
+  "distratores_falsos": [
+   "década de 1650",
+   "década de 1720",
+   "década de 1760",
+   "década de 1780"
+  ],
+  "fichas": [
+   "F11"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Brazilian_Gold_Rush",
+   "https://www.redalyc.org/pdf/770/77003103.pdf"
+  ]
+ },
+ {
+  "atom": "od-quem",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "As grandes jazidas de ouro de Minas Gerais foram descobertas por os bandeirantes.",
+  "distratores_falsos": [
+   "os jesuítas",
+   "os mercadores ingleses",
+   "os marinheiros de Vasco da Gama"
+  ],
+  "fichas": [
+   "F11"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Brazilian_Gold_Rush",
+   "https://www.redalyc.org/pdf/770/77003103.pdf"
+  ]
+ },
+ {
+  "atom": "od-capitania",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "A capitania de Minas Gerais foi criada em 1720, separando-se de São Paulo.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F14"
+  ],
+  "fontes_atuais": [
+   "https://www3.ufmg.br/storage/e/8/f/d/e8fdbd5e4fd7576d66425cc0e4a5363e_16085963106786_861894680.pdf",
+   "https://www.infoescola.com/historia/revolta-de-filipe-dos-santos"
+  ]
+ },
+ {
+  "atom": "od-quinto",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "O «quinto» era o imposto régio sobre o ouro: pertencia à Coroa um quinto (20%) do ouro extraído.",
+  "distratores_falsos": [
+   "um décimo (10%)",
+   "metade (50%)",
+   "um terço"
+  ],
+  "fichas": [
+   "F15"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Ciclo_do_ouro",
+   "https://projetoagathaedu.com.br/questoes-vestibular/resolucao-historia/colonia/quinto-do-ouro-e-casas-de-fundicao.php"
+  ]
+ },
+ {
+  "atom": "od-fundicao",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "Para cobrar o quinto, o ouro era fundido em barras nas Casas de Fundição.",
+  "distratores_falsos": [
+   "nas feitorias do litoral",
+   "nas Aulas Régias",
+   "na Casa da Índia"
+  ],
+  "fichas": [
+   "F16"
+  ],
+  "fontes_atuais": [
+   "https://www3.ufmg.br/storage/e/8/f/d/e8fdbd5e4fd7576d66425cc0e4a5363e_16085963106786_861894680.pdf",
+   "https://www.infoescola.com/historia/revolta-de-filipe-dos-santos"
+  ]
+ },
+ {
+  "atom": "od-revolta",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "Em 1720, a a Revolta de Vila Rica (de Filipe dos Santos) protestou contra as Casas de Fundição e o quinto.",
+  "distratores_falsos": [
+   "a Inconfidência Mineira",
+   "a Revolta da Vacina",
+   "as Alterações de Évora"
+  ],
+  "fichas": [
+   "F17"
+  ],
+  "fontes_atuais": [
+   "https://www3.ufmg.br/storage/e/8/f/d/e8fdbd5e4fd7576d66425cc0e4a5363e_16085963106786_861894680.pdf",
+   "https://www.todamateria.com.br/revolta-de-vila-rica/",
+   "https://www.infoescola.com/historia/revolta-de-filipe-dos-santos"
+  ]
+ },
+ {
+  "atom": "od-revolta-ano",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "A Revolta de Vila Rica, contra as Casas de Fundição e o quinto, deu-se em 1720.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F17"
+  ],
+  "fontes_atuais": [
+   "https://www3.ufmg.br/storage/e/8/f/d/e8fdbd5e4fd7576d66425cc0e4a5363e_16085963106786_861894680.pdf",
+   "https://www.todamateria.com.br/revolta-de-vila-rica/",
+   "https://www.infoescola.com/historia/revolta-de-filipe-dos-santos"
+  ]
+ },
+ {
+  "atom": "od-diamantes",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "A descoberta de diamantes no Brasil foi comunicada oficialmente à Coroa em 1729.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F18"
+  ],
+  "fontes_atuais": [
+   "https://biblioteca.ibge.gov.br/visualizacao/dtb/minasgerais/diamantina.pdf",
+   "https://www2.ufjf.br/historia/files/2020/04/Samuel-Partson-Moreira-Francischini-A-Real-Extra%C3%A7%C3%A3o-Historiografia-e-debate.pdf",
+   "https://en.wikipedia.org/wiki/Diamantina,_Minas_Gerais"
+  ]
+ },
+ {
+  "atom": "od-tejuco",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "A descoberta de diamantes foi comunicada oficialmente no arraial do no Tejuco.",
+  "distratores_falsos": [
+   "em Salvador",
+   "em Pernambuco",
+   "em São Paulo"
+  ],
+  "fichas": [
+   "F18"
+  ],
+  "fontes_atuais": [
+   "https://biblioteca.ibge.gov.br/visualizacao/dtb/minasgerais/diamantina.pdf",
+   "https://www2.ufjf.br/historia/files/2020/04/Samuel-Partson-Moreira-Francischini-A-Real-Extra%C3%A7%C3%A3o-Historiografia-e-debate.pdf",
+   "https://en.wikipedia.org/wiki/Diamantina,_Minas_Gerais"
+  ]
+ },
+ {
+  "atom": "od-declinio",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "Os depósitos de ouro de aluvião foram-se esgotando por volta da década de 1760.",
+  "distratores_falsos": [
+   "década de 1700",
+   "década de 1720",
+   "década de 1790"
+  ],
+  "fichas": [
+   "F21"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Ciclo_do_ouro",
+   "https://diamantina.cedeplar.ufmg.br/portal/download/diamantina-2006/D06A004.pdf"
+  ]
+ },
+ {
+  "atom": "od-mafra",
+  "subcapitulo": "ouro-diamantes",
+  "afirmacao": "Uma grande parte do ouro do Brasil serviu para pagar as obras de D. João V, sobretudo o Palácio-Convento de Mafra.",
+  "distratores_falsos": [
+   "o Palácio de Queluz",
+   "a Praça do Comércio",
+   "Vila Real de Santo António"
+  ],
+  "fichas": [
+   "F22"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Ciclo_do_ouro",
+   "https://www.infopedia.pt/artigos/$barroco-joanino"
+  ]
+ },
+ {
+  "atom": "la-irmandade",
+  "subcapitulo": "legado-africano",
+  "afirmacao": "Em Lisboa, no século XVIII, ainda funcionava a irmandade de a de Nossa Senhora do Rosário dos Homens Pretos.",
+  "distratores_falsos": [
+   "São Vicente de Fora",
+   "Santo António dos Navegantes",
+   "Nossa Senhora do Monte do Carmo"
+  ],
+  "fichas": [
+   "F24"
+  ],
+  "fontes_atuais": [
+   "https://run.unl.pt/bitstream/10362/27092/1/Religiao_e_Liberdade_WEB_1_.pdf",
+   "https://revistas.usal.es/uno/index.php/Studia_Historica/article/download/shhmo2016381123151/14889"
+  ]
+ },
+ {
+  "atom": "la-escravatura",
+  "subcapitulo": "legado-africano",
+  "afirmacao": "No Portugal continental havia pessoas escravizadas, porque as leis pombalinas de 1761 e 1773 tratam delas.",
+  "distratores_falsos": [
+   "porque o Marquês de Pombal criou a escravatura em 1761",
+   "porque a lei de 1773 obrigou todos os africanos a trabalhar no Reino",
+   "porque o terramoto de 1755 trouxe escravizados para Lisboa"
+  ],
+  "fichas": [
+   "F27"
+  ],
+  "fontes_atuais": [
+   "https://periodicos.usp.br/revhistoria/article/download/18912/20975/22443",
+   "https://www.redalyc.org/journal/770/77066580002/77066580002.pdf"
+  ]
+ },
+ {
+  "atom": "so-tres",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "A sociedade do Antigo Regime dividia-se em três ordens.",
+  "distratores_falsos": [
+   "duas",
+   "quatro",
+   "cinco"
+  ],
+  "fichas": [
+   "F34"
+  ],
+  "fontes_atuais": [
+   "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf"
+  ]
+ },
+ {
+  "atom": "so-nomes",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "As três ordens eram clero, nobreza e povo.",
+  "distratores_falsos": [
+   "rei, nobreza e povo",
+   "clero, burguesia e camponeses",
+   "militares, comerciantes e povo"
+  ],
+  "fichas": [
+   "F34"
+  ],
+  "fontes_atuais": [
+   "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf"
+  ]
+ },
+ {
+  "atom": "so-privilegiadas",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "As ordens privilegiadas eram o clero e a nobreza.",
+  "distratores_falsos": [
+   "a nobreza e o povo",
+   "o clero e o povo",
+   "o rei e os comerciantes"
+  ],
+  "fichas": [
+   "F35"
+  ],
+  "fontes_atuais": [
+   "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf"
+  ]
+ },
+ {
+  "atom": "so-povo",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "A ordem sem privilégios, que sustentava o reino com o trabalho e os impostos, era o povo (Terceiro Estado).",
+  "distratores_falsos": [
+   "o clero",
+   "a nobreza",
+   "a Corte"
+  ],
+  "fichas": [
+   "F34",
+   "F35"
+  ],
+  "fontes_atuais": [
+   "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf",
+   "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf"
+  ]
+ },
+ {
+  "atom": "so-clero",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "Um privilégio próprio do clero era receber o dízimo.",
+  "distratores_falsos": [
+   "ocupar os altos cargos do exército",
+   "pagar todos os impostos ao rei",
+   "viver só do trabalho da terra"
+  ],
+  "fichas": [
+   "F36"
+  ],
+  "fontes_atuais": [
+   "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf"
+  ]
+ },
+ {
+  "atom": "so-nobreza",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "Um privilégio próprio da nobreza era ocupar os altos cargos da administração e do exército.",
+  "distratores_falsos": [
+   "receber o dízimo",
+   "ter direito de asilo nas igrejas",
+   "pagar todos os impostos ao rei"
+  ],
+  "fichas": [
+   "F37"
+  ],
+  "fontes_atuais": [
+   "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+   "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf"
+  ]
+ },
+ {
+  "atom": "so-cristao-novo",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "Um «cristão-novo» era um descendente de judeus convertidos ao cristianismo.",
+  "distratores_falsos": [
+   "um padre ordenado há pouco tempo",
+   "um nobre recém-nomeado pelo rei",
+   "um camponês que mudou de aldeia"
+  ],
+  "fichas": [
+   "F38"
+  ],
+  "fontes_atuais": [
+   "https://seer.ufrgs.br/index.php/revistaihgrgs/article/view/133689",
+   "https://www.infopedia.pt/artigos/$cristao-novo"
+  ]
+ },
+ {
+  "atom": "so-limpeza",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "Para muitos cargos e honras exigia-se, com certidão da Inquisição, a a «limpeza de sangue».",
+  "distratores_falsos": [
+   "prova de riqueza",
+   "residência em Lisboa",
+   "dez anos de serviço militar"
+  ],
+  "fichas": [
+   "F39"
+  ],
+  "fontes_atuais": [
+   "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+   "https://seer.ufrgs.br/index.php/webmosaica/article/view/31841"
+  ]
+ },
+ {
+  "atom": "so-lei-1773",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "A distinção legal entre cristãos-novos e cristãos-velhos acabou em 1773.",
+  "distratores_falsos": "(anos: gerados ±)",
+  "fichas": [
+   "F102"
+  ],
+  "fontes_atuais": [
+   "https://seer.ufrgs.br/index.php/revistaihgrgs/article/view/133689",
+   "https://www.e-publicacoes.uerj.br/dia-logos/article/download/23340/16634/75166",
+   "https://www.infopedia.pt/artigos/$cristao-novo"
+  ]
+ },
+ {
+  "atom": "so-cortes",
+  "subcapitulo": "sociedade-ordens",
+  "afirmacao": "As últimas Cortes antes do liberalismo reuniram-se em 1697–1698.",
+  "distratores_falsos": [
+   "em 1706–1707",
+   "em 1750–1751",
+   "em 1755–1756"
+  ],
+  "fichas": [
+   "F44"
+  ],
+  "fontes_atuais": [
+   "https://en.wikipedia.org/wiki/Portuguese_Cortes",
+   "https://ap1.sib.uc.pt/bitstream/10316.2/46747/1/cortes_de_lisboa_em_1677.pdf"
+  ]
+ }
+]

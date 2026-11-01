@@ -15,7 +15,9 @@ export type Reasoning =
   | 'relacionar' // causa, finalidade, consequência
   | 'comparar' // posicionar conhecimentos uns face aos outros
   | 'classificar' // pertença a uma categoria / exceção
-  | 'inferir'; // aplicar conhecimentos a um caso novo
+  | 'inferir' // aplicar conhecimentos a um caso novo
+  | 'interpretar' // retirar de um documento o que ele permite (ou não) concluir
+  | 'avaliar'; // julgar se um facto sustenta uma afirmação
 
 export type Verification = 'confirmado' | 'parcial' | 'discutido';
 
@@ -50,6 +52,10 @@ type Common = {
   readonly prompt: string;
   readonly hints: readonly string[];
   readonly explanation: string;
+  /** Formato alternativo do mesmo conhecimento (não conta como exercício distinto). */
+  readonly variant?: boolean;
+  readonly stimulus?: string;
+  readonly figure?: { readonly type: 'pt-map'; readonly highlight: readonly string[] };
 };
 export type KbExercise = Common &
   (
