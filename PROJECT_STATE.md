@@ -71,9 +71,12 @@ Decisão necessária:
 
 - 2026-11-01: Fábrica V2 local concluída: 96 conhecimentos (89 elegíveis/7 pendentes), 279 exercícios gerados/255 elegíveis (221/23/11), 69 manuais mantidos. Identidade sem opções, rubrica, fontes contextuais e competências fora do Save. Autoverificação de 15 moldes; revisão docente/independente dos novos moldes pendente. Ver docs/hgp/fabrica/README.md e validacao-v2.md.
 
+
+- 2026-11-01: Fábrica V2 PUBLICADA. Commit 1c76e32 (tag hgp-fabrica-v2, push feito); gh-pages 6ef3219: preview/e = V2 (bundle welcome-JF23XNf6.js), backup preview/e-prov6 (mesmo armazenamento eda-e). Verificado no URL público (3 viewports): https://leugimoguh.github.io/estrelas-do-abu/preview/e/. Demo raiz e outros protótipos intactos. Limitações: 7 conhecimentos pendentes (24 exercícios fora das sessões), capoeira/samba/Valongo por acrescentar, 248 URLs sem leitura automática (evidência = atestados/revisões contextuais do Codex), autoverificação de 15 moldes sem auditoria independente nem teste com a criança. Nova prioridade: infraestrutura transversal de fontes fiáveis (6.º ano, todas as disciplinas); ver .claude/tmp/handoff.md.
+
 ## Estacionadas
 ## Bloqueios
-- 2026-11-01: publicação V2 bloqueada por ligação a github.com:443 (git ls-remote falhou). git add também bloqueado: .git/index.lock Permission denied; sem commit/tag novos. Nenhuma alteração em gh-pages; URL público V2 não confirmado.
+- (resolvido 2026-11-01) bloqueio de Git/rede do sandbox do Codex; publicação concluída pelo Claude com autorização expressa.
 
 ## Histórico do plano
 - v1 (2026-10-30): plano inicial
