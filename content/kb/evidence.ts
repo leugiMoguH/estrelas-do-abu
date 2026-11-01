@@ -8,7 +8,7 @@ import type { Atom } from './schema';
  * Os testes automáticos NÃO são verificação histórica: aqui só conta a fonte confirmar o facto.
  */
 export type SourceKind = 'wikipedia' | 'referencia' | 'oficial' | 'academica' | 'divulgacao';
-export interface EvidenceSource { readonly title: string; readonly url: string; readonly atestado?: string }
+export interface EvidenceSource { readonly title: string; readonly url: string; readonly atestado?: string; readonly kind?: string; readonly group?: string }
 export interface EvidenceEntry { readonly status: string; readonly text: string; readonly chave?: readonly string[]; readonly sources: readonly EvidenceSource[] }
 export type EvidenceMap = Readonly<Record<string, EvidenceEntry>>;
 export interface PageCheck { readonly estado: string; readonly em: Readonly<Record<string, { readonly ok: boolean }>> }
@@ -37,10 +37,12 @@ const QUALIFYING: ReadonlySet<SourceKind> = new Set(['referencia', 'oficial', 'a
 export function countedGroups(fact: string, ev: EvidenceEntry, fetched: FetchMap): { verified: string[]; attested: string[] } {
   const verified = new Set<string>(), attested = new Set<string>();
   for (const s of ev.sources) {
-    const { kind, group } = classifySource(s.url);
+    const classified = classifySource(s.url);
+    const kind = s.atestado && s.kind ? s.kind as SourceKind : classified.kind;
+    const group = s.atestado && s.group ? s.group : classified.group;
     if (!QUALIFYING.has(kind)) continue;
-    if (fetched[s.url]?.em[fact]?.ok) verified.add(group);
-    else if (s.atestado) attested.add(group);
+    // Unicamente atestados de leitura contextual rastreáveis contam; tokens não provam apoio.
+    if (s.atestado) attested.add(group);
   }
   for (const g of verified) attested.delete(g);
   return { verified: [...verified], attested: [...attested] };
@@ -59,7 +61,7 @@ export function verdictOf(atom: Atom, evidence: EvidenceMap, fetched: FetchMap, 
   if (rules.deterministic?.has(atom.id)) return { state: 'deterministico', eligible: true, why: 'resultado verificado por cálculo' };
   const reasons: string[] = [];
   let state: KnowledgeState = 'documental';
-  for (const f of atom.fichas) {
+  for (const f of evidence[`A:${atom.id}`] ? [`A:${atom.id}`] : atom.fichas) {
     const ev = evidence[f];
     if (!ev || ev.status !== 'confirmado') return { state: 'pendente', eligible: false, why: `${f}: ${ev?.status ?? 'inexistente'}` };
     const { verified, attested } = countedGroups(f, ev, fetched);

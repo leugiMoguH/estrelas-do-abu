@@ -35,9 +35,10 @@ export function buildSession(options: SessionOptions) {
   const repeatPenalty = options.repeatPenalty ?? 12;
   const groupOf = options.groupOf ?? ((e: Exercise) => e.competencyId);
   const n = Number.isFinite(options.n) ? Math.max(0, Math.floor(options.n)) : 0;
+  const topicDue = dueCompetencies(state, now, options.competencyIds);
   const ids =
     mode === 'review'
-      ? dueCompetencies(state, now, options.competencyIds)
+      ? [...new Set([...topicDue, ...options.competencyIds.filter(id => pool.some(e => e.competencyId === id && !!e.skillId && skillDue(options.skills?.[e.skillId], now)))])]
       : [...new Set(options.competencyIds)];
   let relaxed = 0;
   const selected: Exercise[] = [];
@@ -69,11 +70,14 @@ export function buildSession(options: SessionOptions) {
       })),
     ];
     const recentSignatures = new Set(recent.map((h) => h.signature));
+    // Históricos WIP tinham um sufixo de opções; conservam-se legíveis sem reescrever o Save.
+    const seenSignature = (signature: string): boolean => recentSignatures.has(signature) ||
+      (!signature.includes('|variant:') && [...recentSignatures].some(old => !old.includes('|variant:') && old.startsWith(`${signature}|`)));
     const recentConcepts = recent.slice(-3);
     const penalty = (ex: Exercise) =>
       options.history === undefined
         ? 0
-        : Number(recentSignatures.has(signatureOf.get(ex)!)) * repeatPenalty +
+        : Number(seenSignature(signatureOf.get(ex)!)) * repeatPenalty +
           recentConcepts.filter(
             (h) => h.competency === ex.competencyId && h.concept !== undefined && h.concept === ex.conceptId,
           ).length *
@@ -91,7 +95,7 @@ export function buildSession(options: SessionOptions) {
               ? 3
               : 2;
       const sk = ex.skillId ? options.skills?.[ex.skillId] : undefined;
-      const target = sk ? skillTarget(options.skills, ex.skillId, topicTarget) : topicTarget;
+      const target = ex.skillId ? skillTarget(options.skills, ex.skillId, 1) : topicTarget;
       // reforço: conhecimento falhado (exercício diferente), dificuldade persistente e revisão espaçada da competência
       const support =
         (sk?.weak.some((w) => w.concept === ex.conceptId) ? -8 : 0) +

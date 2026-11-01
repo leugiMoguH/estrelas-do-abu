@@ -1,4 +1,4 @@
-import evidence from '../kb/historia/xviii-evidencia.json';
+import { XVIII_EVIDENCE as evidence, eligibleExercise } from '../kb/historia/xviii.validation';
 import { XVIII_EXERCISES } from '../kb/historia/xviii';
 import type { KbExercise } from '../kb/schema';
 import type { HgpBank, HgpItem, HgpSkill, HgpSource } from './schema';
@@ -21,7 +21,8 @@ const sourceId = (fact: string, k: number): string => `kb-xviii-${fact.toLowerCa
 /** Exercícios omitidos por repetirem perguntas já existentes nos bancos anteriores (ver docs/hgp/fabrica). */
 const OMITIDOS: readonly string[] = [];
 
-const used = [...new Set(XVIII_EXERCISES.flatMap((e) => e.fichas))].sort();
+const factsOf = (e: KbExercise): string[] => [...new Set(e.knowledge.flatMap(k => EV[`A:${k}`] ? [`A:${k}`] : e.fichas))];
+const used = [...new Set(XVIII_EXERCISES.flatMap(factsOf))].sort();
 const sources: HgpSource[] = used.flatMap((f) =>
   (EV[f]?.sources ?? []).map((s, k) => ({ id: sourceId(f, k), title: s.title, url: s.url, accessed: '2026-10-31', kind: kindOf(s.url) })),
 );
@@ -29,10 +30,11 @@ const sources: HgpSource[] = used.flatMap((f) =>
 function toItem(e: KbExercise): HgpItem {
   const common = {
     id: `hgp-seculo-xviii-k-${e.id.replace(/\./g, '-')}`, topic: 'hgp-seculo-xviii' as const, sub: e.sub,
-    skill: (e.template === 'verificar-frase' || e.template === 'frase-falsa' ? 'vf' : e.skill) as HgpSkill,
+    skill: e.skill as HgpSkill,
     difficulty: e.level, prompt: e.prompt, hints: e.hints, explanation: e.explanation,
-    sources: e.fichas.flatMap((f) => (EV[f]?.sources ?? []).map((_, k) => sourceId(f, k))),
-    kb: { knowledge: e.knowledge, reasoning: e.reasoning, template: e.template, fichas: e.fichas },
+    stimulus: e.stimulus, figure: e.figure,
+    sources: factsOf(e).flatMap((f) => (EV[f]?.sources ?? []).map((_, k) => sourceId(f, k))),
+    kb: { knowledge: e.knowledge, reasoning: e.reasoning, template: e.template, fichas: e.fichas, competence: e.skill, eligible: eligibleExercise(e), variant: e.variant },
   };
   switch (e.kind) {
     case 'mcq': return { ...common, kind: 'mcq', options: e.options, correct: e.correct, wrong: e.wrong };

@@ -17,6 +17,8 @@ interface Base {
   readonly approachId?: string;
   /** Competência para a progressão (ex.: «hgp-seculo-xviii:causa»); opcional. */
   readonly skillId?: string;
+  /** Variante pedagógica explícita; nunca a ordem das opções. */
+  readonly variant?: string;
   readonly stimulus?: string;
   readonly figure?: { type: "pt-map"; highlight: readonly string[]; label?: string };
   readonly id: string;

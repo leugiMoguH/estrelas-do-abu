@@ -1,13 +1,12 @@
 // Verificação determinística da evidência: descarrega cada URL citada na ficha e confirma que a página
-// contém os números e nomes da afirmação a que serve de fonte. Uso: node scripts/kb-verificar-fontes.mjs
-// Saída: content/kb/historia/xviii-fontes-verificadas.json  (não prova a verdade; prova que a fonte diz aquilo)
+// contém os números e nomes da afirmação (sinal lexical, NÃO prova). Uso: node scripts/kb-verificar-fontes.mjs
+// Saída: sinais lexicais e acessibilidade. Só a leitura contextual pode sustentar a afirmação.
 import { readFileSync, writeFileSync, mkdtempSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-const evidence = { ...JSON.parse(readFileSync('content/kb/historia/xviii-evidencia.json', 'utf8')), ...JSON.parse(readFileSync('content/kb/historia/xviii-evidencia-extra.json', 'utf8')) };
-const prev = (() => { try { return JSON.parse(readFileSync('content/kb/historia/xviii-fontes-verificadas.json', 'utf8')); } catch { return {}; } })();
+const evidence = Object.assign({}, ...['xviii-evidencia', 'xviii-evidencia-extra', 'xviii-evidencia-atomos'].map(f => JSON.parse(readFileSync(`content/kb/historia/${f}.json`, 'utf8'))));
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/(\d)[.\s](\d{3})\b/g, '$1$2');
 
 /** Números (≥3 algarismos) e nomes próprios (palavras maiúsculas a meio de frase) da afirmação. */
@@ -70,9 +69,17 @@ for (const { f, url } of jobs) {
   const nHit = nums.filter((n) => page.includes(n)).length;
   const mHit = names.filter((n) => page.includes(n)).length;
   const ok = (nums.length === 0 || nHit >= Math.ceil(nums.length * 0.6)) && (names.length === 0 || mHit >= Math.ceil(names.length * 0.5)) && nums.length + names.length > 0;
-  out[url].em[f] = { numeros: `${nHit}/${nums.length}`, nomes: `${mHit}/${names.length}`, ok };
+  const contextual = evidence[f].sources.some(s => s.url === url && s.atestado);
+  out[url].em[f] = { numeros: `${nHit}/${nums.length}`, nomes: `${mHit}/${names.length}`, lexical: ok, ok: contextual };
 }
 writeFileSync('content/kb/historia/xviii-fontes-verificadas.json', JSON.stringify(out, null, 1) + '\n');
 const estados = {};
 for (const v of Object.values(out)) estados[v.estado] = (estados[v.estado] ?? 0) + 1;
 console.log(urls.length, 'URLs', JSON.stringify(estados), '| pares F×URL ok:', Object.values(out).flatMap((v) => Object.values(v.em)).filter((x) => x.ok).length, '/', Object.values(out).flatMap((v) => Object.values(v.em)).length);
+const report = Object.fromEntries(Object.entries(evidence).map(([id, ev]) => [id, {
+  estado: ev.status === 'contradiz' ? 'erro factual confirmado' : ev.status !== 'confirmado' || ev.sources.filter(s => s.atestado).length < 2 ? 'evidência insuficiente' : ev.sources.every(s => !pages[s.url]?.texto) ? 'fonte inacessível' : ev.sources.some(s => s.atestado && !out[s.url]?.em[id]?.lexical) ? 'fonte válida que o verificador lexical não leu' : 'fonte válida com leitura contextual',
+  erroOriginal: ev.originalVerdict === 'contradiz', corrigido: !!ev.correction,
+  contextual: ev.sources.filter(s => s.atestado).length,
+  fontes: ev.sources.map(s => ({ url: s.url, acesso: pages[s.url]?.estado ?? 'não consultada', leitura: !!s.atestado, lexical: out[s.url]?.em[id]?.lexical ?? false })),
+}]));
+writeFileSync('docs/hgp/fabrica/verificacao-fontes.json', JSON.stringify(report, null, 2) + '\n');

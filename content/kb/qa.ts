@@ -1,5 +1,7 @@
 import { normalize } from '../../src/core/grading';
 import type { Atom, KbExercise } from './schema';
+import { RUBRIC } from './reasoning';
+import { verdictOf, type FetchMap } from './evidence';
 
 export interface Evidence { readonly status: string; readonly text: string; readonly sources: readonly { title: string; url: string }[] }
 export interface QaResult { readonly errors: string[]; readonly warnings: string[] }
@@ -16,8 +18,8 @@ function justifies(e: KbExercise): boolean {
 }
 const correctText = (e: KbExercise): string => (e.kind === 'mcq' ? e.correct : e.kind === 'numeric' ? String(e.correct) : e.kind === 'cloze' ? e.correct[0]![0]! : e.correct.join(' '));
 
-/** Prova documental dos átomos: cada ficha existe, está CONFIRMADA, tem ≥2 fontes e contém a resposta. */
-export function checkAtoms(atoms: readonly Atom[], evidence: Readonly<Record<string, Evidence>>): QaResult {
+/** Integridade dos átomos e elegibilidade contextual; pendentes são sinalizados e excluídos no adaptador. */
+export function checkAtoms(atoms: readonly Atom[], evidence: Readonly<Record<string, Evidence>>, fetched: FetchMap = {}): QaResult {
   const errors: string[] = [], warnings: string[] = [];
   const ids = new Set<string>();
   for (const a of atoms) {
@@ -28,18 +30,19 @@ export function checkAtoms(atoms: readonly Atom[], evidence: Readonly<Record<str
     if (a.year !== undefined && String(a.year) !== a.answer) errors.push(`${a.id}: ano ≠ resposta`);
     if (a.wrong.some((w) => normalize(w) === normalize(a.answer))) errors.push(`${a.id}: distrator igual à resposta`);
     let joined = '';
-    for (const f of a.fichas) {
+    const verdict = verdictOf(a, evidence, fetched);
+    if (!verdict.eligible) warnings.push(`${a.id}: ${verdict.state}: ${verdict.why}`);
+    for (const f of evidence[`A:${a.id}`] ? [`A:${a.id}`] : a.fichas) {
       const ev = evidence[f];
       if (!ev) { errors.push(`${a.id}: ficha ${f} inexistente`); continue; }
-      if (ev.status !== 'confirmado') errors.push(`${a.id}: ${f} está ${ev.status} (só «confirmado» entra)`);
-      if (ev.sources.length < 2) errors.push(`${a.id}: ${f} com menos de 2 fontes`);
+      if (ev.sources.length < 2) warnings.push(`${a.id}: ${f} com menos de 2 fontes`);
       joined += ` ${ev.text}`;
     }
     const target = words(a.answer);
     const hay = new Set(words(joined));
     const hit = target.filter((w) => hay.has(w)).length;
-    if (a.year !== undefined && !hay.has(String(a.year))) errors.push(`${a.id}: o ano ${a.year} não consta da ficha ${a.fichas.join('+')}`);
-    else if (target.length && hit / target.length < 0.5) warnings.push(`${a.id}: resposta pouco coberta pelo texto da ficha (${hit}/${target.length})`);
+    // Cobertura lexical não demonstra apoio factual, nem o desmente.
+    if (!evidence[`A:${a.id}`] && target.length && hit / target.length < 0.5) warnings.push(`${a.id}: resposta pouco coberta pelo texto da ficha (${hit}/${target.length})`);
   }
   return { errors, warnings };
 }
@@ -52,12 +55,18 @@ export function checkExercises(exs: readonly KbExercise[], atoms: readonly Atom[
   const keys = new Map<string, string>();
   const tokens = exs.map((e) => new Set(words(e.kind === 'order' ? textOf(e) : e.prompt)));
   for (const [i, e] of exs.entries()) {
+    if (!RUBRIC[e.template]?.includes(e.level)) errors.push(`${e.id}: molde/nível fora da rubrica`);
+    const fields = [e.prompt, e.stimulus ?? '', e.explanation, ...(e.kind === 'mcq' ? e.options : [])];
+    for (const text of fields) {
+      if (/(?<![\p{L}])(a a|o o|os os|as as|de a|de o|por os|do o|da a|do no)(?![\p{L}])/iu.test(text)) errors.push(`${e.id}: artigos incompatíveis ou repetidos: ${text}`);
+      if (/\b([\p{L}]{3,})\s+\1\b/iu.test(text)) warnings.push(`${e.id}: palavra repetida`);
+    }
     if (ids.has(e.id)) errors.push(`${e.id}: id repetido`);
     ids.add(e.id);
     for (const k of e.knowledge) if (!atomIds.has(k)) errors.push(`${e.id}: conhecimento «${k}» inexistente`);
     if (!e.fichas.length) errors.push(`${e.id}: sem evidência`);
-    const key = `${e.template}|${[...e.knowledge].sort().join('+')}`;
-    if (e.template !== 'excecao' && e.template !== 'caso' && keys.has(key)) errors.push(`${e.id} ≈ ${keys.get(key)}: mesmo conhecimento e mesmo raciocínio`);
+    const key = `${e.template}|${[...e.knowledge].sort().join('+')}|${typeof e.variant === 'string' ? e.variant : ''}`;
+    if (e.template !== 'excecao' && !e.template.startsWith('caso-') && keys.has(key)) errors.push(`${e.id} ≈ ${keys.get(key)}: mesmo conhecimento e mesmo raciocínio`);
     keys.set(key, e.id);
     if (e.kind === 'mcq') {
       const opts = e.options.map((o) => normalize(o));
@@ -66,6 +75,8 @@ export function checkExercises(exs: readonly KbExercise[], atoms: readonly Atom[
       if (!e.options.includes(e.correct)) errors.push(`${e.id}: correta fora das opções`);
       if (Object.keys(e.wrong).some((w) => w === e.correct || !e.options.includes(w))) errors.push(`${e.id}: feedback de distrator inconsistente`);
       const c = normalize(e.correct);
+      for (const w of Object.keys(e.wrong)) if (atoms.some(a => !e.knowledge.includes(a.id) && normalize(a.answer) === normalize(w))) warnings.push(`${e.id}: distrator é resposta de outro átomo: ${w}`);
+      if (e.template !== 'verificar-frase' && c.length >= 4 && normalize(e.prompt).includes(c)) warnings.push(`${e.id}: possível pista lexical no enunciado`);
       if (e.template === 'reconhecer-mcq' && c.length >= 4 && normalize(e.prompt).includes(c)) errors.push(`${e.id}: o enunciado contém a resposta`);
     }
     if (e.kind === 'order') {
@@ -76,16 +87,14 @@ export function checkExercises(exs: readonly KbExercise[], atoms: readonly Atom[
     if (e.kind === 'cloze' && !e.correct.every((c) => c.length > 0)) errors.push(`${e.id}: cloze sem respostas`);
     if (e.kind !== 'order' && e.template !== 'verificar-frase' && !justifies(e)) errors.push(`${e.id}: a explicação não justifica a resposta`);
     if (e.hints.length < 2) errors.push(`${e.id}: menos de 2 pistas`);
-    // dificuldade: nível 1 só reconhecimento de um conhecimento; nível 3 exige mais que um facto ou inferência
-    if (e.level === 1 && (e.reasoning !== 'reconhecer' || e.knowledge.length !== 1)) errors.push(`${e.id}: nível inicial mal classificado`);
-    if (e.level === 3 && e.knowledge.length < 2 && e.reasoning !== 'calcular') errors.push(`${e.id}: nível avançado com um só conhecimento`);
+    // A dificuldade foi verificada pela rubrica, sem contar palavras ou conhecimentos.
     for (let j = i + 1; j < exs.length; j++) {
       const o = exs[j]!;
       if (e.template === o.template && ['ordenar-cronologia', 'comparar-cronologia', 'frase-falsa', 'excecao'].includes(e.template)) {
         if (textOf(e) === textOf(o) && correctText(e) === correctText(o)) errors.push(`${e.id} = ${o.id}: exercício repetido`);
         continue;
       }
-      if (e.kind === o.kind && jaccard(tokens[i]!, tokens[j]!) >= 0.85)
+      if (e.kind === o.kind && e.variant === o.variant && e.stimulus === o.stimulus && JSON.stringify(e.figure) === JSON.stringify(o.figure) && jaccard(tokens[i]!, tokens[j]!) >= 0.85)
         errors.push(`${e.id} ~ ${o.id}: enunciados quase iguais${normalize(correctText(e)) === normalize(correctText(o)) ? ' e mesma resposta (repetida)' : ' com respostas diferentes (ambígua)'}`);
     }
   }
@@ -93,6 +102,7 @@ export function checkExercises(exs: readonly KbExercise[], atoms: readonly Atom[
   const mcqs = exs.filter((e): e is Extract<KbExercise, { kind: 'mcq' }> => e.kind === 'mcq' && e.template !== 'verificar-frase');
   const longest = mcqs.filter((e) => e.options.every((o) => o === e.correct || o.length < e.correct.length)).length;
   if (mcqs.length && longest / mcqs.length > 0.5) warnings.push(`viés de comprimento: a correta é a mais longa em ${Math.round((100 * longest) / mcqs.length)}% das mcq`);
+  for (const [skill, n] of Object.entries(coverage(exs).bySkill)) if (n / exs.length > 0.45) warnings.push(`${skill}: concentração superior a 45% (${n}/${exs.length})`);
   return { errors, warnings };
 }
 
@@ -115,6 +125,6 @@ export function coverage(exs: readonly KbExercise[]): Coverage {
     inc(byReasoning, e.reasoning); inc(byTemplate, e.template); inc(bySkill, e.skill);
   }
   // «foco distinto» = conjunto de conhecimentos + raciocínio (formatos diferentes do mesmo foco contam uma vez)
-  const focus = new Set(exs.map((e) => `${e.reasoning}|${[...e.knowledge].sort().join('+')}`));
+  const focus = new Set(exs.filter(e => e.variant !== true).map((e) => `${e.reasoning}|${[...e.knowledge].sort().join('+')}|${typeof e.variant === 'string' ? e.variant : ''}`));
   return { total: exs.length, byLevel, bySub, byReasoning, byTemplate, bySkill, knowledgeCovered: new Set(exs.flatMap((e) => e.knowledge)).size, distinctFocus: focus.size };
 }

@@ -1,84 +1,657 @@
 {
- "conhecimentos": 96,
- "exercicios": 330,
- "multiConhecimento": 93,
- "variantesFormato": 140,
- "porNivel": {
-  "1": 61,
-  "2": 233,
-  "3": 36
- },
- "porSubcapitulo": {
-  "brasil-acucar": {
-   "1": 5,
-   "2": 11,
-   "3": 3
+  "all": {
+    "total": 279,
+    "byLevel": {
+      "1": 240,
+      "2": 27,
+      "3": 12
+    },
+    "bySub": {
+      "brasil-acucar": {
+        "1": 14,
+        "2": 1,
+        "3": 1
+      },
+      "ouro-diamantes": {
+        "1": 23,
+        "2": 4,
+        "3": 1
+      },
+      "legado-africano": {
+        "1": 17,
+        "2": 1,
+        "3": 1
+      },
+      "sociedade-ordens": {
+        "1": 22,
+        "2": 5,
+        "3": 2
+      },
+      "monarquia-joao-v": {
+        "1": 60,
+        "2": 5
+      },
+      "barroco-patrimonio": {
+        "1": 32,
+        "2": 2,
+        "3": 1
+      },
+      "pombal-lisboa": {
+        "1": 72,
+        "2": 8,
+        "3": 6
+      },
+      "sintese": {
+        "2": 1
+      }
+    },
+    "byReasoning": {
+      "reconhecer": 101,
+      "verificar": 103,
+      "recordar": 43,
+      "ordenar": 9,
+      "classificar": 7,
+      "inferir": 6,
+      "relacionar": 4,
+      "avaliar": 3,
+      "interpretar": 3
+    },
+    "byTemplate": {
+      "reconhecer-mcq": 96,
+      "verificar-frase": 96,
+      "recordar-livre": 43,
+      "ordenar-causas": 5,
+      "excecao": 4,
+      "frase-falsa": 7,
+      "caso-periodo": 2,
+      "caso-transferencia": 4,
+      "caso-classificacao": 3,
+      "processo-consequencia": 2,
+      "processo-causa": 2,
+      "afirmacao-evidencia": 3,
+      "documento-resumo": 3,
+      "mapa": 5,
+      "ordenar-tematico": 4
+    },
+    "bySkill": {
+      "mapa": 15,
+      "conceito": 52,
+      "facto": 19,
+      "cronologia": 128,
+      "causa": 12,
+      "personagem": 27,
+      "consequencia": 14,
+      "fonte": 8,
+      "comparacao": 4
+    },
+    "knowledgeCovered": 96,
+    "distinctFocus": 133
   },
-  "ouro-diamantes": {
-   "1": 7,
-   "2": 22,
-   "3": 3
+  "eligible": {
+    "total": 255,
+    "byLevel": {
+      "1": 221,
+      "2": 23,
+      "3": 11
+    },
+    "bySub": {
+      "brasil-acucar": {
+        "1": 14,
+        "2": 1,
+        "3": 1
+      },
+      "ouro-diamantes": {
+        "1": 18,
+        "2": 3,
+        "3": 1
+      },
+      "legado-africano": {
+        "1": 17,
+        "2": 1,
+        "3": 1
+      },
+      "sociedade-ordens": {
+        "1": 20,
+        "2": 4,
+        "3": 1
+      },
+      "monarquia-joao-v": {
+        "1": 60,
+        "2": 5
+      },
+      "barroco-patrimonio": {
+        "1": 29,
+        "2": 2,
+        "3": 1
+      },
+      "pombal-lisboa": {
+        "1": 63,
+        "2": 7,
+        "3": 6
+      }
+    },
+    "byReasoning": {
+      "reconhecer": 93,
+      "verificar": 94,
+      "recordar": 39,
+      "ordenar": 9,
+      "classificar": 5,
+      "inferir": 5,
+      "relacionar": 4,
+      "avaliar": 3,
+      "interpretar": 3
+    },
+    "byTemplate": {
+      "reconhecer-mcq": 89,
+      "verificar-frase": 89,
+      "recordar-livre": 39,
+      "ordenar-causas": 5,
+      "excecao": 2,
+      "frase-falsa": 5,
+      "caso-periodo": 2,
+      "caso-transferencia": 3,
+      "caso-classificacao": 3,
+      "processo-consequencia": 2,
+      "processo-causa": 2,
+      "afirmacao-evidencia": 3,
+      "documento-resumo": 3,
+      "mapa": 4,
+      "ordenar-tematico": 4
+    },
+    "bySkill": {
+      "mapa": 12,
+      "conceito": 50,
+      "facto": 17,
+      "cronologia": 114,
+      "causa": 12,
+      "consequencia": 13,
+      "fonte": 8,
+      "personagem": 25,
+      "comparacao": 4
+    },
+    "knowledgeCovered": 89,
+    "distinctFocus": 121
   },
-  "legado-africano": {
-   "2": 4
-  },
-  "sociedade-ordens": {
-   "1": 7,
-   "2": 18,
-   "3": 5
-  },
-  "monarquia-joao-v": {
-   "1": 15,
-   "2": 55,
-   "3": 10
-  },
-  "barroco-patrimonio": {
-   "1": 10,
-   "2": 26,
-   "3": 3
-  },
-  "pombal-lisboa": {
-   "1": 17,
-   "2": 67,
-   "3": 8
-  },
-  "sintese": {
-   "2": 30,
-   "3": 4
+  "verdicts": {
+    "ba-regiao": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "ba-engenho": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "ba-trabalho": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "ba-methuen": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "ba-methuen-vinhos": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "ba-salvador": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "od-decada": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "od-quem": {
+      "state": "revisto",
+      "eligible": false,
+      "why": "A:od-quem: 1 origem(ns) independente(s) verificada(s)"
+    },
+    "od-capitania": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "od-quinto": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "od-fundicao": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "od-revolta": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "od-revolta-ano": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "od-diamantes": {
+      "state": "revisto",
+      "eligible": false,
+      "why": "A:od-diamantes: 1 origem(ns) independente(s) verificada(s)"
+    },
+    "od-declinio": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "od-mafra": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "la-irmandade": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "la-escravatura": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-tres": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-nomes": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-privilegiadas": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-povo": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-clero": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-nobreza": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-cristao-novo": {
+      "state": "revisto",
+      "eligible": false,
+      "why": "A:so-cristao-novo: 1 origem(ns) independente(s) verificada(s)"
+    },
+    "so-limpeza": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-lei-1773": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "so-cortes": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-nasc": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-inicio": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-morte": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-pai": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-cognome": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-secretarias": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-patriarcado": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-papa": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-patriarca": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-embaixada": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-academia": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-fidelissimo": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-titulo": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-mafra-promessa": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-mafra-pedra": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-mafra-sagrada": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-biblioteca": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-biblioteca-fim": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-capela": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-aq-autorizado": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-aq-altura": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-auto": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "mj-queluz": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-estilo": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-talha": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-azulejo": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-inspiracao": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-nasoni": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-clerigos-inicio": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-clerigos-torre": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-mafra-unesco": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-bomjesus": {
+      "state": "revisto",
+      "eligible": false,
+      "why": "A:bp-bomjesus: 1 origem(ns) independente(s) verificada(s)"
+    },
+    "bp-coimbra-unesco": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-porto-unesco": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "bp-ouropreto-unesco": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-nome": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-nasc": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-terramoto": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-dia": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-seguiu": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-maia": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-gaiola": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-praca": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-eugenio": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-estatua": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-estatua-ano": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-casa-risco": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-vrsa": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-douro": {
+      "state": "revisto",
+      "eligible": false,
+      "why": "A:pl-douro: 1 origem(ns) independente(s) verificada(s)"
+    },
+    "pl-marcos": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-atentado": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-jesuitas": {
+      "state": "revisto",
+      "eligible": false,
+      "why": "A:pl-jesuitas: 1 origem(ns) independente(s) verificada(s)"
+    },
+    "pl-aulas": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-policia": {
+      "state": "revisto",
+      "eligible": false,
+      "why": "A:pl-policia: 1 origem(ns) independente(s) verificada(s)"
+    },
+    "pl-alvara": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-colegio": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-universidade": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-ventre": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-ambito": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-viradeira": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-jose-sucessora": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "pl-aulas-gratis": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "la-fuba": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "la-quilombo": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "la-acaraje": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "la-liberdade": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "la-palmares": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    },
+    "la-zumbi": {
+      "state": "documental",
+      "eligible": true,
+      "why": "confirmado por ≥2 origens independentes (conteúdo verificado ou leitura atestada)"
+    }
   }
- },
- "porRaciocinio": {
-  "reconhecer": 96,
-  "verificar": 110,
-  "recordar": 44,
-  "calcular": 20,
-  "ordenar": 21,
-  "comparar": 15,
-  "classificar": 17,
-  "inferir": 7
- },
- "porMolde": {
-  "reconhecer-mcq": 96,
-  "verificar-frase": 96,
-  "recordar-livre": 44,
-  "calcular-intervalo": 18,
-  "ordenar-cronologia": 16,
-  "comparar-cronologia": 12,
-  "ordenar-causas": 5,
-  "excecao": 14,
-  "frase-falsa": 14,
-  "caso": 15
- },
- "porCompetencia": {
-  "mapa": 15,
-  "conceito": 45,
-  "facto": 28,
-  "cronologia": 165,
-  "causa": 12,
-  "personagem": 27,
-  "consequencia": 14,
-  "fonte": 2,
-  "comparacao": 22
- },
- "errosQA": []
 }

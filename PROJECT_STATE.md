@@ -1,9 +1,9 @@
 Projeto: Estrelas do Abu
 Plano: v1
-Atualizado: 2026-10-31
+Atualizado: 2026-11-01
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: obter revisão independente do pacote docs/hgp/auditoria-seculo-xviii/ (Codex/agentes bloqueados pelo Auto Mode); depois confirmar/repor os 4 itens excluídos e publicar como validada. Matemática (content/matematica, por integrar) suspensa.
+Próximo passo: concluir Git/publicação da Fábrica V2 quando houver ligação a github.com:443 e escrita em .git; manter backup e-prov6 e verificar URL público em três viewports. Ver docs/hgp/fabrica/validacao-v2.md.
 Decisão necessária:
 
 ## Sucesso
@@ -15,9 +15,9 @@ Decisão necessária:
 - [x] Vite+TS+Vitest+Playwright a correr com build verde | ev: npm run build; npm test (51); npx playwright test (9 em 3 viewports) — 2026-10-30
 
 ## E2 — Núcleo educativo
-### T2.1 · peso 3 · Por iniciar · Motor de exercícios, correção, nota, adaptação e revisão espaçada
-- [ ] Tipos de exercício (escolha múltipla, numérico/escrito, ordenar/associar, completar) com correção testada | ev:
-- [ ] Nota 0–20, repetição evitada, dificuldade por competência, revisão espaçada testados | ev:
+### T2.1 · peso 3 · Concluída · Motor de exercícios, correção, nota, adaptação e revisão espaçada
+- [x] Tipos de exercício (escolha múltipla, numérico/escrito, ordenar/associar, completar) com correção testada | ev: npm test: 1044 passados (2026-11-01); tests/core; docs/hgp/fabrica/validacao-v2.md
+- [x] Nota 0–20, repetição evitada, dificuldade por competência, revisão espaçada testados | ev: tests/core/skills-v2.test.ts; identity-v2.test.ts; e2e 48 passados/3 ignorados + V2 3 passados nos três viewports (2026-11-01)
 
 ### T2.2 · peso 3 · Por iniciar · Conteúdo 6.º ano Matemática e Português verificado
 - [ ] Temas ligados às Aprendizagens Essenciais DGE, respostas verificadas | ev:
@@ -30,14 +30,14 @@ Decisão necessária:
 - [ ] Percurso de 14 passos do contrato executável sem becos | ev:
 
 ## E4 — Validação
-### T4.1 · peso 2 · Por iniciar · Testes e revisão visual em 3 viewports
-- [ ] Build, unitários, e2e verdes; capturas inspecionadas; consola limpa | ev:
+### T4.1 · peso 2 · Concluída · Testes e revisão visual em 3 viewports
+- [x] Build, unitários, e2e verdes; capturas inspecionadas; consola limpa | ev: docs/hgp/fabrica/validacao-v2.md: build/tsc; 1044 unitários; 48 e2e + 3 V2; 3 ignorados exigem modo hgp-e2e; capturas V2 inspecionadas e pageerror vazio
 
 ### T4.2 · peso 1 · Por iniciar · Revisão independente do Codex pós-demo
 - [ ] Revisão feita ou registada como pendente com motivo | ev:
 
 ## E5 — Entrega
-### T5.1 · peso 1 · Por iniciar · Publicação isolada e relatório final
+### T5.1 · peso 1 · Bloqueado · Publicação isolada e relatório final
 - [ ] URL pública (com autorização) e relatório; expansão parada | ev:
 
 ## Decisões
@@ -69,7 +69,11 @@ Decisão necessária:
 
 - 2026-10-31: HGP por capítulos/subcapítulos (content/historia/estrutura.ts): Recuperar aprendizagens (4 subcapítulos confirmados, sem exercícios), D1 (8 subcapítulos do índice + complemento AE), D2 e restantes só como tema completo (provisório). Seleção por subcapítulo, lição por subcapítulo, perguntas ligadas a 1 subcapítulo. BLOQUEIO: fotografias do índice do manual não existem em nenhuma sessão guardada — pedir de novo para completar a hierarquia. Publicado em preview/e (anterior: e-prov3).
 
+- 2026-11-01: Fábrica V2 local concluída: 96 conhecimentos (89 elegíveis/7 pendentes), 279 exercícios gerados/255 elegíveis (221/23/11), 69 manuais mantidos. Identidade sem opções, rubrica, fontes contextuais e competências fora do Save. Autoverificação de 15 moldes; revisão docente/independente dos novos moldes pendente. Ver docs/hgp/fabrica/README.md e validacao-v2.md.
+
 ## Estacionadas
 ## Bloqueios
+- 2026-11-01: publicação V2 bloqueada por ligação a github.com:443 (git ls-remote falhou). git add também bloqueado: .git/index.lock Permission denied; sem commit/tag novos. Nenhuma alteração em gh-pages; URL público V2 não confirmado.
+
 ## Histórico do plano
 - v1 (2026-10-30): plano inicial

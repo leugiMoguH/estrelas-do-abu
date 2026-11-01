@@ -6,6 +6,9 @@
  * - a-confirmar: não entra em sessões normais até ser confirmado.
  * «revisto» NÃO equivale a validação documental.
  */
+import { XVIII_EXERCISES } from '../kb/historia/xviii';
+import { eligibleExercise } from '../kb/historia/xviii.validation';
+const generated = new Map(XVIII_EXERCISES.map(e => [`hgp-seculo-xviii-k-${e.id.replace(/\./g, '-')}`, eligibleExercise(e)]));
 export type HgpValidation = 'documental' | 'calculo' | 'revisto' | 'a-confirmar';
 
 const DOCUMENTAL = [
@@ -27,7 +30,7 @@ export const HGP_A_CONFIRMAR: readonly string[] = A_CONFIRMAR;
 
 export function validationOf(id: string): HgpValidation {
   if (A_CONFIRMAR.includes(id)) return 'a-confirmar';
-  if (id.startsWith('hgp-seculo-xviii-k-')) return 'documental'; // gerado de conhecimentos CONFIRMADOS na ficha factual (ver content/kb)
+  if (id.startsWith('hgp-seculo-xviii-k-')) return generated.get(id) ? 'documental' : 'a-confirmar';
   if (CALCULO.includes(id) && !DOCUMENTAL.includes(id)) return 'calculo';
   if (DOCUMENTAL.includes(id)) return 'documental';
   return 'revisto';

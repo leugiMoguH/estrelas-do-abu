@@ -1,0 +1,4396 @@
+{
+  "F1": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://cesad.ufs.br/ORBI/public/uploadCatalago/17292505102012Historia_do_Brasil_Colonia_Aula_4.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://companhiadasletras.com.br/sala_professor/pdfs/CadernoAtividades_BrasilUmaBiografia_cap2.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F2": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://cesad.ufs.br/ORBI/public/uploadCatalago/17292505102012Historia_do_Brasil_Colonia_Aula_4.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://companhiadasletras.com.br/sala_professor/pdfs/CadernoAtividades_BrasilUmaBiografia_cap2.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F3": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://cesad.ufs.br/ORBI/public/uploadCatalago/17292505102012Historia_do_Brasil_Colonia_Aula_4.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F4": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": []
+  },
+  "F5": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.redalyc.org/pdf/3033/303325733006.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infoescola.com/historia-europa/tratado-de-methuen/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/10B11c.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F6": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.redalyc.org/pdf/770/77003103.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://periodicoscientificos.ufmt.br/territoriosefronteiras/index.php/v03n02/article/download/691/349/1890",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F7": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.redalyc.org/pdf/770/77003103.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F8": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://periodicoscientificos.ufmt.br/territoriosefronteiras/index.php/v03n02/article/download/691/349/1890",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F9": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_1st_Marquis_of_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F10": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Brazilian_Gold_Rush",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F11": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Brazilian_Gold_Rush",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.redalyc.org/pdf/770/77003103.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F12": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Brazilian_Gold_Rush",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F13": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Brazilian_Gold_Rush",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://pt.wikipedia.org/wiki/Ciclo_do_ouro",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F14": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www3.ufmg.br/storage/e/8/f/d/e8fdbd5e4fd7576d66425cc0e4a5363e_16085963106786_861894680.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infoescola.com/historia/revolta-de-filipe-dos-santos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F15": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Ciclo_do_ouro",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://projetoagathaedu.com.br/questoes-vestibular/resolucao-historia/colonia/quinto-do-ouro-e-casas-de-fundicao.php",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F16": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www3.ufmg.br/storage/e/8/f/d/e8fdbd5e4fd7576d66425cc0e4a5363e_16085963106786_861894680.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infoescola.com/historia/revolta-de-filipe-dos-santos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F17": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www3.ufmg.br/storage/e/8/f/d/e8fdbd5e4fd7576d66425cc0e4a5363e_16085963106786_861894680.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.todamateria.com.br/revolta-de-vila-rica/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infoescola.com/historia/revolta-de-filipe-dos-santos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F18": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://biblioteca.ibge.gov.br/visualizacao/dtb/minasgerais/diamantina.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www2.ufjf.br/historia/files/2020/04/Samuel-Partson-Moreira-Francischini-A-Real-Extra%C3%A7%C3%A3o-Historiografia-e-debate.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Diamantina,_Minas_Gerais",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F19": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www2.ufjf.br/historia/files/2020/04/Samuel-Partson-Moreira-Francischini-A-Real-Extra%C3%A7%C3%A3o-Historiografia-e-debate.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F20": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://biblioteca.ibge.gov.br/visualizacao/dtb/minasgerais/diamantina.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Diamantina,_Minas_Gerais",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F21": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Ciclo_do_ouro",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://diamantina.cedeplar.ufmg.br/portal/download/diamantina-2006/D06A004.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F22": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Ciclo_do_ouro",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F23": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.redalyc.org/pdf/3033/303325733006.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.ie.ufrj.br/images/IE/PEPI/disserta%C3%A7%C3%B5es/2014/Felipe%20de%20Alvarenga%20Batista.pdf",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F24": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://run.unl.pt/bitstream/10362/27092/1/Religiao_e_Liberdade_WEB_1_.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://revistas.usal.es/uno/index.php/Studia_Historica/article/download/shhmo2016381123151/14889",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F25": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://revistas.usal.es/uno/index.php/Studia_Historica/article/download/shhmo2016381123151/14889",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F26": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://revistas.usal.es/uno/index.php/Studia_Historica/article/download/shhmo2016381123151/14889",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://run.unl.pt/bitstream/10362/27092/1/Religiao_e_Liberdade_WEB_1_.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F27": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://periodicos.usp.br/revhistoria/article/download/18912/20975/22443",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.redalyc.org/journal/770/77066580002/77066580002.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F28": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://blogs.correiobraziliense.com.br/coletivo-filhas-da-mae/2024/11/04/o-brasil-e-a-heranca-africana/",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.politize.com.br/palavras-de-origem-africana/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://revista.ugb.edu.br/simposio/article/download/3829/3011/8070",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F29": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://revista.ugb.edu.br/simposio/article/download/3829/3011/8070",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F30": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://profala.ufc.br/wp-content/uploads/2018/04/trabalho4.pdf",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://acessaber.com.br/wp-content/uploads/2025/06/atividade-de-historia-Os-povos-africanos-e-sua-influencia-na-cultura-brasileira-5-e-6-ano-com-resposta.pdf",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F31": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": []
+  },
+  "F32": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://mais.opovo.com.br/jornal/vidaearte/2020/11/20/as-herancas-da-cultura-africana-na-gastronomia-brasileira.html",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://blogs.correiobraziliense.com.br/coletivo-filhas-da-mae/2024/11/04/o-brasil-e-a-heranca-africana/",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F33": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": []
+  },
+  "F34": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F35": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F36": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F37": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F38": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://seer.ufrgs.br/index.php/revistaihgrgs/article/view/133689",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$cristao-novo",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F39": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://seer.ufrgs.br/index.php/webmosaica/article/view/31841",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F40": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.e-publicacoes.uerj.br/dia-logos/article/download/23340/16634/75166",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F41": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/John_V_of_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F42": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/John_V_of_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F43": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F44": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Portuguese_Cortes",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://ap1.sib.uc.pt/bitstream/10316.2/46747/1/cortes_de_lisboa_em_1677.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F45": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$absolutismo-joanino",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F46": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://portugal.gov.pt/pt/gc21/area-de-governo/negocios-estrangeiros/informacao-adicional/historia-do-ministerio-dos-negocios-estrangeiros",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://revistas.usp.br/ran/es/article/view/126962",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548945019_bac22fd30f0c48b2e05f65d2fd3ae72d.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F47": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Patriarchate_of_Lisbon",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://cardinals.fiu.edu/bios1737.htm",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.tesouroreal.pt/en/pages/f9c5d0d7",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F48": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://cardinals.fiu.edu/bios1737.htm",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Patriarch_of_Lisbon",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F49": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.dns.pt/en/galeriapt/details.php?id=16",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.citaliarestauro.com/?p=41984",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.dn.pt/arquivo/diario-de-noticias/coche-dos-oceanos-voltou-a-sair-a-rua.html",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F50": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.lonelyplanet.com/pois/1534244",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://observador.pt/2017/05/23/museu-dos-coches-recebeu-10-mil-visitantes-em-dois-dias/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F51": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://dichp.bnportugal.gov.pt/imagens/academia_historia_eng.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://ap1.sib.uc.pt/bitstream/10316.2/27950/1/rph42_artigo14.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548206372_0cb934859fa1e57f5220b3ca79a1ae83.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F52": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Most_Faithful_Majesty",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.janusonline.pt/arquivo/docs9900/artigo_janus9900_1_18.doc",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F53": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://estudogeral.sib.uc.pt/bitstream/10316/85057/1/D4_AFPimentel_Monumentos%2035.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/John_V_of_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F54": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://estudogeral.sib.uc.pt/bitstream/10316/85057/1/D4_AFPimentel_Monumentos%2035.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F55": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://observador.pt/especiais/a-boda-real-e-o-regresso-dos-braganca-a-mafra-o-palacio-onde-uma-princesa-foi-batizada-e-de-onde-partiu-o-ultimo-rei-portugues/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.idealista.pt/news/node/66653",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F56": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Palace_of_Mafra",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://lifecooler.com/artigo/dormir/museu-de-so-roque/326842",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F57": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F58": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.visitportugal.com/pt-pt/node/138329",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F59": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.uc.pt/en/tourism/unesco/joanina-library",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://pages.uc.pt/en/bguc/activities/joanina300years",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F60": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.theartnewspaper.com/2018/08/20/prefabulous-the-story-of-an-18th-century-chapel-made-entirely-in-rome-for-a-church-in-lisbon",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://econtents.bc.unicamp.br/eventos/index.php/eha/article/download/4682/4491/12648",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://comum.rcaap.pt/bitstream/10400.26/46409/1/Silva_Andre_Martins_A_CSJB.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F61": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Aqueduto_das_%C3%81guas_Livres",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/%C3%81guas_Livres_Aqueduct",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.visitlisboa.com/en/c/sightseeing-and-activities/museums-and-monuments/monuments/p/aqueduto-das-aguas-livres",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F62": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/%C3%81guas_Livres_Aqueduct",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://rfm.pt/atualidade/23701/o-maior-arco-em-ogiva-de-pedra-do-mundo-fica-em-lisboa-e-e-apenas-uma-pequena-parte-de-um-monumento-gigantesco",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F63": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/%C3%81guas_Livres_Aqueduct",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.visitlisboa.com/en/c/sightseeing-and-activities/museums-and-monuments/monuments/p/aqueduto-das-aguas-livres",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F64": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Aqueduto_das_%C3%81guas_Livres",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F65": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F66": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$antonio-jose-da-silva",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.britannica.com/print/article/544722",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.jewishvirtuallibrary.org/antonio-jose-da-silva",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F67": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.parquesdesintra.pt/en/parks-monuments/national-palace-and-gardens-of-queluz/history/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://nppg.org.br/revistas/gestaoegerenciamento/article/download/16/14",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F68": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://rihgb.emnuvens.com.br/revista/article/download/77/63/127",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F69": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://rihgb.emnuvens.com.br/revista/article/download/77/63/127",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F70": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://ojs3.ge-iic.com/index.php/revista/article/download/21/pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://rio.upo.es/entities/publication/a42adc9a-4198-4e99-ba7b-5efd478ccc0f/full",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F71": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Torre_dos_Cl%C3%A9rigos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://structurae.net/en/structures/clerigos-tower",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F72": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Torre_dos_Cl%C3%A9rigos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://porto.pt/en/news/you-are-in-porto-and-thinking-where-to-head-next--how-about-the-clerigos-tower",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F73": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.sabado.pt/portugal/amp/sabe-quais-sao-os-17-bens-portugueses-na-lista-do-patrimonio-mundial-da-unesco",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F74": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F75": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.uc.pt/en/tourism/unesco/joanina-library",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.sabado.pt/portugal/amp/sabe-quais-sao-os-17-bens-portugueses-na-lista-do-patrimonio-mundial-da-unesco",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F76": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.sabado.pt/portugal/amp/sabe-quais-sao-os-17-bens-portugueses-na-lista-do-patrimonio-mundial-da-unesco",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F77": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://whc.unesco.org/en/list/124",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ouro_Preto",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.ipatrimonio.org/wp-content/uploads/2018/03/Patrim%C3%B4nio-Mundial-Cultural-e-Nacional_semcapa.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F78": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://worldheritagesite.org/tentative/id/6221",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F79": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_1st_Marquis_of_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F80": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F81": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F82": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.nationalgeographicbrasil.com/meio-ambiente/2024/08/terremoto-em-portugal-traz-de-volta-a-historia-do-catastrofico-tremor-de-terra-que-atingiu-lisboa-em-1755",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F83": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.nationalgeographicbrasil.com/meio-ambiente/2024/08/terremoto-em-portugal-traz-de-volta-a-historia-do-catastrofico-tremor-de-terra-que-atingiu-lisboa-em-1755",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F84": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F85": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://agencia.fapesp.br/em-busca-do-epicentro/2383",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.dn.pt/vida-e-futuro/terramoto-de-1755-tera-sido-de-menor-magnitude-do-que-se-pensava-11681114.html",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F86": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://revistapesquisa.fapesp.br/o-mal-sobre-a-terra/",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://impactum-journals.uc.pt/territorium/article/download/1647-7723_15_13/2496/12113",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F87": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F88": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$eugenio-dos-santos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Eug%C3%A9nio_dos_Santos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F89": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$eugenio-dos-santos",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://periodicos.puc-campinas.edu.br/oculum/article/download/798/778/1620",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F90": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pra%C3%A7a_do_Com%C3%A9rcio",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.visitportugal.com/pt-pt/node/139363",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F91": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Statue_of_Jos%C3%A9_I_of_Portugal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://archive.org/details/aoreyfidelissimo00mach",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://mail.anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548953099_66430b677ba62f5df90dd0e6500c68c4.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F92": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://baixoguadiana.com/en/territorio/patrimonio-edificado/nucleo-pombalino/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/$vila-real-de-santo-antonio",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F93": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://baixoguadiana.com/en/territorio/patrimonio-edificado/nucleo-pombalino/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://postal.pt/algarve/esta-cidade-do-algarve-ao-pe-da-praia-foi-construida-em-menos-de-dois-anos-e-e-das-mais-baratas-para-fazer-ferias/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/$vila-real-de-santo-antonio",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F94": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://baixoguadiana.com/en/territorio/patrimonio-edificado/nucleo-pombalino/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://whc.unesco.org/en/tentativelists/6226",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F95": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$vinho-do-porto",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://realcompanhiavelha.pt/en/?p=3397",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://pt.wikipedia.org/wiki/Real_Companhia_Velha",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F96": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.taylor.pt/en/what-is-port-wine/history-of-port/the-marquis-of-pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$vinho-do-porto",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F97": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Processo_dos_T%C3%A1voras",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://britannica.com/print/article/584484",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$francisco-de-assis-de-tavora",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F98": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://periodicos.ufes.br/ufesupem/article/view/11768/8464",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://pt.wikipedia.org/wiki/Processo_dos_T%C3%A1voras",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F99": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://periodicos.usp.br/revhistoria/article/download/18912/20975/22443",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.redalyc.org/journal/770/77066580002/77066580002.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_1st_Marquis_of_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F100": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.redalyc.org/journal/770/77066580002/77066580002.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://thefreewombproject.com/portugal-2/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.e-publicacoes.uerj.br/dia-logos/article/download/23367/16649/75239",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F101": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://periodicos.usp.br/revhistoria/article/download/18912/20975/22443",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://observador.pt/opiniao/fernando-rosas-nao-entende-o-marques-de-pombal/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F102": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://seer.ufrgs.br/index.php/revistaihgrgs/article/view/133689",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.e-publicacoes.uerj.br/dia-logos/article/download/23340/16634/75166",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$cristao-novo",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F103": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://periodicos.ufes.br/ufesupem/article/view/11768/8464",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F104": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/apoio/artigos/$real-colegio-dos-nobres",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/download/242/214/589",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://mail.anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548206372_ebe311c735bc175337cd8a1a8736fad7.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F105": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://periodicos.ufes.br/ufesupem/article/view/11768/8464",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F106": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://rdpc.uevora.pt/bitstream/10174/35521/1/LH_A%20pol%c3%adcia%20em%20Portugal%20no%20s%c3%a9culo%20XVIII_%20ambiguidades%20e%20equ%c3%advocos.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://portal.uab.pt/wp-content/uploads/2022/05/NOT-resumo-CEG.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Pol%C3%ADcia_de_Seguran%C3%A7a_P%C3%BAblica",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F107": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F108": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F109": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$viradeira",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://ihu.unisinos.br/categorias/170-noticias-2014/528898-4-de-marco-de-1777-desgraca-e-demissao-de-pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F110": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://revistas.rcaap.pt/analisesocial/article/view/41199",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.ctt.pt/contentAsset/raw-data/68213903-80aa-406a-a569-9ccea34ffd43/ficheiro/c3fbe983-76da-4113-9c80-08ad4b85d247/export/Pagela%20_diptica_150_anos_abolicao_escravatura_WEB%2011FEV2019.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F111": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://comum.rcaap.pt/bitstreams/c54b8b25-09b4-4dc8-9923-c9f5380f5caa/download",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.ccdrc.pt/pt/?p=92209",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F112": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://impactum-journals.uc.pt/diaita/article/download/14381/10141/67238",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://revistahumanares.uespi.br/index.php/HumanaRes/article/download/152/86",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F113": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": []
+  },
+  "F201": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.politize.com.br/palavras-de-origem-africana/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F202": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.infoescola.com/noticias/15-palavras-do-dia-a-dia-dos-brasileiros-que-sao-herancas-africanas/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F203": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548875182_bb23acd9292b1a1862131f88507e051f.pdf",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "F204": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 0,
+    "fontes": [
+      {
+        "url": "https://www.correiobraziliense.com.br/opiniao/2023/08/5116419-artigo-a-musica-negra-como-voz-da-resistencia.html",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "X1": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/fub%C3%A1",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://dicionario.priberam.org/fub%C3%A1",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "X2": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/quilombo",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://dicionario.priberam.org/quilombo",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "X3": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://sicg.iphan.gov.br/sicg/bemImaterial/rel/106/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.ba.gov.br/ipac/oficio-das-baianas-do-acaraje",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "X4": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://eve.fcsh.unl.pt/pt/temas-e-factos/confrarias-de-negros-no-imperio-portugues",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/his/a/qvqDbVM7RsyLp7jrFNWySwG/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "X5": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.historia.uff.br/impressoesrebeldes/revolta/palmares/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.gov.br/palmares/pt-br/departamentos/protecao-preservacao-e-articulacao/serra-da-barriga-1/tour-pelo-parque/zumbi",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "X6": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.historia.uff.br/impressoesrebeldes/revolta/palmares/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.gov.br/palmares/pt-br/departamentos/protecao-preservacao-e-articulacao/serra-da-barriga-1/tour-pelo-parque/zumbi",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:ba-regiao": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 3,
+    "fontes": [
+      {
+        "url": "https://ppgh.ufba.br/sites/ppgh.ufba.br/files/entre_aldeamentos_mocambos_e_engenhos_etnogeneses_e_reconfiguracoes_0.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/tem/a/WqHJJSskCq6cVBgcbz9fMrB/?format=html",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/vh/a/J78YQTr9ssvPDfj9Mq5k3kp/?lang=pt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:ba-engenho": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://historialuso.arquivonacional.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/sociedade-do-acucar",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/tem/a/WqHJJSskCq6cVBgcbz9fMrB/?format=html",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:ba-trabalho": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://historialuso.arquivonacional.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/sociedade-do-acucar",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://new.scielo.br/j/nec/a/xB5SjkdK7zXRvRjKRXRfKPh/?lang=pt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:ba-methuen": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.treccani.it/enciclopedia/john-methuen_(Enciclopedia-Italiana)/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:ba-methuen-vinhos": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/methuen-treaty-1703",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:ba-methuen-panos": {
+    "estado": "erro factual confirmado",
+    "erroOriginal": true,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.treccani.it/enciclopedia/john-methuen_(Enciclopedia-Italiana)/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:ba-salvador": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.scielo.br/j/rep/a/QzGzHffGRLphKvjvFwQbFbK/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/alm/a/WwVvCfwppdkBNDQZx3qCXYg/?lang=pt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-decada": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://bd-login.tjmg.jus.br/jspui/bitstream/tjmg/29/1/Edicao193.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://portal.iphan.gov.br/uploads/ckfinder/arquivos/Dossie%20toque%20dos%20sinos%281%29.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-quem": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://portal.iphan.gov.br/uploads/ckfinder/arquivos/Dossie%20toque%20dos%20sinos%281%29.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://historialuso.an.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/ouro-e-diamantes",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-capitania": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.arquivopublico.mg.gov.br/estrutura-e-dinamica-da-organizacao-politico-administrativa-de-minas-gerais/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://bd-login.tjmg.jus.br/jspui/bitstream/tjmg/29/1/Edicao193.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-quinto": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.bcb.gov.br/content/acessoinformacao/museudocs/pub/Cartilha_Dinheiro_no_Brasil.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-fundicao": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.bcb.gov.br/content/acessoinformacao/museudocs/pub/Cartilha_Dinheiro_no_Brasil.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-revolta": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://mapa.an.gov.br/index.php/assuntos/15-dicionario/57-dicionario-da-administracao-publica-brasileira-do-periodo-colonial/146-casas-de-fundicao-1603-1821",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://vestibular.ufop.br/downloads/vestibulares/provasanteriores/1vest2003/2003_1_historia.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-revolta-ano": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://vestibular.ufop.br/downloads/vestibulares/provasanteriores/1vest2003/2003_1_historia.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-diamantes": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://www.gov.br/cnpq/pt-br/assuntos/noticias/atualidades/pesquisa-do-inct-sobre-o-patrimonio-brasileiro-reconstitui-a-historia-dos-dois-maiores-diamantes-encontrados-no-brasil-colonial/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://portal.iphan.gov.br/uploads/publicacao/CadTec4_SitiosHistoricos_m.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-tejuco": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://historialuso.an.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/ouro-e-diamantes",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.gov.br/cnpq/pt-br/assuntos/noticias/atualidades/pesquisa-do-inct-sobre-o-patrimonio-brasileiro-reconstitui-a-historia-dos-dois-maiores-diamantes-encontrados-no-brasil-colonial/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-declinio": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://canal.cecierj.edu.br/012016/094d83ac6d7030c6e62c96b15708d1ba.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.unirio.br/cchs/ess/Members/morena-marques/formacao-social-do-brasil/Celso%20Furtado%20-%20Formacao%20Economica%20do%20Brasil.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:od-mafra": {
+    "estado": "fonte inacessível",
+    "erroOriginal": true,
+    "corrigido": true,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://culturaportugal.gov.pt/pt/conhecer/local/mmp-locais/palacio-nacional-de-mafra/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:la-irmandade": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://eve.fcsh.unl.pt/pt/temas-e-factos/confrarias-de-negros-no-imperio-portugues",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/his/a/qvqDbVM7RsyLp7jrFNWySwG/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:la-escravatura": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://run.unl.pt/bitstream/10362/50434/1/Leonorama_FINAL.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/rh/a/FmzWFfbgj9CqdXdCQgJdmVt/?lang=pt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-tres": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-nomes": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-privilegiadas": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-povo": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-clero": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-nobreza": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 3,
+    "fontes": [
+      {
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.cepese.pt/portal%22/pt/publicacoes/obras/os-arquivos-da-vinha-e-do-vinho-do-douro/as-memorias-paroquiais-de-1758-2013-uma-microfonte-para-a-macro-historia-do-vinho-do-douro/as-memorias-paroquiais-de-1758-2013-uma-microfonte-para-a-macro-historia-do-vinho-do-douro/%40%40download/file/As%20mem%C3%B3rias%20paroquiais%20de%201758%20%E2%80%93%20uma%20microfonte%20para%20a%20macro-hist%C3%B3ria%20do%20vinho%20do%20douro.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-cristao-novo": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://saberaberto.uneb.br/server/api/core/bitstreams/61caf427-0867-4f84-8af5-3ac2139e268e/content",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://run.unl.pt/entities/publication/0be93ff0-3ac9-4f1e-ae7f-b1d6bfc903be",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-limpeza": {
+    "estado": "fonte inacessível",
+    "erroOriginal": true,
+    "corrigido": true,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://dspace.uevora.pt/rdpc/bitstream/10174/11061/1/Maria%20Fernanda%20de%20Olival%20-%20100%20467%20-%20.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/rh/a/WSvycVb5gHzM3xrZKQZVXJm/?lang=pt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-lei-1773": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2022/06/catalogo-3-PT_exilios.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://repositorio.ulisboa.pt/bitstream/10451/46737/1/_Ebook_Escritas%2520e%2520Cultura_completo.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:so-cortes": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://run.unl.pt/server/api/core/bitstreams/148d38ad-4d72-4918-9daf-5939c8974b45/content",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.fd.unl.pt/Anexos/Investigacao/2121.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-nasc": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://snl.no/Johan_5.",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-inicio": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.arqnet.pt/dicionario/joao5.html",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://snl.no/Johan_5.",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-morte": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$d.-joao-v",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://snl.no/Johan_5.",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-pai": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.arqnet.pt/dicionario/joao5.html",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-cognome": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$d.-joao-v",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-secretarias": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://teses.usp.br/teses/disponiveis/8/8137/tde-07022018-123131/publico/2017_MarioFranciscoSimoesJunior_VCorr.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/artigo1631.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-patriarcado": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.lisboa.pt/fileadmin/informacao/publicacoes/arquivo_municipal/Cadernos_Arquivo_Municipal_1.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-papa": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.lisboa.pt/fileadmin/informacao/publicacoes/arquivo_municipal/Cadernos_Arquivo_Municipal_1.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.conferenciaepiscopal.pt/v1/wp-content/uploads/JMJ2022_Patriarcado_NotaImprensa.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-patriarca": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://ap1.sib.uc.pt/bitstream/10316.2/40746/1/os_bispos_de_portugal.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=object%3BBAR%3Bpt%3BMus11_A%3B40%3Bpt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-embaixada": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.mncoches.gov.pt/colecao/coche-dos-oceanos",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://revistas.ucp.pt/index.php/mathesis/article/view/5168/5045",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-academia": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://run.unl.pt/bitstream/10362/188781/1/HistoriografiaCidades_Completo.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://comum.rcaap.pt/bitstreams/f20c247d-2d3e-4a6d-9b59-617b26bfb72b/download",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-fidelissimo": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/18318.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-titulo": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/18318.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-mafra-promessa": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.pnmafra.gov.pt/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-mafra-pedra": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.pnmafra.gov.pt/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-mafra-sagrada": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.pnmafra.gov.pt/basilica/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.cm-mafra.pt/pages/1085",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-biblioteca": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B11%3Ben",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://culture.ec.europa.eu/pt-pt/cultural-heritage/initiatives-and-success-stories/european-heritage-label/european-heritage-label-sites/general-library-of-the-university-of-coimbra-portugal",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-biblioteca-fim": {
+    "estado": "fonte inacessível",
+    "erroOriginal": true,
+    "corrigido": true,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://visit.uc.pt/pt/space-list/joanina",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/download/1246/pdf_15/3440",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-capela": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://diariodarepublica.pt/dr/detalhe/decreto/7-2026-1051282296",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://museusaoroque.scml.pt/colecoes/csjb/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-aq-autorizado": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sociedadehistorica.pt/wp-content/uploads/Boletim-SHIP-102-103_compressed.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-aq-agua": {
+    "estado": "erro factual confirmado",
+    "erroOriginal": true,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B27%3Ben",
+        "acesso": "não consultada",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-aq-altura": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.epal.pt/EPAL/menu/museu-da-%C3%A1gua/exposi%C3%A7%C3%A3o-permanente-patrim%C3%B3nio-associado/aqueduto-das-%C3%A1guas-livres",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$aqueduto-das-aguas-livres",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-aq-sismo": {
+    "estado": "erro factual confirmado",
+    "erroOriginal": true,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.museuarqueologicodocarmo.arqueologos.pt/publicacoes/arqueologia_historia/serie_13/Vol_68/AH_Vol68.pdf",
+        "acesso": "não consultada",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-auto": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$antonio-jose-da-silva",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://ap1.sib.uc.pt/bitstream/10316.2/5641/1/a_universidade_de_coimbra_e_o_brasil_2012.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:mj-queluz": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.parquesdesintra.pt/pt/parques-monumentos/palacio-nacional-e-jardins-de-queluz/historia/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://cm-sintra.pt/phocadownload/PDF/consulta_publica/revisao_pdm/documentos-consulta/relatorios-diagnostico/Tema-11-Patrimonio-Natural-Arquitetonico-e-Arqueologico.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-estilo": {
+    "estado": "fonte inacessível",
+    "erroOriginal": true,
+    "corrigido": true,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://econtents.sbu.unicamp.br/eventos/index.php/eha/article/view/4682",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-talha": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=73419",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-azulejo": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://raiz.museusemonumentos.pt/DetalhesObra/Index/229814?tipo=OBJ",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-inspiracao": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://econtents.sbu.unicamp.br/eventos/index.php/eha/article/view/4682",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-brasil": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://museuartesacra.org.br/barroco-em-minas/",
+        "acesso": "não consultada",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://teses.usp.br/teses/disponiveis/102/102132/tde-30062016-112001/publico/Corrigida2.pdf",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-nasoni": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.torredosclerigos.pt/328-o-aniversario-do-nascimento-de-nicolau-nasoni/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-clerigos-inicio": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.torredosclerigos.pt/historia-da-irmandade-dos-clerigos/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-clerigos-torre": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.torredosclerigos.pt/historia-da-irmandade-dos-clerigos/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-mafra-unesco": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.cm-mafra.pt/pages/3176",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-bomjesus": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://whc.unesco.org/en/list/1590/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.cm-braga.pt/pt/1201/conhecer/historia-e-patrimonio/patrimonio-cultural/patrimonio-edificado/item/item-1-657",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-coimbra-unesco": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://whc.unesco.org/en/list/1387/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.uc.pt/dados/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-porto-unesco": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://whc.unesco.org/en/list/755/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.up.pt/fep/pt/porto/viver-no-porto/sobre-o-porto/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:bp-ouropreto-unesco": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://whc.unesco.org/en/list/124",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.gov.br/iphan/pt-br/assuntos/noticias/ouro-preto-mg-celebra-45-anos-como-patrimonio-mundial-da-humanidade",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-nome": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$marques-de-pombal",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://imprensanacional.pt/do-terreiro-do-paco-a-praca-do-comercio-historia-de-um-espaco-urbano-nos-320-anos-do-marques/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-nasc": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://imprensanacional.pt/do-terreiro-do-paco-a-praca-do-comercio-historia-de-um-espaco-urbano-nos-320-anos-do-marques/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://histedbrantigo.fe.unicamp.br/navegando/glossario/verb_b_marques_de_pombal.htm",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$marques-de-pombal",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-terramoto": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.museumedeirosealmeida.pt/2024/10/23/algumas-ruinas-de-lisboa/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-dia": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$terramoto-de-1755-e-reconstrucao-pombalina",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-seguiu": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.museu.presidencia.pt/pt/conhecer/mprplus/quadragesimo-primeiro-numero/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-maia": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://whc.unesco.org/en/tentativelists/6226",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-gaiola": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://tecnico.ulisboa.pt/pt/eventos/dia-internacional-dos-monumentos-e-sitios-2022/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-praca": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-eugenio": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-estatua": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-estatua-ano": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://informacao.lisboa.pt/fileadmin/portal/temas/urbanismo/planos_pormenor/baixa_pombalina/pecas_escritas/relatorio_anexos/pp_baixa_pombalina_relatorio_05_relatorio_setorial_carac_espaco_publico.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-casa-risco": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0402.htm",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-vrsa": {
+    "estado": "fonte inacessível",
+    "erroOriginal": true,
+    "corrigido": true,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$vila-real-de-santo-antonio",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72810",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-vrsa-func": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$vila-real-de-santo-antonio",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://idus.us.es/bitstreams/6b3ddcdd-c91c-4cd9-b51f-4fe805530660/download",
+        "acesso": "não consultada",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-douro": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://www.ivdp.pt/pt/vinhos/vinhos-do-porto/historia/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2018/02/ID-L-739-PT-TT-JC-v1_2017.pdf",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-marcos": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.cm-mesaofrio.pt/pages/672?poi_id=73",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72382",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-atentado": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.museu.presidencia.pt/pt/conhecer/mprplus/decimo-quarto-numero/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.historia.uff.br/impressoesrebeldes/revista/nobreza-no-cadafalso/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-jesuitas": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://antt.dglab.gov.pt/exposicoes-virtuais-2/expulsao-dos-jesuitas/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.scielo.br/j/rbhe/a/v8Ln7mgRh4Gm3z7kZVpXr9R/?lang=pt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-aulas": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://educa.fcc.org.br/scielo.php?lng=pt&nrm=iso&pid=S1984-64442024000100267&script=sci_arttext&tlng=pt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-policia": {
+    "estado": "evidência insuficiente",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 1,
+    "fontes": [
+      {
+        "url": "https://antt.dglab.gov.pt/exposicoes-virtuais-2/intendencia-geral-da-policia/",
+        "acesso": "erro",
+        "leitura": false,
+        "lexical": false
+      },
+      {
+        "url": "https://www.psp.pt/Pages/sobre-nos/quem-somos/historia.aspx",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-alvara": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-colegio": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.aatt.org/site/index.php?id=221&op=Nucleo",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://lusosofia.ubi.pt/textos/20111031-marques_de_pombal_compendio_historico_da_universidade_de_coimbra.pdf",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-universidade": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.uc.pt/imprensa/descobrir/o-edificio/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://periodicos.ufes.br/ufesupem/article/view/11768/8464",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-ventre": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-ambito": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-viradeira": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 3,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$d.-jose-i",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.npg.org.uk/collections/search/person/mp63332/maria-i-queen-of-portugal",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.infopedia.pt/artigos/$d.-maria-i",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-jose-sucessora": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://www.infopedia.pt/artigos/$d.-maria-i",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://www.npg.org.uk/collections/search/person/mp63332/maria-i-queen-of-portugal",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  },
+  "A:pl-aulas-gratis": {
+    "estado": "fonte inacessível",
+    "erroOriginal": false,
+    "corrigido": false,
+    "contextual": 2,
+    "fontes": [
+      {
+        "url": "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      },
+      {
+        "url": "https://educa.fcc.org.br/scielo.php?lng=pt&nrm=iso&pid=S1984-64442024000100267&script=sci_arttext&tlng=pt",
+        "acesso": "erro",
+        "leitura": true,
+        "lexical": false
+      }
+    ]
+  }
+}

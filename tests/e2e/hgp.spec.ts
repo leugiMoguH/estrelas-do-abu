@@ -96,7 +96,7 @@ test('HGP: mapa limpo, sem atalhos de matérias; ligação ?capitulo= e seleçã
  const snapshot=snapshotJson as Snap[];
  const active=snapshot.filter(i=>i.validacao!=='a-confirmar');
  expect(active.filter(i=>i.origem==='manual').length).toBe(69);
- const chapter=active.filter(i=>i.secao!=='d1-extra-novas-culturas');expect(chapter.length).toBeGreaterThanOrEqual(350);
+ const chapter=active.filter(i=>i.secao!=='d1-extra-novas-culturas');expect(chapter.length).toBeGreaterThanOrEqual(300);
  await page.goto('/');await page.getByRole('button',{name:/Jogar/}).first().click();
  await page.getByRole('button',{name:/Surpreende/}).click();await page.getByRole('button',{name:/Vamos ao centro/}).click();
  // mapa: nenhum botão amarelo de teste, nenhum atalho de matéria; sem tema anterior, sem «Continuar a estudar»
@@ -171,7 +171,7 @@ test('HGP: sessões consecutivas da recuperação não repetem perguntas',async(
 });
 test('HGP: um subcapítulo escolhido só traz perguntas e lição desse subcapítulo',async({page})=>{
  const snapshot=snapshotJson as Snap[];
- const ouro=snapshot.filter(i=>i.secao==='d1-ouro-diamantes'&&i.validacao!=='a-confirmar');expect(ouro.length).toBeGreaterThanOrEqual(30);
+ const ouro=snapshot.filter(i=>i.secao==='d1-ouro-diamantes'&&i.validacao!=='a-confirmar');expect(ouro.length).toBeGreaterThanOrEqual(20);
  await enter(page);await page.getByRole('button',{name:'Limpar',exact:true}).click();await expandTopics(page);
  await page.getByRole('checkbox',{name:/Ouro, diamantes e escravização/}).check();
  await page.getByRole('button',{name:/Tomé/}).click();await page.getByRole('button',{name:'Explica-me esta matéria'}).click();

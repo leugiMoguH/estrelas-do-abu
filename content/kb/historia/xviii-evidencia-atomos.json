@@ -1,0 +1,2342 @@
+{
+  "A:ba-regiao": {
+    "status": "confirmado",
+    "text": "Síntese válida dos principais centros coloniais, não de todo o período e de todas as regiões. Havia produção noutras capitanias; a fonte da UFBA refere especificamente 1580.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Entre aldeamentos, mocambos e engenhos: etnogéneses e reconfigurações — UFBA",
+        "url": "https://ppgh.ufba.br/sites/ppgh.ufba.br/files/entre_aldeamentos_mocambos_e_engenhos_etnogeneses_e_reconfiguracoes_0.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "ficando atrás somente da capitania de Pernambuco",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-regiao: ficando atrás somente da capitania de Pernambuco"
+      },
+      {
+        "title": "A formação e consolidação de um grupo de produtores de açúcar da nobreza da terra — Tempo",
+        "url": "https://www.scielo.br/j/tem/a/WqHJJSskCq6cVBgcbz9fMrB/?format=html",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Pernambuco como o principal produtor",
+        "group": "/j/tem/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-regiao: Pernambuco como o principal produtor"
+      },
+      {
+        "title": "O açúcar amargo: Suor, sangue e lágrimas nos engenhos — Varia Historia",
+        "url": "https://www.scielo.br/j/vh/a/J78YQTr9ssvPDfj9Mq5k3kp/?lang=pt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "em Minas Gerais que produziam açúcar e aguardente",
+        "group": "/j/vh/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-regiao: em Minas Gerais que produziam açúcar e aguardente"
+      }
+    ]
+  },
+  "A:ba-engenho": {
+    "status": "confirmado",
+    "text": "Engenho pode designar o equipamento de moagem ou o conjunto da unidade produtiva; nem todo o engenho fabricava açúcar cristalizado.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Sociedade do Açúcar — Arquivo Nacional",
+        "url": "https://historialuso.arquivonacional.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/sociedade-do-acucar",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "desde o cultivo da cana até o comércio do açúcar",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-engenho: desde o cultivo da cana até o comércio do açúcar"
+      },
+      {
+        "title": "A formação e consolidação de um grupo de produtores de açúcar da nobreza da terra — Tempo",
+        "url": "https://www.scielo.br/j/tem/a/WqHJJSskCq6cVBgcbz9fMrB/?format=html",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "engenhos de fabricação de mel de cana-de-açúcar e rapadura",
+        "group": "/j/tem/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-engenho: engenhos de fabricação de mel de cana-de-açúcar e rapadura"
+      }
+    ]
+  },
+  "A:ba-trabalho": {
+    "status": "confirmado",
+    "text": "A substituição foi gradual, desigual e incompleta; coexistiram trabalhadores indígenas, africanos escravizados e trabalhadores livres. Corrigir a redação para «mão de obra de africanos escravizados».",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Sociedade do Açúcar — Arquivo Nacional",
+        "url": "https://historialuso.arquivonacional.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/sociedade-do-acucar",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "a escravidão africana começou a suplantar a indígena",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-trabalho: a escravidão africana começou a suplantar a indígena"
+      },
+      {
+        "title": "A dinâmica da escravidão no Brasil: resistência, tráfico negreiro e alforrias — Novos Estudos CEBRAP",
+        "url": "https://new.scielo.br/j/nec/a/xB5SjkdK7zXRvRjKRXRfKPh/?lang=pt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "A mão-de-obra empregada na montagem dos engenhos de açúcar no Brasil foi predominantemente indígena.",
+        "group": "/j/nec/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-trabalho: A mão-de-obra empregada na montagem dos engenhos de açúcar no Brasil foi predominantemente indígena."
+      }
+    ]
+  },
+  "A:ba-methuen": {
+    "status": "confirmado",
+    "text": "Trata-se do tratado comercial; houve também tratados de aliança em maio de 1703.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Tratado de Methuen — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "27 de dezembro de 1703",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-methuen: 27 de dezembro de 1703"
+      },
+      {
+        "title": "METHUEN, John — Enciclopedia Italiana, Treccani",
+        "url": "https://www.treccani.it/enciclopedia/john-methuen_(Enciclopedia-Italiana)/",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "Fu stipulato il 27 dicembre del 1703",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-methuen: Fu stipulato il 27 dicembre del 1703"
+      }
+    ]
+  },
+  "A:ba-methuen-vinhos": {
+    "status": "confirmado",
+    "text": "A preferência era tarifária, em comparação com os vinhos franceses; não significava ausência de direitos nem início absoluto das exportações. Eliminar «os os».",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Tratado de Methuen — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "uma redução nas tarifas impostas aos vinhos portugueses",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-methuen-vinhos: uma redução nas tarifas impostas aos vinhos portugueses"
+      },
+      {
+        "title": "Methuen, Treaty of (1703) — Encyclopedia of Latin American History and Culture",
+        "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/methuen-treaty-1703",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "preferential duties on such Portuguese products as olive oil and wine",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-methuen-vinhos: preferential duties on such Portuguese products as olive oil and wine"
+      }
+    ]
+  },
+  "A:ba-methuen-panos": {
+    "status": "contradiz",
+    "text": "Imprecisão cronológica: os tecidos ingleses já eram comercializados anteriormente. O tratado restabeleceu a sua admissão, removendo proibições. Redação: «Portugal voltou a admitir os lanifícios ingleses». A Infopédia situa a revogação da pragmática em abril de 1704. Eliminar «os os».",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "contradiz",
+    "sources": [
+      {
+        "title": "Tratado de Methuen — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$tratado-de-methuen",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "livre entrada dos lanifícios ingleses",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-methuen-panos: livre entrada dos lanifícios ingleses"
+      },
+      {
+        "title": "METHUEN, John — Enciclopedia Italiana, Treccani",
+        "url": "https://www.treccani.it/enciclopedia/john-methuen_(Enciclopedia-Italiana)/",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "fu abolita in Portogallo la proibizione",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-methuen-panos: fu abolita in Portogallo la proibizione"
+      }
+    ]
+  },
+  "A:ba-salvador": {
+    "status": "confirmado",
+    "text": "A primeira fonte relaciona diretamente mineração, expansão das trocas e benefício de Salvador; a segunda documenta a ligação comercial às minas. «Cresceu muito» não vem acompanhado de uma medida quantitativa. O Rio de Janeiro ganhou posteriormente centralidade.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "O mercado brasileiro do século XIX: uma visão por meio do comércio de cabotagem",
+        "url": "https://www.scielo.br/j/rep/a/QzGzHffGRLphKvjvFwQbFbK/",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Inicialmente, Salvador beneficiou-se por ser o principal porto e capital da colônia.",
+        "group": "/j/rep/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-salvador: Inicialmente, Salvador beneficiou-se por ser o principal porto e capital da colônia."
+      },
+      {
+        "title": "A estrada dos tijolos dourados: ouro, escravos e as relações anglo-portuguesas na África Ocidental",
+        "url": "https://www.scielo.br/j/alm/a/WwVvCfwppdkBNDQZx3qCXYg/?lang=pt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Até cerca de 1730, Salvador e Recife lideravam o comércio que fornecia escravos minas",
+        "group": "/j/alm/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#ba-salvador: Até cerca de 1730, Salvador e Recife lideravam o comércio que fornecia escravos minas"
+      }
+    ]
+  },
+  "A:od-decada": {
+    "status": "confirmado",
+    "text": "Datação convencional dos achados que desencadearam a expansão mineira, não de todo e qualquer conhecimento anterior de ouro em Minas.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Histórico do Tribunal de Justiça do Estado de Minas Gerais — Jurisprudência Mineira, n.º 193",
+        "url": "https://bd-login.tjmg.jus.br/jspui/bitstream/tjmg/29/1/Edicao193.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Entre 1693 e 1695",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-decada: Entre 1693 e 1695"
+      },
+      {
+        "title": "O toque dos sinos em Minas Gerais — IPHAN",
+        "url": "https://portal.iphan.gov.br/uploads/ckfinder/arquivos/Dossie%20toque%20dos%20sinos%281%29.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "datam de 1693",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-decada: datam de 1693"
+      }
+    ]
+  },
+  "A:od-quem": {
+    "status": "confirmado",
+    "text": "A atribuição convencional refere-se às expedições paulistas, que incluíam indígenas e outros participantes; não implica descoberta individual exclusivamente europeia. A página do Arquivo Nacional foi aberta, mas devolveu bloqueio; apenas se leu o excerto indexado. Corrigir «por os» para «pelos».",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "O toque dos sinos em Minas Gerais — IPHAN",
+        "url": "https://portal.iphan.gov.br/uploads/ckfinder/arquivos/Dossie%20toque%20dos%20sinos%281%29.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "bandeirante Antonio Rodrigues Arzão",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-quem: bandeirante Antonio Rodrigues Arzão"
+      },
+      {
+        "title": "Ouro e Diamantes na Colônia Americana — Arquivo Nacional",
+        "url": "https://historialuso.an.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/ouro-e-diamantes",
+        "kind": "oficial",
+        "reading": "excerto",
+        "excerpt": "por bandeirantes"
+      }
+    ]
+  },
+  "A:od-capitania": {
+    "status": "confirmado",
+    "text": "A unidade anterior chamava-se Capitania de São Paulo e Minas do Ouro; o desmembramento originou as capitanias de São Paulo e de Minas Gerais.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Estrutura e dinâmica da organização político-administrativa de Minas Gerais — Arquivo Público Mineiro",
+        "url": "https://www.arquivopublico.mg.gov.br/estrutura-e-dinamica-da-organizacao-politico-administrativa-de-minas-gerais/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "A Carta Régia de 2 de dezembro de 1720",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-capitania: A Carta Régia de 2 de dezembro de 1720"
+      },
+      {
+        "title": "Histórico do Tribunal de Justiça do Estado de Minas Gerais — Jurisprudência Mineira, n.º 193",
+        "url": "https://bd-login.tjmg.jus.br/jspui/bitstream/tjmg/29/1/Edicao193.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "A Capitania de Minas Gerais é criada em 1720",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-capitania: A Capitania de Minas Gerais é criada em 1720"
+      }
+    ]
+  },
+  "A:od-quinto": {
+    "status": "confirmado",
+    "text": "O valor nominal corresponde a 1/5 = 20%, verificado por cálculo. A cobrança conheceu quotas, capitação e alterações de taxa; a definição não descreve todos os regimes efetivos.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Dinheiro no Brasil — Banco Central do Brasil",
+        "url": "https://www.bcb.gov.br/content/acessoinformacao/museudocs/pub/Cartilha_Dinheiro_no_Brasil.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "20% eram retirados para pagar o imposto denominado “quinto”",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-quinto: 20% eram retirados para pagar o imposto denominado “quinto”"
+      },
+      {
+        "title": "O quinto do ouro no regime tributário nas Minas Gerais — Friedrich Renger",
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Entrega direta dos 20%",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-quinto: Entrega direta dos 20%"
+      }
+    ]
+  },
+  "A:od-fundicao": {
+    "status": "confirmado",
+    "text": "No regime descrito, retirava-se o imposto e o restante era transformado em barras identificadas. Não foi o único método de arrecadação durante todo o século.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Dinheiro no Brasil — Banco Central do Brasil",
+        "url": "https://www.bcb.gov.br/content/acessoinformacao/museudocs/pub/Cartilha_Dinheiro_no_Brasil.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "barras fundidas",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-fundicao: barras fundidas"
+      },
+      {
+        "title": "O quinto do ouro no regime tributário nas Minas Gerais — Friedrich Renger",
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "sendo o resto fundido em uma barra",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-fundicao: sendo o resto fundido em uma barra"
+      }
+    ]
+  },
+  "A:od-revolta": {
+    "status": "confirmado",
+    "text": "Reação à intensificação do controlo fiscal e à instalação projetada das casas; não pressupor que já funcionavam regularmente. A questão UFOP foi lida com as alternativas e confrontada com o Arquivo Nacional. Eliminar «a a».",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Casas de Fundição (1603–1821) — Arquivo Nacional / MAPA",
+        "url": "https://mapa.an.gov.br/index.php/assuntos/15-dicionario/57-dicionario-da-administracao-publica-brasileira-do-periodo-colonial/146-casas-de-fundicao-1603-1821",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "sublevação contra as autoridades portuguesas ocorresse em Vila Rica",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-revolta: sublevação contra as autoridades portuguesas ocorresse em Vila Rica"
+      },
+      {
+        "title": "História — 1.º Vestibular UFOP 2003, questão 48",
+        "url": "https://vestibular.ufop.br/downloads/vestibulares/provasanteriores/1vest2003/2003_1_historia.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "a ameaça de instalação das “Casas de Fundição”",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-revolta: a ameaça de instalação das “Casas de Fundição”"
+      }
+    ]
+  },
+  "A:od-revolta-ano": {
+    "status": "confirmado",
+    "text": "A fonte de Renger descreve a oposição às casas e identifica a sedição; a UFOP confirma expressamente o ano. Não confundir com a Conjuração Mineira de 1789.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "História — 1.º Vestibular UFOP 2003, questão 48",
+        "url": "https://vestibular.ufop.br/downloads/vestibulares/provasanteriores/1vest2003/2003_1_historia.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "“Revolta de Felipe dos Santos” (1720)",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-revolta-ano: “Revolta de Felipe dos Santos” (1720)"
+      },
+      {
+        "title": "O quinto do ouro no regime tributário nas Minas Gerais — Friedrich Renger",
+        "url": "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "também chamada revolta de Felipe dos Santos",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-revolta-ano: também chamada revolta de Felipe dos Santos"
+      }
+    ]
+  },
+  "A:od-diamantes": {
+    "status": "confirmado",
+    "text": "1729 é o marco de reconhecimento/notificação oficial, não necessariamente o primeiro achado. O PDF do IPHAN devolveu erro 502 ao abrir: a segunda passagem foi lida apenas no resultado indexado.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Pesquisa reconstitui a história dos dois maiores diamantes encontrados no Brasil Colonial — CNPq",
+        "url": "https://www.gov.br/cnpq/pt-br/assuntos/noticias/atualidades/pesquisa-do-inct-sobre-o-patrimonio-brasileiro-reconstitui-a-historia-dos-dois-maiores-diamantes-encontrados-no-brasil-colonial/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Em 1729, a Coroa Portuguesa confirmou de forma oficial",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-diamantes: Em 1729, a Coroa Portuguesa confirmou de forma oficial"
+      },
+      {
+        "title": "Sítios e conjuntos urbanos de monumentos nacionais — IPHAN / Programa Monumenta",
+        "url": "https://portal.iphan.gov.br/uploads/publicacao/CadTec4_SitiosHistoricos_m.pdf",
+        "kind": "oficial",
+        "reading": "excerto",
+        "excerpt": "A Coroa é notificada em 1729"
+      }
+    ]
+  },
+  "A:od-tejuco": {
+    "status": "insuficiente",
+    "text": "As fontes situam os achados na região do Tejuco e a sede da Intendência ali em 1734; não demonstram que a comunicação oficial foi feita ou recebida no próprio arraial. Corrigir para «Os diamantes foram encontrados na região do Tejuco, atual Diamantina». Eliminar «do no». A segunda citação prova localização da Intendência, não o local da comunicação; a primeira é apenas excerto devido a bloqueio.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "incerto",
+    "sources": [
+      {
+        "title": "Ouro e Diamantes na Colônia Americana — Arquivo Nacional",
+        "url": "https://historialuso.an.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/ouro-e-diamantes",
+        "kind": "oficial",
+        "reading": "excerto",
+        "excerpt": "oficialização da descoberta de diamantes na região deste arraial"
+      },
+      {
+        "title": "Pesquisa reconstitui a história dos dois maiores diamantes encontrados no Brasil Colonial — CNPq",
+        "url": "https://www.gov.br/cnpq/pt-br/assuntos/noticias/atualidades/pesquisa-do-inct-sobre-o-patrimonio-brasileiro-reconstitui-a-historia-dos-dois-maiores-diamantes-encontrados-no-brasil-colonial/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "no arraial do Tijuco, atual cidade de Diamantina",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-tejuco: no arraial do Tijuco, atual cidade de Diamantina"
+      }
+    ]
+  },
+  "A:od-declinio": {
+    "status": "confirmado",
+    "text": "Cronologia aproximada e regionalmente desigual: declínio da produção/exportação, não desaparecimento de todo o ouro numa década. Furtado distingue a duração produtiva das sub-regiões; o declínio não se explica apenas por esgotamento físico.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Projeto SEDUC — Fundação CECIERJ: Inconfidência Mineira",
+        "url": "https://canal.cecierj.edu.br/012016/094d83ac6d7030c6e62c96b15708d1ba.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "a partir da década de 1760, a extração do ouro entrou em declínio",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-declinio: a partir da década de 1760, a extração do ouro entrou em declínio"
+      },
+      {
+        "title": "Formação Econômica do Brasil — Celso Furtado (UNIRIO)",
+        "url": "https://www.unirio.br/cchs/ess/Members/morena-marques/formacao-social-do-brasil/Celso%20Furtado%20-%20Formacao%20Economica%20do%20Brasil.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Os depósitos de aluvião se esgotam tanto mais rapidamente",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-declinio: Os depósitos de aluvião se esgotam tanto mais rapidamente"
+      }
+    ]
+  },
+  "A:od-mafra": {
+    "status": "confirmado",
+    "text": "A redação confunde duas proporções: obras financiadas pelo ouro não provam que uma grande parte de todo o ouro brasileiro foi aplicada nessas obras, sobretudo em Mafra. Correção: «As receitas do ouro brasileiro ajudaram a financiar as obras de D. João V, como Mafra». Nenhuma das duas fontes quantifica aquela fração; a UNESCO sustenta a atribuição régia, não a proporção financeira.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "contradiz",
+    "sources": [
+      {
+        "title": "Palácio Nacional de Mafra — Cultura Portugal",
+        "url": "https://culturaportugal.gov.pt/pt/conhecer/local/mmp-locais/palacio-nacional-de-mafra/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "magnificência apenas tornada possível pelo afluxo de ouro do Brasil",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-mafra: magnificência apenas tornada possível pelo afluxo de ouro do Brasil"
+      },
+      {
+        "title": "Royal Building of Mafra — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "one of the most magnificent works undertaken by King João V",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#od-mafra: one of the most magnificent works undertaken by King João V"
+      }
+    ],
+    "correction": "Aplicada a redação restrita proposta na revisão; autoverificação, 2026-11-01. Ver xviii.atoms.ts."
+  },
+  "A:la-irmandade": {
+    "status": "confirmado",
+    "text": "Existiam várias irmandades lisboetas sob esta invocação, nomeadamente no Salvador, na Trindade e na Graça. Não apresentar uma única instituição nem pressupor continuidade autónoma da primitiva irmandade de São Domingos. As fontes são de autores distintos. Corrigir «de a de».",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Confrarias de negros no império português — Jorge Fonseca, NOVA FCSH",
+        "url": "https://eve.fcsh.unl.pt/pt/temas-e-factos/confrarias-de-negros-no-imperio-portugues",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "séculos XVII e XVIII",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#la-irmandade: séculos XVII e XVIII"
+      },
+      {
+        "title": "África em Portugal: devoções, irmandades e escravidão no Reino de Portugal, século XVIII",
+        "url": "https://www.scielo.br/j/his/a/qvqDbVM7RsyLp7jrFNWySwG/",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Confraria de N. S. do Rosário dos Homens Pretos do Reinado do Congo",
+        "group": "/j/his/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#la-irmandade: Confraria de N. S. do Rosário dos Homens Pretos do Reinado do Congo"
+      }
+    ]
+  },
+  "A:la-escravatura": {
+    "status": "confirmado",
+    "text": "As leis não criaram a escravatura: em 1761 restringiu-se a entrada e em 1773 determinou-se a liberdade de certos cativos e dos nascidos após a publicação. Abolição gradual na metrópole, não imediata em todo o império. Há prova documental independente da mera existência das leis.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Leonorama: volume de homenagem a Ana Hatherly — estudo sobre escravatura e folhetos portugueses",
+        "url": "https://run.unl.pt/bitstream/10362/50434/1/Leonorama_FINAL.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Relativamente aos escravos que já aqui se encontravam",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#la-escravatura: Relativamente aos escravos que já aqui se encontravam"
+      },
+      {
+        "title": "Valer-se da autoridade do trono para obter sua liberdade: fuga e alforria — Bahia e Lisboa, 1761–1804",
+        "url": "https://www.scielo.br/j/rh/a/FmzWFfbgj9CqdXdCQgJdmVt/?lang=pt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "998 registros de escravos despachados na Alfândega de Lisboa, entre 1756 e 1763",
+        "group": "/j/rh/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#la-escravatura: 998 registros de escravos despachados na Alfândega de Lisboa, entre 1756 e 1763"
+      }
+    ]
+  },
+  "A:so-tres": {
+    "status": "confirmado",
+    "text": "Modelo jurídico e social de síntese; cada ordem incluía múltiplos estratos. `explicacao_ok` avalia a afirmação fornecida: o pedido não inclui uma explicação pedagógica autónoma.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "estratificação tripartida",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-tres: estratificação tripartida"
+      },
+      {
+        "title": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "três ordens sociais",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-tres: três ordens sociais"
+      }
+    ]
+  },
+  "A:so-nomes": {
+    "status": "confirmado",
+    "text": "Povo é aqui equivalente a Terceiro Estado; burguesia e camponeses integravam-no, não constituíam ordens separadas.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "(clero, nobreza, povo)",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-nomes: (clero, nobreza, povo)"
+      },
+      {
+        "title": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "clero, nobreza e povo",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-nomes: clero, nobreza e povo"
+      }
+    ]
+  },
+  "A:so-privilegiadas": {
+    "status": "confirmado",
+    "text": "Privilégios fiscais, judiciais e honoríficos variavam; não equivalem a uma isenção absoluta de todos os tributos em qualquer circunstância.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Os privilegiados compostos pela nobreza e o clero",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-privilegiadas: Os privilegiados compostos pela nobreza e o clero"
+      },
+      {
+        "title": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "Isenção do pagamento",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-privilegiadas: Isenção do pagamento"
+      }
+    ]
+  },
+  "A:so-povo": {
+    "status": "confirmado",
+    "text": "Síntese escolar sobre o estatuto da ordem: o povo era muito heterogéneo e certos indivíduos e corpos possuíam privilégios particulares. Não interpretar «sem privilégios» como inexistência absoluta de exceções ou «impostos» como inexistência de contribuições das outras ordens.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "Sustentam a sociedade com o seu trabalho.",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-povo: Sustentam a sociedade com o seu trabalho."
+      },
+      {
+        "title": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "não privilegiados",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-povo: não privilegiados"
+      }
+    ]
+  },
+  "A:so-clero": {
+    "status": "confirmado",
+    "text": "Prerrogativa institucional eclesiástica; não era um rendimento igual para todos os clérigos nem excluía apropriações, arrendamentos e direitos particulares sobre dízimos.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "Cobra o dízimo",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-clero: Cobra o dízimo"
+      },
+      {
+        "title": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "recolha de dízimos",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-clero: recolha de dízimos"
+      }
+    ]
+  },
+  "A:so-nobreza": {
+    "status": "confirmado",
+    "text": "Característica e acesso favorecido, não monopólio absoluto de todos os cargos administrativos: havia nobreza de toga e mobilidade por serviço régio.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "A Europa dos séculos XVII e XVIII — Porto Editora / Ideias de Ler",
+        "url": "https://recursos.portoeditora.pt/recurso?id=24156976",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "cargos importantes na administração e no exército",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-nobreza: cargos importantes na administração e no exército"
+      },
+      {
+        "title": "Planificação de História: sociedade de Antigo Regime — repositório FLUP",
+        "url": "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "administrativos, militares e religiosos",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-nobreza: administrativos, militares e religiosos"
+      },
+      {
+        "title": "As Memórias Paroquiais de 1758: uma microfonte para a macro-história do vinho do Douro — Francisco Ribeiro da Silva",
+        "url": "https://www.cepese.pt/portal%22/pt/publicacoes/obras/os-arquivos-da-vinha-e-do-vinho-do-douro/as-memorias-paroquiais-de-1758-2013-uma-microfonte-para-a-macro-historia-do-vinho-do-douro/as-memorias-paroquiais-de-1758-2013-uma-microfonte-para-a-macro-historia-do-vinho-do-douro/%40%40download/file/As%20mem%C3%B3rias%20paroquiais%20de%201758%20%E2%80%93%20uma%20microfonte%20para%20a%20macro-hist%C3%B3ria%20do%20vinho%20do%20douro.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "os dízimos de Vila Marim e freguesias anexas pertenciam ao Conde de Mirinho-Mor",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-nobreza: os dízimos de Vila Marim e freguesias anexas pertenciam ao Conde de Mirinho-Mor"
+      }
+    ]
+  },
+  "A:so-cristao-novo": {
+    "status": "confirmado",
+    "text": "A designação abrangia os próprios convertidos e os descendentes, mesmo católicos havia gerações; também podia abranger outras origens convertidas. Não confundir cristão-novo com criptojudeu. A página NOVA foi aberta, mas mostrou proteção de acesso: apenas se leu o excerto indexado.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Estudo sobre cristãos-novos e criptojudeus — Universidade do Estado da Bahia",
+        "url": "https://saberaberto.uneb.br/server/api/core/bitstreams/61caf427-0867-4f84-8af5-3ac2139e268e/content",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "era descendente de judeus naturais da Península Ibérica",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-cristao-novo: era descendente de judeus naturais da Península Ibérica"
+      },
+      {
+        "title": "Cristãos-novos e seus descendentes no Ceará Grande: a inquisição nos sertões de fora",
+        "url": "https://run.unl.pt/entities/publication/0be93ff0-3ac9-4f1e-ae7f-b1d6bfc903be",
+        "kind": "academica",
+        "reading": "excerto",
+        "excerpt": "quem descende de judeu e de cristão-novo"
+      }
+    ]
+  },
+  "A:so-limpeza": {
+    "status": "confirmado",
+    "text": "A exigência de provas de ascendência para muitos cargos é real, mas não dependia universalmente de certidão emitida pela Inquisição. Diversas instituições instruíam habilitações próprias; para hábitos militares intervinha a Mesa da Consciência e Ordens. Correção: «Para muitos cargos e honras exigiam-se provas da chamada limpeza de sangue». Eliminar «a a».",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "contradiz",
+    "sources": [
+      {
+        "title": "As Ordens Militares e o Estado Moderno — Fernanda Olival, Universidade de Évora",
+        "url": "https://dspace.uevora.pt/rdpc/bitstream/10174/11061/1/Maria%20Fernanda%20de%20Olival%20-%20100%20467%20-%20.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "habilitações na Mesa da Consciência",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-limpeza: habilitações na Mesa da Consciência"
+      },
+      {
+        "title": "Nobreza e riqueza no Antigo Regime ibérico setecentista",
+        "url": "https://www.scielo.br/j/rh/a/WSvycVb5gHzM3xrZKQZVXJm/?lang=pt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "solicitavam à Mesa da Consciência e Ordens as provanças",
+        "group": "/j/rh/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-limpeza: solicitavam à Mesa da Consciência e Ordens as provanças"
+      }
+    ],
+    "correction": "Aplicada a redação restrita proposta na revisão; autoverificação, 2026-11-01. Ver xviii.atoms.ts."
+  },
+  "A:so-lei-1773": {
+    "status": "confirmado",
+    "text": "Abolição da distinção legal, não desaparecimento imediato do preconceito social nem extinção da Inquisição, ocorrida em 1821.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Exílios, fluxos migratórios e solidariedade — Arquivo Nacional da Torre do Tombo",
+        "url": "https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2022/06/catalogo-3-PT_exilios.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "aprovou a lei que aboliu a distinção",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-lei-1773: aprovou a lei que aboliu a distinção"
+      },
+      {
+        "title": "Escritas e cultura na Europa e no Atlântico modernos — A herança de Espinosa, Ana Cristina Araújo",
+        "url": "https://repositorio.ulisboa.pt/bitstream/10451/46737/1/_Ebook_Escritas%2520e%2520Cultura_completo.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "carta de lei de 25 de maio de 1773",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-lei-1773: carta de lei de 25 de maio de 1773"
+      }
+    ]
+  },
+  "A:so-cortes": {
+    "status": "confirmado",
+    "text": "Últimas Cortes tradicionais do Antigo Regime; as Cortes constituintes liberais reuniram-se em 1821. As duas obras académicas são distintas, apesar de ambas estarem alojadas na NOVA.",
+    "review": "docs/hgp/fabrica/verif/resposta-1.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Santa Justa, Lisboa, 1693 — estudo académico, NOVA",
+        "url": "https://run.unl.pt/server/api/core/bitstreams/148d38ad-4d72-4918-9daf-5939c8974b45/content",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Entre 15 de Novembro de 1697 e 3 de Abril de 1698",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-cortes: Entre 15 de Novembro de 1697 e 3 de Abril de 1698"
+      },
+      {
+        "title": "2121.pdf — estudo sobre o constitucionalismo luso-brasileiro, NOVA School of Law",
+        "url": "https://www.fd.unl.pt/Anexos/Investigacao/2121.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "As últimas Cortes ordinárias haviam-se reunido em 1698.",
+        "atestado": "docs/hgp/fabrica/verif/resposta-1.json#so-cortes: As últimas Cortes ordinárias haviam-se reunido em 1698."
+      }
+    ]
+  },
+  "A:mj-nasc": {
+    "status": "confirmado",
+    "text": "Nascimento em 22 de outubro de 1689. Neste relatório, explicacao_ok avalia apenas a afirmação fornecida: o pedido não contém os textos explicativos das fichas.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Arquivo Municipal de Lisboa — João V",
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "nasceu em Lisboa a 22 de outubro de 1689",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-nasc: nasceu em Lisboa a 22 de outubro de 1689"
+      },
+      {
+        "title": "Store norske leksikon — Johan 5.",
+        "url": "https://snl.no/Johan_5.",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "22. oktober 1689, Lisboa, Portugal",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-nasc: 22. oktober 1689, Lisboa, Portugal"
+      }
+    ]
+  },
+  "A:mj-inicio": {
+    "status": "confirmado",
+    "text": "Distinguir sucessão ao trono, em dezembro de 1706, da aclamação, em 1 de janeiro de 1707. Algumas fontes, incluindo o texto da Infopédia e o Arquivo Municipal de Lisboa, apresentam 1707 por referência à aclamação.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Portugal, Dicionário Histórico — D. João V (edição histórica digitalizada)",
+        "url": "https://www.arqnet.pt/dicionario/joao5.html",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "em dezembro de 1706, subiu ao trono",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-inicio: em dezembro de 1706, subiu ao trono"
+      },
+      {
+        "title": "Store norske leksikon — Johan 5.",
+        "url": "https://snl.no/Johan_5.",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "fra 1706 til 1750",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-inicio: fra 1706 til 1750"
+      }
+    ]
+  },
+  "A:mj-morte": {
+    "status": "confirmado",
+    "text": "Morreu em 31 de julho de 1750.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Infopédia — D. João V",
+        "url": "https://www.infopedia.pt/artigos/$d.-joao-v",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "morte em 1750",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-morte: morte em 1750"
+      },
+      {
+        "title": "Store norske leksikon — Johan 5.",
+        "url": "https://snl.no/Johan_5.",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "31. juli 1750",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-morte: 31. juli 1750"
+      }
+    ]
+  },
+  "A:mj-pai": {
+    "status": "confirmado",
+    "text": "D. Pedro II era seu pai e antecessor imediato. A sucessão por morte do pai é explicitada no Dicionário Histórico; a ficha municipal confirma filiação e acesso ao trono.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Portugal, Dicionário Histórico — D. João V (edição histórica digitalizada)",
+        "url": "https://www.arqnet.pt/dicionario/joao5.html",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "Era segundo filho de D. Pedro II",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-pai: Era segundo filho de D. Pedro II"
+      },
+      {
+        "title": "Arquivo Municipal de Lisboa — João V",
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Filho de D. Pedro II",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-pai: Filho de D. Pedro II"
+      }
+    ]
+  },
+  "A:mj-cognome": {
+    "status": "confirmado",
+    "text": "",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Infopédia — D. João V",
+        "url": "https://www.infopedia.pt/artigos/$d.-joao-v",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "\"o Magnânimo\"",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-cognome: \"o Magnânimo\""
+      },
+      {
+        "title": "Arquivo Municipal de Lisboa — João V",
+        "url": "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "O Magnânimo",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-cognome: O Magnânimo"
+      }
+    ]
+  },
+  "A:mj-secretarias": {
+    "status": "confirmado",
+    "text": "Confirma a reorganização de 28 de julho de 1736: Negócios Interiores do Reino; Marinha e Domínios Ultramarinos; Negócios Estrangeiros e Guerra. Havia secretarias anteriores; não significa que o cargo ou todas as repartições tenham surgido do nada em 1736.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Mário Francisco Simões Junior — dissertação sobre a Secretaria do Ultramar (USP, 2017)",
+        "url": "https://teses.usp.br/teses/disponiveis/8/8137/tde-07022018-123131/publico/2017_MarioFranciscoSimoesJunior_VCorr.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "No alvará de 28 de julho de 1736",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-secretarias: No alvará de 28 de julho de 1736"
+      },
+      {
+        "title": "Universidade do Porto — arquivos da administração central: Negócios Estrangeiros",
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/artigo1631.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "O Alvará de 1736 criando as duas novas secretarias",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-secretarias: O Alvará de 1736 criando as duas novas secretarias"
+      }
+    ]
+  },
+  "A:mj-patriarcado": {
+    "status": "confirmado",
+    "text": "A bula In supremo apostolatus solio, de 7 de novembro de 1716, elevou a Capela Real e criou inicialmente a jurisdição de Lisboa Ocidental, separada da Oriental. O pedido régio insere-se numa negociação diplomática mais ampla.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Museu do Tesouro Real — Ofertas Diplomáticas",
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Igreja Patriarcal em 1716",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-patriarcado: Igreja Patriarcal em 1716"
+      },
+      {
+        "title": "Cadernos do Arquivo Municipal — Entre castiçais, vasos, bustos de santos e estátuas de apóstolos",
+        "url": "https://www.lisboa.pt/fileadmin/informacao/publicacoes/arquivo_municipal/Cadernos_Arquivo_Municipal_1.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "a 7 de novembro de 1716",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-patriarcado: a 7 de novembro de 1716"
+      }
+    ]
+  },
+  "A:mj-papa": {
+    "status": "confirmado",
+    "text": "A decisão é de Clemente XI, em 1716. A nota da Conferência Episcopal é institucional; o estudo municipal constitui investigação distinta.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Cadernos do Arquivo Municipal — Entre castiçais, vasos, bustos de santos e estátuas de apóstolos",
+        "url": "https://www.lisboa.pt/fileadmin/informacao/publicacoes/arquivo_municipal/Cadernos_Arquivo_Municipal_1.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "de Clemente XI",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-papa: de Clemente XI"
+      },
+      {
+        "title": "Conferência Episcopal Portuguesa — Patriarcado de Lisboa: nota de imprensa",
+        "url": "https://www.conferenciaepiscopal.pt/v1/wp-content/uploads/JMJ2022_Patriarcado_NotaImprensa.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "o Papa Clemente XI concedeu o título de ‘Patriarcal’ à Capela Real de Lisboa",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-papa: o Papa Clemente XI concedeu o título de ‘Patriarcal’ à Capela Real de Lisboa"
+      }
+    ]
+  },
+  "A:mj-patriarca": {
+    "status": "confirmado",
+    "text": "O livro de José Pedro Paiva identifica D. Tomás de Almeida no parágrafo que o apresenta como primeiro patriarca. Inicialmente, a jurisdição era Lisboa Ocidental.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "José Pedro Paiva — Os bispos de Portugal e do Império (1495–1777)",
+        "url": "https://ap1.sib.uc.pt/bitstream/10316.2/40746/1/os_bispos_de_portugal.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "primeiro patriarca de Lisboa",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-patriarca: primeiro patriarca de Lisboa"
+      },
+      {
+        "title": "Luísa Arruda — Figura de Convite, Museum With No Frontiers",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=object%3BBAR%3Bpt%3BMus11_A%3B40%3Bpt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "D. Tomás de Almeida, primeiro Patriarca de Lisboa",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-patriarca: D. Tomás de Almeida, primeiro Patriarca de Lisboa"
+      }
+    ]
+  },
+  "A:mj-embaixada": {
+    "status": "confirmado",
+    "text": "A entrada solene de 1716 foi a do Marquês de Fontes, embaixador em Roma desde 1712; não foi o início da missão. O museu confirma 5 + 10 = 15 coches; Sara Augusto identifica o embaixador e a entrada de julho de 1716. Corrigir a redação para «pelo Marquês de Fontes».",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Museu Nacional dos Coches — Coche dos Oceanos",
+        "url": "https://www.mncoches.gov.pt/colecao/coche-dos-oceanos",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "cinco coches temáticos e dez coches de acompanhamento",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-embaixada: cinco coches temáticos e dez coches de acompanhamento"
+      },
+      {
+        "title": "Sara Augusto — Diário da jornada de Roma do embaixador extraordinário, o Marquês de Fontes",
+        "url": "https://revistas.ucp.pt/index.php/mathesis/article/view/5168/5045",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "em 1716, quarta-feira 8 de Julho",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-embaixada: em 1716, quarta-feira 8 de Julho"
+      }
+    ]
+  },
+  "A:mj-academia": {
+    "status": "confirmado",
+    "text": "Criação por decreto de 8 de dezembro de 1720; os estatutos foram confirmados em janeiro de 1721. A entrada geral da Infopédia sobre D. João V dá 1722, divergência rejeitada face aos estudos citados.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Rui Manuel Mesquita Mendes — A Academia Real da História e a Academia Real de Ciências",
+        "url": "https://run.unl.pt/bitstream/10362/188781/1/HistoriografiaCidades_Completo.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "foi fundada por D. João V em 1720",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-academia: foi fundada por D. João V em 1720"
+      },
+      {
+        "title": "Revista de Teoria da História, volume 17, n.º 1 (2017) — referência à criação da Academia",
+        "url": "https://comum.rcaap.pt/bitstreams/f20c247d-2d3e-4a6d-9b59-617b26bfb72b/download",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "a criação, em 8 de Dezembro de 1720",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-academia: a criação, em 8 de Dezembro de 1720"
+      }
+    ]
+  },
+  "A:mj-fidelissimo": {
+    "status": "confirmado",
+    "text": "Concessão em 23 de dezembro de 1748, extensiva aos sucessores na Coroa portuguesa.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Museu do Tesouro Real — Ofertas Diplomáticas",
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "em 1748, à concessão por Bento XIV",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-fidelissimo: em 1748, à concessão por Bento XIV"
+      },
+      {
+        "title": "Manuel de Azevedo, S.J. — Ilias in nuce (edição e estudo), nota 55",
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/18318.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "por Bula de 23-XII-1748",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-fidelissimo: por Bula de 23-XII-1748"
+      }
+    ]
+  },
+  "A:mj-titulo": {
+    "status": "confirmado",
+    "text": "O título também se aplica aos sucessores. Os títulos Cristianíssimo e Católico referem-se, neste contexto diplomático, às coroas francesa e espanhola, respetivamente.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Museu do Tesouro Real — Ofertas Diplomáticas",
+        "url": "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "título de “Fidelíssimo”",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-titulo: título de “Fidelíssimo”"
+      },
+      {
+        "title": "Manuel de Azevedo, S.J. — Ilias in nuce (edição e estudo), nota 55",
+        "url": "https://ler.letras.up.pt/uploads/ficheiros/18318.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "por Bula de 23-XII-1748",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-titulo: por Bula de 23-XII-1748"
+      }
+    ]
+  },
+  "A:mj-mafra-promessa": {
+    "status": "confirmado",
+    "text": "É a explicação tradicional do voto religioso, cumprido com o nascimento de Maria Bárbara em 1711. Não reduzir a motivação política e artística de todo o complexo à promessa, nem afirmar que a primeira criança foi um filho varão.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Palácio Nacional de Mafra — apresentação do monumento",
+        "url": "https://www.pnmafra.gov.pt/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "no cumprimento de um voto de sucessão",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-mafra-promessa: no cumprimento de um voto de sucessão"
+      },
+      {
+        "title": "Infopédia — Palácio-Convento de Mafra",
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "promessa feita por D. João V",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-mafra-promessa: promessa feita por D. João V"
+      }
+    ]
+  },
+  "A:mj-mafra-pedra": {
+    "status": "confirmado",
+    "text": "Data cerimonial da primeira pedra da basílica: 17 de novembro de 1717.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Palácio Nacional de Mafra — apresentação do monumento",
+        "url": "https://www.pnmafra.gov.pt/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "A primeira pedra foi lançada a 17 de novembro de 1717",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-mafra-pedra: A primeira pedra foi lançada a 17 de novembro de 1717"
+      },
+      {
+        "title": "Infopédia — Palácio-Convento de Mafra",
+        "url": "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "a 17 de novembro de 1717",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-mafra-pedra: a 17 de novembro de 1717"
+      }
+    ]
+  },
+  "A:mj-mafra-sagrada": {
+    "status": "confirmado",
+    "text": "A sagração não corresponde à conclusão de todas as obras do complexo. Aniversário verificado por cálculo: 1730 − 1689 = 41, no mesmo dia e mês.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Palácio Nacional de Mafra — Basílica",
+        "url": "https://www.pnmafra.gov.pt/basilica/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "22 de outubro de 1730, dia do 41.º aniversário",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-mafra-sagrada: 22 de outubro de 1730, dia do 41.º aniversário"
+      },
+      {
+        "title": "Câmara Municipal de Mafra — História",
+        "url": "https://www.cm-mafra.pt/pages/1085",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "A sagração da Basílica deu-se a 22 de outubro de 1730",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-mafra-sagrada: A sagração da Basílica deu-se a 22 de outubro de 1730"
+      }
+    ]
+  },
+  "A:mj-biblioteca": {
+    "status": "confirmado",
+    "text": "A ficha museológica situa explicitamente a Joanina em Coimbra; a Comissão Europeia inclui-a na Biblioteca Geral da Universidade de Coimbra. A ficha museológica é de autoria de um bibliotecário da UC; a segunda entidade é a Comissão Europeia.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "A. E. Maia do Amaral — Biblioteca Joanina da Universidade de Coimbra, Museum With No Frontiers",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B11%3Ben",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Parish of Sé Nova, Coimbra, Coimbra, Portugal",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-biblioteca: Parish of Sé Nova, Coimbra, Coimbra, Portugal"
+      },
+      {
+        "title": "Comissão Europeia — Biblioteca Geral da Universidade de Coimbra, Portugal",
+        "url": "https://culture.ec.europa.eu/pt-pt/cultural-heritage/initiatives-and-success-stories/european-heritage-label/european-heritage-label-sites/general-library-of-the-university-of-coimbra-portugal",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Biblioteca Geral da Universidade de Coimbra",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-biblioteca: Biblioteca Geral da Universidade de Coimbra"
+      }
+    ]
+  },
+  "A:mj-biblioteca-fim": {
+    "status": "confirmado",
+    "text": "Correção: «A Biblioteca Joanina, construída com autorização de D. João V e paga pela Universidade de Coimbra, ficou concluída em 1728.» O financiamento pelo rei é refutado pela recensão académica de Paulo Barata. O dossiê de candidatura UNESCO repete a versão do patrocínio régio pelo ouro brasileiro; não é uma investigação independente do financiamento. Distinguir conclusão da ornamentação em 1728 da abertura em 1777.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "contradiz",
+    "sources": [
+      {
+        "title": "Universidade de Coimbra — Biblioteca Joanina",
+        "url": "https://visit.uc.pt/pt/space-list/joanina",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "A sua construção ficou concluída em 1728",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-biblioteca-fim: A sua construção ficou concluída em 1728"
+      },
+      {
+        "title": "Paulo J. S. Barata — Os livros em sua ordem: para a história da Biblioteca Geral da Universidade (recensão, Cadernos BAD, 2015)",
+        "url": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/download/1246/pdf_15/3440",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "aval de D. João V mas paga pela Universidade",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-biblioteca-fim: aval de D. João V mas paga pela Universidade"
+      }
+    ],
+    "correction": "Aplicada a redação restrita proposta na revisão; autoverificação, 2026-11-01. Ver xviii.atoms.ts."
+  },
+  "A:mj-capela": {
+    "status": "confirmado",
+    "text": "Trata-se da capela da Igreja de São Roque, em Lisboa. Foi executada em Roma, desmontada, transportada e remontada; o decreto de classificação explicita a remontagem integral na Igreja de São Roque.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Diário da República — Decreto n.º 7/2026, de 16 de fevereiro",
+        "url": "https://diariodarepublica.pt/dr/detalhe/decreto/7-2026-1051282296",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "em Roma e de lá transportado para Lisboa",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-capela: em Roma e de lá transportado para Lisboa"
+      },
+      {
+        "title": "Museu de São Roque — Capela de São João Batista",
+        "url": "https://museusaoroque.scml.pt/colecoes/csjb/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Integralmente realizada e importada de Roma",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-capela: Integralmente realizada e importada de Roma"
+      }
+    ]
+  },
+  "A:mj-aq-autorizado": {
+    "status": "confirmado",
+    "text": "Alvará de 12 de maio de 1731, precedido de decreto de 13 de abril. Distinguir autorização régia, preparação e início efetivo dos trabalhos de campo. A segunda fonte transcreve o alvará.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Inventário de Lisboa — Aqueduto das Águas Livres (Hemeroteca Municipal de Lisboa)",
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Em 12 de Maio de 1731 foi ordenado",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-aq-autorizado: Em 12 de Maio de 1731 foi ordenado"
+      },
+      {
+        "title": "Boletim da Sociedade Histórica da Independência de Portugal, 102–103 — O Aqueduto das Águas Livres",
+        "url": "https://sociedadehistorica.pt/wp-content/uploads/Boletim-SHIP-102-103_compressed.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Dado em Lisboa occidental, a 12 de maio de 1731",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-aq-autorizado: Dado em Lisboa occidental, a 12 de maio de 1731"
+      }
+    ]
+  },
+  "A:mj-aq-agua": {
+    "status": "contradiz",
+    "text": "Correção: a água correu pela primeira vez num tanque das Amoreiras em 30 de outubro de 1744; 1748 é a data do ingresso triunfal/oficial, assinalada no arco das Amoreiras. Sem essa distinção, «chegou em 1748» é impreciso. A ficha do IPT reproduz a cronologia resumida de 1748, sem resolver a primeira chegada. A Infopédia também apresenta 1748 como primeira chegada; a cronologia pormenorizada municipal e a ficha museológica distinguem 1744 de 1748.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "contradiz",
+    "sources": [
+      {
+        "title": "Inventário de Lisboa — Aqueduto das Águas Livres (Hemeroteca Municipal de Lisboa)",
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "primeira vez, num improvisado tanque das Amoreiras",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-aq-agua: primeira vez, num improvisado tanque das Amoreiras"
+      },
+      {
+        "title": "Museum With No Frontiers — Águas Livres Aqueduct",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B27%3Ben",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "water was first channelled by the structure to Lisbon in 1744",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-aq-agua: water was first channelled by the structure to Lisbon in 1744"
+      }
+    ]
+  },
+  "A:mj-aq-altura": {
+    "status": "confirmado",
+    "text": "65 m é arredondamento adequado dos 65,29 m indicados pela EPAL; a Infopédia confirma a ordem de grandeza do arco central.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "EPAL / Museu da Água — Aqueduto das Águas Livres",
+        "url": "https://www.epal.pt/EPAL/menu/museu-da-%C3%A1gua/exposi%C3%A7%C3%A3o-permanente-patrim%C3%B3nio-associado/aqueduto-das-%C3%A1guas-livres",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "com 65,29 m de altura",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-aq-altura: com 65,29 m de altura"
+      },
+      {
+        "title": "Infopédia — Aqueduto das Águas Livres",
+        "url": "https://www.infopedia.pt/artigos/$aqueduto-das-aguas-livres",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "29 metros de largura por 65 de altura",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-aq-altura: 29 metros de largura por 65 de altura"
+      }
+    ]
+  },
+  "A:mj-aq-sismo": {
+    "status": "contradiz",
+    "text": "Correção de âmbito: a arcaria de Alcântara sobreviveu com poucos danos, mas o sistema do aqueduto sofreu estragos documentados, incluindo grandes consertos no Aqueduto Geral e ruína no de Carenque. Não generalizar «sem danos importantes» a todo o sistema. O estudo de Bárbara Bruno é publicado em revista académica, mas a autora pertence ao Museu da Água/EPAL; por isso a segunda fonte é municipal, e não outra página da EPAL.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "contradiz",
+    "sources": [
+      {
+        "title": "Bárbara Bruno — O Aqueduto das Águas Livres e o terramoto de 1755, Arqueologia & História, 68",
+        "url": "https://www.museuarqueologicodocarmo.arqueologos.pt/publicacoes/arqueologia_historia/serie_13/Vol_68/AH_Vol68.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "consertos grandes que se fizeram no Aqueduto Geral em consequência do Terramoto de 1755",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-aq-sismo: consertos grandes que se fizeram no Aqueduto Geral em consequência do Terramoto de 1755"
+      },
+      {
+        "title": "Inventário de Lisboa — Aqueduto das Águas Livres (Hemeroteca Municipal de Lisboa)",
+        "url": "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "ao qual resistiu pela solidez da construção",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-aq-sismo: ao qual resistiu pela solidez da construção"
+      }
+    ]
+  },
+  "A:mj-auto": {
+    "status": "confirmado",
+    "text": "A publicação da UC reproduz e identifica a lista de condenados do auto de 18 de outubro de 1739, incluindo António José da Silva. Distinguir julgamento, leitura pública da sentença e execução pelo braço secular; a formulação escolar é aceitável para o ano.",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Infopédia — António José da Silva",
+        "url": "https://www.infopedia.pt/artigos/$antonio-jose-da-silva",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "executado em 1739",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-auto: executado em 1739"
+      },
+      {
+        "title": "A Universidade de Coimbra e o Brasil: percurso iconobibliográfico (2012), p. 86",
+        "url": "https://ap1.sib.uc.pt/bitstream/10316.2/5641/1/a_universidade_de_coimbra_e_o_brasil_2012.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "em domingo 18 de outubro de 1739",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-auto: em domingo 18 de outubro de 1739"
+      }
+    ]
+  },
+  "A:mj-queluz": {
+    "status": "confirmado",
+    "text": "Em 1747, o infante, futuro D. Pedro III, encomendou a Mateus Vicente de Oliveira a ampliação do Paço Velho. As obras prosseguiram e intensificaram-se em 1760. Corrigir «por ordem do o infante» para «por ordem do infante».",
+    "review": "docs/hgp/fabrica/verif/resposta-2.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Parques de Sintra — História do Palácio Nacional e Jardins de Queluz",
+        "url": "https://www.parquesdesintra.pt/pt/parques-monumentos/palacio-nacional-e-jardins-de-queluz/historia/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Em 1747, o Infante D. Pedro",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-queluz: Em 1747, o Infante D. Pedro"
+      },
+      {
+        "title": "Câmara Municipal de Sintra — PDM: Património Natural, Arquitetónico e Arqueológico",
+        "url": "https://cm-sintra.pt/phocadownload/PDF/consulta_publica/revisao_pdm/documentos-consulta/relatorios-diagnostico/Tema-11-Patrimonio-Natural-Arquitetonico-e-Arqueologico.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Em 1747, D. Pedro III inicia as obras de ampliação",
+        "atestado": "docs/hgp/fabrica/verif/resposta-2.json#mj-queluz: Em 1747, D. Pedro III inicia as obras de ampliação"
+      }
+    ]
+  },
+  "A:bp-estilo": {
+    "status": "confirmado",
+    "text": "Correção: «A produção artística barroca do reinado de D. João V recebe a designação genérica de barroco joanino.» Não constitui um estilo único e homogéneo: coexistem influências italianas, francesas e rocaille. Neste relatório, explicacao_ok avalia a formulação fornecida no pedido; não certifica explicações das fichas F68–F109, que não foram fornecidas.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "contradiz",
+    "sources": [
+      {
+        "title": "Barroco Joanino — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "designação genérica de Barroco Joanino",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-estilo: designação genérica de Barroco Joanino"
+      },
+      {
+        "title": "Uma Roma para D. João V — Anna Lygia Stavale Frazão, Encontro de História da Arte",
+        "url": "https://econtents.sbu.unicamp.br/eventos/index.php/eha/article/view/4682",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "estilo joanino ou D. João V",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-estilo: estilo joanino ou D. João V"
+      }
+    ],
+    "correction": "Aplicada a redação restrita proposta na revisão; autoverificação, 2026-11-01. Ver xviii.atoms.ts."
+  },
+  "A:bp-talha": {
+    "status": "confirmado",
+    "text": "A talha dourada caracteriza muitos interiores e retábulos, mas não todos os interiores integralmente. Corrigir a redação para «cobriram-se de talha dourada».",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Barroco Joanino — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "onda dourada de talha",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-talha: onda dourada de talha"
+      },
+      {
+        "title": "Igreja paroquial de Matosinhos — Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=73419",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "totalmente revestidos a talha dourada, de estilo joanino",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-talha: totalmente revestidos a talha dourada, de estilo joanino"
+      }
+    ]
+  },
+  "A:bp-azulejo": {
+    "status": "confirmado",
+    "text": "O comentário histórico da ficha museológica, embora relativo a uma obra posterior, identifica o azul e branco com o Barroco da primeira metade do século XVIII. A originalidade refere-se ao desenvolvimento português da azulejaria; o azulejo e esta combinação cromática não foram inventados nesse reinado.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Barroco Joanino — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$barroco-joanino",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "azul e branco dos tapetes de azulejaria",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-azulejo: azul e branco dos tapetes de azulejaria"
+      },
+      {
+        "title": "Faina na Praia — inventário RAIZ, Museu Nacional do Azulejo",
+        "url": "https://raiz.museusemonumentos.pt/DetalhesObra/Index/229814?tipo=OBJ",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "azul e branco do Barroco",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-azulejo: azul e branco do Barroco"
+      }
+    ]
+  },
+  "A:bp-inspiracao": {
+    "status": "confirmado",
+    "text": "Roma foi uma influência principal, sem excluir outras influências europeias. Corrigir para «O barroco joanino inspirou-se no barroco romano».",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Uma Roma para D. João V — Anna Lygia Stavale Frazão, Encontro de História da Arte",
+        "url": "https://econtents.sbu.unicamp.br/eventos/index.php/eha/article/view/4682",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "influência da linguagem barroca romana",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-inspiracao: influência da linguagem barroca romana"
+      },
+      {
+        "title": "Royal Building of Mafra — UNESCO",
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "João V adopted Roman and Italian baroque architectural and artistic models",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-inspiracao: João V adopted Roman and Italian baroque architectural and artistic models"
+      }
+    ]
+  },
+  "A:bp-brasil": {
+    "status": "insuficiente",
+    "text": "A presença em Minas Gerais foi lida; a pesquisa da tese da USP associa expressamente os exemplares paulistas ao período joanino, mas a abertura integral da parte II falhou por tamanho excessivo. A parte III abriu com texto corrompido. As duas fontes sustentam regiões diferentes, sem dupla corroboração integral da frase: mantém-se incerto. Corrigir também «ao Brasil, nomeadamente a Minas Gerais e a São Paulo».",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "incerto",
+    "sources": [
+      {
+        "title": "Barroco em Minas — Museu de Arte Sacra de São Paulo",
+        "url": "https://museuartesacra.org.br/barroco-em-minas/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "barroco joanino nas igrejas de Mariana, Ouro Preto",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-brasil: barroco joanino nas igrejas de Mariana, Ouro Preto"
+      },
+      {
+        "title": "Igrejas Paulistas da Colônia e do Império: Arquitetura e Ornamentação — Mateus Rosada, USP, parte II",
+        "url": "https://teses.usp.br/teses/disponiveis/102/102132/tde-30062016-112001/publico/Corrigida2.pdf",
+        "kind": "academica",
+        "reading": "excerto",
+        "excerpt": "o segundo período do barroco, o joanino"
+      }
+    ]
+  },
+  "A:bp-nasoni": {
+    "status": "confirmado",
+    "text": "A autoria do projeto não exclui a intervenção de mestres construtores e outros artistas.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Igreja dos Clérigos — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "Da autoria do italiano Nicolau Nasoni",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-nasoni: Da autoria do italiano Nicolau Nasoni"
+      },
+      {
+        "title": "328.º aniversário do nascimento de Nicolau Nasoni — Irmandade dos Clérigos",
+        "url": "https://www.torredosclerigos.pt/328-o-aniversario-do-nascimento-de-nicolau-nasoni/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "a Irmandade contou com o profissionalismo do seu arquiteto",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-nasoni: a Irmandade contou com o profissionalismo do seu arquiteto"
+      }
+    ]
+  },
+  "A:bp-clerigos-inicio": {
+    "status": "confirmado",
+    "text": "A Infopédia situa a aprovação do plano em 1731 e o início no ano seguinte; a cronologia da Irmandade coloca a primeira pedra em 1732. A ficha do Museum With No Frontiers menciona 1731 como início: divergência registada, preferindo-se a cronologia da instituição detentora do arquivo.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Igreja dos Clérigos — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "No ano seguinte é dado início às obras",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-clerigos-inicio: No ano seguinte é dado início às obras"
+      },
+      {
+        "title": "História da Irmandade dos Clérigos",
+        "url": "https://www.torredosclerigos.pt/historia-da-irmandade-dos-clerigos/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Colocação da primeira pedra que deu início às obras da Igreja dos Clérigos",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-clerigos-inicio: Colocação da primeira pedra que deu início às obras da Igreja dos Clérigos"
+      }
+    ]
+  },
+  "A:bp-clerigos-torre": {
+    "status": "confirmado",
+    "text": "Na cronologia oficial da Irmandade, a conclusão está sob 1763. Existem diferentes datas para o começo da torre, sem afetar a conclusão.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Igreja dos Clérigos — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$igreja-dos-clerigos",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "edificada entre os anos de 1757 e 1763",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-clerigos-torre: edificada entre os anos de 1757 e 1763"
+      },
+      {
+        "title": "História da Irmandade dos Clérigos",
+        "url": "https://www.torredosclerigos.pt/historia-da-irmandade-dos-clerigos/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Conclusão das obras da Torre",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-clerigos-torre: Conclusão das obras da Torre"
+      }
+    ]
+  },
+  "A:bp-mafra-unesco": {
+    "status": "confirmado",
+    "text": "O bem inscrito abrange Palácio, Basílica, Convento, Jardim do Cerco e Tapada.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Royal Building of Mafra — UNESCO",
+        "url": "https://whc.unesco.org/en/list/1573/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Date of Inscription: 2019",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-mafra-unesco: Date of Inscription: 2019"
+      },
+      {
+        "title": "UNESCO — Mafra, Câmara Municipal de Mafra",
+        "url": "https://www.cm-mafra.pt/pages/3176",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Património Mundial da UNESCO, desde julho de 2019",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-mafra-unesco: Património Mundial da UNESCO, desde julho de 2019"
+      }
+    ]
+  },
+  "A:bp-bomjesus": {
+    "status": "confirmado",
+    "text": "A página municipal foi encontrada e a abertura tentada, mas falhou por ciclo de redirecionamento: apenas excerto. A página UNESCO foi lida. Não se conta como terceira fonte independente a tradução UNESCO reproduzida pelo Património Cultural.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Sanctuary of Bom Jesus do Monte in Braga — UNESCO",
+        "url": "https://whc.unesco.org/en/list/1590/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Sanctuary of Bom Jesus do Monte in Braga",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-bomjesus: Sanctuary of Bom Jesus do Monte in Braga"
+      },
+      {
+        "title": "Santuário do Bom Jesus do Monte — Câmara Municipal de Braga",
+        "url": "https://www.cm-braga.pt/pt/1201/conhecer/historia-e-patrimonio/patrimonio-cultural/patrimonio-edificado/item/item-1-657",
+        "kind": "oficial",
+        "reading": "excerto",
+        "excerpt": "Santuário do Bom Jesus do Monte"
+      }
+    ]
+  },
+  "A:bp-coimbra-unesco": {
+    "status": "confirmado",
+    "text": "A designação exata do bem é «Universidade de Coimbra — Alta e Sofia»; não significa que todos os imóveis da Universidade estejam inscritos.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "University of Coimbra – Alta and Sofia — UNESCO",
+        "url": "https://whc.unesco.org/en/list/1387/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Date of Inscription: 2013",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-coimbra-unesco: Date of Inscription: 2013"
+      },
+      {
+        "title": "A UC em números — Universidade de Coimbra",
+        "url": "https://www.uc.pt/dados/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "classificação como património mundial pela UNESCO em 2013",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-coimbra-unesco: classificação como património mundial pela UNESCO em 2013"
+      }
+    ]
+  },
+  "A:bp-porto-unesco": {
+    "status": "confirmado",
+    "text": "A designação atual inclui a Ponte Luiz I e o Mosteiro da Serra do Pilar, em Vila Nova de Gaia. Não corresponde à cidade inteira.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Historic Centre of Oporto, Luiz I Bridge and Monastery of Serra do Pilar — UNESCO",
+        "url": "https://whc.unesco.org/en/list/755/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Date of Inscription: 1996",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-porto-unesco: Date of Inscription: 1996"
+      },
+      {
+        "title": "Sobre o Porto — Faculdade de Economia da Universidade do Porto",
+        "url": "https://www.up.pt/fep/pt/porto/viver-no-porto/sobre-o-porto/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "classificado como Património Mundial pela UNESCO em 1996",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-porto-unesco: classificado como Património Mundial pela UNESCO em 1996"
+      }
+    ]
+  },
+  "A:bp-ouropreto-unesco": {
+    "status": "confirmado",
+    "text": "O IPHAN identifica a cidade com a antiga Vila Rica. Trata-se do conjunto histórico inscrito.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Historic Town of Ouro Preto — UNESCO",
+        "url": "https://whc.unesco.org/en/list/124",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Date of Inscription: 1980",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-ouropreto-unesco: Date of Inscription: 1980"
+      },
+      {
+        "title": "Ouro Preto (MG) celebra 45 anos como Patrimônio Mundial Cultural — IPHAN",
+        "url": "https://www.gov.br/iphan/pt-br/assuntos/noticias/ouro-preto-mg-celebra-45-anos-como-patrimonio-mundial-da-humanidade",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "O título da Unesco, conquistado em 1980",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#bp-ouropreto-unesco: O título da Unesco, conquistado em 1980"
+      }
+    ]
+  },
+  "A:pl-nome": {
+    "status": "confirmado",
+    "text": "Recebeu o título de marquês de Pombal apenas em 1769.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Marquês de Pombal — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$marques-de-pombal",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "Sebastião José de Carvalho e Melo",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-nome: Sebastião José de Carvalho e Melo"
+      },
+      {
+        "title": "Do Terreiro do Paço à Praça do Comércio — Imprensa Nacional",
+        "url": "https://imprensanacional.pt/do-terreiro-do-paco-a-praca-do-comercio-historia-de-um-espaco-urbano-nos-320-anos-do-marques/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Sebastião José de Carvalho e Melo",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-nome: Sebastião José de Carvalho e Melo"
+      }
+    ]
+  },
+  "A:pl-nasc": {
+    "status": "confirmado",
+    "text": "A Imprensa Nacional indica Lisboa e 13 de maio de 1699 no texto lido. O glossário universitário também indica Lisboa, mas a abertura falhou por descodificação: classificado como excerto. A Infopédia fornece corroboração independente do ano.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Do Terreiro do Paço à Praça do Comércio — Imprensa Nacional",
+        "url": "https://imprensanacional.pt/do-terreiro-do-paco-a-praca-do-comercio-historia-de-um-espaco-urbano-nos-320-anos-do-marques/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "nasceu nas Mercês, em Lisboa",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-nasc: nasceu nas Mercês, em Lisboa"
+      },
+      {
+        "title": "Marquês de Pombal — glossário HISTEDBR, Faculdade de Educação da Unicamp",
+        "url": "https://histedbrantigo.fe.unicamp.br/navegando/glossario/verb_b_marques_de_pombal.htm",
+        "kind": "academica",
+        "reading": "excerto",
+        "excerpt": "Sebastião José de Carvalho e Melo (1699-1782)"
+      },
+      {
+        "title": "Marquês de Pombal — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$marques-de-pombal",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "nasceu a 13 de maio de 1699",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-nasc: nasceu a 13 de maio de 1699"
+      }
+    ]
+  },
+  "A:pl-terramoto": {
+    "status": "confirmado",
+    "text": "O sismo afetou também outras regiões de Portugal, Espanha e o norte de África.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Da Sismicidade à Ciência dos Sismos — Jorge Ferreira, IPMA, pp. 18–19",
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "primeiro de novembro de 1755",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-terramoto: primeiro de novembro de 1755"
+      },
+      {
+        "title": "Algumas Ruínas de Lisboa — Museu Medeiros e Almeida",
+        "url": "https://www.museumedeirosealmeida.pt/2024/10/23/algumas-ruinas-de-lisboa/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Lisboa, 1 de novembro de 1755",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-terramoto: Lisboa, 1 de novembro de 1755"
+      }
+    ]
+  },
+  "A:pl-dia": {
+    "status": "confirmado",
+    "text": "",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Da Sismicidade à Ciência dos Sismos — Jorge Ferreira, IPMA, pp. 18–19",
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "primeiro de novembro de 1755",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-dia: primeiro de novembro de 1755"
+      },
+      {
+        "title": "Terramoto de 1755 e Reconstrução Pombalina — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$terramoto-de-1755-e-reconstrucao-pombalina",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "1 de novembro, dia de Todos os Santos",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-dia: 1 de novembro, dia de Todos os Santos"
+      }
+    ]
+  },
+  "A:pl-seguiu": {
+    "status": "confirmado",
+    "text": "Os incêndios resultaram de fontes de ignição urbanas; o tsunami foi provocado pelo sismo. Não implicar que todos os incêndios começaram depois do tsunami.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Da Sismicidade à Ciência dos Sismos — Jorge Ferreira, IPMA, pp. 18–19",
+        "url": "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "provocada directamente pelos abalos e pelo tsunami e indirectamente pelo incêndio",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-seguiu: provocada directamente pelos abalos e pelo tsunami e indirectamente pelo incêndio"
+      },
+      {
+        "title": "MPR+ n.º 41 — Museu da Presidência da República",
+        "url": "https://www.museu.presidencia.pt/pt/conhecer/mprplus/quadragesimo-primeiro-numero/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "se seguiram um maremoto e múltiplos incêndios",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-seguiu: se seguiram um maremoto e múltiplos incêndios"
+      }
+    ]
+  },
+  "A:pl-maia": {
+    "status": "confirmado",
+    "text": "Coordenação técnica de Manuel da Maia; direção política de Carvalho e Melo. Eugénio dos Santos e Carlos Mardel tiveram papéis fundamentais no projeto e na execução. A página UNESCO é uma candidatura apresentada por Portugal, não uma inscrição na Lista do Património Mundial.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Praça do Comércio — inventário do Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "chefiada por Manuel da Maia",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-maia: chefiada por Manuel da Maia"
+      },
+      {
+        "title": "Pombaline Lisbon — candidatura portuguesa à Lista Indicativa UNESCO",
+        "url": "https://whc.unesco.org/en/tentativelists/6226",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "drawn up by Manuel da Maia",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-maia: drawn up by Manuel da Maia"
+      }
+    ]
+  },
+  "A:pl-gaiola": {
+    "status": "confirmado",
+    "text": "A gaiola é integrada na construção de alvenaria; a resistência depende da conservação e das alterações posteriores. Corrigir «usam a gaiola pombalina». Não significa imunidade aos sismos.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Dia Internacional dos Monumentos e Sítios 2022 — Técnico ULisboa",
+        "url": "https://tecnico.ulisboa.pt/pt/eventos/dia-internacional-dos-monumentos-e-sitios-2022/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "elementos de madeira verticais, horizontais e inclinados",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-gaiola: elementos de madeira verticais, horizontais e inclinados"
+      },
+      {
+        "title": "Baixa Pombalina — Museum With No Frontiers, ficha de especialistas do Museu da Cidade",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "uma maior resistência aos terramotos",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-gaiola: uma maior resistência aos terramotos"
+      }
+    ]
+  },
+  "A:pl-praca": {
+    "status": "confirmado",
+    "text": "Foi uma reconstrução e reorganização do espaço onde se encontrava o Paço da Ribeira, destruído em 1755. «Terreiro do Paço» continua a designar a Praça do Comércio.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Praça do Comércio — inventário do Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "substituir o espaço do Terreiro do Paço",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-praca: substituir o espaço do Terreiro do Paço"
+      },
+      {
+        "title": "Baixa Pombalina — Museum With No Frontiers, ficha de especialistas do Museu da Cidade",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "substituição do velho Terreiro do Paço pela nova Praça do Comércio",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-praca: substituição do velho Terreiro do Paço pela nova Praça do Comércio"
+      }
+    ]
+  },
+  "A:pl-eugenio": {
+    "status": "confirmado",
+    "text": "A atribuição a Eugénio dos Santos é válida para o desenho inicial, mas deve mencionar a colaboração de Carlos Mardel e o enquadramento de Manuel da Maia. O arco atual inclui um projeto posterior.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Praça do Comércio — inventário do Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "desenhada por Eugénio dos Santos",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-eugenio: desenhada por Eugénio dos Santos"
+      },
+      {
+        "title": "Praça do Comércio de Lisboa — DGAEP / Museu da Cidade",
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "projecto de Eugénio dos Santos e Carlos Mardel",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-eugenio: projecto de Eugénio dos Santos e Carlos Mardel"
+      }
+    ]
+  },
+  "A:pl-estatua": {
+    "status": "confirmado",
+    "text": "A autoria escultórica é de Joaquim Machado de Castro. Houve desenhos preliminares de Eugénio dos Santos, intervenção de Reinaldo Manuel dos Santos e fundição por Bartolomeu da Costa.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Praça do Comércio de Lisboa — DGAEP / Museu da Cidade",
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "da autoria do mestre Machado de Castro",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-estatua: da autoria do mestre Machado de Castro"
+      },
+      {
+        "title": "Baixa Pombalina — Museum With No Frontiers, ficha de especialistas do Museu da Cidade",
+        "url": "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "de D. José, de Machado de Castro",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-estatua: de D. José, de Machado de Castro"
+      }
+    ]
+  },
+  "A:pl-estatua-ano": {
+    "status": "confirmado",
+    "text": "O ano é consensual nas fontes lidas. A DGAEP indica 27 de maio, enquanto a ficha do Museum With No Frontiers indica 6 de junho de 1775; não usar o dia como dado consensual sem resolver a divergência.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Caracterização do Espaço Público da Baixa Pombalina — Câmara Municipal de Lisboa, p. 12",
+        "url": "https://informacao.lisboa.pt/fileadmin/portal/temas/urbanismo/planos_pormenor/baixa_pombalina/pecas_escritas/relatorio_anexos/pp_baixa_pombalina_relatorio_05_relatorio_setorial_carac_espaco_publico.pdf",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "foi inaugurada em 1775",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-estatua-ano: foi inaugurada em 1775"
+      },
+      {
+        "title": "Praça do Comércio de Lisboa — DGAEP / Museu da Cidade",
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "inaugurada em 27 de Maio de 1775",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-estatua-ano: inaugurada em 27 de Maio de 1775"
+      }
+    ]
+  },
+  "A:pl-casa-risco": {
+    "status": "confirmado",
+    "text": "Era um gabinete de trabalho técnico para o projeto e a uniformização da reconstrução. Não confundir com a Casa do Risco do Arsenal. A ficha do Património Cultural identifica a equipa de engenheiros; a DGAEP descreve a sua função.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Praça do Comércio — inventário do Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Casa do Risco das Obras Públicas",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-casa-risco: Casa do Risco das Obras Públicas"
+      },
+      {
+        "title": "História do Terreiro do Paço — DGAEP, projeto n.º 1",
+        "url": "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0402.htm",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "A Casa do Risco é constituída como o garante da execução",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-casa-risco: A Casa do Risco é constituída como o garante da execução"
+      }
+    ]
+  },
+  "A:pl-vrsa": {
+    "status": "confirmado",
+    "text": "1774 corresponde ao arranque da edificação e é usado como data de criação em referências gerais. A ordem régia é de 1773 e as festividades de fundação/conclusão são de 1776, como assinala a investigação da Universidade do Algarve encontrada na pesquisa. Correção inequívoca para pergunta de ano: «A construção da nova Vila Real de Santo António começou em 1774, por iniciativa pombalina, no reinado de D. José I.»",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "contradiz",
+    "sources": [
+      {
+        "title": "Vila Real de Santo António — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$vila-real-de-santo-antonio",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "cidade criada em 1774",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-vrsa: cidade criada em 1774"
+      },
+      {
+        "title": "Núcleo histórico pombalino de Vila Real de Santo António — Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72810",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "em 1773, o Marquês de Pombal ordenou",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-vrsa: em 1773, o Marquês de Pombal ordenou"
+      }
+    ],
+    "correction": "Aplicada a redação restrita proposta na revisão; autoverificação, 2026-11-01. Ver xviii.atoms.ts."
+  },
+  "A:pl-vrsa-func": {
+    "status": "insuficiente",
+    "text": "A Infopédia confirma o reforço territorial e acrescenta as reais pescarias. O estudo académico identifica o controlo do contrabando e os direitos de exploração fronteiriça, mas a abertura falhou com 403. Não se obtiveram duas leituras independentes que comprovem integralmente ambas as finalidades. A fonte UNESCO atual indicada no pedido trata de Lisboa Pombalina e não prova esta finalidade.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "incerto",
+    "sources": [
+      {
+        "title": "Vila Real de Santo António — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$vila-real-de-santo-antonio",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "reforçar a presença portuguesa em frente à localidade espanhola de Ayamonte",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-vrsa-func: reforçar a presença portuguesa em frente à localidade espanhola de Ayamonte"
+      },
+      {
+        "title": "Borders in Globalization Review — estudo depositado na Universidade de Sevilha",
+        "url": "https://idus.us.es/bitstreams/6b3ddcdd-c91c-4cd9-b51f-4fe805530660/download",
+        "kind": "academica",
+        "reading": "excerto",
+        "excerpt": "designed to control smuggling, protect the state’s territory and resource exploitation rights on the border"
+      }
+    ]
+  },
+  "A:pl-douro": {
+    "status": "confirmado",
+    "text": "O IVDP foi lido. O catálogo arquivístico foi localizado na pesquisa, mas a abertura devolveu 404; apenas excerto. As instituições e os documentos são distintos.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "História do Vinho do Porto — IVDP",
+        "url": "https://www.ivdp.pt/pt/vinhos/vinhos-do-porto/historia/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "é criada a 10 de setembro de 1756",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-douro: é criada a 10 de setembro de 1756"
+      },
+      {
+        "title": "Junta do Comércio: catálogo — Arquivo Nacional Torre do Tombo",
+        "url": "https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2018/02/ID-L-739-PT-TT-JC-v1_2017.pdf",
+        "kind": "oficial",
+        "reading": "excerto",
+        "excerpt": "confirmada por Alvará de 10 de Setembro de 1756"
+      }
+    ]
+  },
+  "A:pl-marcos": {
+    "status": "confirmado",
+    "text": "A colocação dos marcos começou em 1758; não confundir o ano da criação da Companhia e da demarcação regulamentar (1756) com o da implantação dos marcos.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Marcos Pombalinos — Câmara Municipal de Mesão Frio",
+        "url": "https://www.cm-mesaofrio.pt/pages/672?poi_id=73",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "marcos de demarcação da zona de vinhos generosos do Douro",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-marcos: marcos de demarcação da zona de vinhos generosos do Douro"
+      },
+      {
+        "title": "Marco granítico n.º 71 — Património Cultural",
+        "url": "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72382",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "serviram para delimitar geograficamente a Região Vinhateira do Alto Douro",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-marcos: serviram para delimitar geograficamente a Região Vinhateira do Alto Douro"
+      }
+    ]
+  },
+  "A:pl-atentado": {
+    "status": "confirmado",
+    "text": "O veículo era uma sege de duas rodas. O ataque está documentado; a responsabilidade dos acusados no processo dos Távoras não deve ser apresentada como facto historicamente indiscutível.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "MPR+ n.º 14 — Museu da Presidência da República",
+        "url": "https://www.museu.presidencia.pt/pt/conhecer/mprplus/decimo-quarto-numero/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "do dia 3 de setembro de 1758",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-atentado: do dia 3 de setembro de 1758"
+      },
+      {
+        "title": "Nobreza no cadafalso — projeto de investigação Impressões Rebeldes, UFF",
+        "url": "https://www.historia.uff.br/impressoesrebeldes/revista/nobreza-no-cadafalso/",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "disparou “golpes de fogo” quase à queima roupa contra o rei",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-atentado: disparou “golpes de fogo” quase à queima roupa contra o rei"
+      }
+    ]
+  },
+  "A:pl-jesuitas": {
+    "status": "confirmado",
+    "text": "A lei de expulsão é de 3 de setembro de 1759. A aplicação e as deportações decorreram em momentos diferentes nos vários territórios. A abertura da página da Torre do Tombo falhou com 404: apenas excerto; o artigo académico foi lido.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Expulsão dos Jesuítas — Arquivo Nacional Torre do Tombo",
+        "url": "https://antt.dglab.gov.pt/exposicoes-virtuais-2/expulsao-dos-jesuitas/",
+        "kind": "oficial",
+        "reading": "excerto",
+        "excerpt": "A 3 de Setembro de 1759 foi promulgada"
+      },
+      {
+        "title": "Das maquinações aos estratagemas — Revista Brasileira de História da Educação",
+        "url": "https://www.scielo.br/j/rbhe/a/v8Ln7mgRh4Gm3z7kZVpXr9R/?lang=pt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Pombal expulsou a Companhia de Jesus de todos os domínios de Portugal",
+        "group": "/j/rbhe/a",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-jesuitas: Pombal expulsou a Companhia de Jesus de todos os domínios de Portugal"
+      }
+    ]
+  },
+  "A:pl-aulas": {
+    "status": "confirmado",
+    "text": "O alvará é de 28 de junho de 1759; inicialmente, as aulas visavam as humanidades. A reforma e a ampliação de 1772 são outro momento. Gratuito não significa universal nem obrigatório.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Os estudos menores e as reformas pombalinas — Teresa Rosa e Patrícia Gomes",
+        "url": "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "aulas régias gratuitas de gramática latina, de grego e de retórica",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-aulas: aulas régias gratuitas de gramática latina, de grego e de retórica"
+      },
+      {
+        "title": "Educação no Brasil no século XVIII e início do século XIX: olhares em escala — Thais Fonseca",
+        "url": "https://educa.fcc.org.br/scielo.php?lng=pt&nrm=iso&pid=S1984-64442024000100267&script=sci_arttext&tlng=pt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Em 1759 foi decretada a primeira lei",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-aulas: Em 1759 foi decretada a primeira lei"
+      }
+    ]
+  },
+  "A:pl-policia": {
+    "status": "confirmado",
+    "text": "A data é 25 de junho de 1760. A página da PSP foi lida e contém a gralha «25 e Junho», preservada no excerto. A abertura da página da Torre do Tombo devolveu 404: leitura limitada ao excerto da pesquisa.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Intendência Geral da Polícia — Arquivo Nacional Torre do Tombo",
+        "url": "https://antt.dglab.gov.pt/exposicoes-virtuais-2/intendencia-geral-da-policia/",
+        "kind": "oficial",
+        "reading": "excerto",
+        "excerpt": "Alvará com força de lei de 25 de Junho de 1760"
+      },
+      {
+        "title": "História — Polícia de Segurança Pública",
+        "url": "https://www.psp.pt/Pages/sobre-nos/quem-somos/historia.aspx",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "pela Lei de 25 e Junho de 1760, é criada a Intendência",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-policia: pela Lei de 25 e Junho de 1760, é criada a Intendência"
+      }
+    ]
+  },
+  "A:pl-alvara": {
+    "status": "confirmado",
+    "text": "Proibia a importação de pessoas escravizadas para Portugal continental; não aboliu então a escravatura colonial nem libertou automaticamente todas as pessoas já escravizadas no Reino. Não acrescentar o dia sem conferir o original: a bibliografia consultada apresenta variantes.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Memória acerca da Extinção da Escravidão — Assembleia da República",
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "alvará de 7 de setembro de 1761",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-alvara: alvará de 7 de setembro de 1761"
+      },
+      {
+        "title": "Datas Históricas — Sociedade Histórica da Independência de Portugal",
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "Já, em 1761",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-alvara: Já, em 1761"
+      }
+    ]
+  },
+  "A:pl-colegio": {
+    "status": "confirmado",
+    "text": "Distinguir aprovação da fundação e dos estatutos (1761) do início efetivo das aulas (19 de março de 1766). A introdução crítica da edição também confirma a abertura em 1766.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Colégio dos Nobres — Associação dos Amigos da Torre do Tombo",
+        "url": "https://www.aatt.org/site/index.php?id=221&op=Nucleo",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "iniciou efectivamente a sua actividade a 19 de Março de 1766",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-colegio: iniciou efectivamente a sua actividade a 19 de Março de 1766"
+      },
+      {
+        "title": "Compêndio Histórico da Universidade de Coimbra — introdução crítica, Lusosofia/UBI, p. 30",
+        "url": "https://lusosofia.ubi.pt/textos/20111031-marques_de_pombal_compendio_historico_da_universidade_de_coimbra.pdf",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "criado por Alvará Régio a 7 de Março de 1761",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-colegio: criado por Alvará Régio a 7 de Março de 1761"
+      }
+    ]
+  },
+  "A:pl-universidade": {
+    "status": "confirmado",
+    "text": "A reforma introduziu novos métodos e estruturas de ensino científico. Não confundir os Estatutos de 1772 com o Compêndio Histórico de 1771.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "O Edifício — Imprensa da Universidade de Coimbra",
+        "url": "https://www.uc.pt/imprensa/descobrir/o-edificio/",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "novos estatutos foram entregues em 1772",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-universidade: novos estatutos foram entregues em 1772"
+      },
+      {
+        "title": "O antijesuitismo como instrumento reformador do ensino luso — Jansen Gusmão Salles, UFES",
+        "url": "https://periodicos.ufes.br/ufesupem/article/view/11768/8464",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "Estatutos da Universidade de Coimbra, publicados no ano de 1772",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-universidade: Estatutos da Universidade de Coimbra, publicados no ano de 1772"
+      }
+    ]
+  },
+  "A:pl-ventre": {
+    "status": "confirmado",
+    "text": "O alvará de 16 de janeiro de 1773 abrangia os filhos de mulheres escravizadas que nascessem no Reino depois da sua publicação, além de disposições relativas à quarta geração. Não significa liberdade imediata de todas as pessoas escravizadas já nascidas, nem aplicação geral às colónias.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Memória acerca da Extinção da Escravidão — Assembleia da República",
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "um alvará de 1773",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-ventre: um alvará de 1773"
+      },
+      {
+        "title": "Datas Históricas — Sociedade Histórica da Independência de Portugal",
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "com este Alvará, de 1773",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-ventre: com este Alvará, de 1773"
+      }
+    ]
+  },
+  "A:pl-ambito": {
+    "status": "confirmado",
+    "text": "Válido quanto ao território beneficiário da proibição de importação e da liberdade de nascimento: o Reino continental. A lei de 1761 regulava também o transporte a partir de territórios ultramarinos; «só no Reino» não deve ser interpretado como ausência de consequências para embarcações ou agentes coloniais. A escravatura colonial continuou.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Memória acerca da Extinção da Escravidão — Assembleia da República",
+        "url": "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "em Portugal Continental",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-ambito: em Portugal Continental"
+      },
+      {
+        "title": "Datas Históricas — Sociedade Histórica da Independência de Portugal",
+        "url": "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "apenas ao território metropolitano (e não às terras do além-mar)",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-ambito: apenas ao território metropolitano (e não às terras do além-mar)"
+      }
+    ]
+  },
+  "A:pl-viradeira": {
+    "status": "confirmado",
+    "text": "A sucessão é correta. «Viradeira» designa a reação política e o afastamento de Pombal, não a simples morte do rei; não representou a anulação integral de todas as reformas.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "D. José I — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$d.-jose-i",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "faleceu a 24 de fevereiro de 1777",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-viradeira: faleceu a 24 de fevereiro de 1777"
+      },
+      {
+        "title": "Maria I, Queen of Portugal — National Portrait Gallery",
+        "url": "https://www.npg.org.uk/collections/search/person/mp63332/maria-i-queen-of-portugal",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "succeeded to the throne in 1777",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-viradeira: succeeded to the throne in 1777"
+      },
+      {
+        "title": "D. Maria I — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$d.-maria-i",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "filha primogénita de D. José I",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-viradeira: filha primogénita de D. José I"
+      }
+    ]
+  },
+  "A:pl-jose-sucessora": {
+    "status": "confirmado",
+    "text": "Maria I era filha de D. José I; o seu marido e tio D. Pedro recebeu o título de D. Pedro III.",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "D. Maria I — Infopédia",
+        "url": "https://www.infopedia.pt/artigos/$d.-maria-i",
+        "kind": "referencia",
+        "reading": "lida",
+        "excerpt": "subiu ao trono português em 1777",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-jose-sucessora: subiu ao trono português em 1777"
+      },
+      {
+        "title": "Maria I, Queen of Portugal — National Portrait Gallery",
+        "url": "https://www.npg.org.uk/collections/search/person/mp63332/maria-i-queen-of-portugal",
+        "kind": "oficial",
+        "reading": "lida",
+        "excerpt": "Born to Joseph I, King of Portugal",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-jose-sucessora: Born to Joseph I, King of Portugal"
+      }
+    ]
+  },
+  "A:pl-aulas-gratis": {
+    "status": "confirmado",
+    "text": "As aulas eram gratuitas, mas de acesso limitado e implantação gradual. O ensino não passou imediatamente a abranger toda a população. Corrigir para «substituir o ensino dos Jesuítas».",
+    "review": "docs/hgp/fabrica/verif/resposta-3.json",
+    "originalVerdict": "confirma",
+    "sources": [
+      {
+        "title": "Os estudos menores e as reformas pombalinas — Teresa Rosa e Patrícia Gomes",
+        "url": "https://revistas.rcaap.pt/interaccoes/article/view/3911",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "resolver o problema deixado pelo fecho dos Colégios Jesuítas",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-aulas-gratis: resolver o problema deixado pelo fecho dos Colégios Jesuítas"
+      },
+      {
+        "title": "Educação no Brasil no século XVIII e início do século XIX: olhares em escala — Thais Fonseca",
+        "url": "https://educa.fcc.org.br/scielo.php?lng=pt&nrm=iso&pid=S1984-64442024000100267&script=sci_arttext&tlng=pt",
+        "kind": "academica",
+        "reading": "lida",
+        "excerpt": "em substituição ao ensino jesuítico",
+        "atestado": "docs/hgp/fabrica/verif/resposta-3.json#pl-aulas-gratis: em substituição ao ensino jesuítico"
+      }
+    ]
+  }
+}

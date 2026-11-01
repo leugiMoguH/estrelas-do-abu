@@ -23,7 +23,7 @@ export function hgpTemplate(item: HgpItem): ExerciseTemplate {
     skillId: `${item.topic}:${item.skill}`,
     difficulties: [item.difficulty],
     instances: 1,
-    review: validationOf(item.id) === 'a-confirmar' ? 'needs-human-review' : 'approved',
+    review: (item.kb ? !item.kb.eligible : validationOf(item.id) === 'a-confirmar') ? 'needs-human-review' : 'approved',
     source: item.sources.join(', '),
     generate(seed): Exercise {
       const rng = seededRng(seed);
@@ -44,6 +44,7 @@ export function hgpTemplate(item: HgpItem): ExerciseTemplate {
         hints: [...item.hints],
         explanation: item.explanation,
         stimulus: item.stimulus,
+        ...(typeof item.kb?.variant === 'string' ? { variant: item.kb.variant } : {}),
         figure: item.figure ? { type: 'pt-map' as const, highlight: [...item.figure.highlight], label: item.figure.label } : undefined,
         commonErrors: Object.entries(errors).map(([match, feedback]) => ({ match, feedback })),
       };

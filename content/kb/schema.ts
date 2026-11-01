@@ -52,8 +52,8 @@ type Common = {
   readonly prompt: string;
   readonly hints: readonly string[];
   readonly explanation: string;
-  /** Formato alternativo do mesmo conhecimento (não conta como exercício distinto). */
-  readonly variant?: boolean;
+  /** true: formato alternativo; string: variante pedagógica explícita que distingue a identidade. */
+  readonly variant?: boolean | string;
   readonly stimulus?: string;
   readonly figure?: { readonly type: 'pt-map'; readonly highlight: readonly string[] };
 };

@@ -1,37 +1,39 @@
-# Fábrica de conhecimento e exercícios — primeiro caso: HGP «Portugal no século XVIII»
+# Fábrica Pedagógica V2 — Portugal no século XVIII
 
-Estado: 2026-10-31. Nada aqui é validação de especialista (ver «Revisão»).
+Estado local: 2026-11-01. Publicação bloqueada por falta de ligação a github.com:443 e checkpoint bloqueado por escrita negada em `.git/index.lock`. Não há nova validação docente nem auditoria independente dos moldes.
 
-## Arquitetura (implementada, `content/kb/`)
-`Disciplina → Ano → Competência → Capítulo → Subcapítulo → Conhecimento → Exercícios`
-- `schema.ts` — tipos partilhados por todas as disciplinas: `Atom` (conhecimento), `KbExercise`, 3 níveis (inicial/intermédio/avançado) e 9 tipos de raciocínio.
-- `historia/xviii.atoms.ts` — 96 **conhecimentos** (id estável, pergunta, resposta, frase com lacuna, distratores falsos, competência, subcapítulo, **evidência** = ids `Fn` da ficha factual). Só factos *CONFIRMADO* (≥2 fontes).
-- `historia/xviii-evidencia.json` — estado, texto e fontes de cada `Fn`, extraídos da ficha por `scripts/kb-evidencia.mjs` (o jogo não depende de PDF ou página externa).
-- `factory.ts` — gera exercícios **diferentes**, não reformulações: reconhecer, verificar frase, recordar (livre), calcular intervalos, ordenar cronologias e cadeias causais, comparar, exceção/classificação, «qual é a falsa», casos de inferência. Determinístico (mesmo input → mesmos exercícios); nenhum facto é inventado em jogo.
-- `qa.ts` — controlo de qualidade (testado em `tests/content/kb-xviii.test.ts`).
-- `content/historia/bank-h.ts` — liga os exercícios ao jogo (mesmo formato dos bancos manuais; sem alterar a interface).
-- Reutilizável: outra disciplina escreve os seus átomos + moldes (Matemática: regras e cálculo verificado por segunda via) e reutiliza schema, níveis e `qa.ts`.
+## Evidência
 
-## Controlos automáticos (todos a zero erros)
-Átomo: ficha existe, está CONFIRMADA, ≥2 fontes, o ano/resposta consta do texto da ficha. Exercício: ids únicos; opções únicas e sem a resposta no enunciado; correta entre as opções; explicação contém a resposta; ≥2 pistas; ordem consistente; níveis coerentes (inicial = 1 conhecimento, avançado = ≥2 ou cálculo com datas completas); repetições (mesmo molde+conhecimento; enunciados com sobreposição ≥0,85, distinguindo «repetida» de «ambígua»); equivalência com perguntas manuais existentes; viés «a correta é a mais longa». Sessões: 8 sessões consecutivas sem repetir enunciados nem o mesmo conhecimento na sessão, com rotação.
+`kb-integrar-verificacao.mjs` integra as 96 revisões anteriores de `verif/resposta-{1,2,3}.json`, conservando veredicto original, URL, tipo, estado de leitura, excerto e caminho do relatório. Cinco redações corrigidas ficam identificadas como aplicação da proposta anterior por autoverificação. Não representam nova revisão independente.
 
-## Resultados
-- **96 conhecimentos → 330 exercícios** (61 iniciais, 233 intermédios, 36 avançados). 190 de foco distinto (96 de um facto + 93 multi-facto + 1 caso de um facto) e 140 variantes de formato (verificar frase 96, resposta livre 44) — as variantes **não** contam como exercícios distintos.
-- Cobertura: `cobertura.json`. Todos os subcapítulos principais têm os 3 níveis; **legado africano só tem 4** (faltam factos CONFIRMADOS com 2 fontes) e «novas culturas» não foi tocado.
-- Esforço: ≈ 3,5 exercícios por conhecimento; cada conhecimento novo custa 1 entrada de dados (~6 linhas) + verificação na ficha; os moldes multi-facto custam ~10 linhas cada.
+`evidence.ts` conta apenas leituras contextualizadas atestadas em fontes qualificadas. Coincidência de nomes/datas não prova a afirmação. SciELO aloja obras de revistas diferentes, que não são uma única autoria. `verdictOf` prefere `A:<átomo>` à ficha composta: uma ficha PARCIAL não invalida automaticamente uma afirmação mais restrita devidamente sustentada. As fontes de referência foram admitidas como apoio enciclopédico/lexicográfico explícito na revisão anterior; não substituem a leitura contextual. As fontes institucionais e académicas predominam.
 
-## Licenças e fontes
-- **#EstudoEmCasa@ (estudoemcasaapoia.dge.mec.pt): licença contraditória.** A página «Participar» declara CC BY-SA 4.0; o rodapé liga a **CC BY-NC 4.0** e a política do sítio proíbe uso comercial; há materiais de terceiros creditados (ex.: fichas 5 e 8). Conclusão prudente: tratar como **não comercial/indefinido** → **nenhum texto, imagem ou exercício copiado**; usado só como referência curricular e fonte de factos (factos não são protegidos). A premissa «CC BY-SA» não pôde ser confirmada. Esclarecer com a DGE antes de qualquer uso comercial.
-- Aprendizagens Essenciais HGP 6.º (DGE): referência dos descritores.
-- Fontes de factos na ficha (Wikipédia PT/EN CC BY-SA, Infopédia, UNESCO, PDFs académicos): apenas factos; explicações e enunciados são originais. Se algum texto for reproduzido no futuro, aplica-se a licença da fonte (BY-SA exige atribuição e partilha igual).
-- Ferramentas avaliadas, **não instaladas** (não resolvem melhor do que 120 linhas de TypeScript neste volume): `pypdf` (BSD, extração de PDF); `sentence-transformers` + MiniLM multilingue (Apache-2.0, deteção semântica de duplicados — reavaliar acima de ~2000 exercícios); `RapidFuzz` (MIT, gralhas). Pesquisa por Codex, sem execução local.
+O verificador lê evidência factual, por átomo e X1–X6. O relatório `verificacao-fontes.json` distingue erro factual confirmado, evidência insuficiente, fonte inacessível e fonte válida não reconhecida lexicalmente, além do caso sem falha lexical. Mantém o erro original separado da correção. A consulta atual falhou nas 248 URLs: nenhum novo acesso foi confirmado. Leituras anteriores não são apagadas nem convertidas em erros factuais por essa falha.
 
-## Revisão
-- **Revisão independente parcial por Codex (leitura, 2026-10-31):** recalculou os 18 intervalos, as 2 idades e as 28 ordenações (sem erros aritméticos). Defeitos confirmados e **corrigidos**: (1) as Cortes voltaram a reunir-se em 24/1/1821, não em 1820 (erro também na ficha F44 — corrigida); (2) caso do aqueduto concluía «resistiu/pronto» sem base nas datas — reescrito para o que as datas permitem; (3) exceções de datas (Pombal, 1750) eram demasiado fáceis para o nível 3 — passaram a nível 2; (4) exceções repetiam o mesmo foco com outros distratores — cada exceção só aparece uma vez (338 → 330 exercícios).
-- **Não verificado por Codex:** validação histórica externa integral dos 96 conhecimentos e dos distratores; aceitação de respostas livres na interface. Permanece **pendente** uma revisão humana/especialista.
+Conhecimentos: 96 anteriores − 6 retirados + 6 X1–X6 = 96 atuais. São elegíveis 89. Ficam em revisão 7: od-quem, od-diamantes, so-cristao-novo, bp-bomjesus, pl-douro, pl-jesuitas e pl-policia (uma leitura integral qualificada; a outra é excerto). Não foram declarados falsos.
 
-## Limitações
-- Os factos vêm da ficha (fontes lidas em parte por excertos): **conhecimento «confirmado» ≠ validado por especialista**.
-- Distratores são revistos pelo autor; a máquina garante unicidade, não verdade.
-- Duplicados semânticos: sobreposição de palavras + chave estrutural; sem modelo de embeddings.
-- A adaptação do jogo continua por tema (competência = tema); cada exercício já regista competência, nível e raciocínio, mas a adaptação por competência exige alterar o motor (próximo bloco).
+Retirados: ba-methuen-panos, od-tejuco, mj-aq-agua, mj-aq-sismo, bp-brasil e pl-vrsa-func. Corrigidos em âmbito: od-mafra, so-limpeza, mj-biblioteca-fim, bp-estilo e pl-vrsa; corrigidos ainda financiamento na nota mj-biblioteca, datas/escultor/sucessão/distratores e artigos. F44 conserva 1821; F59/F61/F63/F94 estão PARCIAL. Capoeira, samba e Valongo continuam pendentes.
+
+## Exercícios e rubrica
+
+Antes: 330 gerados/ativos (61 iniciais, 233 intermédios, 36 avançados). Agora: 279 gerados (240/27/12), dos quais **255 disponíveis nas sessões normais (221/23/11)**; 24 aguardam evidência de todos os conhecimentos envolvidos. Com os 69 manuais ativos do tema, são 399 → 324 disponíveis. A validação anterior destes 69 manuais não foi refeita.
+
+A redução é deliberada e localizada: removidos intervalos/idades/casos aritméticos, cronologias e comparações aleatórias; exceções e frase-falsa deixam de multiplicar a mesma pergunta pela troca de opções. Entraram seis conhecimentos do legado africano e moldes de processo, afirmação–evidência, documento-resumo, mapa e cronologia temática. A contagem de focos exclui formatos alternativos: 133 gerados, 121 elegíveis. Ver distribuição exata por subcapítulo, competência e molde em `cobertura.json`; inventário completo, incluindo manuais e pendentes, em `itens.json`.
+
+A suspensão afeta sobretudo cronologia, identificação de personagens e localização: diamantes, bandeirantes, cristãos-novos, Bom Jesus e três reformas pombalinas. Permanecem conteúdos seguros de todos os sete subcapítulos temáticos principais; a síntese gerada está suspensa por composição com um conhecimento pendente. A competência mais frequente nas sessões normais é cronologia, 114/255 = 44,7%, abaixo do limite de 45%.
+
+`reasoning.ts` contém a rubrica obrigatória. Recordar, reconhecer, verificar e mapa são nível 1; classificação, períodos e sequências temáticas/causais são nível 2; transferência, causa, avaliação de evidência e interpretação são nível 3. A extensão de um enunciado ou uma conta com datas não promove o nível. Não se impõem três níveis a todos os conhecimentos. Os resumos estão identificados como texto escrito para o jogo e só permitem conclusões positivas.
+
+## Identidade, sessões e persistência
+
+Identidade = enunciado + estímulo normalizados; opções e ordem visual não contam. `variant: string` distingue uma variante pedagógica explícita; `variant: true` assinala apenas formato alternativo, excluído da contagem de focos. `skillId` identifica a competência, separadamente. Históricos WIP com opções no sufixo continuam reconhecidos sem alterar o formato Save.
+
+A progressão por competência fica no envelope AppState, fora do Save v2. Uma competência nova começa no nível 1 mesmo que o tema seja forte. São necessários quatro acertos válidos (ou quatro em cinco), com pouca ajuda e no nível exigido, para subir; uma resposta isolada não prova domínio. Três erros seguidos podem baixar o nível. Conhecimentos falhados favorecem alternativas; revisão espaçada e rotação usam o histórico. Importar/reiniciar limpa competências; o Save anterior, estrelas e compras conservam o formato.
+
+## QA e autoverificação
+
+`qa.ts`: rubrica, artigos incompatíveis, palavras repetidas, distrator que é resposta de outro átomo, pistas lexicais, concentração e elegibilidade. O linter não decide a verdade histórica. Há 47 alertas no inventário completo (`qa.json`): 46 coincidências de respostas em distratores e concentração global de cronologia; no conjunto elegível não há concentração superior a 45%. As coincidências foram lidas como alternativas falsas à pergunta concreta (datas e nomes de outros factos), não como prova de ambiguidade.
+
+Amostra estratificada por molde em `amostra-autoverificacao.json` (15 moldes, três níveis). Autoverificação: conferidos enunciado, opções, explicação, exigência e conhecimento. Defeitos confirmados corrigidos: consequências tautológicas, variantes artificiais de opções, perguntas longas sem raciocínio extra e classificação avançada de simples períodos. Não é validação semântica exaustiva dos distratores nem nova consulta das fontes; não há revisão docente ou teste com a criança.
+
+Ver resultados finais de execução em `validacao-v2.md`. Sem dependências novas e sem alterações na interface da criança. Para reproduzir: `node scripts/kb-integrar-verificacao.mjs`, `node scripts/kb-evidencia.mjs`, `node scripts/kb-verificar-fontes.mjs`, `npm test`, `npx tsc --noEmit`, `npm run build`, `npm run e2e`. Em PowerShell com execução de .ps1 desativada, os lançadores normais são `npm.cmd`/`npx.cmd`.

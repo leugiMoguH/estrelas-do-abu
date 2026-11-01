@@ -7,6 +7,7 @@ import { gamePack } from '../../content';
 import { materialize } from '../../src/core/content';
 import { buildSession, seededRng } from '../../src/core/session';
 import type { Mastery, MasteryState } from '../../src/core/mastery';
+import { emptySkill, type SkillsState } from '../../src/core/skills';
 
 const SHORT: Record<string, string> = {
   xviii: 'hgp-seculo-xviii', liberalismo: 'hgp-liberalismo', 'xix-segunda-metade': 'hgp-xix-segunda-metade', republica: 'hgp-republica',
@@ -33,8 +34,8 @@ const poolFor = (state: MasteryState, ids: readonly string[] = topicIds, seed = 
     },
   });
 };
-const session = (mode: 'study' | 'test' | 'review', state: MasteryState, ids: readonly string[], n: number, seed: number) =>
-  buildSession({ mode, pool: poolFor(state, ids, seed), competencyIds: ids, n, state, rng: seededRng(seed), now: NOW, history: [] });
+const session = (mode: 'study' | 'test' | 'review', state: MasteryState, ids: readonly string[], n: number, seed: number, skills?: SkillsState) =>
+  buildSession({ mode, pool: poolFor(state, ids, seed), competencyIds: ids, n, state, skills, rng: seededRng(seed), now: NOW, history: [] });
 const mean = (xs: readonly number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
 
 describe('auditoria pedagógica HGP', () => {
@@ -58,7 +59,11 @@ describe('auditoria pedagógica HGP', () => {
     const weak = mastery({ recent: [false, false], streak: 0 });
     const mid = mastery({ recent: [true, false], streak: 1 });
     const strong = mastery({ recent: [true, true, true], streak: 4, correct: 5 });
-    const diff = (m: Mastery) => mean([1, 2, 3, 4, 5].flatMap((seed) => session('study', stateFor(m), ids, 8, seed).exercises.map((e) => e.difficulty)));
+    const diff = (m: Mastery) => {
+      const level = m === weak ? 1 : m === mid ? 2 : 3;
+      const skills = Object.fromEntries(poolFor(stateFor(m)).filter(e => e.skillId).map(e => [e.skillId!, { ...emptySkill(), attempts: 10, correct: 8, level }]));
+      return mean([1, 2, 3, 4, 5].flatMap(seed => session('study', stateFor(m), ids, 8, seed, skills as SkillsState).exercises.map(e => e.difficulty)));
+    };
     const [w, m, s] = [diff(weak), diff(mid), diff(strong)];
     expect(w).toBeLessThan(m);
     expect(m).toBeLessThan(s);

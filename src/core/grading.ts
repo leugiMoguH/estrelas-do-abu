@@ -3,11 +3,10 @@ export function normalize(value: string, ignoreAccents = false): string {
   const text = value.normalize('NFC').trim().replace(/\s+/gu, ' ').toLocaleLowerCase('pt-PT');
   return ignoreAccents ? text.normalize('NFD').replace(/\p{M}/gu, '') : text;
 }
-/** Identidade de um exercício para evitar repetições: enunciado + estímulo + opções/itens (sem ordem). Perguntas com o mesmo enunciado e opções diferentes são exercícios diferentes. */
-export function exerciseSignature(ex: Pick<Exercise, 'prompt' | 'stimulus'> & { readonly options?: readonly string[]; readonly items?: readonly string[] }): string {
+/** Identidade pedagógica, independente dos distratores e da ordem de apresentação. */
+export function exerciseSignature(ex: Pick<Exercise, 'prompt' | 'stimulus'> & { readonly variant?: string; readonly options?: readonly string[]; readonly items?: readonly string[] }): string {
   const base = normalize(ex.prompt) + (ex.stimulus ? `|${normalize(ex.stimulus)}` : '');
-  const choices = [...(ex.options ?? ex.items ?? [])].map((s) => normalize(s)).sort();
-  return choices.length ? `${base}|${choices.join('|')}` : base;
+  return ex.variant ? `${base}|variant:${normalize(ex.variant)}` : base;
 }
 function numeric(raw: string, units: readonly string[]): number | undefined {
   let text = raw.trim();

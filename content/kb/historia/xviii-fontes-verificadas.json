@@ -1,96 +1,51 @@
 {
  "https://cesad.ufs.br/ORBI/public/uploadCatalago/17292505102012Historia_do_Brasil_Colonia_Aula_4.pdf": {
-  "estado": "lida",
-  "bytes": 296,
-  "em": {
-   "F1": {
-    "numeros": "0/0",
-    "nomes": "0/4",
-    "ok": false
-   },
-   "F2": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://companhiadasletras.com.br/sala_professor/pdfs/CadernoAtividades_BrasilUmaBiografia_cap2.pdf": {
   "estado": "erro",
-  "http": 404,
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://www.redalyc.org/pdf/3033/303325733006.pdf": {
-  "estado": "pdf",
-  "bytes": 56938,
-  "em": {
-   "F5": {
-    "numeros": "1/1",
-    "nomes": "3/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infoescola.com/historia-europa/tratado-de-methuen/": {
-  "estado": "lida",
-  "bytes": 4793,
-  "em": {
-   "F5": {
-    "numeros": "1/1",
-    "nomes": "3/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/10B11c.pdf": {
-  "estado": "pdf",
-  "bytes": 3268,
-  "em": {
-   "F5": {
-    "numeros": "1/1",
-    "nomes": "3/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.redalyc.org/pdf/770/77003103.pdf": {
-  "estado": "pdf",
-  "bytes": 97612,
-  "em": {
-   "F6": {
-    "numeros": "3/3",
-    "nomes": "2/2",
-    "ok": true
-   },
-   "F11": {
-    "numeros": "3/3",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://periodicoscientificos.ufmt.br/territoriosefronteiras/index.php/v03n02/article/download/691/349/1890": {
-  "estado": "pdf",
-  "bytes": 10400,
-  "em": {
-   "F6": {
-    "numeros": "0/3",
-    "nomes": "2/2",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Brazilian_Gold_Rush": {
-  "estado": "lida",
-  "bytes": 15924,
-  "em": {
-   "F11": {
-    "numeros": "2/3",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www3.ufmg.br/storage/e/8/f/d/e8fdbd5e4fd7576d66425cc0e4a5363e_16085963106786_861894680.pdf": {
   "estado": "erro",
@@ -99,111 +54,46 @@
   "em": {}
  },
  "https://www.infoescola.com/historia/revolta-de-filipe-dos-santos": {
-  "estado": "lida",
-  "bytes": 6960,
-  "em": {
-   "F14": {
-    "numeros": "1/1",
-    "nomes": "3/3",
-    "ok": true
-   },
-   "F16": {
-    "numeros": "0/1",
-    "nomes": "3/3",
-    "ok": false
-   },
-   "F17": {
-    "numeros": "1/1",
-    "nomes": "7/7",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://pt.wikipedia.org/wiki/Ciclo_do_ouro": {
-  "estado": "lida",
-  "bytes": 44273,
-  "em": {
-   "F15": {
-    "numeros": "0/0",
-    "nomes": "1/1",
-    "ok": true
-   },
-   "F21": {
-    "numeros": "1/1",
-    "nomes": "0/0",
-    "ok": true
-   },
-   "F22": {
-    "numeros": "0/0",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://projetoagathaedu.com.br/questoes-vestibular/resolucao-historia/colonia/quinto-do-ouro-e-casas-de-fundicao.php": {
-  "estado": "lida",
-  "bytes": 22082,
-  "em": {
-   "F15": {
-    "numeros": "0/0",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.todamateria.com.br/revolta-de-vila-rica/": {
-  "estado": "lida",
-  "bytes": 24573,
-  "em": {
-   "F17": {
-    "numeros": "1/1",
-    "nomes": "6/7",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://biblioteca.ibge.gov.br/visualizacao/dtb/minasgerais/diamantina.pdf": {
-  "estado": "pdf",
-  "bytes": 14170,
-  "em": {
-   "F18": {
-    "numeros": "1/1",
-    "nomes": "5/7",
-    "ok": true
-   },
-   "F20": {
-    "numeros": "2/2",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www2.ufjf.br/historia/files/2020/04/Samuel-Partson-Moreira-Francischini-A-Real-Extra%C3%A7%C3%A3o-Historiografia-e-debate.pdf": {
-  "estado": "pdf",
-  "bytes": 118640,
-  "em": {
-   "F18": {
-    "numeros": "1/1",
-    "nomes": "7/7",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Diamantina,_Minas_Gerais": {
-  "estado": "lida",
-  "bytes": 41939,
-  "em": {
-   "F18": {
-    "numeros": "1/1",
-    "nomes": "7/7",
-    "ok": true
-   },
-   "F20": {
-    "numeros": "1/2",
-    "nomes": "2/2",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://diamantina.cedeplar.ufmg.br/portal/download/diamantina-2006/D06A004.pdf": {
   "estado": "erro",
@@ -212,8 +102,8 @@
   "em": {}
  },
  "https://www.infopedia.pt/artigos/$barroco-joanino": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
@@ -224,171 +114,76 @@
   "em": {}
  },
  "https://revistas.usal.es/uno/index.php/Studia_Historica/article/download/shhmo2016381123151/14889": {
-  "estado": "pdf",
-  "bytes": 89501,
-  "em": {
-   "F24": {
-    "numeros": "0/0",
-    "nomes": "6/6",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://periodicos.usp.br/revhistoria/article/download/18912/20975/22443": {
-  "estado": "pdf",
-  "bytes": 98610,
-  "em": {
-   "F27": {
-    "numeros": "2/2",
-    "nomes": "1/1",
-    "ok": true
-   },
-   "F99": {
-    "numeros": "1/1",
-    "nomes": "4/4",
-    "ok": true
-   },
-   "F101": {
-    "numeros": "2/2",
-    "nomes": "3/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.redalyc.org/journal/770/77066580002/77066580002.pdf": {
   "estado": "erro",
-  "http": "pdf-ilegivel",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://estudoautonomo.dge.mec.pt/sites/default/files/2024-12/GTA1_Hist%C3%B3ria%20A.%C2%BA%20ano_Tema%201_%20Subtema%201_A%20Europa%20dos%20Estados%20absolutos%20e%20a%20Europa%20dos%20parlamentos.pdf": {
   "estado": "erro",
-  "http": "pdf-ilegivel",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://estudoemcasaapoia.dge.mec.pt/sites/default/files/inline-files/1152c.pdf": {
-  "estado": "pdf",
-  "bytes": 3070,
-  "em": {
-   "F34": {
-    "numeros": "0/0",
-    "nomes": "3/3",
-    "ok": true
-   },
-   "F35": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   },
-   "F36": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   },
-   "F37": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://seer.ufrgs.br/index.php/revistaihgrgs/article/view/133689": {
-  "estado": "lida",
-  "bytes": 10707,
-  "em": {
-   "F38": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   },
-   "F102": {
-    "numeros": "1/1",
-    "nomes": "0/0",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/artigos/$cristao-novo": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://pt.wikipedia.org/wiki/Jo%C3%A3o_V_de_Portugal": {
-  "estado": "lida",
-  "bytes": 157918,
-  "em": {
-   "F39": {
-    "numeros": "0/0",
-    "nomes": "1/1",
-    "ok": true
-   },
-   "F41": {
-    "numeros": "2/2",
-    "nomes": "1/1",
-    "ok": true
-   },
-   "F42": {
-    "numeros": "3/3",
-    "nomes": "0/0",
-    "ok": true
-   },
-   "F43": {
-    "numeros": "0/0",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://seer.ufrgs.br/index.php/webmosaica/article/view/31841": {
-  "estado": "lida",
-  "bytes": 6398,
-  "em": {
-   "F39": {
-    "numeros": "0/0",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/John_V_of_Portugal": {
-  "estado": "lida",
-  "bytes": 75742,
-  "em": {
-   "F41": {
-    "numeros": "2/2",
-    "nomes": "1/1",
-    "ok": true
-   },
-   "F42": {
-    "numeros": "3/3",
-    "nomes": "0/0",
-    "ok": true
-   },
-   "F53": {
-    "numeros": "1/1",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/artigos/$palacio-convento-de-mafra": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://en.wikipedia.org/wiki/Portuguese_Cortes": {
-  "estado": "lida",
-  "bytes": 34651,
-  "em": {
-   "F44": {
-    "numeros": "5/5",
-    "nomes": "1/3",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://ap1.sib.uc.pt/bitstream/10316.2/46747/1/cortes_de_lisboa_em_1677.pdf": {
   "estado": "erro",
@@ -397,15 +192,10 @@
   "em": {}
  },
  "https://portugal.gov.pt/pt/gc21/area-de-governo/negocios-estrangeiros/informacao-adicional/historia-do-ministerio-dos-negocios-estrangeiros": {
-  "estado": "lida",
-  "bytes": 1980,
-  "em": {
-   "F46": {
-    "numeros": "1/1",
-    "nomes": "10/10",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://revistas.usp.br/ran/es/article/view/126962": {
   "estado": "erro",
@@ -414,130 +204,70 @@
   "em": {}
  },
  "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548945019_bac22fd30f0c48b2e05f65d2fd3ae72d.pdf": {
-  "estado": "pdf",
-  "bytes": 46994,
-  "em": {
-   "F46": {
-    "numeros": "1/1",
-    "nomes": "8/10",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Patriarchate_of_Lisbon": {
-  "estado": "lida",
-  "bytes": 32543,
-  "em": {
-   "F47": {
-    "numeros": "1/1",
-    "nomes": "8/11",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://cardinals.fiu.edu/bios1737.htm": {
-  "estado": "lida",
-  "bytes": 45127,
-  "em": {
-   "F47": {
-    "numeros": "1/1",
-    "nomes": "4/11",
-    "ok": false
-   },
-   "F48": {
-    "numeros": "1/1",
-    "nomes": "3/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.tesouroreal.pt/en/pages/f9c5d0d7": {
-  "estado": "lida",
-  "bytes": 6930,
-  "em": {
-   "F47": {
-    "numeros": "1/1",
-    "nomes": "2/11",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Patriarch_of_Lisbon": {
-  "estado": "lida",
-  "bytes": 12262,
-  "em": {
-   "F48": {
-    "numeros": "1/1",
-    "nomes": "3/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.dns.pt/en/galeriapt/details.php?id=16": {
-  "estado": "lida",
-  "bytes": 3122,
-  "em": {
-   "F49": {
-    "numeros": "1/1",
-    "nomes": "3/10",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.citaliarestauro.com/?p=41984": {
-  "estado": "lida",
-  "bytes": 14551,
-  "em": {
-   "F49": {
-    "numeros": "1/1",
-    "nomes": "3/10",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.dn.pt/arquivo/diario-de-noticias/coche-dos-oceanos-voltou-a-sair-a-rua.html": {
-  "estado": "lida",
-  "bytes": 5330,
-  "em": {
-   "F49": {
-    "numeros": "1/1",
-    "nomes": "7/10",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.lonelyplanet.com/pois/1534244": {
-  "estado": "lida",
-  "bytes": 56248,
-  "em": {
-   "F50": {
-    "numeros": "0/2",
-    "nomes": "1/2",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://observador.pt/2017/05/23/museu-dos-coches-recebeu-10-mil-visitantes-em-dois-dias/": {
-  "estado": "lida",
-  "bytes": 49709,
-  "em": {
-   "F50": {
-    "numeros": "1/2",
-    "nomes": "2/2",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://dichp.bnportugal.gov.pt/imagens/academia_historia_eng.pdf": {
-  "estado": "pdf",
-  "bytes": 29622,
-  "em": {
-   "F51": {
-    "numeros": "1/1",
-    "nomes": "5/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://ap1.sib.uc.pt/bitstream/10316.2/27950/1/rph42_artigo14.pdf": {
   "estado": "erro",
@@ -546,37 +276,22 @@
   "em": {}
  },
  "https://anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548206372_0cb934859fa1e57f5220b3ca79a1ae83.pdf": {
-  "estado": "pdf",
-  "bytes": 18035,
-  "em": {
-   "F51": {
-    "numeros": "1/1",
-    "nomes": "5/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Most_Faithful_Majesty": {
-  "estado": "lida",
-  "bytes": 12612,
-  "em": {
-   "F52": {
-    "numeros": "1/1",
-    "nomes": "1/3",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.janusonline.pt/arquivo/docs9900/artigo_janus9900_1_18.doc": {
-  "estado": "lida",
-  "bytes": 114318,
-  "em": {
-   "F52": {
-    "numeros": "1/1",
-    "nomes": "1/3",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://estudogeral.sib.uc.pt/bitstream/10316/85057/1/D4_AFPimentel_Monumentos%2035.pdf": {
   "estado": "erro",
@@ -585,70 +300,22 @@
   "em": {}
  },
  "https://observador.pt/especiais/a-boda-real-e-o-regresso-dos-braganca-a-mafra-o-palacio-onde-uma-princesa-foi-batizada-e-de-onde-partiu-o-ultimo-rei-portugues/": {
-  "estado": "lida",
-  "bytes": 77367,
-  "em": {
-   "F55": {
-    "numeros": "1/1",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
- },
- "https://www.idealista.pt/news/node/66653": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
- "https://www.uc.pt/en/tourism/unesco/joanina-library": {
-  "estado": "lida",
-  "bytes": 19159,
-  "em": {
-   "F59": {
-    "numeros": "2/2",
-    "nomes": "2/2",
-    "ok": true
-   },
-   "F75": {
-    "numeros": "0/1",
-    "nomes": "3/6",
-    "ok": false
-   }
-  }
- },
- "https://pages.uc.pt/en/bguc/activities/joanina300years": {
-  "estado": "lida",
-  "bytes": 1722,
-  "em": {
-   "F59": {
-    "numeros": "0/2",
-    "nomes": "0/2",
-    "ok": false
-   }
-  }
- },
- "https://en.wikipedia.org/wiki/Biblioteca_Joanina": {
-  "estado": "lida",
-  "bytes": 14870,
-  "em": {
-   "F59": {
-    "numeros": "2/2",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+ "https://www.idealista.pt/news/node/66653": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.theartnewspaper.com/2018/08/20/prefabulous-the-story-of-an-18th-century-chapel-made-entirely-in-rome-for-a-church-in-lisbon": {
-  "estado": "lida",
-  "bytes": 6950,
-  "em": {
-   "F60": {
-    "numeros": "2/2",
-    "nomes": "8/9",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://econtents.bc.unicamp.br/eventos/index.php/eha/article/download/4682/4491/12648": {
   "estado": "erro",
@@ -657,135 +324,58 @@
   "em": {}
  },
  "https://comum.rcaap.pt/bitstream/10400.26/46409/1/Silva_Andre_Martins_A_CSJB.pdf": {
-  "estado": "lida",
-  "bytes": 1148,
-  "em": {
-   "F60": {
-    "numeros": "0/2",
-    "nomes": "0/9",
-    "ok": false
-   }
-  }
- },
- "https://pt.wikipedia.org/wiki/Aqueduto_das_%C3%81guas_Livres": {
-  "estado": "lida",
-  "bytes": 27040,
-  "em": {
-   "F61": {
-    "numeros": "2/2",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/%C3%81guas_Livres_Aqueduct": {
-  "estado": "lida",
-  "bytes": 24966,
-  "em": {
-   "F61": {
-    "numeros": "2/2",
-    "nomes": "2/2",
-    "ok": true
-   },
-   "F62": {
-    "numeros": "2/2",
-    "nomes": "2/2",
-    "ok": true
-   },
-   "F63": {
-    "numeros": "1/1",
-    "nomes": "0/0",
-    "ok": true
-   }
-  }
- },
- "https://www.visitlisboa.com/en/c/sightseeing-and-activities/museums-and-monuments/monuments/p/aqueduto-das-aguas-livres": {
-  "estado": "lida",
-  "bytes": 3505,
-  "em": {
-   "F61": {
-    "numeros": "0/2",
-    "nomes": "2/2",
-    "ok": false
-   },
-   "F63": {
-    "numeros": "1/1",
-    "nomes": "0/0",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://rfm.pt/atualidade/23701/o-maior-arco-em-ogiva-de-pedra-do-mundo-fica-em-lisboa-e-e-apenas-uma-pequena-parte-de-um-monumento-gigantesco": {
-  "estado": "lida",
-  "bytes": 19160,
-  "em": {
-   "F62": {
-    "numeros": "1/2",
-    "nomes": "2/2",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/artigos/$antonio-jose-da-silva": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://www.britannica.com/print/article/544722": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://www.jewishvirtuallibrary.org/antonio-jose-da-silva": {
-  "estado": "lida",
-  "bytes": 4009,
-  "em": {
-   "F66": {
-    "numeros": "1/1",
-    "nomes": "4/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.parquesdesintra.pt/en/parks-monuments/national-palace-and-gardens-of-queluz/history/": {
-  "estado": "lida",
-  "bytes": 16117,
-  "em": {
-   "F67": {
-    "numeros": "1/1",
-    "nomes": "4/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://nppg.org.br/revistas/gestaoegerenciamento/article/download/16/14": {
-  "estado": "pdf",
-  "bytes": 25238,
-  "em": {
-   "F67": {
-    "numeros": "1/1",
-    "nomes": "4/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://rihgb.emnuvens.com.br/revista/article/download/77/63/127": {
-  "estado": "pdf",
-  "bytes": 69186,
-  "em": {
-   "F68": {
-    "numeros": "0/0",
-    "nomes": "2/2",
-    "ok": true
-   },
-   "F69": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://ojs3.ge-iic.com/index.php/revista/article/download/21/pdf": {
   "estado": "erro",
@@ -794,416 +384,226 @@
   "em": {}
  },
  "https://rio.upo.es/entities/publication/a42adc9a-4198-4e99-ba7b-5efd478ccc0f/full": {
-  "estado": "lida",
-  "bytes": 64,
-  "em": {
-   "F70": {
-    "numeros": "0/0",
-    "nomes": "0/4",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://pt.wikipedia.org/wiki/Torre_dos_Cl%C3%A9rigos": {
-  "estado": "lida",
-  "bytes": 29632,
-  "em": {
-   "F71": {
-    "numeros": "0/0",
-    "nomes": "4/4",
-    "ok": true
-   },
-   "F72": {
-    "numeros": "2/2",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/artigos/$igreja-dos-clerigos": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://structurae.net/en/structures/clerigos-tower": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://porto.pt/en/news/you-are-in-porto-and-thinking-where-to-head-next--how-about-the-clerigos-tower": {
-  "estado": "lida",
-  "bytes": 219,
-  "em": {
-   "F72": {
-    "numeros": "0/2",
-    "nomes": "1/1",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://portugalhomes.com/news/article/116/portugal-adds-three-new-sites-to-unesco-world-heritage-list": {
   "estado": "erro",
-  "http": 404,
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://www.theportugalnews.com/news/portugal-adds-three-new-sites-to-unesco-world-heritage-list/50290": {
-  "estado": "lida",
-  "bytes": 38259,
-  "em": {
-   "F73": {
-    "numeros": "1/1",
-    "nomes": "1/7",
-    "ok": false
-   },
-   "F74": {
-    "numeros": "1/1",
-    "nomes": "2/4",
-    "ok": true
-   },
-   "F75": {
-    "numeros": "1/1",
-    "nomes": "2/6",
-    "ok": false
-   },
-   "F76": {
-    "numeros": "0/1",
-    "nomes": "1/4",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.sabado.pt/portugal/amp/sabe-quais-sao-os-17-bens-portugueses-na-lista-do-patrimonio-mundial-da-unesco": {
-  "estado": "lida",
-  "bytes": 22402,
-  "em": {
-   "F73": {
-    "numeros": "1/1",
-    "nomes": "7/7",
-    "ok": true
-   },
-   "F75": {
-    "numeros": "1/1",
-    "nomes": "4/6",
-    "ok": true
-   },
-   "F76": {
-    "numeros": "0/1",
-    "nomes": "4/4",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.uc.pt/en/tourism/unesco/joanina-library": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://whc.unesco.org/en/list/124": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://en.wikipedia.org/wiki/Ouro_Preto": {
-  "estado": "lida",
-  "bytes": 48141,
-  "em": {
-   "F77": {
-    "numeros": "1/2",
-    "nomes": "8/13",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.ipatrimonio.org/wp-content/uploads/2018/03/Patrim%C3%B4nio-Mundial-Cultural-e-Nacional_semcapa.pdf": {
   "estado": "erro",
-  "http": "pdf-ilegivel",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://pt.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_marqu%C3%AAs_de_Pombal": {
-  "estado": "lida",
-  "bytes": 100603,
-  "em": {
-   "F79": {
-    "numeros": "1/1",
-    "nomes": "6/6",
-    "ok": true
-   },
-   "F109": {
-    "numeros": "1/1",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo,_1st_Marquis_of_Pombal": {
-  "estado": "lida",
-  "bytes": 58442,
-  "em": {
-   "F79": {
-    "numeros": "1/1",
-    "nomes": "6/6",
-    "ok": true
-   },
-   "F99": {
-    "numeros": "1/1",
-    "nomes": "4/4",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://pt.wikipedia.org/wiki/Sismo_de_Lisboa_de_1755": {
-  "estado": "lida",
-  "bytes": 39116,
-  "em": {
-   "F82": {
-    "numeros": "1/1",
-    "nomes": "2/2",
-    "ok": true
-   },
-   "F83": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   },
-   "F89": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake": {
-  "estado": "lida",
-  "bytes": 50729,
-  "em": {
-   "F82": {
-    "numeros": "1/1",
-    "nomes": "1/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.nationalgeographicbrasil.com/meio-ambiente/2024/08/terremoto-em-portugal-traz-de-volta-a-historia-do-catastrofico-tremor-de-terra-que-atingiu-lisboa-em-1755": {
-  "estado": "lida",
-  "bytes": 6703,
-  "em": {
-   "F82": {
-    "numeros": "0/1",
-    "nomes": "0/2",
-    "ok": false
-   },
-   "F83": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/artigos/$eugenio-dos-santos": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://en.wikipedia.org/wiki/Eug%C3%A9nio_dos_Santos": {
-  "estado": "lida",
-  "bytes": 8849,
-  "em": {
-   "F88": {
-    "numeros": "0/0",
-    "nomes": "6/7",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://periodicos.puc-campinas.edu.br/oculum/article/download/798/778/1620": {
-  "estado": "pdf",
-  "bytes": 33633,
-  "em": {
-   "F89": {
-    "numeros": "0/0",
-    "nomes": "0/0",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Pra%C3%A7a_do_Com%C3%A9rcio": {
-  "estado": "lida",
-  "bytes": 21614,
-  "em": {
-   "F90": {
-    "numeros": "1/1",
-    "nomes": "6/6",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.visitportugal.com/pt-pt/node/139363": {
-  "estado": "lida",
-  "bytes": 1601,
-  "em": {
-   "F90": {
-    "numeros": "0/1",
-    "nomes": "0/6",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Statue_of_Jos%C3%A9_I_of_Portugal": {
-  "estado": "lida",
-  "bytes": 12676,
-  "em": {
-   "F91": {
-    "numeros": "1/1",
-    "nomes": "5/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://archive.org/details/aoreyfidelissimo00mach": {
-  "estado": "lida",
-  "bytes": 36405,
-  "em": {
-   "F91": {
-    "numeros": "1/1",
-    "nomes": "4/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://mail.anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548953099_66430b677ba62f5df90dd0e6500c68c4.pdf": {
   "estado": "erro",
-  "http": "pdf-ilegivel",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://baixoguadiana.com/en/territorio/patrimonio-edificado/nucleo-pombalino/": {
-  "estado": "lida",
-  "bytes": 29072,
-  "em": {
-   "F92": {
-    "numeros": "0/0",
-    "nomes": "4/7",
-    "ok": true
-   },
-   "F93": {
-    "numeros": "1/2",
-    "nomes": "4/6",
-    "ok": false
-   },
-   "F94": {
-    "numeros": "0/0",
-    "nomes": "4/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/$vila-real-de-santo-antonio": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://postal.pt/algarve/esta-cidade-do-algarve-ao-pe-da-praia-foi-construida-em-menos-de-dois-anos-e-e-das-mais-baratas-para-fazer-ferias/": {
-  "estado": "lida",
-  "bytes": 27172,
-  "em": {
-   "F93": {
-    "numeros": "1/2",
-    "nomes": "6/6",
-    "ok": false
-   }
-  }
- },
- "https://whc.unesco.org/en/tentativelists/6226": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://www.infopedia.pt/artigos/$vinho-do-porto": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://realcompanhiavelha.pt/en/?p=3397": {
-  "estado": "lida",
-  "bytes": 302990,
-  "em": {
-   "F95": {
-    "numeros": "0/1",
-    "nomes": "0/7",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://pt.wikipedia.org/wiki/Real_Companhia_Velha": {
-  "estado": "lida",
-  "bytes": 12836,
-  "em": {
-   "F95": {
-    "numeros": "1/1",
-    "nomes": "7/7",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.taylor.pt/en/what-is-port-wine/history-of-port/the-marquis-of-pombal": {
-  "estado": "lida",
-  "bytes": 100931,
-  "em": {
-   "F96": {
-    "numeros": "0/0",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://pt.wikipedia.org/wiki/Processo_dos_T%C3%A1voras": {
-  "estado": "lida",
-  "bytes": 25117,
-  "em": {
-   "F97": {
-    "numeros": "2/2",
-    "nomes": "4/4",
-    "ok": true
-   },
-   "F98": {
-    "numeros": "1/1",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://britannica.com/print/article/584484": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://www.infopedia.pt/artigos/$francisco-de-assis-de-tavora": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://periodicos.ufes.br/ufesupem/article/view/11768/8464": {
   "estado": "erro",
-  "http": "pdf-ilegivel",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://thefreewombproject.com/portugal-2/": {
-  "estado": "lida",
-  "bytes": 9544,
-  "em": {
-   "F100": {
-    "numeros": "1/1",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.e-publicacoes.uerj.br/dia-logos/article/download/23367/16649/75239": {
   "estado": "erro",
@@ -1212,15 +612,10 @@
   "em": {}
  },
  "https://observador.pt/opiniao/fernando-rosas-nao-entende-o-marques-de-pombal/": {
-  "estado": "lida",
-  "bytes": 63790,
-  "em": {
-   "F101": {
-    "numeros": "2/2",
-    "nomes": "1/3",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.e-publicacoes.uerj.br/dia-logos/article/download/23340/16634/75166": {
   "estado": "erro",
@@ -1229,24 +624,14 @@
   "em": {}
  },
  "https://revistas.rcaap.pt/interaccoes/article/view/3911": {
-  "estado": "lida",
-  "bytes": 11198,
-  "em": {
-   "F103": {
-    "numeros": "1/1",
-    "nomes": "6/6",
-    "ok": true
-   },
-   "F105": {
-    "numeros": "0/1",
-    "nomes": "2/5",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/apoio/artigos/$real-colegio-dos-nobres": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
@@ -1257,15 +642,10 @@
   "em": {}
  },
  "https://mail.anpuh.org.br/uploads/anais-simposios/pdf/2019-01/1548206372_ebe311c735bc175337cd8a1a8736fad7.pdf": {
-  "estado": "pdf",
-  "bytes": 19877,
-  "em": {
-   "F104": {
-    "numeros": "2/2",
-    "nomes": "2/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://rdpc.uevora.pt/bitstream/10174/35521/1/LH_A%20pol%c3%adcia%20em%20Portugal%20no%20s%c3%a9culo%20XVIII_%20ambiguidades%20e%20equ%c3%advocos.pdf": {
   "estado": "erro",
@@ -1274,71 +654,46 @@
   "em": {}
  },
  "https://portal.uab.pt/wp-content/uploads/2022/05/NOT-resumo-CEG.pdf": {
-  "estado": "pdf",
-  "bytes": 4566,
-  "em": {
-   "F106": {
-    "numeros": "1/1",
-    "nomes": "5/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://en.wikipedia.org/wiki/Pol%C3%ADcia_de_Seguran%C3%A7a_P%C3%BAblica": {
-  "estado": "lida",
-  "bytes": 39075,
-  "em": {
-   "F106": {
-    "numeros": "1/1",
-    "nomes": "5/5",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/artigos/$viradeira": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://ihu.unisinos.br/categorias/170-noticias-2014/528898-4-de-marco-de-1777-desgraca-e-demissao-de-pombal": {
-  "estado": "lida",
-  "bytes": 10847,
-  "em": {
-   "F109": {
-    "numeros": "1/1",
-    "nomes": "1/1",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://revistas.rcaap.pt/analisesocial/article/view/41199": {
-  "estado": "lida",
-  "bytes": 7142,
-  "em": {
-   "F110": {
-    "numeros": "0/2",
-    "nomes": "1/1",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.ctt.pt/contentAsset/raw-data/68213903-80aa-406a-a569-9ccea34ffd43/ficheiro/c3fbe983-76da-4113-9c80-08ad4b85d247/export/Pagela%20_diptica_150_anos_abolicao_escravatura_WEB%2011FEV2019.pdf": {
   "estado": "erro",
-  "http": "pdf-ilegivel",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://comum.rcaap.pt/bitstreams/c54b8b25-09b4-4dc8-9923-c9f5380f5caa/download": {
-  "estado": "lida",
-  "bytes": 1148,
-  "em": {
-   "F111": {
-    "numeros": "0/0",
-    "nomes": "1/4",
-    "ok": false
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.ccdrc.pt/pt/?p=92209": {
   "estado": "erro",
@@ -1348,7 +703,7 @@
  },
  "https://impactum-journals.uc.pt/diaita/article/download/14381/10141/67238": {
   "estado": "erro",
-  "http": "pdf-ilegivel",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
@@ -1359,135 +714,777 @@
   "em": {}
  },
  "https://www.politize.com.br/palavras-de-origem-africana/": {
-  "estado": "lida",
-  "bytes": 19358,
-  "em": {
-   "F201": {
-    "numeros": "0/0",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infoescola.com/noticias/15-palavras-do-dia-a-dia-dos-brasileiros-que-sao-herancas-africanas/": {
-  "estado": "lida",
-  "bytes": 8676,
-  "em": {
-   "F202": {
-    "numeros": "0/0",
-    "nomes": "1/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/dicionarios/lingua-portuguesa/fub%C3%A1": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://dicionario.priberam.org/fub%C3%A1": {
-  "estado": "lida",
-  "bytes": 10575,
-  "em": {
-   "X1": {
-    "numeros": "0/0",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.infopedia.pt/dicionarios/lingua-portuguesa/quilombo": {
-  "estado": "bloqueada",
-  "http": 403,
+  "estado": "erro",
+  "http": "TypeError",
   "bytes": 0,
   "em": {}
  },
  "https://dicionario.priberam.org/quilombo": {
-  "estado": "lida",
-  "bytes": 11428,
-  "em": {
-   "X2": {
-    "numeros": "0/0",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://sicg.iphan.gov.br/sicg/bemImaterial/rel/106/": {
-  "estado": "lida",
-  "bytes": 9032,
-  "em": {
-   "X3": {
-    "numeros": "0/0",
-    "nomes": "3/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.ba.gov.br/ipac/oficio-das-baianas-do-acaraje": {
-  "estado": "lida",
-  "bytes": 17335,
-  "em": {
-   "X3": {
-    "numeros": "0/0",
-    "nomes": "3/3",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://eve.fcsh.unl.pt/pt/temas-e-factos/confrarias-de-negros-no-imperio-portugues": {
-  "estado": "lida",
-  "bytes": 12387,
-  "em": {
-   "X4": {
-    "numeros": "0/0",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.scielo.br/j/his/a/qvqDbVM7RsyLp7jrFNWySwG/": {
-  "estado": "lida",
-  "bytes": 90724,
-  "em": {
-   "X4": {
-    "numeros": "0/0",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.historia.uff.br/impressoesrebeldes/revolta/palmares/": {
-  "estado": "lida",
-  "bytes": 121734,
-  "em": {
-   "X5": {
-    "numeros": "0/0",
-    "nomes": "2/2",
-    "ok": true
-   },
-   "X6": {
-    "numeros": "1/1",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  },
  "https://www.gov.br/palmares/pt-br/departamentos/protecao-preservacao-e-articulacao/serra-da-barriga-1/tour-pelo-parque/zumbi": {
-  "estado": "lida",
-  "bytes": 48257,
-  "em": {
-   "X5": {
-    "numeros": "0/0",
-    "nomes": "1/2",
-    "ok": true
-   },
-   "X6": {
-    "numeros": "1/1",
-    "nomes": "2/2",
-    "ok": true
-   }
-  }
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://ppgh.ufba.br/sites/ppgh.ufba.br/files/entre_aldeamentos_mocambos_e_engenhos_etnogeneses_e_reconfiguracoes_0.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.scielo.br/j/tem/a/WqHJJSskCq6cVBgcbz9fMrB/?format=html": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.scielo.br/j/vh/a/J78YQTr9ssvPDfj9Mq5k3kp/?lang=pt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://historialuso.arquivonacional.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/sociedade-do-acucar": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://new.scielo.br/j/nec/a/xB5SjkdK7zXRvRjKRXRfKPh/?lang=pt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.infopedia.pt/artigos/$tratado-de-methuen": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.treccani.it/enciclopedia/john-methuen_(Enciclopedia-Italiana)/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/methuen-treaty-1703": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.scielo.br/j/rep/a/QzGzHffGRLphKvjvFwQbFbK/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.scielo.br/j/alm/a/WwVvCfwppdkBNDQZx3qCXYg/?lang=pt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://bd-login.tjmg.jus.br/jspui/bitstream/tjmg/29/1/Edicao193.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://portal.iphan.gov.br/uploads/ckfinder/arquivos/Dossie%20toque%20dos%20sinos%281%29.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://historialuso.an.gov.br/index.php/historia-luso-brasileira/assuntos/brasil/ouro-e-diamantes": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.arquivopublico.mg.gov.br/estrutura-e-dinamica-da-organizacao-politico-administrativa-de-minas-gerais/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.bcb.gov.br/content/acessoinformacao/museudocs/pub/Cartilha_Dinheiro_no_Brasil.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.siaapm.cultura.mg.gov.br/acervo/rapm_pdf/O_quinto_do_ouro_no_regime_tributario_nas_Minas_Gerais.PDF": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://mapa.an.gov.br/index.php/assuntos/15-dicionario/57-dicionario-da-administracao-publica-brasileira-do-periodo-colonial/146-casas-de-fundicao-1603-1821": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://vestibular.ufop.br/downloads/vestibulares/provasanteriores/1vest2003/2003_1_historia.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.gov.br/cnpq/pt-br/assuntos/noticias/atualidades/pesquisa-do-inct-sobre-o-patrimonio-brasileiro-reconstitui-a-historia-dos-dois-maiores-diamantes-encontrados-no-brasil-colonial/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://portal.iphan.gov.br/uploads/publicacao/CadTec4_SitiosHistoricos_m.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://canal.cecierj.edu.br/012016/094d83ac6d7030c6e62c96b15708d1ba.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.unirio.br/cchs/ess/Members/morena-marques/formacao-social-do-brasil/Celso%20Furtado%20-%20Formacao%20Economica%20do%20Brasil.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://culturaportugal.gov.pt/pt/conhecer/local/mmp-locais/palacio-nacional-de-mafra/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://whc.unesco.org/en/list/1573/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://run.unl.pt/bitstream/10362/50434/1/Leonorama_FINAL.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.scielo.br/j/rh/a/FmzWFfbgj9CqdXdCQgJdmVt/?lang=pt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://recursos.portoeditora.pt/recurso?id=24156976": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://sigarra.up.pt/flup/pt/pub_geral.show_file?pi_doc_id=15187": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.cepese.pt/portal%22/pt/publicacoes/obras/os-arquivos-da-vinha-e-do-vinho-do-douro/as-memorias-paroquiais-de-1758-2013-uma-microfonte-para-a-macro-historia-do-vinho-do-douro/as-memorias-paroquiais-de-1758-2013-uma-microfonte-para-a-macro-historia-do-vinho-do-douro/%40%40download/file/As%20mem%C3%B3rias%20paroquiais%20de%201758%20%E2%80%93%20uma%20microfonte%20para%20a%20macro-hist%C3%B3ria%20do%20vinho%20do%20douro.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://saberaberto.uneb.br/server/api/core/bitstreams/61caf427-0867-4f84-8af5-3ac2139e268e/content": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://run.unl.pt/entities/publication/0be93ff0-3ac9-4f1e-ae7f-b1d6bfc903be": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://dspace.uevora.pt/rdpc/bitstream/10174/11061/1/Maria%20Fernanda%20de%20Olival%20-%20100%20467%20-%20.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.scielo.br/j/rh/a/WSvycVb5gHzM3xrZKQZVXJm/?lang=pt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2022/06/catalogo-3-PT_exilios.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://repositorio.ulisboa.pt/bitstream/10451/46737/1/_Ebook_Escritas%2520e%2520Cultura_completo.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://run.unl.pt/server/api/core/bitstreams/148d38ad-4d72-4918-9daf-5939c8974b45/content": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.fd.unl.pt/Anexos/Investigacao/2121.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://arquivomunicipal3.cm-lisboa.pt/X-ARQWEB/Result.aspx?id=34944&type=Autoridade": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://snl.no/Johan_5.": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.arqnet.pt/dicionario/joao5.html": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.infopedia.pt/artigos/$d.-joao-v": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://teses.usp.br/teses/disponiveis/8/8137/tde-07022018-123131/publico/2017_MarioFranciscoSimoesJunior_VCorr.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://ler.letras.up.pt/uploads/ficheiros/artigo1631.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.tesouroreal.pt/paginas/f9c5d0d7-ofertas-diplomaticas": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.lisboa.pt/fileadmin/informacao/publicacoes/arquivo_municipal/Cadernos_Arquivo_Municipal_1.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.conferenciaepiscopal.pt/v1/wp-content/uploads/JMJ2022_Patriarcado_NotaImprensa.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://ap1.sib.uc.pt/bitstream/10316.2/40746/1/os_bispos_de_portugal.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://baroqueart.museumwnf.org/database_item.php?id=object%3BBAR%3Bpt%3BMus11_A%3B40%3Bpt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.mncoches.gov.pt/colecao/coche-dos-oceanos": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://revistas.ucp.pt/index.php/mathesis/article/view/5168/5045": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://run.unl.pt/bitstream/10362/188781/1/HistoriografiaCidades_Completo.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://comum.rcaap.pt/bitstreams/f20c247d-2d3e-4a6d-9b59-617b26bfb72b/download": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://ler.letras.up.pt/uploads/ficheiros/18318.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.pnmafra.gov.pt/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.pnmafra.gov.pt/basilica/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.cm-mafra.pt/pages/1085": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B11%3Ben": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://culture.ec.europa.eu/pt-pt/cultural-heritage/initiatives-and-success-stories/european-heritage-label/european-heritage-label-sites/general-library-of-the-university-of-coimbra-portugal": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://visit.uc.pt/pt/space-list/joanina": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/download/1246/pdf_15/3440": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://diariodarepublica.pt/dr/detalhe/decreto/7-2026-1051282296": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://museusaoroque.scml.pt/colecoes/csjb/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_inventariodelisboa_fasc01/pdf/full.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://sociedadehistorica.pt/wp-content/uploads/Boletim-SHIP-102-103_compressed.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.epal.pt/EPAL/menu/museu-da-%C3%A1gua/exposi%C3%A7%C3%A3o-permanente-patrim%C3%B3nio-associado/aqueduto-das-%C3%A1guas-livres": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.infopedia.pt/artigos/$aqueduto-das-aguas-livres": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://ap1.sib.uc.pt/bitstream/10316.2/5641/1/a_universidade_de_coimbra_e_o_brasil_2012.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.parquesdesintra.pt/pt/parques-monumentos/palacio-nacional-e-jardins-de-queluz/historia/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://cm-sintra.pt/phocadownload/PDF/consulta_publica/revisao_pdm/documentos-consulta/relatorios-diagnostico/Tema-11-Patrimonio-Natural-Arquitetonico-e-Arqueologico.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://econtents.sbu.unicamp.br/eventos/index.php/eha/article/view/4682": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=73419": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://raiz.museusemonumentos.pt/DetalhesObra/Index/229814?tipo=OBJ": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.torredosclerigos.pt/328-o-aniversario-do-nascimento-de-nicolau-nasoni/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.torredosclerigos.pt/historia-da-irmandade-dos-clerigos/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.cm-mafra.pt/pages/3176": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://whc.unesco.org/en/list/1590/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.cm-braga.pt/pt/1201/conhecer/historia-e-patrimonio/patrimonio-cultural/patrimonio-edificado/item/item-1-657": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://whc.unesco.org/en/list/1387/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.uc.pt/dados/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://whc.unesco.org/en/list/755/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.up.pt/fep/pt/porto/viver-no-porto/sobre-o-porto/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.gov.br/iphan/pt-br/assuntos/noticias/ouro-preto-mg-celebra-45-anos-como-patrimonio-mundial-da-humanidade": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.infopedia.pt/artigos/$marques-de-pombal": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://imprensanacional.pt/do-terreiro-do-paco-a-praca-do-comercio-historia-de-um-espaco-urbano-nos-320-anos-do-marques/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://histedbrantigo.fe.unicamp.br/navegando/glossario/verb_b_marques_de_pombal.htm": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.ipma.pt/export/sites/ipma/bin/docs/publicacoes/geofisica/da_sismiciadade_a_ciencia_dos_sismos_web.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.museumedeirosealmeida.pt/2024/10/23/algumas-ruinas-de-lisboa/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.infopedia.pt/artigos/$terramoto-de-1755-e-reconstrucao-pombalina": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.museu.presidencia.pt/pt/conhecer/mprplus/quadragesimo-primeiro-numero/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70275": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://whc.unesco.org/en/tentativelists/6226": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://tecnico.ulisboa.pt/pt/eventos/dia-internacional-dos-monumentos-e-sitios-2022/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://baroqueart.museumwnf.org/database_item.php?id=monument%3BBAR%3Bpt%3BMon11%3B28%3Bpt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0701.htm": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://informacao.lisboa.pt/fileadmin/portal/temas/urbanismo/planos_pormenor/baixa_pombalina/pecas_escritas/relatorio_anexos/pp_baixa_pombalina_relatorio_05_relatorio_setorial_carac_espaco_publico.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.dgaep.gov.pt/upload/newsletter/News_10/historia/S0402.htm": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.infopedia.pt/artigos/$vila-real-de-santo-antonio": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72810": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.ivdp.pt/pt/vinhos/vinhos-do-porto/historia/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2018/02/ID-L-739-PT-TT-JC-v1_2017.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.cm-mesaofrio.pt/pages/672?poi_id=73": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72382": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.museu.presidencia.pt/pt/conhecer/mprplus/decimo-quarto-numero/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.historia.uff.br/impressoesrebeldes/revista/nobreza-no-cadafalso/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://antt.dglab.gov.pt/exposicoes-virtuais-2/expulsao-dos-jesuitas/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.scielo.br/j/rbhe/a/v8Ln7mgRh4Gm3z7kZVpXr9R/?lang=pt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://educa.fcc.org.br/scielo.php?lng=pt&nrm=iso&pid=S1984-64442024000100267&script=sci_arttext&tlng=pt": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://antt.dglab.gov.pt/exposicoes-virtuais-2/intendencia-geral-da-policia/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.psp.pt/Pages/sobre-nos/quem-somos/historia.aspx": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.parlamento.pt/Parlamento/Paginas/Memoria-extincao-escravidao.aspx": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://sociedadehistorica.pt/sociedade-historica/datas-importantes/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.aatt.org/site/index.php?id=221&op=Nucleo": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://lusosofia.ubi.pt/textos/20111031-marques_de_pombal_compendio_historico_da_universidade_de_coimbra.pdf": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.uc.pt/imprensa/descobrir/o-edificio/": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.infopedia.pt/artigos/$d.-jose-i": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.npg.org.uk/collections/search/person/mp63332/maria-i-queen-of-portugal": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
+ },
+ "https://www.infopedia.pt/artigos/$d.-maria-i": {
+  "estado": "erro",
+  "http": "TypeError",
+  "bytes": 0,
+  "em": {}
  }
 }

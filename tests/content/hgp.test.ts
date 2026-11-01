@@ -19,7 +19,7 @@ describe('banco HGP',()=>{
   expect(validateLessons(hgpLessons,gamePack.competencies)).toEqual([]);
   expect(new Set(hgpItems.map(x=>x.id)).size).toBe(hgpItems.length);
   const prompts=new Map<string,string>();const duplicates: string[]=[];
-  for(const item of hgpItems){const key=normalize(item.prompt);if(prompts.has(key))duplicates.push(`${prompts.get(key)} / ${item.id}`);else prompts.set(key,item.id);}
+  for(const item of hgpItems){const key=normalize(item.prompt)+(item.stimulus ? `|${normalize(item.stimulus)}` : '');if(prompts.has(key))duplicates.push(`${prompts.get(key)} / ${item.id}`);else prompts.set(key,item.id);}
   expect(duplicates,'Enunciados repetidos após normalize').toEqual([]);
  });
  it.each(hgpItems)('valida estrutura, fontes, determinismo e correção: $id',(item)=>{

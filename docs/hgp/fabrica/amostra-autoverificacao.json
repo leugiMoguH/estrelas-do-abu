@@ -1,0 +1,777 @@
+{
+  "tipo": "autoverificação pelo implementador, não auditoria independente",
+  "criterio": "primeiro item estável de cada molde; inclui três níveis; leitura dos enunciados, opções, explicações e ligações aos conhecimentos",
+  "itens": [
+    {
+      "id": "hgp-seculo-xviii-k-ba-regiao-mcq",
+      "topic": "hgp-seculo-xviii",
+      "sub": "brasil-acucar",
+      "skill": "mapa",
+      "difficulty": 1,
+      "prompt": "Em que região do Brasil se produzia sobretudo o açúcar?",
+      "hints": [
+        "Tema: Brasil: açúcar e comércio.",
+        "Elimina primeiro as opções que sabes que estão erradas."
+      ],
+      "explanation": "No Brasil colonial, o açúcar produzia-se sobretudo no Nordeste, em Pernambuco e na Bahia. Pernambuco e a Bahia eram os principais centros.",
+      "sources": [
+        "kb-xviii-a:ba-regiao-1",
+        "kb-xviii-a:ba-regiao-2",
+        "kb-xviii-a:ba-regiao-3"
+      ],
+      "kb": {
+        "knowledge": [
+          "ba-regiao"
+        ],
+        "reasoning": "reconhecer",
+        "template": "reconhecer-mcq",
+        "fichas": [
+          "F1"
+        ],
+        "competence": "mapa",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "No Nordeste, em Pernambuco e na Bahia",
+        "Na Amazónia",
+        "No Sul, no Rio Grande",
+        "Em Minas Gerais"
+      ],
+      "correct": "No Nordeste, em Pernambuco e na Bahia",
+      "wrong": {
+        "Na Amazónia": "«na Amazónia» não responde corretamente. Pernambuco e a Bahia eram os principais centros.",
+        "No Sul, no Rio Grande": "«no Sul, no Rio Grande» não responde corretamente. Pernambuco e a Bahia eram os principais centros.",
+        "Em Minas Gerais": "«em Minas Gerais» não responde corretamente. Pernambuco e a Bahia eram os principais centros."
+      },
+      "secao": "d1-brasil-acucar",
+      "validacao": "documental",
+      "nivel": 1,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-ba-regiao-vf",
+      "topic": "hgp-seculo-xviii",
+      "sub": "brasil-acucar",
+      "skill": "mapa",
+      "difficulty": 1,
+      "prompt": "Lê a frase e decide: «No Brasil colonial, o açúcar produzia-se sobretudo no Sul, no Rio Grande.»",
+      "hints": [
+        "Tema: Brasil: açúcar e comércio.",
+        "Compara o que a frase diz com o que aprendeste."
+      ],
+      "explanation": "No Brasil colonial, o açúcar produzia-se sobretudo no Nordeste, em Pernambuco e na Bahia. Pernambuco e a Bahia eram os principais centros.",
+      "sources": [
+        "kb-xviii-a:ba-regiao-1",
+        "kb-xviii-a:ba-regiao-2",
+        "kb-xviii-a:ba-regiao-3"
+      ],
+      "kb": {
+        "knowledge": [
+          "ba-regiao"
+        ],
+        "reasoning": "verificar",
+        "template": "verificar-frase",
+        "fichas": [
+          "F1"
+        ],
+        "competence": "mapa",
+        "eligible": true,
+        "variant": true
+      },
+      "kind": "mcq",
+      "options": [
+        "A frase está errada: devia dizer «no Nordeste, em Pernambuco e na Bahia»",
+        "A frase está certa",
+        "A frase está errada: devia dizer «em Minas Gerais»"
+      ],
+      "correct": "A frase está errada: devia dizer «no Nordeste, em Pernambuco e na Bahia»",
+      "wrong": {
+        "A frase está certa": "Confirma o facto: No Brasil colonial, o açúcar produzia-se sobretudo no Nordeste, em Pernambuco e na Bahia.",
+        "A frase está errada: devia dizer «em Minas Gerais»": "Confirma o facto: No Brasil colonial, o açúcar produzia-se sobretudo no Nordeste, em Pernambuco e na Bahia."
+      },
+      "secao": "d1-brasil-acucar",
+      "validacao": "documental",
+      "nivel": 1,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-ba-engenho-free",
+      "topic": "hgp-seculo-xviii",
+      "sub": "brasil-acucar",
+      "skill": "conceito",
+      "difficulty": 1,
+      "prompt": "O açúcar era produzido em unidades chamadas ___.",
+      "hints": [
+        "Tema: Brasil: açúcar e comércio.",
+        "Responde com poucas palavras."
+      ],
+      "explanation": "O açúcar era produzido em unidades chamadas engenhos.",
+      "sources": [
+        "kb-xviii-a:ba-engenho-1",
+        "kb-xviii-a:ba-engenho-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "ba-engenho"
+        ],
+        "reasoning": "recordar",
+        "template": "recordar-livre",
+        "fichas": [
+          "F2"
+        ],
+        "competence": "conceito",
+        "eligible": true,
+        "variant": true
+      },
+      "kind": "cloze",
+      "correct": [
+        [
+          "engenhos"
+        ]
+      ],
+      "secao": "d1-brasil-acucar",
+      "validacao": "documental",
+      "nivel": 1,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-cadeia-ouro-chain",
+      "topic": "hgp-seculo-xviii",
+      "sub": "ouro-diamantes",
+      "skill": "causa",
+      "difficulty": 2,
+      "prompt": "Ordena esta cadeia de causas e consequências (o ouro de Minas Gerais), da causa para a consequência.",
+      "hints": [
+        "Cada passo explica o seguinte.",
+        "Começa pelo que aconteceu primeiro e levou aos outros."
+      ],
+      "explanation": "O ouro de Minas Gerais fez disparar a procura de escravizados, e Salvador, na Bahia, cresceu como porto fornecedor das minas.",
+      "sources": [
+        "kb-xviii-a:od-decada-1",
+        "kb-xviii-a:od-decada-2",
+        "kb-xviii-a:ba-salvador-1",
+        "kb-xviii-a:ba-salvador-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "od-decada",
+          "ba-salvador"
+        ],
+        "reasoning": "ordenar",
+        "template": "ordenar-causas",
+        "fichas": [
+          "F11",
+          "F6"
+        ],
+        "competence": "causa",
+        "eligible": true
+      },
+      "kind": "order",
+      "items": [
+        "Aumenta a procura de africanos escravizados para as minas",
+        "Descobrem-se grandes jazidas de ouro em Minas Gerais",
+        "O porto de Salvador cresce muito"
+      ],
+      "correct": [
+        "Descobrem-se grandes jazidas de ouro em Minas Gerais",
+        "Aumenta a procura de africanos escravizados para as minas",
+        "O porto de Salvador cresce muito"
+      ],
+      "secao": "d1-ouro-diamantes",
+      "validacao": "documental",
+      "nivel": 2,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-excecao-joao-v-0-odd",
+      "topic": "hgp-seculo-xviii",
+      "sub": "monarquia-joao-v",
+      "skill": "comparacao",
+      "difficulty": 2,
+      "prompt": "Qual destas obras NÃO foi feita por vontade de D. João V (1706–1750)?",
+      "hints": [
+        "Procura a opção que não cumpre o critério.",
+        "Verifica as datas e quem fez cada coisa."
+      ],
+      "explanation": "O alargamento do paço de Queluz: Foi obra do infante D. Pedro, em 1747, e não do rei. D. João V morreu em 1750.",
+      "sources": [
+        "kb-xviii-a:mj-biblioteca-1",
+        "kb-xviii-a:mj-biblioteca-2",
+        "kb-xviii-a:mj-mafra-promessa-1",
+        "kb-xviii-a:mj-mafra-promessa-2",
+        "kb-xviii-a:mj-capela-1",
+        "kb-xviii-a:mj-capela-2",
+        "kb-xviii-a:mj-queluz-1",
+        "kb-xviii-a:mj-queluz-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "mj-biblioteca",
+          "mj-mafra-promessa",
+          "mj-capela",
+          "mj-queluz"
+        ],
+        "reasoning": "classificar",
+        "template": "excecao",
+        "fichas": [
+          "F59",
+          "F53",
+          "F60",
+          "F67"
+        ],
+        "competence": "comparacao",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "A Biblioteca Joanina, em Coimbra",
+        "O Palácio-Convento de Mafra",
+        "O alargamento do paço de Queluz",
+        "A Capela de São João Batista, na Igreja de São Roque"
+      ],
+      "correct": "O alargamento do paço de Queluz",
+      "wrong": {
+        "A Biblioteca Joanina, em Coimbra": "Esta opção cumpre o critério. Foi autorizada pelo rei e paga pela Universidade.",
+        "O Palácio-Convento de Mafra": "Esta opção cumpre o critério. Nasceu de uma promessa do rei.",
+        "A Capela de São João Batista, na Igreja de São Roque": "Esta opção cumpre o critério. Foi encomendada pelo rei em 1742."
+      },
+      "secao": "d1-monarquia-joao-v",
+      "validacao": "documental",
+      "nivel": 2,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-f4-0-f4",
+      "topic": "hgp-seculo-xviii",
+      "sub": "brasil-acucar",
+      "skill": "facto",
+      "difficulty": 2,
+      "prompt": "Qual destas frases sobre Brasil: açúcar e comércio é falsa?",
+      "hints": [
+        "Três frases são verdadeiras e uma é falsa.",
+        "Tema: Brasil: açúcar e comércio."
+      ],
+      "explanation": "A falsa é «No Brasil colonial, o açúcar produzia-se sobretudo no Sul, no Rio Grande.». O correto: No Brasil colonial, o açúcar produzia-se sobretudo no Nordeste, em Pernambuco e na Bahia.",
+      "sources": [
+        "kb-xviii-a:ba-regiao-1",
+        "kb-xviii-a:ba-regiao-2",
+        "kb-xviii-a:ba-regiao-3",
+        "kb-xviii-a:ba-methuen-vinhos-1",
+        "kb-xviii-a:ba-methuen-vinhos-2",
+        "kb-xviii-a:ba-salvador-1",
+        "kb-xviii-a:ba-salvador-2",
+        "kb-xviii-a:ba-methuen-1",
+        "kb-xviii-a:ba-methuen-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "ba-regiao",
+          "ba-methuen-vinhos",
+          "ba-salvador",
+          "ba-methuen"
+        ],
+        "reasoning": "verificar",
+        "template": "frase-falsa",
+        "fichas": [
+          "F1",
+          "F5",
+          "F6",
+          "F5"
+        ],
+        "competence": "facto",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "O Tratado de Methuen, entre Portugal e Inglaterra, foi assinado em 1703.",
+        "No Brasil colonial, o açúcar produzia-se sobretudo no Sul, no Rio Grande.",
+        "Com a descoberta do ouro, cresceu muito o porto baiano de Salvador.",
+        "Pelo Tratado de Methuen, passaram a entrar com vantagem em Inglaterra os vinhos portugueses."
+      ],
+      "correct": "No Brasil colonial, o açúcar produzia-se sobretudo no Sul, no Rio Grande.",
+      "wrong": {
+        "Pelo Tratado de Methuen, passaram a entrar com vantagem em Inglaterra os vinhos portugueses.": "Esta frase é verdadeira.",
+        "Com a descoberta do ouro, cresceu muito o porto baiano de Salvador.": "Esta frase é verdadeira.",
+        "O Tratado de Methuen, entre Portugal e Inglaterra, foi assinado em 1703.": "Esta frase é verdadeira."
+      },
+      "secao": "d1-brasil-acucar",
+      "validacao": "documental",
+      "nivel": 2,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-caso-praca-joao-v-case",
+      "topic": "hgp-seculo-xviii",
+      "sub": "pombal-lisboa",
+      "skill": "cronologia",
+      "difficulty": 2,
+      "prompt": "Foi D. João V que mandou construir a Praça do Comércio?",
+      "hints": [
+        "Compara as duas datas.",
+        "Uma obra feita depois de 1755 pode ser de quem já morreu em 1750?"
+      ],
+      "explanation": "O Paço da Ribeira só foi destruído em 1755 e a Praça foi feita depois; D. João V tinha morrido em 1750.",
+      "stimulus": "D. João V morreu em 1750. A Praça do Comércio foi construída no lugar do Paço da Ribeira, destruído em 1755.",
+      "sources": [
+        "kb-xviii-a:mj-morte-1",
+        "kb-xviii-a:mj-morte-2",
+        "kb-xviii-a:pl-terramoto-1",
+        "kb-xviii-a:pl-terramoto-2",
+        "kb-xviii-a:pl-praca-1",
+        "kb-xviii-a:pl-praca-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "mj-morte",
+          "pl-terramoto",
+          "pl-praca"
+        ],
+        "reasoning": "inferir",
+        "template": "caso-periodo",
+        "fichas": [
+          "F41",
+          "F82",
+          "F90"
+        ],
+        "competence": "cronologia",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "Não: foi construída depois do terramoto de 1755, quando o rei já tinha morrido",
+        "Sim: foi uma das grandes obras do seu reinado",
+        "Sim: o rei mandou construí-la antes do terramoto",
+        "Não se pode saber com estes dados"
+      ],
+      "correct": "Não: foi construída depois do terramoto de 1755, quando o rei já tinha morrido",
+      "wrong": {
+        "Sim: foi uma das grandes obras do seu reinado": "Esta opção não está de acordo com os factos.",
+        "Sim: o rei mandou construí-la antes do terramoto": "Esta opção não está de acordo com os factos.",
+        "Não se pode saber com estes dados": "Esta opção não está de acordo com os factos."
+      },
+      "secao": "d1-pombal-lisboa",
+      "validacao": "documental",
+      "nivel": 2,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-caso-escravizado-1762-case",
+      "topic": "hgp-seculo-xviii",
+      "sub": "pombal-lisboa",
+      "skill": "consequencia",
+      "difficulty": 3,
+      "prompt": "Segundo o alvará de 1761, o que lhe acontecia?",
+      "hints": [
+        "O alvará proibiu trazer escravizados para o Reino.",
+        "Pensa no que acontecia a quem desembarcasse em Portugal."
+      ],
+      "explanation": "O alvará de 19 de setembro de 1761 proibiu trazer escravizados das colónias para o Reino: quem desembarcasse em Portugal ficava livre.",
+      "stimulus": "Em 1762, um homem escravizado desembarca em Lisboa, trazido do Brasil.",
+      "sources": [
+        "kb-xviii-a:pl-alvara-1",
+        "kb-xviii-a:pl-alvara-2",
+        "kb-xviii-a:pl-ambito-1",
+        "kb-xviii-a:pl-ambito-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "pl-alvara",
+          "pl-ambito"
+        ],
+        "reasoning": "inferir",
+        "template": "caso-transferencia",
+        "fichas": [
+          "F99",
+          "F101"
+        ],
+        "competence": "consequencia",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "Ficava livre, por ter desembarcado no Reino",
+        "Era devolvido ao Brasil",
+        "Continuava escravizado, mas com direitos",
+        "Era entregue à Inquisição"
+      ],
+      "correct": "Ficava livre, por ter desembarcado no Reino",
+      "wrong": {
+        "Era devolvido ao Brasil": "Esta opção não está de acordo com os factos.",
+        "Continuava escravizado, mas com direitos": "Esta opção não está de acordo com os factos.",
+        "Era entregue à Inquisição": "Esta opção não está de acordo com os factos."
+      },
+      "secao": "d1-pombal-lisboa",
+      "validacao": "documental",
+      "nivel": 3,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-caso-bispo-case",
+      "topic": "hgp-seculo-xviii",
+      "sub": "sociedade-ordens",
+      "skill": "conceito",
+      "difficulty": 2,
+      "prompt": "Um bispo do século XVIII pertencia a que ordem e que privilégio tinha?",
+      "hints": [
+        "Um bispo pertence à Igreja.",
+        "Que privilégios tinha o clero?"
+      ],
+      "explanation": "O bispo pertencia ao clero, que recebia o dízimo e não pagava impostos.",
+      "sources": [
+        "kb-xviii-a:so-clero-1",
+        "kb-xviii-a:so-clero-2",
+        "kb-xviii-a:so-privilegiadas-1",
+        "kb-xviii-a:so-privilegiadas-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "so-clero",
+          "so-privilegiadas"
+        ],
+        "reasoning": "classificar",
+        "template": "caso-classificacao",
+        "fichas": [
+          "F34",
+          "F36"
+        ],
+        "competence": "conceito",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "Ao clero: recebia o dízimo e não pagava impostos",
+        "À nobreza: ocupava os altos cargos do exército",
+        "Ao povo: pagava impostos ao rei",
+        "À nobreza: recebia o dízimo"
+      ],
+      "correct": "Ao clero: recebia o dízimo e não pagava impostos",
+      "wrong": {
+        "À nobreza: ocupava os altos cargos do exército": "Esta opção não está de acordo com os factos.",
+        "Ao povo: pagava impostos ao rei": "Esta opção não está de acordo com os factos.",
+        "À nobreza: recebia o dízimo": "Esta opção não está de acordo com os factos."
+      },
+      "secao": "d1-sociedade-ordens",
+      "validacao": "documental",
+      "nivel": 2,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-proc-minas-processo-consequencia",
+      "topic": "hgp-seculo-xviii",
+      "sub": "ouro-diamantes",
+      "skill": "causa",
+      "difficulty": 2,
+      "prompt": "Identifica uma consequência neste processo: a descoberta de ouro em Minas Gerais.",
+      "hints": [
+        "Identifica o que a pergunta pede.",
+        "Distingue a informação relevante das outras opções."
+      ],
+      "explanation": "O aumento da procura de pessoas escravizadas e o crescimento do porto de Salvador. A descoberta do ouro aumentou a procura de pessoas escravizadas para as minas e fez crescer o porto de Salvador.",
+      "sources": [
+        "kb-xviii-a:od-decada-1",
+        "kb-xviii-a:od-decada-2",
+        "kb-xviii-a:ba-salvador-1",
+        "kb-xviii-a:ba-salvador-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "od-decada",
+          "ba-salvador"
+        ],
+        "reasoning": "relacionar",
+        "template": "processo-consequencia",
+        "fichas": [
+          "F11",
+          "F6"
+        ],
+        "competence": "causa",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "O aumento da procura de pessoas escravizadas e o crescimento do porto de Salvador",
+        "A reforma dos estudos em Coimbra",
+        "A reconstrução da Baixa de Lisboa",
+        "O fim imediato da escravatura no Brasil"
+      ],
+      "correct": "O aumento da procura de pessoas escravizadas e o crescimento do porto de Salvador",
+      "wrong": {
+        "A reforma dos estudos em Coimbra": "A descoberta do ouro aumentou a procura de pessoas escravizadas para as minas e fez crescer o porto de Salvador.",
+        "A reconstrução da Baixa de Lisboa": "A descoberta do ouro aumentou a procura de pessoas escravizadas para as minas e fez crescer o porto de Salvador.",
+        "O fim imediato da escravatura no Brasil": "A descoberta do ouro aumentou a procura de pessoas escravizadas para as minas e fez crescer o porto de Salvador."
+      },
+      "secao": "d1-ouro-diamantes",
+      "validacao": "documental",
+      "nivel": 2,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-proc-revolta-processo-causa",
+      "topic": "hgp-seculo-xviii",
+      "sub": "ouro-diamantes",
+      "skill": "causa",
+      "difficulty": 3,
+      "prompt": "Que causa ajuda a explicar a Revolta de Vila Rica?",
+      "hints": [
+        "Identifica o que a pergunta pede.",
+        "Distingue a informação relevante das outras opções."
+      ],
+      "explanation": "O descontentamento com a cobrança do quinto e as Casas de Fundição. O descontentamento com o quinto e as Casas de Fundição levou à Revolta de Vila Rica.",
+      "sources": [
+        "kb-xviii-a:od-quinto-1",
+        "kb-xviii-a:od-quinto-2",
+        "kb-xviii-a:od-fundicao-1",
+        "kb-xviii-a:od-fundicao-2",
+        "kb-xviii-a:od-revolta-1",
+        "kb-xviii-a:od-revolta-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "od-quinto",
+          "od-fundicao",
+          "od-revolta"
+        ],
+        "reasoning": "relacionar",
+        "template": "processo-causa",
+        "fichas": [
+          "F15",
+          "F16",
+          "F17"
+        ],
+        "competence": "causa",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "O descontentamento com a cobrança do quinto e as Casas de Fundição",
+        "A extinção de toda a escravatura no Brasil",
+        "A criação de uma biblioteca em Coimbra",
+        "A reconstrução de Lisboa depois do terramoto"
+      ],
+      "correct": "O descontentamento com a cobrança do quinto e as Casas de Fundição",
+      "wrong": {
+        "A extinção de toda a escravatura no Brasil": "O descontentamento com o quinto e as Casas de Fundição levou à Revolta de Vila Rica.",
+        "A criação de uma biblioteca em Coimbra": "O descontentamento com o quinto e as Casas de Fundição levou à Revolta de Vila Rica.",
+        "A reconstrução de Lisboa depois do terramoto": "O descontentamento com o quinto e as Casas de Fundição levou à Revolta de Vila Rica."
+      },
+      "secao": "d1-ouro-diamantes",
+      "validacao": "documental",
+      "nivel": 3,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-claim-trabalho-afirmacao-evidencia",
+      "topic": "hgp-seculo-xviii",
+      "sub": "brasil-acucar",
+      "skill": "fonte",
+      "difficulty": 3,
+      "prompt": "Que facto sustenta esta afirmação: «O trabalho escravizado esteve ligado a diferentes atividades económicas no Brasil»?",
+      "hints": [
+        "Identifica o que a pergunta pede.",
+        "Distingue a informação relevante das outras opções."
+      ],
+      "explanation": "Havia africanos escravizados nos engenhos e procura de escravizados para as minas. O trabalho escravizado esteve ligado tanto aos engenhos como à exploração mineira.",
+      "sources": [
+        "kb-xviii-a:ba-trabalho-1",
+        "kb-xviii-a:ba-trabalho-2",
+        "kb-xviii-a:od-decada-1",
+        "kb-xviii-a:od-decada-2",
+        "kb-xviii-a:ba-salvador-1",
+        "kb-xviii-a:ba-salvador-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "ba-trabalho",
+          "od-decada",
+          "ba-salvador"
+        ],
+        "reasoning": "avaliar",
+        "template": "afirmacao-evidencia",
+        "fichas": [
+          "F2",
+          "F11",
+          "F6"
+        ],
+        "competence": "fonte",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "Havia africanos escravizados nos engenhos e procura de escravizados para as minas",
+        "A Biblioteca Joanina fica em Coimbra",
+        "O rei recebeu o título de Fidelíssimo",
+        "A estátua de D. José I foi inaugurada em 1775"
+      ],
+      "correct": "Havia africanos escravizados nos engenhos e procura de escravizados para as minas",
+      "wrong": {
+        "A Biblioteca Joanina fica em Coimbra": "O trabalho escravizado esteve ligado tanto aos engenhos como à exploração mineira.",
+        "O rei recebeu o título de Fidelíssimo": "O trabalho escravizado esteve ligado tanto aos engenhos como à exploração mineira.",
+        "A estátua de D. José I foi inaugurada em 1775": "O trabalho escravizado esteve ligado tanto aos engenhos como à exploração mineira."
+      },
+      "secao": "d1-brasil-acucar",
+      "validacao": "documental",
+      "nivel": 3,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-doc-leis-documento-resumo",
+      "topic": "hgp-seculo-xviii",
+      "sub": "pombal-lisboa",
+      "skill": "fonte",
+      "difficulty": 3,
+      "prompt": "Que conclusão é sustentada por este resumo?",
+      "hints": [
+        "Identifica o que a pergunta pede.",
+        "Distingue a informação relevante das outras opções."
+      ],
+      "explanation": "As medidas alteravam a situação jurídica no Reino, mantendo a escravatura nas colónias. O resumo permite concluir que as medidas alteravam a situação jurídica no Reino, mantendo a escravatura nas colónias.",
+      "stimulus": "Resumo escrito para o jogo (não é uma transcrição histórica): O alvará de 1761 proibiu trazer escravizados para o Reino. A lei de 1773 declarou livres os filhos de escravas nascidos no Reino depois da lei. No Brasil e em África a escravatura continuou.",
+      "sources": [
+        "kb-xviii-a:pl-alvara-1",
+        "kb-xviii-a:pl-alvara-2",
+        "kb-xviii-a:pl-ventre-1",
+        "kb-xviii-a:pl-ventre-2",
+        "kb-xviii-a:pl-ambito-1",
+        "kb-xviii-a:pl-ambito-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "pl-alvara",
+          "pl-ventre",
+          "pl-ambito"
+        ],
+        "reasoning": "interpretar",
+        "template": "documento-resumo",
+        "fichas": [
+          "F99",
+          "F100",
+          "F101"
+        ],
+        "competence": "fonte",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "As medidas alteravam a situação jurídica no Reino, mantendo a escravatura nas colónias",
+        "A escravatura acabou simultaneamente em todo o império",
+        "A lei criou a escravatura no Reino",
+        "As medidas só alteravam a situação no Brasil"
+      ],
+      "correct": "As medidas alteravam a situação jurídica no Reino, mantendo a escravatura nas colónias",
+      "wrong": {
+        "A escravatura acabou simultaneamente em todo o império": "O resumo permite concluir que as medidas alteravam a situação jurídica no Reino, mantendo a escravatura nas colónias.",
+        "A lei criou a escravatura no Reino": "O resumo permite concluir que as medidas alteravam a situação jurídica no Reino, mantendo a escravatura nas colónias.",
+        "As medidas só alteravam a situação no Brasil": "O resumo permite concluir que as medidas alteravam a situação jurídica no Reino, mantendo a escravatura nas colónias."
+      },
+      "secao": "d1-pombal-lisboa",
+      "validacao": "documental",
+      "nivel": 3,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-place-coimbra-mapa",
+      "topic": "hgp-seculo-xviii",
+      "sub": "monarquia-joao-v",
+      "skill": "mapa",
+      "difficulty": 1,
+      "prompt": "Que biblioteca histórica fica na cidade principal do distrito assinalado?",
+      "hints": [
+        "Identifica o que a pergunta pede.",
+        "Distingue a informação relevante das outras opções."
+      ],
+      "explanation": "Biblioteca Joanina. A Biblioteca Joanina situa-se em Coimbra, no distrito assinalado.",
+      "figure": {
+        "type": "pt-map",
+        "highlight": [
+          "coimbra"
+        ]
+      },
+      "sources": [
+        "kb-xviii-a:mj-biblioteca-1",
+        "kb-xviii-a:mj-biblioteca-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "mj-biblioteca"
+        ],
+        "reasoning": "reconhecer",
+        "template": "mapa",
+        "fichas": [
+          "F59"
+        ],
+        "competence": "mapa",
+        "eligible": true
+      },
+      "kind": "mcq",
+      "options": [
+        "Biblioteca Joanina",
+        "Biblioteca Nacional de Portugal",
+        "Biblioteca Pública de Évora",
+        "Biblioteca Municipal de Faro"
+      ],
+      "correct": "Biblioteca Joanina",
+      "wrong": {
+        "Biblioteca Nacional de Portugal": "A Biblioteca Joanina situa-se em Coimbra, no distrito assinalado.",
+        "Biblioteca Pública de Évora": "A Biblioteca Joanina situa-se em Coimbra, no distrito assinalado.",
+        "Biblioteca Municipal de Faro": "A Biblioteca Joanina situa-se em Coimbra, no distrito assinalado."
+      },
+      "secao": "d1-monarquia-joao-v",
+      "validacao": "documental",
+      "nivel": 1,
+      "origem": "fabrica-v2"
+    },
+    {
+      "id": "hgp-seculo-xviii-k-tempo-mafra-timeline",
+      "topic": "hgp-seculo-xviii",
+      "sub": "monarquia-joao-v",
+      "skill": "cronologia",
+      "difficulty": 2,
+      "prompt": "Ordena os acontecimentos de Mafra, do mais antigo para o mais recente.",
+      "hints": [
+        "Procura o início do processo.",
+        "Relaciona cada acontecimento com o seguinte."
+      ],
+      "explanation": "A promessa antecedeu a primeira pedra de Mafra e a sagração da basílica.",
+      "sources": [
+        "kb-xviii-a:mj-mafra-promessa-1",
+        "kb-xviii-a:mj-mafra-promessa-2",
+        "kb-xviii-a:mj-mafra-pedra-1",
+        "kb-xviii-a:mj-mafra-pedra-2",
+        "kb-xviii-a:mj-mafra-sagrada-1",
+        "kb-xviii-a:mj-mafra-sagrada-2"
+      ],
+      "kb": {
+        "knowledge": [
+          "mj-mafra-promessa",
+          "mj-mafra-pedra",
+          "mj-mafra-sagrada"
+        ],
+        "reasoning": "ordenar",
+        "template": "ordenar-tematico",
+        "fichas": [
+          "F53",
+          "F54",
+          "F55"
+        ],
+        "competence": "cronologia",
+        "eligible": true
+      },
+      "kind": "order",
+      "items": [
+        "Sagração da basílica",
+        "Lançamento da primeira pedra",
+        "Promessa de construir um convento"
+      ],
+      "correct": [
+        "Promessa de construir um convento",
+        "Lançamento da primeira pedra",
+        "Sagração da basílica"
+      ],
+      "secao": "d1-monarquia-joao-v",
+      "validacao": "documental",
+      "nivel": 2,
+      "origem": "fabrica-v2"
+    }
+  ]
+}

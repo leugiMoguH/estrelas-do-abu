@@ -769,8 +769,8 @@
   ]
  },
  "F59": {
-  "status": "confirmado",
-  "text": "A Biblioteca Joanina (Universidade de Coimbra) foi construída entre 1717 e 1728, paga por D. João V, de quem tem o nome. A primeira pedra foi lançada a 17 de julho de 1717.",
+  "status": "parcial",
+  "text": "A Biblioteca Joanina foi autorizada por D. João V e paga pela Universidade de Coimbra. A conclusão é datada de 1728; distinguir da abertura em 1777. A atribuição anterior do pagamento ao rei foi corrigida na revisão por átomo (mj-biblioteca-fim); a ficha composta permanece PARCIAL.",
   "sources": [
    {
     "title": "Universidade de Coimbra",
@@ -805,8 +805,8 @@
   ]
  },
  "F61": {
-  "status": "confirmado",
-  "text": "O Aqueduto das Águas Livres (Lisboa) foi autorizado em 1731, no reinado de D. João V, e a água chegou à cidade em 1748.",
+  "status": "parcial",
+  "text": "A construção do Aqueduto das Águas Livres foi autorizada em 1731. A cronologia pormenorizada distingue a primeira água nas Amoreiras (1744) do ingresso oficial assinalado em 1748. Não usar 1748 como primeira chegada sem qualificação. PARCIAL; mj-aq-agua retirado, mj-aq-autorizado tem evidência própria.",
   "sources": [
    {
     "title": "Wikipédia PT",
@@ -837,8 +837,8 @@
   ]
  },
  "F63": {
-  "status": "confirmado",
-  "text": "O aqueduto resistiu ao terramoto de 1755 sem danos importantes.",
+  "status": "parcial",
+  "text": "A arcaria de Alcântara sobreviveu com poucos danos; isso não demonstra ausência de danos importantes em todo o sistema do aqueduto. Houve estragos e consertos documentados. PARCIAL; mj-aq-sismo retirado.",
   "sources": [
    {
     "title": "Wikipédia EN",
@@ -1295,8 +1295,8 @@
   ]
  },
  "F94": {
-  "status": "confirmado",
-  "text": "Vila Real de Santo António servia para afirmar a presença portuguesa diante de Ayamonte (Espanha), na foz do Guadiana, e para controlar o comércio da fronteira.",
+  "status": "parcial",
+  "text": "As finalidades de Vila Real de Santo António exigem confirmação contextual adicional: as fontes consultadas não fornecem duas leituras completas que sustentem conjuntamente todas as finalidades da redação anterior. PARCIAL; pl-vrsa-func retirado.",
   "sources": [
    {
     "title": "Baixo Guadiana",
