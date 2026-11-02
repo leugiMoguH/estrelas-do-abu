@@ -73,7 +73,7 @@ describe('Avatar D', () => {
  it('compõe com WebP de produção pela ordem contratada', () => {
   const resolve = (f: string)=>assets[`/src/art/assets/${f}`] as string | undefined;
   const svg = avatarD({...defaultAvatar(),hairStyle:'hair-comprido',outer:'outer-gabardina',glasses:'acc-oculos'}, {}, resolve);
-  const positions = ['body_skin.webp','outer-gabardina.webp','hair-comprido.webp','data-layer="face"','data-item="acc-oculos"'].map(v=>svg.indexOf(v));
+  const positions = ['data-layer="hairBack"','data-layer="skin"','data-layer="bottom"','data-layer="shoes"','data-layer="top"','data-layer="outer"','data-layer="hands"','data-layer="face"','data-layer="hairFront"','data-item="acc-oculos"'].map(v=>svg.indexOf(v));
   expect(positions.every((v,i)=>v>=0 && (!i||v>positions[i-1]!))).toBe(true);
  });
 });

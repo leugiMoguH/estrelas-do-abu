@@ -100,7 +100,7 @@ export function randomAvatar(rng: () => number, ownedIds: readonly string[]): Av
   const allowed = (slot: Slot): string[] =>
     CATALOG.filter((i) => i.slot === slot && (i.free || ownedIds.includes(i.id))).map((i) => i.id);
   const accessories = allowed('accessory');
-  return {
+  return resolveAvatarCompatibility({
     outer: null, glasses: null, hat: null, backpack: null, eyeColor: pick(rng, EYE_COLORS).id,
     skin: pick(rng, SKIN_TONES).id,
     hairStyle: pick(rng, allowed('hairStyle')),
@@ -112,7 +112,7 @@ export function randomAvatar(rng: () => number, ownedIds: readonly string[]): Av
     shoes: pick(rng, allowed('shoes')),
     accessory: rng() < 0.4 ? pick(rng, accessories) : null,
     abuAccessory: null, abuNeck: pick(rng, allowed('abuNeck')), abuBody: null, abuHead: null,
-  };
+  }).avatar;
 }
 
 /** Validação e migração v1→v2, sem alterar o objeto de origem. */
@@ -136,5 +136,22 @@ export function normalizeAvatar(value: unknown, ownedIds: readonly string[]): Av
     if (item && (item.free || ownedIds.includes(item.id))) result[slot] = item.id;
     else if (source[slot] === null && ['outer','glasses','hat','backpack','accessory','abuNeck','abuBody','abuHead'].includes(slot)) (result as unknown as Record<string, unknown>)[slot] = null;
   }
-  return result;
+  return resolveAvatarCompatibility(result).avatar;
+}
+
+/** One fitting policy for saved equipment, random choices, previews and equip.
+ * Fitting never removes an owned item or changes a selected ID. */
+export function resolveAvatarCompatibility(avatar: AvatarConfig): {
+  avatar: AvatarConfig;
+  tuckHair: boolean;
+  headAccessoryPlacement: 'head' | 'hat-side';
+  notices: string[];
+} {
+  const headAccessory = avatar.accessory === 'acc-bandolete' || avatar.accessory === 'acc-fita';
+  const tuckHair = ['hat-sol', 'hat-pompom', 'acc-gorro'].includes(avatar.hat ?? '');
+  const headAccessoryPlacement = avatar.hat && headAccessory ? 'hat-side' : 'head';
+  const notices: string[] = [];
+  if (tuckHair && avatar.hairStyle !== 'hair-rapado') notices.push('O cabelo fica recolhido sob o chapéu.');
+  if (headAccessoryPlacement === 'hat-side') notices.push('O acessório de cabelo fica preso ao lado do chapéu.');
+  return { avatar: { ...avatar }, tuckHair, headAccessoryPlacement, notices };
 }

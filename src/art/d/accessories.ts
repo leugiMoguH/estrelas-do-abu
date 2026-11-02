@@ -1,6 +1,6 @@
-import type { AvatarConfig } from '../palette';
+import { ANCHORS, MANIFEST } from './manifest';
 const star = (x: number,y: number,r: number): string => Array.from({length:10},(_,i)=> {const a=i*Math.PI/5-Math.PI/2, n=i%2?r*.45:r; return `${x+Math.cos(a)*n},${y+Math.sin(a)*n}`;}).join(' ');
-export function accessoryD(item: string | null, uid: string): string {
+export function accessoryD(item: string | null, uid: string, placement: 'head' | 'hat-side' = 'head'): string {
  if (!item) return '';
  let shape = '';
  if (item.startsWith('backpack-')) shape = '<path d="M350 410 Q300 340 285 470 L285 770 Q350 850 430 760 L445 470 Q430 390 350 410Z"/><path d="M330 430 Q385 350 420 450 M310 590 Q360 560 400 600 L400 730 310 730Z" fill="none"/>';
@@ -14,7 +14,9 @@ export function accessoryD(item: string | null, uid: string): string {
  else if (item==='acc-fita' || item==='acc-laco') { const y = item==='acc-fita'?100:365; shape = `<path d="M508 ${y} L460 ${y-25} Q440 ${y} 460 ${y+25}Z M508 ${y} L556 ${y-25} Q576 ${y} 556 ${y+25}Z"/><circle cx="508" cy="${y}" r="12"/>`; }
  const color = item==='backpack-azul'?'#629de2':item==='acc-coroa'||item==='acc-colar'||item==='hat-sol'?'#edbf55':item==='acc-sol'?'#34405e':item==='acc-oculos'?'#c2dde4':'#d77fa9';
  const id = `${uid}-${item}`;
+ const anchor = MANIFEST[item]?.coverage?.anchor ?? 'head';
+ const transform = placement === 'hat-side' && item === 'acc-fita' ? `translate(${ANCHORS.head[0] - 85} ${ANCHORS.head[1] - 45}) scale(.4)` : '';
+ if (placement === 'hat-side' && item === 'acc-bandolete') shape = '<path d="M608 90 Q642 78 644 102 Q643 120 620 113" fill="none" stroke-width="10"/>';
  const opacity = item === 'acc-oculos' ? .25 : item === 'acc-oculos-estrela' ? .4 : 1;
- return shape ? `<defs><linearGradient id="${id}" x2=".6" y2="1"><stop stop-color="${color}"/><stop offset=".45" stop-color="${color}"/><stop offset="1" stop-color="#66506d"/></linearGradient></defs><g data-item="${item}" fill="url(#${id})" fill-opacity="${opacity}" stroke="#49332e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">${shape}</g>` : '';
+ return shape ? `<defs><linearGradient id="${id}" x2=".6" y2="1"><stop stop-color="${color}"/><stop offset=".45" stop-color="${color}"/><stop offset="1" stop-color="#66506d"/></linearGradient></defs><g data-item="${item}" data-anchor="${anchor}" data-placement="${placement}" transform="${transform}" fill="url(#${id})" fill-opacity="${opacity}" stroke="#49332e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">${shape}</g>` : '';
 }
-export const headAccessory = (c: AvatarConfig): boolean => c.accessory==='acc-fita'||c.accessory==='acc-bandolete';

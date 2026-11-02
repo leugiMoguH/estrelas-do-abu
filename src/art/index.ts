@@ -14,7 +14,7 @@ export type { ArtTheme } from './theme';
 export { getArtTheme, setArtTheme } from './theme';
 export type { AvatarOptions, AvatarPose } from './avatar';
 export type { CatalogItem, Slot } from './catalog';
-export { CATALOG, defaultAvatar, randomAvatar, normalizeAvatar } from './catalog';
+export { CATALOG, defaultAvatar, randomAvatar, normalizeAvatar, resolveAvatarCompatibility } from './catalog';
 export type { AbuPose, AvatarConfig, Option } from './palette';
 export { EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
 

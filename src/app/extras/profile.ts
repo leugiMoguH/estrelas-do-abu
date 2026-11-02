@@ -9,6 +9,7 @@ import {
   EXPRESSIONS,
   randomAvatar,
   normalizeAvatar,
+  resolveAvatarCompatibility,
   EYE_COLORS,
   starSvg,
   type AvatarConfig,
@@ -93,7 +94,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     const controls = document.createElement('section');
     controls.className = 'extras-controls';
     controls.append(poseLabel);
-    message(controls, feedback || 'As tuas escolhas ficam guardadas automaticamente.');
+    message(controls, [feedback || 'As tuas escolhas ficam guardadas automaticamente.', ...resolveAvatarCompatibility(avatar).notices].join(' '));
     layout.append(preview, controls);
     main.append(layout);
     const apply = (slot: keyof AvatarConfig, id: string | null): void => {
