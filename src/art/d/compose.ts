@@ -29,9 +29,10 @@ export function avatarD(input: AvatarConfig, options: AvatarOptions = {}, resolv
    const url = layer?.file && resolve(layer.file);
    if (!url) return '';
    const filter = layer.slot === 'skin' ? skinFilter : layer.slot === 'hairStyle' ? hairFilter : undefined;
-   return `<g${layer.transform ? ` transform="${layer.transform}"` : ''}><image data-layer="${name}" data-anchor="${layer.coverage?.anchor ?? 'head'}" href="${url}" width="1024" height="1536"${clip ? ` clip-path="url(#${id}-${clip})"` : ''}${filter ? ` filter="url(#${filter})"` : ''}/></g>`;
+   return `<g${layer.transform ? ` transform="${layer.transform}"` : ''}><image data-layer="${name}"${['accessory','hat','glasses','backpack'].includes(layer.slot) ? ` data-item="${config[layer.slot as 'accessory']}"` : ''} data-anchor="${layer.coverage?.anchor ?? 'head'}" href="${url}" width="1024" height="1536"${clip ? ` clip-path="url(#${id}-${clip})"` : ''}${filter ? ` filter="url(#${filter})"` : ''}/></g>`;
  };
- const hairLayer = MANIFEST[config.hairStyle];
+ const selectedHair = MANIFEST[config.hairStyle];
+ const hairLayer = fit.tuckHair && selectedHair?.hatFile ? {...selectedHair,file:selectedHair.hatFile} : selectedHair;
  // Partition the existing transparent export into disjoint rear/front regions.
  // Side locks lie over the shoulders; the central lengths fall behind the neck/body.
  const frontLocks = !['hair-rabo','hair-coque'].includes(config.hairStyle);
@@ -39,18 +40,22 @@ export function avatarD(input: AvatarConfig, options: AvatarOptions = {}, resolv
  const frontShape = `<path clip-rule="evenodd" d="M0 0 H1024 V1536 H0Z ${rearShape}"/>`;
  const hairImage = (front: boolean): string => `<g${fit.tuckHair ? ` clip-path="url(#${id}-hat-fit)"` : ''}>${image(hairLayer, front ? 'hairFront' : 'hairBack', front ? 'hair-front' : 'hair-back')}</g>`;
  const body = BODY[0], under = BODY[1];
- const skinImage = image(body, 'skin', hasShoes ? 'feet' : undefined);
+ const fullOutfit = fit.hiddenSlots.includes('bottom');
+ const newLower = fullOutfit || bottom?.coverage?.skinOcclusionHem !== undefined;
+ const hiddenLegHem = (fullOutfit ? top?.coverage?.skinOcclusionHem : bottom?.coverage?.skinOcclusionHem) ?? 850;
+ const skinImage = `<g${newLower ? ` clip-path="url(#${id}-lower-fit)"` : ''}>${image(body, 'skin', hasShoes ? 'feet' : undefined)}</g>`;
  const outer = MANIFEST[config.outer ?? ''];
  const hasOuter = !!(outer?.file && resolve(outer.file));
- const clothes = image(bottom) + image(shoes) + image(top, 'top', hasOuter ? 'coat-opening' : undefined) + image(outer);
+ const clothes = (fullOutfit ? '' : image(bottom)) + image(shoes) + image(top, 'top', hasOuter ? 'coat-opening' : undefined) + image(outer);
  return `<svg xmlns="http://www.w3.org/2000/svg" class="av av-d av-d-${pose}${options.reduceMotion?' av-d-still':''}" viewBox="0 -70 ${options.withAbu?1380:1024} 1606" width="${size}" height="${Math.round(size*1606/(options.withAbu?1380:1024))}" role="img" aria-label="A tua personagem"><defs>
+ <clipPath id="${id}-lower-fit"><path clip-rule="evenodd" d="M0 0 H1024 V1536 H0Z M385 680 H628 L650 800 V${Math.min(940,hiddenLegHem)} H350 V800Z ${hiddenLegHem>940 ? `M0 940 H1024 V${hiddenLegHem} H0Z` : ''}"/></clipPath>
  <clipPath id="${id}-feet"><rect width="1024" height="1380"/></clipPath>
  <clipPath id="${id}-under"><rect y="${hasTop && !top.coverage?.underlay ? underHem : ANCHORS.neck[1]}" width="1024" height="${hasTop && !top.coverage?.underlay ? 0 : Math.max(0, underHem - ANCHORS.neck[1])}"/></clipPath>
  <clipPath id="${id}-hair-front">${frontShape}</clipPath>
  <clipPath id="${id}-hair-back"><path d="${rearShape}"/></clipPath>
  <clipPath id="${id}-hat-fit"><rect y="95" width="1024" height="1441"/></clipPath>
- <clipPath id="${id}-coat-opening"><path d="M420 310 H600 L625 760 H395Z"/></clipPath>
+ <clipPath id="${id}-coat-opening"><path d="M420 310 H600 L625 850 H395Z M0 850 H1024 V1536 H0Z"/></clipPath>
  <clipPath id="${id}-hands"><path d="M260 850 H350 V990 H260Z M650 850 H750 V990 H650Z"/></clipPath>
  ${shared?'':gradientFilter(skinFilter,skin)+gradientFilter(hairFilter,hair,hairWhite)}</defs>
- ${fit.notices.length ? `<desc>${fit.notices.join(' ')}</desc>` : ''}<g class="avatar-d-body">${accessoryD(config.backpack,id)}${hairImage(false)}${skinImage}${image(under, 'under', 'under')}${clothes}${image(body, 'hands', 'hands')}${faceD(config,id)}${hairImage(true)}${accessoryD(config.glasses,id)}${accessoryD(config.hat,id)}${accessoryD(config.accessory,id,fit.headAccessoryPlacement)}</g>${options.withAbu?`<g transform="translate(940 1090) scale(.625)">${abuD(config,'wag',{size:640,reduceMotion:options.reduceMotion})}</g>`:''}</svg>`;
+ ${fit.notices.length ? `<desc>${fit.notices.join(' ')}</desc>` : ''}<g class="avatar-d-body">${image(MANIFEST[config.backpack ?? ''])}${accessoryD(config.backpack,id)}${hairImage(false)}${skinImage}${image(under, 'under', 'under')}${clothes}${image(body, 'hands', 'hands')}${faceD(config,id)}${hairImage(true)}${image(MANIFEST[config.glasses ?? ''])}${accessoryD(config.glasses,id)}${image(MANIFEST[config.hat ?? ''])}${accessoryD(config.hat,id)}${image(MANIFEST[config.accessory ?? ''])}${accessoryD(config.accessory,id,fit.headAccessoryPlacement)}</g>${options.withAbu?`<g transform="translate(940 1090) scale(.625)">${abuD(config,'wag',{size:640,reduceMotion:options.reduceMotion})}</g>`:''}</svg>`;
 }

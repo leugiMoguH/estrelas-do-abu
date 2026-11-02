@@ -35,3 +35,5 @@ export function startAbuLife(main: HTMLElement, eligible: boolean): void {
  blinkNext();
  stop=()=>{cancelled=true;timers.forEach(clearTimeout);timers.clear();};
 }
+
+export { abuPrize } from '../art/d/abu';

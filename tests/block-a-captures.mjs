@@ -33,12 +33,12 @@ try {
     const under=new Image();under.src=assetUrl('d4/body_under.webp');await under.decode();
     const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=1536;
     const ctx=canvas.getContext('2d');const gaps=[];
-    for(const top of CATALOG.filter(i=>i.slot==='top')) for(const bottom of CATALOG.filter(i=>i.slot==='bottom')) {
+    for(const top of CATALOG.filter(i=>i.slot==='top'&&!i.compatibility.occupies.includes('bottom'))) for(const bottom of CATALOG.filter(i=>i.slot==='bottom')) {
      ctx.clearRect(0,0,1024,1536);
      if(top.id==='top-jaqueta') {
       ctx.save();ctx.beginPath();ctx.rect(0,350,1024,Math.min(MANIFEST[top.id].coverage.hem,MANIFEST[bottom.id].coverage.waist+16)-350);ctx.clip();ctx.drawImage(under,0,0,1024,1536);ctx.restore();
      }
-     const [,offset,scale]=/translate\(0 ([^)]+)\) scale\(1 ([^)]+)\)/.exec(MANIFEST[bottom.id].transform);
+     const [,offset,scale]=/translate\(0 ([^)]+)\) scale\(1 ([^)]+)\)/.exec(MANIFEST[bottom.id].transform??'')??['','0','1'];
      ctx.save();ctx.translate(0,Number(offset));ctx.scale(1,Number(scale));ctx.drawImage(images.get(bottom.id),0,0,1024,1536);ctx.restore();
      ctx.drawImage(images.get(top.id),0,0,1024,1536);
      const data=ctx.getImageData(445,675,130,40).data;

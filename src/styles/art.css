@@ -284,3 +284,7 @@ body.reduce-motion .map-hit {
 /* Keep the SVG hit target fixed: CSS transform replaces its translate attribute. */
 .map-body { transform-box:fill-box; transform-origin:50% 100%; transition:transform .18s ease; }
 .map-hit:hover .map-body, .map-hit:focus-visible .map-body { transform:translateY(-5px) scale(1.025); }
+
+/* The tail is a disjoint crop of the existing pinscher painting, never a second tail. */
+.abu-wag .abu-d-tail { transform-origin:450px 470px; animation:abu-tail-wag .3s ease-in-out infinite alternate; }
+@keyframes abu-tail-wag { from {transform:rotate(-7deg)} to {transform:rotate(9deg)} }

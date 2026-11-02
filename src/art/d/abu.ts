@@ -1,3 +1,4 @@
+import { piece } from './pieces';
 import { defaultAvatar } from '../catalog';
 import { uid, type AvatarConfig, type AbuPose } from '../palette';
 const images = import.meta.glob<string>('../assets/d5/*.webp', { eager: true, query: '?url', import: 'default' });
@@ -16,11 +17,13 @@ export const ABU_ANCHORS: Record<AbuPose, AbuAnchors> = {
 };
 export function abuAccessoryD(item: string, pose: AbuPose, id: string): string {
  const m = ABU_ANCHORS[pose];
- const body = item.includes('camisola') || item==='abu-capa';
- const head = ['abu-chapeu','abu-chapeu-festa','abu-borboleta','abu-oculos'].includes(item);
- const a = item==='abu-gravata' && pose==='sleep' ? [278,399,65] : item==='abu-oculos'?m.eyes:body?m.torso:head?m.head:m.neck;
+ const custom=piece(item);
+ const body = custom?.slot === 'abuBody' || item.includes('camisola') || item==='abu-capa';
+ const head = custom?.slot === 'abuHead' || ['abu-chapeu','abu-chapeu-festa','abu-borboleta','abu-oculos'].includes(item);
+ const a = item.includes('oculos') ? m.eyes : item==='abu-gravata' && pose==='sleep' ? [278,399,65] : item==='abu-oculos'?m.eyes:body?m.torso:head?m.head:m.neck;
  let shape = '';
- if (item==='abu-oculos') shape='<ellipse cx="-46" rx="30" ry="32" fill-opacity=".25"/><ellipse cx="46" rx="30" ry="32" fill-opacity=".25"/><path d="M-16 0 Q0 -12 16 0" fill="none"/>';
+ if (custom) shape=custom.shape.startsWith('<') ? custom.shape : '<path d="M-58 -30 Q0 -8 48 -30 L62 30 35 38 29 85 Q-10 103 -50 80 L-55 25 -72 18Z"/><path d="M-37 0 L35 0 M-39 26 L34 26 M-34 52 L28 52 M0 -10 V88" fill="none" stroke="#e8d5bb" stroke-width="5"/>';
+ else if (item==='abu-oculos') shape='<ellipse cx="-46" rx="30" ry="32" fill-opacity=".25"/><ellipse cx="46" rx="30" ry="32" fill-opacity=".25"/><path d="M-16 0 Q0 -12 16 0" fill="none"/>';
  else if (item==='abu-chapeu-festa') shape='<path d="M-48 0 L0 -85 48 0Z"/><circle cy="-85" r="10" fill="#f8d471"/>';
  else if (item==='abu-chapeu') shape='<ellipse rx="75" ry="15"/><path d="M-45 -5 L-38 -55 Q0 -72 38 -55 L45 -5Z"/>';
  else if (item==='abu-laco'||item==='abu-borboleta') shape='<path d="M0 0 Q-65 -48 -48 20 Q-42 42 0 0 Q65 -48 48 20 Q42 42 0 0Z"/><circle r="12"/>';
@@ -28,18 +31,21 @@ export function abuAccessoryD(item: string, pose: AbuPose, id: string): string {
  else if (item==='abu-gravata') shape='<path d="M-16 -8 L16 -8 9 10 22 62 0 78 -22 62 -9 10Z"/>';
  else if (body) shape=item==='abu-capa'?'<path d="M-55 -30 Q20 -65 100 25 L130 110 Q45 128 -25 60Z"/>':'<path d="M-61 -35 Q0 -12 48 -35 L70 50 40 65 32 110 Q-10 132 -55 100 L-67 45 -85 35Z"/>';
  else shape='<path d="M-48 -10 Q0 14 48 -10 L44 6 Q0 30 -48 6Z"/>'+(item==='abu-coleira-estrela'?'<path d="M0 18 L6 30 20 32 10 42 13 56 0 49 -13 56 -10 42 -20 32 -6 30Z" fill="#ffd666"/>':'<circle cy="30" r="10" fill="#ffd666"/>');
- if (body && pose==='lie' && item!=='abu-capa') shape='<path d="M-61 -35 Q0 -12 48 -35 L66 20 Q30 49 -32 38 L-58 20 -75 14Z"/>';
+ if (!custom && body && pose==='lie' && item!=='abu-capa') shape='<path d="M-61 -35 Q0 -12 48 -35 L66 20 Q30 49 -32 38 L-58 20 -75 14Z"/>';
  if (item==='abu-capa') shape = pose==='lie' || pose==='sleep'
   ? '<path d="M-55 -30 Q5 -54 70 0 L85 42 Q25 51 -25 22Z"/>'
   : '<path d="M-55 -30 Q20 -65 84 12 L96 62 Q32 74 -25 30Z"/>';
  const color = body?'#679fd3':head?'#b78bce':'#dc859b';
- return `<defs><linearGradient id="${id}-${item}" x2=".7" y2="1"><stop stop-color="${color}"/><stop offset=".5" stop-color="${color}"/><stop offset="1" stop-color="#65516a"/></linearGradient></defs><g data-item="${item}" transform="translate(${a[0]} ${a[1]}) rotate(${a[2]})" fill="url(#${id}-${item})" stroke="#49332e" stroke-width="3" stroke-linejoin="round">${shape}${item==='abu-camisola-listras'&&pose!=='lie'?'<path d="M-55 30 L53 30 M-52 60 L35 60 M-49 90 L33 90" stroke="#fff0d9" stroke-width="9"/>':item==='abu-camisola-listras'?'<path d="M-52 0 L53 0 M-49 24 L43 24" stroke="#fff0d9" stroke-width="9"/>':''}</g>`;
+ return `<defs><linearGradient id="${id}-${item}" x2=".7" y2="1"><stop stop-color="${color}"/><stop offset=".5" stop-color="${color}"/><stop offset="1" stop-color="#65516a"/></linearGradient></defs><g data-item="${item}" transform="translate(${a[0]} ${a[1]}) rotate(${a[2]})" fill="url(#${id}-${item})" stroke="#49332e" stroke-width="3" stroke-linejoin="round">${body && custom && (pose==='lie' || pose==='sleep') ? `<g transform="scale(${pose==='sleep'?'.65 .48':'1 .45'})">${shape}</g>` : shape}${item==='abu-camisola-listras'&&pose!=='lie'?'<path d="M-55 30 L53 30 M-52 60 L35 60 M-49 90 L33 90" stroke="#fff0d9" stroke-width="9"/>':item==='abu-camisola-listras'?'<path d="M-52 0 L53 0 M-49 24 L43 24" stroke="#fff0d9" stroke-width="9"/>':''}</g>`;
 }
 export function abuD(config: AvatarConfig = defaultAvatar(), pose: AbuPose = 'idle', opts: { size?: number; reduceMotion?: boolean } = {}): string {
  const id=uid('abu-d'), key=POSE_IMAGE[pose];
  const url=images[`../assets/d5/abu-${key}.webp`];
+ const tailShape='M450 330 Q502 375 492 430 Q481 462 450 477 L445 453 Q477 421 450 330Z';
+ const tail = pose==='wag' ? `<defs><clipPath id="${id}-tail-cut"><path d="${tailShape}"/></clipPath><mask id="${id}-tail-base"><rect width="640" height="640" fill="white"/><path d="${tailShape}" fill="black"/></mask></defs><g class="abu-d-tail"><image href="${url}" width="640" height="640" clip-path="url(#${id}-tail-cut)"/></g>` : '';
+ const groundY=pose==='sleep'?466:pose==='lie'?514:pose==='happy'?566:605;
  const selected=[config.abuBody,config.abuNeck,config.abuHead].filter((v):v is string=>!!v);
- return `<svg xmlns="http://www.w3.org/2000/svg" class="abu-svg abu-d abu-${pose}${opts.reduceMotion?' abu-still':''}" data-pose="${pose}" data-config='${JSON.stringify(config)}' viewBox="0 0 640 640" width="${opts.size??220}" height="${opts.size??220}" role="img" aria-label="Abu, o cão pinscher"><g class="abu-d-body"><image class="abu-base" href="${url}" width="640" height="640"/>${key==='sit'?`<image class="abu-blink" href="${images['../assets/d5/abu-sit-blink.webp']}" width="640" height="640" visibility="hidden"/>`:''}${selected.map(i=>abuAccessoryD(i,pose,id)).join('')}</g></svg>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" class="abu-svg abu-d abu-${pose}${opts.reduceMotion?' abu-still':''}" data-pose="${pose}" data-config='${JSON.stringify(config)}' viewBox="0 0 640 640" width="${opts.size??220}" height="${opts.size??220}" role="img" aria-label="Abu, o cão pinscher"><ellipse cx="325" cy="${groundY}" rx="${pose==='sleep'||pose==='lie'?200:145}" ry="15" fill="#49332e" opacity=".12"/><g class="abu-d-body">${tail}<image class="abu-base"${pose==='wag'?` mask="url(#${id}-tail-base)"`:''} href="${url}" width="640" height="640"/>${key==='sit'?`<image class="abu-blink"${pose==='wag'?` mask="url(#${id}-tail-base)"`:''} href="${images['../assets/d5/abu-sit-blink.webp']}" width="640" height="640" visibility="hidden"/>`:''}${selected.map(i=>abuAccessoryD(i,pose,id)).join('')}</g></svg>`;
 }
 export type AbuReaction = 'correct'|'wrong'|'curious'|'hello'|'tutor';
 export const REACTION_POSE: Record<AbuReaction, AbuPose> = {correct:'happy',wrong:'think',curious:'think',hello:'stand',tutor:'think'};
@@ -48,4 +54,15 @@ export function abuReact(container: Element, reaction: AbuReaction): void {
  if (!el) return;
  const config=JSON.parse(el.getAttribute('data-config')??'null') as AvatarConfig|null;
  el.outerHTML=abuD(config??defaultAvatar(),REACTION_POSE[reaction],{reduceMotion:el.getAttribute('class')?.includes('abu-still')??false});
+}
+
+/** Prize hook for Block C; keeps the equipped clothing and honours both motion preferences. */
+export function abuPrize(container: Element, reduceMotion = false): void {
+ const el = container.matches('.abu-d') ? container : container.querySelector('.abu-d');
+ if (!el) return;
+ const reduced = reduceMotion || el.classList.contains('abu-still') ||
+  (typeof document !== 'undefined' && document.body.classList.contains('reduce-motion')) ||
+  (typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches);
+ const config = JSON.parse(el.getAttribute('data-config') ?? 'null') as AvatarConfig | null;
+ el.outerHTML = abuD(config ?? defaultAvatar(), 'happy', {reduceMotion:reduced});
 }

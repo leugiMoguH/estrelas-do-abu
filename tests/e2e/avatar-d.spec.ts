@@ -23,6 +23,8 @@ test('D: personalizar, comprar, equipar e persistir sem erros', async ({ page },
   await card.getByRole('button', { name: 'Comprar e equipar' }).click();
   await expect(page.locator('.extras-preview [data-item="acc-oculos-estrela"]')).toBeVisible();
   expect(Number(await page.locator('#stars').innerText())).toBe(88);
+  // Measure the settled layout after the finite purchase celebration.
+  await page.locator('.extras-preview').evaluate(async el => { await Promise.all(el.getAnimations().map(a => a.finished)); });
   if (page.viewportSize()!.width < 650) {
     const preview = await page.locator('.extras-preview').boundingBox();
     const controls = await page.locator('.extras-controls').boundingBox();

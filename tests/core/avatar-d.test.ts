@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from 'vitest';
-const assets = import.meta.glob('/src/art/assets/d4/*.webp', { eager: true, query: '?url', import: 'default' });
+const assets = import.meta.glob(['/src/art/assets/d4/*.webp','/src/art/assets/block-b/*.svg'], { eager: true, query: '?url', import: 'default' });
 import { CATALOG, defaultAvatar, normalizeAvatar } from '../../src/art/catalog';
 import { MANIFEST, missingAssets, assetUrl } from '../../src/art/d/manifest';
 import { ramp, sampleRamp } from '../../src/art/d/filters';

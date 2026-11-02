@@ -48,6 +48,8 @@ export const HAIR_COLORS: readonly (Option & { readonly hex: string })[] = [
 ];
 
 export const EYE_STYLES: readonly Option[] = [
+  { id: 'suaves', name: 'Alongados suaves' },
+  { id: 'atentos', name: 'Atentos' },
   { id: 'redondos', name: 'Redondos' },
   { id: 'brilhantes', name: 'Brilhantes' },
   { id: 'amendoa', name: 'Amêndoa' },
@@ -56,6 +58,8 @@ export const EYE_STYLES: readonly Option[] = [
 ];
 
 export const EXPRESSIONS: readonly Option[] = [
+  { id: 'serena', name: 'Serena' },
+  { id: 'surpresa', name: 'Surpresa' },
   { id: 'feliz', name: 'Feliz' },
   { id: 'sorriso-grande', name: 'Sorriso grande' },
   { id: 'curiosa', name: 'Curiosa' },
@@ -63,7 +67,11 @@ export const EXPRESSIONS: readonly Option[] = [
   { id: 'divertida', name: 'Divertida' },
 ];
 
+export const BROWS: readonly Option[] = [{id:'suaves',name:'Suaves'},{id:'retas',name:'Retas'},{id:'arqueadas',name:'Arqueadas'}];
+export const FACE_SHAPES: readonly Option[] = [{id:'oval',name:'Oval'},{id:'bochechas',name:'Maçãs do rosto marcadas'},{id:'sardas',name:'Sardas'}];
 export interface AvatarConfig {
+  brows?: string;
+  faceShape?: string;
   outer: string | null;
   glasses: string | null;
   hat: string | null;
@@ -101,4 +109,4 @@ let counter = 0;
 /** Identificador único por desenho, para clipPaths não colidirem em páginas com vários SVG. */
 export const uid = (prefix: string): string => `${prefix}${(counter += 1)}`;
 
-export const EYE_COLORS = [{ id: 'castanho', name: 'Castanho', hex: '#7a4020' }, { id: 'azul', name: 'Azul', hex: '#3977b4' }, { id: 'verde', name: 'Verde', hex: '#51754a' }, { id: 'mel', name: 'Mel', hex: '#b27e31' }] as const;
+export const EYE_COLORS = [{id:'cinzento',name:'Cinzento',hex:'#687783'}, {id:'avela',name:'Avelã',hex:'#8b713d'}, { id: 'castanho', name: 'Castanho', hex: '#7a4020' }, { id: 'azul', name: 'Azul', hex: '#3977b4' }, { id: 'verde', name: 'Verde', hex: '#51754a' }, { id: 'mel', name: 'Mel', hex: '#b27e31' }] as const;

@@ -1,11 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { CATALOG, defaultAvatar, normalizeAvatar, randomAvatar, resolveAvatarCompatibility } from '../../src/art/catalog';
-import { EYE_COLORS, EYE_STYLES, EXPRESSIONS, HAIR_COLORS, SKIN_TONES, type AvatarConfig } from '../../src/art/palette';
+import { BROWS, FACE_SHAPES, EYE_COLORS, EYE_STYLES, EXPRESSIONS, HAIR_COLORS, SKIN_TONES, type AvatarConfig } from '../../src/art/palette';
 import { ANCHORS, MANIFEST } from '../../src/art/d/manifest';
 import { avatarD } from '../../src/art/d/compose';
 
 const owned = CATALOG.map(i => i.id);
 const axes: [keyof AvatarConfig, (string | null)[]][] = [
+ ['brows', BROWS.map(i=>i.id)], ['faceShape', FACE_SHAPES.map(i=>i.id)],
  ['skin', SKIN_TONES.map(i=>i.id)], ['eyes', EYE_STYLES.map(i=>i.id)],
  ['hairColor', HAIR_COLORS.map(i=>i.id)], ['eyeColor', EYE_COLORS.map(i=>i.id)],
  ['expression', EXPRESSIONS.map(i=>i.id)],
@@ -21,11 +22,15 @@ function check(c: AvatarConfig): void {
  expect(c).toEqual(before);
  const top = MANIFEST[c.top]!, bottom = MANIFEST[c.bottom]!;
  expect(bottom.coverage?.waist).toBe(ANCHORS.waist[1]);
+ const fullOutfit = CATALOG.find(i=>i.id===c.top)?.compatibility.occupies.includes('bottom');
+ if (!fullOutfit) {
  expect(top.coverage!.hem! - bottom.coverage!.waist!).toBeGreaterThanOrEqual(19);
  expect(top.coverage!.hem! - bottom.coverage!.waist!).toBeLessThanOrEqual(47);
  expect(bottom.coverage!.hem!).toBeGreaterThan(top.coverage!.hem!);
+ }
  const svg = avatarD(c, {}, f=>f);
- const ordered = ['skin','under','bottom','shoes','top', ...(c.outer ? ['outer'] : []), 'hands','face', ...(c.hairStyle !== 'hair-rapado' ? ['hairFront'] : [])];
+ const full = CATALOG.find(i=>i.id===c.top)?.compatibility.occupies.includes('bottom');
+ const ordered = ['skin','under',...(!full?['bottom']:[]),'shoes','top', ...(c.outer ? ['outer'] : []), 'hands','face', ...(c.hairStyle !== 'hair-rapado' ? ['hairFront'] : [])];
  const positions = ordered.map(l=>svg.indexOf(`data-layer="${l}"`));
  expect(positions.every((p,i)=>p>=0 && (!i || p>positions[i-1]!))).toBe(true);
  if (c.hairStyle !== 'hair-rapado') {

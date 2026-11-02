@@ -5,7 +5,7 @@ import {
   CATALOG,
   SKIN_TONES,
   HAIR_COLORS,
-  EYE_STYLES,
+  EYE_STYLES, BROWS, FACE_SHAPES,
   EXPRESSIONS,
   randomAvatar,
   normalizeAvatar,
@@ -56,6 +56,11 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
   const render = (): void => {
     const state = getState();
     const avatar = state.profile.avatar;
+    const previewAvatar = (slot: keyof AvatarConfig, id: string | null): AvatarConfig => {
+      const preview = {...avatar, [slot]:id};
+      if (slot === 'bottom' && resolveAvatarCompatibility(preview).hiddenSlots.includes('bottom')) preview.top = 'top-azul';
+      return preview;
+    };
     const main = screen('A minha personagem');
     startAbuLife(main, true);
     const tabs = document.createElement('div');
@@ -124,6 +129,8 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
           name: 'Olhos',
           groups: [
             { title: 'Cor dos olhos', slot: 'eyeColor', items: [...EYE_COLORS] },
+            { title: 'Sobrancelhas', slot: 'brows', items: [...BROWS] },
+            { title: 'Fisionomia', slot: 'faceShape', items: [...FACE_SHAPES] },
             { title: 'Olhos', slot: 'eyes', items: [...EYE_STYLES] },
             { title: 'Expressão', slot: 'expression', items: [...EXPRESSIONS] },
           ],
@@ -189,7 +196,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
             else {
               art.setAttribute('style', g.crop ?? '');
               art.classList.add('is-crop');
-              art.innerHTML = avatarSvg({ ...avatar, [g.slot]: item.id }, { size: 100 });
+              art.innerHTML = avatarSvg(previewAvatar(g.slot, item.id), { size: 100 });
             }
           }
           choice.append(art, document.createTextNode(item.name));
@@ -252,7 +259,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
     const grid = document.createElement('div');
     grid.className = 'extras-catalog';
     const items = CATALOG.filter(
-      (item) => (!filter || item.slot === filter) && (tab === 'Loja' ? !item.free : allowed(item.id)),
+      (item) => (!filter || item.slot === filter) && (tab === 'Loja' ? item.origin === 'estrelas' : allowed(item.id)),
     );
     for (const item of items) {
       const owned = allowed(item.id);
@@ -261,23 +268,25 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
       card.innerHTML = `<div class="item-art">${
         item.slot.startsWith('abu')
           ? abuSvg('sit', {...avatar,[item.slot]:item.id})
-          : avatarSvg({ ...avatar, [item.slot]: item.id }, { size: 120 })
+          : avatarSvg(previewAvatar(item.slot, item.id), { size: 120 })
       }</div><h2>${escape(item.name)}</h2>`;
-      if (!item.free)
+      card.insertAdjacentHTML('beforeend', `<p>${escape(({inicial:'Inicial',estrelas:'Estrelas',teste:'Prémio de teste','coleção-mensal':'Coleção mensal'})[item.origin])}</p>`);
+      if (item.price !== undefined)
         card.insertAdjacentHTML('beforeend', `<p class="item-price">${starSvg(22)} ${item.price}</p>`);
-      const missing = Math.max(0, item.price - state.save.stars);
+      const missing = Math.max(0, (item.price ?? 0) - state.save.stars);
       const selected = avatar[item.slot] === item.id;
       const purchase = action(
         owned
           ? selected
-            ? 'Equipado'
+            ? resolveAvatarCompatibility(avatar).hiddenSlots.includes(item.slot) ? 'Guardado sob conjunto' : 'Equipado'
             : 'Equipar · possuído'
           : missing
             ? `Faltam ${missing} estrelas`
             : 'Comprar e equipar',
         () => {
           if (owned) return apply(item.slot, item.id);
-          const result = buy(getState().save, item);
+          if (item.origin !== 'estrelas' || item.price === undefined) return;
+          const result = buy(getState().save, {id:item.id,price:item.price});
           if (!result.ok) {
             feedback = 'Não foi possível comprar este item.';
             render();

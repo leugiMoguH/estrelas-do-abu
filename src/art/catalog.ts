@@ -1,31 +1,42 @@
+import { NEW_PIECES } from './d/pieces';
 import type { AvatarConfig } from './palette';
-import { EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
+import { BROWS, FACE_SHAPES, EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
 
 export type Slot = 'hairStyle' | 'top' | 'bottom' | 'shoes' | 'accessory' | 'abuAccessory' | 'abuNeck' | 'abuBody' | 'abuHead' | 'outer' | 'glasses' | 'hat' | 'backpack';
 export interface CatalogItem {
   id: string;
   slot: Slot;
   name: string;
-  price: number;
+  price?: number;
+  origin: 'inicial' | 'estrelas' | 'teste' | 'coleção-mensal';
+  category: string;
+  compatibility: { target: 'personagem' | 'Abu'; occupies: readonly string[]; anchor: string; covers: readonly string[] };
   free: boolean;
 }
+
+const FULL_OUTFITS = new Set(['m-vestido', 'm-macacao']);
+const metadata = (slot: Slot, id: string, origin: CatalogItem['origin']): Pick<CatalogItem, 'origin'|'category'|'compatibility'> => ({
+ origin, category: slot, compatibility: { target: slot.startsWith('abu') ? 'Abu' : 'personagem', occupies: FULL_OUTFITS.has(id) ? ['top','bottom'] : [slot], anchor: ['m-pulseiras'].includes(id) ? 'wrists' : ['m-colar','acc-colar','acc-laco'].includes(id) ? 'neck' : slot === 'bottom' ? 'waist' : slot === 'shoes' ? 'ankles' : slot === 'outer' ? 'shoulders' : slot === 'top' ? 'neck' : slot === 'abuBody' ? 'torso' : slot === 'abuNeck' ? 'neck' : 'head', covers: slot === 'outer' ? ['top-sleeves'] : slot === 'hairStyle' ? ['forehead'] : [] }
+});
 
 const free = (id: string, slot: Slot, name: string): CatalogItem => ({
   id,
   slot,
   name,
-  price: 0,
+  ...metadata(slot, id, 'inicial'),
   free: true,
 });
 const paid = (id: string, slot: Slot, name: string, price: number): CatalogItem => ({
   id,
   slot,
   name,
+  ...metadata(slot, id, 'estrelas'),
   price,
   free: false,
 });
 
 export const CATALOG: readonly CatalogItem[] = [
+  ...NEW_PIECES.map(p => ({ id:p.id, slot:p.slot, name:p.name, free:p.origin === 'inicial', ...metadata(p.slot,p.id,p.origin), ...(p.origin === 'estrelas' ? {price:14} : {}) })),
   free('hair-curto', 'hairStyle', 'Curto'),
   free('hair-comprido', 'hairStyle', 'Comprido'),
   free('hair-cachos', 'hairStyle', 'Cachos'),
@@ -81,7 +92,7 @@ export const CATALOG: readonly CatalogItem[] = [
 
 export const defaultAvatar = (): AvatarConfig => ({
   outer: null, glasses: null, hat: null, backpack: null, eyeColor: 'castanho',
-  skin: 'bege',
+  skin: 'bege', brows:'suaves', faceShape:'oval',
   hairStyle: 'hair-curto',
   hairColor: 'castanho',
   eyes: 'brilhantes',
@@ -101,7 +112,7 @@ export function randomAvatar(rng: () => number, ownedIds: readonly string[]): Av
     CATALOG.filter((i) => i.slot === slot && (i.free || ownedIds.includes(i.id))).map((i) => i.id);
   const accessories = allowed('accessory');
   return resolveAvatarCompatibility({
-    outer: null, glasses: null, hat: null, backpack: null, eyeColor: pick(rng, EYE_COLORS).id,
+    brows:pick(rng,BROWS).id, faceShape:pick(rng,FACE_SHAPES).id, outer: null, glasses: null, hat: null, backpack: null, eyeColor: pick(rng, EYE_COLORS).id,
     skin: pick(rng, SKIN_TONES).id,
     hairStyle: pick(rng, allowed('hairStyle')),
     hairColor: pick(rng, HAIR_COLORS).id,
@@ -128,7 +139,7 @@ export function normalizeAvatar(value: unknown, ownedIds: readonly string[]): Av
     if (source[legacy.slot] == null) source[legacy.slot] = legacy.id;
     source.accessory = null;
   }
-  for (const [slot, options] of [['skin', SKIN_TONES], ['hairColor', HAIR_COLORS], ['eyes', EYE_STYLES], ['expression', EXPRESSIONS], ['eyeColor', EYE_COLORS]] as const) {
+  for (const [slot, options] of [['skin', SKIN_TONES], ['hairColor', HAIR_COLORS], ['eyes', EYE_STYLES], ['expression', EXPRESSIONS], ['eyeColor', EYE_COLORS], ['brows', BROWS], ['faceShape', FACE_SHAPES]] as const) {
     if (options.some(i => i.id === source[slot])) result[slot] = source[slot] as string;
   }
   for (const slot of ['hairStyle', 'top', 'bottom', 'shoes', 'outer', 'glasses', 'hat', 'backpack', 'accessory', 'abuNeck', 'abuBody', 'abuHead'] as const) {
@@ -146,12 +157,22 @@ export function resolveAvatarCompatibility(avatar: AvatarConfig): {
   tuckHair: boolean;
   headAccessoryPlacement: 'head' | 'hat-side';
   notices: string[];
+  hiddenSlots: readonly Slot[];
 } {
   const headAccessory = avatar.accessory === 'acc-bandolete' || avatar.accessory === 'acc-fita';
-  const tuckHair = ['hat-sol', 'hat-pompom', 'acc-gorro'].includes(avatar.hat ?? '');
+  const tuckHair = ['hat-sol', 'hat-pompom', 'acc-gorro', 'm-boina'].includes(avatar.hat ?? '');
   const headAccessoryPlacement = avatar.hat && headAccessory ? 'hat-side' : 'head';
   const notices: string[] = [];
   if (tuckHair && avatar.hairStyle !== 'hair-rapado') notices.push('O cabelo fica recolhido sob o chapéu.');
   if (headAccessoryPlacement === 'hat-side') notices.push('O acessório de cabelo fica preso ao lado do chapéu.');
-  return { avatar: { ...avatar }, tuckHair, headAccessoryPlacement, notices };
+  const fullOutfit = CATALOG.find(i=>i.id===avatar.top)?.compatibility.occupies.includes('bottom') ?? false;
+  if (fullOutfit) notices.push('Este conjunto ocupa a parte de cima e a parte de baixo; a peça inferior fica guardada.');
+  return { hiddenSlots: fullOutfit ? ['bottom'] : [], avatar: { ...avatar }, tuckHair, headAccessoryPlacement, notices };
 }
+
+/** Initial facial modules share the same provenance/anchor contract as clothing.
+ * Config values remain the historic IDs; prefixed catalogue IDs avoid collisions. */
+export const FEATURE_CATALOG = ([['eyes',EYE_STYLES],['eyeColor',EYE_COLORS],['expression',EXPRESSIONS],['brows',BROWS],['faceShape',FACE_SHAPES]] as const).flatMap(([slot,options])=>options.map(option=>({
+ id:`feature-${slot}-${option.id}`, value:option.id, name:option.name, category:'rosto',slot,
+ origin:'inicial' as const, compatibility:{target:'personagem' as const,occupies:[slot],anchor:'head',covers:[]},layer:'face'
+})));

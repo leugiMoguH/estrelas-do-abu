@@ -14,9 +14,9 @@ export type { ArtTheme } from './theme';
 export { getArtTheme, setArtTheme } from './theme';
 export type { AvatarOptions, AvatarPose } from './avatar';
 export type { CatalogItem, Slot } from './catalog';
-export { CATALOG, defaultAvatar, randomAvatar, normalizeAvatar, resolveAvatarCompatibility } from './catalog';
+export { FEATURE_CATALOG, CATALOG, defaultAvatar, randomAvatar, normalizeAvatar, resolveAvatarCompatibility } from './catalog';
 export type { AbuPose, AvatarConfig, Option } from './palette';
-export { EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
+export { BROWS, FACE_SHAPES, EYE_COLORS, EXPRESSIONS, EYE_STYLES, HAIR_COLORS, SKIN_TONES } from './palette';
 
 /** As funções públicas despacham pelo tema ativo; sem tema novo disponível usam o desenho atual. */
 export const avatarSvg = (config: AvatarConfig, options?: AvatarOptions): string =>
@@ -28,3 +28,5 @@ export const mapSvg = (options: { activeSubjects: readonly string[] }): string =
 export const welcomeSvg = (): string => (themedArt(getArtTheme())?.welcomeSvg ?? welcomeAtual)();
 export const roomSvg = (subject: string): string => (themedArt(getArtTheme())?.roomSvg ?? roomAtual)(subject);
 export const starSvg = (size?: number): string => (themedArt(getArtTheme())?.starSvg ?? starAtual)(size);
+
+export { abuPrize } from './d/abu';
