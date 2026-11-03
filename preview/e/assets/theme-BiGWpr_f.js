@@ -1,0 +1,1 @@
+import{t as e}from"./rolldown-runtime-DK3Fl9T5.js";import{H as t,a as n}from"./router-DiiJSZn_.js";var r=e({applyTheme:()=>i});function i(e){t(e),e===`atual`?delete document.body.dataset.theme:document.body.dataset.theme=e,n()}export{r as n,i as t};
