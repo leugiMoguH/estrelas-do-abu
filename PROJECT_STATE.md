@@ -80,3 +80,5 @@ Decisão necessária:
 
 ## Histórico do plano
 - v1 (2026-10-30): plano inicial
+
+- 2026-11-03: V3 PUBLICADA (autorização expressa do produtor). Blocos A (4a14578, v3-bloco-a), B (4863189, v3-bloco-b), C (cfc9d14, v3-bloco-c, v3-visual-recompensas); push feito. gh-pages 48adabd: preview/e = V3, backup preview/e-prov7 (V2), armazenamento eda-e. Verificado no URL público (3 viewports): carrega sem erros e fluxo teste→nota→sorteio→guardar→equipar passa 9/9. Checkpoint pré-V3: v3-checkpoint-pre-2026-11-02. Limitações: capturas visuais por amostra (não todo o produto cartesiano); sem teste com a criança; 3 coleções preparadas (2026-11, 2026-12, 2027-01), depois «indisponível»; anti-exploração não protege contra alterar relógio/storage; gamePack.test.ts instável (timeout subido 15→60 s).
