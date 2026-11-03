@@ -1,9 +1,9 @@
 Projeto: Estrelas do Abu
 Plano: v1
-Atualizado: 2026-11-01
+Atualizado: 2026-11-03
 Âmbito: 30a8cd81
 Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: concluir Git/publicação da Fábrica V2 quando houver ligação a github.com:443 e escrita em .git; manter backup e-prov6 e verificar URL público em três viewports. Ver docs/hgp/fabrica/validacao-v2.md.
+Próximo passo: recolher o feedback da criança sobre a V3 (preview/e/); nada novo a implementar antes. Ver .claude/tmp/handoff.md.
 Decisão necessária:
 
 ## Sucesso
@@ -82,3 +82,5 @@ Decisão necessária:
 - v1 (2026-10-30): plano inicial
 
 - 2026-11-03: V3 PUBLICADA (autorização expressa do produtor). Blocos A (4a14578, v3-bloco-a), B (4863189, v3-bloco-b), C (cfc9d14, v3-bloco-c, v3-visual-recompensas); push feito. gh-pages 48adabd: preview/e = V3, backup preview/e-prov7 (V2), armazenamento eda-e. Verificado no URL público (3 viewports): carrega sem erros e fluxo teste→nota→sorteio→guardar→equipar passa 9/9. Checkpoint pré-V3: v3-checkpoint-pre-2026-11-02. Limitações: capturas visuais por amostra (não todo o produto cartesiano); sem teste com a criança; 3 coleções preparadas (2026-11, 2026-12, 2027-01), depois «indisponível»; anti-exploração não protege contra alterar relógio/storage; gamePack.test.ts instável (timeout subido 15→60 s).
+
+- 2026-11-03 (fecho V3): confirmado no código: A) cabelo traseiro/frontal separados, olhos antes da franja, cintura/mangas/calçado com ancoragem, resolvedor de compatibilidade sem apagar artigos; B) 103 artigos (52 novos), 7 variantes de rosto, roupa de Abu em 9 poses, abuPrize com movimento reduzido; C) coleções 2026-11/2026-12/2027-01, grelha 4x4, escalões 4/3/1/0, mínimo 10 perguntas distintas, idempotência por tentativa, Save v3 compatível com v1/v2. Validações já executadas na sessão V3 (não repetidas no fecho): tsc, 1073 unit, build, e2e 69 ok/3 ignorados (exigem build hgp-e2e), URL público 3 viewports e fluxo completo 9/9. Tag checkpoint-v3-fechada-2026-11-03 (código publicado cfc9d14). Pendências: feedback da criança; combinações visuais por testar; miniaturas Abu; coleções futuras só com decisão; relógio/storage manipuláveis (aceite).
