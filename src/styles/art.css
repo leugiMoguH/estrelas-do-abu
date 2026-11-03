@@ -256,7 +256,7 @@ body.reduce-motion .map-hit {
 .reduce-motion .av-d *, .av-d-still * {animation:none!important}
 @media(prefers-reduced-motion:reduce) { .av-d * {animation:none!important} }
 @media (max-width:650px) {
-  .extras-preview:has(> .av-d) { position:static; }
+  body[data-theme='d'] .extras-preview:has(> .av-d) { position:relative; }
 }
 
 .abu-d { max-width:100%; overflow:visible; }
@@ -288,3 +288,6 @@ body.reduce-motion .map-hit {
 /* The tail is a disjoint crop of the existing pinscher painting, never a second tail. */
 .abu-wag .abu-d-tail { transform-origin:450px 470px; animation:abu-tail-wag .3s ease-in-out infinite alternate; }
 @keyframes abu-tail-wag { from {transform:rotate(-7deg)} to {transform:rotate(9deg)} }
+.monthly-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.monthly-item{min-width:0;text-align:center;overflow:hidden}.monthly-art{height:120px;overflow:hidden;display:flex;justify-content:center}.monthly-art svg{height:120px;max-width:100%}.monthly-item h3{font-size:.85rem;overflow-wrap:anywhere}.monthly-item p{font-size:.75rem;overflow-wrap:anywhere}.prize-reveal>.monthly-item{display:inline-block;width:145px;animation:prize-enter .45s ease-out}@keyframes prize-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}.reduce-motion .prize-reveal>.monthly-item{animation:none}@media(prefers-reduced-motion:reduce){.prize-reveal>.monthly-item{animation:none}}
+
+body[data-theme='d'] .monthly-inventory .extras-controls{max-height:none;overflow:visible}

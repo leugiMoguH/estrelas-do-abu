@@ -80,7 +80,7 @@ function load(): AppState {
   } catch {
     state.ui.storageError = true;
   }
-  Object.assign(state.profile, migrateProfileV3(state.profile.avatar, state.save.ownedItems));
+  Object.assign(state.profile, migrateProfileV3(Object.keys(state.save.equipment).length ? state.save.equipment : state.profile.avatar, state.save.ownedItems));
   state.profile.equipped = { ...state.profile.avatar };
   state.favorites = state.favorites.map(value => normalizeAvatar(value, state.save.ownedItems));
   return state;
@@ -88,24 +88,63 @@ function load(): AppState {
 
 let state = load();
 const listeners = new Set<(state: AppState) => void>();
-export const getState = (): AppState => state;
+let pendingWrites=0;
+let persistence: Promise<unknown>=Promise.resolve();
+function refreshCanonical(): void {
+ if(pendingWrites)return;
+ try {
+ const raw=localStorage.getItem(SAVE_KEY);if(!raw)return;
+ const result=importSave(raw);if(!result.ok)return;
+ state={...state,save:result.save,profile:{...state.profile,avatar:Object.keys(result.save.equipment).length?normalizeAvatar(result.save.equipment,result.save.ownedItems):state.profile.avatar}};
+ } catch { state.ui.storageError=true; }
+}
+export const getState = (): AppState => {refreshCanonical();return state;};
 export function applyOptions(): void {
   document.body.classList.toggle('reduce-motion', state.options.reduceMotion);
   document.body.classList.toggle('large-text', state.options.textScale > 1);
   document.body.style.setProperty('--text-scale', String(state.options.textScale));
 }
-export function update(change: Partial<AppState> | ((state: AppState) => AppState)): void {
+/** All canonical writes share the completion lock, including ordinary answer saves.
+ * The UI updates immediately; completion waits for its preceding writes. */
+export function update(change: Partial<AppState> | ((state: AppState) => AppState), replaceSave=false): Promise<void> {
+  refreshCanonical();
+  const previous=state.save;
   state = typeof change === 'function' ? change(state) : { ...state, ...change };
   state.profile.version = 3;
-  try {
-    const { save, ui: _ui, ...app } = state;
-    localStorage.setItem(APP_KEY, JSON.stringify(app));
+  state.save = {...state.save, equipment:{...state.profile.avatar}};
+  const snapshot=state;
+  const persist=():void=>{
+    const raw=localStorage.getItem(SAVE_KEY);
+    const parsed=raw ? importSave(raw) : undefined;
+    if(parsed && !parsed.ok && !replaceSave) throw new Error('Gravação inválida');
+    const latest=parsed?.ok ? parsed.save : previous;
+    const proposed=snapshot.save;
+    const added=proposed.ownedItems.filter(id=>!previous.ownedItems.includes(id));
+    const duplicatePurchase=proposed.stars<previous.stars && added.length>0 && added.every(id=>latest.ownedItems.includes(id));
+    const changedMastery=Object.fromEntries(Object.entries(proposed.mastery).filter(([id,m])=>JSON.stringify(m)!==JSON.stringify(previous.mastery[id])));
+    const newSeen=proposed.seen.filter(row=>!previous.seen.some(old=>old.at===row.at && old.signature===row.signature));
+    const newMistakes=proposed.mistakes.filter(row=>!previous.mistakes.some(old=>old.at===row.at && JSON.stringify(old.ref)===JSON.stringify(row.ref)));
+    const save:Save=replaceSave ? proposed : {...latest,
+      stars:Math.max(0,latest.stars+(duplicatePurchase?0:proposed.stars-previous.stars)),
+      ownedItems:[...new Set([...latest.ownedItems,...added])],
+      rewardLedger:Object.fromEntries([...new Set([...Object.keys(latest.rewardLedger),...Object.keys(proposed.rewardLedger)])].map(day=>[day,Object.fromEntries([...new Set([...Object.keys(latest.rewardLedger[day]??{}),...Object.keys(proposed.rewardLedger[day]??{})])].map(id=>[id,Math.max(latest.rewardLedger[day]?.[id]??0,proposed.rewardLedger[day]?.[id]??0)]))])),
+      mastery:{...latest.mastery,...changedMastery},
+      seen:[...latest.seen,...newSeen].slice(-500),mistakes:[...latest.mistakes,...newMistakes].slice(-100),
+      equipment:JSON.stringify(proposed.equipment)!==JSON.stringify(previous.equipment)?proposed.equipment:latest.equipment,
+    };
     localStorage.setItem(SAVE_KEY, exportSave(save));
-  } catch {
-    state = { ...state, ui: { ...state.ui, storageError: true } };
-  }
+    const {save:_save,ui:_ui,...app}=snapshot;
+    localStorage.setItem(APP_KEY,JSON.stringify(app));
+    state={...state,ui:{...state.ui,storageError:false}};
+    if(pendingWrites===1) state={...state,save,profile:{...state.profile,avatar:normalizeAvatar(save.equipment,save.ownedItems)}};
+  };
+  pendingWrites++;
+  const operation=navigator.locks ? navigator.locks.request(`${NS}:reward`,persist) : Promise.resolve().then(persist);
+  const written=operation.catch(()=>{state={...state,ui:{...state.ui,storageError:true}};}).finally(()=>{pendingWrites--;});
+  persistence=written;
   applyOptions();
-  listeners.forEach((listener) => listener(state));
+  listeners.forEach(listener=>listener(state));
+  return written;
 }
 export function subscribe(listener: (state: AppState) => void): () => void {
   listeners.add(listener);
@@ -114,7 +153,26 @@ export function subscribe(listener: (state: AppState) => void): () => void {
   };
 }
 export function purchase(item: ShopItem): ReturnType<typeof buy> {
-  const result = buy(state.save, item);
+  const result = buy(getState().save, item);
   if (result.ok) update({ save: result.save });
   return result;
+}
+
+/** Serializes completion across tabs; refreshes the canonical Save inside the lock. */
+export async function completeTransaction(change: (save: Save)=>Save): Promise<Save> {
+ await persistence;
+ if(!navigator.locks) throw new Error('Este navegador não permite guardar prémios entre separadores com segurança.');
+ return navigator.locks.request(`${NS}:reward`,()=>{
+  const raw=localStorage.getItem(SAVE_KEY);
+  const parsed=raw ? importSave(raw) : undefined;
+  if(parsed && !parsed.ok) throw new Error('Gravação inválida');
+  const current=parsed?.ok ? parsed.save : state.save;
+  const save=change(current);
+  const equipment=Object.keys(current.equipment).length ? current.equipment : state.profile.avatar;
+  const canonical={...save,equipment:{...equipment}};
+  localStorage.setItem(SAVE_KEY,exportSave(canonical));
+  state={...state,save:canonical,profile:{...state.profile,avatar:normalizeAvatar(equipment,canonical.ownedItems)}};
+  listeners.forEach(listener=>listener(state));
+  return canonical;
+ });
 }

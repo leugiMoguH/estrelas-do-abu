@@ -1,3 +1,4 @@
+import {collectionPanel, revealReceipt} from './collection-ui';
 import { ptMapSvg } from './figure';
 import type { SessionContext } from './session';
 import { startAbuLife } from './abu-life';
@@ -12,6 +13,7 @@ import { openRoom } from './room';
 import { startSession, type Attempt, type Mode } from './session';
 
 export interface SessionResult {
+  attemptId?: string;
   topicId: string;
   context?: SessionContext;
   mode: Mode;
@@ -45,6 +47,8 @@ export function openResult(result: SessionResult): void {
       );
     }
     main.append(summary);
+    if(result.attemptId) revealReceipt(main,result.attemptId);
+    main.append(collectionPanel());
     const errors = result.attempts.filter((a) => a.result.invalid || !a.result.correct);
     if (errors.length)
       main.append(

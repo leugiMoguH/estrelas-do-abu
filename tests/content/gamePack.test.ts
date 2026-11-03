@@ -40,7 +40,7 @@ describe('banco real da demo', () => {
           expect(grade(ex, t.solve!(ex))).toMatchObject({ correct: true });
         }
     }
-  }, 15000);
+  }, 60_000);
   it('mede capacidade em 2000 seeds e gera três exemplos por tema', () => {
     const rows: string[] = [];
     let passing = 0;

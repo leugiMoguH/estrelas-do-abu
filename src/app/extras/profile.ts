@@ -1,3 +1,4 @@
+import {collectionPanel, revealReceipt} from '../collection-ui';
 import { startAbuLife } from '../abu-life';
 import {
   avatarSvg,
@@ -38,11 +39,12 @@ const allowed = (id: string): boolean =>
 export function safeAvatar(value: unknown): AvatarConfig {
   return normalizeAvatar(value, getState().save.ownedItems);
 }
-export function equip(avatar: AvatarConfig): void {
-  update((state) => ({
+export async function equip(avatar: AvatarConfig): Promise<boolean> {
+  await update((state) => ({
     ...state,
     profile: { ...state.profile, avatar: safeAvatar(avatar), equipped: { ...safeAvatar(avatar) } },
   }));
+  return !getState().ui.storageError;
 }
 
 export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Personalizar'): void {
@@ -62,6 +64,7 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
       return preview;
     };
     const main = screen('A minha personagem');
+    main.classList.toggle('monthly-inventory',tab==='Coleção');
     startAbuLife(main, true);
     const tabs = document.createElement('div');
     tabs.className = 'toolbar tabs-top';
@@ -77,6 +80,14 @@ export function profile(initial: 'Personalizar' | 'Loja' | 'Coleção' = 'Person
       tabs.append(choice);
     }
     main.append(tabs);
+    if(tab==='Coleção') {
+      main.append(collectionPanel());
+      for(const receipt of state.save.receipts.filter(r=>r.items.length).slice(-12).reverse()) {
+        const details=document.createElement('details');
+        const heading=document.createElement('summary');heading.textContent=`Prémios guardados · ${receipt.attempt.month} · ${receipt.items.length} artigos`;
+        details.append(heading);details.addEventListener('toggle',()=>{if(details.open && details.children.length===1)revealReceipt(details,receipt.attempt.id);});main.append(details);
+      }
+    }
     const layout = document.createElement('div');
     layout.className = 'extras-profile';
     const preview = document.createElement('section');

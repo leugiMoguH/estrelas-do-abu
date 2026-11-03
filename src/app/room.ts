@@ -1,8 +1,12 @@
+import {seededRng} from '../core/session';
+import {materialize} from '../core/content';
+import {exerciseSignature} from '../core/grading';
+import {collectionPanel} from './collection-ui';
 import { startAbuLife } from './abu-life';
 import { abuSvg } from '../art';
 import { tutorButton, setTutorMode } from './tutor';
 import { roomSvg } from '../art';
-import { TOPICS, SUBJECTS, gamePack, HGP_SECTIONS, hgpSectionById, hgpSectionInfo } from '../../content';
+import { TOPICS, SUBJECTS, gamePack, hgpItemSection, HGP_SECTIONS, hgpSectionById, hgpSectionInfo } from '../../content';
 import { renderHgpTree } from './hgp-tree';
 import { dueCompetencies } from '../core/review';
 import { button, escape, frame, navigate } from './router';
@@ -142,17 +146,18 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
     main.append(modes);
     const counts = document.createElement('fieldset');
     counts.innerHTML = '<legend>Quantas perguntas?</legend>';
-    (multi ? [3, 5, 8, 12, 20] : [3, 5, 8]).forEach((n) => {
+    (multi ? [3, 5, 8, 10, 12, 20] : [3, 5, 8, 10, 12]).forEach((n) => {
       const choice = button(String(n), () => {
         count = n;
         render();
       });
       choice.dataset.focusId = `count-${n}`;
-      choice.disabled = !getState().save.seen.length && n !== 3;
+      choice.disabled = mode !== 'test' && !getState().save.seen.length && n !== 3;
       choice.setAttribute('aria-pressed', String(count === n));
       counts.append(choice);
     });
     main.append(counts);
+    main.append(collectionPanel());
     if (hgp && chosenSections.size > count) {
       const note = document.createElement('p');
       note.setAttribute('role', 'status');
@@ -164,7 +169,7 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       note.textContent = `Escolheste ${chosen.size} temas, mas só vais ter ${count} perguntas: nem todos os temas vão ser perguntados.`;
       main.append(note);
     }
-    if (!getState().save.seen.length)
+    if (mode !== 'test' && !getState().save.seen.length)
       main.insertAdjacentHTML(
         'beforeend',
         '<p>Na tua primeira aventura são só 3 perguntas. Vamos com calma!</p>',
@@ -175,6 +180,11 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       const ids=selectedTopics.flatMap(t=>t.competencyIds);
       const selection: SessionContext | undefined = multi ? {subject,topicIds:selectedTopics.map(t=>t.id),competencyIds:ids,title:selectedTopics.length===topics.length?'Mistura de temas':selectedTopics.length===1?topic.title:`${selectedTopics.length} temas`,...(hgp?{sectionIds:[...chosenSections]}:{})} : undefined;
       if (selection && hgp) selection.title = chosenSections.size === 1 ? (hgpSectionById([...chosenSections][0]!)?.title ?? topic.title) : `${chosenSections.size} subcapítulos`;
+      if(mode==='test') {
+        const pool=materialize(gamePack,{competencyIds:ids,rng:seededRng(42),perTemplate:24,difficultyFor:t=>t.difficulties[0]!}).filter(e=>e.review!=='needs-human-review' && (!hgp || chosenSections.has(hgpItemSection(e.id)??'')));
+        const available=new Set(pool.map(exerciseSignature)).size;
+        if(available<10) {const warning=document.createElement('p');warning.setAttribute('role','status');warning.textContent=`Este banco disponibiliza apenas ${available} perguntas distintas nesta amostra: pode não permitir os 10 itens necessários para prémios. Podes fazer o teste livremente.`;main.append(warning);}
+      }
       const begin=(nextMode: Mode, subset?: readonly string[]):void=>{if(selectedTopics.length)startSession(topic.id,nextMode,count,subset,selection);};
       const tutor = tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, scene: true, sectionIds: hgp ? [...chosenSections] : undefined, practice: () => begin('study') });
       if (mode === 'test') main.append(tutor);

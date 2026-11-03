@@ -1,3 +1,4 @@
+import type { Receipt } from './collections';
 import type { Answer, Exercise } from './types';
 import type { ExerciseRef } from './content';
 import { exerciseSignature } from './grading';
@@ -18,7 +19,10 @@ export interface Mistake {
 }
 import { emptyMastery, type Mastery, type MasteryState } from './mastery';
 export interface Save {
-  readonly version: 2;
+  readonly version: 3;
+  readonly receipts: readonly Receipt[];
+  readonly monthlyProgress: Readonly<Record<string, number>>;
+  readonly equipment: Readonly<Record<string, string | null>>;
   readonly seen: readonly Seen[];
   readonly mistakes: readonly Mistake[];
   readonly stars: number;
@@ -27,7 +31,8 @@ export interface Save {
   readonly rewardLedger: Readonly<Record<string, Readonly<Record<string, number>>>>;
 }
 export const defaultSave = (): Save => ({
-  version: 2,
+  version: 3,
+  receipts: [], monthlyProgress: {}, equipment: {},
   seen: [],
   mistakes: [],
   stars: 0,
@@ -70,7 +75,7 @@ function validMastery(v: unknown): v is Mastery {
 function validBase(v: unknown): boolean {
   return (
     record(v) &&
-    (v.version === 1 || v.version === 2) &&
+    (v.version === 1 || v.version === 2 || v.version === 3) &&
     integer(v.stars) &&
     Array.isArray(v.ownedItems) &&
     v.ownedItems.every((x) => typeof x === 'string' && safeKey(x)) &&
@@ -138,8 +143,8 @@ export function migrate(value: unknown): Save {
   if (
     !record(value) ||
     !validBase(value) ||
-    !keys(value, value.version === 1 ? base : [...base, 'seen', 'mistakes']) ||
-    (value.version === 2 &&
+    !keys(value, value.version === 1 ? base : [...base, 'seen', 'mistakes', ...(value.version === 3 ? ['receipts','monthlyProgress','equipment'] : [])]) ||
+    (value.version !== 1 &&
       (!Array.isArray(value.seen) ||
         value.seen.length > 500 ||
         !value.seen.every(validSeen) ||
@@ -148,9 +153,11 @@ export function migrate(value: unknown): Save {
         !value.mistakes.every(validMistake)))
   )
     throw new Error('Gravação inválida ou versão não suportada');
-  return JSON.parse(
-    JSON.stringify(value.version === 1 ? { ...value, version: 2, seen: [], mistakes: [] } : value),
-  ) as Save;
+  if (value.version === 3 && (!Array.isArray(value.receipts) || !value.receipts.every(validReceipt) ||
+    new Set(value.receipts.map(r => (r as Receipt).attempt.id)).size !== value.receipts.length ||
+    !record(value.monthlyProgress) || !Object.entries(value.monthlyProgress).every(([k,v])=>safeKey(k) && [0,1,3,4].includes(v as number)) ||
+    !record(value.equipment) || !Object.entries(value.equipment).every(([k,v])=>safeKey(k) && (v===null || typeof v==='string')))) throw new Error('Recompensas inválidas');
+  return JSON.parse(JSON.stringify({...value, version:3, seen:value.seen??[], mistakes:value.mistakes??[], receipts:value.receipts??[], monthlyProgress:value.monthlyProgress??{}, equipment:value.equipment??{}})) as Save;
 }
 export function seenExercise(ex: Exercise, at: number): Seen {
   if (!ex.ref || !ex.conceptId || !ex.approachId) throw new Error('Exercício sem referência');
@@ -191,4 +198,10 @@ export function importSave(json: string): ImportResult {
   } catch {
     return { ok: false, error: 'Gravação inválida ou versão não suportada.' };
   }
+}
+
+function validReceipt(v: unknown): boolean {
+ if(!record(v) || !integer(v.stars) || !record(v.attempt)) return false;
+ const a=v.attempt;
+ return typeof a.id==='string' && safeKey(a.id) && typeof a.month==='string' && /^\d{4}-\d{2}$/u.test(a.month) && typeof a.timezone==='string' && typeof a.selection==='string' && typeof a.mode==='string' && typeof a.completed==='boolean' && Array.isArray(a.questions) && a.questions.every(q=>record(q) && typeof q.signature==='string' && typeof q.valid==='boolean' && typeof q.credit==='number' && Number.isFinite(q.credit) && q.credit>=0 && q.credit<=1) && Array.isArray(v.items) && v.items.every(x=>typeof x==='string') && new Set(v.items).size===v.items.length && [0,1,3,4].includes(v.tier as number) && integer(v.due) && v.due<=4 && typeof v.eligible==='boolean';
 }

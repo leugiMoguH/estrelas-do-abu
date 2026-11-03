@@ -29,6 +29,9 @@ test('D: personalizar, comprar, equipar e persistir sem erros', async ({ page },
     const preview = await page.locator('.extras-preview').boundingBox();
     const controls = await page.locator('.extras-controls').boundingBox();
     expect(preview!.y + preview!.height).toBeLessThanOrEqual(controls!.y);
+    const dog = await page.locator('.extras-preview .abu-preview').boundingBox();
+    expect(dog!.y).toBeGreaterThanOrEqual(preview!.y);
+    expect(dog!.y + dog!.height).toBeLessThanOrEqual(preview!.y + preview!.height);
   }
   await page.screenshot({ path: info.outputPath('avatar-d.png'), fullPage: true, animations: 'disabled' });
   expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);

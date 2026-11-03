@@ -49,18 +49,18 @@ it('AppState guarda competências fora do Save e recarrega dados antigos sem per
   try {
     const store = await import('../../src/app/store');
     const skills = { 'tema:causa': updateSkill(emptySkill(), { correct: true, difficulty: 1, hints: 0, now: 1 }) };
-    store.update({ save: { ...defaultSave(), stars: 17 }, skills });
+    await store.update({ save: { ...defaultSave(), stars: 17 }, skills });
     expect(JSON.parse(data.get('eda:save:v2')!)).not.toHaveProperty('skills');
     vi.resetModules();
     const restored = await import('../../src/app/store');
     expect(restored.getState().skills).toEqual(skills);
     expect(restored.getState().save.stars).toBe(17);
-    // A aplicação antiga ignora propriedades novas do envelope; Save mantém o formato v2.
+    // A aplicação antiga ignora propriedades novas do envelope; a chave de armazenamento antiga continua legível.
     const app = JSON.parse(data.get('eda:app:v1')!); delete app.skills; data.set('eda:app:v1', JSON.stringify(app));
     vi.resetModules();
     const old = await import('../../src/app/store');
     expect(old.getState().skills).toEqual({}); expect(old.getState().save.stars).toBe(17);
-    old.update({ save: defaultSave(), skills: {} });
+    await old.update({ save: defaultSave(), skills: {} });
     expect(old.getState().skills).toEqual({});
   } finally { vi.unstubAllGlobals(); vi.resetModules(); }
 });

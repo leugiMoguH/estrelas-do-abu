@@ -184,7 +184,7 @@ describe('conteúdo parametrizado', () => {
 });
 describe('Save v2 e histórico', () => {
   it('migra v1 preservando campos e origem, sem inventar histórico; migração é repetível', () => {
-    const { seen: _seen, mistakes: _mistakes, ...base } = defaultSave();
+    const { seen: _seen, mistakes: _mistakes, receipts: _receipts, monthlyProgress: _monthly, equipment: _equipment, ...base } = defaultSave();
     const v1 = {
       ...base,
       version: 1,
@@ -197,7 +197,7 @@ describe('Save v2 e histórico', () => {
     };
     const original = JSON.stringify(v1);
     const migrated = migrate(v1);
-    expect(migrated).toEqual({ ...v1, version: 2, seen: [], mistakes: [] });
+    expect(migrated).toEqual({ ...v1, version: 3, seen: [], mistakes: [], receipts: [], monthlyProgress: {}, equipment: {} });
     expect(migrate(migrated)).toEqual(migrated);
     expect(JSON.stringify(v1)).toBe(original);
     expect(migrated.mastery).not.toBe(v1.mastery);

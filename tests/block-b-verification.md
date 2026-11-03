@@ -15,6 +15,9 @@ Folhas abertas e inspecionadas nas tres larguras: pecas novas, nove poses Abu,
 triplos com conjuntos/casacos/franjas/chapeus e sete variantes de rosto.
 Corrigidos: residuos de roupa interior/canelas, corte do vestido sob casaco,
 volumes dos apanhados sob boina, iris dos olhos alongados e acentos.
+No perfil móvel, a regra que retira a posição fixa ganhou especificidade sobre
+o tema D; a pré-visualização deixa de subir sobre os controlos ao percorrer itens.
+O teste de geometria aguarda também o fim da animação breve de compra.
 A roupa do Abu comprime nas poses deitado/a dormir sem tapar as patas.
 A anatomia raster original foi preservada; sombras e cauda receberam camadas SVG.
 
@@ -22,6 +25,10 @@ Comandos:
 - npx.cmd tsc --noEmit: passou.
 - npm.cmd test: 1054 testes, 21 ficheiros, passaram.
 - npm.cmd run build: passou; aviso preexistente de bundle >500 kB.
+- npx.cmd playwright test tests/e2e/avatar-d.spec.ts tests/e2e/avatar-d-fitting.spec.ts
+  tests/e2e/abu-d.spec.ts tests/e2e/focus-d.spec.ts tests/e2e/block-b.spec.ts
+  --output=test-results/block-b-e2e-final: 15 testes passaram nos três viewports.
+- Para as capturas: npm.cmd run dev -- --host 127.0.0.1 --port 4174.
 - node tests/block-b-captures.mjs: 76 casos x 3 viewports; imagens reais carregadas,
   sem erros de consola/pagina ou overflow; cobertura raster em todos os pares
   de cinturas normais (exclui conjuntos que escondem o baixo).

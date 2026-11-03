@@ -1,4 +1,4 @@
-import { defaultAvatar } from '../../art';
+import { normalizeAvatar, defaultAvatar } from '../../art';
 import { defaultSave, exportSave, importSave } from '../../core/save';
 import { navigate } from '../router';
 import { getState, update } from '../store';
@@ -58,13 +58,14 @@ export function openOptions(): void {
     main.append(panel);
     main.insertAdjacentHTML(
       'beforeend',
-      '<h2>Cópia do progresso</h2><p>A cópia inclui estrelas, compras e aprendizagem. A personagem, os conjuntos e as opções ficam neste navegador.</p>',
+      '<h2>Cópia do progresso</h2><p>A cópia inclui estrelas, artigos, aprendizagem e equipamento da personagem e do Abu. Os conjuntos favoritos e as opções ficam neste navegador.</p>',
     );
     const status = message(main, 'Guarda uma cópia antes de mudar de dispositivo.');
     main.append(
       action('Exportar progresso', () => {
+        const current=getState();
         const url = URL.createObjectURL(
-          new Blob([exportSave(getState().save)], { type: 'application/json' }),
+          new Blob([exportSave({...current.save,equipment:{...current.profile.avatar}})], { type: 'application/json' }),
         );
         const link = document.createElement('a');
         link.href = url;
@@ -94,15 +95,15 @@ export function openOptions(): void {
           'Substituir o progresso atual?',
           'O ficheiro foi validado. Estrelas, compras e aprendizagem serão substituídas.',
           () => {
-            update({ save: result.save, skills: {} });
             update((state) => {
-              const avatar = safeAvatar(state.profile.avatar);
+              const avatar = normalizeAvatar(Object.keys(result.save.equipment).length ? result.save.equipment : state.profile.avatar, result.save.ownedItems);
               return {
                 ...state,
+                save: result.save, skills: {},
                 profile: { ...state.profile, avatar, equipped: { ...avatar } },
                 favorites: state.favorites.slice(0, 3).map(safeAvatar),
               };
-            });
+            }, true);
             status.textContent = 'Progresso importado com sucesso.';
           },
         );
@@ -135,7 +136,7 @@ export function openOptions(): void {
                     lastTopicId: null,
                     ui: {},
                     profile: { grade: 6, onboarded: false, avatar: defaultAvatar(), equipped: {} },
-                  });
+                  }, true);
                   openWelcome();
                 },
               );

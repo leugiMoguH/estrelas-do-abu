@@ -59,7 +59,7 @@ describe('Avatar D', () => {
   expect(getState().profile).toMatchObject({version:3,avatar:{skin:'oliva',hairStyle:'hair-rabo',glasses:'acc-sol',accessory:null}});
   expect(getState().favorites[0]).toMatchObject({hat:'acc-coroa',top:'top-azul'});
   expect(getState().favorites[1]!.glasses).toBe(null);
-  update({});
+  await update({});
   expect(JSON.parse(data.get('eda:app:v1')!).profile.version).toBe(3);
  });
  it('omite imagens ausentes sem pedidos, usa Abu D e ids únicos', () => {

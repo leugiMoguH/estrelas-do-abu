@@ -72,7 +72,8 @@ test('HGP: mcq, order, feedback específico e figura com seed fixo (build hgp-e2
  await page.getByRole('button',{name:/Continuar/}).first().click();await page.locator('[data-target="historia"]').click();
  await page.getByRole('button',{name:'Limpar',exact:true}).click();
  await expandTopics(page);
- await page.getByRole('checkbox',{name:new RegExp(hgpTopics.find(t=>t.id===mcq.topic)!.title)}).check();
+ const chapter=page.locator('.topic-group').filter({has:page.locator('summary').filter({hasText:hgpTopics.find(t=>t.id===mcq.topic)!.title})});
+ await chapter.getByRole('checkbox',{name:'Selecionar todos os subcapítulos deste capítulo',exact:true}).check();
  await page.getByRole('button',{name:/Tomé/}).click();await expect(page.getByRole('dialog')).toBeVisible();
  await page.getByRole('dialog').getByRole('button',{name:'Mostra um exemplo'}).click();
  await page.getByRole('dialog').getByRole('button').nth(1).click();await expect(page.getByRole('dialog')).not.toBeEmpty();await page.keyboard.press('Escape');

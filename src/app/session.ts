@@ -1,3 +1,6 @@
+import {awardCollection, localMonth, selectionKey} from '../core/collections';
+import {exerciseSignature} from '../core/grading';
+import {completeTransaction} from './store';
 import { abuReact } from '../art/d/abu';
 import { tutorButton, setTutorMode } from './tutor';
 import { abuSvg } from '../art';
@@ -46,7 +49,7 @@ export function startSession(
   const pool = materialize(gamePack, {
     competencyIds: ids,
     rng,
-    perTemplate: 4,
+    perTemplate: mode === 'test' ? 24 : 4,
     difficultyFor: (template) => {
       const mastery = before.mastery[template.competencyId];
       const target = !mastery || mastery.attempts < 3 ? 1 : mastery.streak >= 3 ? 3 : 2;
@@ -58,7 +61,7 @@ export function startSession(
     pool: (testParams?.has('hgpIds') && topic.subject === 'historia' ? pool.filter(e=>testParams.get('hgpIds')!.split(',').includes(e.id)) : pool)
       .filter(e => !context?.sectionIds || context.sectionIds.includes(hgpItemSection(e.id) ?? '')),
     competencyIds: ids,
-    n: before.seen.length ? count : 3,
+    n: mode === 'test' || before.seen.length ? count : 3,
     state: before.mastery,
     rng,
     now: Date.now(),
@@ -73,34 +76,35 @@ export function startSession(
   let hintCount = 0;
   const attempts: Attempt[] = [];
   let firstAttempt: Attempt | undefined;
+  const attemptId=crypto.randomUUID();
   let completed = false;
-  const finish = (): void => {
+  let completionStamp: Date | undefined;
+  let completionTimezone: string | undefined;
+  const finish = async (): Promise<void> => {
     if (completed) return;
     completed = true;
     const summary = score(attempts.map((a) => ({ competencyId: a.exercise.competencyId, result: a.result })));
     const current = getState().save;
     const levels = ['discovering', 'practising', 'progressing', 'consolidated', 'review'];
-    const reward = rewardSession(
-      current,
-      {
-        completed: true,
-        competencies: [...new Set(attempts.map((a) => a.exercise.competencyId))].map((id) => ({
-          competencyId: id,
-          isNew: !before.mastery[id]?.attempts,
-          improved:
-            levels.indexOf(current.mastery[id]?.level ?? 'discovering') >
-            levels.indexOf(before.mastery[id]?.level ?? 'discovering'),
-        })),
-      },
-      Date.now(),
-    );
-    update((state) => ({
-      ...state,
-      save: reward.save,
-      bestTestGrade: mode === 'test' ? Math.max(state.bestTestGrade, summary.grade) : state.bestTestGrade,
-    }));
+    let earned=0;
+    const completedAt=completionStamp??=new Date();
+    const timezone=completionTimezone??=Intl.DateTimeFormat().resolvedOptions().timeZone;
+    try {
+    await completeTransaction(latest=>{
+      const existing=latest.receipts.find(r=>r.attempt.id===attemptId);
+      if(existing){earned=existing.stars;return latest;}
+      const reward=rewardSession(latest,{completed:true,competencies:[...new Set(attempts.map(a=>a.exercise.competencyId))].map(id=>({competencyId:id,isNew:!before.mastery[id]?.attempts,improved:levels.indexOf(current.mastery[id]?.level??'discovering')>levels.indexOf(before.mastery[id]?.level??'discovering')}))},completedAt.getTime());
+      earned=reward.earned;
+      return awardCollection(reward.save,{id:attemptId,month:localMonth(completedAt.getFullYear(),completedAt.getMonth()),timezone,selection:selectionKey(topic.subject,context?.sectionIds??context?.competencyIds??ids),mode,completed:true,questions:attempts.map(a=>({signature:exerciseSignature(a.exercise),valid:!a.result.invalid && a.exercise.review!=='needs-human-review',credit:a.result.invalid?0:a.result.partial}))},Math.random,reward.earned).save;
+    });
+    } catch {
+      completed=false;
+      const note=document.createElement('p');note.setAttribute('role','alert');note.textContent='Não foi possível guardar o resultado. Mantém esta página aberta e tenta novamente.';
+      document.querySelector('main')?.append(note,button('Tentar guardar novamente',()=>{void finish();}));return;
+    }
+    update(state=>({...state,bestTestGrade:mode==='test'?Math.max(state.bestTestGrade,summary.grade):state.bestTestGrade}));
     play('stars');
-    openResult({ topicId, mode, attempts, summary, earned: reward.earned, context });
+    openResult({ topicId, mode, attempts, summary, earned, context, attemptId });
   };
   const next = (): void => {
     index++;
@@ -126,6 +130,7 @@ export function startSession(
       dialog.showModal();
       dialog.addEventListener('close', () => dialog.remove());
     });
+    if(mode==='test' && session.exercises.length<10){const warning=document.createElement('p');warning.setAttribute('role','status');warning.textContent='Este teste tem menos de 10 perguntas distintas e não permite ganhar artigos mensais. Podes continuar a aprender livremente.';main.append(warning);}
     const exercise = session.exercises[index];
     if (!exercise) {
       main.insertAdjacentHTML(
@@ -223,6 +228,7 @@ export function startSession(
         });
       }
       if (mode === 'test') {
+        submit.disabled=true;
         next();
         return;
       }
