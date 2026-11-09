@@ -1,0 +1,22 @@
+import { test, expect } from '@playwright/test';
+test('Matemática: escolher um subcapítulo novo, responder e voltar', async ({ page }) => {
+ await page.goto('/');
+ await page.getByRole('button',{name:/Jogar/}).first().click();
+ await page.getByRole('button',{name:/Surpreende/}).click();
+ await page.getByRole('button',{name:/Vamos ao centro/}).click();
+ await page.locator('[data-target="matematica"]').click();
+ await page.getByRole('button',{name:'Limpar',exact:true}).click();
+ const pending=page.locator('[data-focus-id="section-mat-sec-calculo-mental"]');
+ await expect(pending).toBeDisabled();
+ await expect(pending.locator('..')).toContainText('Em preparação');
+ await page.locator('[data-focus-id="section-mat-sec-mmc-mdc"]').check();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)).toBeLessThanOrEqual(1);
+ await page.getByRole('button',{name:'Começar a estudar',exact:true}).click();
+ for(const input of await page.locator('.answer-editor input').all()) await input.fill('12');
+ await page.getByRole('button',{name:'Verificar',exact:true}).click();
+ await expect(page.locator('.feedback')).not.toBeEmpty();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)).toBeLessThanOrEqual(1);
+ await page.getByRole('button',{name:/Voltar/}).first().click();
+ await page.getByRole('button',{name:'Voltar à sala',exact:true}).click();
+ await expect(page.locator('[data-focus-id="section-mat-sec-mmc-mdc"]')).toBeChecked();
+});

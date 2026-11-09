@@ -1,4 +1,8 @@
-﻿import type { ContentPack } from '../src/core/content';
+import { numerosTopics, numerosTemplates } from './matematica/numeros';
+import { algebraDadosTopics, algebraDadosTemplates } from './matematica/algebra-dados';
+import { geometriaTopics, geometriaTemplates } from './matematica/geometria';
+import { propExtraTemplates } from './matematica/prop-extra';
+import type { ContentPack } from '../src/core/content';
 import { hgpTemplates } from './historia';
 import { hgpTopics } from './historia/topics';
 import { mathTemplates } from './matematica';
@@ -19,7 +23,7 @@ export const TOPICS: Topic[] = [
   ...hgpTopics,
   {
     id: 'racionais',
-    subject: 'matematica',
+    subject: 'matematica', level: '6',
     title: 'Frações e decimais',
     blurb: 'Representar, somar e usar partes de um todo.',
     icon: '🍰',
@@ -27,7 +31,7 @@ export const TOPICS: Topic[] = [
   },
   {
     id: 'prioridades',
-    subject: 'matematica',
+    subject: 'matematica', level: '6',
     title: 'Prioridades das operações',
     blurb: 'Parênteses, potências e operações pela ordem certa.',
     icon: '🧮',
@@ -35,12 +39,14 @@ export const TOPICS: Topic[] = [
   },
   {
     id: 'proporcionalidade',
-    subject: 'matematica',
+    subject: 'matematica', level: '6',
     title: 'Proporcionalidade direta',
     blurb: 'Preços, receitas e escalas com uma razão constante.',
     icon: '⚖️',
     competencyIds: ['mat-proporcionalidade'],
   },
+  // Temas integrados no Bloco B depois dos 3 originais: a sala continua a abrir em «Frações e decimais».
+  ...numerosTopics, ...algebraDadosTopics, ...geometriaTopics,
   {
     id: 'classes',
     subject: 'portugues',
@@ -91,7 +97,7 @@ export const gamePack: ContentPack & { readonly review: 'approved' } = {
     curriculumRef: topic.curriculumRef ?? `DGE — Aprendizagens Essenciais, 6.º ano: ${topic.title}`,
     prerequisites: [],
   })),
-  templates: [...mathTemplates, ...portugueseTemplates, ...hgpTemplates],
+  templates: [...mathTemplates, ...numerosTemplates, ...algebraDadosTemplates, ...geometriaTemplates, ...propExtraTemplates, ...portugueseTemplates, ...hgpTemplates],
 };
 
 export { TUTORS, validateLessons } from './tutor';

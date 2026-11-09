@@ -1,3 +1,4 @@
+import {numerosTemplates} from '../../content/matematica/numeros';
 import {test,expect} from '@playwright/test';
 import {defaultSave} from '../../src/core/save';
 import {defaultAvatar,CATALOG} from '../../src/art/catalog';
@@ -14,8 +15,9 @@ test('C: teste, nota, prémios, guardar, equipar, reload e offline',async({page,
  await expect(page.locator('.monthly-grid .monthly-item')).toHaveCount(16);
  await page.locator('.monthly-collection').screenshot({path:info.outputPath('collection-grid.png')});
  await page.getByRole('button',{name:/^Teste/}).click();await page.getByRole('button',{name:'10',exact:true}).click();await page.getByRole('button',{name:'Começar o teste',exact:true}).click();
- const topic={competencyIds:['mat-racionais']};
- const gamePack={id:'eda-demo',version:'1.0.0',templates:mathTemplates,competencies:[]} as unknown as ContentPack;
+ // Bloco B: o subcapítulo «Frações equivalentes, adição e subtração» junta mat-racionais e mat-fracoes-ops (organização das AE).
+ const topic={competencyIds:['mat-racionais','mat-fracoes-ops']};
+ const gamePack={id:'eda-demo',version:'1.0.0',templates:[...mathTemplates,...numerosTemplates],competencies:[]} as unknown as ContentPack;
  const pool=materialize(gamePack,{competencyIds:topic.competencyIds,rng:seededRng(instant.getTime()),perTemplate:24,difficultyFor:t=>t.difficulties[0]!});
  const second=await context.newPage();await second.clock.install();await second.clock.setFixedTime(instant);
  await second.goto('/?tema=d');await second.getByRole('button',{name:/Continuar/}).first().click();await second.locator('[data-target="matematica"]').click();await second.getByRole('button',{name:/^Teste/}).click();await second.getByRole('button',{name:'10',exact:true}).click();await second.getByRole('button',{name:'Começar o teste',exact:true}).click();

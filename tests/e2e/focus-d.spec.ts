@@ -12,8 +12,11 @@ test('teclado mantém foco na criação e nas escolhas da sala', async ({page}) 
  }
  await page.getByRole('button',{name:/Vamos ao centro/}).click();
  await page.locator('[data-target="matematica"]').click();
- const topic=page.locator('[data-focus-id^="topic-"]').last();
- await topic.focus(); await page.keyboard.press('Enter'); await expect(topic).toBeFocused();
+ // Bloco B: a sala de Matemática usa a árvore de subcapítulos (caixas de seleção); o foco mantém-se após escolher.
+ const chapter=page.locator('[data-focus-id="chapter-mat-geometria"]');
+ await chapter.focus(); await page.keyboard.press('Enter'); await expect(chapter).toBeFocused();
+ const section=page.locator('[data-focus-id="section-mat-sec-circulo"]');
+ await section.focus(); await page.keyboard.press('Space'); await expect(section).toBeFocused(); await expect(section).toBeChecked();
  for (const id of ['mode-test','mode-study','count-3']) {
   const control=page.locator(`[data-focus-id="${id}"]`);
   await control.focus(); await page.keyboard.press('Enter'); await expect(control).toBeFocused();

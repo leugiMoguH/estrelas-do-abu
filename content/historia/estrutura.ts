@@ -1,3 +1,4 @@
+import type { Section, Chapter } from '../estrutura';
 import type { HgpTopicId } from './schema';
 
 /**
@@ -8,28 +9,8 @@ import type { HgpTopicId } from './schema';
  * guardada: os capítulos/subcapítulos marcados `provisional` ou `pending` aguardam o índice completo e NÃO devem ser
  * dados como completos. Não acrescentar títulos que não estejam confirmados.
  */
-export interface HgpSection {
-  id: string;
-  title: string;
-  /** Referência oficial (Aprendizagens Essenciais de HGP, 6.º ano; linhas de docs/curriculo/src/ae-hgp6.txt). */
-  official: string;
-  /** Tema oficial a que pertencem as perguntas deste subcapítulo (competência). */
-  topic?: HgpTopicId;
-  /** Entrada que cobre o tema inteiro, porque os subcapítulos do manual ainda não estão confirmados. */
-  provisional?: boolean;
-  /** Complemento das AE que não consta como subcapítulo confirmado do índice. */
-  extra?: boolean;
-  /** 'confirmado' = título do índice do manual; 'trabalho' = subdivisão fundamentada nas AE, sem correspondência editorial confirmada. */
-  editorial?: 'confirmado' | 'trabalho';
-}
-export interface HgpChapter {
-  id: string;
-  title: string;
-  pages?: string;
-  /** Nota visível quando a lista de subcapítulos está por confirmar. */
-  pending?: string;
-  sections: readonly HgpSection[];
-}
+export type HgpSection = Section<HgpTopicId>;
+export type HgpChapter = Chapter<HgpSection>;
 
 const D1: HgpTopicId = 'hgp-seculo-xviii';
 const d1 = (id: string, title: string, official: string, extra = false): HgpSection => ({ id: `d1-${id}`, title, official, topic: D1, ...(extra ? { extra: true } : {}) });

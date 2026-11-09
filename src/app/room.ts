@@ -1,3 +1,5 @@
+import { sectionModeAllowed } from '../../content/estrutura';
+import { MAT_CHAPTERS, MAT_SECTIONS, MAT_TEMPLATE_SECTION, matSectionById, matSectionInfo } from '../../content/matematica/estrutura';
 import {seededRng} from '../core/session';
 import {materialize} from '../core/content';
 import {exerciseSignature} from '../core/grading';
@@ -7,7 +9,7 @@ import { abuSvg } from '../art';
 import { tutorButton, setTutorMode } from './tutor';
 import { roomSvg } from '../art';
 import { TOPICS, SUBJECTS, gamePack, hgpItemSection, HGP_SECTIONS, hgpSectionById, hgpSectionInfo } from '../../content';
-import { renderHgpTree } from './hgp-tree';
+import { renderSubjectTree } from './subject-tree';
 import { dueCompetencies } from '../core/review';
 import { button, escape, frame, navigate } from './router';
 import { getState } from './store';
@@ -42,7 +44,10 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
   const multi = topics.length > 4;
   const chosen = new Set(context?.topicIds ?? (selected ? [selected.id] : []));
   const hgp = subject === 'historia';
-  const chosenSections = new Set<string>(hgp ? initialHgpSections(context, topicId ?? getState().lastTopicId ?? undefined) : []);
+  const mat = subject === 'matematica';
+  const tree = hgp || mat;
+  const sectionById = mat ? matSectionById : hgpSectionById;
+  const chosenSections = new Set<string>(hgp ? initialHgpSections(context, topicId ?? getState().lastTopicId ?? undefined) : mat ? (context?.sectionIds ?? [MAT_SECTIONS.find(s => s.competencyIds?.some(id => selected?.competencyIds.includes(id)))?.id ?? MAT_SECTIONS[0]!.id]) : []);
   const chapterOpen = new Map<string, boolean>();
   let filter: 'all' | 'recuperacao5' | '6' = 'all';
   const groupOpen = new Map<string | undefined, boolean>();
@@ -66,15 +71,15 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
     startAbuLife(main, false);
     const cards = document.createElement('div');
     cards.className = 'topic-grid';
-    if (hgp) {
+    if (tree) {
       chosen.clear();
-      for (const id of chosenSections) { const t = hgpSectionById(id)?.topic; if (t) chosen.add(t); }
-      renderHgpTree(main, { chosen: chosenSections, open: chapterOpen, focusId, rerender: render });
+      for (const id of chosenSections) { const section = sectionById(id); for (const t of topics) if (section?.topic === t.id || section?.competencyIds?.some(c => t.competencyIds.includes(c))) chosen.add(t.id); }
+      renderSubjectTree(main, { chosen: chosenSections, open: chapterOpen, focusId, rerender: render, ...(mat ? { chapters: MAT_CHAPTERS, info: matSectionInfo } : {}) });
       selected = topics.find((t) => t.id === [...chosen][0]) ?? topics[0];
     } else if (multi) {
       const filters = document.createElement('div');
       for (const [id,label] of [['all','Tudo'],['6','6.º ano']] as const) {
-        const control = button(label,()=>{ filter=id; render(); });
+        const control = button(label,()=>{ filter=id; for (const t of topics) if (id !== 'all' && t.level !== id) chosen.delete(t.id); render(); });
         control.dataset.focusId=`filter-${id}`; control.setAttribute('aria-pressed',String(filter===id)); filters.append(control);
       }
       const visible = topics.filter(t=>filter==='all'||t.level===filter);
@@ -138,6 +143,7 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
         },
         'mode-card',
       );
+      choice.disabled = mat && [...chosenSections].some(s => !sectionModeAllowed(matSectionInfo(s).status, id));
       choice.dataset.focusId = `mode-${id}`;
       choice.innerHTML = `<strong>${label}</strong><span>${description}</span>`;
       choice.setAttribute('aria-pressed', String(mode === id));
@@ -178,15 +184,19 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       const topic = selected;
       const selectedTopics = multi ? [...chosen].flatMap(id=>topics.filter(t=>t.id===id)) : [topic];
       const ids=selectedTopics.flatMap(t=>t.competencyIds);
-      const selection: SessionContext | undefined = multi ? {subject,topicIds:selectedTopics.map(t=>t.id),competencyIds:ids,title:selectedTopics.length===topics.length?'Mistura de temas':selectedTopics.length===1?topic.title:`${selectedTopics.length} temas`,...(hgp?{sectionIds:[...chosenSections]}:{})} : undefined;
-      if (selection && hgp) selection.title = chosenSections.size === 1 ? (hgpSectionById([...chosenSections][0]!)?.title ?? topic.title) : `${chosenSections.size} subcapítulos`;
+      const selection: SessionContext | undefined = multi ? {subject,topicIds:selectedTopics.map(t=>t.id),competencyIds:ids,title:selectedTopics.length===topics.length?'Mistura de temas':selectedTopics.length===1?topic.title:`${selectedTopics.length} temas`,...(tree?{sectionIds:[...chosenSections]}:{})} : undefined;
+      if (selection && tree) selection.title = chosenSections.size === 1 ? (sectionById([...chosenSections][0]!)?.title ?? topic.title) : `${chosenSections.size} subcapítulos`;
       if(mode==='test') {
-        const pool=materialize(gamePack,{competencyIds:ids,rng:seededRng(42),perTemplate:24,difficultyFor:t=>t.difficulties[0]!}).filter(e=>e.review!=='needs-human-review' && (!hgp || chosenSections.has(hgpItemSection(e.id)??'')));
+        const pool=materialize(gamePack,{competencyIds:ids,rng:seededRng(42),perTemplate:24,difficultyFor:t=>t.difficulties[0]!}).filter(e=>e.review!=='needs-human-review' && (!tree || chosenSections.has((mat ? MAT_TEMPLATE_SECTION[e.ref!.templateId] : hgpItemSection(e.id))??'')));
         const available=new Set(pool.map(exerciseSignature)).size;
         if(available<10) {const warning=document.createElement('p');warning.setAttribute('role','status');warning.textContent=`Este banco disponibiliza apenas ${available} perguntas distintas nesta amostra: pode não permitir os 10 itens necessários para prémios. Podes fazer o teste livremente.`;main.append(warning);}
       }
-      const begin=(nextMode: Mode, subset?: readonly string[]):void=>{if(selectedTopics.length)startSession(topic.id,nextMode,count,subset,selection);};
-      const tutor = tutorButton({ subject: topic.subject, competencyId: topic.competencyIds[0]!, mode, scene: true, sectionIds: hgp ? [...chosenSections] : undefined, practice: () => begin('study') });
+      const begin=(nextMode: Mode, subset?: readonly string[]):void=>{
+        if (mat && [...chosenSections].some(s => !sectionModeAllowed(matSectionInfo(s).status, nextMode))) return;
+        if (mat && [...chosenSections].some(s => matSectionInfo(s).status === 'licao')) { tutor.click(); return; }
+        if(selectedTopics.length)startSession(topic.id,nextMode,count,subset,selection);
+      };
+      const tutor = tutorButton({ subject: topic.subject, competencyId: (mat ? matSectionById([...chosenSections][0] ?? '')?.lessonId : undefined) ?? topic.competencyIds[0]!, mode, scene: true, sectionIds: tree ? [...chosenSections] : undefined, practice: () => begin('study') });
       if (mode === 'test') main.append(tutor);
       else main.querySelector('.room-art')?.append(tutor);
       const due = dueCompetencies(getState().save.mastery, Date.now(), ids);
@@ -198,7 +208,7 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
         ),
       );
       const start = main.querySelector<HTMLButtonElement>('.sticky-cta');
-      if(start)start.disabled=selectedTopics.length===0;
+      if(start)start.disabled=selectedTopics.length===0 || (mat && [...chosenSections].some(s => !sectionModeAllowed(matSectionInfo(s).status, mode)));
       const mistakes = getState().save.mistakes;
       const errorIds = ids.filter((id) =>
         mistakes.some((mistake) =>

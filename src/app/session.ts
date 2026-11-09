@@ -1,4 +1,6 @@
-import {awardCollection, localMonth, selectionKey} from '../core/collections';
+import { filterSections, collectionSelection } from './section-selection';
+import { MAT_TEMPLATE_SECTION } from '../../content/matematica/estrutura';
+import {awardCollection, localMonth} from '../core/collections';
 import {exerciseSignature} from '../core/grading';
 import {completeTransaction} from './store';
 import { abuReact } from '../art/d/abu';
@@ -58,8 +60,7 @@ export function startSession(
   });
   const session = buildSession({
     mode,
-    pool: (testParams?.has('hgpIds') && topic.subject === 'historia' ? pool.filter(e=>testParams.get('hgpIds')!.split(',').includes(e.id)) : pool)
-      .filter(e => !context?.sectionIds || context.sectionIds.includes(hgpItemSection(e.id) ?? '')),
+    pool: filterSections(testParams?.has('hgpIds') && topic.subject === 'historia' ? pool.filter(e => testParams.get('hgpIds')!.split(',').includes(e.id)) : pool, topic.subject, context?.sectionIds),
     competencyIds: ids,
     n: mode === 'test' || before.seen.length ? count : 3,
     state: before.mastery,
@@ -67,9 +68,9 @@ export function startSession(
     now: Date.now(),
     history: before.seen,
     skills: getState().skills,
-    recentWindow: context?.sectionIds ? 60 : undefined,
-    repeatPenalty: context?.sectionIds ? 40 : undefined,
-    groupOf: context?.sectionIds ? (e) => hgpItemSection(e.id) ?? e.competencyId : undefined,
+    recentWindow: topic.subject === 'historia' && context?.sectionIds ? 60 : undefined,
+    repeatPenalty: topic.subject === 'historia' && context?.sectionIds ? 40 : undefined,
+    groupOf: context?.sectionIds ? (e) => (topic.subject === 'matematica' ? MAT_TEMPLATE_SECTION[e.ref!.templateId] : hgpItemSection(e.id)) ?? e.competencyId : undefined,
   });
   update({ lastTopicId: topicId });
   let index = 0;
@@ -95,7 +96,7 @@ export function startSession(
       if(existing){earned=existing.stars;return latest;}
       const reward=rewardSession(latest,{completed:true,competencies:[...new Set(attempts.map(a=>a.exercise.competencyId))].map(id=>({competencyId:id,isNew:!before.mastery[id]?.attempts,improved:levels.indexOf(current.mastery[id]?.level??'discovering')>levels.indexOf(before.mastery[id]?.level??'discovering')}))},completedAt.getTime());
       earned=reward.earned;
-      return awardCollection(reward.save,{id:attemptId,month:localMonth(completedAt.getFullYear(),completedAt.getMonth()),timezone,selection:selectionKey(topic.subject,context?.sectionIds??context?.competencyIds??ids),mode,completed:true,questions:attempts.map(a=>({signature:exerciseSignature(a.exercise),valid:!a.result.invalid && a.exercise.review!=='needs-human-review',credit:a.result.invalid?0:a.result.partial}))},Math.random,reward.earned).save;
+      return awardCollection(reward.save,{id:attemptId,month:localMonth(completedAt.getFullYear(),completedAt.getMonth()),timezone,selection:collectionSelection(topic.subject,ids,context),mode,completed:true,questions:attempts.map(a=>({signature:exerciseSignature(a.exercise),valid:!a.result.invalid && a.exercise.review!=='needs-human-review',credit:a.result.invalid?0:a.result.partial}))},Math.random,reward.earned).save;
     });
     } catch {
       completed=false;
