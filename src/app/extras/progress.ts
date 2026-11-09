@@ -1,3 +1,6 @@
+import { HGP_CHAPTERS } from '../../../content';
+import { MAT_CHAPTERS } from '../../../content/matematica/estrutura';
+import { readProgress, progressLabel } from '../../core/progress';
 ﻿import { TOPICS, SUBJECTS } from '../../../content';
 import { emptyMastery, type Level } from '../../core/mastery';
 import { isDue, reviewLevel } from '../../core/review';
@@ -25,6 +28,16 @@ export function openProgress(): void {
     const main = screen('O meu progresso');
     message(main, 'Cada tema cresce com a prática. As estrelas são uma recompensa à parte.');
     const now = Date.now();
+    const progress = readProgress(getState().save);
+    for (const chapter of [...MAT_CHAPTERS, ...HGP_CHAPTERS]) {
+      const panel = document.createElement('section'); panel.className = 'panel';
+      const title = document.createElement('h2'); title.textContent = chapter.title; panel.append(title);
+      for (const section of chapter.sections) {
+        const row = document.createElement('p'); row.textContent = `${section.title}: ${progressLabel(progress.sections[section.id])}`; panel.append(row);
+      }
+      main.append(panel);
+    }
+
     for (const subject of SUBJECTS.filter(s=>s.active)) {
     const heading=document.createElement('h2');heading.textContent=subject.name;main.append(heading);
     for (const topic of TOPICS.filter(t=>t.subject===subject.id)) {

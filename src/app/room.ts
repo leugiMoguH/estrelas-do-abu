@@ -1,3 +1,4 @@
+import { pendingErrors } from './section-selection';
 import { sectionModeAllowed } from '../../content/estrutura';
 import { MAT_CHAPTERS, MAT_SECTIONS, MAT_TEMPLATE_SECTION, matSectionById, matSectionInfo } from '../../content/matematica/estrutura';
 import {seededRng} from '../core/session';
@@ -209,16 +210,11 @@ export function openRoom(subject: string, topicId?: string, context?: SessionCon
       );
       const start = main.querySelector<HTMLButtonElement>('.sticky-cta');
       if(start)start.disabled=selectedTopics.length===0 || (mat && [...chosenSections].some(s => !sectionModeAllowed(matSectionInfo(s).status, mode)));
-      const mistakes = getState().save.mistakes;
-      const errorIds = ids.filter((id) =>
-        mistakes.some((mistake) =>
-          gamePack.templates.some(
-            (template) => template.id === mistake.ref.templateId && template.competencyId === id,
-          ),
-        ),
-      );
-      if (errorIds.length)
-        main.append(button('Estudar os erros', () => begin('study', errorIds)));
+      const refs = pendingErrors(getState().save, subject, ids, tree ? [...chosenSections] : undefined);
+      if (refs.length) main.append(button('Estudar os erros', () => startSession(topic.id, 'study', count, ids, {
+        ...(selection ?? { subject, topicIds: [topic.id], competencyIds: ids, title: topic.title }), errorRefs: refs,
+      })));
+
     }
     if (focusId) main.querySelector<HTMLElement>(`[data-focus-id="${CSS.escape(focusId)}"]`)?.focus();
   };

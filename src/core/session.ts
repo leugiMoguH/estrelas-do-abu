@@ -3,7 +3,21 @@ import type { Exercise } from './types';
 import type { MasteryState } from './mastery';
 import { dueCompetencies } from './review';
 import { exerciseSignature } from './grading';
-import { skillDue, skillStatus, skillTarget, type SkillsState } from './skills';
+import { skillDue, skillStatus, type SkillsState } from './skills';
+import { instantiate, type ContentPack, type ExerciseRef } from './content';
+
+/** Exact error refs precede variants regardless of repetition penalties. */
+export function reconstructErrors(pack: ContentPack, refs: readonly ExerciseRef[]): { exercises: Exercise[]; unavailable: number } {
+  const exercises: Exercise[] = [];
+  let unavailable = 0;
+  for (const ref of refs) {
+    try {
+      if (!pack.templates.some(t => t.id === ref.templateId && t.review === 'approved')) throw new Error();
+      exercises.push(instantiate(pack, ref));
+    } catch { unavailable++; }
+  }
+  return { exercises, unavailable };
+}
 export function seededRng(seed: number): () => number {
   let value = seed >>> 0;
   return () => {
@@ -27,6 +41,9 @@ export interface SessionOptions {
   readonly recentWindow?: number;
   /** Custo de repetir uma pergunta recente (por omissão, 12). */
   readonly repeatPenalty?: number;
+  readonly selected?: readonly Exercise[];
+  /** Review eligibility is fixed at session start; difficulty evidence stays live. */
+  readonly reviewIds?: readonly string[];
   readonly groupOf?: (ex: Exercise) => string;
 }
 export function buildSession(options: SessionOptions) {
@@ -38,17 +55,18 @@ export function buildSession(options: SessionOptions) {
   const topicDue = dueCompetencies(state, now, options.competencyIds);
   const ids =
     mode === 'review'
-      ? [...new Set([...topicDue, ...options.competencyIds.filter(id => pool.some(e => e.competencyId === id && !!e.skillId && skillDue(options.skills?.[e.skillId], now)))])]
+      ? [...(options.reviewIds ?? new Set([...topicDue, ...options.competencyIds.filter(id => pool.some(e => e.competencyId === id && skillDue(options.skills?.[e.skillId ?? e.competencyId], now)))]))]
       : [...new Set(options.competencyIds)];
   let relaxed = 0;
-  const selected: Exercise[] = [];
-  const usedIds = new Set<string>();
-  const signatures = new Set<string>();
+  const selected: Exercise[] = [...(options.selected ?? [])];
+  const initialCount = selected.length;
+  const usedIds = new Set<string>(selected.map(e => e.id));
+  const signatures = new Set<string>(selected.map(exerciseSignature));
   const signatureOf = new Map(pool.map((ex) => [ex, exerciseSignature(ex)]));
   const candidates = pool
     .filter((e) => e.review !== 'needs-human-review' && ids.includes(e.competencyId))
     .map((ex) => ({ ex, random: rng() }));
-  while (selected.length < n) {
+  while (selected.length < n + initialCount) {
     const available = candidates.filter(
       ({ ex }) => !usedIds.has(ex.id) && !signatures.has(signatureOf.get(ex)!),
     );
@@ -85,18 +103,7 @@ export function buildSession(options: SessionOptions) {
           Number(ex.approachId !== undefined && recent.at(-1)?.approach === ex.approachId) * 3 +
           Number(recent.at(-1)?.format === ex.kind) * 3;
     const rank = (ex: Exercise): number => {
-      const m = state[ex.competencyId];
-      const topicTarget =
-        !m || m.attempts < 3
-          ? 1
-          : m.recent.slice(-2).length === 2 && m.recent.slice(-2).every((v) => !v)
-            ? 1
-            : m.streak >= 3
-              ? 3
-              : 2;
-      const sk = ex.skillId ? options.skills?.[ex.skillId] : undefined;
-      const target = ex.skillId ? skillTarget(options.skills, ex.skillId, 1) : topicTarget;
-      // reforço: conhecimento falhado (exercício diferente), dificuldade persistente e revisão espaçada da competência
+      const sk = options.skills?.[ex.skillId ?? ex.competencyId];
       const support =
         (sk?.weak.some((w) => w.concept === ex.conceptId) ? -8 : 0) +
         (skillStatus(sk) === 'persistente' ? -4 : 0) +
@@ -104,14 +111,27 @@ export function buildSession(options: SessionOptions) {
       const count = selected.filter((e) => groupOf(e) === groupOf(ex)).length;
       return (
         penalty(ex) +
-        Math.abs(ex.difficulty - target) * 10 +
+        // Entre competências, preferir exercícios mais próximos do nível de cada uma (como antes do B2).
+        (options.skills === undefined ? Math.abs(ex.difficulty - 1) * 10 : distance(ex) * 10) +
         count * 4 +
         Number(selected.some((e) => e.kind === ex.kind)) * 2 +
         support +
         (mode === 'review' ? ids.indexOf(ex.competencyId) : 0)
       );
     };
-    const ranked = available.map((candidate) => ({ ...candidate, rank: rank(candidate.ex) }));
+    const distance = (ex: Exercise): number => Math.abs(ex.difficulty - (options.skills?.[ex.skillId ?? ex.competencyId]?.level ?? 1));
+    const groupCount = (ex: Exercise): number => selected.filter(e => groupOf(e) === groupOf(ex)).length;
+    const minimum = Math.min(...available.map(({ex}) => groupCount(ex)));
+    const balanced = options.groupOf && options.skills !== undefined ? available.filter(({ex}) => groupCount(ex) === minimum) : available;
+    const targetKey = (ex: Exercise): string => JSON.stringify([groupOf(ex), ex.skillId ?? ex.competencyId]);
+    const nearest = new Map<string, number>();
+    for (const {ex} of balanced) {
+      const key = targetKey(ex);
+      nearest.set(key, Math.min(nearest.get(key) ?? Infinity, distance(ex)));
+    }
+    // Legacy callers without Skills keep their bank rotation; the app always supplies Skills.
+    const eligible = options.skills === undefined ? available : balanced.filter(({ex}) => distance(ex) === nearest.get(targetKey(ex)));
+    const ranked = eligible.map((candidate) => ({ ...candidate, rank: rank(candidate.ex) }));
     ranked.sort((a, b) => a.rank - b.rank || a.random - b.random);
     const ex = ranked[0]!.ex;
     if (penalty(ex) > 0) relaxed++;
@@ -121,8 +141,8 @@ export function buildSession(options: SessionOptions) {
   }
   return {
     relaxed,
-    exercises: selected as readonly Exercise[],
-    exhausted: selected.length < n,
+    exercises: selected.slice(initialCount) as readonly Exercise[],
+    exhausted: selected.length < n + initialCount,
     hintsEnabled: mode !== 'test',
   };
 }

@@ -40,7 +40,8 @@ export function updateSkill(prev: Skill, a: SkillAttempt): Skill {
   let level = prev.level;
   const last5 = atLevel.slice(-MAX_AT_LEVEL);
   const promote = last5.length >= 4 && (count(last5) === last5.length || count(last5) >= 4);
-  const demote = atLevel.length >= 3 && atLevel.slice(-3).every((x) => !x);
+  // 3 erros seguidos (recent) E 3 erros desde a última mudança de nível (atLevel reinicia): sem descidas em cascata.
+  const demote = recent.slice(-3).length === 3 && recent.slice(-3).every((x) => !x) && atLevel.length >= 3 && atLevel.slice(-3).every((x) => !x);
   if (promote && level < 3) { level = (level + 1) as SkillLevel; atLevel = []; }
   else if (demote && level > 1) { level = (level - 1) as SkillLevel; atLevel = []; }
   const concept = a.conceptId;

@@ -1,20 +1,22 @@
-import { filterSections, collectionSelection } from './section-selection';
-import { MAT_TEMPLATE_SECTION } from '../../content/matematica/estrutura';
+import { recordProgress, readProgress, templateKey } from '../core/progress';
+import type { ExerciseRef } from '../core/content';
+import { exerciseSection, filterSections, collectionSelection } from './section-selection';
 import {awardCollection, localMonth} from '../core/collections';
 import {exerciseSignature} from '../core/grading';
 import {completeTransaction} from './store';
 import { abuReact } from '../art/d/abu';
 import { tutorButton, setTutorMode } from './tutor';
 import { abuSvg } from '../art';
-import { gamePack, hgpItemSection, TOPICS } from '../../content';
+import { gamePack, TOPICS } from '../../content';
 import { materialize } from '../core/content';
 import { grade } from '../core/grading';
 import { emptyMastery, updateMastery } from '../core/mastery';
 import { rewardSession } from '../core/rewards';
 import { recordAttempt } from '../core/save';
 import { score } from '../core/score';
-import { buildSession, seededRng } from '../core/session';
-import { emptySkill, updateSkill } from '../core/skills';
+import { buildSession, seededRng, reconstructErrors } from '../core/session';
+import { emptySkill, updateSkill, skillStatus, skillDue } from '../core/skills';
+import { dueCompetencies } from '../core/review';
 import type { Answer, Exercise, GradeResult } from '../core/types';
 import { answerEditor } from './answers';
 import { play } from './audio';
@@ -25,7 +27,7 @@ import { openResult } from './result';
 
 import { ptMapSvg } from './figure';
 /** sectionIds: subcapítulos escolhidos (HGP); só entram perguntas desses subcapítulos. */
-export interface SessionContext { subject: string; topicIds: string[]; competencyIds: string[]; title: string; sectionIds?: string[] }
+export interface SessionContext { subject: string; topicIds: string[]; competencyIds: string[]; title: string; sectionIds?: string[]; errorRefs?: ExerciseRef[] }
 export type Mode = 'study' | 'test' | 'review';
 export interface Attempt {
   exercise: Exercise;
@@ -44,34 +46,39 @@ export function startSession(
   const topic = TOPICS.find((t) => t.id === topicId);
   if (!topic) return;
   setTutorMode(mode);
-  const before = getState().save;
+  const beforeState = getState();
+  const before = beforeState.save;
   const testParams = import.meta.env.MODE === 'hgp-e2e' ? new URLSearchParams(location.search) : undefined;
   const rng = seededRng(testParams?.has('hgpSeed') ? Number(testParams.get('hgpSeed')) : Date.now());
   const ids = competencyIds?.length ? competencyIds : context?.competencyIds ?? topic.competencyIds;
-  const pool = materialize(gamePack, {
-    competencyIds: ids,
-    rng,
-    perTemplate: mode === 'test' ? 24 : 4,
-    difficultyFor: (template) => {
-      const mastery = before.mastery[template.competencyId];
-      const target = !mastery || mastery.attempts < 3 ? 1 : mastery.streak >= 3 ? 3 : 2;
-      return [...template.difficulties].sort((a, b) => Math.abs(a - target) - Math.abs(b - target))[0]!;
-    },
-  });
-  const session = buildSession({
-    mode,
-    pool: filterSections(testParams?.has('hgpIds') && topic.subject === 'historia' ? pool.filter(e => testParams.get('hgpIds')!.split(',').includes(e.id)) : pool, topic.subject, context?.sectionIds),
-    competencyIds: ids,
-    n: mode === 'test' || before.seen.length ? count : 3,
-    state: before.mastery,
-    rng,
-    now: Date.now(),
-    history: before.seen,
-    skills: getState().skills,
+  const selectedPack = { ...gamePack, templates: gamePack.templates.filter(t => ids.includes(t.competencyId)
+    && (!context?.sectionIds || context.sectionIds.includes(exerciseSection(topic.subject, t.id) ?? ''))
+    && (!context?.errorRefs || context.errorRefs.some(r => r.templateId === t.id && r.packId === gamePack.id && r.packVersion === gamePack.version))) };
+  const pool = ([1, 2, 3] as const).flatMap(difficulty => materialize({ ...selectedPack, templates: selectedPack.templates.filter(t => t.difficulties.includes(difficulty)) }, {
+    competencyIds: ids, rng, perTemplate: mode === 'test' ? 24 : 4, difficultyFor: () => difficulty,
+  }));
+  const filteredPool = filterSections(testParams?.has('hgpIds') && topic.subject === 'historia' ? pool.filter(e => testParams.get('hgpIds')!.split(',').includes(e.id)) : pool, topic.subject, context?.sectionIds);
+  const limit = mode === 'test' || before.seen.length ? count : 3;
+  const { exercises: exact, unavailable } = reconstructErrors(selectedPack, context?.errorRefs ?? []);
+  const errorTemplates = new Set(exact.map(e => e.ref!.templateId));
+  const sessionPool = context?.errorRefs ? filteredPool.filter(e => errorTemplates.has(e.ref!.templateId)) : filteredPool;
+  const chosen: Exercise[] = [];
+  const reviewIds = [...new Set([...dueCompetencies(before.mastery, Date.now(), ids), ...ids.filter(id => sessionPool.some(e => e.competencyId === id && skillDue(beforeState.skills[e.skillId ?? e.competencyId], Date.now())))])];
+  const choose = (n: number): readonly Exercise[] => {
+    const current = getState();
+    const pending = readProgress(current.save).pending;
+    return buildSession({
+    mode, pool: context?.errorRefs ? sessionPool.filter(e => !!pending[templateKey(e.ref!)]) : sessionPool,
+    competencyIds: ids, n, state: current.save.mastery, rng, now: Date.now(), history: current.save.seen,
+    skills: current.skills, selected: chosen, reviewIds,
     recentWindow: topic.subject === 'historia' && context?.sectionIds ? 60 : undefined,
     repeatPenalty: topic.subject === 'historia' && context?.sectionIds ? 40 : undefined,
-    groupOf: context?.sectionIds ? (e) => (topic.subject === 'matematica' ? MAT_TEMPLATE_SECTION[e.ref!.templateId] : hgpItemSection(e.id)) ?? e.competencyId : undefined,
-  });
+    groupOf: context?.sectionIds ? e => exerciseSection(topic.subject, e) ?? e.competencyId : undefined,
+    }).exercises;
+  };
+  if (context?.errorRefs) chosen.push(...exact.slice(0, limit));
+  else chosen.push(...choose(mode === 'test' ? limit : 1));
+  const session = { exercises: chosen };
   update({ lastTopicId: topicId });
   let index = 0;
   let hintCount = 0;
@@ -111,6 +118,7 @@ export function startSession(
     index++;
     hintCount = 0;
     firstAttempt = undefined;
+    if (mode !== 'test' && chosen.length < limit && index >= chosen.length) chosen.push(...choose(1));
     if (index >= session.exercises.length) finish();
     else navigate(render);
   };
@@ -132,6 +140,7 @@ export function startSession(
       dialog.addEventListener('close', () => dialog.remove());
     });
     if(mode==='test' && session.exercises.length<10){const warning=document.createElement('p');warning.setAttribute('role','status');warning.textContent='Este teste tem menos de 10 perguntas distintas e não permite ganhar artigos mensais. Podes continuar a aprender livremente.';main.append(warning);}
+    if (unavailable) main.insertAdjacentHTML('beforeend', `<p>${unavailable} erro(s) indisponível(is): pacote, versão ou aprovação incompatível.</p>`);
     const exercise = session.exercises[index];
     if (!exercise) {
       main.insertAdjacentHTML(
@@ -143,7 +152,7 @@ export function startSession(
     }
     main.insertAdjacentHTML(
       'beforeend',
-      `<div class="question-progress"><span>${mode === 'test' ? 'Teste' : mode === 'review' ? 'Rever' : 'Estudar'} · Pergunta ${index + 1} de ${session.exercises.length}</span><progress value="${index + 1}" max="${session.exercises.length}" aria-label="Progresso da sessão"></progress></div>`,
+      `<div class="question-progress"><span>${mode === 'test' ? 'Teste' : mode === 'review' ? 'Rever' : 'Estudar'} · Pergunta ${index + 1} de ${mode === 'test' ? session.exercises.length : limit}</span><progress value="${index + 1}" max="${mode === 'test' ? session.exercises.length : limit}" aria-label="Progresso da sessão"></progress></div>`,
     );
     const form = document.createElement('form');
     form.className = 'panel question';
@@ -206,8 +215,9 @@ export function startSession(
         firstAttempt = { exercise, answer, result, hints: hintCount };
         attempts.push(firstAttempt);
         update((state) => {
-          const save = recordAttempt(state.save, exercise, answer, result.correct, Date.now());
-          const sid = exercise.skillId;
+          const at = Date.now();
+          const save = recordProgress(recordAttempt(state.save, exercise, answer, result.correct, at), exercise, result.correct, hintCount, at, exerciseSection(topic.subject, exercise));
+          const sid = exercise.skillId ?? exercise.competencyId;
           return {
             ...state,
             skills: sid
@@ -241,6 +251,9 @@ export function startSession(
       const message = document.createElement('p');
       message.append(lead, result.correct ? exercise.explanation : result.feedback);
       feedback.append(message);
+      const skill = getState().skills[exercise.skillId ?? exercise.competencyId];
+      if (skillStatus(skill) === 'persistente') feedback.append(' Podes abrir o tutor para vermos esta matéria juntos.');
+      else if (skill?.recent.slice(-3).length === 3 && skill.recent.slice(-3).every(v => !v)) feedback.append(' Experimenta uma pista ou a lição no tutor.');
       abu.innerHTML = `${abuSvg(result.correct ? 'happy' : 'sit', getState().profile.avatar)}<p>${result.correct ? 'Boa descoberta!' : 'Os erros também ajudam a aprender.'}</p>`;
       abuReact(abu,result.correct?'correct':'wrong');
       actions.replaceChildren();
@@ -255,7 +268,7 @@ export function startSession(
         );
       actions.append(
         button(
-          index + 1 === session.exercises.length ? 'Ver resultado' : 'Próxima pergunta',
+          index + 1 >= limit ? 'Ver resultado' : 'Próxima pergunta',
           next,
           'primary',
         ),

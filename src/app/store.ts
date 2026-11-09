@@ -1,3 +1,4 @@
+import { PROGRESS_KEY } from '../core/progress';
 import { defaultAvatar, normalizeAvatar, type AvatarConfig } from '../art';
 import { defaultSave, exportSave, importSave, type Save } from '../core/save';
 import { buy, type ShopItem } from '../core/rewards';
@@ -124,7 +125,7 @@ export function update(change: Partial<AppState> | ((state: AppState) => AppStat
   const previous=state.save;
   state = typeof change === 'function' ? change(state) : { ...state, ...change };
   state.profile.version = 3;
-  state.save = {...state.save, equipment:{...state.profile.avatar}};
+  state.save = {...state.save, equipment:{...(state.save.equipment[PROGRESS_KEY] ? {[PROGRESS_KEY]:state.save.equipment[PROGRESS_KEY]} : {}),...state.profile.avatar}};
   const snapshot=state;
   const persist=():void=>{
     const raw=localStorage.getItem(SAVE_KEY);

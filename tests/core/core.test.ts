@@ -137,7 +137,8 @@ describe('sessões', () => {
   });
   it('adapta por competência e remove pistas em teste sem mutação', () => {
     expect(session({}, 1).exercises[0]!.difficulty).toBe(1);
-    expect(session({ c: trained(5) }, 1).exercises[0]!.difficulty).toBe(3);
+    // Legacy mastery is not specific difficulty evidence.
+    expect(session({ c: trained(5) }, 1).exercises[0]!.difficulty).toBe(1);
     const struggling = { ...trained(5), streak: 0, recent: [false, false] };
     expect(session({ c: struggling }, 1).exercises[0]!.difficulty).toBe(1);
     expect(session({}, 3, 'test').exercises.every((e) => e.hints.length === 0)).toBe(true);

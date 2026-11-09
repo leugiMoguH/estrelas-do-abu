@@ -1,3 +1,5 @@
+import { readProgress, progressLabel } from '../core/progress';
+import { getState } from './store';
 import { HGP_CHAPTERS, hgpSectionInfo } from '../../content';
 import type { Chapter as HgpChapter, Section as HgpSection, Availability } from '../../content/estrutura';
 import { button } from './router';
@@ -43,7 +45,7 @@ function renderSection(state: SubjectTreeState, section: HgpSection, grid: HTMLE
   const title = document.createElement('strong');
   title.textContent = section.title;
   const detail = document.createElement('span');
-  detail.textContent = sectionDetail(state, section);
+  detail.textContent = `${sectionDetail(state, section)} ? ${progressLabel(readProgress(getState().save).sections[section.id])}`;
   const official = document.createElement('small');
   official.textContent = `Oficial: ${section.official}`;
   text.append(title, detail, official);

@@ -1,3 +1,4 @@
+import { pendingErrors } from './section-selection';
 import {collectionPanel, revealReceipt} from './collection-ui';
 import { ptMapSvg } from './figure';
 import type { SessionContext } from './session';
@@ -49,18 +50,11 @@ export function openResult(result: SessionResult): void {
     main.append(summary);
     if(result.attemptId) revealReceipt(main,result.attemptId);
     main.append(collectionPanel());
-    const errors = result.attempts.filter((a) => a.result.invalid || !a.result.correct);
-    if (errors.length)
-      main.append(
-        button(
-          'Estudar os erros',
-          () =>
-            startSession(result.topicId, 'study', Math.max(3, errors.length), [
-              ...new Set(errors.map((a) => a.exercise.competencyId)),
-            ], result.context),
-          'primary',
-        ),
-      );
+    const ids = result.context?.competencyIds ?? topic.competencyIds;
+    const refs = pendingErrors(getState().save, topic.subject, ids, result.context?.sectionIds);
+    if (refs.length) main.append(button('Estudar os erros', () => startSession(result.topicId, 'study', Math.max(3, refs.length), ids, {
+      ...(result.context ?? { subject: topic.subject, topicIds: [topic.id], competencyIds: [...ids], title: topic.title }), errorRefs: refs,
+    }), 'primary'));
     main.append(
       button('Continuar a estudar', () => openRoom(topic.subject, topic.id, result.context)),
       button('Voltar ao centro', openMap, 'primary'),
