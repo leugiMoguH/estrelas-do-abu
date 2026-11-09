@@ -335,9 +335,9 @@ Origem: observação do produtor no uso real (mapa, disciplinas, minijogo, Ingl�
 | Bloco | Âmbito | Relação com o v2 | Estado |
 |---|---|---|---|
 | **A** | Remover as molduras amarelas do mapa, mantendo o foco por teclado | Correção pontual (pilar C) | **Feito e publicado** (`e24b8cc`, `preview/e`) |
-| **B** | Português e Matemática com a estrutura da HGP: disciplina → capítulos → subcapítulos → Estudar/Teste/Rever, num único motor | Antecipa a parte estrutural de F4; conteúdo novo continua em F4 | Em curso (inventário) |
-| **C** | Investigação de até 50 jogos → shortlist de 10 → 3 finalistas → **1 piloto** isolado | Substitui e alarga o piloto F2 (a «exposição do museu» passa a ser candidata em C) | Investigação em curso |
-| **D** | Inglês: investigação comparativa + currículo + **1 vertical slice** | Nova disciplina (aprovada) | Investigação em curso |
+| **B** | Português e Matemática com a estrutura da HGP: disciplina → capítulos → subcapítulos → Estudar/Teste/Rever, num único motor | Antecipa a parte estrutural de F4; conteúdo novo continua em F4 | **Feito e publicado** (Mat `210bf37`, Port `0c1afac`; auditorias em `docs/audit/`) |
+| **C** | Investigação de até 50 jogos → shortlist de 10 → 3 finalistas → **1 piloto** isolado | Substitui e alarga o piloto F2 (a «exposição do museu» passa a ser candidata em C) | Investigação concluída; aguarda escolha do produtor |
+| **D** | Inglês: investigação comparativa + currículo + **1 vertical slice** | Nova disciplina (aprovada) | Investigação concluída; aguarda aprovação do conceito |
 
 As investigações de C e D podem correr em paralelo. As implementações são uma de cada vez. Nada de biblioteca de jogos nem de curso de Inglês antes de validar os pilotos com a criança.
 
