@@ -2,9 +2,9 @@ Projeto: Estrelas do Abu
 Plano: v2
 Atualizado: 2026-11-09
 Âmbito: 391dd209
-Objetivo: V1.0 jogável e fiável para o ano letivo (Matemática, Português, HGP), com diversão observada na criança antes de expandir — orientado por docs/ROADMAP.md (v2)
-Próximo passo: Bloco B (Português e Matemática com a estrutura da HGP) — Codex inventaria (só leitura), Claude decide o plano; investigação C/D em paralelo. Ver docs/ROADMAP.md §13.
-Decisão necessária: Inglês como disciplina ativa (atualizar contrato); índices dos manuais de Mat/Port (fotografias); âmbito pós-demo no contrato.
+Objetivo: V1.0 jogável e fiável para o ano letivo (Matemática, Português, HGP, Inglês + secção Jogos), com diversão observada na criança antes de expandir — orientado por docs/ROADMAP.md (v2)
+Próximo passo: Bloco B em curso — inventário do Codex (só leitura) → plano de incrementos → implementação. Investigação C/D em paralelo (docs/pesquisa/). Ver docs/ROADMAP.md §13.
+Decisão necessária: escolher 1 de 3 finalistas de jogos (C) e aprovar o conceito do vertical slice de Inglês (D), quando a investigação terminar.
 
 ## Sucesso
 - Critérios de lançamento da secção 8 de docs/ROADMAP.md cumpridos com evidência (diversão observada, conteúdo com matriz AE, dados protegidos, testes, acessibilidade, revisão independente); marcar itens não basta
@@ -83,3 +83,5 @@ Decisão necessária: Inglês como disciplina ativa (atualizar contrato); índic
 - v2 (2026-11-09): roteiro v2 (docs/ROADMAP.md) adotado como guia até à V1.0; demo v1 entregue
 - 2026-11-09: F1 PUBLICADO (autorização expressa). Código 6c84e87 (tags f1-checkpoint-pre-2026-11-09 → 9efb963, f1-progresso-2026-11-09), push feito; gh-pages af4ee13 (preview/e = F1, backup preview/e-prov8). Codex implementou; Claude verificou, corrigiu aviso de recuperação persistente (trivial) e corrida no teste e2e. Limitações: sem teste em dispositivos físicos; apagamento do Safari não é coberto pela cópia interna (só pelo ficheiro exportado).
 - 2026-11-09: Bloco A PUBLICADO — molduras amarelas permanentes do mapa D removidas (eram decoração map-ring #ffcf65, não foco); hover só com rato; foco por teclado tracejado branco sem outline duplicado. Código e24b8cc (tags blocoA-checkpoint-pre-2026-11-09, blocoA-mapa-2026-11-09); gh-pages fc7d5b2 (backup preview/e-prov9). Verificado: 1090 unit; e2e foco/demo/hgp/abu 36 ok/3 ignorados; URL público 3 viewports, teclado Enter abre sala, 0 erros; raiz intacta. Roteiro §13: novos blocos B (coerência curricular), C (jogos), D (Inglês). Implementado pelo Claude (correção trivial de 3 linhas; sem Codex).
+
+- 2026-11-09 (blocos B–D autorizados): produtor aprovou Inglês como 4.ª disciplina e a secção «Jogos» na V1.0; PRODUCT_CONTRACT.md com 4 estados (planeada / em desenvolvimento / funcional / conteúdo validado). Índices dos manuais de Mat/Port procurados no projeto, versões anteriores e backups: não existem → estrutura segue as AE. B: inventário do Codex em curso; C/D: investigação web por agente do Claude (Codex sem rede garantida), resultados em docs/pesquisa/.

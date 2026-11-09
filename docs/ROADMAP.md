@@ -335,9 +335,9 @@ Origem: observação do produtor no uso real (mapa, disciplinas, minijogo, Ingl�
 | Bloco | Âmbito | Relação com o v2 | Estado |
 |---|---|---|---|
 | **A** | Remover as molduras amarelas do mapa, mantendo o foco por teclado | Correção pontual (pilar C) | **Feito e publicado** (`e24b8cc`, `preview/e`) |
-| **B** | Português e Matemática com a estrutura da HGP: disciplina → capítulos → subcapítulos → Estudar/Teste/Rever, num único motor | Antecipa a parte estrutural de F4; conteúdo novo continua em F4 | Próximo |
-| **C** | Investigação de até 50 jogos → shortlist de 10 → 3 finalistas → **1 piloto** isolado | Substitui e alarga o piloto F2 (a «exposição do museu» passa a ser candidata em C) | Por iniciar |
-| **D** | Inglês: investigação comparativa + currículo + **1 vertical slice** | Nova disciplina (decisão de contrato abaixo) | Por iniciar |
+| **B** | Português e Matemática com a estrutura da HGP: disciplina → capítulos → subcapítulos → Estudar/Teste/Rever, num único motor | Antecipa a parte estrutural de F4; conteúdo novo continua em F4 | Em curso (inventário) |
+| **C** | Investigação de até 50 jogos → shortlist de 10 → 3 finalistas → **1 piloto** isolado | Substitui e alarga o piloto F2 (a «exposição do museu» passa a ser candidata em C) | Investigação em curso |
+| **D** | Inglês: investigação comparativa + currículo + **1 vertical slice** | Nova disciplina (aprovada) | Investigação em curso |
 
 As investigações de C e D podem correr em paralelo. As implementações são uma de cada vez. Nada de biblioteca de jogos nem de curso de Inglês antes de validar os pilotos com a criança.
 
@@ -382,6 +382,10 @@ As investigações de C e D podem correr em paralelo. As implementações são u
 - **Índices dos manuais:** não existem no repositório para Matemática e Português. Sem eles, a estrutura segue as AE e não a ordem do manual da escola.
 
 ### Decisões do produtor (novas)
-1. **Inglês como disciplina ativa** → atualizar o `PRODUCT_CONTRACT.md` (passa a haver 4 disciplinas e uma secção de jogos).
-2. **Índices dos manuais de Matemática e Português** (fotografias) para alinhar os capítulos com a escola. Sem eles, seguem-se as AE.
-3. **Finalistas de C:** aprovação dos 3 antes do piloto.
+1. **Inglês como 4.ª disciplina da V1.0** — **aprovado (2026-11-09)**. `PRODUCT_CONTRACT.md` atualizado com os 4 estados (planeada / em desenvolvimento / funcional / conteúdo validado) e a secção «Jogos».
+2. **Índices dos manuais de Mat/Port** — procurados no projeto, nas versões anteriores (`Ai-MyDaughterGame`, `-v2`) e em `backups`: **não existem**. Não se volta a pedir ao produtor por agora. A estrutura segue a ordem das AE (`editorial: 'trabalho'`); o índice, se chegar, só reordena.
+3. **Finalistas de C** — o produtor aprova os 3 antes do piloto. **Vertical slice de D** — o produtor aprova o conceito antes de implementar.
+
+### Execução autorizada (2026-11-09)
+- B: inventário (Codex, só leitura) → plano de incrementos → implementação incremento a incremento, cada um com checkpoint, testes, 3 viewports, publicação em `preview/e/`.
+- C e D: investigação em paralelo por agente com acesso à web (o Codex não tem rede garantida). Resultados em `docs/pesquisa/`. Nenhum piloto antes da decisão do produtor.

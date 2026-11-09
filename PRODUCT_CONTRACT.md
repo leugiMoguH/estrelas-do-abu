@@ -11,7 +11,7 @@ Jogo educativo 2D no browser (Android, iPad, Windows) para uma criança de 11–
 - Progresso de aprendizagem (níveis por competência) ≠ recompensas (estrelas). Níveis não se compram.
 - Conteúdo: banco local revisto + geradores parametrizados. Sem IA em tempo real, sem APIs pagas, sem servidor.
 - Dados só em localStorage versionado, com exportar/importar. Sem recolha externa.
-- Currículo: Aprendizagens Essenciais DGE, 6.º ano. Demo: Matemática + Português. Restantes edifícios «Em preparação».
+- Currículo: Aprendizagens Essenciais DGE, 6.º ano. Demo: Matemática + Português. Restantes edifícios «Em preparação». (V1.0: ver «Âmbito V1.0».)
 - Texto em PT-PT. Nota de teste 0–20.
 
 ## Demo (5–10 min) — critérios de aceitação
@@ -23,6 +23,25 @@ Jogo educativo 2D no browser (Android, iPad, Windows) para uma criança de 11–
 6. Opções: música, efeitos, volume, reduzir animações, tamanho de texto — todas funcionais.
 7. Testes: build, unitários, Playwright (390×844, 820×1180, 1280×800), sem erros de consola, sem scroll horizontal, capturas inspecionadas.
 8. Publicação isolada (GitHub Pages) só com autorização; depois PARAR e aguardar avaliação da criança.
+
+## Âmbito V1.0 (decisão do produtor, 2026-11-09)
+Quatro disciplinas: Matemática, Português, HGP e **Inglês**. Mais uma secção **«Jogos»**, independente do mapa escolar. Ciências, EVT e Música ficam «Em breve» e não entram na V1.0.
+
+Estados (usar sempre estes, nunca anunciar o futuro como feito):
+- **Planeada**: decidida, ainda sem código.
+- **Em desenvolvimento**: há código, mas ainda não se pode jogar do princípio ao fim.
+- **Funcional**: joga-se de ponta a ponta, com testes automáticos e no navegador.
+- **Conteúdo validado**: conteúdo curricular revisto contra as AE (por subcapítulo, não por disciplina).
+
+| Área | Estado (2026-11-09) | Conteúdo validado |
+|---|---|---|
+| Matemática | Funcional | Parcial; estrutura de capítulos em revisão (Bloco B) |
+| Português | Funcional (só Gramática) | Parcial; Leitura, Educação literária, Escrita e Oralidade em falta |
+| HGP | Funcional, com capítulos e subcapítulos | Parcial; vários subcapítulos provisórios |
+| Inglês | Planeada (investigação D em curso) | — |
+| Jogos | Planeada (há 1 minijogo rudimentar; investigação C em curso) | — |
+
+Protótipos de Inglês e Jogos são publicados à parte, identificados como protótipo, sem tocar na versão principal.
 
 ## Exclusões (1.ª fase)
 Mundo aberto, narrativa extensa, multiplayer, contas, pagamentos, publicidade, dezenas de minijogos, IA online, servidor, conteúdo 5.º–12.º completo, sincronização entre dispositivos.
