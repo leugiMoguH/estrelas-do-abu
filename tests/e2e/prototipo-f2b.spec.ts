@@ -85,12 +85,17 @@ async function journey(page: Page, activate: Activate, use: Use): Promise<void> 
     await fits(page);
     await page.screenshot({path: test.info().outputPath(`situacao-${level + 1}-inicio.png`), fullPage: true});
     if (level === 0) await firstConsequence(page, activate);
-    else await solve(level, use);
+    else {
+      await expect(page.locator('.cloud')).toHaveCount(2);
+      await solve(level, use);
+    }
     await captureSuccess(page, level);
     await fits(page);
     await activate(page.locator('#undo'));
     await expect(page.locator('.feedback')).not.toContainText('acendeu');
+    await expect(page.locator('.selected-cloud')).toHaveCount(0);
     await activate(page.locator('#reset'));
+    await expect(page.locator('.selected-cloud')).toHaveCount(0);
     if (level === 0) await activate(page.locator('[data-target="caixa"]'));
     else await solve(level, use);
     if (level < 2) await activate(page.locator('#next'));
@@ -108,12 +113,17 @@ test('três situações, métricas, recuperação e isolamento', async ({page, h
   const use: Use = async (word, target) => {
     await activate(page.locator(`[data-word="${word}"]`));
     await expect(page.locator(`[data-target="${target}"]`)).toHaveClass(/valid/);
+    if (word === 'sopra' || word === 'sopram') {
+      await expect(page.locator('.cloud')).toHaveCount(2);
+      await expect(page.locator('.selected-cloud')).toHaveCount(word === 'sopra' ? 1 : 2);
+      await expect(page.locator('.feedback')).toHaveText(word === 'sopra' ? 'A nuvem sopra… Toca num barco.' : 'As nuvens sopram… Toca num barco.');
+    } else await expect(page.locator('.selected-cloud')).toHaveCount(0);
     await activate(page.locator(`[data-target="${target}"]`));
     if (word === 'sopra' || word === 'sopram') {
-      await expect(page.locator('.cloud')).toHaveCount(word === 'sopram' ? 2 : 1);
+      await expect(page.locator('.cloud')).toHaveCount(2);
       await expect(page.locator('.gust')).toHaveCount(word === 'sopram' ? 2 : 1);
       if (word === 'sopram') {
-        expect(await page.locator('.joining').evaluate(el => getComputedStyle(el).animationDuration)).toBe('0.4s');
+        await expect(page.locator('.blowing')).toHaveCount(2);
         await page.locator('.scene').evaluate(async el => {
           await Promise.all(el.getAnimations({subtree: true}).filter(a => a.effect?.getTiming().iterations !== Infinity).map(a => a.finished));
         });
@@ -155,7 +165,16 @@ test('teclado, movimento reduzido, pistas e armazenamento indisponível', async 
     await page.keyboard.press('Enter');
   }
   await expect(page.locator('.cloud')).toHaveCount(2);
-  expect(await page.locator('.joining').evaluate(el => getComputedStyle(el).animationName)).toBe('none');
+  expect(await page.locator('.blowing .gust').first().evaluate(el => getComputedStyle(el).animationName)).toBe('none');
+  await page.locator('[data-word="sopra"]').click();
+  await expect(page.locator('.selected-cloud')).toHaveCount(1);
+  await page.locator('#undo').click();
+  await expect(page.locator('.selected-cloud')).toHaveCount(0);
+  await page.locator('[data-word="sopram"]').click();
+  await expect(page.locator('.selected-cloud')).toHaveCount(2);
+  await page.locator('#reset').click();
+  await expect(page.locator('.selected-cloud')).toHaveCount(0);
+  await expect(page.locator('.cloud')).toHaveCount(2);
   await expect(page.locator('#hint')).toBeVisible();
   await page.locator('#hint').click();
   await expect(page.locator('.hint')).toHaveCount(2);

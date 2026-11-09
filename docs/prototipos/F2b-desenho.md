@@ -21,16 +21,23 @@ visível e preservado após a ação. A arte do Abu é importada de
    levanta a tampa e lança a estrela. Não exige uma segunda instrução nem
    admite uma escolha errada inicial. Solução: uma ação física, um toque.
 2. **Duas distâncias.** Dois barcos transportam estrelas; cada um tem uma saída
-   e uma margem visíveis. «Sopra» mostra uma nuvem e dá um empurrão curto;
-   «sopram» mostra duas nuvens e dá um empurrão longo. Solução: «sopram» →
+   e uma margem visíveis. As duas nuvens estão sempre presentes. «Sopra» faz
+   soprar a nuvem da esquerda; «sopram» faz soprar ambas. Cada nuvem empurra
+   um passo igual (`STEP = 100`); as saídas ficam a um e dois passos do início.
+   Saídas, postes, marcas discretas na água, animações e alvos partilham esta
+   geometria. Solução: «sopram» →
    barco superior; «sopra» → barco inferior, por qualquer ordem. São duas
    ações físicas, quatro toques. Falhas plausíveis: o empurrão curto fica
    antes da saída distante; o longo ultrapassa a saída próxima e bate na
    margem. O barco recua após a animação de falha, permitindo experimentar.
 3. **A bifurcação.** O ramo superior começa aberto e o inferior fechado.
+   Objetivo: «Abre e fecha as comportas e leva cada estrela à sua saída.»
    Abrir ou fechar uma comporta muda imediatamente a água, o traço da comporta
    e a indicação de corrente. Com ambos abertos, a corrente divide-se e não
-   consegue levar nenhum barco; com ambos fechados, não há acesso.
+   consegue levar nenhum barco: os dois canais mostram água mais fina e lenta.
+   O feedback diz «A água divide-se pelos dois canais e não leva o barco.».
+   Com a comporta do próprio canal fechada, diz «A comporta deste canal está
+   fechada: a água está parada.». Com ambos fechados, não há acesso.
    Solução mínima: «sopram» → barco superior; «fecha» → comporta superior;
    «abre» → comporta inferior; «sopra» → barco inferior. Quatro ações físicas,
    oito toques. Fechar o primeiro ramo antes de recuperar a estrela corta-lhe
@@ -92,7 +99,7 @@ A F2 preparava cartões e camadas antes de «Experimentar». Aqui a primeira
 consequência custa um toque; as seguintes custam palavra → alvo, sem botão
 de execução. A concordância singular/plural altera o número de nuvens e a
 distância, em vez de funcionar como filtro de uma resposta gramatical.
-As decisões progridem de descoberta para força e depois encaminhamento.
+As decisões progridem de descoberta para previsão de passos e depois encaminhamento.
 
 O desenho aproxima-se de puzzles de comportas e ferramentas sobre objetos.
 A particularidade explorada é a palavra flexionada controlar o efeito físico,
@@ -101,14 +108,14 @@ não uma alegação de originalidade ou superioridade perante jogos existentes.
 
 ## Validação e limites
 
-Os testes verificam soluções, falhas de força e corrente, imutabilidade e
+Os testes verificam soluções, falhas de passos e corrente, imutabilidade e
 reposição exata do estado. Os e2e jogam as três situações nos três viewports,
 usam `tap()` onde há toque e `click()` no desktop, verificam o armazenamento,
 erros de consola, alvos mínimos de 44 px e geometria sem deslocação horizontal
 ou vertical no jogo normal. Guardam seis capturas `fullPage` por viewport nos
 outputs, esperando pelo fim das animações nas capturas de sucesso.
 
-Validação local em 2026-11-09: `npm test` passou **1167 testes em 32 ficheiros**,
+Validação anterior à revisão pedagógica, em 2026-11-09: `npm test` passou **1167 testes em 32 ficheiros**,
 incluindo **9 testes F2b**; `npm run build` passou; o comando específico de
 Playwright passou **6/6**, dois em cada viewport, em 43,4 s. Foram jogadas as
 três situações em Chromium real por automação e regeneradas as capturas, incluindo duas imagens adicionais por viewport
@@ -136,10 +143,15 @@ passo de maior valor é observar a jogadora sem explicar a interface.
 
 ## Correção dos dois defeitos visuais (2026-11-09)
 
-Nas situações 2 e 3, as nuvens são agora formas SVG separadas:
-«sopra» mostra uma, «sopram» mostra duas. A segunda entra durante
-400 ms e ambas mostram traços de sopro animados durante 400 ms. Com
-`prefers-reduced-motion`, aparecem diretamente no estado final.
+Nas situações 2 e 3, as duas nuvens são formas SVG separadas sempre visíveis,
+sem animação de entrada. Ao selecionar «sopra» acende-se a da esquerda;
+ao selecionar «sopram» acendem-se ambas. O realce segue apenas a seleção
+atual e desaparece ao agir, anular ou recomeçar. Os botões têm apenas as
+palavras, sem etiquetas que antecipem o número de nuvens. O feedback de
+seleção é «A nuvem sopra… Toca num barco.» ou «As nuvens sopram… Toca num barco.».
+Depois da ação, o eco destaca «A nuvem sopra e empurra» ou «As nuvens sopram
+e empurram», seguido de «o barco.». Só as nuvens que agem mostram rajadas
+animadas durante 400 ms. Com `prefers-reduced-motion`, não há animação.
 
 Na situação 3, cada porta ocupa a entrada do próprio canal: fechada,
 atravessa-o; aberta, fica levantada. O ramo aberto apresenta ondas em movimento
@@ -150,7 +162,13 @@ As animações da água também respeitam movimento reduzido.
 
 Os testes unitários verificam o número de nuvens e sopros nas duas situações,
 as portas e a ausência de corrente nos ramos fechados. Os e2e verificam esses
-estados, a duração da entrada, movimento reduzido, dimensões e alinhamento
+estados, o realce da seleção e a sua limpeza, movimento reduzido, dimensões e alinhamento
 horizontal dos alvos. As capturas esperam pelas animações finitas;
 a corrente contínua não bloqueia a captura. Sem alterações nas regras,
 soluções ou armazenamento; mantém-se apenas `eda-proto-f2b`.
+
+Validação desta revisão: 11/11 testes unitários F2b; `npm test` com 1169/1169
+em 32 ficheiros; `npm run build` passou (mantém o aviso de tamanho do chunk
+principal). Apenas o spec Playwright F2b foi executado: 6/6 nos três viewports,
+em série. Capturas de S2 inicial no desktop e S3 resolvida no telemóvel
+inspecionadas. A compreensão pela jogadora continua por validar.

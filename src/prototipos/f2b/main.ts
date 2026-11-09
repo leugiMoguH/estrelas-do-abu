@@ -1,5 +1,5 @@
 import './style.css';
-import { actions, apply, initial, rewind, won, type World, type Word, type Target } from './rules';
+import { BOAT_START, exitX, actions, apply, initial, rewind, won, type World, type Word, type Target } from './rules';
 import { scene } from './scene';
 interface Metric {
   actions: number;
@@ -61,7 +61,7 @@ function targets(): string {
     .map(t => {
       const boat = t === 'a' || t === 'b';
       const arrived = Boolean(world.stars & (t === 'a' ? 1 : 2));
-      const x = arrived ? t === 'a' ? 305 : 215 : 105;
+      const x = arrived ? exitX(t === 'a' ? 'a' : 'b') : BOAT_START;
       const position = boat ? `left:calc(${x / 390 * 100}% - 22px)` : '';
       return `<button style="${position}" class="target ${t} ${valid.includes(t as Target) ? 'valid' : ''} ${hint ? 'hint' : ''}"
       data-target="${t}" aria-label="${t.startsWith('comporta') ? t === 'comporta-a' ? 'comporta de cima' : 'comporta de baixo' : `barco ${t}`}">
@@ -73,11 +73,11 @@ function render(animate = false): void {
   const focus = active?.dataset.word ? `[data-word="${active.dataset.word}"]`
     : active?.dataset.target ? `[data-target="${active.dataset.target}"]` : '';
   app.innerHTML = `<main><header><span>PROTÓTIPO · PALAVRAS-FERRAMENTA · ${world.level + 1}/3</span>
-    <h1>${['Leva a estrela até à constelação.', 'Leva cada estrela à sua saída.', 'Guia a corrente para as duas saídas.'][world.level]}</h1></header>
-    <div class="layout"><section class="scene" aria-label="Cena">${scene(world, animate)}${targets()}
+    <h1>${['Leva a estrela até à constelação.', 'Leva cada estrela à sua saída.', 'Abre e fecha as comportas e leva cada estrela à sua saída.'][world.level]}</h1></header>
+    <div class="layout"><section class="scene" aria-label="Cena">${scene(world, animate, selected)}${targets()}
       <p class="echo" role="status">${world.message}</p></section>
     <section class="controls" aria-label="Ferramentas"><div class="tools">${tools()}</div>
-      <p class="feedback">${won(world) ? 'A constelação acendeu-se!' : world.failed ? 'Experimenta outro caminho. Podes anular.' : selected ? 'Toca num alvo iluminado.' : ''}</p>
+      <p class="feedback">${selected ? selected === 'sopra' ? 'A nuvem sopra… Toca num barco.' : selected === 'sopram' ? 'As nuvens sopram… Toca num barco.' : 'Toca num alvo iluminado.' : won(world) ? 'A constelação acendeu-se!' : world.failed ? 'Experimenta outro caminho. Podes anular.' : ''}</p>
       <div class="recovery"><button id="undo">Anular</button><button id="reset">Recomeçar</button></div>
       ${failures >= 3 ? '<button id="hint">Destacar objetos</button>' : ''}
       ${won(world) && world.level < 2 ? '<button id="next">Seguinte →</button>' : ''}

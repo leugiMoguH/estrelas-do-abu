@@ -1,3 +1,7 @@
+export const STEP = 100;
+export const BOAT_START = 105;
+export const exitSteps = (target: 'a' | 'b'): number => target === 'a' ? 2 : 1;
+export const exitX = (target: 'a' | 'b'): number => BOAT_START + exitSteps(target) * STEP;
 export type Word = 'abre' | 'fecha' | 'sopra' | 'sopram';
 export type Target = 'caixa' | 'a' | 'b' | 'comporta-a' | 'comporta-b';
 export interface Action {
@@ -49,13 +53,13 @@ export function apply(s: World, action: Action): World {
   }
   const bit = action.target === 'a' ? 1 : 2;
   n.wind = action.word === 'sopra' ? 1 : 2;
-  const phrase = n.wind === 1 ? 'A nuvem sopra o barco.' : 'As nuvens sopram o barco.';
+  const phrase = n.wind === 1 ? '<strong>A nuvem sopra e empurra</strong> o barco.' : '<strong>As nuvens sopram e empurram</strong> o barco.';
   const connected = s.level !== 2 || (action.target === 'a' ? s.a && !s.b : s.b && !s.a);
-  const correct = n.wind === (action.target === 'a' ? 2 : 1);
+  const correct = n.wind * STEP === exitSteps(action.target as 'a' | 'b') * STEP;
   n.failed = !connected || !correct || Boolean(s.stars & bit);
   if (!n.failed) n.stars |= bit;
   n.message = phrase + (n.failed
-    ? !connected ? ' A corrente não chega a este barco.'
+    ? !connected ? (s.a && s.b ? ' A água divide-se pelos dois canais e não leva o barco.' : ' A comporta deste canal está fechada: a água está parada.')
       : correct ? ' Este barco já chegou.' : n.wind === 2
         ? ' Passou a saída e bateu na margem!' : ' Ficou antes da saída!'
     : ' A estrela chegou à sua saída!');
