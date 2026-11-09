@@ -50,3 +50,11 @@ it('scheduler cancels when navigating and never animates an active exercise',()=
  startAbuLife(main as unknown as HTMLElement,false);
  vi.advanceTimersByTime(120001);expect(host.innerHTML).toBe('');
 });
+
+it('escapes saved configuration in HTML attributes',()=>{
+ const payload = "' onload='alert(1)<>&\"";
+ const html=abuD({...defaultAvatar(),abuHead:payload});
+ expect(html).not.toContain(payload);
+ expect(html).toContain('&#39;');
+ expect(html).not.toContain("data-item=\"' onload");
+});

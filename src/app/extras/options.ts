@@ -1,5 +1,6 @@
 import { normalizeAvatar, defaultAvatar } from '../../art';
-import { defaultSave, exportSave, importSave } from '../../core/save';
+import { defaultSave } from '../../core/save';
+import { buildBackup, parseBackup } from '../../core/backup';
 import { navigate } from '../router';
 import { getState, update } from '../store';
 import { openWelcome } from '../welcome';
@@ -60,17 +61,25 @@ export function openOptions(): void {
       'beforeend',
       '<h2>Cópia do progresso</h2><p>A cópia inclui estrelas, artigos, aprendizagem e equipamento da personagem e do Abu. Os conjuntos favoritos e as opções ficam neste navegador.</p>',
     );
+    const lastCopy = message(main, '');
+    const showLastCopy = (): void => {
+      const at = getState().lastExportAt;
+      lastCopy.textContent = `Última cópia: ${at === null ? 'nunca' : new Date(at).toLocaleDateString('pt-PT', { day: '2-digit', month: '2-digit', year: 'numeric' })}`;
+    };
+    showLastCopy();
     const status = message(main, 'Guarda uma cópia antes de mudar de dispositivo.');
     main.append(
       action('Exportar progresso', () => {
         const current=getState();
         const url = URL.createObjectURL(
-          new Blob([exportSave({...current.save,equipment:{...current.profile.avatar}})], { type: 'application/json' }),
+          new Blob([buildBackup({...current.save,equipment:{...current.save.equipment,...current.profile.avatar}}, current.skills)], { type: 'application/json' }),
         );
         const link = document.createElement('a');
         link.href = url;
         link.download = 'estrelas-do-abu-progresso.json';
         link.click();
+        void update({ lastExportAt: Date.now() });
+        showLastCopy();
         setTimeout(() => URL.revokeObjectURL(url), 1000);
         status.textContent = 'Cópia preparada para descarregar.';
       }),
@@ -85,7 +94,7 @@ export function openOptions(): void {
       if (!selected) return;
       try {
         if (selected.size > 5_000_000) throw new Error('size');
-        const result = importSave(await selected.text());
+        const result = parseBackup(await selected.text());
         if (!result.ok) {
           status.textContent = 'Ficheiro inválido ou versão não suportada. O teu progresso foi mantido.';
           return;
@@ -99,7 +108,7 @@ export function openOptions(): void {
               const avatar = normalizeAvatar(Object.keys(result.save.equipment).length ? result.save.equipment : state.profile.avatar, result.save.ownedItems);
               return {
                 ...state,
-                save: result.save, skills: {},
+                save: result.save, skills: result.skills,
                 profile: { ...state.profile, avatar, equipped: { ...avatar } },
                 favorites: state.favorites.slice(0, 3).map(safeAvatar),
               };

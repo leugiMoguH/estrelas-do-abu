@@ -19,13 +19,15 @@ export interface AppState {
   save: Save;
   /** Progressão por competência; vive fora do Save (compatível com versões anteriores, que a ignoram). */
   skills: SkillsState;
-  ui: { storageError?: boolean };
+  lastExportAt: number | null;
+  ui: { storageError?: boolean; recovered?: boolean };
 }
 
 /** Espaço de nomes do armazenamento: as pré-visualizações usam o seu para nunca tocar no progresso do jogo. */
 const NS = (globalThis as { EDA_NS?: string }).EDA_NS ?? 'eda';
 const APP_KEY = `${NS}:app:v1`;
 const SAVE_KEY = `${NS}:save:v2`;
+const BACKUP_KEY = `${NS}:save:backup`;
 
 const initial = (): AppState => ({
   profile: { version: 3, grade: 6, onboarded: false, avatar: defaultAvatar(), equipped: {} },
@@ -35,6 +37,7 @@ const initial = (): AppState => ({
   favorites: [],
   save: defaultSave(),
   skills: {},
+  lastExportAt: null,
   ui: {},
 });
 
@@ -66,6 +69,7 @@ function load(): AppState {
         state.bestTestGrade = Math.max(0, Math.min(20, app.bestTestGrade as number));
       if (Array.isArray(app.favorites)) state.favorites = app.favorites.slice(0, 20);
       state.skills = sanitizeSkills(app.skills);
+      if (typeof app.lastExportAt === 'number' && Number.isFinite(app.lastExportAt) && app.lastExportAt >= 0 && app.lastExportAt <= 8_640_000_000_000_000) state.lastExportAt = app.lastExportAt;
     }
   } catch {
     state.ui.storageError = true;
@@ -75,7 +79,11 @@ function load(): AppState {
     if (saved) {
       const result = importSave(saved);
       if (result.ok) state.save = result.save;
-      else state.ui.storageError = true;
+      else {
+        const backup = importSave(localStorage.getItem(BACKUP_KEY) ?? '');
+        if (backup.ok) { state.save = backup.save; state.ui.recovered = true; }
+        else state.ui.storageError = true;
+      }
     }
   } catch {
     state.ui.storageError = true;
@@ -87,6 +95,11 @@ function load(): AppState {
 }
 
 let state = load();
+// Best effort: neither refusal nor browser support blocks startup.
+try { void navigator.storage?.persist?.().catch(() => {}); } catch { /* unavailable */ }
+function backupSave(save: Save): void {
+  try { localStorage.setItem(BACKUP_KEY, exportSave(save)); } catch { /* quota must not block the main write */ }
+}
 const listeners = new Set<(state: AppState) => void>();
 let pendingWrites=0;
 let persistence: Promise<unknown>=Promise.resolve();
@@ -116,7 +129,7 @@ export function update(change: Partial<AppState> | ((state: AppState) => AppStat
   const persist=():void=>{
     const raw=localStorage.getItem(SAVE_KEY);
     const parsed=raw ? importSave(raw) : undefined;
-    if(parsed && !parsed.ok && !replaceSave) throw new Error('Gravação inválida');
+    if(parsed && !parsed.ok && !replaceSave && !state.ui.recovered) throw new Error('Gravação inválida');
     const latest=parsed?.ok ? parsed.save : previous;
     const proposed=snapshot.save;
     const added=proposed.ownedItems.filter(id=>!previous.ownedItems.includes(id));
@@ -132,10 +145,13 @@ export function update(change: Partial<AppState> | ((state: AppState) => AppStat
       seen:[...latest.seen,...newSeen].slice(-500),mistakes:[...latest.mistakes,...newMistakes].slice(-100),
       equipment:JSON.stringify(proposed.equipment)!==JSON.stringify(previous.equipment)?proposed.equipment:latest.equipment,
     };
-    localStorage.setItem(SAVE_KEY, exportSave(save));
+    const serialized = exportSave(save);
+    backupSave(latest);
+    localStorage.setItem(SAVE_KEY, serialized);
     const {save:_save,ui:_ui,...app}=snapshot;
     localStorage.setItem(APP_KEY,JSON.stringify(app));
-    state={...state,ui:{...state.ui,storageError:false}};
+    // A successful write heals the canonical save: stop showing the recovery notice and re-arm the corruption guard.
+    state={...state,ui:{...state.ui,storageError:false,recovered:false}};
     if(pendingWrites===1) state={...state,save,profile:{...state.profile,avatar:normalizeAvatar(save.equipment,save.ownedItems)}};
   };
   pendingWrites++;
@@ -165,13 +181,15 @@ export async function completeTransaction(change: (save: Save)=>Save): Promise<S
  return navigator.locks.request(`${NS}:reward`,()=>{
   const raw=localStorage.getItem(SAVE_KEY);
   const parsed=raw ? importSave(raw) : undefined;
-  if(parsed && !parsed.ok) throw new Error('Gravação inválida');
+  if(parsed && !parsed.ok && !state.ui.recovered) throw new Error('Gravação inválida');
   const current=parsed?.ok ? parsed.save : state.save;
   const save=change(current);
   const equipment=Object.keys(current.equipment).length ? current.equipment : state.profile.avatar;
   const canonical={...save,equipment:{...equipment}};
-  localStorage.setItem(SAVE_KEY,exportSave(canonical));
-  state={...state,save:canonical,profile:{...state.profile,avatar:normalizeAvatar(equipment,canonical.ownedItems)}};
+  const serialized=exportSave(canonical);
+  backupSave(current);
+  localStorage.setItem(SAVE_KEY,serialized);
+  state={...state,save:canonical,ui:{...state.ui,recovered:false},profile:{...state.profile,avatar:normalizeAvatar(equipment,canonical.ownedItems)}};
   listeners.forEach(listener=>listener(state));
   return canonical;
  });

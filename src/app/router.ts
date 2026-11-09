@@ -43,6 +43,12 @@ export function frame(title: string, back?: () => void): HTMLElement {
     warning.textContent = 'O navegador não conseguiu guardar os dados. Podes continuar a jogar nesta visita.';
     main.append(warning);
   }
+  if (getState().ui.recovered) {
+    const warning = document.createElement('p');
+    warning.className = 'notice';
+    warning.textContent = 'Recuperámos a última cópia guardada do teu progresso.';
+    main.append(warning);
+  }
   startAbuLife(main, false);
   return main;
 }
