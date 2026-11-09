@@ -44,3 +44,27 @@ Critério de decisão de expansão (proposto ao produtor): voltou ao jogo ou ped
 - F2b: abrir com `?registo` noutro separador **depois** da sessão para ler tempo/ações até à 1.ª consequência, ações e anulações por situação (não mostrar à criança durante o jogo).
 - Perguntar no fim: «O que fazem as palavras?» e «Qual é a diferença entre sopra e sopram?» — registar a explicação dela, palavra a palavra.
 - Sinal de compreensão da língua: usa «sopram» de propósito para a saída distante (não por tentativa repetida).
+
+## D. Sessão curta F2b (versão revista) — guião de ~12 min
+Objetivo: separar quatro coisas. Não exigir que goste, não sugerir respostas, não elogiar nem corrigir durante o jogo.
+
+**Antes (30 s):** abrir `…/prototipos/f2b/` num separador limpo. Dizer só: «É um jogo novo, experimenta. Eu fico só a ver.»
+
+**Durante (≤ 10 min):** o adulto cala-se. Ajuda só com bloqueio > 60 s ou frustração visível; nesse caso, só «Experimenta tocar numa palavra.» e regista-se a hora.
+
+| O que distinguir | O que observar (comportamento) | Sinal a favor | Sinal contra |
+|---|---|---|---|
+| 1. Joga sem ajuda | tempo até ao 1.º toque útil; pedidos de ajuda; ajudas dadas | começa em < 30 s; 0 ajudas em ≥ 2 situações | pergunta «o que faço?»; precisa de ajuda em 2 situações |
+| 2. Relaciona palavras e acontecimentos | olha para as nuvens ao escolher «sopra/sopram»? lê a frase em baixo? | escolhe a palavra e depois o barco sem hesitar | toca ao acaso em palavras e alvos |
+| 3. Raciocínio ou tentativa | na situação 2, a 1.ª tentativa em cada barco; anulações seguidas; pausas antes de agir | acerta à 1.ª ou corrige depois de **uma** falha; pausa antes de agir | ≥ 3 falhas seguidas iguais; alterna sem parar |
+| 4. Interesse em continuar | o que faz no fim, sem que lhe perguntem | volta a jogar, pede mais ou mostra a alguém | fecha, muda de assunto, pergunta se já acabou |
+
+**Depois (2 min), por esta ordem e sem sugerir respostas:**
+1. «Explica-me como se joga.» (registar palavra a palavra)
+2. «Qual é a diferença entre sopra e sopram?»
+   - Compreendeu a concordância: refere **quantas nuvens** sopram.
+   - Ambíguo: diz só «um vai mais longe»; perguntar a seguir «Porquê?», uma única vez.
+3. «O que foi mais giro? E o mais chato?»
+4. Só no fim, abrir `?registo` noutro separador e copiar os números.
+
+**Leitura:** a decisão EXPANDIR / REVER / ABANDONAR usa o critério da secção B. Uma explicação «sopram = mais força», sem referir as nuvens, conta como **não compreendeu** a relação, mesmo que tenha resolvido o desafio.
