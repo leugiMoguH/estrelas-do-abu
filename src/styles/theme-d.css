@@ -35,7 +35,10 @@ body[data-theme='d'] .room-art {height:clamp(200px,30vw,340px); overflow:hidden;
 body[data-theme='d'] .room-art svg {height:100%; max-height:none; width:100%; border-radius:0}
 body[data-theme='d'] .map-hit:focus-visible .map-focus {stroke:#fff; stroke-width:9; stroke-dasharray:10 5}
 body[data-theme='d'] .map-hit {filter:none}
-body[data-theme='d'] .map-hit:hover .map-focus {stroke:#fff1b0; stroke-width:8}
+/* O indicador de foco do mapa é o tracejado branco da .map-focus; evita o anel duplo amarelado do :focus-visible global. */
+body[data-theme='d'] .map-hit:focus-visible {outline:none; box-shadow:none}
+/* Sem moldura permanente: só foco por teclado (acima) e, com rato, um realce branco suave. Em ecrãs táteis o hover ficava preso após o toque. */
+@media (hover:hover) and (pointer:fine) {body[data-theme='d'] .map-hit:not(.is-idle):hover:not(:focus-visible) .map-focus {stroke:#ffffff8c; stroke-width:4}}
 body[data-theme='d'] .question-progress {padding:16px; background:var(--paper); color:var(--ink); border-radius:20px}
 body[data-theme='d'] progress {accent-color:#805523}
 body[data-theme='d'] .extras-toggle {min-height:44px}
