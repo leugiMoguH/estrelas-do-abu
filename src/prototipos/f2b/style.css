@@ -36,9 +36,21 @@ pre { white-space: pre-wrap; font-size: 12px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 
 .arrived { animation: sail 400ms ease-out; }
-.opened { animation: open 350ms ease-out; transform-origin: 120px 222px; }
+.opened { animation: open 350ms ease-out; transform-origin: 0 0; }
 .launched { animation: launch 500ms ease-out; }
 @keyframes sail { from { translate: var(--distance) 0; } }
 @keyframes open { from { transform: rotate(0deg); } }
 @keyframes launch { from { translate: -143px 167px; } 50% { translate: -70px 20px; } }
 @media (prefers-reduced-motion: reduce) { .arrived, .opened, .launched { animation: none; } }
+
+/* Alvos transparentes centrados nas portas desenhadas dentro dos canais. */
+.target.comporta-a, .target.comporta-b { left: calc(14.1% - 22px); width: 44px; height: 56px; padding: 0; background: transparent; border-color: transparent; }
+.target.comporta-a { top: calc(32.1% - 28px); }
+.target.comporta-b { top: calc(58.3% - 28px); }
+.target.comporta-a.valid, .target.comporta-b.valid { border-color: #ffde88; }
+.blowing .gust { animation: gust 400ms ease-out; }
+.joining { animation: join-cloud 400ms ease-out; }
+.flowing { animation: flow 500ms linear infinite; stroke-dasharray: 24 12; }
+@keyframes gust { from { opacity: .2; translate: -12px 0; } to { opacity: 1; translate: 0 0; } }
+@keyframes join-cloud { from { opacity: 0; translate: -24px 0; } to { opacity: 1; translate: 0 0; } }
+@keyframes flow { to { stroke-dashoffset: -36; } }

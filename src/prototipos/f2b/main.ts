@@ -1,7 +1,13 @@
 import './style.css';
-import { actions, apply, initial, won, type World, type Word, type Target } from './rules';
+import { actions, apply, initial, rewind, won, type World, type Word, type Target } from './rules';
 import { scene } from './scene';
-interface Metric { actions: number; undos: number; firstActions?: number; firstMs?: number; reactionMs?: number }
+interface Metric {
+  actions: number;
+  undos: number;
+  firstActions?: number;
+  firstMs?: number;
+  reactionMs?: number;
+}
 const key = 'eda-proto-f2b';
 const metrics: Metric[] = [0, 1, 2].map(() => ({ actions: 0, undos: 0 }));
 const starts = [performance.now(), 0, 0];
@@ -11,9 +17,12 @@ let selected: Word | undefined;
 let failures = 0;
 let hint = false;
 const app = document.querySelector<HTMLDivElement>('#app')!;
-try { localStorage.getItem(key); } catch { /* O jogo funciona sem armazenamento. */ }
 function save(): void {
-  try { localStorage.setItem(key, JSON.stringify({ version: 1, metrics })); } catch { /* Opcional. */ }
+  try {
+    localStorage.setItem(key, JSON.stringify({ version: 1, metrics }));
+  } catch {
+    // A observação é opcional; o jogo também funciona sem armazenamento.
+  }
 }
 function record(consequence: boolean): void {
   const m = metrics[world.level]!;
@@ -49,12 +58,20 @@ function targets(): string {
   if (world.level === 0) return '<button class="box-target" data-target="caixa">abre</button>';
   const valid = actions(world).filter(a => a.word === selected).map(a => a.target);
   return ['comporta-a', 'comporta-b', 'a', 'b'].filter(t => world.level === 2 || !t.startsWith('comporta'))
-    .map(t => `<button class="target ${t} ${valid.includes(t as Target) ? 'valid' : ''} ${hint ? 'hint' : ''}"
-      data-target="${t}" aria-label="${t.startsWith('comporta') ? t.replace('-', ' ') : `barco ${t}`}">
-      ${t.startsWith('comporta') ? '▥' : '★'}</button>`).join('');
+    .map(t => {
+      const boat = t === 'a' || t === 'b';
+      const arrived = Boolean(world.stars & (t === 'a' ? 1 : 2));
+      const x = arrived ? t === 'a' ? 305 : 215 : 105;
+      const position = boat ? `left:calc(${x / 390 * 100}% - 22px)` : '';
+      return `<button style="${position}" class="target ${t} ${valid.includes(t as Target) ? 'valid' : ''} ${hint ? 'hint' : ''}"
+      data-target="${t}" aria-label="${t.startsWith('comporta') ? t === 'comporta-a' ? 'comporta de cima' : 'comporta de baixo' : `barco ${t}`}">
+      ${t.startsWith('comporta') ? '' : '&#9733;'}</button>`;
+    }).join('');
 }
 function render(animate = false): void {
-  const focus = (document.activeElement as HTMLElement | null)?.dataset;
+  const active = document.activeElement as HTMLElement | null;
+  const focus = active?.dataset.word ? `[data-word="${active.dataset.word}"]`
+    : active?.dataset.target ? `[data-target="${active.dataset.target}"]` : '';
   app.innerHTML = `<main><header><span>PROTÓTIPO · PALAVRAS-FERRAMENTA · ${world.level + 1}/3</span>
     <h1>${['Leva a estrela até à constelação.', 'Leva cada estrela à sua saída.', 'Guia a corrente para as duas saídas.'][world.level]}</h1></header>
     <div class="layout"><section class="scene" aria-label="Cena">${scene(world, animate)}${targets()}
@@ -67,11 +84,15 @@ function render(animate = false): void {
       ${won(world) && world.level === 2 ? '<p>As duas estrelas encontraram o seu lugar.</p>' : ''}
     </section></div>${new URLSearchParams(location.search).has('registo') ? `<pre id="metrics">${JSON.stringify(metrics, null, 2)}</pre>` : ''}</main>`;
   bind();
-  if (focus?.word) app.querySelector<HTMLElement>(`[data-word="${focus.word}"]`)?.focus();
+  if (focus) app.querySelector<HTMLElement>(focus)?.focus();
 }
 function bind(): void {
   app.querySelectorAll<HTMLButtonElement>('[data-word]').forEach(b => {
-    b.onclick = () => { selected = b.dataset.word as Word; record(false); render(); };
+    b.onclick = () => {
+      selected = b.dataset.word as Word;
+      record(false);
+      render();
+    };
   });
   app.querySelectorAll<HTMLButtonElement>('[data-target]').forEach(b => {
     b.onclick = () => {
@@ -80,19 +101,38 @@ function bind(): void {
       if (word && actions(world).some(a => a.word === word && a.target === target)) act(word, target);
     };
   });
+  bindRecovery();
+  bindProgress();
+}
+function bindRecovery(): void {
   app.querySelector<HTMLButtonElement>('#undo')!.onclick = () => {
-    const previous = history.pop();
-    if (previous) { world = previous; metrics[world.level]!.undos++; save(); }
-    selected = undefined; render(); app.querySelector<HTMLElement>('#undo')!.focus();
+    if (history.length) {
+      ({ world, history } = rewind(world, history));
+      metrics[world.level]!.undos++;
+      save();
+    }
+    selected = undefined;
+    render();
+    app.querySelector<HTMLElement>('#undo')!.focus();
   };
   app.querySelector<HTMLButtonElement>('#reset')!.onclick = () => {
-    history.push(world); world = initial(world.level); selected = undefined; render();
+    history.push(world);
+    world = initial(world.level);
+    selected = undefined;
+    record(false);
+    render();
     app.querySelector<HTMLElement>('#reset')!.focus();
   };
+}
+function bindProgress(): void {
   const next = app.querySelector<HTMLButtonElement>('#next');
   if (next) next.onclick = () => {
-    world = initial(world.level + 1); history = []; failures = 0; hint = false;
-    starts[world.level] = performance.now(); render();
+    world = initial(world.level + 1);
+    history = [];
+    failures = 0;
+    hint = false;
+    starts[world.level] = performance.now();
+    render();
   };
   const help = app.querySelector<HTMLButtonElement>('#hint');
   if (help) help.onclick = () => { hint = !hint; render(); };

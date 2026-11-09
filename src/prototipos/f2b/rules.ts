@@ -1,14 +1,29 @@
 export type Word = 'abre' | 'fecha' | 'sopra' | 'sopram';
 export type Target = 'caixa' | 'a' | 'b' | 'comporta-a' | 'comporta-b';
-export interface Action { word: Word; target: Target }
+export interface Action {
+  word: Word;
+  target: Target;
+}
 export interface World {
-  level: number; a: boolean; b: boolean; stars: number;
-  failed: boolean; message: string; wind: number; target: Target | '';
+  level: number;
+  a: boolean;
+  b: boolean;
+  stars: number;
+  failed: boolean;
+  message: string;
+  wind: number;
+  target: Target | '';
 }
 export const initial = (level: number): World => ({
   level, a: true, b: false, stars: 0, failed: false, message: '', wind: 0, target: '',
 });
 export const won = (s: World): boolean => s.stars === (s.level === 0 ? 1 : 3);
+export function rewind(world: World, history: readonly World[]): { world: World; history: World[] } {
+  return {
+    world: history.at(-1) ?? world,
+    history: history.slice(0, -1),
+  };
+}
 export function actions(s: World): Action[] {
   if (s.level === 0) return [{ word: 'abre', target: 'caixa' }];
   const list: Action[] = [];

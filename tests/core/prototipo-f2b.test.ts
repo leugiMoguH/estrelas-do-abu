@@ -1,5 +1,6 @@
+import { scene } from '../../src/prototipos/f2b/scene';
 import { describe, expect, it } from 'vitest';
-import { actions, apply, initial, won, type World } from '../../src/prototipos/f2b/rules';
+import { actions, apply, initial, rewind, won, type World } from '../../src/prototipos/f2b/rules';
 function solve(level: number): number | undefined {
   let queue: World[] = [initial(level)];
   const seen = new Set<string>();
@@ -21,11 +22,24 @@ describe('Palavras-ferramenta', () => {
     expect(solve(level)).toBe([1, 2, 4][level]);
     const original = initial(level);
     const snapshot = structuredClone(original);
-    const history = [original];
-    const changed = apply(original, actions(original)[0]!);
-    expect(changed).not.toBe(original);
-    expect(history.pop()).toEqual(snapshot);
+    for (const action of actions(original)) {
+      const changed = apply(original, action);
+      expect(changed).not.toBe(original);
+      expect(rewind(changed, [original])).toEqual({ world: snapshot, history: [] });
+    }
     expect(original).toEqual(snapshot);
+  });
+  it('anular repõe mensagens, vento e comportas, incluindo após recomeçar', () => {
+    const start = initial(2);
+    const failed = apply(start, {word: 'sopra', target: 'a'});
+    const closed = apply(failed, {word: 'fecha', target: 'comporta-a'});
+    const reset = initial(2);
+    const first = rewind(reset, [start, failed, closed]);
+    expect(first.world).toEqual(closed);
+    const second = rewind(first.world, first.history);
+    expect(second.world).toEqual(failed);
+    expect(rewind(second.world, second.history)).toEqual({world: start, history: []});
+    expect(rewind(start, [])).toEqual({world: start, history: []});
   });
   it('força excessiva e insuficiente falham com consequência observável', () => {
     for (const [word, target] of [['sopra', 'a'], ['sopram', 'b']] as const) {
@@ -43,4 +57,23 @@ describe('Palavras-ferramenta', () => {
     expect(apply(both, {word: 'sopram', target: 'a'}).failed).toBe(true);
     expect(apply(both, {word: 'sopra', target: 'b'}).failed).toBe(true);
   });
+});
+
+it.each([1, 2])('cena %i representa uma ou duas nuvens e o sopro de cada uma', level => {
+  for (const [word, count] of [['sopra', 1], ['sopram', 2]] as const) {
+    const html = scene(apply(initial(level), {word, target: 'a'}), true);
+    expect(html.match(/class="cloud /g)).toHaveLength(count);
+    expect(html.match(/class="gust"/g)).toHaveLength(count);
+    expect(html.includes('joining')).toBe(count === 2);
+  }
+});
+it('cena desenha portas e corrente apenas nos ramos abertos', () => {
+  const html = scene(initial(2));
+  expect(html.match(/gate-open/g)).toHaveLength(1);
+  expect(html.match(/gate-closed/g)).toHaveLength(1);
+  expect(html.match(/class="current"/g)).toHaveLength(1);
+  expect(html).not.toContain('? fechado');
+  const closed = scene(apply(initial(2), {word: 'fecha', target: 'comporta-a'}));
+  expect(closed.match(/gate-closed/g)).toHaveLength(2);
+  expect(closed).not.toContain('class="current"');
 });
