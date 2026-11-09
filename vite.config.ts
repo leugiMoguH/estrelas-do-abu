@@ -7,6 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
+        prototipoF2: 'prototipos/f2/index.html',
         previewA: 'preview/a/index.html',
         previewB: 'preview/b/index.html',
         previewC: 'preview/c/index.html',

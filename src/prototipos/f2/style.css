@@ -1,0 +1,88 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #fff1dc;
+  background: #20253e;
+  font-size: 16px;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1100px; margin: auto; padding: 20px; }
+h1 { font-size: clamp(1.5rem, 5vw, 2rem); margin: .4em 0; }
+h2 { font-size: 1rem; margin: 0; }
+header > p:first-child { color: #dcc1ed; font-size: .85rem; }
+button {
+  font: inherit;
+  min-height: 48px;
+  border: 2px solid #a998bc;
+  border-radius: 12px;
+  padding: 8px 12px;
+  max-width: 100%;
+  color: #fff1dc;
+  background: #343651;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+button:hover { background: #51476a; }
+button:focus-visible, summary:focus-visible { outline: 3px solid #ffd875; outline-offset: 3px; }
+button[aria-pressed=true], #run, #next { border-color: #ffd875; background: #51476a; }
+button[aria-disabled=true] { opacity: .6; cursor: wait; }
+.goal { font-weight: 600; }
+.scene {
+  background: linear-gradient(#323554, #55516c);
+  border-radius: 24px;
+  overflow: hidden;
+  max-width: 650px;
+  margin: auto;
+}
+.scene svg { width: 100%; display: block; max-height: 280px; }
+.constellation { fill: #8d879f; stroke: #8d879f; }
+.constellation path { stroke-width: 2; }
+.constellation text { stroke: none; }
+.constellation.lit { fill: #ffe28b; stroke: #ffe28b; filter: drop-shadow(0 0 5px #ffd875); }
+.star, .constellation { transition: all .6s ease; }
+.feedback {
+  background: #41435c;
+  border-left: 5px solid #ffd875;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 65px;
+}
+.tutorial { color: #ffe2aa; }
+details { margin-bottom: 12px; }
+summary { cursor: pointer; min-height: 44px; padding: 10px; width: fit-content; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.card {
+  min-width: 0;
+  border: 2px solid #79718e;
+  border-radius: 16px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+.card.selected { border-color: #ffd875; }
+.pieces { display: flex; flex-wrap: wrap; gap: 6px; }
+.pieces button { flex: 1 1 auto; background: #494566; }
+.pieces button[aria-pressed=true] { background: #685579; }
+.link { background: #8b344d; color: white; padding: 8px; border: 2px dashed #ffc3c3; }
+.timeline { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 18px; }
+.layer { background: #34364e; border-radius: 12px; min-width: 0; padding: 8px; }
+.layer button { width: 100%; padding: 6px; font-weight: 700; }
+.layer ol { padding-left: 20px; font-size: .85rem; overflow-wrap: anywhere; }
+.layer li { margin-bottom: 10px; }
+.hint { font-size: .8rem; color: #d4c5df; }
+nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0; }
+nav button { flex: 1 1 140px; }
+.final { text-align: center; }
+.final svg { width: 100%; max-width: 600px; }
+@media (max-width: 480px) {
+  main { padding: 12px; }
+  .cards { grid-template-columns: 1fr; gap: 8px; }
+  .scene svg { max-height: 210px; }
+  .layer { padding: 5px; }
+  .layer button { font-size: .85rem; padding: 3px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
