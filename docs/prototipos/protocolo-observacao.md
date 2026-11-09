@@ -38,3 +38,9 @@ Indicadores a anotar: tempo até 1.ª ação; nº de vezes que pediu ajuda; aban
 | 3 | | | | | |
 
 Critério de decisão de expansão (proposto ao produtor): voltou ao jogo ou pediu mais sem incentivo **e** explicou a regra corretamente **e** completou ≥ 2 desafios sem ajuda do adulto. Caso contrário: rever ou abandonar, não expandir.
+
+## C. Comparação F2 vs F2b (2026-11-09)
+- Ordem: F2b primeiro (`…/prototipos/f2b/`), depois F2 (`…/prototipos/f2/`) só se houver tempo; não explicar nenhuma.
+- F2b: abrir com `?registo` noutro separador **depois** da sessão para ler tempo/ações até à 1.ª consequência, ações e anulações por situação (não mostrar à criança durante o jogo).
+- Perguntar no fim: «O que fazem as palavras?» e «Qual é a diferença entre sopra e sopram?» — registar a explicação dela, palavra a palavra.
+- Sinal de compreensão da língua: usa «sopram» de propósito para a saída distante (não por tentativa repetida).
