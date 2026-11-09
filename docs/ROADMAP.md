@@ -1,169 +1,326 @@
-# Roteiro global — Estrelas do Abu (2026-11-09)
+# Roteiro até à V1.0 — Estrelas do Abu · v2
 
-Proposta para levar o jogo da V3 (publicada em `preview/e/`) até à **versão 1.0**: o jogo que a criança usa durante o resto do 6.º ano. Não é um redesenho. A direção artística D e as personagens ficam como estão.
-Respeita `PRODUCT_CONTRACT.md`: sem contas, sem pagamentos, sem IA em tempo real, sem servidor, dados só no dispositivo, PT-PT.
-Estado oficial: `PROJECT_STATE.md`. Este roteiro só passa a ser o plano oficial depois de aprovado (ver «Decisão» no fim).
+Estado: **adotado pelo produtor (2026-11-09) como guia de produção** (plano v2 no `PROJECT_STATE.md`). As funcionalidades não ficam aprovadas em bloco: cada fase tem critérios próprios e as decisões de motivação esperam pelo feedback da criança.
+Versão anterior (v1, 2026-11-09): commit `9c48c53` (`git show 9c48c53:docs/ROADMAP.md`).
+Revisão de 2026-11-09:
+- **Claude:** inspeção de código, build e medição de arranque.
+- **Codex:** revisão crítica só de leitura (secção 12). Os pontos factuais foram reconfirmados pelo Claude no código.
+
+Legenda:
+- **[V]** verificado no código, no build ou por medição nesta revisão.
+- **[R]** retirado de registos anteriores, não repetido agora.
+- **[H]** hipótese a testar.
+- **[C]** depende da criança.
 
 ---
 
-## 1. Ponto de situação (verificado no código a 2026-11-09)
+## 1. Visão e pilares
 
-### O que já existe e funciona
-| Área | Estado |
+**Visão.** Um jogo de estudo do 6.º ano em que explorar, personalizar, interagir e aprender são a mesma experiência. Não é um questionário com arte bonita. A criança volta por iniciativa própria, e o que estuda está certo.
+
+| Pilar | Exige | Prova |
+|---|---|---|
+| A. Diversão | Curiosidade, descoberta, escolha, expressão. Aprender também é jogar. | Comportamento observado [C]: escolhe sozinha, continua sem pressão, pede mais, regressa sem lembrete. |
+| B. Rigor | Fontes verificáveis, competências AE, respostas certas, explicações úteis, progressão fundamentada. | Testes de conteúdo, validação de fontes, revisão humana (perguntas **e** lições dos tutores). |
+| C. Identidade | Direção D, personagem modular, Abu expressivo, tutores, cenários e áudio coerentes. | Revisão visual em 3 viewports; sem regressão para SVG rudimentar. |
+| D. Confiança | Telemóvel, tablet e PC; progresso protegido; acessível; privado; sem pressão nem manipulação. | Testes de dados e recuperação, medição, auditoria de acessibilidade. |
+
+**Lição do BRUMA aplicada.** Nenhum sistema grande avança antes de uma experiência pequena e completa mostrar interesse real da criança. Preferir efeitos visuais não é o mesmo que diversão duradoura. Testes verdes e pareceres de agentes não substituem a observação.
+
+---
+
+## 2. Situação real da V3
+
+### Verificado
+| Área | Facto |
 |---|---|
-| Núcleo educativo | 4 formatos de exercício, nota 0–20, dificuldade por competência, revisão espaçada, caderno de erros. 1073 testes unitários e 69 e2e (V3). |
-| Matemática | 13 temas com geradores (racionais, prioridades, proporcionalidade, potências, primos, ângulos, círculo, volumes, rotações, sequências, dados, probabilidades, frações). |
-| Português | 3 temas, **só gramática** (classes de palavras, tempos/modos, voz ativa/passiva). Falta leitura, compreensão, educação literária e escrita. |
-| HGP | A disciplina mais completa: capítulos/subcapítulos, séc. XVIII, recuperação do 5.º ano, fábrica V2 (96 conhecimentos, 255 exercícios elegíveis). 7 conhecimentos ainda pendentes. |
-| Personagem e Abu | 103 artigos, camadas com oclusão, Abu com 9 poses e roupa. Aprovado pela criança (direção D). |
-| Recompensas | Estrelas, loja, coleção mensal 4×4 (só até 2027-01), Save v3 com exportar/importar validado. |
-| Opções | Música, efeitos, volume, reduzir animações, tamanho de texto. |
-| Publicação | V3 em `preview/e/`. **A raiz do site ainda mostra a demo v0.1 antiga.** |
+| Publicação | [V] `gh-pages` 48adabd. A raiz é a demo v0.1 (`index-DwJLXUVP.js`). A V3 está em `preview/e/`, com backups `e-prov1`–`e-prov7`. |
+| Git | [V] `redesign/art-v1` está à frente da `main`, sem divergência (a `main` não tem commits que faltem à branch). |
+| Arranque | [V] Build atual, Fast 3G, 390×844, sem perfil: 36 pedidos, **583 KB transferidos**, LCP 2,9 s, load 4,3 s, 0 erros. Maior recurso: JS `welcome`, com 188 KB comprimido (677 KB em bruto). |
+| PNG pesados | [V] `room-his.png` (2,3 MB) e `tutor-tome-neutral.png` (2,2 MB) **não carregam no arranque**. Carregam na sala de HGP (`src/art/d/scenes.ts`) e no tutor Tomé (`src/app/tutor.ts`). |
+| Escrita de HTML | [V] 53 escritas: 33 `innerHTML` + 20 `insertAdjacentHTML`. A alcunha é escapada (`onboarding.ts:29`). O equipamento é normalizado pelo catálogo (`catalog.ts:130`). Não há conteúdo externo. **Não foi encontrada injeção alcançável.** Mas o esquema do Save aceita texto arbitrário (`save.ts:131`), e `art/d/abu.ts:48` interpola JSON num atributo sem escape, o que só é seguro enquanto os valores forem controlados. Conclusão: risco baixo, não nulo. |
+| Artigos desconhecidos | [V] `ownedItems`, `equipment` e `receipts.items` aceitam ids desconhecidos (`save.ts:80,159,206`). `collection-ui.ts:27` falha com um id desconhecido. Só é alcançável num caminho específico: o resultado mostra apenas o recibo da tentativa atual (`result.ts:50`). É uma fragilidade confirmada; a reprodução integrada está por fazer. |
+| Exportação | [V] **`skills` (níveis por competência) fica fora do Save exportado e é apagado ao importar** (`store.ts:21`, `extras/options.ts:68,102`). A exportação atual **não** protege toda a aprendizagem. |
+| Histórico | [V] `seen[]` guarda referência, competência e data, mas **não** guarda acerto nem sessão, e fica limitado a 500 entradas (`save.ts:5–13,180`). Dá os dias com respostas registadas. Não dá taxa de acerto histórica, sessões nem prova de iniciativa própria. |
+| Chaves de armazenamento | [V] O namespace é fixado no arranque (`store.ts:26–28`, `EDA_NS`, por omissão `eda`). A V3 publicada usa `eda-e` [R]. Não há SW, manifest nem `storage.persist()`. |
+| Modos | [V] **Estudar, Teste e Rever.** Não existe um modo «Exercícios» separado. |
+| Interação | [V] Formatos `mcq`, `numeric`, `text`, `order` e `cloze`. Mapa só como figura estática. Já existem barra de progresso da sessão (`session.ts:145`), som de acerto de 2 notas (`audio.ts:39`) e reação do Abu. A mudança de ecrã não tem transição. |
+| Recompensas | [V] Os artigos mensais exigem Teste com ≥10 perguntas distintas e ≥80% (`collection-ui.ts:7`). Estudar e Rever não os atribuem. [H] Pode favorecer repetir testes fáceis e evitar dificuldades. |
+| Conteúdo | [V] Matemática: 13 temas com geradores. Português: 3 temas, só gramática. HGP: capítulos, subcapítulos e fábrica V2; há sequências cronológicas e anos verificáveis (`kb/historia/xviii.reasoning.ts:45–49`, `xviii.atoms.ts:15`). [R] 7 conhecimentos HGP pendentes. Lições dos tutores marcadas `needs-human-review` (`content/tutor/portugues.ts:4`). |
+| Testes | [R] 1073 unitários, 69 e2e; 2 testes instáveis. |
 
-### O que falta ou está fraco
-1. **Feedback real da criança sobre a V3**: ainda não foi recolhido. É o bloqueio declarado do projeto.
-2. **Conteúdo**: Português está muito curto. 4 edifícios estão «Em preparação» (Inglês, Ciências, EV/ET, Música). Nenhum conteúdo teve revisão docente (T2.2 está «Por iniciar»).
-3. **Performance**: há 2 PNG de 2,2–2,3 MB no build (`d6/room-his.png`, `d5/tutor-tome-neutral.png`). O chunk inicial `welcome-*.js` tem 677 KB porque leva os bancos de conteúdo todos. A imagem do campus tem 457 KB.
-4. **Offline e persistência**: não há manifest nem service worker. No iPad, o Safari pode **apagar o `localStorage` ao fim de 7 dias sem visitas** (regra ITP do WebKit). Isso pode fazer a criança perder o progresso. Instalar a app no ecrã inicial evita esse apagamento.
-5. **Segurança**: não há Content-Security-Policy. Há 53 usos de `innerHTML`; existe uma função `escape()`, mas ninguém confirmou que todos os usos passam por ela.
-6. **Sensação de jogo**: o som é feito de tons sinusoidais sintetizados, a mudança de ecrã é seca e o resultado do teste tem pouca cerimónia. É aqui que o jogo parece «amador».
-7. **Dívida técnica**: há temas de arte antigos ainda no código (`src/art/v2`, `v3`, `assets/b`, `d`–`d6`, `art-preview.html`). A branch `redesign/art-v1` está 40 commits à frente da `main`. Há 2 testes instáveis (`gamePack`, «limita FIFO»). O ficheiro `bash.exe.stackdump` está no Git. No `PROJECT_STATE.md`, T3.1 e T3.2 aparecem como «Por iniciar», mas já estão feitas.
+**Validado pela criança [R]:** a direção D e o interesse pela personalização. **A V3 ainda não foi testada.** Não há dados de retenção.
 
----
+**Contrato:** o `PRODUCT_CONTRACT.md` define a demo (Matemática + Português) e manda parar depois de publicar. A V3 já inclui HGP, e este roteiro leva à V1.0 com 3 disciplinas. O âmbito pós-demo tem de ficar registado e o contrato atualizado quando for aprovado (decisão 1).
 
-## 2. Plano até ao fim do projeto
-
-**Fim do projeto = v1.0.** Critérios:
-- Publicada na raiz do site e instalável (PWA) no iPad, no Android e no Windows.
-- 3 disciplinas completas para o ano letivo: Matemática, Português e HGP.
-- Sensação de jogo cuidada, com áudio próprio.
-- Área do encarregado de educação.
-- Validada pela criança em pelo menos 2 sessões observadas.
-
-**Data-alvo:** fim de fevereiro de 2027. Fica tempo útil até ao fim do ano letivo (junho de 2027).
-
-Cada fase só fecha com os seus critérios verificados. As estimativas são de trabalho efetivo (Claude planeia e verifica, Codex implementa).
-
-### F0 — Ouvir a criança e arrumar a casa · 1 semana · BLOQUEIA F3–F5
-| # | Tarefa | Critério de fecho |
-|---|---|---|
-| 0.1 | Sessão observada com a V3 (20 min, sem ajuda), com o guião: o que escolhe primeiro, onde para, o que diz, o que pede. | Notas guardadas em `docs/playtest/2026-11-xx.md`, com as 5 coisas de que mais gostou e as 5 que mais a irritaram. |
-| 0.2 | Ordenar este roteiro com base no feedback (cortar o que ela não valoriza). | Roteiro revisto; `PROJECT_STATE.md` fechado com `seal --motivo` → plano v2. |
-| 0.3 | Corrigir o estado: T3.1 e T3.2 passam a concluídas e as tarefas antigas caducadas são arquivadas. | `state.py check` limpo. |
-| 0.4 | Juntar `redesign/art-v1` à `main` (merge, com autorização). | `main` = código publicado; tags intactas. |
-| 0.5 | Limpeza: tirar `bash.exe.stackdump` do Git e pôr no `.gitignore`. | `git ls-files` limpo. |
-
-### F1 — Base técnica: performance, segurança, offline · 1,5–2 semanas · pode começar já
-Não acrescenta conteúdo, por isso não colide com a regra «não expandir antes do feedback».
-| # | Tarefa | Critério de fecho |
-|---|---|---|
-| 1.1 | Converter os PNG pesados para WebP/AVIF e otimizar o campus (2 tamanhos). | Nenhuma imagem acima de 300 KB no `dist`; diferença visual impercetível nas capturas. |
-| 1.2 | Dividir o código: cada banco de conteúdo carrega com `import()` só quando se abre a sala. | Chunk inicial < 200 KB (gzip < 70 KB); e2e verdes. |
-| 1.3 | PWA: `manifest.webmanifest`, ícones, service worker com pré-cache do build, aviso «Nova versão disponível». | Instala no Android e no iPad; joga em modo avião; Lighthouse PWA a passar. |
-| 1.4 | Persistência protegida: `navigator.storage.persist()`, 3 cópias rotativas do Save e lembrete semanal para exportar. | Teste: apagar a chave principal recupera a última cópia. |
-| 1.5 | Segurança: CSP em `<meta>`, auditoria dos 53 `innerHTML` (ou helper com escape obrigatório) e testes com alcunha e importação maliciosas. | Teste e2e com `<img onerror>` na alcunha e num Save importado: nada executa. |
-| 1.6 | Orçamento de performance e regressão visual no conjunto de testes (capturas de base em 3 viewports). | O teste falha se o bundle ou as capturas mudarem sem intenção. |
-| 1.7 | Estabilizar os 2 testes instáveis (causa real, não só subir o tempo limite). | 10 execuções seguidas verdes. |
-
-### F2 — Polimento e sensação de jogo · 2–3 semanas · depois de F1
-| # | Tarefa | Critério de fecho |
-|---|---|---|
-| 2.1 | Design system consolidado: tokens únicos (cor, raio, sombra, tipografia, espaçamento) e remoção dos temas legados. | CSS só com tokens; `src/art/v2`, `v3` e os assets mortos apagados; build menor. |
-| 2.2 | Transições entre ecrãs (View Transitions API, nativa) e estados de botão completos (pressionado, desativado, a carregar). | Todas as mudanças de ecrã animadas; desligadas com «reduzir animações». |
-| 2.3 | Feedback de resposta: animação de acerto/erro, contagem de estrelas animada, partículas e vibração em Android. | Resposta em menos de 100 ms em todos os formatos. |
-| 2.4 | Ecrã de resultado com cerimónia: nota a subir, Abu a reagir conforme a nota, sorteio da coleção com revelação. | Revisto em 3 viewports; respeita movimento reduzido. |
-| 2.5 | Áudio v2: música própria por zona (CC0 verificada ou composta), efeitos sonoros em camadas e mistura (música baixa quando o tutor fala). | Proveniência em `ASSETS_PROVENANCE.md`; volume consistente. |
-| 2.6 | Primeiros 60 segundos: onboarding com uma cena curta do Abu e a primeira vitória garantida. | Uma criança nova chega ao 1.º acerto em menos de 90 s (sessão observada). |
-
-### F3 — Ciclo de motivação · 2 semanas · depois do feedback de F0
-| # | Tarefa | Critério de fecho |
-|---|---|---|
-| 3.1 | Objetivo diário e sequência de dias, sem castigo (1 «dia de folga» por semana). | Testes unitários de datas (meia-noite, fuso, relógio a recuar). |
-| 3.2 | Missões semanais ligadas às competências fracas. | As missões vêm do histórico, não são aleatórias. |
-| 3.3 | Modo «Preparar teste» com data: o encarregado introduz a data e o jogo planeia a revisão até lá. | Contagem decrescente e sessões sugeridas por dia. |
-| 3.4 | Coleções mensais de 2027-02 a 2027-06 (com artigos aprovados pela criança). | Sem «indisponível» até ao fim do ano letivo. |
-
-### F4 — Conteúdo do ano letivo · contínuo, de dezembro a fevereiro · depois de F0
-Regra: conteúdo só em `content/`, validado, com oráculo independente e revisão humana em PT-PT.
-| # | Tarefa | Critério de fecho |
-|---|---|---|
-| 4.1 | Português: leitura e compreensão (textos curtos próprios), educação literária, ortografia/acentuação e mais gramática (funções sintáticas, coordenação/subordinação). | Pelo menos 8 temas, todos ligados às AE; amostra revista por um adulto. |
-| 4.2 | Matemática: revisão docente dos 13 temas e afinação da dificuldade com base nos dados da criança. | Registo da revisão; correções aplicadas. |
-| 4.3 | HGP: fechar os 7 conhecimentos pendentes, capoeira/samba/Valongo e completar a hierarquia (precisa de novas fotografias do índice do manual). | 0 conhecimentos pendentes; capítulos alinhados com o manual. |
-| 4.4 | Alinhar com o calendário escolar: temas da semana escolhidos pelo encarregado. | O mapa destaca o tema da semana. |
-
-### F5 — Expansão opcional · 2 semanas por disciplina · só com decisão
-Ciências Naturais e depois Inglês (os edifícios já existem). Fica fora da v1.0 se o tempo apertar.
-
-### F6 — Área do encarregado de educação · 1 semana · em paralelo com F4
-Entrada protegida (soma simples ou gesto, sem conta), relatório por competência, tempo de estudo, erros frequentes, imprimir ou guardar em PDF e definir o tema da semana e a data do teste.
-
-### F7 — Lançamento da v1.0 · 1 semana
-1. Revisão independente do Codex (código e conteúdo).
-2. Auditoria de acessibilidade (teclado, contraste, leitor de ecrã) em 3 viewports.
-3. 2.ª sessão observada com a criança; bugs críticos corrigidos.
-4. Publicar na raiz (com autorização), com a v0.1 arquivada em `/arquivo/`; tag `v1.0`.
-5. A seguir, modo de manutenção: uma coleção mensal e conteúdo conforme os testes da escola.
-
-### Calendário resumido
-| Semana | Fases |
-|---|---|
-| 9–15 nov | F0 + início de F1 |
-| 16 nov–6 dez | F1 → F2 |
-| 7 dez–3 jan | F2 (fim) + F3 + início de F4 |
-| jan 2027 | F4 + F6 |
-| fev 2027 | F4 (fim) + F7 → **v1.0** |
+### Correções ao v1
+1. Os PNG pesados não pesam no arranque, só na sala de HGP.
+2. Cópias de segurança no mesmo `localStorage` **não** protegem contra o apagamento do Safari (limite de 7 dias do WebKit para sites não instalados), porque esse apagamento leva a origem inteira. Só protegem contra corrupção.
+3. 53 escritas de HTML não são 53 vulnerabilidades.
+4. A exportação não inclui `skills`, por isso relatório e constelação não podem assentar só nela.
+5. O roteiro v1 tinha a numeração de fases a saltar e o polimento antes da validação da mecânica.
+6. Missões e quarto decorável chocam com o pilar D ou têm custo desproporcionado. A sequência de dias fica para decisão em F3.
 
 ---
 
-## 3. Dez melhorias (design, UX/UI, segurança, performance)
-| # | Área | Melhoria | Porquê | Fase |
-|---|---|---|---|---|
-| 1 | Performance | Converter `room-his.png` (2,3 MB) e `tutor-tome-neutral.png` (2,2 MB) para WebP/AVIF | Cerca de 4,5 MB a menos na sala de HGP, o que pesa em 4G e em iPads antigos | F1 |
-| 2 | Performance | Carregar os bancos de conteúdo por disciplina com `import()` | Arranque com menos de um terço do JS atual (677 KB) | F1 |
-| 3 | Performance | `srcset` e `decoding="async"` nas cenas; pré-carregar só o ecrã seguinte | O campus (457 KB) deixa de travar o 1.º ecrã no telemóvel | F1 |
-| 4 | Robustez | PWA com service worker e instalação | Offline a sério e proteção contra o apagamento de 7 dias do Safari | F1 |
-| 5 | Segurança | CSP em `<meta>` (`default-src 'self'`) | Bloqueia scripts injetados, mesmo que escape algum `innerHTML` | F1 |
-| 6 | Segurança | Helper de template com escape obrigatório em vez de `innerHTML` solto, mais testes de injeção | Alcunha e Save importado são as entradas não confiáveis do jogo | F1 |
-| 7 | Dados | 3 cópias rotativas do Save, `storage.persist()` e lembrete de exportação | Perder o progresso é o pior bug possível para uma criança | F1 |
-| 8 | Design | Tokens CSS únicos e remoção dos temas legados | Consistência visual e manutenção mais barata | F2 |
-| 9 | UX | Transições de ecrã nativas e estados de botão completos | O jogo deixa de «saltar» entre páginas | F2 |
-| 10 | UX/UI | Feedback imediato em cada resposta (animação, som, vibração) | Recompensa sentida, não só lida | F2 |
+## 3. Avaliação das propostas do v1
 
-## 4. Dez recomendações para nível de estúdio
-1. **Sensação de jogo em tudo.** Cada toque tem resposta visual, sonora e tátil em menos de 100 ms. Os jogos de estúdio distinguem-se mais pela resposta ao toque do que pela arte.
-2. **Áudio profissional.** Hoje são tons sinusoidais. Música por zona, efeitos em camadas e mistura cuidada são, por si só, o maior salto de qualidade percebida.
-3. **Meta-objetivo visível.** As estrelas ganhas acendem uma constelação no céu do campus (o «Estrelas do Abu» do nome) e cada mês completa uma constelação. É narrativa leve, dentro do contrato.
-4. **Campus vivo.** Dia/noite segundo a hora real, estações do ano, tutores à janela dos edifícios, Abu a reagir ao progresso e à hora (dorme à noite).
-5. **Primeiro minuto impecável.** Cena de abertura curta, a criança dá nome ao seu canto e tem uma vitória garantida. A primeira impressão define a retenção.
-6. **Sessões com arco.** Aquecimento, desafio e «pergunta final» com tensão, depois a recompensa. Sessões de 5 a 8 minutos que acabam em alta, não a meio.
-7. **Vozes.** Os tutores e o Abu com falas gravadas (curtas, reutilizáveis). Se forem gravadas pela família, ficam únicas e ajudam também na acessibilidade.
-8. **UI ao nível de consola.** Tipografia de título própria, ícones de um só conjunto, ecrãs vazios ilustrados, zero texto técnico e todos os estados de cada componente desenhados.
-9. **Decidir com dados de playtest.** Métricas só no dispositivo (tempo até ao 1.º acerto, onde abandona, temas evitados), exportáveis pelo encarregado. Nada sai do aparelho.
-10. **Pipeline de qualidade de estúdio.** Regressão visual automática, orçamento de performance, checklist de lançamento e sessões de playtest marcadas antes de cada versão.
+Decisões: **MANTER** · **MELHORAR** · **ADIAR** (fora da V1.0) · **DESCARTAR** · **ACRESCENTAR**.
 
-## 5. Quinze funcionalidades
-Ordem = valor provável para a criança e para a aprendizagem.
-| # | Funcionalidade | Valor | Fase |
+### 3.1 As 10 melhorias
+| # | Proposta v1 | Decisão | Fundamento e nova forma |
 |---|---|---|---|
-| 1 | Objetivo diário e sequência de dias sem castigo | Hábito de estudo | F3 |
-| 2 | «Preparar teste» com data real e plano até ao dia | Ligação direta à escola | F3 |
-| 3 | Área do encarregado de educação (relatório, tema da semana, data do teste) | O adulto orienta sem estar ao lado | F6 |
-| 4 | Missões semanais geradas pelas competências fracas | Treina o que mais precisa | F3 |
-| 5 | Caderno de erros com revisão guiada («tenta outra vez daqui a 2 dias») | Usa o histórico que já existe | F3 |
-| 6 | «Explica de outra forma»: 2.ª explicação (exemplo ou desenho) depois de um erro | Desbloqueia sem frustração | F4 |
-| 7 | Constelação do campus (meta-objetivo das estrelas) | Progresso visível a longo prazo | F2 |
-| 8 | Leitura em voz alta das perguntas (opção) | Acessibilidade e cansaço de leitura | F2 |
-| 9 | Caderneta de cromos: figuras e lugares da HGP desbloqueados pelos 96 conhecimentos | Colecionar reforça a memória | F4 |
-| 10 | Desafio relâmpago de 60 s (revisão cronometrada e opcional) | Variedade e emoção | F3 |
-| 11 | Quarto do Abu decorável (só personalização, comprado com estrelas) | Novo destino para as estrelas | F3 |
-| 12 | Postal: foto da personagem com o Abu, guardada em PNG | Orgulho e partilha em família | F2 |
-| 13 | Retomar uma sessão interrompida | Tablets fecham-se a meio | F1 |
-| 14 | Tema escuro e modo de leitura confortável (fonte e espaçamento) | Conforto e acessibilidade | F2 |
-| 15 | Conquistas de aprendizagem (domínio de competência), com ecrã de troféus | Celebra o saber, não só as estrelas | F3 |
+| 1 | PNG → WebP/AVIF | MANTER (F4) | Custo baixo. Medir a abertura da sala de HGP antes e depois e comparar visualmente. Não bloqueia nada. |
+| 2 | Dividir bancos com `import()` | MELHORAR (F4) | O arranque já é aceitável. Fazer só se a medição num tablet real mostrar atraso percetível. |
+| 3 | `srcset` e pré-carregamento | MELHORAR (F4) | Junta-se à 2 numa tarefa guiada por medição. |
+| 4 | PWA | ADIAR para decisão em F4 | **Opcional na V1.0.** Um SW mal feito prende a criança a versões antigas, e um SW na raiz controlaria `/preview/*`. Só entra se passar 4 testes (1.ª instalação, sem rede, atualização, cache parcial). |
+| 5 | CSP em `<meta>` | MANTER (F4) | Defesa em profundidade. O GitHub Pages não permite cabeçalhos. Os `style=` inline obrigam a `style-src 'unsafe-inline'`; `frame-ancestors` não funciona em meta. |
+| 6 | Escape obrigatório | MELHORAR (F1, parcial) | Classificar as 53 escritas por origem dos dados; corrigir as que recebem dados guardados (incluindo `abu.ts:48`); testes dos percursos reais (alcunha, importação). Não reescrever tudo. |
+| 7 | 3 cópias rotativas | MELHORAR (F1) | Exportação completa (Save + perfil + `skills`), uma cópia contra corrupção, `storage.persist()` e lembrete de exportação. Recuperação testada. |
+| 8 | Tokens CSS e temas legados | MELHORAR (F3) | Confirmar usos antes de apagar (`theme.ts`, `theme-a/b/d.css`, `preview.ts`). Os previews publicados são builds separados. |
+| 9 | Transições e estados de botão | MANTER (F2/F3) | Entra na demonstração A/B de F2 e só é generalizado em F3 se resultar. |
+| 10 | Feedback imediato | MANTER (F2/F3) | Igual à 9. Vibração só em Android. |
+
+### 3.2 As 10 recomendações
+| # | Proposta v1 | Decisão | Fundamento |
+|---|---|---|---|
+| 1 | Sensação de jogo em tudo | MELHORAR | Demonstração A/B em F2, com a ordem das versões alternada. Generalizar em F3 só o que a criança preferir. Preferência por efeitos ≠ diversão duradoura. |
+| 2 | Áudio profissional | MELHORAR | Primeiro 6–8 efeitos para as ações-chave (F2/F3). Música por zona fica para depois. Proveniência obrigatória. |
+| 3 | Constelação | MELHORAR · ADIAR decisão | Ligada ao domínio de competências, não à moeda. Depende de `skills` ser exportável (F1). Só depois de validado o ciclo principal. |
+| 4 | Campus vivo | ADIAR | Decorativo. |
+| 5 | Primeiro minuto | MELHORAR | Só se F0 mostrar hesitação inicial. |
+| 6 | Sessões com arco | MELHORAR | A barra de progresso já existe [V]. Falta só a pergunta final destacada e um fecho em alta; entra na demonstração. |
+| 7 | Vozes gravadas | ADIAR | Custo de produção. A leitura `speechSynthesis` pt-PT varia por dispositivo [H]. |
+| 8 | UI ao nível de consola | MELHORAR | Integrada nos tokens e estados (F3). |
+| 9 | Dados de playtest locais | MELHORAR | `seen[]` só dá dias com respostas. Para mais, guardar no Save um registo mínimo de sessões (início, fim, modo, acertos), local e exportável, sem envio. O lembrete externo (se houve) é anotado pelo adulto. |
+| 10 | Pipeline de qualidade | MELHORAR | Orçamento de bundle e capturas de base só para 5 ecrãs-chave, com tolerância. |
+
+### 3.3 As 15 funcionalidades
+| # | Proposta v1 | Decisão | Fundamento |
+|---|---|---|---|
+| 1 | Objetivo diário e sequência | ADIAR decisão (F3) | **Não existe sequência de dias no código** [V]. O `mastery.streak` conta acertos seguidos e só ajusta a dificuldade (`core/mastery.ts:52`, `session.ts:55`); é positivo e mantém-se. A proposta de sequência de dias será decidida em F3 com o feedback da criança, distinguindo recompensa positiva de penalização por ausência. A alternativa preferida é o «objetivo desta sessão». |
+| 2 | Preparar teste com data | MANTER (F4) | Ligação à escola. O atalho já existe [V]; falta a data e o plano. |
+| 3 | Área do encarregado | ADIAR até haver uma decisão concreta que ajude | Quando vier, é um relatório só de leitura: estudado vs. dominado, dificuldades persistentes, matérias por trabalhar. Exige o registo de sessões e `skills` exportável. Sem diagnósticos. |
+| 4 | Missões semanais | MELHORAR → «sugestão do Abu» | Opcional, sem prazo, baseada nas competências fracas. |
+| 5 | Caderno de erros guiado | MANTER (F3) | `mistakes[]` existe [V]; liga-se ao Rever. |
+| 6 | «Explica de outra forma» | ADIAR | Exige uma 2.ª explicação validada por conceito. |
+| 7 | Constelação | ADIAR decisão | Ver recomendação 3. |
+| 8 | Leitura em voz alta | ADIAR | Testar vozes pt-PT nos dispositivos reais primeiro. |
+| 9 | Cromos HGP | ADIAR | Arte nova; avaliar depois do piloto. |
+| 10 | Desafio relâmpago | ADIAR | Risco de ansiedade. |
+| 11 | Quarto do Abu | DESCARTAR (V1.0) | Novo pipeline de arte e mais economia sem valor educativo. |
+| 12 | Postal PNG | ADIAR | Bom candidato depois da V1.0. |
+| 13 | Retomar sessão | MANTER · antecipar se F0 mostrar interrupções | Problema real em tablets. |
+| 14 | Tema escuro / modo leitura | DESCARTAR o escuro · MANTER o modo leitura (F3) | As cenas raster foram feitas para fundo claro. |
+| 15 | Conquistas de aprendizagem | ADIAR decisão | Junta-se à constelação. |
+
+### 3.4 Acrescentado
+| Item | Porquê |
+|---|---|
+| **Piloto «aprender jogando»** (F2) | Tudo hoje é formato de questionário [V]. É a pergunta mais importante do projeto. |
+| **Exportação completa** (F1) | `skills` perde-se na exportação e na importação [V]. É a base da proteção do progresso. |
+| **Política para artigos desconhecidos** (F1) | Aceites pelo esquema e com falha na renderização [V]. Renderização tolerante que preserva os artigos (compatível com versões futuras). |
+| **Revisão da economia de recompensas** (F0/F3) | Os artigos mensais só vêm de testes com ≥80% [V]. Observar se isso leva a evitar dificuldades; experimentar reconhecer a prática e a revisão. |
+| **Revisão pedagógica dos tutores** (F2/F4) | Lições `needs-human-review` [V]. |
+| **Acessibilidade antes do piloto** (F2) | Não fica concentrada no lançamento. |
+| **Migração da raiz** (F4) | Namespace fixado no arranque [V]. |
+| **Origem partilhada** (risco) | Todos os projetos GitHub Pages da conta partilham origem, quota e apagamento. Subdomínio próprio = custo e decisão futura. |
 
 ---
 
-## Decisão
-1. Aprovar este roteiro como plano v2 (feito com `seal --motivo` no `PROJECT_STATE.md`).
-2. Autorizar o início de F1 antes do feedback da criança. F1 não acrescenta conteúdo, por isso não viola a regra «não expandir antes da avaliação».
+## 4. Fases por dependências
+
+```
+F0 Observar V3 ─► F1 Proteger o progresso (mínimo) ─► F2 Piloto + demo A/B ─► DECISÃO avançar/ajustar/abandonar
+                                                                                   │
+              ┌────────────────────────────────────────────────────────────────────┘
+              ▼
+F3 Generalizar o que provou ─► F4 Conteúdo prioritário + técnica de lançamento ─► F5 V1.0
+```
+Regras:
+- Uma fase grande de cada vez.
+- F1 pode correr antes ou em paralelo com F0: é pequena e protege a jogadora.
+- CSP, imagens e PWA não bloqueiam a observação e passam para F4.
+
+### F0 — Observar a V3
+- **Resultado:** 1 sessão observada (20–25 min) registada em `docs/playtest/` (protocolo na secção 6).
+- **Aceitação:**
+  - registo com 4 colunas separadas;
+  - 3 problemas e 3 momentos positivos;
+  - nota sobre recompensas (escolhe Teste para ganhar artigos? reação ao erro?) e sobre interrupções;
+  - escolha da hipótese de piloto (museu/linha do tempo vs. mapa).
+- **Arrumação:** corrigir T3.1 e T3.2 no estado; tirar `bash.exe.stackdump` do Git.
+
+### F1 — Proteger o progresso (mínimo)
+1. Exportação e importação completas: Save + perfil + `skills`, com precedência explícita e compatibilidade com ficheiros antigos.
+2. Política para artigos desconhecidos: preservados no Save e renderização tolerante (`collection-ui.ts:27` e equivalentes).
+3. Classificar as 53 escritas de HTML; escapar as que recebem dados guardados (incluindo `abu.ts:48`); testes e2e nos percursos reais.
+4. Uma cópia de recuperação contra corrupção, `storage.persist()` e lembrete discreto de exportação (é a única mudança visível).
+5. Estabilizar os 2 testes instáveis se interferirem com a verificação.
+
+**Aceitação:** testes novos falham sem a correção; ida e volta exportar → apagar → importar mantém Save, perfil e `skills`; Save corrompido → recuperado; importação inválida → nada se perde; `tsc`, unitários e e2e verdes; consola limpa nos 3 viewports.
+
+### F2 — Piloto «aprender jogando» e demonstração A/B
+**Piloto (hipótese a escolher em F0):**
+- **A — «Exposição do museu» (recomendada):** a criança escolhe uma pista, coloca um acontecimento no sítio certo da exposição e vê a cena mudar (descoberta).
+  - Comparar com ordenar simples. Base: as sequências curtas da fábrica, começando pelas reformas do ensino (`xviii.reasoning.ts`), filtradas pela elegibilidade (`xviii.validation.ts:12`).
+  - **Separar cronologia de causalidade** e rever as relações à mão.
+  - Excluir sequências com datas fora do século (ex.: Clérigos, 1996).
+- **B — Percurso de descoberta no mapa:** 3 locais (`pt-map.ts` e as tarefas de localização existentes). Exige alvos táteis e navegação acessível.
+
+**Ficha obrigatória:** objetivo educativo · ação · feedback · sucesso · falha · revisão (entra em Rever) · testes · evidência de interesse.
+
+**Demonstração A/B de sensação de jogo (mesma sessão com a criança, ordem alternada):** numa sessão de Estudar, comparar a versão atual com uma versão que tem transição de ecrã, feedback animado e sonoro desenhado, pergunta final destacada e resultado com contagem animada. Ativa com `?feel=2`. Respeita movimento reduzido, volume e silêncio.
+
+**Antes do teste com a criança:**
+- revisão humana do conteúdo do piloto;
+- teclado, contraste e movimento reduzido verificados no piloto;
+- 3 viewports e testes automáticos verdes.
+
+**Aceitação:**
+- piloto jogável de ponta a ponta;
+- sessão observada [C] com tarefas definidas (duração, ajuda necessária, se escolhe continuar);
+- **decisão registada:** avançar / ajustar / abandonar.
+
+### F3 — Generalizar o que provou
+- Aplicar a sensação de jogo escolhida; tokens CSS; remover o código de temas sem uso; estados de componente; modo leitura; retomar sessão; caderno de erros ligado ao Rever.
+- Replicar a mecânica aprovada no máximo uma vez por disciplina, com ficha.
+- Economia: ajustar se F0/F2 mostrarem que leva a evitar dificuldades (ex.: reconhecer prática e revisão sem exigir nota alta, mantendo o anti-repetição).
+- Coleções de 2027-02 a 2027-06 **só se houver interesse observado** [C].
+- **Aceitação:** sem regressões (e2e e capturas dos 5 ecrãs-chave), revisão visual nos 3 viewports, 2.ª sessão observada [C].
+
+### F4 — Conteúdo prioritário e técnica de lançamento
+1. **Conteúdo por competências prioritárias e lacunas, não por número de temas.** Matriz AE do ano por disciplina, com cada competência marcada coberta / parcial / ausente. Português primeiro (leitura e compreensão, ortografia). Revisão humana de amostras e das lições dos tutores. HGP: os 7 pendentes e a hierarquia (precisa das fotografias do índice) [R].
+2. «Preparar teste» com data.
+3. Registo mínimo de sessões no Save (base para um relatório futuro).
+4. Técnica: PNG → WebP/AVIF; CSP; divisão do bundle se a medição justificar; PWA opcional ensaiada num preview.
+5. Migração da raiz ensaiada num preview: ler as chaves `eda-e` (perfil, Save, `skills`), com precedência explícita, cópia antes de substituir e reversão documentada.
+
+**Aceitação:** matriz AE publicada no repositório; testes de conteúdo verdes; ensaios de migração (e de PWA, se incluída) com sucesso num preview; medições antes/depois registadas.
+
+### F5 — Lançamento V1.0
+Revisão independente (por quem não implementou a parte revista), acessibilidade, sessão final com a criança, publicação na raiz **com autorização**, v0.1 arquivada, tag `v1.0`, confirmação no URL público.
+
+**Fora da V1.0:** Ciências, Inglês, campus vivo, vozes, cromos, desafio relâmpago, postal, quarto do Abu, tema escuro, área do encarregado completa, subdomínio próprio.
+
+---
+
+## 5. Aceitação e publicação (todos os blocos)
+1. Testes pertinentes verdes; os novos falham sem a correção.
+2. Navegador em 390×844, 820×1180 e 1280×800; consola limpa.
+3. Save, perfil e `skills` preservados (teste de migração quando o formato muda).
+4. Revisão proporcional ao risco; commit e tag.
+
+Pré-visualização: build verde, novo `preview/e-*` (ou `preview/e` **com backup**), autorização, confirmação no URL público e registo no estado.
+
+---
+
+## 6. Testes com a criança
+**Protocolo (20–25 min, no máximo 1 sessão por bloco):**
+1. «Este é o jogo. Faz o que te apetecer.» Não dar mais instruções.
+2. 10 min de observação em silêncio:
+   - o que escolhe primeiro;
+   - hesitações de mais de 5 s;
+   - o que procura;
+   - se lê o feedback;
+   - expressões.
+3. 2 tarefas naturais: «Estuda um bocadinho de uma matéria que tenhas teste» e «Mostra-me o que ganhaste».
+4. 3 perguntas no fim: «O que foi mais giro?», «O que foi chato ou confuso?», «Voltavas amanhã?».
+5. Nos dias seguintes, o adulto anota se ela voltou e se houve lembrete. O Save só mostra os dias com respostas.
+
+**Registo:** observado · dito pela criança · interpretação do adulto · hipóteses dos agentes.
+
+**A/B:** alternar a ordem das versões; registar escolha, tempo e se pede para repetir.
+
+**Regras:**
+- Um problema na experiência principal é corrigido antes de qualquer funcionalidade periférica.
+- Uma sessão positiva não prova retenção.
+- 3 dias de uso por quinzena é um limiar experimental, não uma prova.
+
+Modelo adaptado do `playtest-report` do Claude-Code-Game-Studios (lido, não instalado).
+
+---
+
+## 7. Produção Claude/Codex e skills
+| Papel | Quem |
+|---|---|
+| Planear, definir critérios, verificar de forma independente (diff, testes, navegador), medir, publicar com autorização | Claude |
+| Implementar blocos com âmbito fechado e testes; rever planos de forma construtiva | Codex (`codex:codex-rescue`) |
+| Auditoria independente | Codex só em partes que não implementou, ou um revisor local (`typescript-reviewer`, `security-reviewer`) |
+
+**Skills:**
+- **Claude-Code-Game-Studios** (MIT; 49 agentes, 72 skills): **não instalar.** Depende de hooks próprios (`yaml-helper.sh`), da estrutura `design/gdd/` e de «director gates», tudo desproporcionado. Usado como referência:
+  - `playtest-report` (secção 6);
+  - veredicto do `vertical-slice` (avançar / pivotar / abandonar, em F2);
+  - divisão do `team-polish` (performance, arte técnica, som, QA) como lista de verificação em F3.
+- **Instaladas e úteis:** `ui-ux-pro-max` (F3), `security-review` (F1), `e2e-testing`, `verification-before-completion`.
+
+**Limites:** 1 bloco de cada vez; 2 chamadas Codex por bloco, mais 1 só com defeito confirmado; Git e publicação pelo Claude quando o sandbox do Codex não o permitir.
+
+---
+
+## 8. Critérios de lançamento da V1.0
+1. **Diversão observada:** pelo menos 2 sessões observadas em que a criança escolhe continuar sem pedido do adulto. Uso por iniciativa própria em pelo menos 3 dias de uma quinzena, anotado pelo adulto e confirmado no Save [C].
+2. **Piloto:** decisão «avançar» registada e mecânica replicada onde aprovada.
+3. **Conteúdo:** matriz AE com estado por competência nas 3 disciplinas; 0 ambiguidades conhecidas; amostras e lições dos tutores revistas por um adulto.
+4. **Técnico:** testes verdes; LCP ≤ 2,5 s em Fast 3G (medido); peso das imagens justificado por medição no dispositivo; consola limpa; CSP ativa.
+5. **Dados:** exportação completa testada; recuperação de corrupção testada; migração da raiz ensaiada; PWA só se passar os 4 testes.
+6. **Acessibilidade:** teclado, contraste AA, movimento reduzido, tamanho de texto, sem informação só por cor.
+7. **Revisão independente** registada e defeitos críticos corrigidos.
+8. **Reversão:** v0.1 e V3 recuperáveis (tags e backups).
+
+Ter todos os itens marcados **não** chega para declarar a V1.0.
+
+---
+
+## 9. Riscos e recuperação
+| Risco | Mitigação |
+|---|---|
+| A V3 ou o piloto não interessam | F0 e F2 decidem antes de construir; abandonar é um resultado válido. |
+| Perda de progresso | Exportação completa, lembrete, cópia contra corrupção, `persist()`, migração ensaiada. |
+| Recompensas levam a evitar dificuldades | Observação em F0/F2; ajuste em F3. |
+| PWA presa a versões antigas | Opcional, num preview, âmbito restrito ao caminho e aviso de atualização. |
+| Origem partilhada | Aceite na V1.0. |
+| Conteúdo errado apresentado como certo | Só `content/` validado; «a confirmar» fora das sessões; revisão humana; cronologia ≠ causalidade. |
+| Excesso de estímulos | Efeitos só com função; movimento reduzido; observação. |
+| Regressões | e2e, capturas de 5 ecrãs, tags por bloco, backups `preview/e-prov*`. |
+| Âmbito a crescer | Lista «fora da V1.0»; mudar âmbito só com `seal --motivo`. |
+
+---
+
+## 10. Primeiro bloco recomendado: **F1 — Proteger o progresso**
+**Porquê:** é pequeno, independente da criança e corrige uma falha confirmada: a exportação perde `skills` e a importação apaga-os. Protege a jogadora antes de novos testes. Estimativa: 1 bloco Codex + verificação; a dimensão real será confirmada na revisão do plano do bloco.
+**Âmbito:** `src/core/save.ts`, `src/app/store.ts`, `src/app/extras/options.ts`, `src/app/collection-ui.ts`, `src/art/d/abu.ts`, as escritas de HTML classificadas como risco, testes em `tests/`.
+**Fora do âmbito:** UI nova (exceto o lembrete), conteúdo, CSP, imagens, PWA, publicação.
+**Em paralelo (produtor):** marcar a sessão F0 com a V3.
+
+---
+
+## 11. Decisões
+**Tomadas (2026-11-09):** o roteiro v2 orienta a produção; F1 está autorizada; a publicação em `preview/e/` está autorizada se os critérios forem cumpridos.
+
+**Pendentes (produtor):**
+1. Âmbito pós-demo no `PRODUCT_CONTRACT.md` (V1.0 com Matemática, Português e HGP).
+2. Sequência de dias, missões e coleções futuras: decididas em F3, com o feedback da criança.
+
+---
+
+## 12. Revisão crítica do Codex (2026-11-09, só leitura)
+Pontos aceites e integrados, todos reconfirmados no código pelo Claude:
+- contagem 33 + 20;
+- `skills` fora da exportação;
+- limites de `seen[]`;
+- falha condicional com ids desconhecidos;
+- namespace fixado no arranque;
+- barra de progresso e som de 2 notas já existentes;
+- suporte a sequências na fábrica (excluir Clérigos 1996; cronologia ≠ causalidade);
+- recompensas só por testes com ≥80%;
+- divergência com o contrato;
+- piloto antes do polimento;
+- critérios por competências, não por número de temas;
+- PWA opcional;
+- acessibilidade e revisão do conteúdo antes do piloto.
+
+Ajustado: a demonstração A/B de sensação de jogo mantém-se, porque o produtor a pediu explicitamente, mas passa a correr na mesma sessão do piloto e não o bloqueia.
+Rejeitado: nada de substancial.
+Não verificado: o namespace `eda-e` publicado não foi relido no `gh-pages` nesta revisão.

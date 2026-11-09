@@ -1,44 +1,38 @@
 Projeto: Estrelas do Abu
-Plano: v1
-Atualizado: 2026-11-03
-Âmbito: 30a8cd81
-Objetivo: Demo vertical jogável (Matemática + Português, 6.º ano) publicada e pronta para teste real com a criança
-Próximo passo: recolher o feedback da criança sobre a V3 (preview/e/); nada novo a implementar antes. Ver .claude/tmp/handoff.md.
-Decisão necessária:
+Plano: v2
+Atualizado: 2026-11-09
+Âmbito: 391dd209
+Objetivo: V1.0 jogável e fiável para o ano letivo (Matemática, Português, HGP), com diversão observada na criança antes de expandir — orientado por docs/ROADMAP.md (v2)
+Próximo passo: F1 — proteger o progresso (exportação/importação completas com skills, artigos desconhecidos tolerados, recuperação); produtor marca sessão F0 com a V3.
+Decisão necessária: âmbito pós-demo no PRODUCT_CONTRACT.md (3 disciplinas na V1.0); sequência de dias (não existe no código) fica para F3 com feedback da criança.
 
 ## Sucesso
-- Demo jogável publicada, testada em 3 viewports, sem erros de consola, com revisão Codex registada; expansão parada à espera da criança
+- Critérios de lançamento da secção 8 de docs/ROADMAP.md cumpridos com evidência (diversão observada, conteúdo com matriz AE, dados protegidos, testes, acessibilidade, revisão independente); marcar itens não basta
 
-## E1 — Base
-### T1.1 · peso 1 · Concluída · Contrato, repo e scaffold
-- [x] Repo Git próprio e documentos de contrato/instruções criados | ev: git init + PRODUCT_CONTRACT.md
-- [x] Vite+TS+Vitest+Playwright a correr com build verde | ev: npm run build; npm test (51); npx playwright test (9 em 3 viewports) — 2026-10-30
+## E0 — F0 · Observar a V3
+### T0.1 · peso 2 · Por iniciar · Sessão observada com a criança
+- [ ] Registo em docs/playtest/ com 4 colunas (observado/dito/interpretação/hipóteses) e escolha da hipótese de piloto | ev:
 
-## E2 — Núcleo educativo
-### T2.1 · peso 3 · Concluída · Motor de exercícios, correção, nota, adaptação e revisão espaçada
-- [x] Tipos de exercício (escolha múltipla, numérico/escrito, ordenar/associar, completar) com correção testada | ev: npm test: 1044 passados (2026-11-01); tests/core; docs/hgp/fabrica/validacao-v2.md
-- [x] Nota 0–20, repetição evitada, dificuldade por competência, revisão espaçada testados | ev: tests/core/skills-v2.test.ts; identity-v2.test.ts; e2e 48 passados/3 ignorados + V2 3 passados nos três viewports (2026-11-01)
+## E1 — F1 · Proteger o progresso
+### T1.1 · peso 2 · Em curso · Exportação/importação completas e recuperação
+- [ ] Exportar→apagar→importar preserva Save, perfil e skills; ficheiros antigos aceites; inválidos sem perda; ids desconhecidos tolerados; testes falham sem a correção | ev:
+- [ ] Publicado em preview/e com backup, verificado no URL público em 3 viewports | ev:
 
-### T2.2 · peso 3 · Por iniciar · Conteúdo 6.º ano Matemática e Português verificado
-- [ ] Temas ligados às Aprendizagens Essenciais DGE, respostas verificadas | ev:
+## E2 — F2 · Piloto «aprender jogando» + demo A/B
+### T2.1 · peso 3 · Por iniciar · Piloto e decisão avançar/ajustar/abandonar
+- [ ] Piloto jogável, conteúdo revisto, sessão observada e decisão registada | ev:
 
-## E3 — Jogo e arte
-### T3.1 · peso 3 · Por iniciar · Arte SVG: personagem modular, Abu animado, mapa, salas
-- [ ] Estilo coerente, tons de pele diversos, Abu com animações | ev:
+## E3 — F3 · Generalizar o que provou
+### T3.1 · peso 3 · Por iniciar · Sensação de jogo, tokens, motivação saudável
+- [ ] Sem regressões; 2.ª sessão observada | ev:
 
-### T3.2 · peso 3 · Por iniciar · Fluxo completo: boas-vindas, perfil, mapa, salas, resultados, loja, opções
-- [ ] Percurso de 14 passos do contrato executável sem becos | ev:
+## E4 — F4 · Conteúdo prioritário e técnica de lançamento
+### T4.1 · peso 3 · Por iniciar · Matriz AE, conteúdo, migração da raiz ensaiada
+- [ ] Matriz AE publicada; migração (e PWA, se incluída) ensaiadas em preview | ev:
 
-## E4 — Validação
-### T4.1 · peso 2 · Concluída · Testes e revisão visual em 3 viewports
-- [x] Build, unitários, e2e verdes; capturas inspecionadas; consola limpa | ev: docs/hgp/fabrica/validacao-v2.md: build/tsc; 1044 unitários; 48 e2e + 3 V2; 3 ignorados exigem modo hgp-e2e; capturas V2 inspecionadas e pageerror vazio
-
-### T4.2 · peso 1 · Por iniciar · Revisão independente do Codex pós-demo
-- [ ] Revisão feita ou registada como pendente com motivo | ev:
-
-## E5 — Entrega
-### T5.1 · peso 1 · Bloqueado · Publicação isolada e relatório final
-- [ ] URL pública (com autorização) e relatório; expansão parada | ev:
+## E5 — F5 · Lançamento V1.0
+### T5.1 · peso 1 · Bloqueado · Publicação na raiz (com autorização)
+- [ ] Critérios da secção 8 do roteiro cumpridos | ev:
 
 ## Decisões
 - Arte própria em SVG em vez de pacotes de terceiros (coerência, tons de pele, sem licenças) — a confirmar após pesquisa de ativos.
@@ -84,3 +78,6 @@ Decisão necessária:
 - 2026-11-03: V3 PUBLICADA (autorização expressa do produtor). Blocos A (4a14578, v3-bloco-a), B (4863189, v3-bloco-b), C (cfc9d14, v3-bloco-c, v3-visual-recompensas); push feito. gh-pages 48adabd: preview/e = V3, backup preview/e-prov7 (V2), armazenamento eda-e. Verificado no URL público (3 viewports): carrega sem erros e fluxo teste→nota→sorteio→guardar→equipar passa 9/9. Checkpoint pré-V3: v3-checkpoint-pre-2026-11-02. Limitações: capturas visuais por amostra (não todo o produto cartesiano); sem teste com a criança; 3 coleções preparadas (2026-11, 2026-12, 2027-01), depois «indisponível»; anti-exploração não protege contra alterar relógio/storage; gamePack.test.ts instável (timeout subido 15→60 s).
 
 - 2026-11-03 (fecho V3): confirmado no código: A) cabelo traseiro/frontal separados, olhos antes da franja, cintura/mangas/calçado com ancoragem, resolvedor de compatibilidade sem apagar artigos; B) 103 artigos (52 novos), 7 variantes de rosto, roupa de Abu em 9 poses, abuPrize com movimento reduzido; C) coleções 2026-11/2026-12/2027-01, grelha 4x4, escalões 4/3/1/0, mínimo 10 perguntas distintas, idempotência por tentativa, Save v3 compatível com v1/v2. Validações já executadas na sessão V3 (não repetidas no fecho): tsc, 1073 unit, build, e2e 69 ok/3 ignorados (exigem build hgp-e2e), URL público 3 viewports e fluxo completo 9/9. Tag checkpoint-v3-fechada-2026-11-03 (código publicado cfc9d14). Pendências: feedback da criança; combinações visuais por testar; miniaturas Abu; coleções futuras só com decisão; relógio/storage manipuláveis (aceite).
+
+- 2026-11-09 (análise, só documental): roteiro v1 (commit 9c48c53) revisto criticamente com contraditório do Codex → docs/ROADMAP.md v2, adotado pelo produtor como guia de produção (cada fase com critérios próprios; funcionalidades não aprovadas em bloco). Factos verificados: raiz gh-pages = demo v0.1, V3 em preview/e; branch redesign/art-v1 à frente da main; arranque medido (Fast 3G, 390×844, sem perfil) 583 KB transferidos, LCP 2,9 s, 0 erros; PNG de 2,2–2,3 MB só carregam na sala HGP/tutor Tomé; alcunha escapada e Save importado validado (sem caminho de injeção encontrado nos innerHTML); sem SW/manifest/storage.persist; modos no código = Estudar/Teste/Rever. Plano v1 (demo): E1–E4 entregues e publicadas (V3 em preview/e); T2.2 (revisão docente) e T4.2 transitam para F4/F5. Nenhum código funcional nem versão pública alterados.
+- v2 (2026-11-09): roteiro v2 (docs/ROADMAP.md) adotado como guia até à V1.0; demo v1 entregue
