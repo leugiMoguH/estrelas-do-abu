@@ -324,3 +324,64 @@ Pontos aceites e integrados, todos reconfirmados no código pelo Claude:
 Ajustado: a demonstração A/B de sensação de jogo mantém-se, porque o produtor a pediu explicitamente, mas passa a correr na mesma sessão do piloto e não o bloqueia.
 Rejeitado: nada de substancial.
 Não verificado: o namespace `eda-e` publicado não foi relido no `gh-pages` nesta revisão.
+
+---
+
+## 13. Atualização 2026-11-09 (2) — requisitos do produtor após uso real
+
+Origem: observação do produtor no uso real (mapa, disciplinas, minijogo, Inglês). Ainda não substitui a sessão F0 com a criança.
+
+### Nova ordem (substitui a sequência F2→F3 para os próximos blocos)
+| Bloco | Âmbito | Relação com o v2 | Estado |
+|---|---|---|---|
+| **A** | Remover as molduras amarelas do mapa, mantendo o foco por teclado | Correção pontual (pilar C) | **Feito e publicado** (`e24b8cc`, `preview/e`) |
+| **B** | Português e Matemática com a estrutura da HGP: disciplina → capítulos → subcapítulos → Estudar/Teste/Rever, num único motor | Antecipa a parte estrutural de F4; conteúdo novo continua em F4 | Próximo |
+| **C** | Investigação de até 50 jogos → shortlist de 10 → 3 finalistas → **1 piloto** isolado | Substitui e alarga o piloto F2 (a «exposição do museu» passa a ser candidata em C) | Por iniciar |
+| **D** | Inglês: investigação comparativa + currículo + **1 vertical slice** | Nova disciplina (decisão de contrato abaixo) | Por iniciar |
+
+As investigações de C e D podem correr em paralelo. As implementações são uma de cada vez. Nada de biblioteca de jogos nem de curso de Inglês antes de validar os pilotos com a criança.
+
+### Critérios de aceitação
+**B — Coerência curricular**
+1. Uma estrutura comum (generalizar `content/historia/estrutura.ts`), não três motores.
+2. Matemática e Português com capítulos e subcapítulos derivados das AE oficiais (`docs/curriculo/src/6_matematica.txt`, `6_portugues.txt`). Cada subcapítulo marcado com o seu estado: com exercícios / só lição / em preparação.
+3. A seleção por subcapítulo não mistura matérias não selecionadas (teste automático).
+4. O conteúdo e os geradores atuais são reaproveitados e mapeados. Nada é apagado.
+5. Português com os 5 domínios (Leitura, Educação literária, Gramática, Escrita, Oralidade) visíveis. Escrita e Oralidade aparecem como «em preparação» ou com tarefas honestas, nunca como «avaliadas» por escolha múltipla.
+6. Progresso, `skills` e Save preservados (teste de migração).
+7. e2e nos 3 viewports e capturas inspecionadas.
+
+**C — Jogos auxiliares**
+1. Tabela de investigação com fonte verificável por jogo, distinguindo «experimentado» de «visto em documentação ou vídeo», e licença quando houver intenção de reutilizar.
+2. Shortlist de 10, com os critérios do produtor pontuados.
+3. 3 finalistas de géneros diferentes.
+4. 1 piloto com objetivo claro, controlo tátil, curva de dificuldade, vitória ou derrota, áudio opcional, movimento reduzido e um recorde pessoal.
+5. Piloto publicado isolado (ex.: `preview/jogos-1/`, armazenamento próprio). Fica numa secção «Jogos» fora do mapa escolar.
+6. Sessão com a criança antes de um 2.º jogo.
+
+**D — Inglês**
+1. Comparação documentada (Duolingo e mais 3 plataformas), com estudos independentes citados e os limites identificados. Sem afirmar superioridade.
+2. Matriz AE do 6.º ano de Inglês ↔ QECR (só onde se justifica), com 4 estados por competência.
+3. Relatório de capacidades de áudio: TTS, reconhecimento de fala (Chrome, Safari, Android), offline e privacidade. **Microfone opcional; nenhum áudio da criança enviado para fora** sem decisão do produtor.
+4. Vertical slice: 1 objetivo curricular, 1 mecânica (ex.: mistério com pistas ou conversa com consequências), compreensão e uso ativo do inglês, feedback pedagógico, dificuldade progressiva, medida antes/depois em tarefas **equivalentes, não repetidas**.
+5. Publicado isolado e testado com a criança antes de expandir.
+
+### Divisão Claude / Codex
+| Trabalho | Quem | Nota |
+|---|---|---|
+| B: inventário do conteúdo + plano de estrutura | Codex (só leitura) → Claude decide | |
+| B: implementação e testes | Codex | Claude verifica: diff, testes, capturas, Save |
+| C e D: investigação web | Codex **se o sandbox tiver rede**; senão, agente de investigação do Claude | Já houve bloqueio de rede no Codex [R] |
+| C e D: síntese, shortlist, escolha de finalistas | Codex propõe, Claude avalia criticamente | O produtor aprova os finalistas |
+| C e D: pilotos | Codex implementa; Claude verifica e publica | Phaser só como chunk isolado do piloto, se justificar; nunca migrar a app |
+| Auditoria independente | Revisor que não implementou | |
+
+### Riscos novos
+- **Fala:** o reconhecimento de fala do Chrome usa, por omissão, um serviço remoto [H, a confirmar em D]. Pode implicar envio de áudio de uma menor.
+- **Âmbito:** 4 disciplinas ativas mais uma secção de jogos aumentam muito a manutenção. Os pilotos servem para cortar cedo o que não interessa.
+- **Índices dos manuais:** não existem no repositório para Matemática e Português. Sem eles, a estrutura segue as AE e não a ordem do manual da escola.
+
+### Decisões do produtor (novas)
+1. **Inglês como disciplina ativa** → atualizar o `PRODUCT_CONTRACT.md` (passa a haver 4 disciplinas e uma secção de jogos).
+2. **Índices dos manuais de Matemática e Português** (fotografias) para alinhar os capítulos com a escola. Sem eles, seguem-se as AE.
+3. **Finalistas de C:** aprovação dos 3 antes do piloto.

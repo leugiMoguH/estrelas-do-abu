@@ -3,8 +3,8 @@ Plano: v2
 Atualizado: 2026-11-09
 Âmbito: 391dd209
 Objetivo: V1.0 jogável e fiável para o ano letivo (Matemática, Português, HGP), com diversão observada na criança antes de expandir — orientado por docs/ROADMAP.md (v2)
-Próximo passo: sessão observada F0 com a V3+F1 (preview/e/) → escolher hipótese do piloto F2; sem implementar F2 antes do registo F0.
-Decisão necessária: âmbito pós-demo no PRODUCT_CONTRACT.md (3 disciplinas na V1.0); sequência de dias (não existe no código) fica para F3 com feedback da criança.
+Próximo passo: Bloco B (Português e Matemática com a estrutura da HGP) — Codex inventaria (só leitura), Claude decide o plano; investigação C/D em paralelo. Ver docs/ROADMAP.md §13.
+Decisão necessária: Inglês como disciplina ativa (atualizar contrato); índices dos manuais de Mat/Port (fotografias); âmbito pós-demo no contrato.
 
 ## Sucesso
 - Critérios de lançamento da secção 8 de docs/ROADMAP.md cumpridos com evidência (diversão observada, conteúdo com matriz AE, dados protegidos, testes, acessibilidade, revisão independente); marcar itens não basta
@@ -82,3 +82,4 @@ Decisão necessária: âmbito pós-demo no PRODUCT_CONTRACT.md (3 disciplinas na
 - 2026-11-09 (análise, só documental): roteiro v1 (commit 9c48c53) revisto criticamente com contraditório do Codex → docs/ROADMAP.md v2, adotado pelo produtor como guia de produção (cada fase com critérios próprios; funcionalidades não aprovadas em bloco). Factos verificados: raiz gh-pages = demo v0.1, V3 em preview/e; branch redesign/art-v1 à frente da main; arranque medido (Fast 3G, 390×844, sem perfil) 583 KB transferidos, LCP 2,9 s, 0 erros; PNG de 2,2–2,3 MB só carregam na sala HGP/tutor Tomé; alcunha escapada e Save importado validado (sem caminho de injeção encontrado nos innerHTML); sem SW/manifest/storage.persist; modos no código = Estudar/Teste/Rever. Plano v1 (demo): E1–E4 entregues e publicadas (V3 em preview/e); T2.2 (revisão docente) e T4.2 transitam para F4/F5. Nenhum código funcional nem versão pública alterados.
 - v2 (2026-11-09): roteiro v2 (docs/ROADMAP.md) adotado como guia até à V1.0; demo v1 entregue
 - 2026-11-09: F1 PUBLICADO (autorização expressa). Código 6c84e87 (tags f1-checkpoint-pre-2026-11-09 → 9efb963, f1-progresso-2026-11-09), push feito; gh-pages af4ee13 (preview/e = F1, backup preview/e-prov8). Codex implementou; Claude verificou, corrigiu aviso de recuperação persistente (trivial) e corrida no teste e2e. Limitações: sem teste em dispositivos físicos; apagamento do Safari não é coberto pela cópia interna (só pelo ficheiro exportado).
+- 2026-11-09: Bloco A PUBLICADO — molduras amarelas permanentes do mapa D removidas (eram decoração map-ring #ffcf65, não foco); hover só com rato; foco por teclado tracejado branco sem outline duplicado. Código e24b8cc (tags blocoA-checkpoint-pre-2026-11-09, blocoA-mapa-2026-11-09); gh-pages fc7d5b2 (backup preview/e-prov9). Verificado: 1090 unit; e2e foco/demo/hgp/abu 36 ok/3 ignorados; URL público 3 viewports, teclado Enter abre sala, 0 erros; raiz intacta. Roteiro §13: novos blocos B (coerência curricular), C (jogos), D (Inglês). Implementado pelo Claude (correção trivial de 3 linhas; sem Codex).
