@@ -1,7 +1,7 @@
 ﻿import type { Difficulty, ExerciseTemplate } from '../../src/core/content';
 import type { Exercise } from '../../src/core/types';
 import type { Topic } from '../index';
-import { base, fmt, numericAnswer, random, template } from './shared';
+import { base, fmt, plural, numericAnswer, random, template } from './shared';
 
 type Case = { prompt: string; value: number; wrong: number; rule: string };
 const read = (ex: Exercise, pattern: RegExp): number[] => {
@@ -25,8 +25,8 @@ const dimensions = (seed: number, d: Difficulty) => { const r = random(seed); re
 const circle = (id: string, mode: 'perimetro' | 'area' | 'raio' | 'diametro') => exercise(`circ-${id}`, 'circulo', id, mode === 'raio' ? 'cloze' : 'numeric', (seed, d) => {
   const r = random(seed), radius = r(2, 30 * d), count = r(1, 12 * d);
   const diameter = radius * 2, perimeter100 = 628 * radius;
-  const prompt = mode === 'perimetro' ? `Uma roda tem diâmetro ${diameter} cm. Rola sem deslizar durante ${count} voltas completas. Que distância percorre, em cm?`
-    : mode === 'area' ? `Cada mesa redonda tem diâmetro ${diameter} dm. Há ${count} mesas iguais na cantina. Qual é a área total dos tampos, em dm²?`
+  const prompt = mode === 'perimetro' ? `Uma roda tem diâmetro ${diameter} cm. Rola sem deslizar durante ${count} ${plural(count, 'volta completa', 'voltas completas')}. Que distância percorre, em cm?`
+    : mode === 'area' ? `Cada mesa redonda tem diâmetro ${diameter} dm. Há ${count} ${plural(count, 'mesa igual', 'mesas iguais')} na cantina. Qual é a área total dos tampos, em dm²?`
     : mode === 'raio' ? `Uma pista circular tem diâmetro ${diameter} m. Qual é o raio, em m?`
     : `Uma pista circular tem perímetro ${fmt(perimeter100 / 100)} m. Qual é o diâmetro, em m?`;
   const value = mode === 'perimetro' ? perimeter100 * count / 100 : mode === 'area' ? 314 * radius * radius * count / 100 : mode === 'raio' ? radius : diameter;
@@ -43,7 +43,7 @@ const circle = (id: string, mode: 'perimetro' | 'area' | 'raio' | 'diametro') =>
 }, ex => {
   if (mode === 'raio') { const [diam = 0] = read(ex, /diâmetro ([\d,]+) m/u); return diam / 2; }
   if (mode === 'diametro') { const m = ex.prompt.match(/perímetro ([\d,]+) m/u)!; return cents(m[1]!) / 314; }
-  const [diam = 0, count = 0] = read(ex, mode === 'area' ? /diâmetro (\d+) dm\. Há (\d+) mesas/u : /diâmetro (\d+) cm\..*durante (\d+) voltas/u);
+  const [diam = 0, count = 0] = read(ex, mode === 'area' ? /diâmetro (\d+) dm\. Há (\d+) mesas?/u : /diâmetro (\d+) cm\..*durante (\d+) voltas?/u);
   return mode === 'area' ? 314 * (diam / 2) ** 2 * count / 100 : 314 * diam * count / 100;
 });
 const anglePair = (supplement: boolean) => exercise(supplement ? 'ang-suplementar' : 'ang-complementar', 'angulos', supplement ? 'suplementares' : 'complementares', 'cloze', (seed, d) => {
@@ -109,8 +109,8 @@ geometriaTemplates.push(
   }, ex => { const [radius = 0] = read(ex, /raio ([\d,]+) cm/u); return (Math.round(radius * 10) + Math.round(radius * 10)) / 10; }),
   exercise('vol-litros-dm3', 'volumes', 'capacidade-volume', 'cloze', (seed, d) => {
     const r = random(seed), bottles = r(2, 80 * d), capacity = r(1, 10 * d);
-    return { prompt: `No clube de ciências, enchem-se ${bottles} garrafas com ${capacity} litros de água em cada uma. Qual é o volume total de água, em dm³? Usa 1 litro = 1 dm³.`, value: bottles * capacity, wrong: bottles * capacity * 1000, rule: 'Cada litro corresponde a um dm³. Multiplica o número de garrafas pela capacidade de cada uma.' };
-  }, ex => { const [n = 0, l = 0] = read(ex, /enchem-se (\d+) garrafas com (\d+) litros/u); return Array.from({ length: n }, () => l).reduce((a, b) => a + b, 0); }),
+    return { prompt: `No clube de ciências, enchem-se ${bottles} garrafas com ${capacity} ${plural(capacity, 'litro', 'litros')} de água em cada uma. Qual é o volume total de água, em dm³? Usa 1 litro = 1 dm³.`, value: bottles * capacity, wrong: bottles * capacity * 1000, rule: 'Cada litro corresponde a um dm³. Multiplica o número de garrafas pela capacidade de cada uma.' };
+  }, ex => { const [n = 0, l = 0] = read(ex, /enchem-se (\d+) garrafas com (\d+) litros?/u); return Array.from({ length: n }, () => l).reduce((a, b) => a + b, 0); }),
   exercise('rot-rosacea', 'rotacoes', 'rosacea', 'numeric', (seed, d) => {
     const r = random(seed), n = orders[r(d - 1, 7 + d * 3)]!, radius = r(3, 100 * d);
     return { prompt: `Para decorar o caderno, constrói-se uma rosácea de ordem ${n}, com centro O e raio exterior ${radius} cm. Qual é o menor ângulo positivo de rotação em torno de O que a faz coincidir consigo própria, em graus? O sentido positivo é contrário ao dos ponteiros do relógio.`, value: 360 / n, wrong: 180 / n, rule: 'A ordem da rosácea conta as repetições numa volta: divide 360° pela ordem.' };

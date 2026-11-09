@@ -101,6 +101,10 @@ for (const mode of ['produto-base', 'quociente-base', 'expoente-falta', 'mesmo-e
   else if (mode === 'expoente-falta') { prompt = `Completa com o expoente natural: ${a}^□ × ${a}^${m} = ${a}^${n + m}.`; answer = n; wrong = n + 2 * m; }
   else if (mode === 'mesmo-expoente') { prompt = `Escreve ${a}^${n} × ${b}^${n} como uma só potência com expoente ${n}. Qual é a base?`; answer = a * b; wrong = a + b === answer ? a + b + 1 : a + b; }
   else { prompt = `Calcula o valor numérico de ${a}^${n} + ${b}.`; answer = a ** n + b; wrong = a * n + b === answer ? a * (n + 1) + b : a * n + b; }
+  if (mode === 'valor') return { prompt, answer, wrong,
+    hints: ['O expoente indica quantos fatores iguais à base entram no produto.', 'Calcula primeiro a potência e depois adiciona a outra parcela.'],
+    explanation: `Calculamos primeiro a potência: ${a}^${n} = ${Array(n).fill(a).join(' × ')} = ${a ** n}. Depois adicionamos ${b}: ${a ** n} + ${b} = ${answer}.`,
+    feedback: a * n + b === answer ? 'O expoente indica o número de fatores iguais à base. Calcula a potência e depois adiciona a outra parcela.' : 'Multiplicaste a base pelo expoente. Calcula o produto dos fatores iguais à base e só depois adiciona a outra parcela.' };
   return { prompt, answer, wrong, hints: ['Identifica o que é comum: a base ou o expoente.', 'Na mesma base, soma expoentes no produto e subtrai na divisão. Com o mesmo expoente, multiplica as bases.'], explanation: `A regra aplica-se apenas quando a base ou o expoente é comum. Mantém esse elemento, efetua a operação indicada sobre o outro e obtém ${answer} como resposta à pergunta.`, feedback: 'Confundiste a operação sobre as bases com a operação sobre os expoentes. Identifica primeiro o elemento comum.' };
 }, p => {
   if (mode === 'expoente-falta') { const [, m = 0, , total = 0] = capture(p, /natural: (\d+)\^□ × \d+\^(\d+) = (\d+)\^(\d+)/u); return total - m; }
@@ -113,13 +117,14 @@ numerosTemplates.push(exerciseTemplate('pot-fracao', 'potencias', 'potencia-frac
   return { prompt: `Calcula (${a}/${b})^${n}. Escolhe o valor em fração irredutível.`, answer, wrong, options: [...new Set([answer, wrong, fraction(a ** n + 1, b ** n)])], hints: ['O expoente aplica-se ao numerador e ao denominador.', 'Eleva ambos ao expoente e divide pelo máximo divisor comum.'], explanation: `O produto de ${n} fatores ${a}/${b} tem numerador ${a ** n} e denominador ${b ** n}. Simplificando ambos pelo mesmo divisor, obtemos ${answer}.`, feedback: 'É preciso elevar o numerador à potência, tal como o denominador.' };
 }, p => { const [a = 1, b = 1, n = 1] = capture(p, /Calcula \((\d+)\/(\d+)\)\^(\d+)/u); return fraction(pow(a, n), pow(b, n)); }));
 for (const mode of ['irredutivel', 'subtracao', 'multiplicacao', 'inverso', 'divisao', 'expressao'] as const) numerosTemplates.push(exerciseTemplate(`frac-${mode}`, 'fracoes-ops', mode, mode === 'inverso' ? 'cloze' : 'mcq', (r, d) => {
-  const a = r(2, 15 + d * 8), b = r(a + 1, a + 20), c = r(1, 15 + d * 5), e = d === 1 ? b : r(c + 1, c + 20), k = r(2, 8 + d * 3);
+  let a = r(2, 15 + d * 8), b = r(a + 1, a + 20), c = r(1, 15 + d * 5), e = d === 1 ? b : r(c + 1, c + 20), k = r(2, 8 + d * 3);
+  if (mode === 'subtracao' && a * e < c * b) [a, b, c, e] = [c, e, a, b];
   let prompt: string, answer: string, wrong: string;
   if (mode === 'irredutivel') { prompt = `Na receita do lanche, a porção é ${a * k}/${b * k}. Escolhe a fração irredutível equivalente.`; answer = fraction(a, b); wrong = `${a * k}/${b * k}`; }
   else if (mode === 'inverso') { prompt = `Completa com o inverso de ${a}/${b}, na forma irredutível (numerador/denominador).`; answer = fraction(b, a); wrong = fraction(a, b); }
   else { const op = mode === 'subtracao' ? '−' : mode === 'multiplicacao' ? '×' : '÷'; prompt = mode === 'expressao' ? `Calcula (${a}/${b} + ${c}/${e}) × ${k}/${b}. Escolhe a fração irredutível.` : `Calcula ${a}/${b} ${op} ${c}/${e}. Escolhe a fração irredutível.`;
     answer = mode === 'subtracao' ? fraction(a * e - c * b, b * e) : mode === 'multiplicacao' ? fraction(a * c, b * e) : mode === 'divisao' ? fraction(a * e, b * c) : fraction((a * e + c * b) * k, b * e * b);
-    wrong = mode === 'subtracao' ? fraction(a - c, b + e) : mode === 'divisao' ? fraction(a * c, b * e) : fraction(a + c, b + e);
+    wrong = mode === 'subtracao' ? fraction(Math.abs(a - c), b + e) : mode === 'divisao' ? fraction(a * c, b * e) : fraction(a + c, b + e);
   }
   if (wrong === answer) wrong = fraction(Number(answer.split('/')[0]) + 1, Number(answer.split('/')[1]));
   const [an = 0, ad = 1] = answer.split('/').map(Number);

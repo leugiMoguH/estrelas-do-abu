@@ -19,6 +19,16 @@ function numeric(raw: string, units: readonly string[]): number | undefined {
   const result = parts.length === 2 ? parts[0]! / parts[1]! : parts[0]!;
   return Number.isFinite(result) ? result : undefined;
 }
+// Decimal simples: sem unidades, agrupamentos, expoentes ou frações.
+function decimalKey(raw: string): string | undefined {
+  const text = raw.trim();
+  if (!/^[+-]?\d+(?:[.,]\d+)?$/u.test(text)) return undefined;
+  const [integer = '', decimals = ''] = text.replace(',', '.').replace(/^[+]/u, '').split('.');
+  const negative = integer.startsWith('-');
+  const whole = integer.replace(/^-?0*/u, '') || '0';
+  const tail = decimals.replace(/0+$/u, '');
+  return `${negative && (whole !== '0' || tail) ? '-' : ''}${whole}${tail ? '.' + tail : ''}`;
+}
 export function grade(ex: Exercise, answer: Answer): GradeResult {
   if (answer.kind !== ex.kind) return { invalid: true };
   let partial: number;
@@ -40,7 +50,12 @@ export function grade(ex: Exercise, answer: Answer): GradeResult {
         ex.kind === 'order'
           ? v === ex.correctAnswer[i]
           : ex.correctAnswers[i]!.some(
-              (a) => normalize(a, ex.ignoreAccents) === normalize(v, ex.ignoreAccents),
+              (a) => {
+                const key = decimalKey(a);
+                return key !== undefined
+                  ? key === decimalKey(v)
+                  : normalize(a, ex.ignoreAccents) === normalize(v, ex.ignoreAccents);
+              },
             ),
       ).length / values.length;
   } else {

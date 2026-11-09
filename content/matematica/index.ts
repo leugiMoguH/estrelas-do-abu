@@ -1,5 +1,5 @@
 ﻿import type { ExerciseTemplate } from '../../src/core/content';
-import { base, fmt, numbers, numericAnswer, random, template } from './shared';
+import { base, fmt, plural, numbers, numericAnswer, random, template } from './shared';
 
 // Cada nível altera os números ou o número de passos, não apenas a redação.
 export const mathDifficultyCriteria = {
@@ -129,8 +129,8 @@ export const mathTemplates: ExerciseTemplate[] = [
             inverse ? `Multiplica uma parte por ${b}.` : `Multiplica uma parte por ${a}.`,
           ],
           inverse
-            ? `Se ${a} partes valem ${part}, uma parte vale ${part} ÷ ${a} = ${unit}. O todo tem ${b} partes: ${unit} × ${b} = ${total} cromos.`
-            : `Uma parte vale ${total} ÷ ${b} = ${unit}. Tomamos ${a} partes: ${unit} × ${a} = ${part} cromos.`,
+            ? `Se ${a} ${plural(a, 'parte vale', 'partes valem')} ${part}, uma parte vale ${part} ÷ ${a} = ${unit}. O todo tem ${b} partes: ${unit} × ${b} = ${total} cromos.`
+            : `Uma parte vale ${total} ÷ ${b} = ${unit}. Tomamos ${a} ${plural(a, 'parte', 'partes')}: ${unit} × ${a} = ${part} cromos.`,
           [
             [
               String(inverse ? (part / b) * a : (total / a) * b),

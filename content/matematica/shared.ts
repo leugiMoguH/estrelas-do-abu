@@ -68,3 +68,7 @@ export function template(
     solve,
   };
 }
+
+/** Seleciona grupos nominais com adjetivos e verbos concordantes. */
+export const plural = (n: number, singular: string, multiple: string): string =>
+  n === 1 ? singular : multiple;
