@@ -3,7 +3,7 @@ Plano: v2
 Atualizado: 2026-11-09
 Âmbito: 391dd209
 Objetivo: V1.0 jogável e fiável para o ano letivo (Matemática, Português, HGP), com diversão observada na criança antes de expandir — orientado por docs/ROADMAP.md (v2)
-Próximo passo: F1 — proteger o progresso (exportação/importação completas com skills, artigos desconhecidos tolerados, recuperação); produtor marca sessão F0 com a V3.
+Próximo passo: sessão observada F0 com a V3+F1 (preview/e/) → escolher hipótese do piloto F2; sem implementar F2 antes do registo F0.
 Decisão necessária: âmbito pós-demo no PRODUCT_CONTRACT.md (3 disciplinas na V1.0); sequência de dias (não existe no código) fica para F3 com feedback da criança.
 
 ## Sucesso
@@ -14,9 +14,9 @@ Decisão necessária: âmbito pós-demo no PRODUCT_CONTRACT.md (3 disciplinas na
 - [ ] Registo em docs/playtest/ com 4 colunas (observado/dito/interpretação/hipóteses) e escolha da hipótese de piloto | ev:
 
 ## E1 — F1 · Proteger o progresso
-### T1.1 · peso 2 · Em curso · Exportação/importação completas e recuperação
-- [ ] Exportar→apagar→importar preserva Save, perfil e skills; ficheiros antigos aceites; inválidos sem perda; ids desconhecidos tolerados; testes falham sem a correção | ev:
-- [ ] Publicado em preview/e com backup, verificado no URL público em 3 viewports | ev:
+### T1.1 · peso 2 · Concluída · Exportação/importação completas e recuperação
+- [x] Exportar→apagar→importar preserva Save, perfil e skills; ficheiros antigos aceites; inválidos sem perda; ids desconhecidos tolerados; testes falham sem a correção | ev: 6c84e87; tsc ok; 1089 unit; e2e 71 ok/3 ignorados + F1 18/18 (repeat 3×, 3 viewports); recovery.test falha sem a correção do aviso
+- [x] Publicado em preview/e com backup, verificado no URL público em 3 viewports | ev: gh-pages af4ee13; backup preview/e-prov8 (V3); URL público: bundle main-CnallZf_, recuperação OK 3 viewports, 0 erros; raiz v0.1 intacta
 
 ## E2 — F2 · Piloto «aprender jogando» + demo A/B
 ### T2.1 · peso 3 · Por iniciar · Piloto e decisão avançar/ajustar/abandonar
@@ -81,3 +81,4 @@ Decisão necessária: âmbito pós-demo no PRODUCT_CONTRACT.md (3 disciplinas na
 
 - 2026-11-09 (análise, só documental): roteiro v1 (commit 9c48c53) revisto criticamente com contraditório do Codex → docs/ROADMAP.md v2, adotado pelo produtor como guia de produção (cada fase com critérios próprios; funcionalidades não aprovadas em bloco). Factos verificados: raiz gh-pages = demo v0.1, V3 em preview/e; branch redesign/art-v1 à frente da main; arranque medido (Fast 3G, 390×844, sem perfil) 583 KB transferidos, LCP 2,9 s, 0 erros; PNG de 2,2–2,3 MB só carregam na sala HGP/tutor Tomé; alcunha escapada e Save importado validado (sem caminho de injeção encontrado nos innerHTML); sem SW/manifest/storage.persist; modos no código = Estudar/Teste/Rever. Plano v1 (demo): E1–E4 entregues e publicadas (V3 em preview/e); T2.2 (revisão docente) e T4.2 transitam para F4/F5. Nenhum código funcional nem versão pública alterados.
 - v2 (2026-11-09): roteiro v2 (docs/ROADMAP.md) adotado como guia até à V1.0; demo v1 entregue
+- 2026-11-09: F1 PUBLICADO (autorização expressa). Código 6c84e87 (tags f1-checkpoint-pre-2026-11-09 → 9efb963, f1-progresso-2026-11-09), push feito; gh-pages af4ee13 (preview/e = F1, backup preview/e-prov8). Codex implementou; Claude verificou, corrigiu aviso de recuperação persistente (trivial) e corrida no teste e2e. Limitações: sem teste em dispositivos físicos; apagamento do Safari não é coberto pela cópia interna (só pelo ficheiro exportado).
