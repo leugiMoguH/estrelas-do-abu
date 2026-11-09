@@ -102,3 +102,5 @@ export const gamePack: ContentPack & { readonly review: 'approved' } = {
 
 export { TUTORS, validateLessons } from './tutor';
 export { HGP_CHAPTERS, HGP_SECTIONS, hgpSectionById, hgpChapterOfSection, hgpItemSection, hgpSectionInfo } from './historia';
+
+export { PT_CHAPTERS, PT_SECTIONS, PT_TEMPLATE_SECTION, ptSectionById, ptSectionInfo } from './portugues/estrutura';

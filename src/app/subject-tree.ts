@@ -45,7 +45,8 @@ function renderSection(state: SubjectTreeState, section: HgpSection, grid: HTMLE
   const title = document.createElement('strong');
   title.textContent = section.title;
   const detail = document.createElement('span');
-  detail.textContent = `${sectionDetail(state, section)} ? ${progressLabel(readProgress(getState().save).sections[section.id])}`;
+  // Progresso só onde há exercícios; «Em preparação» não precisa de «Sem registo».
+  detail.textContent = functional ? `${sectionDetail(state, section)} · ${progressLabel(readProgress(getState().save).sections[section.id])}` : sectionDetail(state, section);
   const official = document.createElement('small');
   official.textContent = `Oficial: ${section.official}`;
   text.append(title, detail, official);

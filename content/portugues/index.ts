@@ -356,7 +356,7 @@ export const portugueseTemplates: ExerciseTemplate[] = [
             'Na passiva, o complemento direto da ativa passa a sujeito; o verbo usa ser e um particípio que concorda com esse sujeito.',
             `Compara: «${s.active}» / «${s.passive}».`,
           ],
-          `Na ativa, ${s.subject} é o sujeito e ${s.object} é o complemento direto. Na passiva, ${s.object} passa a sujeito; «${s.passiveVerb}» mantém o tempo e concorda com ele. «${s.agent}» indica quem pratica a ação: é o complemento agente da passiva.`,
+          `Na ativa, o grupo «${s.subject}» é o sujeito e o grupo «${s.object}» é o complemento direto. Na passiva, o grupo «${s.object}» passa a sujeito; «${s.passiveVerb}» mantém o tempo e concorda com ele. «${s.agent}» indica quem pratica a ação: é o complemento agente da passiva.`,
           [
             [
               s.object,
