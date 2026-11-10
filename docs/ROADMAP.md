@@ -389,3 +389,22 @@ As investigações de C e D podem correr em paralelo. As implementações são u
 ### Execução autorizada (2026-11-09)
 - B: inventário (Codex, só leitura) → plano de incrementos → implementação incremento a incremento, cada um com checkpoint, testes, 3 viewports, publicação em `preview/e/`.
 - C e D: investigação em paralelo por agente com acesso à web (o Codex não tem rede garantida). Resultados em `docs/pesquisa/`. Nenhum piloto antes da decisão do produtor.
+
+## 14. Decisão 2026-11-10 — Bloco C: F2/F2b NO-GO
+
+**Decisão do produtor** (avaliação própria; **não** é resultado de teste com a criança): F2 «Ecos das Estrelas» e F2b «Palavras-ferramenta» rejeitadas. Pouco intuitivas, pouco interessantes, pouco divertidas, fraca qualidade de jogo, valor educativo insuficiente.
+- Funcionamento técnico: comprovado (testes unitários/e2e e URL público verdes).
+- Avaliação do produtor: negativa.
+- Teste com a criança: não realizado.
+- Qualidade pedagógica: não demonstrada.
+
+São **experiências rejeitadas**, não funcionalidades para integrar. Ficam recuperáveis no histórico e nas tags (`blocoC-f2-prototipo-2026-11-09`, `blocoC-f2b-prototipo-2026-11-09`, `blocoC-f2b-revisao-2026-11-09`, `pages-f2b-v1-2026-11-09`) e publicadas em `prototipos/f2/` e `prototipos/f2b/` (noindex). Nada novo pode depender delas. Não haverá terceira tentativa desta mecânica.
+
+**Lições:**
+1. Testes automáticos não medem a qualidade do jogo.
+2. Validar primeiro uma interação jogável convincente e só depois investir numa mecânica complexa.
+3. Exigir uma mecânica central clara, intuitiva e divertida.
+4. Rejeitar exercícios escolares disfarçados de jogo; a aprendizagem tem de acrescentar à experiência, não torná-la artificial.
+5. Não insistir numa direção rejeitada só porque o código já existe; trabalho técnico concluído não é sucesso de produto.
+
+**Inglês («O Caso do Abu»):** só planeado (`docs/prototipos/EN-plano.md`). O plano **não está aprovado** apesar de revisto por Claude e Codex. A implementação não está autorizada. Na próxima sessão será reavaliado de forma crítica com estes critérios: jogabilidade apelativa, interações naturais, desafio interessante, progressão educativa demonstrável, qualidade para adolescentes e menor risco de repetir os erros da F2b.
