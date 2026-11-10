@@ -2,7 +2,23 @@
 
 Decisão do produtor (2026-11-10): «Turno no Festival» reformulado como **Festival do Abu**; só uma demonstração jogável de 60–90 s, isolada. Jogo completo NÃO aprovado. Oficina Impossível = alternativa futura. Caso do Abu não avança.
 
-## 1. Conceito (uma frase)
+## 0. REVISÃO (2026-11-10, após contraditório do Codex) — substitui §1–§4 e §6
+Codex (só leitura) rejeitou a v1 com fundamento, e Claude confirma: (a) a «escassez» tem armadilha irreversível — servir feliz o 1.º pode impedir a vitória, descoberto tarde; (b) depois de descoberta, «servir primeiro o exigente» resolve todas as rondas (decisão trivial); (c) o exemplo tem 2 soluções e só bloqueia em 1/3 das ordens (contrário ao que o §6 dizia); (d) os «sim» do §6 eram hipóteses. **v1 abandonada.**
+
+**v2 — Montar o gelado pedido (criação editável).**
+- Objetivo (uma frase): **faz o gelado que cada visitante pede em inglês.**
+- Sabores renováveis (vanilla, chocolate, strawberry, mint), até 2 bolas empilhadas, cobertura (*sauce*) e granulado (*sprinkles*) que se põem/tiram. Cone sempre editável (tocar na bola de cima tira-a). Só toques; sem arrastar.
+- Visitante 1 (simples, livre): *"Any flavour, please! One scoop."* — a criança escolhe à vontade (expressão).
+- Visitante 2 (condição): ex. *"Two scoops, please. Chocolate on top, no sauce!"* — a bola de baixo e o granulado ficam livres (escolha dentro do pedido).
+- Entregar (tocar no visitante): se cumprir, reação feliz + lanterna acende. Se falhar, **o visitante devolve e diz só a parte falhada** (*"No sauce, please!"*, *"Chocolate on top!"*, *"Two scoops!"*); o cone mantém-se para corrigir. Sem reinício, sem Abu triste (Abu inclina a cabeça, curioso).
+- Anti-adivinha: ≥36 combinações possíveis; teste garante que uma combinação aleatória cumpre o pedido 2 em <25% dos casos e que cada pedido tem ≥2 soluções (liberdade).
+- «Outra ronda»: novo par gerado de modelos (*one/two scoops*, *X on top / at the bottom*, *no X*, *with/no sauce*, *with/no sprinkles*, *I don't like X*, *any flavour*), com validação que devolve a 1.ª condição falhada em inglês.
+- Métricas locais: tempo até à 1.ª entrega, devoluções por visitante, rondas jogadas.
+
+Critérios do produtor = **hipóteses a validar a jogar**, não cumpridos: (1) objetivo numa frase; (2) ação imediata (tocar sabor → tocar visitante); (3) decisão: escolhas livres dentro do pedido; (4) inglês: cada palavra da condição muda o gelado aceite; (5) 2.ª partida: criar e ver reações; (6) evolução: novas condições (*with/without*, *for my sister*), mais visitantes.
+Limite assumido: pode continuar a sentir-se «seguir instruções». A demo existe para o descobrir.
+
+## 1. Conceito (v1, abandonada) (uma frase)
 **Serve gelados aos dois visitantes da banca do Abu de modo que ambos fiquem felizes — mas só há poucos sabores, e o que cada um diz em inglês decide quem pode receber o quê.**
 
 ## 2. Porque há uma decisão (e não só «tocar no certo»)
