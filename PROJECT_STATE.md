@@ -3,8 +3,8 @@ Plano: v2
 Atualizado: 2026-11-10
 Âmbito: 391dd209
 Objetivo: V1.0 jogável e fiável para o ano letivo (Matemática, Português, HGP, Inglês + secção Jogos), com diversão observada na criança antes de expandir — orientado por docs/ROADMAP.md (v2)
-Próximo passo: reavaliação estratégica dos próximos jogos (Bloco C após NO-GO da F2/F2b) e reavaliação crítica do conceito de Inglês antes de qualquer implementação (docs/ROADMAP.md §14).
-Decisão necessária: que direção de jogo seguir depois do NO-GO da F2/F2b; se o conceito «O Caso do Abu» passa a reavaliação ou é substituído.
+Próximo passo: produtor decide o conceito de Inglês com base em docs/prototipos/EN-alternativas.md (recomendado: «Turno no Festival»); só depois planear o protótipo. Bloco C (jogos) continua por reavaliar.
+Decisão necessária: aprovar «Turno no Festival», escolher «Oficina Impossível», manter «O Caso do Abu» revisto, ou nenhum.
 
 ## Sucesso
 - Critérios de lançamento da secção 8 de docs/ROADMAP.md cumpridos com evidência (diversão observada, conteúdo com matriz AE, dados protegidos, testes, acessibilidade, revisão independente); marcar itens não basta
