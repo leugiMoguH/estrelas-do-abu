@@ -9,6 +9,7 @@ export default defineConfig({
         main: 'index.html',
         prototipoF2: 'prototipos/f2/index.html',
         prototipoF2b: 'prototipos/f2b/index.html',
+        prototipoEn: 'prototipos/en/index.html',
         previewA: 'preview/a/index.html',
         previewB: 'preview/b/index.html',
         previewC: 'preview/c/index.html',
